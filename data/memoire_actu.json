@@ -1,0 +1,66 @@
+{
+ "hull city": {
+  "nom": "Hull City",
+  "faits": [
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Promu après 9 ans d'absence, entraîneur Sergej Jakirovic. Hull est 8e mais sans victoire sur ses 4 derniers matchs."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Longue liste de blessés : Matazo (ligament croisé, longue durée), Gyabi (absent jusqu'à fin novembre), Ansah (dos) et Hughes (hernie)."
+   }
+  ]
+ },
+ "everton": {
+  "nom": "Everton",
+  "faits": [
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Invaincu en 2026/27 sous David Moyes et meilleure défense de la ligue après 5 journées, mais peu prolifique (environ 1,8 but par match)."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Effectif réduit : Mykolenko est le seul arrière gauche, Norgaard revient d'une longue blessure et Röhl est incertain."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Les propriétaires Friedkin ont annoncé chercher un investisseur ou une vente du club (octobre 2026)."
+   }
+  ]
+ },
+ "1. fc köln": {
+  "nom": "1. FC Köln",
+  "faits": [
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Ache (blessure musculaire) et Dallinga (ligaments croisés, absent plusieurs mois, probablement pas de retour cette saison) sont absents, d'où un manque de point d'ancrage en attaque."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Timo Hübers est absent depuis près d'un an (genou), et l'équipe n'a plus gardé ses cages inviolées depuis 7 matchs."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "1 seul point pris sur les 3 derniers matchs après la victoire 3-2 contre Hoffenheim en ouverture. René Wagner est sous pression."
+   }
+  ]
+ },
+ "borussia monchengladbach": {
+  "nom": "Borussia Monchengladbach",
+  "faits": [
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Alexander Blessin est le nouvel entraîneur après le limogeage d'Eugen Polanski. Il joue en trois derrière."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Défense en crise : 16 buts encaissés en 4 matchs, 0 point, dernier du classement."
+   },
+   {
+    "date": "2026-10-11T03:12:54",
+    "texte": "Longues absences : Enzo Leopold (ligaments croisés, saison terminée), Jens Castrop et Nicolas Kühn. Honorat est absent pour une blessure musculaire."
+   }
+  ]
+ }
+}
