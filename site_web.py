@@ -66,9 +66,11 @@ def affiche(m, grand=False):
     t = 52 if grand else 40
     d = datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(PARIS)
     jour = f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]}"
-    return f"""<div class="affiche{' grande' if grand else ''}">
+    esp = m.get("espn") or {}
+    data = (f' data-espn="{e(esp["ligue"])}|{e(esp["id"])}"' if esp else "") + f' data-mid="{e(m["id"])}" data-dom="{e(m["domicile"])}" data-ext="{e(m["exterieur"])}" data-ko="{e(m["debut"])}"'
+    return f"""<div class="affiche{' grande' if grand else ''}"{data}>
         <div class="eq">{ecusson(m["domicile"], t)}<span>{e(m["domicile"])}</span></div>
-        <div class="ko"><b>{d:%H:%M}</b><small>{jour}</small><em class="cd" data-ko="{e(m["debut"])}"></em></div>
+        <div class="ko"><b class="ko-h">{d:%H:%M}</b><small class="ko-j">{jour}</small><em class="cd" data-ko="{e(m["debut"])}"></em></div>
         <div class="eq">{ecusson(m["exterieur"], t)}<span>{e(m["exterieur"])}</span></div>
       </div>"""
 
@@ -879,6 +881,23 @@ header.reduit h1 {{ font-size:30px; }}
   border-radius:12px; padding:10px 12px; margin-bottom:10px; }}
 .pb-pari > b {{ display:block; font:700 22px "Barlow Condensed",sans-serif; }}
 .pb-pari span {{ font-size:13px; color:var(--muted); }}
+.direct {{ margin:4px 0 14px; padding:12px; border-radius:16px; background:var(--surface);
+  border:1.5px solid #fb7185; box-shadow:0 0 0 4px rgba(251,113,133,.10); }}
+.direct[hidden] {{ display:none; }}
+.direct-t {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }}
+.direct-t b {{ font:700 20px "Barlow Condensed",sans-serif; color:#fb7185; }}
+.direct-t button {{ background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:99px; padding:6px 10px; font:600 12px Inter,sans-serif; cursor:pointer; }}
+.dl {{ display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:8px; padding:8px 0; border-top:1px solid var(--line); font-size:14px; }}
+.dl:first-child {{ border-top:0; }}
+.dl b {{ font:700 22px "Barlow Condensed",sans-serif; min-width:58px; text-align:center; background:var(--surface2); border-radius:8px; padding:0 6px; }}
+.dl .dl-e {{ font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
+.dl .dl-e.r {{ text-align:right; }}
+.dl small {{ grid-column:1 / -1; text-align:center; color:#fb7185; font-size:11px; font-weight:600; margin-top:-2px; }}
+.dl.moi b {{ background:var(--grad); color:var(--accent-ink); }}
+.affiche.en-direct .ko-h {{ color:#fb7185; }}
+.affiche.termine .ko-h {{ color:var(--text); }}
+.mp-live {{ display:block; font-size:12px; font-weight:600; margin-top:2px; }}
+.mp-live.ok {{ color:var(--ok); }} .mp-live.bad {{ color:var(--bad); }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -921,6 +940,10 @@ header.reduit h1 {{ font-size:30px; }}
 
 <main>
 <div class="onglet" id="t-jour">
+<section class="direct" id="direct" hidden>
+  <div class="direct-t"><b>⚡ En direct</b><button id="btn-alertes" onclick="activerAlertes()">🔔 Alertes buts</button></div>
+  <div id="direct-l"></div>
+</section>
 <div class="semaine" id="semaine">{selecteur}</div>
 {mots}
 <section class="budget">
@@ -1093,10 +1116,14 @@ function enregistrerJoue(btn) {{
   ecrireMP(l); f.hidden = true; marquerJoues(); afficherMP();
   toast("✅ Ajouté à « Mes paris »");
 }}
+function resultat(id) {{
+  const d = typeof resDirect === "function" ? resDirect(id) : null;
+  return RESULTATS[id] || (d && d.fini ? d : null);
+}}
 function statutMP(p) {{
   if (p.manuel) return p.manuel;
   if (p.type === "buts") {{
-    const r = RESULTATS[p.id];
+    const r = resultat(p.id);
     if (!r || !r.score) return "en attente";
     const [d, x] = r.score.split("-").map(Number), t = d + x, btts = d > 0 && x > 0;
     const ok = {{ plus15: t >= 2, moins15: t < 2, plus25: t >= 3, moins25: t < 3, plus35: t >= 4, moins35: t < 4, btts: btts, pas_btts: !btts }}[p.marche];
@@ -1104,7 +1131,7 @@ function statutMP(p) {{
   }}
   if (p.type === "combine") {{
     const r = p.jambes.map(j => {{
-      const x = RESULTATS[j.id];
+      const x = resultat(j.id);
       if (!x) return null;
       if (j.marche) {{
         if (!x.score) return null;
@@ -1116,7 +1143,7 @@ function statutMP(p) {{
     if (r.includes(false)) return "perdu";
     return r.every(x => x === true) ? "gagné" : "en attente";
   }}
-  const r = RESULTATS[p.id];
+  const r = resultat(p.id);
   return r ? (r.res === p.court ? "gagné" : "perdu") : "en attente";
 }}
 function marquerJoues() {{
@@ -1137,8 +1164,23 @@ function afficherMP() {{
     engage += p.mise;
     if (st === "en attente") att++; else {{ n++; mises += p.mise; gains += gain; if (st === "gagné") g++; }}
     const cls = {{ "gagné": "ok", "perdu": "bad" }}[st] || "att";
+    let live = "";
+    if (st === "en attente" && typeof resDirect === "function") {{
+      const ok1 = (id, court, marche) => {{
+        const d = resDirect(id); if (!d) return null;
+        if (marche) {{ const [x, y] = d.score.split("-").map(Number), t = x + y, b = x > 0 && y > 0;
+          return {{ plus25: t >= 3, moins25: t < 3, plus15: t >= 2, moins15: t < 2, plus35: t >= 4, moins35: t < 4, btts: b, pas_btts: !b }}[marche]; }}
+        return d.res === court;
+      }};
+      const legs = p.type === "combine" ? p.jambes : [{{ id: p.id, court: p.court, marche: p.marche }}];
+      const etats = legs.map(j => ok1(j.id, j.court, j.marche)).filter(x => x !== null && x !== undefined);
+      if (etats.length) {{
+        const bons = etats.filter(Boolean).length;
+        live = `<small class="mp-live ${{bons === etats.length ? "ok" : "bad"}}">● en direct : ${{bons}}/${{legs.length}} ${{bons === etats.length ? "ça passe" : "ça ne passe pas"}} pour l'instant</small>`;
+      }}
+    }}
     const esc = t => String(t).replace(/[&<>"]/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }})[c]);
-    lignes += `<tr><td>${{esc(p.pari)}}<small>${{esc(p.match)}} · cote ${{p.cote.toFixed(2)}} · ${{esc(p.bk || "")}}</small></td>
+    lignes += `<tr><td>${{esc(p.pari)}}<small>${{esc(p.match)}} · cote ${{p.cote.toFixed(2)}} · ${{esc(p.bk || "")}}</small>${{live}}</td>
       <td class="r">${{fmt(p.mise)}}<small class="st ${{cls}}">${{st}}${{st !== "en attente" ? " " + (gain >= 0 ? "+" : "") + fmt(gain) : ""}}</small>
       <div class="mp-act"><button onclick="regler('${{p.uid}}','gagné')">✓</button><button onclick="regler('${{p.uid}}','perdu')">✗</button><button onclick="suppr('${{p.uid}}')">🗑</button></div></td></tr>`;
   }});
@@ -1204,10 +1246,114 @@ function rebours() {{
 }}
 rebours(); setInterval(rebours, 30000);
 
+// ---- ⚡ scores en direct (ESPN, lus par le téléphone toutes les 45 s)
+const ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer";
+const DIRECT = {{}};          // mid -> {{ h, a, etat, minute, fini }}
+let directEnErreur = false;
+const affichesParMid = () => {{
+  const m = {{}};
+  document.querySelectorAll(".affiche[data-mid]").forEach(el => (m[el.dataset.mid] = m[el.dataset.mid] || []).push(el));
+  return m;
+}};
+function mesIds() {{
+  const ids = new Set();
+  lireMP().forEach(p => {{ if (statutMP(p) === "en attente") {{ ids.add(p.id); (p.jambes || []).forEach(j => ids.add(j.id)); }} }});
+  return ids;
+}}
+function resDirect(mid) {{
+  const d = DIRECT[mid];
+  if (!d || d.etat === "pre") return null;
+  return {{ res: d.h > d.a ? "1" : d.h < d.a ? "2" : "N", score: d.h + "-" + d.a, fini: d.fini }};
+}}
+async function majDirect() {{
+  if (document.hidden) return;
+  const parMid = affichesParMid(), now = Date.now(), aLire = {{}};
+  Object.values(parMid).forEach(els => {{
+    const el = els[0]; if (!el.dataset.espn) return;
+    const ko = new Date(el.dataset.ko).getTime();
+    if (now > ko - 15 * 60e3 && now < ko + 150 * 60e3) {{
+      const [lig] = el.dataset.espn.split("|");
+      const jour = new Date(ko).toISOString().slice(0, 10).replace(/-/g, "");
+      aLire[lig + "|" + jour] = 1;
+    }}
+  }});
+  const cles = Object.keys(aLire);
+  if (!cles.length) {{ dessinerDirect(); return; }}
+  const parEspn = {{}};
+  await Promise.all(cles.map(async k => {{
+    const [lig, jour] = k.split("|");
+    try {{
+      const r = await fetch(`${{ESPN}}/${{lig}}/scoreboard?dates=${{jour}}`, {{ cache: "no-store" }});
+      const j = await r.json();
+      (j.events || []).forEach(ev => parEspn[lig + "|" + ev.id] = ev);
+      directEnErreur = false;
+    }} catch (e) {{ directEnErreur = true; }}
+  }}));
+  const suivis = mesIds();
+  Object.entries(parMid).forEach(([mid, els]) => {{
+    const ev = parEspn[els[0].dataset.espn]; if (!ev) return;
+    const c = ev.competitions[0], st = c.status.type;
+    const h = +(c.competitors.find(x => x.homeAway === "home") || {{}}).score || 0;
+    const a = +(c.competitors.find(x => x.homeAway === "away") || {{}}).score || 0;
+    const avant = DIRECT[mid];
+    const nouveau = {{ h, a, etat: st.state, fini: !!st.completed, minute: st.state === "in" ? (c.status.displayClock || st.shortDetail) : st.shortDetail }};
+    // un but ? (on ne prévient pas au premier chargement)
+    if (avant && avant.etat !== "pre" && h + a > avant.h + avant.a) {{
+      const qui = h > avant.h ? els[0].dataset.dom : els[0].dataset.ext;
+      const buteur = ((c.details || []).filter(d => d.scoringPlay).slice(-1)[0] || {{}});
+      const nom = buteur.athletesInvolved && buteur.athletesInvolved[0] ? " · " + buteur.athletesInvolved[0].displayName : "";
+      alerteBut(`⚽ BUT ${{qui}} !`, `${{els[0].dataset.dom}} ${{h}}-${{a}} ${{els[0].dataset.ext}} (${{nouveau.minute}})${{nom}}`, suivis.has(mid));
+    }}
+    if (avant && !avant.fini && nouveau.fini && suivis.has(mid)) alerteBut("🏁 Match terminé", `${{els[0].dataset.dom}} ${{h}}-${{a}} ${{els[0].dataset.ext}}`, true);
+    DIRECT[mid] = nouveau;
+    els.forEach(el => {{
+      if (nouveau.etat === "pre") return;
+      el.classList.add("en-direct"); el.classList.toggle("termine", nouveau.fini);
+      el.querySelector(".ko-h").textContent = h + " - " + a;
+      el.querySelector(".ko-j").textContent = nouveau.fini ? "Terminé" : nouveau.minute;
+      const cd = el.querySelector(".cd"); cd.textContent = nouveau.fini ? "terminé" : "● en direct"; cd.className = "cd " + (nouveau.fini ? "fini" : "live");
+    }});
+  }});
+  dessinerDirect(); afficherMP();
+}}
+function dessinerDirect() {{
+  const z = document.getElementById("direct"), l = document.getElementById("direct-l");
+  const parMid = affichesParMid(), suivis = mesIds();
+  const enCours = Object.entries(DIRECT).filter(([mid, d]) => d.etat === "in" || (d.fini && suivis.has(mid)));
+  enCours.sort((x, y) => (suivis.has(y[0]) - suivis.has(x[0])));
+  if (!enCours.length) {{ z.hidden = true; return; }}
+  z.hidden = false;
+  l.innerHTML = enCours.slice(0, 8).map(([mid, d]) => {{
+    const el = parMid[mid][0];
+    return `<div class="dl${{suivis.has(mid) ? " moi" : ""}}"><span class="dl-e">${{el.dataset.dom}}</span>
+      <b>${{d.h}} - ${{d.a}}</b><span class="dl-e r">${{el.dataset.ext}}</span>
+      <small>${{d.fini ? "Terminé" : "● " + d.minute}}${{suivis.has(mid) ? " · ton pari" : ""}}</small></div>`;
+  }}).join("") + (directEnErreur ? '<p class="note">Scores en direct momentanément indisponibles.</p>' : "");
+}}
+function alerteBut(titre, texte, important) {{
+  toast(titre + " " + texte, 6000);
+  let ok = false; try {{ ok = localStorage.getItem("alertes") === "1"; }} catch (e) {{}}
+  let tous = false; try {{ tous = localStorage.getItem("alertes-tous") === "1"; }} catch (e) {{}}
+  if (!ok || !(important || tous) || !("Notification" in window) || Notification.permission !== "granted") return;
+  navigator.serviceWorker.getRegistration().then(r => r && r.showNotification(titre, {{ body: texte, icon: "icon-192.png", tag: titre + texte }}));
+}}
+async function activerAlertes() {{
+  if (!("Notification" in window)) {{ toast("Installe d'abord l'appli sur l'écran d'accueil pour les alertes."); return; }}
+  const p = await Notification.requestPermission();
+  if (p === "granted") {{
+    try {{ localStorage.setItem("alertes", "1"); }} catch (e) {{}}
+    document.getElementById("btn-alertes").textContent = "🔔 Alertes activées";
+    toast("🔔 Tu seras prévenu à chaque but sur tes paris.");
+  }} else toast("Alertes refusées : tu peux les autoriser dans Réglages > Prono Malin.");
+}}
+try {{ if (localStorage.getItem("alertes") === "1") document.getElementById("btn-alertes").textContent = "🔔 Alertes activées"; }} catch (e) {{}}
+majDirect(); setInterval(majDirect, 45000);
+document.addEventListener("visibilitychange", () => {{ if (!document.hidden) majDirect(); }});
+
 // ---- petit message
-function toast(txt) {{
+function toast(txt, duree = 2200) {{
   const t = document.getElementById("toast"); t.textContent = txt; t.hidden = false;
-  clearTimeout(t._h); t._h = setTimeout(() => t.hidden = true, 2200);
+  clearTimeout(t._h); t._h = setTimeout(() => t.hidden = true, duree);
 }}
 
 function fermer() {{

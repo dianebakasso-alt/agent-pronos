@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import memoire
+import direct
 import moteur
 import stats
 import site_web
@@ -331,6 +332,12 @@ def main():
             except Exception as e:
                 print(f"  ! stats {a['domicile']}: {e}")
     if not demo:
+        try:
+            jd = direct.relier(analyses, maintenant)
+            (DATA / "espn_journal.json").write_text(json.dumps(jd, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"    direct : {jd['relies']} matchs reliés aux scores en direct")
+        except Exception as e:
+            print(f"  ! direct : {e}")
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
