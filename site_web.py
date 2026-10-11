@@ -58,20 +58,38 @@ def barre_probas(m, surligne=None):
     for i in m["issues"]:
         cls = {"1": "s1", "N": "sn", "2": "s2"}[i["court"]]
         on = " on" if i["court"] == surligne else ""
-        segs += f'<span class="{cls}{on}" style="flex:{i["proba"]:.3f}"></span>'
+        lab = f'<em>{i["court"]} · {pct(i["proba"])}</em>' if i["proba"] >= 0.13 else ""
+        segs += f'<span class="{cls}{on}" style="flex:{i["proba"]:.3f}">{lab}</span>'
     return f'<div class="barre-p">{segs}</div>'
 
 
+def favori(m):
+    """'1' ou '2' si une équipe est nettement favorite, sinon None."""
+    p = {i["court"]: i["proba"] for i in m["issues"]}
+    if not p:
+        return None
+    k = max(p, key=p.get)
+    return k if k in ("1", "2") and p[k] >= 0.40 else None
+
+
 def affiche(m, grand=False):
-    t = 52 if grand else 40
+    t = 56 if grand else 42
     d = datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(PARIS)
     jour = f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]}"
     esp = m.get("espn") or {}
     data = (f' data-espn="{e(esp["ligue"])}|{e(esp["id"])}"' if esp else "") + f' data-mid="{e(m["id"])}" data-dom="{e(m["domicile"])}" data-ext="{e(m["exterieur"])}" data-ko="{e(m["debut"])}"'
+    fav = favori(m)
+    pr = {i["court"]: i["proba"] for i in m["issues"]}
+
+    def cote_eq(nom, k):
+        f = fav == k
+        pill = f'<em class="pill">⭐ Favori {pct(pr[k])}</em>' if f else f'<em class="pill pill-o">{pct(pr.get(k, 0))}</em>'
+        return f"""<div class="eq eq{k}{' fav' if f else ''}"><div class="ecu-w">{ecusson(nom, t)}</div><span>{e(nom)}</span>{pill}</div>"""
+
     return f"""<div class="affiche{' grande' if grand else ''}"{data}>
-        <div class="eq">{ecusson(m["domicile"], t)}<span>{e(m["domicile"])}</span></div>
-        <div class="ko"><b class="ko-h">{d:%H:%M}</b><small class="ko-j">{jour}</small><em class="cd" data-ko="{e(m["debut"])}"></em></div>
-        <div class="eq">{ecusson(m["exterieur"], t)}<span>{e(m["exterieur"])}</span></div>
+        {cote_eq(m["domicile"], "1")}
+        <div class="ko"><i class="vs">VS</i><b class="ko-h">{d:%H:%M}</b><small class="ko-j">{jour}</small><em class="cd" data-ko="{e(m["debut"])}"></em></div>
+        {cote_eq(m["exterieur"], "2")}
       </div>"""
 
 
@@ -190,6 +208,8 @@ def ligne_match(m):
     cases = ""
     for i in m["issues"]:
         cls = "case val" if i["court"] == vcourt else "case"
+        if i["court"] == favori(m):
+            cls += " fav"
         cases += f"""<button class="{cls}" data-ajout="{e(m["id"])}|{i["court"]}"><span class="k">{i["court"]}</span>
           <b>{i["cote"]:.2f}</b><span class="p">{pct(i["proba"])}</span></button>"""
     buts = ""
@@ -606,12 +626,13 @@ Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup
         credits = f" · {infos['credits_restants']} crédits API restants"
 
     html = f"""<!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#060b09">
+<meta name="color-scheme" content="dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1117,6 +1138,50 @@ html.verrouille body > *:not(#verrou) {{ visibility:hidden; }}
 @keyframes fondu {{ from {{ opacity:0; transform:translateY(6px); }} }}
 @media (prefers-reduced-motion: reduce) {{ .logo, .pari::after {{ animation:none; }} }}
 @media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} }}
+
+/* ===================== look appli de sport (sombre, énergique) ===================== */
+.affiche {{ align-items:center; gap:4px; padding:12px 6px; margin:6px 0 10px; border-radius:16px;
+  background:
+    radial-gradient(120px 90px at 12% 50%, color-mix(in srgb, var(--p1) 14%, transparent), transparent 70%),
+    radial-gradient(120px 90px at 88% 50%, color-mix(in srgb, var(--p2) 14%, transparent), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,0)), var(--surface2);
+  box-shadow:inset 0 0 0 1px var(--line); position:relative; overflow:hidden; }}
+.affiche::before {{ content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:linear-gradient(transparent, var(--line), transparent); }}
+.affiche > * {{ position:relative; }}
+.ecu-w {{ display:grid; place-items:center; padding:6px; border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,.10), rgba(255,255,255,.02) 70%); box-shadow:inset 0 0 0 1px rgba(255,255,255,.08); transition:transform .3s; }}
+.eq.fav .ecu-w {{ box-shadow:0 0 0 2px var(--fc), 0 0 22px -2px var(--fc); transform:scale(1.06); }}
+.eq1 {{ --fc:var(--p1); }} .eq2 {{ --fc:var(--p2); }}
+.eq span {{ font-weight:700; }}
+.pill {{ font-style:normal; font:700 11px Inter,sans-serif; padding:3px 8px; border-radius:99px; white-space:nowrap;
+  background:var(--fc); color:#06110b; letter-spacing:.01em; }}
+.pill-o {{ background:transparent; color:var(--muted); box-shadow:inset 0 0 0 1px var(--line); }}
+.ko {{ padding-top:0; min-width:64px; }}
+.vs {{ font-style:normal; font:800 italic 15px "Barlow Condensed",sans-serif; letter-spacing:.06em; color:#06110b;
+  background:var(--grad); padding:2px 9px; border-radius:7px; margin-bottom:6px; transform:skewX(-8deg);
+  box-shadow:0 4px 14px -4px rgba(52,211,153,.6); }}
+.affiche.grande .ko b {{ padding-top:0; }}
+.affiche.en-direct {{ box-shadow:inset 0 0 0 1.5px #fb7185, 0 0 24px -8px #fb7185; }}
+.affiche.en-direct .vs {{ background:#fb7185; animation:clignote 1.4s ease-in-out infinite; }}
+.barre-p {{ height:20px; gap:3px; margin:0 0 12px; }}
+.barre-p span {{ opacity:.9; border-radius:6px; display:flex; align-items:center; justify-content:center; overflow:hidden; min-width:6px; }}
+.barre-p em {{ font-style:normal; font:700 11px Inter,sans-serif; color:#06110b; white-space:nowrap; }}
+.barre-p span.on {{ opacity:1; box-shadow:0 0 0 2px var(--surface), 0 0 0 4px currentColor, 0 0 16px -2px currentColor; }}
+.match .barre-p {{ height:18px; margin-bottom:8px; }}
+.case {{ border-radius:10px; padding:8px; position:relative; box-shadow:inset 0 0 0 1px var(--line); transition:transform .15s; }}
+.case:active {{ transform:scale(.96); }}
+.case b {{ font:700 18px "Barlow Condensed",sans-serif; }}
+.case.fav {{ box-shadow:inset 0 0 0 1.5px color-mix(in srgb, var(--accent) 60%, transparent); }}
+.case.val {{ outline:0; box-shadow:0 0 0 2px var(--accent), 0 0 18px -4px var(--accent); }}
+.case.val::after {{ content:"VALUE"; position:absolute; top:-8px; right:6px; font:800 9px Inter,sans-serif; letter-spacing:.06em;
+  background:var(--accent); color:var(--accent-ink); padding:1px 5px; border-radius:5px; }}
+.ch-m, details {{ background:linear-gradient(135deg, color-mix(in srgb, var(--lig, var(--accent)) 10%, transparent), transparent 45%), var(--surface);
+  box-shadow:0 10px 26px -18px rgba(0,0,0,.8); }}
+.ch-h {{ box-shadow:0 6px 16px -6px rgba(52,211,153,.6); }}
+.carte {{ border-color:color-mix(in srgb, var(--line) 70%, transparent);
+  box-shadow:0 18px 40px -24px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.04); }}
+h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style:italic; }}
+.carte h3, .combo-t {{ letter-spacing:.01em; }}
 </style>
 </head>
 <body>
