@@ -1,18 +1,18 @@
 {
  "ligues": {
-  "soccer_france_ligue_one": "erreur HTTP Error 400: Bad Request",
-  "soccer_epl": "erreur HTTP Error 400: Bad Request",
-  "soccer_italy_serie_a": "erreur HTTP Error 400: Bad Request",
-  "soccer_germany_bundesliga": "erreur HTTP Error 400: Bad Request",
-  "soccer_spain_la_liga": "erreur HTTP Error 400: Bad Request",
-  "soccer_portugal_primeira_liga": "erreur HTTP Error 400: Bad Request",
-  "soccer_netherlands_eredivisie": "erreur HTTP Error 400: Bad Request",
-  "soccer_france_ligue_two": "erreur HTTP Error 400: Bad Request",
-  "soccer_uefa_champs_league": "erreur HTTP Error 400: Bad Request",
-  "soccer_efl_champ": "erreur HTTP Error 400: Bad Request",
-  "soccer_uefa_europa_league": "erreur HTTP Error 400: Bad Request",
-  "soccer_uefa_europa_conference_league": "erreur HTTP Error 400: Bad Request"
+  "soccer_france_ligue_one": 12,
+  "soccer_epl": 13,
+  "soccer_italy_serie_a": 15,
+  "soccer_germany_bundesliga": 11,
+  "soccer_spain_la_liga": 14,
+  "soccer_portugal_primeira_liga": 4,
+  "soccer_netherlands_eredivisie": 13,
+  "soccer_france_ligue_two": 9,
+  "soccer_uefa_champs_league": 18,
+  "soccer_efl_champ": 25,
+  "soccer_uefa_europa_league": 18,
+  "soccer_uefa_europa_conference_league": 18
  },
- "relies": 0,
+ "relies": 137,
  "manques": []
 }
