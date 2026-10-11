@@ -334,6 +334,9 @@ def main():
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
+    for a in analyses:
+        a["buts"] = moteur.analyser_buts(a)
+
     # aujourd'hui et demain : chacun ses paris et ses combinés
     local = maintenant.astimezone(site_web.PARIS)
     auj = local.strftime("%Y-%m-%d")
@@ -344,7 +347,8 @@ def main():
         an_j = [a for a in analyses if jour_de(a) == cle]
         jours.append({"cle": cle, "quand": quand, "analyses": an_j,
                       "values": [a for a in values if jour_de(a) == cle],
-                      "combos": moteur.combines_experts(an_j, cfg)})
+                      "combos": moteur.combines_experts(an_j, cfg),
+                      "buts": moteur.pronos_buts(an_j)})
     if not demo:
         (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
             "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2)) for c in j["combos"]]}

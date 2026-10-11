@@ -264,3 +264,109 @@ def combines_experts(analyses, cfg):
         c.update({k: v for k, v in STYLES[style].items()})
         resultat.append(c)
     return resultat
+
+
+# ---------------------------------------------------------------- les buts (sans crédit en plus)
+# On retrouve combien de buts le marché attend de chaque équipe (loi de Poisson) à partir
+# des probabilités 1-N-2 du marché, puis on en déduit Plus/Moins de buts, Les deux marquent, etc.
+from math import exp, factorial
+
+
+def _poisson(k, lam):
+    return exp(-lam) * lam ** k / factorial(k)
+
+
+def _grille(lh, la, n=10):
+    ph = [_poisson(i, lh) for i in range(n)]
+    pa = [_poisson(j, la) for j in range(n)]
+    g = [[ph[i] * pa[j] for j in range(n)] for i in range(n)]
+    # petit correctif de Dixon-Coles : les scores serrés (0-0, 1-1) sont un peu plus fréquents
+    rho = -0.06
+    g[0][0] *= 1 - lh * la * rho
+    g[0][1] *= 1 + lh * rho
+    g[1][0] *= 1 + la * rho
+    g[1][1] *= 1 - rho
+    s = sum(map(sum, g))
+    return [[x / s for x in ligne] for ligne in g]
+
+
+def _probas_1n2(g):
+    n = len(g)
+    p1 = sum(g[i][j] for i in range(n) for j in range(n) if i > j)
+    pn = sum(g[i][i] for i in range(n))
+    return p1, pn, 1 - p1 - pn
+
+
+def buts_attendus(p1, p2):
+    """Trouve (buts domicile, buts extérieur) qui reproduisent le mieux les probas du marché."""
+    best, err = (1.3, 1.1), 9.0
+    pas = 0.4
+    for _ in range(6):  # recherche de plus en plus fine
+        cx, cy = best
+        for i in range(-5, 6):
+            for j in range(-5, 6):
+                lh, la = cx + i * pas, cy + j * pas
+                if not (0.15 <= lh <= 4.5 and 0.15 <= la <= 4.5):
+                    continue
+                q1, _, q2 = _probas_1n2(_grille(lh, la))
+                e = (q1 - p1) ** 2 + (q2 - p2) ** 2
+                if e < err:
+                    best, err = (lh, la), e
+        pas /= 3
+    return best
+
+
+def _cote(p):
+    return round(1 / p, 2) if p > 0.01 else None
+
+
+def analyser_buts(m):
+    """Marchés de buts calculés pour un match analysé."""
+    pr = {i["court"]: i["proba"] for i in m["issues"]}
+    if not {"1", "N", "2"} <= set(pr):
+        return None
+    lh, la = buts_attendus(pr["1"], pr["2"])
+    g = _grille(lh, la)
+    n = len(g)
+    tot = lambda cond: sum(g[i][j] for i in range(n) for j in range(n) if cond(i, j))
+    marches = {
+        "plus15": tot(lambda i, j: i + j >= 2), "plus25": tot(lambda i, j: i + j >= 3),
+        "plus35": tot(lambda i, j: i + j >= 4), "btts": tot(lambda i, j: i >= 1 and j >= 1),
+        "dom_marque": tot(lambda i, j: i >= 1), "ext_marque": tot(lambda i, j: j >= 1),
+    }
+    scores = sorted(((g[i][j], f"{i}-{j}") for i in range(6) for j in range(6)), reverse=True)[:3]
+    return {"lh": lh, "la": la, "total": lh + la, **marches,
+            "scores": [(s, p) for p, s in scores]}
+
+
+LIBELLES_BUTS = {
+    "plus15": "Plus de 1,5 but", "moins15": "Moins de 1,5 but",
+    "plus25": "Plus de 2,5 buts", "moins25": "Moins de 2,5 buts",
+    "plus35": "Plus de 3,5 buts", "moins35": "Moins de 3,5 buts",
+    "btts": "Les 2 équipes marquent", "pas_btts": "Les 2 ne marquent pas",
+}
+
+
+def pronos_buts(analyses, n=4):
+    """Les pronos de buts les plus nets du jour (proba élevée), avec la cote juste à chercher."""
+    choix = []
+    for m in analyses:
+        b = m.get("buts")
+        if not b:
+            continue
+        options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]),
+                   ("pas_btts", 1 - b["btts"]), ("plus15", b["plus15"]), ("moins35", 1 - b["plus35"])]
+        # on évite les paris « trop sûrs » à cote ridicule : entre 55 % et 80 %
+        options = [(k, p) for k, p in options if 0.55 <= p <= 0.80]
+        if not options:
+            continue
+        # préférence aux marchés les plus parlants (2,5 buts et BTTS) quand ils sont nets
+        k, p = max(options, key=lambda o: o[1] + (0.25 if o[0] in ("plus25", "moins25", "btts", "pas_btts") else 0))
+        choix.append({"match": m, "marche": k, "libelle": LIBELLES_BUTS[k], "proba": p,
+                      "cote_juste": _cote(p), "cote_cible": round(1.05 / p, 2)})
+    choix.sort(key=lambda c: -c["proba"])
+    vus, res = set(), []
+    for c in choix:
+        if c["match"]["id"] not in vus:
+            vus.add(c["match"]["id"]); res.append(c)
+    return res[:n]

@@ -7,6 +7,7 @@ from datetime import datetime
 from html import escape
 from zoneinfo import ZoneInfo
 
+from moteur import LIBELLES_BUTS
 from ecussons import championnat, couleur_ligue, ecusson
 
 PARIS = ZoneInfo("Europe/Paris")
@@ -96,6 +97,7 @@ def carte_value(m):
       {affiche(m, grand=True)}
       {barre_probas(m, v["court"])}
       {bloc_stats(m)}
+      {bloc_buts(m)}
       <div class="pari">
         <div><div class="lbl">Le pari</div><div class="choix">{e(v["issue"])}</div></div>
         <div class="cote"><div class="lbl">Cote</div><div class="num">{v["cote"]:.2f}</div>
@@ -124,6 +126,7 @@ def ligne_match(m):
         {affiche(m)}
         {barre_probas(m, vcourt)}
         {bloc_stats(m, compact=True)}
+        {bloc_buts(m, compact=True)}
         <div class="cases">{cases}</div>
       </div>"""
 
@@ -173,6 +176,41 @@ def carte_combine(c, jour=""):
         <div><span>Avantage</span><b class="{'vert' if c['edge'] > 0 else 'rouge'}">{pct(c["edge"], True)}</b></div>
       </div>
       <p class="src combo-note">{note}</p>
+      {BOUTON_JOUE}
+    </article>"""
+
+
+def bloc_buts(m, compact=False):
+    b = m.get("buts")
+    if not b:
+        return ""
+    nb = lambda v: f"{v:.1f}".replace(".", ",")
+    if compact:
+        return f"""<div class="buts compact">⚽ <b>{nb(b["total"])}</b> buts attendus · +2,5&nbsp;: <b>{pct(b["plus25"])}</b> · Les 2 marquent&nbsp;: <b>{pct(b["btts"])}</b></div>"""
+    score = " · ".join(f"{e(sc)} <small>{pct(p)}</small>" for sc, p in b["scores"])
+    return f"""<div class="buts">
+        <div class="buts-t">⚽ Les buts <small>{nb(b["lh"])} – {nb(b["la"])} attendus</small></div>
+        <div class="buts-g">
+          <div><span>+1,5</span><b>{pct(b["plus15"])}</b></div>
+          <div><span>+2,5</span><b>{pct(b["plus25"])}</b></div>
+          <div><span>+3,5</span><b>{pct(b["plus35"])}</b></div>
+          <div><span>Les 2 marquent</span><b>{pct(b["btts"])}</b></div>
+        </div>
+        <div class="buts-s">Scores les plus probables : {score}</div>
+      </div>"""
+
+
+def carte_buts(c, jour):
+    m = c["match"]
+    pari = {"type": "buts", "id": m["id"], "date": m["debut"], "match": m["domicile"] + " – " + m["exterieur"],
+            "pari": c["libelle"], "marche": c["marche"], "cote": c["cote_cible"], "bk": "ton bookmaker"}
+    return f"""
+    <article class="carte prono-buts" style="--lig:{couleur_ligue(m.get('sport_key', ''))}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
+      <div class="meta">{tag_champ(m)}<span class="badge c-bonne">{pct(c["proba"])} de chances</span></div>
+      {affiche(m)}
+      <div class="pb-pari"><b>{e(c["libelle"])}</b>
+        <span>Cote juste <b>{c["cote_juste"]:.2f}</b> · joue-le seulement si ton bookmaker propose <b class="vert">{c["cote_cible"]:.2f} ou plus</b></span></div>
+      {bloc_buts(m, compact=True)}
       {BOUTON_JOUE}
     </article>"""
 
@@ -339,6 +377,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
       {affiche(choc, grand=True)}
       {barre_probas(choc)}
       {bloc_stats(choc)}
+      {bloc_buts(choc)}
       <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
     </article>"""
 
@@ -386,6 +425,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
       {affiche(choc, grand=True)}
       {barre_probas(choc)}
       {bloc_stats(choc)}
+      {bloc_buts(choc)}
       <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
     </article>"""
         combos_j = "".join(carte_combine(c, j["cle"]) for c in j["combos"]) or carte_combine(None)
@@ -394,6 +434,10 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
 {combos_j}
 <h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes_j}
+<h2>⚽ Pronos buts <small>calculés à partir des cotes du marché</small></h2>
+<p class="note">L'agent n'a pas les cotes des bookmakers sur ces paris : il te donne la <b>cote juste</b>.
+Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup ; sinon, passe.</p>
+{"".join(carte_buts(c, j["cle"]) for c in j.get("buts", [])) or '<p class="vide">Pas de prono buts assez net ce jour-là.</p>'}
 </div>"""
 
     bandeau_demo = '<div class="demo">Mode démo : données fictives</div>' if infos.get("demo") else ""
@@ -778,6 +822,22 @@ header.reduit h1 {{ font-size:30px; }}
 .semaine button.on span, .semaine button.on small {{ color:var(--accent-ink); }}
 .jour-mot[hidden], .jour-corps[hidden], #styles button[hidden] {{ display:none !important; }}
 .jour-mot .mot {{ margin-top:0; }}
+.buts {{ background:var(--surface2); border-radius:12px; padding:9px 10px; margin:-2px 0 12px; }}
+.buts-t {{ font:700 15px "Barlow Condensed",sans-serif; display:flex; justify-content:space-between; align-items:baseline; }}
+.buts-t small {{ font:500 12px Inter,sans-serif; color:var(--muted); }}
+.buts-g {{ display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-top:6px; }}
+.buts-g div {{ background:var(--surface); border-radius:8px; padding:5px 2px; text-align:center; }}
+.buts-g span {{ display:block; font-size:10px; color:var(--muted); white-space:nowrap; }}
+.buts-g b {{ font:700 17px "Barlow Condensed",sans-serif; color:#fbbf24; }}
+.buts-s {{ font-size:12px; color:var(--muted); margin-top:6px; }}
+.buts-s small {{ opacity:.75; }}
+.buts.compact {{ background:none; padding:0; margin:0 0 8px; font-size:12px; color:var(--muted); }}
+.buts.compact b {{ color:var(--text); white-space:nowrap; }}
+.prono-buts::before {{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:linear-gradient(90deg,#fbbf24,#f97316); }}
+.pb-pari {{ background:linear-gradient(120deg, rgba(251,191,36,.16), rgba(249,115,22,.10)); border:1px solid rgba(251,191,36,.45);
+  border-radius:12px; padding:10px 12px; margin-bottom:10px; }}
+.pb-pari > b {{ display:block; font:700 22px "Barlow Condensed",sans-serif; }}
+.pb-pari span {{ font-size:13px; color:var(--muted); }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -994,6 +1054,13 @@ function enregistrerJoue(btn) {{
 }}
 function statutMP(p) {{
   if (p.manuel) return p.manuel;
+  if (p.type === "buts") {{
+    const r = RESULTATS[p.id];
+    if (!r || !r.score) return "en attente";
+    const [d, x] = r.score.split("-").map(Number), t = d + x, btts = d > 0 && x > 0;
+    const ok = {{ plus15: t >= 2, moins15: t < 2, plus25: t >= 3, moins25: t < 3, plus35: t >= 4, moins35: t < 4, btts: btts, pas_btts: !btts }}[p.marche];
+    return ok === undefined ? "en attente" : ok ? "gagné" : "perdu";
+  }}
   if (p.type === "combine") {{
     const r = p.jambes.map(j => RESULTATS[j.id] ? RESULTATS[j.id].res === j.court : null);
     if (r.includes(false)) return "perdu";
@@ -1014,9 +1081,10 @@ function suppr(uid) {{ if (confirm("Supprimer ce pari de ta liste ?")) {{ ecrire
 function afficherMP() {{
   const l = lireMP(), z = document.getElementById("mes-paris");
   if (!l.length) return;
-  let mises = 0, gains = 0, n = 0, g = 0, att = 0, lignes = "";
+  let mises = 0, gains = 0, n = 0, g = 0, att = 0, engage = 0, lignes = "";
   l.slice().sort((a, b) => b.joueLe.localeCompare(a.joueLe)).forEach(p => {{
     const st = statutMP(p), gain = st === "gagné" ? p.mise * (p.cote - 1) : st === "perdu" ? -p.mise : 0;
+    engage += p.mise;
     if (st === "en attente") att++; else {{ n++; mises += p.mise; gains += gain; if (st === "gagné") g++; }}
     const cls = {{ "gagné": "ok", "perdu": "bad" }}[st] || "att";
     const esc = t => String(t).replace(/[&<>"]/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }})[c]);
@@ -1029,7 +1097,7 @@ function afficherMP() {{
   const c = gains >= 0 ? "vert" : "rouge";
   z.innerHTML = `<div class="bilan"><div><span>Paris réglés</span><b>${{n}}</b></div><div><span>Gagnés</span><b>${{g}}</b></div>
     <div><span>Bénéfice</span><b class="${{c}}">${{(gains >= 0 ? "+" : "") + fmt(gains)}}</b></div><div><span>Rendement</span><b class="${{c}}">${{roi}}</b></div></div>
-    <p class="note">${{att}} en attente · misé au total ${{fmt(mises)}}. Réglés tout seuls avec les scores ; ✓ ✗ pour corriger à la main.</p>
+    <p class="note">${{att}} en attente · misé au total ${{fmt(engage)}}. Réglés tout seuls avec les scores ; ✓ ✗ pour corriger à la main.</p>
     <table class="hist">${{lignes}}</table>`;
 }}
 marquerJoues(); afficherMP();
