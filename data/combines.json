@@ -1,33 +1,33 @@
 [
  {
   "jour": "2026-10-11",
-  "bookmaker": "Betclic (FR)",
-  "cote": 2.57,
-  "proba": 0.3475,
+  "bookmaker": "PMU (FR)",
+  "cote": 4.09,
+  "proba": 0.2278,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
    {
-    "id": "34f584ab922e220dc4f3b81217959d6d",
-    "sport_key": "soccer_france_ligue_one",
-    "date": "2026-10-11T15:15:00Z",
-    "domicile": "Rennes",
-    "exterieur": "Auxerre",
-    "pari": "Victoire Rennes",
+    "id": "a8801462cb97a43570956e4b3ef4aedf",
+    "sport_key": "soccer_germany_bundesliga",
+    "date": "2026-10-11T13:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Borussia Monchengladbach",
+    "pari": "Victoire 1. FC Köln",
     "court": "1",
-    "cote": 1.42
+    "cote": 1.93
    },
    {
-    "id": "1cf64166dda1e0da8b325161deb39662",
-    "sport_key": "soccer_italy_serie_a",
-    "date": "2026-10-11T16:00:00Z",
-    "domicile": "Sassuolo",
-    "exterieur": "AC Milan",
-    "pari": "Victoire AC Milan",
-    "court": "2",
-    "cote": 1.81
+    "id": "5d3606630a2d3a218a6340d082c1bdc6",
+    "sport_key": "soccer_france_ligue_one",
+    "date": "2026-10-11T13:00:00Z",
+    "domicile": "Nice",
+    "exterieur": "Strasbourg",
+    "pari": "Victoire Nice",
+    "court": "1",
+    "cote": 2.12
    }
   ]
  }
