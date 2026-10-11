@@ -2,7 +2,7 @@
  {
   "jour": "2026-10-11",
   "bookmaker": "Betclic (FR)",
-  "cote": 4.24,
+  "cote": 4.18,
   "proba": 0.2119,
   "conseille": false,
   "mise": 10,
@@ -17,7 +17,7 @@
     "exterieur": "Everton",
     "pari": "Victoire Everton",
     "court": "2",
-    "cote": 2.1
+    "cote": 2.07
    },
    {
     "id": "a8801462cb97a43570956e4b3ef4aedf",
