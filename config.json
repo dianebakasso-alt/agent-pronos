@@ -1,0 +1,40 @@
+{
+  "bankroll_euros": 200,
+  "mise_max_pourcent": 2,
+  "fraction_kelly": 0.25,
+
+  "edge_minimum_pourcent": 3,
+  "cote_max": 6.0,
+  "bookmakers_minimum": 4,
+  "heures_a_venir": 36,
+
+  "bookmakers_interroges": ["pinnacle", "betclic_fr", "winamax_fr", "unibet_fr", "pmu_fr",
+                           "netbet_fr", "betfair_ex_eu", "onexbet", "marathonbet", "sport888"],
+  "bookmakers_jouables": ["betclic_fr", "winamax_fr", "unibet_fr", "pmu_fr", "netbet_fr"],
+  "bookmaker_reference": "pinnacle",
+
+  "credits_max_par_jour": 12,
+  "championnats_prioritaires": [
+    "soccer_france_ligue_one",
+    "soccer_epl",
+    "soccer_spain_la_liga",
+    "soccer_italy_serie_a",
+    "soccer_germany_bundesliga",
+    "soccer_uefa_champs_league",
+    "soccer_uefa_europa_league",
+    "soccer_uefa_europa_conference_league",
+    "soccer_france_ligue_two",
+    "soccer_netherlands_eredivisie",
+    "soccer_portugal_primeira_liga",
+    "soccer_efl_champ",
+    "soccer_belgium_first_div",
+    "soccer_turkey_super_league",
+    "soccer_brazil_campeonato",
+    "soccer_argentina_primera_division",
+    "soccer_usa_mls"
+  ],
+
+  "analyse_ia": true,
+  "analyse_ia_max_matchs": 5,
+  "modele_ia": "claude-sonnet-5-5"
+}

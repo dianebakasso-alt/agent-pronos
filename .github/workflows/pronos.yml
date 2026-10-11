@@ -1,0 +1,49 @@
+name: Pronos du jour
+
+on:
+  schedule:
+    - cron: "47 4 * * *"   # tous les jours vers 6h45 (heure de Paris en été, 5h45 en hiver)
+  workflow_dispatch:        # bouton "Run workflow" pour lancer à la main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pronos
+  cancel-in-progress: false
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Lancer l'agent
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python agent.py
+
+      - name: Sauvegarder l'historique des paris
+        run: |
+          git config user.name "agent-pronos"
+          git config user.email "agent-pronos@users.noreply.github.com"
+          git add data/historique.json
+          git diff --cached --quiet || git commit -m "Historique du $(date +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploiement
+        uses: actions/deploy-pages@v4
