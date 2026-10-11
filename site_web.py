@@ -941,6 +941,20 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 .mt-v {{ margin-top:8px; font-size:13px; font-weight:600; padding:6px 8px; border-radius:8px; background:var(--surface2); }}
 .mt-v.ok {{ color:var(--ok); }} .mt-v.moy {{ color:var(--warn); }} .mt-v.bad {{ color:var(--bad); }} .mt-v.att {{ color:var(--muted); }}
 .mt-ia {{ font-style:italic; }}
+.mt-exp {{ margin-top:8px; font-size:13px; padding:8px 10px; border-radius:10px; background:var(--surface2); border-left:3px solid var(--warn); }}
+.mt-exp.ok {{ border-color:var(--ok); }} .mt-exp.eviter {{ border-color:var(--bad); }}
+.mt-expg {{ background:var(--surface); border-radius:16px; padding:14px; margin-bottom:12px; border:2px solid var(--warn);
+  background:linear-gradient(var(--surface),var(--surface)) padding-box, linear-gradient(120deg,#a855f7,#ec4899) border-box; border-color:transparent; }}
+.mt-expg p {{ font-size:14px; margin-top:6px; }}
+.mt-expg small {{ display:block; color:var(--muted); font-size:11px; margin-top:6px; }}
+.mt-expg .mt-t {{ font-size:22px; }}
+.mt-cle {{ background:var(--surface); border:2px dashed #a855f7; border-radius:16px; padding:14px; margin:6px 0 10px; }}
+.mt-cle[hidden] {{ display:none; }}
+.mt-cle p {{ font-size:13px; color:var(--muted); margin:6px 0 10px; }}
+.mt-cle code {{ color:var(--text); }}
+.mt-cle input {{ width:100%; background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:10px; padding:10px; font:500 15px Inter,sans-serif; }}
+.btn-plein[disabled] {{ opacity:.7; }}
+.note a {{ color:var(--accent); }}
 .mt-act {{ display:flex; flex-direction:column; gap:8px; margin-top:6px; }}
 .mt-act button:not(.btn-plein) {{ background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:12px; padding:10px; font:600 14px Inter,sans-serif; cursor:pointer; }}
 .barre-nav button {{ font-size:10px; }}
@@ -1472,6 +1486,7 @@ function dessinerTicket() {{
     return;
   }}
   let chance = 1, cote = 1, coteConnue = true, juste = 1, lignes = "", alertes = [], tousEdge = [];
+  const AV = avisT(), ICO = {{ ok: "✅", prudence: "⚠️", eviter: "❌" }};
   const vus = {{}};
   l.forEach((s, k) => {{
     const m = MATCHS[s.id], v = selection(s);
@@ -1490,7 +1505,8 @@ function dessinerTicket() {{
         <label>Ta cote <input type="number" inputmode="decimal" step="0.01" min="1" value="${{s.cote || (v.buts ? "" : v.coteMarche)}}" placeholder="${{v.buts ? (v.coteJuste * 1.05).toFixed(2) + "+" : ""}}" onchange="coteT(${{k}}, this.value)"></label></div>
       ${{v.buts ? "" : `<small>Meilleure cote : ${{v.coteMarche.toFixed(2)}} chez ${{v.bk}}</small>`}}
       <div class="mt-v ${{vd.cls}}">${{vd.txt}}</div>
-      ${{m.avis ? `<small class="mt-ia">🤖 ${{m.avis}}</small>` : ""}}
+      ${{(() => {{ const a = AV && (AV.selections || []).find(x => +x.n === k + 1);
+        return a ? `<div class="mt-exp ${{a.avis}}">🤖 ${{ICO[a.avis] || "⚠️"}} ${{a.texte}}</div>` : (m.avis ? `<small class="mt-ia">🤖 ${{m.avis}}</small>` : ""); }})()}}
     </div>`;
   }});
   Object.entries(vus).forEach(([id, n]) => {{ if (n > 1) alertes.push(`Deux paris sur ${{MATCHS[id].dom}} – ${{MATCHS[id].ext}} : beaucoup de bookmakers refusent de les combiner.`); }});
@@ -1522,14 +1538,25 @@ function dessinerTicket() {{
       ${{alertes.length ? `<ul class="mt-al">${{alertes.map(a => `<li>${{a}}</li>`).join("")}}</ul>` : ""}}
       ${{bkTxt}}
     </section>
+    ${{AV && AV.global ? `<section class="mt-expg ${{AV.global.avis}}"><div class="mt-t">🤖 ${{ICO[AV.global.avis] || "⚠️"}} L'avis de l'expert</div>
+      <p>${{AV.global.texte}}</p>${{AV.global.changer ? `<p><b>Ce qu'il changerait :</b> ${{AV.global.changer}}</p>` : ""}}
+      <small>Actu lue le ${{new Date(AV.quand).toLocaleString("fr-FR", {{ day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }})}}</small></section>` : ""}}
     ${{lignes}}
+    <section class="mt-cle" id="mt-cle" hidden>
+      <b>🔑 Une seule fois : ta clé Anthropic</b>
+      <p>Pour que l'expert réponde ici, colle ta clé (elle commence par <code>sk-ant-</code>). Elle reste <b>uniquement sur ce téléphone</b> : elle n'est jamais publiée sur le site ni sur GitHub.
+      Crée-la sur <b>console.anthropic.com</b> → Clés API. Conseil : fixe une limite de dépense mensuelle sur ton compte.</p>
+      <input id="mt-cle-in" type="password" placeholder="sk-ant-…" autocomplete="off">
+      <button class="btn-plein" onclick="enregistrerCle()">Enregistrer et demander l'avis</button>
+    </section>
     <div class="mt-act">
-      <button class="btn-plein" onclick="expertIA()">🤖 Demander l'avis de l'expert sur l'actu</button>
+      <button class="btn-plein" onclick="expertIA()" ${{expertEnCours ? "disabled" : ""}}>${{expertEnCours ? "⏳ L'expert lit l'actu… (30 s à 1 min)" : AV ? "🔄 Redemander l'avis de l'expert" : "🤖 Demander l'avis de l'expert sur l'actu"}}</button>
       <button onclick="copierT()">📋 Copier le ticket</button>
       <button onclick="jouerT(${{coteConnue ? cote.toFixed(2) : (juste * 1.05).toFixed(2)}})">✍️ J'ai joué ce ticket</button>
       <button onclick="if (confirm('Vider ton ticket ?')) {{ ecrireT([]); dessinerTicket(); }}">🗑 Vider</button>
     </div>
-    <p class="note">L'avis sur l'actu (blessés, compos, forme, pronostiqueurs) s'ouvre dans Claude avec ton ticket déjà écrit : rien n'est dépensé tant que tu ne le demandes pas.</p>`;
+    <p class="note">L'expert lit l'actu (blessés, compos, forme, pronostiqueurs) seulement quand tu le demandes : environ quelques centimes par avis.
+      ${{cleIA() ? `<a href="#" onclick="oublierCle(); return false">Supprimer ma clé de ce téléphone</a> · ` : ""}}<a href="#" onclick="expertDansClaude(); return false">Ouvrir plutôt dans Claude</a></p>`;
 }}
 function retirerT(k) {{ const l = lireT(); l.splice(k, 1); ecrireT(l); dessinerTicket(); }}
 function coteT(k, v) {{ const l = lireT(); const c = parseFloat(String(v).replace(",", ".")); l[k].cote = c > 1 ? c : undefined; ecrireT(l); dessinerTicket(); }}
@@ -1540,10 +1567,56 @@ function texteTicket() {{
     return `${{k + 1}}. ${{m.dom}} – ${{m.ext}} (${{m.champ}}, ${{d}}) : ${{v.lib}}${{v.cote ? " à " + v.cote.toFixed(2) : ""}}`;
   }}).filter(Boolean).join("\\n");
 }}
+// ---- 🤖 l'expert lit l'actu, directement dans l'appli (clé gardée sur ce téléphone uniquement)
+const cleIA = () => {{ try {{ return localStorage.getItem("cle-ia") || ""; }} catch (e) {{ return ""; }} }};
+const sigT = () => JSON.stringify(lireT().map(s => [s.id, s.choix]));
+const avisT = () => {{ try {{ const a = JSON.parse(localStorage.getItem("avis-ticket") || "null"); return a && a.sig === sigT() ? a : null; }} catch (e) {{ return null; }} }};
+let expertEnCours = false;
 function expertIA() {{
+  if (!cleIA()) {{ document.getElementById("mt-cle").hidden = false; document.getElementById("mt-cle").scrollIntoView({{ behavior: "smooth", block: "center" }}); return; }}
+  lancerExpert();
+}}
+function enregistrerCle() {{
+  const v = document.getElementById("mt-cle-in").value.trim();
+  if (!v.startsWith("sk-ant-")) {{ toast("Cette clé ne ressemble pas à une clé Anthropic (sk-ant-…)", 3500); return; }}
+  try {{ localStorage.setItem("cle-ia", v); }} catch (e) {{}}
+  document.getElementById("mt-cle").hidden = true; toast("🔑 Clé enregistrée sur ce téléphone"); lancerExpert();
+}}
+function oublierCle() {{ try {{ localStorage.removeItem("cle-ia"); }} catch (e) {{}} toast("Clé supprimée de ce téléphone"); dessinerTicket(); }}
+async function lancerExpert() {{
+  if (expertEnCours || !lireT().length) return;
+  expertEnCours = true; dessinerTicket();
+  const sig = sigT();
+  const consigne = "Tu es un pronostiqueur football expérimenté et prudent. Voici le ticket combiné que je veux jouer :\\n" + texteTicket() +
+    "\\n\\nCherche sur le web les infos les plus récentes pour chaque match (compositions probables, blessés et suspendus, forme, enjeu, déclarations des coachs, avis des pronostiqueurs)." +
+    "\\nRéponds UNIQUEMENT avec ce JSON, en français, phrases courtes :" +
+    '\\n{{"selections":[{{"n":1,"avis":"ok|prudence|eviter","texte":"2 phrases"}}],"global":{{"avis":"ok|prudence|eviter","texte":"2 phrases","changer":"ce que tu changerais, ou vide"}}}}';
+  try {{
+    const r = await fetch("https://api.anthropic.com/v1/messages", {{
+      method: "POST",
+      headers: {{ "x-api-key": cleIA(), "anthropic-version": "2023-06-01", "content-type": "application/json",
+                 "anthropic-dangerous-direct-browser-access": "true" }},
+      body: JSON.stringify({{ model: "claude-sonnet-5-5", max_tokens: 3000,
+        tools: [{{ type: "web_search_20250305", name: "web_search", max_uses: 6 }}],
+        messages: [{{ role: "user", content: consigne }}] }})
+    }});
+    const j = await r.json();
+    if (!r.ok) throw new Error((j.error && j.error.message) || ("erreur " + r.status));
+    const t = (j.content || []).filter(x => x.type === "text").map(x => x.text).join("");
+    const avis = JSON.parse(t.slice(t.indexOf("{{"), t.lastIndexOf("}}") + 1));
+    try {{ localStorage.setItem("avis-ticket", JSON.stringify({{ sig, ...avis, quand: new Date().toISOString() }})); }} catch (e) {{}}
+    toast("🤖 L'expert a rendu son avis");
+  }} catch (e) {{
+    const msg = String(e.message || e);
+    if (/api.key|authentication|invalid x-api-key/i.test(msg)) {{ try {{ localStorage.removeItem("cle-ia"); }} catch (_) {{}} toast("🔑 Clé refusée : colle une nouvelle clé.", 4000); }}
+    else if (/credit|billing/i.test(msg)) toast("💳 Plus de crédit sur ton compte Anthropic.", 4000);
+    else toast("😕 L'expert n'a pas pu répondre : " + msg.slice(0, 90), 5000);
+  }}
+  expertEnCours = false; dessinerTicket();
+}}
+function expertDansClaude() {{
   const q = "Tu es un pronostiqueur football expérimenté et prudent. Voici le ticket combiné que je veux jouer :\\n" + texteTicket() +
-    "\\n\\nCherche sur le web les infos les plus récentes pour chaque match (compositions probables, blessés et suspendus, forme, enjeu, déclarations des coachs, avis des pronostiqueurs). " +
-    "Pour chaque sélection, dis-moi si mon choix tient la route (✅ / ⚠️ / ❌) en 2 phrases, puis donne un verdict global et ce que tu changerais. Réponds en français, simplement.";
+    "\\n\\nCherche sur le web les infos les plus récentes pour chaque match et dis-moi pour chacun si mon choix tient la route (✅ / ⚠️ / ❌), puis un verdict global. Réponds en français, simplement.";
   window.open("https://claude.ai/new?q=" + encodeURIComponent(q), "_blank");
 }}
 function copierT() {{
