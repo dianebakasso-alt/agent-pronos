@@ -121,8 +121,13 @@ def ligne_match(m):
     cases = ""
     for i in m["issues"]:
         cls = "case val" if i["court"] == vcourt else "case"
-        cases += f"""<div class="{cls}"><span class="k">{i["court"]}</span>
-          <b>{i["cote"]:.2f}</b><span class="p">{pct(i["proba"])}</span></div>"""
+        cases += f"""<button class="{cls}" data-ajout="{e(m["id"])}|{i["court"]}"><span class="k">{i["court"]}</span>
+          <b>{i["cote"]:.2f}</b><span class="p">{pct(i["proba"])}</span></button>"""
+    buts = ""
+    if m.get("buts"):
+        buts = '<div class="ajout-buts">' + "".join(
+            f'<button data-ajout="{e(m["id"])}|{k}">{lbl}</button>'
+            for k, lbl in (("plus25", "+2,5 buts"), ("moins25", "−2,5 buts"), ("btts", "Les 2 marquent"), ("pas_btts", "Pas les 2"))) + "</div>"
     return f"""
       <div class="match">
         {affiche(m)}
@@ -130,6 +135,7 @@ def ligne_match(m):
         {bloc_stats(m, compact=True)}
         {bloc_buts(m, compact=True)}
         <div class="cases">{cases}</div>
+        {buts}
       </div>"""
 
 
@@ -476,6 +482,18 @@ Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup
 {"".join(carte_buts(c, j["cle"]) for c in j.get("buts", [])) or '<p class="vide">Pas de prono buts assez net ce jour-là.</p>'}
 </div>"""
 
+    donnees = {}
+    for m in analyses:
+        donnees[m["id"]] = {
+            "dom": m["domicile"], "ext": m["exterieur"], "ko": m["debut"],
+            "champ": championnat(m.get("sport_key", ""), m["championnat"])[1],
+            "issues": {i["court"]: {"p": round(i["proba"], 4), "c": i["cote"], "bk": i["bookmaker"], "lib": i["issue"]} for i in m["issues"]},
+            "bks": {v["titre"]: {k: v.get(k) for k in ("1", "N", "2")} for v in (m.get("cotes_bk") or {}).values()},
+            "buts": {k: round(m["buts"][k], 4) for k in ("plus15", "plus25", "plus35", "btts")} if m.get("buts") else None,
+            "avis": (m.get("avis") or {}).get("resume"),
+        }
+    donnees_json = json.dumps(donnees, ensure_ascii=False).replace("</", "<\\/")
+
     bandeau_demo = '<div class="demo">Mode démo : données fictives</div>' if infos.get("demo") else ""
     credits = ""
     if infos.get("credits_restants") is not None:
@@ -816,7 +834,7 @@ header.reduit .resume, header.reduit .mot, header.reduit .installer {{ display:n
 header.reduit {{ padding-bottom:4px; }}
 header.reduit h1 {{ font-size:30px; }}
 .barre-nav {{ position:fixed; z-index:50; left:50%; transform:translateX(-50%); bottom:calc(10px + env(safe-area-inset-bottom));
-  width:min(608px, calc(100% - 24px)); display:grid; grid-template-columns:repeat(4,1fr); gap:4px; padding:6px;
+  width:min(608px, calc(100% - 24px)); display:grid; grid-template-columns:repeat(5,1fr); gap:2px; padding:6px;
   background:color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
   border:1px solid var(--line); border-radius:22px; box-shadow:0 12px 30px -10px rgba(0,0,0,.6); }}
 .barre-nav button {{ position:relative; background:none; border:0; border-radius:16px; padding:7px 2px 6px; color:var(--muted);
@@ -900,6 +918,32 @@ header.reduit h1 {{ font-size:30px; }}
 .affiche.termine .ko-h {{ color:var(--text); }}
 .mp-live {{ display:block; font-size:12px; font-weight:600; margin-top:2px; }}
 .mp-live.ok {{ color:var(--ok); }} .mp-live.bad {{ color:var(--bad); }}
+button.case {{ border:0; color:inherit; font:inherit; cursor:pointer; text-align:left; }}
+button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !important; background:color-mix(in srgb, #ec4899 18%, var(--surface2)); }}
+.ajout-buts {{ display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-top:6px; }}
+.ajout-buts button {{ background:var(--surface2); color:var(--text); border:1px dashed var(--line); border-radius:8px; padding:6px 2px;
+  font:600 11px Inter,sans-serif; cursor:pointer; }}
+.btn-plein {{ background:var(--grad); color:var(--accent-ink); border:0; border-radius:12px; padding:11px 14px; font:700 14px Inter,sans-serif; cursor:pointer; margin-top:10px; }}
+.mt-res {{ background:var(--surface); border-radius:16px; padding:14px; margin-bottom:12px; border:2px solid var(--line); }}
+.mt-res.ok {{ border-color:var(--ok); }} .mt-res.moy {{ border-color:var(--warn); }} .mt-res.bad {{ border-color:var(--bad); }}
+.mt-t {{ font:700 26px "Barlow Condensed",sans-serif; }}
+.mt-res > p {{ color:var(--muted); font-size:14px; margin:2px 0 6px; }}
+.mt-res .grille {{ grid-template-columns:repeat(3,1fr); }}
+.mt-al {{ margin:10px 0 0 18px; font-size:13px; color:var(--warn); display:flex; flex-direction:column; gap:4px; }}
+.mt-l {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid #ec4899; border-radius:12px; padding:10px 12px; margin-bottom:8px; }}
+.mt-h {{ display:flex; justify-content:space-between; align-items:center; gap:8px; }}
+.mt-h b {{ font-size:15px; }}
+.mt-h button {{ background:var(--surface2); border:0; color:var(--muted); border-radius:8px; width:28px; height:28px; cursor:pointer; }}
+.mt-l small {{ display:block; color:var(--muted); font-size:12px; margin-top:2px; }}
+.mt-g {{ display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:8px; font-size:13px; color:var(--muted); }}
+.mt-g b {{ color:var(--text); font:700 18px "Barlow Condensed",sans-serif; }}
+.mt-g input {{ width:78px; margin-left:6px; background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:8px; padding:6px; font:600 15px Inter,sans-serif; }}
+.mt-v {{ margin-top:8px; font-size:13px; font-weight:600; padding:6px 8px; border-radius:8px; background:var(--surface2); }}
+.mt-v.ok {{ color:var(--ok); }} .mt-v.moy {{ color:var(--warn); }} .mt-v.bad {{ color:var(--bad); }} .mt-v.att {{ color:var(--muted); }}
+.mt-ia {{ font-style:italic; }}
+.mt-act {{ display:flex; flex-direction:column; gap:8px; margin-top:6px; }}
+.mt-act button:not(.btn-plein) {{ background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:12px; padding:10px; font:600 14px Inter,sans-serif; cursor:pointer; }}
+.barre-nav button {{ font-size:10px; }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -970,6 +1014,11 @@ header.reduit h1 {{ font-size:30px; }}
 <p class="vide" id="aucun" hidden>Aucun match ne correspond.</p>
 </div>
 
+<div class="onglet" id="t-ticket" hidden>
+<h2>✏️ Mon ticket <small>compose, l'expert vérifie</small></h2>
+<div id="mt"></div>
+</div>
+
 <div class="onglet" id="t-mes" hidden>
 <h2 id="mes-paris-t">✍️ Mes paris <small>enregistrés sur ce téléphone</small></h2>
 <div id="mes-paris"><p class="vide">Touche « J'ai joué ce pari » sur un pari ou un combiné : il apparaîtra ici et sera réglé tout seul.</p></div>
@@ -1002,6 +1051,7 @@ header.reduit h1 {{ font-size:30px; }}
 <nav class="barre-nav">
   <button data-t="jour" class="on"><i>🎯</i>Aujourd'hui</button>
   <button data-t="matchs"><i>📅</i>Matchs</button>
+  <button data-t="ticket"><i>✏️</i>Mon ticket<span class="pastille" id="nb-ticket" hidden></span></button>
   <button data-t="mes"><i>✍️</i>Mes paris<span class="pastille" id="nb-attente" hidden></span></button>
   <button data-t="bilan"><i>📊</i>Bilan</button>
 </nav>
@@ -1276,7 +1326,7 @@ rebours(); setInterval(rebours, 30000);
 
 // ---- ⚡ scores en direct (ESPN, lus par le téléphone toutes les 45 s)
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer";
-const DIRECT = {{}};          // mid -> {{ h, a, etat, minute, fini }}
+var DIRECT = {{}};            // mid -> {{ h, a, etat, minute, fini }}
 let directEnErreur = false;
 const affichesParMid = () => {{
   const m = {{}};
@@ -1289,7 +1339,7 @@ function mesIds() {{
   return ids;
 }}
 function resDirect(mid) {{
-  const d = DIRECT[mid];
+  const d = DIRECT && DIRECT[mid];
   if (!d || d.etat === "pre") return null;
   return {{ res: d.h > d.a ? "1" : d.h < d.a ? "2" : "N", score: d.h + "-" + d.a, fini: d.fini }};
 }}
@@ -1377,6 +1427,148 @@ async function activerAlertes() {{
 try {{ if (localStorage.getItem("alertes") === "1") document.getElementById("btn-alertes").textContent = "🔔 Alertes activées"; }} catch (e) {{}}
 majDirect(); setInterval(majDirect, 45000);
 document.addEventListener("visibilitychange", () => {{ if (!document.hidden) majDirect(); }});
+
+// ---- ✏️ Mon ticket : tu composes, l'expert vérifie
+const MATCHS = {donnees_json};
+const LIB_BUTS = {{ plus25: "Plus de 2,5 buts", moins25: "Moins de 2,5 buts", btts: "Les 2 équipes marquent", pas_btts: "Les 2 ne marquent pas" }};
+const lireT = () => {{ try {{ return JSON.parse(localStorage.getItem("mon-ticket") || "[]"); }} catch (e) {{ return []; }} }};
+const ecrireT = l => {{ try {{ localStorage.setItem("mon-ticket", JSON.stringify(l)); }} catch (e) {{}} }};
+function selection(s) {{
+  const m = MATCHS[s.id]; if (!m) return null;
+  if (["1", "N", "2"].includes(s.choix)) {{
+    const i = m.issues[s.choix];
+    return {{ lib: i.lib, p: i.p, cote: s.cote || i.c, coteMarche: i.c, bk: i.bk, buts: false }};
+  }}
+  if (!m.buts) return null;
+  const b = m.buts;
+  const p = {{ plus25: b.plus25, moins25: 1 - b.plus25, btts: b.btts, pas_btts: 1 - b.btts }}[s.choix];
+  return {{ lib: LIB_BUTS[s.choix], p, cote: s.cote || null, coteJuste: 1 / p, buts: true }};
+}}
+function ajouterAuTicket(id, choix) {{
+  let l = lireT();
+  const deja = l.findIndex(x => x.id === id && x.choix === choix);
+  if (deja >= 0) {{ l.splice(deja, 1); toast("Retiré de ton ticket"); }}
+  else {{
+    if (l.some(x => x.id === id)) toast("⚠️ Tu as déjà un pari sur ce match : vérifie que les deux vont ensemble.", 3500);
+    l.push({{ id, choix }}); toast("✅ Ajouté à « Mon ticket » (" + l.length + ")");
+  }}
+  ecrireT(l); dessinerTicket();
+}}
+function verdictSel(v) {{
+  if (v.cote == null) return {{ cls: "att", txt: `Cote juste ${{v.coteJuste.toFixed(2)}} : joue-le à ${{(v.coteJuste * 1.05).toFixed(2)}} ou plus` }};
+  const edge = v.p * v.cote - 1;
+  if (edge >= 0.03) return {{ cls: "ok", txt: `✅ Bonne valeur (${{edge >= 0 ? "+" : ""}}${{(edge * 100).toFixed(1).replace(".", ",")}} %)`, edge }};
+  if (edge >= -0.065) return {{ cls: "moy", txt: `👌 Cote correcte (${{(edge * 100).toFixed(1).replace(".", ",")}} %)`, edge }};
+  return {{ cls: "bad", txt: `⚠️ Trop cher (${{(edge * 100).toFixed(1).replace(".", ",")}} %) : la vraie cote serait ${{(1 / v.p).toFixed(2)}}`, edge }};
+}}
+function dessinerTicket() {{
+  const z = document.getElementById("mt"), l = lireT();
+  const pt = document.getElementById("nb-ticket"); pt.textContent = l.length; pt.hidden = !l.length;
+  document.querySelectorAll("[data-ajout]").forEach(b => {{ const [id, c] = b.dataset.ajout.split("|"); b.classList.toggle("pris", l.some(x => x.id === id && x.choix === c)); }});
+  if (!l.length) {{
+    z.innerHTML = `<div class="rien"><div class="sifflet">✏️</div><b>Ton ticket est vide.</b>
+      <p>Va dans <b>📅 Matchs</b> et touche <b>1, N, 2</b> ou un pari de buts sous chaque match pour l'ajouter. L'expert vérifiera chaque choix.</p>
+      <button class="btn-plein" onclick="ouvrirOnglet('matchs')">📅 Choisir des matchs</button></div>`;
+    return;
+  }}
+  let chance = 1, cote = 1, coteConnue = true, juste = 1, lignes = "", alertes = [], tousEdge = [];
+  const vus = {{}};
+  l.forEach((s, k) => {{
+    const m = MATCHS[s.id], v = selection(s);
+    if (!m || !v) {{ lignes += `<div class="mt-l"><b>Match plus disponible</b><button onclick="retirerT(${{k}})">✕</button></div>`; return; }}
+    vus[s.id] = (vus[s.id] || 0) + 1;
+    chance *= v.p; juste *= 1 / v.p;
+    if (v.cote) cote *= v.cote; else coteConnue = false;
+    const vd = verdictSel(v); if (vd.edge !== undefined) tousEdge.push(vd.edge);
+    if (vd.cls === "bad") alertes.push(`« ${{v.lib}} » (${{m.dom}} – ${{m.ext}}) est trop cher : retire-le ou cherche une meilleure cote.`);
+    if (v.p < 0.25) alertes.push(`« ${{v.lib}} » n'a que ${{Math.round(v.p * 100)}} % de chances : c'est lui qui risque de faire tomber le ticket.`);
+    const d = new Date(m.ko);
+    lignes += `<div class="mt-l">
+      <div class="mt-h"><b>${{v.buts ? "⚽" : "🎯"}} ${{v.lib}}</b><button onclick="retirerT(${{k}})" aria-label="Retirer">✕</button></div>
+      <small>${{m.dom}} – ${{m.ext}} · ${{m.champ}} · ${{d.toLocaleDateString("fr-FR", {{ weekday: "short", day: "numeric" }})}} ${{d.toLocaleTimeString("fr-FR", {{ hour: "2-digit", minute: "2-digit" }})}}</small>
+      <div class="mt-g"><span>Chance <b>${{Math.round(v.p * 100)}} %</b></span>
+        <label>Ta cote <input type="number" inputmode="decimal" step="0.01" min="1" value="${{s.cote || (v.buts ? "" : v.coteMarche)}}" placeholder="${{v.buts ? (v.coteJuste * 1.05).toFixed(2) + "+" : ""}}" onchange="coteT(${{k}}, this.value)"></label></div>
+      ${{v.buts ? "" : `<small>Meilleure cote : ${{v.coteMarche.toFixed(2)}} chez ${{v.bk}}</small>`}}
+      <div class="mt-v ${{vd.cls}}">${{vd.txt}}</div>
+      ${{m.avis ? `<small class="mt-ia">🤖 ${{m.avis}}</small>` : ""}}
+    </div>`;
+  }});
+  Object.entries(vus).forEach(([id, n]) => {{ if (n > 1) alertes.push(`Deux paris sur ${{MATCHS[id].dom}} – ${{MATCHS[id].ext}} : beaucoup de bookmakers refusent de les combiner.`); }});
+  if (l.length > 4) alertes.push(`${{l.length}} matchs : la marge du bookmaker se multiplie à chaque match ajouté. 2 à 4 matchs, c'est plus sain.`);
+  // meilleur bookmaker unique pour les paris 1-N-2
+  let bkTxt = "";
+  const seulement1n2 = l.every(s => ["1", "N", "2"].includes(s.choix));
+  if (seulement1n2) {{
+    const noms = new Set(); l.forEach(s => Object.keys((MATCHS[s.id] || {{}}).bks || {{}}).forEach(n => noms.add(n)));
+    const offres = [...noms].map(n => [n, l.reduce((c, s) => c * (((MATCHS[s.id] || {{}}).bks || {{}})[n] || {{}})[s.choix] || NaN, 1)]).filter(x => x[1] > 1).sort((a, b) => b[1] - a[1]);
+    if (offres.length) bkTxt = `<p class="note">🏆 Meilleur bookmaker pour tout le ticket : <b>${{offres[0][0]}} à ${{offres[0][1].toFixed(2)}}</b>${{offres[1] ? ` · puis ${{offres[1][0]}} à ${{offres[1][1].toFixed(2)}}` : ""}}.</p>`;
+  }}
+  const edgeT = coteConnue ? chance * cote - 1 : null;
+  let verdict;
+  if (chance < 0.05) verdict = ["bad", "🎰 Loterie", `Seulement ${{(chance * 100).toFixed(1).replace(".", ",")}} % de chances : à peine 1 fois sur ${{Math.round(1 / chance)}}. Mise très petit, ou retire un match.`];
+  else if (edgeT === null) verdict = ["moy", "🔍 À vérifier", `Entre les cotes de ton bookmaker pour les paris de buts : le ticket vaut le coup si sa cote totale atteint <b>${{(juste * 1.05).toFixed(2)}}</b>.`];
+  else if (edgeT >= 0.05) verdict = ["ok", "✅ Très bon ticket", "Les cotes paient plus que le vrai risque. L'expert valide."];
+  else if (edgeT >= 0) verdict = ["ok", "👍 Bon ticket", "Prix juste, légèrement en ta faveur."];
+  else if (edgeT >= -0.10) verdict = ["moy", "😐 Ticket moyen", "Le bookmaker garde sa marge habituelle : jouable pour le plaisir, pas rentable sur la durée."];
+  else verdict = ["bad", "❌ À éviter", "Trop cher par rapport au vrai risque : sur la durée, ce genre de ticket fait perdre."];
+  z.innerHTML = `
+    <section class="mt-res ${{verdict[0]}}">
+      <div class="mt-t">${{verdict[1]}}</div><p>${{verdict[2]}}</p>
+      <div class="chance"><div class="chance-b"><span style="width:${{Math.max(3, Math.round(chance * 100))}}%"></span></div>
+        <b>${{Math.round(chance * 100)}} %</b><small>de chances que ça passe · 1 fois sur ${{Math.max(1, Math.round(1 / chance))}}</small></div>
+      <div class="grille"><div><span>Matchs</span><b>${{l.length}}</b></div>
+        <div><span>Cote totale</span><b>${{coteConnue ? cote.toFixed(2) : "?"}}</b></div>
+        <div><span>Cote juste</span><b>${{juste.toFixed(2)}}</b></div></div>
+      ${{alertes.length ? `<ul class="mt-al">${{alertes.map(a => `<li>${{a}}</li>`).join("")}}</ul>` : ""}}
+      ${{bkTxt}}
+    </section>
+    ${{lignes}}
+    <div class="mt-act">
+      <button class="btn-plein" onclick="expertIA()">🤖 Demander l'avis de l'expert sur l'actu</button>
+      <button onclick="copierT()">📋 Copier le ticket</button>
+      <button onclick="jouerT(${{coteConnue ? cote.toFixed(2) : (juste * 1.05).toFixed(2)}})">✍️ J'ai joué ce ticket</button>
+      <button onclick="if (confirm('Vider ton ticket ?')) {{ ecrireT([]); dessinerTicket(); }}">🗑 Vider</button>
+    </div>
+    <p class="note">L'avis sur l'actu (blessés, compos, forme, pronostiqueurs) s'ouvre dans Claude avec ton ticket déjà écrit : rien n'est dépensé tant que tu ne le demandes pas.</p>`;
+}}
+function retirerT(k) {{ const l = lireT(); l.splice(k, 1); ecrireT(l); dessinerTicket(); }}
+function coteT(k, v) {{ const l = lireT(); const c = parseFloat(String(v).replace(",", ".")); l[k].cote = c > 1 ? c : undefined; ecrireT(l); dessinerTicket(); }}
+function texteTicket() {{
+  return lireT().map((s, k) => {{
+    const m = MATCHS[s.id], v = selection(s); if (!m || !v) return "";
+    const d = new Date(m.ko).toLocaleString("fr-FR", {{ weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }});
+    return `${{k + 1}}. ${{m.dom}} – ${{m.ext}} (${{m.champ}}, ${{d}}) : ${{v.lib}}${{v.cote ? " à " + v.cote.toFixed(2) : ""}}`;
+  }}).filter(Boolean).join("\\n");
+}}
+function expertIA() {{
+  const q = "Tu es un pronostiqueur football expérimenté et prudent. Voici le ticket combiné que je veux jouer :\\n" + texteTicket() +
+    "\\n\\nCherche sur le web les infos les plus récentes pour chaque match (compositions probables, blessés et suspendus, forme, enjeu, déclarations des coachs, avis des pronostiqueurs). " +
+    "Pour chaque sélection, dis-moi si mon choix tient la route (✅ / ⚠️ / ❌) en 2 phrases, puis donne un verdict global et ce que tu changerais. Réponds en français, simplement.";
+  window.open("https://claude.ai/new?q=" + encodeURIComponent(q), "_blank");
+}}
+function copierT() {{
+  const t = "🎟️ Mon ticket Prono Malin\\n" + texteTicket();
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => toast("📋 Ticket copié"), () => prompt("Copie ton ticket :", t));
+}}
+function jouerT(coteDefaut) {{
+  const l = lireT(); if (!l.length) return;
+  const mise = parseFloat(String(prompt("Combien as-tu misé (€) ?", "") || "").replace(",", "."));
+  if (!(mise > 0)) return;
+  const cote = parseFloat(String(prompt("Cote totale obtenue chez ton bookmaker ?", coteDefaut) || "").replace(",", "."));
+  if (!(cote > 1)) return;
+  const premiers = l.map(s => MATCHS[s.id]).filter(Boolean);
+  const mp = lireMP();
+  mp.push({{ type: "combine", id: "mon-ticket-" + Date.now(), date: premiers[0] ? premiers[0].ko : "", pari: "Mon ticket · " + l.length + " matchs",
+    match: premiers.map(m => m.dom + " – " + m.ext).join(" + "), cote, mise, bk: "ton bookmaker",
+    jambes: l.map(s => ({{ id: s.id, pari: (selection(s) || {{}}).lib, ...(["1", "N", "2"].includes(s.choix) ? {{ court: s.choix }} : {{ marche: s.choix }}) }})),
+    uid: Date.now() + "-t", joueLe: new Date().toISOString() }});
+  ecrireMP(mp); afficherMP(); toast("✅ Ticket ajouté à « Mes paris »");
+}}
+document.addEventListener("click", ev => {{
+  const b = ev.target.closest("[data-ajout]"); if (!b) return;
+  const [id, c] = b.dataset.ajout.split("|"); ajouterAuTicket(id, c);
+}});
+dessinerTicket();
 
 // ---- petit message
 function toast(txt, duree = 2200) {{
