@@ -791,6 +791,8 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .styles button {{ background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:10px;
   padding:8px 4px; font:600 13px Inter,sans-serif; cursor:pointer; white-space:nowrap; }}
 .styles button.on {{ background:var(--grad-ticket); color:#fff; border-color:transparent; }}
+.styles button::before {{ content:"☐ "; opacity:.6; }}
+.styles button.on::before {{ content:"☑ "; opacity:1; }}
 .combo {{ margin-bottom:14px; cursor:pointer; transition:transform .2s, box-shadow .2s; }}
 .combo.choisi {{ transform:scale(1.01); box-shadow:0 0 0 3px color-mix(in srgb, #ec4899 45%, transparent), 0 16px 36px -14px rgba(236,72,153,.7); }}
 .combo.st-prudent {{ --grad-ticket:linear-gradient(135deg,#22d3ee 0%,#3b82f6 60%,#6366f1 100%); }}
@@ -1014,15 +1016,23 @@ if (ios && !appli && !vu) document.getElementById("installer").style.display = "
 const champ = document.getElementById("somme");
 const fmt = x => x.toFixed(2).replace(".", ",").replace(",00", "") + " €";
 let jourActif = "{jours[0]["cle"]}", cartesV = [], tickets = [];
-let styleTicket = "equilibre";
-try {{ styleTicket = localStorage.getItem("style-ticket") || "equilibre"; }} catch (e) {{}}
+// plusieurs tickets cochables à la fois (ancienne clé « style-ticket » reprise si elle existe)
+let stylesCoches = new Set(), choixPerso = false;
+try {{
+  const l = JSON.parse(localStorage.getItem("styles-tickets") || "null");
+  if (Array.isArray(l)) {{ stylesCoches = new Set(l); choixPerso = true; }}
+  else if (localStorage.getItem("style-ticket")) {{ stylesCoches = new Set([localStorage.getItem("style-ticket")]); choixPerso = true; }}
+}} catch (e) {{}}
 function majJour() {{
   const corps = document.querySelector(`.jour-corps[data-jour="${{jourActif}}"]`);
   cartesV = [...corps.querySelectorAll("article[data-poids]")].filter(c => +c.dataset.poids > 0);
   tickets = [...corps.querySelectorAll(".combo[data-style]")];
   document.querySelectorAll("#styles button").forEach(b => b.hidden = !tickets.some(t => t.dataset.style === b.dataset.s));
 }}
-const ticketChoisi = () => tickets.find(t => t.dataset.style === styleTicket) || tickets.find(t => t.dataset.style === "equilibre") || tickets[0];
+const ticketsCoches = () => {{
+  if (!choixPerso && tickets.length) return [tickets.find(t => t.dataset.style === "equilibre") || tickets[0]];
+  return tickets.filter(t => stylesCoches.has(t.dataset.style));
+}};
 function choisirJour(cle) {{
   jourActif = cle;
   document.querySelectorAll(".jour-mot, .jour-corps").forEach(el => el.hidden = el.dataset.jour !== cle);
@@ -1034,8 +1044,9 @@ function choisirJour(cle) {{
   majJour(); repartir();
 }}
 function choisirStyle(st) {{
-  styleTicket = st;
-  try {{ localStorage.setItem("style-ticket", st); }} catch (e) {{}}
+  if (!choixPerso) {{ stylesCoches = new Set(ticketsCoches().map(t => t.dataset.style)); choixPerso = true; }}
+  if (stylesCoches.has(st)) stylesCoches.delete(st); else stylesCoches.add(st);
+  try {{ localStorage.setItem("styles-tickets", JSON.stringify([...stylesCoches])); localStorage.removeItem("style-ticket"); }} catch (e) {{}}
   repartir();
 }}
 let mode = "combine";
@@ -1051,21 +1062,37 @@ function repartir() {{
   const res = document.getElementById("budget-res");
   document.querySelectorAll(".puces button").forEach(b => b.classList.toggle("on", +b.dataset.v === total));
   document.querySelectorAll(".calc").forEach(c => c.hidden = true);
-  try {{ localStorage.setItem("mise-jour", JSON.stringify({{ jour: "{d:%Y-%m-%d}", v: champ.value }})); }} catch (e) {{}}
-  if (!total) {{ res.innerHTML = "Tape la somme que tu sors aujourd'hui."; return; }}
-  document.getElementById("styles").hidden = mode !== "combine" || tickets.length < 2;
-  const eff = tickets.length ? ticketChoisi().dataset.style : "";
-  document.querySelectorAll("#styles button").forEach(b => b.classList.toggle("on", b.dataset.s === eff));
-  document.querySelectorAll(".combo[data-style]").forEach(t => t.classList.toggle("choisi", mode === "combine" && tickets.includes(t) && t.dataset.style === eff));
+  // cases cochées (même sans somme tapée)
+  const coches = ticketsCoches();
+  document.getElementById("styles").hidden = mode !== "combine" || !tickets.length;
+  const actifs = new Set(coches.map(t => t.dataset.style));
+  document.querySelectorAll("#styles button").forEach(b => b.classList.toggle("on", choixPerso ? stylesCoches.has(b.dataset.s) : actifs.has(b.dataset.s)));
+  document.querySelectorAll(".combo[data-style]").forEach(t => t.classList.toggle("choisi", mode === "combine" && coches.includes(t)));
+  if (!total) {{ res.innerHTML = mode === "combine" ? "Coche un ou plusieurs tickets, puis tape la somme que tu sors." : "Tape la somme que tu sors aujourd'hui."; return; }}
   if (mode === "combine") {{
-    const combo = ticketChoisi();
-    if (!combo) {{ res.innerHTML = "<b>Pas de combiné ce jour-là.</b> Garde tes " + fmt(total) + " en poche."; return; }}
-    const gain = total * +combo.dataset.cote;
-    const z = combo.querySelector(".calc");
-    z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(total)}}</b></div><div class="r"><span>Si ça passe, tu touches</span><b>${{fmt(gain)}}</b></div>`;
-    z.hidden = false;
-    res.innerHTML = `Tes <b>${{fmt(total)}}</b> sur le combiné <b>${{combo.dataset.nom}}</b> : si les ${{combo.querySelectorAll(".jambes li:not(.avis-j)").length}} matchs passent, tu touches <b class="gros">${{fmt(gain)}}</b>. ` +
-      `Un seul raté et tu perds ${{fmt(total)}}.` + (combo.classList.contains("risque") ? " <b>⚠️ Combiné non conseillé ce jour-là.</b>" : "");
+    if (!tickets.length) {{ res.innerHTML = "<b>Pas de combiné ce jour-là.</b> Garde tes " + fmt(total) + " en poche."; return; }}
+    if (!coches.length) {{ res.innerHTML = "👆 <b>Coche au moins un ticket</b> (Prudent, Équilibré, Gros gain, Buts, Mixte) pour répartir ta mise."; return; }}
+    // part égale par ticket, au centime ; le reste va sur le dernier
+    const centimes = Math.round(total * 100), part = Math.floor(centimes / coches.length);
+    let maxi = 0, risque = 0, estime = 0;
+    coches.forEach((t, i) => {{
+      const mise = (i === coches.length - 1 ? centimes - part * (coches.length - 1) : part) / 100;
+      const gain = mise * +t.dataset.cote;
+      maxi += gain;
+      if (t.classList.contains("risque")) risque++;
+      if (t.classList.contains("estime")) estime++;
+      const z = t.querySelector(".calc");
+      z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(mise)}}</b></div><div class="r"><span>Si ça passe, tu touches${{t.classList.contains("estime") ? " (au moins)" : ""}}</span><b>${{fmt(gain)}}</b></div>`;
+      z.hidden = false;
+    }});
+    const noms = coches.map(t => t.dataset.nom).join(" + ");
+    res.innerHTML = coches.length === 1
+      ? `Tes <b>${{fmt(total)}}</b> sur le combiné <b>${{noms}}</b> : s'il passe, tu touches <b class="gros">${{fmt(maxi)}}</b>. Un seul raté et tu perds ${{fmt(total)}}.`
+      : `<b>${{fmt(total)}}</b> répartis sur <b>${{coches.length}} tickets</b> (${{noms}}), soit ${{fmt(total / coches.length)}} chacun. ` +
+        `Si tout passe : <b class="gros">${{fmt(maxi)}}</b>. Si rien ne passe : tu perds ${{fmt(total)}}. ` +
+        `<br><small>Chaque combiné est indépendant : un raté dans un ticket ne fait perdre que ce ticket.</small>`;
+    if (estime) res.innerHTML += `<br><small>⚽🔀 Buts et Mixte : gain calculé à la cote minimum à obtenir chez ton bookmaker.</small>`;
+    if (risque) res.innerHTML += `<br><b>⚠️ ${{risque}} ticket${{risque > 1 ? "s" : ""}} non conseillé${{risque > 1 ? "s" : ""}} ce jour-là.</b>`;
     return;
   }}
   if (!cartesV.length) {{ res.innerHTML = "<b>Aucun bon pari ce jour-là.</b> Garde tes " + fmt(total) + " en poche : c'est la meilleure décision du jour."; return; }}
@@ -1083,7 +1110,8 @@ function repartir() {{
   res.innerHTML = `<b>${{fmt(total)}}</b> répartis sur <b>${{cartesV.length}} pari${{cartesV.length > 1 ? "s" : ""}}</b>. ` +
     `Si tout passe : <b class="gros">${{fmt(maxi)}}</b>. Si rien ne passe : tu perds ${{fmt(total)}}.`;
 }}
-champ.addEventListener("input", repartir);
+const sauverMise = () => {{ try {{ localStorage.setItem("mise-jour", JSON.stringify({{ jour: "{d:%Y-%m-%d}", v: champ.value }})); }} catch (e) {{}} }};
+champ.addEventListener("input", () => {{ sauverMise(); repartir(); }});
 document.querySelectorAll(".mode button").forEach(b => b.addEventListener("click", () => choisirMode(b.dataset.m)));
 document.querySelectorAll("#styles button").forEach(b => b.addEventListener("click", () => choisirStyle(b.dataset.s)));
 document.querySelectorAll(".combo[data-style]").forEach(t => t.addEventListener("click", ev => {{ if (mode === "combine" && !ev.target.closest(".joue")) choisirStyle(t.dataset.style); }}));
@@ -1091,7 +1119,7 @@ document.querySelectorAll("#semaine button").forEach(b => b.addEventListener("cl
 majJour();
 try {{ const j = sessionStorage.getItem("jour"); if (j && document.querySelector(`#semaine button[data-j="${{j}}"]`)) choisirJour(j); else choisirJour(jourActif); }} catch (e) {{ choisirJour(jourActif); }}
 document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === mode));
-document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; repartir(); }}));
+document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; sauverMise(); repartir(); }}));
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
 
 // ---- mes vrais paris (gardés sur ce téléphone, réglés avec les résultats publiés par l'agent)
