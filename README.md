@@ -1,4 +1,4 @@
-# Agent Pronos ⚽
+# Prono Malin ⚽ — ton agent de pronostics
 
 Chaque matin, l'agent :
 

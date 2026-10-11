@@ -59,7 +59,7 @@ def affiche(m, grand=False):
     jour = f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]}"
     return f"""<div class="affiche{' grande' if grand else ''}">
         <div class="eq">{ecusson(m["domicile"], t)}<span>{e(m["domicile"])}</span></div>
-        <div class="ko"><b>{d:%H:%M}</b><small>{jour}</small></div>
+        <div class="ko"><b>{d:%H:%M}</b><small>{jour}</small><em class="cd" data-ko="{e(m["debut"])}"></em></div>
         <div class="eq">{ecusson(m["exterieur"], t)}<span>{e(m["exterieur"])}</span></div>
       </div>"""
 
@@ -259,6 +259,36 @@ def section_historique(historique, b):
     <table class="hist">{lignes}</table>"""
 
 
+def mot_agent(analyses, values, combos):
+    jouables = [m for m in values if (m.get("avis") or {}).get("avis") != "eviter"]
+    conseilles = [c for c in combos if c.get("conseille")]
+    if jouables or conseilles:
+        icone, titre = "🎯", "Il y a de quoi jouer aujourd'hui"
+        lignes = []
+        if jouables:
+            m = jouables[0]; v = m["value"]
+            lignes.append(f"<b>{len(jouables)} bon{'s' if len(jouables) > 1 else ''} pari{'s' if len(jouables) > 1 else ''}</b>. "
+                          f"Le meilleur : <b>{e(v['issue'])}</b> ({e(m['domicile'])} – {e(m['exterieur'])}) à <b>{v['cote']:.2f}</b> chez {e(v['bookmaker'])}.")
+        if conseilles:
+            noms = ", ".join(f"{c['emoji']} {e(c['nom'])}" for c in conseilles)
+            lignes.append(f"Combiné{'s' if len(conseilles) > 1 else ''} conseillé{'s' if len(conseilles) > 1 else ''} : <b>{noms}</b>.")
+        eviter = sum(1 for m in values if (m.get("avis") or {}).get("avis") == "eviter")
+        if eviter:
+            lignes.append(f"⚠️ L'IA a écarté {eviter} pari{'s' if eviter > 1 else ''} après lecture de l'actu.")
+        ton = "go"
+    else:
+        icone, titre = "🧘", "Aujourd'hui, le plus malin c'est d'attendre"
+        lignes = ["Aucune cote ne paie plus que le vrai risque : les bookmakers sont trop gourmands sur ces matchs. "
+                  "Garder ton argent, c'est gagner contre eux."]
+        if combos:
+            c = max(combos, key=lambda c: c["edge"])
+            lignes.append(f"Si tu veux quand même jouer, le ticket le moins cher est le {c['emoji']} <b>{e(c['nom'])}</b> "
+                          f"({round(c['proba'] * 100)} % de chances).")
+        ton = "calme"
+    return f"""<section class="mot {ton}"><div class="mot-i">{icone}</div><div><div class="mot-t">Le mot de l'agent</div>
+      <h3>{titre}</h3>{''.join(f'<p>{l}</p>' for l in lignes)}</div></section>"""
+
+
 def statut_ia(ia):
     if not ia:
         return ""
@@ -308,7 +338,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         nv = sum(1 for m in ms if m["value"])
         tag = f'<span class="nv">{nv} value</span>' if nv else ""
         groupes += f"""
-    <details style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
+    <details data-l="{e(champ[1])}" style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
       {''.join(ligne_match(m) for m in ms)}
     </details>"""
 
@@ -327,11 +357,12 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Pronos">
+<meta name="apple-mobile-web-app-title" content="Prono Malin">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="icon" href="icon-192.png">
-<title>Pronos du jour</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="alternate icon" href="icon-192.png">
+<title>Prono Malin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -560,7 +591,13 @@ body {{
 }}
 h1 {{ font-size:clamp(32px, 10.5vw, 46px); white-space:nowrap; }}
 h1 em {{ background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }}
-.ballon {{ display:inline-block; animation:roule 6s linear infinite; }}
+.marque {{ display:flex; align-items:center; gap:12px; margin-top:6px; }}
+.logo {{ width:58px; height:58px; flex:none; filter:drop-shadow(0 6px 16px rgba(52,211,153,.45)); animation:rebond 3.2s ease-in-out infinite; }}
+@keyframes rebond {{ 0%,100% {{ transform:translateY(0) rotate(0); }} 50% {{ transform:translateY(-4px) rotate(-6deg); }} }}
+.marque h1 {{ margin-top:0; }}
+.slogan {{ color:var(--muted); font-size:13px; font-weight:500; margin-top:2px; }}
+header.reduit .logo {{ width:40px; height:40px; }}
+header.reduit .slogan {{ display:none; }}
 @keyframes roule {{ to {{ transform:rotate(360deg); }} }}
 .resume div {{ position:relative; overflow:hidden; border:0; background:var(--surface);
   box-shadow:inset 0 0 0 1px var(--line); }}
@@ -630,7 +667,53 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .chance-b span {{ display:block; height:100%; border-radius:99px; background:var(--grad-ticket); }}
 .chance b {{ font:700 26px "Barlow Condensed",sans-serif; grid-row:span 2; }}
 .chance small {{ color:var(--muted); font-size:12px; }}
-@media (prefers-reduced-motion: reduce) {{ .ballon, .pari::after {{ animation:none; }} }}
+body {{ padding-bottom:calc(92px + env(safe-area-inset-bottom)); }}
+.onglet[hidden], .match[hidden], details[hidden], .toast[hidden], #aucun[hidden] {{ display:none !important; }}
+header.reduit .resume, header.reduit .mot, header.reduit .installer {{ display:none !important; }}
+header.reduit {{ padding-bottom:4px; }}
+header.reduit h1 {{ font-size:30px; }}
+.barre-nav {{ position:fixed; z-index:50; left:50%; transform:translateX(-50%); bottom:calc(10px + env(safe-area-inset-bottom));
+  width:min(608px, calc(100% - 24px)); display:grid; grid-template-columns:repeat(4,1fr); gap:4px; padding:6px;
+  background:color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--line); border-radius:22px; box-shadow:0 12px 30px -10px rgba(0,0,0,.6); }}
+.barre-nav button {{ position:relative; background:none; border:0; border-radius:16px; padding:7px 2px 6px; color:var(--muted);
+  font:600 11px Inter,sans-serif; display:flex; flex-direction:column; align-items:center; gap:2px; cursor:pointer; }}
+.barre-nav button i {{ font-style:normal; font-size:20px; line-height:1; filter:grayscale(.7); transition:transform .2s; }}
+.barre-nav button.on {{ color:var(--text); background:color-mix(in srgb, var(--accent) 16%, transparent); }}
+.barre-nav button.on i {{ filter:none; transform:translateY(-2px) scale(1.12); }}
+.pastille {{ position:absolute; top:3px; right:calc(50% - 22px); min-width:17px; height:17px; padding:0 4px; border-radius:99px;
+  background:#ec4899; color:#fff; font:700 10px/17px Inter,sans-serif; }}
+.pastille[hidden] {{ display:none; }}
+.mot {{ display:flex; gap:12px; margin-top:14px; padding:14px; border-radius:16px; position:relative;
+  background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
+.mot.calme {{ background:linear-gradient(var(--surface),var(--surface)) padding-box, linear-gradient(120deg,#38bdf8,#a855f7) border-box; }}
+.mot-i {{ font-size:30px; line-height:1; }}
+.mot-t {{ font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); font-weight:600; }}
+.mot h3 {{ font:700 20px "Barlow Condensed",sans-serif; margin:2px 0 4px; }}
+.mot p {{ font-size:14px; color:var(--muted); }}
+.mot p + p {{ margin-top:4px; }}
+.mot b {{ color:var(--text); }}
+.cd {{ display:block; font-style:normal; font-size:11px; font-weight:600; color:var(--accent); margin-top:2px; white-space:nowrap; }}
+.cd.bientot {{ color:var(--warn); }}
+.cd.live {{ color:#fb7185; animation:clignote 1.4s ease-in-out infinite; }}
+.cd.fini {{ color:var(--muted); }}
+@keyframes clignote {{ 50% {{ opacity:.35; }} }}
+.filtres {{ position:sticky; top:0; z-index:5; padding:8px 0 10px; margin:0 -16px 6px; padding-left:16px; padding-right:16px;
+  background:linear-gradient(var(--bg) 75%, transparent); }}
+#cherche {{ width:100%; background:var(--surface); border:1px solid var(--line); border-radius:12px; color:var(--text);
+  font:500 15px Inter,sans-serif; padding:10px 12px; outline:0; }}
+#cherche:focus {{ border-color:var(--accent); }}
+.chips {{ display:flex; gap:6px; overflow-x:auto; margin-top:8px; padding-bottom:2px; scrollbar-width:none; }}
+.chips::-webkit-scrollbar {{ display:none; }}
+.chips button {{ flex:none; background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:99px;
+  padding:6px 11px; font:600 13px Inter,sans-serif; cursor:pointer; }}
+.chips button.on {{ background:var(--grad); color:var(--accent-ink); border-color:transparent; }}
+.toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
+  background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
+  box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
+.onglet {{ animation:fondu .25s ease both; }}
+@keyframes fondu {{ from {{ opacity:0; transform:translateY(6px); }} }}
+@media (prefers-reduced-motion: reduce) {{ .logo, .pari::after {{ animation:none; }} }}
 @media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} }}
 </style>
 </head>
@@ -639,16 +722,35 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 <header>
   <div class="haut"><div class="date">{date_txt} · mis à jour {d:%H:%M}</div>
     <button class="maj" onclick="location.reload()">Actualiser</button></div>
-  <h1>Pronos <em>du jour</em> <span class="ballon">⚽</span></h1>
+  <div class="marque"><svg class="logo" viewBox="40 40 432 432" aria-hidden="true">
+  <defs>
+    <linearGradient id="lgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c6ff3d"/><stop offset=".55" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <radialGradient id="lgglowA"><stop offset="0" stop-color="#c6ff3d" stop-opacity=".28"/><stop offset="1" stop-color="#c6ff3d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lgglowB"><stop offset="0" stop-color="#22d3ee" stop-opacity=".22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <clipPath id="lgballon"><circle cx="292" cy="222" r="118"/></clipPath>
+  </defs>
+  
+  <g transform="translate(-12 0)">
+    <rect x="128" y="104" width="78" height="318" rx="39" fill="url(#lgg)"/>
+    <circle cx="292" cy="222" r="118" fill="url(#lgg)"/>
+    <g clip-path="url(#lgballon)" fill="#060b09" stroke="#060b09" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="292.0,180.0 331.9,209.0 316.7,256.0 267.3,256.0 252.1,209.0"/><line x1="292.0" y1="180.0" x2="292.0" y2="130.0"/><line x1="331.9" y1="209.0" x2="379.5" y2="193.6"/><line x1="316.7" y1="256.0" x2="346.1" y2="296.5"/><line x1="267.3" y1="256.0" x2="237.9" y2="296.5"/><line x1="252.1" y1="209.0" x2="204.5" y2="193.6"/><polygon points="309.6,82.1 320.5,115.6 292.0,136.4 263.5,115.6 274.4,82.1"/><polygon points="430.5,195.5 402.0,216.3 373.4,195.5 384.3,162.0 419.6,162.0"/><polygon points="360.0,345.6 331.4,324.8 342.3,291.3 377.6,291.3 388.5,324.8"/><polygon points="195.5,324.8 206.4,291.3 241.7,291.3 252.6,324.8 224.0,345.6"/><polygon points="164.4,162.0 199.7,162.0 210.6,195.5 182.0,216.3 153.5,195.5"/>
+    </g>
+    <circle cx="292" cy="222" r="118" fill="none" stroke="#060b09" stroke-width="10"/>
+  </g>
+</svg><div><h1>Prono <em>Malin</em></h1><div class="slogan">Parier moins, parier mieux.</div></div></div>
   <div class="resume">
     <div><span>Matchs analysés</span><b>{len(analyses)}</b></div>
     <div><span>Value bets</span><b>{len(values)}</b></div>
     <div><span>Championnats</span><b>{len({m["sport_key"] for m in analyses})}</b></div>
   </div>
+  {mot_agent(analyses, values, combos)}
   <div class="installer" id="installer"><button onclick="fermer()" aria-label="Fermer">×</button>
-    <b>Installe l'appli :</b> touche <b>Partager</b> en bas de Safari, puis <b>Sur l'écran d'accueil</b>.</div>
+    <b>Installe Prono Malin :</b> touche <b>Partager</b> en bas de Safari, puis <b>Sur l'écran d'accueil</b>.</div>
 </header>
 
+<main>
+<div class="onglet" id="t-jour">
 <section class="budget">
   <label for="somme">Ma mise du jour</label>
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
@@ -664,12 +766,25 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 <h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes}
 
-<h2>📅 Tous les matchs <small>meilleure cote · proba marché</small></h2>
-{groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
+</div>
 
+<div class="onglet" id="t-matchs" hidden>
+<h2>📅 Tous les matchs <small>meilleure cote · proba marché</small></h2>
+<div class="filtres">
+  <input id="cherche" type="search" placeholder="🔍 Chercher une équipe…" autocomplete="off">
+  <div class="chips" id="chips"><button class="on" data-l="">Tous</button>{''.join(f'<button data-l="{e(ch[1])}">{ch[0]} {e(ch[1])}</button>' for ch in par_champ)}</div>
+</div>
+{groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
+<p class="vide" id="aucun" hidden>Aucun match ne correspond.</p>
+</div>
+
+<div class="onglet" id="t-mes" hidden>
 <h2 id="mes-paris-t">✍️ Mes paris <small>enregistrés sur ce téléphone</small></h2>
 <div id="mes-paris"><p class="vide">Touche « J'ai joué ce pari » sur un pari ou un combiné : il apparaîtra ici et sera réglé tout seul.</p></div>
 
+</div>
+
+<div class="onglet" id="t-bilan" hidden>
 <h2>📊 Bilan de l'agent</h2>
 <h3 class="sous">🧠 Ce que l'agent a appris</h3>
 {section_appris(infos.get("appris"))}
@@ -689,6 +804,16 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
   <p>{statut_ia(infos.get("ia"))}</p>
   <p>🧠 Mémoire de l'actu : {infos.get("memoire_equipes", 0)} équipe{'s' if infos.get("memoire_equipes", 0) > 1 else ''} suivie{'s' if infos.get("memoire_equipes", 0) > 1 else ''} (21 jours).</p>
 </footer>
+</div>
+</main>
+
+<nav class="barre-nav">
+  <button data-t="jour" class="on"><i>🎯</i>Aujourd'hui</button>
+  <button data-t="matchs"><i>📅</i>Matchs</button>
+  <button data-t="mes"><i>✍️</i>Mes paris<span class="pastille" id="nb-attente" hidden></span></button>
+  <button data-t="bilan"><i>📊</i>Bilan</button>
+</nav>
+<div class="toast" id="toast" hidden></div>
 <script>
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {{}});
 const appli = window.navigator.standalone || matchMedia("(display-mode: standalone)").matches;
@@ -781,7 +906,7 @@ function enregistrerJoue(btn) {{
   const l = lireMP();
   l.push({{ ...p, mise, cote, uid: Date.now() + "-" + Math.random().toString(36).slice(2, 6), joueLe: new Date().toISOString() }});
   ecrireMP(l); f.hidden = true; marquerJoues(); afficherMP();
-  document.getElementById("mes-paris-t").scrollIntoView({{ behavior: "smooth" }});
+  toast("✅ Ajouté à « Mes paris »");
 }}
 function statutMP(p) {{
   if (p.manuel) return p.manuel;
@@ -815,6 +940,7 @@ function afficherMP() {{
       <td class="r">${{fmt(p.mise)}}<small class="st ${{cls}}">${{st}}${{st !== "en attente" ? " " + (gain >= 0 ? "+" : "") + fmt(gain) : ""}}</small>
       <div class="mp-act"><button onclick="regler('${{p.uid}}','gagné')">✓</button><button onclick="regler('${{p.uid}}','perdu')">✗</button><button onclick="suppr('${{p.uid}}')">🗑</button></div></td></tr>`;
   }});
+  const pa = document.getElementById("nb-attente"); pa.textContent = att; pa.hidden = !att;
   const roi = mises ? (gains >= 0 ? "+" : "") + (gains / mises * 100).toFixed(1).replace(".", ",") + " %" : "—";
   const c = gains >= 0 ? "vert" : "rouge";
   z.innerHTML = `<div class="bilan"><div><span>Paris réglés</span><b>${{n}}</b></div><div><span>Gagnés</span><b>${{g}}</b></div>
@@ -823,6 +949,64 @@ function afficherMP() {{
     <table class="hist">${{lignes}}</table>`;
 }}
 marquerJoues(); afficherMP();
+
+// ---- onglets
+function ouvrirOnglet(t, haut = true) {{
+  document.querySelectorAll(".onglet").forEach(o => o.hidden = o.id !== "t-" + t);
+  document.querySelectorAll(".barre-nav button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
+  document.querySelector("header").classList.toggle("reduit", t !== "jour");
+  try {{ sessionStorage.setItem("onglet", t); }} catch (e) {{}}
+  if (haut) window.scrollTo({{ top: 0 }});
+}}
+document.querySelectorAll(".barre-nav button").forEach(b => b.addEventListener("click", () => ouvrirOnglet(b.dataset.t)));
+try {{ const t = sessionStorage.getItem("onglet"); if (t) ouvrirOnglet(t, false); }} catch (e) {{}}
+
+// ---- filtres des matchs
+let ligue = "";
+function filtrer() {{
+  const q = document.getElementById("cherche").value.trim().toLowerCase();
+  let visibles = 0;
+  document.querySelectorAll("#t-matchs details").forEach(d => {{
+    const okL = !ligue || d.dataset.l === ligue;
+    let n = 0;
+    d.querySelectorAll(".match").forEach(m => {{
+      const ok = okL && (!q || m.textContent.toLowerCase().includes(q));
+      m.hidden = !ok; if (ok) n++;
+    }});
+    d.hidden = n === 0;
+    if (q || ligue) d.open = n > 0;
+    visibles += n;
+  }});
+  document.getElementById("aucun").hidden = visibles > 0;
+}}
+document.getElementById("cherche").addEventListener("input", filtrer);
+document.querySelectorAll("#chips button").forEach(b => b.addEventListener("click", () => {{
+  ligue = b.dataset.l;
+  document.querySelectorAll("#chips button").forEach(x => x.classList.toggle("on", x === b));
+  filtrer();
+}}));
+
+// ---- compte à rebours avant chaque match
+function rebours() {{
+  const now = Date.now();
+  document.querySelectorAll(".cd").forEach(el => {{
+    const dt = (new Date(el.dataset.ko) - now) / 60000;
+    let t = "", c = "";
+    if (dt > 24 * 60) t = "dans " + Math.round(dt / 1440) + " j";
+    else if (dt > 60) t = "dans " + Math.floor(dt / 60) + " h " + String(Math.round(dt % 60)).padStart(2, "0");
+    else if (dt > 0) {{ t = "dans " + Math.ceil(dt) + " min"; c = "bientot"; }}
+    else if (dt > -110) {{ t = "● en cours"; c = "live"; }}
+    else {{ t = "terminé"; c = "fini"; }}
+    el.textContent = t; el.className = "cd " + c;
+  }});
+}}
+rebours(); setInterval(rebours, 30000);
+
+// ---- petit message
+function toast(txt) {{
+  const t = document.getElementById("toast"); t.textContent = txt; t.hidden = false;
+  clearTimeout(t._h); t._h = setTimeout(() => t.hidden = true, 2200);
+}}
 
 function fermer() {{
   document.getElementById("installer").style.display = "none";

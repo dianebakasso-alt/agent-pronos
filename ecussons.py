@@ -124,12 +124,17 @@ def _lum(hexa):
     return 0.299 * r + 0.587 * g + 0.114 * b
 
 
+_COMPTEUR = 0
+
+
 def ecusson(nom, taille=44):
     """Petit écusson SVG original aux couleurs du club."""
     c1, c2 = couleurs(nom)
     n = normaliser(nom)
     motif = int(hashlib.md5(("m" + n).encode()).hexdigest(), 16) % 4
-    uid = hashlib.md5(n.encode()).hexdigest()[:8]
+    global _COMPTEUR
+    _COMPTEUR += 1
+    uid = f"{hashlib.md5(n.encode()).hexdigest()[:6]}{_COMPTEUR}"  # unique dans la page
     forme = "M24 2 L44 8 V24 C44 36 35 43 24 47 C13 43 4 36 4 24 V8 Z"
     if motif == 0:    # moitié verticale
         deco = f'<rect x="24" y="0" width="24" height="50" fill="{c2}"/>'
