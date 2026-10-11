@@ -128,8 +128,9 @@ def ligne_match(m):
         buts = '<div class="ajout-buts">' + "".join(
             f'<button data-ajout="{e(m["id"])}|{k}">{lbl}</button>'
             for k, lbl in (("plus25", "+2,5 buts"), ("moins25", "−2,5 buts"), ("btts", "Les 2 marquent"), ("pas_btts", "Pas les 2"))) + "</div>"
+    jm = datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(PARIS).strftime("%Y-%m-%d")
     return f"""
-      <div class="match">
+      <div class="match" data-jour="{jm}">
         {affiche(m)}
         {barre_probas(m, vcourt)}
         {bloc_stats(m, compact=True)}
@@ -432,7 +433,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         nv = sum(1 for m in ms if m["value"])
         tag = f'<span class="nv">{nv} value</span>' if nv else ""
         groupes += f"""
-    <details data-l="{e(champ[1])}" style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
+    <details data-l="{e(champ[1])}" style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}<span class="cpt-n">{len(ms)} match{'s' if len(ms) > 1 else ''}</span></span></summary>
       {''.join(ligne_match(m) for m in ms)}
     </details>"""
 
@@ -493,6 +494,14 @@ Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup
             "avis": (m.get("avis") or {}).get("resume"),
         }
     donnees_json = json.dumps(donnees, ensure_ascii=False).replace("</", "<\\/")
+
+    # rangée de jours de l'onglet Matchs (avec le nombre de matchs par jour)
+    selecteur_m = '<button data-jm="" class="j-tous"><span>Semaine</span><b>7 j</b><small>' + str(len(analyses)) + ' matchs</small></button>'
+    for k, j in enumerate(jours):
+        dt = datetime.strptime(j["cle"], "%Y-%m-%d")
+        titre_j = "Auj." if k == 0 else "Demain" if k == 1 else NOMS_JOURS[dt.weekday()][:3] + "."
+        n = len(j["analyses"])
+        selecteur_m += f'<button data-jm="{j["cle"]}" class="{"" if n else "j-vide"}"><span>{titre_j}</span><b>{dt.day}</b><small>{n} match{"s" if n > 1 else ""}</small></button>'
 
     bandeau_demo = '<div class="demo">Mode démo : données fictives</div>' if infos.get("demo") else ""
     credits = ""
@@ -958,6 +967,11 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 .mt-act {{ display:flex; flex-direction:column; gap:8px; margin-top:6px; }}
 .mt-act button:not(.btn-plein) {{ background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:12px; padding:10px; font:600 14px Inter,sans-serif; cursor:pointer; }}
 .barre-nav button {{ font-size:10px; }}
+.semaine-m {{ margin:0 -16px 8px; }}
+.semaine-m button {{ width:62px; padding:6px 0 5px; }}
+.semaine-m button b {{ font-size:19px; }}
+.semaine-m button.on {{ border:0; background:var(--grad); color:var(--accent-ink); }}
+.semaine-m button.on span, .semaine-m button.on small {{ color:var(--accent-ink); }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -1021,6 +1035,7 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 <div class="onglet" id="t-matchs" hidden>
 <h2>📅 Tous les matchs <small>meilleure cote · proba marché</small></h2>
 <div class="filtres">
+  <div class="semaine semaine-m" id="jours-m">{selecteur_m}</div>
   <input id="cherche" type="search" placeholder="🔍 Chercher une équipe…" autocomplete="off">
   <div class="chips" id="chips"><button class="on" data-l="">Tous</button>{''.join(f'<button data-l="{e(ch[1])}">{ch[0]} {e(ch[1])}</button>' for ch in par_champ)}</div>
 </div>
@@ -1298,7 +1313,8 @@ document.querySelectorAll(".barre-nav button").forEach(b => b.addEventListener("
 try {{ const t = sessionStorage.getItem("onglet"); if (t) ouvrirOnglet(t, false); }} catch (e) {{}}
 
 // ---- filtres des matchs
-let ligue = "";
+let ligue = "", jourM = "{jours[0]["cle"]}";
+try {{ const v = sessionStorage.getItem("jour-m"); if (v !== null) jourM = v; }} catch (e) {{}}
 function filtrer() {{
   const q = document.getElementById("cherche").value.trim().toLowerCase();
   let visibles = 0;
@@ -1306,16 +1322,25 @@ function filtrer() {{
     const okL = !ligue || d.dataset.l === ligue;
     let n = 0;
     d.querySelectorAll(".match").forEach(m => {{
-      const ok = okL && (!q || m.textContent.toLowerCase().includes(q));
+      const ok = okL && (!jourM || m.dataset.jour === jourM) && (!q || m.textContent.toLowerCase().includes(q));
       m.hidden = !ok; if (ok) n++;
     }});
     d.hidden = n === 0;
-    if (q || ligue) d.open = n > 0;
+    if (q || ligue || jourM) d.open = n > 0;
+    const cpt = d.querySelector(".cpt-n"); if (cpt) cpt.textContent = n + " match" + (n > 1 ? "s" : "");
     visibles += n;
   }});
   document.getElementById("aucun").hidden = visibles > 0;
 }}
 document.getElementById("cherche").addEventListener("input", filtrer);
+function choisirJourM(v) {{
+  jourM = v;
+  document.querySelectorAll("#jours-m button").forEach(b => b.classList.toggle("on", b.dataset.jm === v));
+  try {{ sessionStorage.setItem("jour-m", v); }} catch (e) {{}}
+  filtrer();
+}}
+document.querySelectorAll("#jours-m button").forEach(b => b.addEventListener("click", () => choisirJourM(b.dataset.jm)));
+choisirJourM(jourM);
 document.querySelectorAll("#chips button").forEach(b => b.addEventListener("click", () => {{
   ligue = b.dataset.l;
   document.querySelectorAll("#chips button").forEach(x => x.classList.toggle("on", x === b));
