@@ -1,7 +1,7 @@
 [
  {
   "jour": "2026-10-11",
-  "matchs": 23,
+  "matchs": 22,
   "value_bets": 0,
   "combines": [
    [
@@ -12,12 +12,12 @@
    [
     "equilibre",
     false,
-    2.9
+    4.07
    ],
    [
     "gros",
     false,
-    19.95
+    14.31
    ]
   ]
  },
