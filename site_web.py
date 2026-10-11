@@ -545,6 +545,12 @@ Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="alternate icon" href="icon-192.png">
 <title>Prono Malin</title>
+<script>
+try {{
+  const pin = localStorage.getItem("pin"), jusqu = +localStorage.getItem("pin-ok-jusqu") || 0;
+  if (pin && !sessionStorage.getItem("pin-ok") && Date.now() > jusqu) document.documentElement.classList.add("verrouille");
+}} catch (e) {{}}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -1002,6 +1008,29 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 .ch-m {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--lig, var(--line)); border-radius:12px; margin-bottom:8px; overflow:hidden; }}
 .ch-l {{ font-size:12px; font-weight:600; color:var(--muted); padding:8px 14px 0; }}
 .ch-m .match {{ border-top:0; padding-top:4px; }}
+html.verrouille body > *:not(#verrou) {{ visibility:hidden; }}
+#verrou {{ position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:24px;
+  background:radial-gradient(600px 400px at 20% 0%, rgba(198,255,61,.18), transparent 70%),
+             radial-gradient(500px 400px at 100% 100%, rgba(34,211,238,.16), transparent 70%), var(--bg); }}
+#verrou[hidden] {{ display:none; }}
+.vr-box {{ width:min(320px, 100%); text-align:center; }}
+.vr-logo {{ width:72px; height:72px; border-radius:18px; }}
+.vr-t {{ font:700 28px "Barlow Condensed",sans-serif; margin-top:10px; }}
+.vr-s {{ color:var(--muted); font-size:14px; min-height:20px; margin-top:2px; }}
+.vr-s.err {{ color:var(--bad); }}
+.vr-pts {{ display:flex; justify-content:center; gap:16px; margin:22px 0; }}
+.vr-pts i {{ width:16px; height:16px; border-radius:50%; border:2px solid var(--muted); }}
+.vr-pts i.on {{ background:var(--accent); border-color:var(--accent); }}
+.vr-pts.secoue {{ animation:secoue .35s; }}
+@keyframes secoue {{ 25% {{ transform:translateX(-10px); }} 75% {{ transform:translateX(10px); }} }}
+.vr-pad {{ display:grid; grid-template-columns:repeat(3, 76px); justify-content:center; gap:14px; }}
+.vr-pad button {{ width:76px; height:76px; border-radius:50%; border:1px solid var(--line); background:var(--surface);
+  color:var(--text); font:600 28px Inter,sans-serif; cursor:pointer; }}
+.vr-pad button:active {{ background:var(--surface2); }}
+.vr-pad .vr-x {{ border:0; background:none; font-size:14px; color:var(--muted); }}
+.vr-pad .vr-x[data-k="del"] {{ font-size:24px; }}
+.vr-reste {{ display:block; margin-top:20px; font-size:13px; color:var(--muted); }}
+.vr-oubli {{ margin-top:10px; background:none; border:0; color:var(--muted); text-decoration:underline; font-size:13px; cursor:pointer; }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -1012,6 +1041,17 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 </style>
 </head>
 <body>
+<div id="verrou" hidden>
+  <div class="vr-box">
+    <img src="logo.svg" alt="" class="vr-logo">
+    <div class="vr-t" id="vr-t">Entre ton code</div>
+    <div class="vr-s" id="vr-s">Prono Malin est verrouillé</div>
+    <div class="vr-pts" id="vr-pts"><i></i><i></i><i></i><i></i></div>
+    <div class="vr-pad">{''.join(f'<button data-k="{k}">{k}</button>' for k in "123456789")}<button data-k="plus" class="vr-x" id="vr-plus">Plus tard</button><button data-k="0">0</button><button data-k="del" class="vr-x">⌫</button></div>
+    <label class="vr-reste" id="vr-reste"><input type="checkbox" id="vr-rc"> Rester déverrouillé 30 jours sur ce téléphone</label>
+    <button class="vr-oubli" id="vr-oubli">Code oublié ?</button>
+  </div>
+</div>
 {bandeau_demo}
 <header>
   <div class="haut"><div class="date">{date_txt} · mis à jour {d:%H:%M}</div>
@@ -1104,6 +1144,7 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
   Besoin d'aide : <b>Joueurs Info Service, 09 74 75 13 13</b> (appel non surtaxé).</p>
   <p>Généré automatiquement{credits}.</p>
   <p>{statut_ia(infos.get("ia"))}</p>
+  <p>🔒 Code d'accès : <a href="#" onclick="reglerCode(); return false" id="lien-code">régler</a></p>
   <p>🧠 Mémoire de l'actu : {infos.get("memoire_equipes", 0)} équipe{'s' if infos.get("memoire_equipes", 0) > 1 else ''} suivie{'s' if infos.get("memoire_equipes", 0) > 1 else ''} (21 jours).</p>
 </footer>
 </div>
@@ -1726,6 +1767,93 @@ document.addEventListener("click", ev => {{
   const [id, c] = b.dataset.ajout.split("|"); ajouterAuTicket(id, c);
 }});
 dessinerTicket();
+
+// ---- 🔒 code d'accès (gardé sur ce téléphone, sous forme d'empreinte)
+async function empreinte(code) {{
+  try {{
+    const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("prono-malin:" + code));
+    return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join("");
+  }} catch (e) {{ let h = 0; for (const c of "prono-malin:" + code) h = (h * 31 + c.charCodeAt(0)) | 0; return "f" + h; }}
+}}
+const VR = {{ mode: "entrer", saisie: "", premier: "", essais: 0, bloqueJusqu: 0 }};
+function vrDessiner() {{
+  document.querySelectorAll("#vr-pts i").forEach((p, i) => p.classList.toggle("on", i < VR.saisie.length));
+  const t = {{ entrer: "Entre ton code", creer: "Choisis ton code", confirmer: "Confirme ton code" }}[VR.mode];
+  document.getElementById("vr-t").textContent = t;
+  document.getElementById("vr-plus").style.visibility = VR.mode === "entrer" ? "hidden" : "visible";
+  document.getElementById("vr-reste").style.display = VR.mode === "entrer" ? "" : "none";
+  document.getElementById("vr-oubli").style.display = VR.mode === "entrer" ? "" : "none";
+}}
+function vrMessage(txt, erreur) {{
+  const el = document.getElementById("vr-s"); el.textContent = txt; el.classList.toggle("err", !!erreur);
+  if (erreur) {{ const b = document.getElementById("vr-pts"); b.classList.remove("secoue"); void b.offsetWidth; b.classList.add("secoue"); }}
+}}
+function vrOuvrir(mode) {{
+  VR.mode = mode; VR.saisie = ""; VR.premier = "";
+  document.getElementById("verrou").hidden = false;
+  vrMessage(mode === "entrer" ? "Prono Malin est verrouillé" : "4 chiffres, rien que pour toi. Il reste sur ce téléphone.");
+  vrDessiner();
+}}
+function vrFermer() {{
+  document.getElementById("verrou").hidden = true;
+  document.documentElement.classList.remove("verrouille");
+}}
+async function vrTouche(k) {{
+  if (k === "del") {{ VR.saisie = VR.saisie.slice(0, -1); return vrDessiner(); }}
+  if (k === "plus") {{ try {{ localStorage.setItem("pin-plus-tard", "1"); }} catch (e) {{}} return vrFermer(); }}
+  if (Date.now() < VR.bloqueJusqu) return vrMessage("Trop d'essais : attends quelques secondes.", true);
+  if (VR.saisie.length >= 4) return;
+  VR.saisie += k; vrDessiner();
+  if (VR.saisie.length < 4) return;
+  const code = VR.saisie;
+  setTimeout(async () => {{
+    if (VR.mode === "entrer") {{
+      if (await empreinte(code) === localStorage.getItem("pin")) {{
+        try {{
+          sessionStorage.setItem("pin-ok", "1");
+          if (document.getElementById("vr-rc").checked) localStorage.setItem("pin-ok-jusqu", Date.now() + 30 * 864e5);
+        }} catch (e) {{}}
+        VR.essais = 0; vrFermer();
+      }} else {{
+        VR.essais++; VR.saisie = ""; vrDessiner();
+        if (VR.essais >= 5) {{ VR.bloqueJusqu = Date.now() + 30e3; VR.essais = 0; vrMessage("Code faux 5 fois : patiente 30 secondes.", true); }}
+        else vrMessage("Code incorrect", true);
+      }}
+    }} else if (VR.mode === "creer") {{
+      VR.premier = code; VR.saisie = ""; VR.mode = "confirmer"; vrMessage("Tape-le une deuxième fois."); vrDessiner();
+    }} else {{
+      if (code === VR.premier) {{
+        try {{ localStorage.setItem("pin", await empreinte(code)); sessionStorage.setItem("pin-ok", "1"); localStorage.removeItem("pin-ok-jusqu"); }} catch (e) {{}}
+        vrFermer(); majLienCode(); toast("🔒 Code enregistré : il sera demandé à l'ouverture de l'appli.", 3500);
+      }} else {{ VR.mode = "creer"; VR.saisie = ""; VR.premier = ""; vrMessage("Les deux codes ne correspondent pas. Recommence.", true); vrDessiner(); }}
+    }}
+  }}, 120);
+}}
+document.querySelectorAll(".vr-pad button").forEach(b => b.addEventListener("click", () => vrTouche(b.dataset.k)));
+document.getElementById("vr-oubli").addEventListener("click", () => {{
+  if (!confirm("Code oublié : pour protéger tes données, on efface tout ce que l'appli garde sur ce téléphone (mes paris, mon ticket, réglages, clé de l'expert). Continuer ?")) return;
+  try {{ localStorage.clear(); sessionStorage.clear(); }} catch (e) {{}}
+  location.reload();
+}});
+function majLienCode() {{
+  let a = false; try {{ a = !!localStorage.getItem("pin"); }} catch (e) {{}}
+  document.getElementById("lien-code").textContent = a ? "activé · changer ou retirer" : "désactivé · créer un code";
+}}
+async function reglerCode() {{
+  let a = false; try {{ a = !!localStorage.getItem("pin"); }} catch (e) {{}}
+  if (!a) return vrOuvrir("creer");
+  if (confirm("Retirer le code d'accès ? (Annuler pour le changer)")) {{
+    try {{ localStorage.removeItem("pin"); localStorage.removeItem("pin-ok-jusqu"); }} catch (e) {{}}
+    majLienCode(); toast("🔓 Code retiré");
+  }} else vrOuvrir("creer");
+}}
+(function () {{
+  let pin = null, plusTard = null;
+  try {{ pin = localStorage.getItem("pin"); plusTard = localStorage.getItem("pin-plus-tard"); }} catch (e) {{}}
+  if (document.documentElement.classList.contains("verrouille")) vrOuvrir("entrer");
+  else if (!pin && !plusTard) vrOuvrir("creer");   // première ouverture : on propose de créer son code
+  majLienCode();
+}})();
 
 // ---- petit message
 function toast(txt, duree = 2200) {{
