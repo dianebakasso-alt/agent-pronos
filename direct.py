@@ -4,6 +4,7 @@ Pendant la génération du site (sur GitHub), on cherche l'identifiant ESPN de c
 Ensuite c'est le téléphone qui va lire les scores en direct, toutes les 45 secondes, sans crédit.
 """
 import json
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta
 
@@ -28,9 +29,33 @@ LIGUES_ESPN = {
 
 
 def _get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 prono-malin"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 prono-malin", "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        corps = e.read().decode("utf-8", "replace")[:160]
+        raise RuntimeError(f"HTTP {e.code} {corps}") from None
+
+
+def _evenements(slug, maintenant, nb_jours):
+    """Matchs ESPN de la semaine : d'abord en une requête, sinon jour par jour."""
+    d0 = maintenant.strftime("%Y%m%d")
+    d1 = (maintenant + timedelta(days=nb_jours)).strftime("%Y%m%d")
+    try:
+        return _get(f"{BASE}/{slug}/scoreboard?dates={d0}-{d1}").get("events", []), None
+    except Exception as e:
+        erreur = str(e)
+    evs, vus = [], set()
+    for k in range(nb_jours + 1):
+        d = (maintenant + timedelta(days=k)).strftime("%Y%m%d")
+        try:
+            for ev in _get(f"{BASE}/{slug}/scoreboard?dates={d}").get("events", []):
+                if ev["id"] not in vus:
+                    vus.add(ev["id"]); evs.append(ev)
+        except Exception as e:
+            erreur = str(e)
+    return evs, (None if evs else erreur)
 
 
 def _equipes(ev):
@@ -48,8 +73,6 @@ def _equipes(ev):
 def relier(analyses, maintenant, nb_jours=7):
     """Ajoute m['espn'] = {'ligue', 'id'} aux matchs retrouvés. Renvoie un petit journal."""
     journal = {"ligues": {}, "relies": 0, "manques": []}
-    debut = maintenant.strftime("%Y%m%d")
-    fin = (maintenant + timedelta(days=nb_jours)).strftime("%Y%m%d")
     par_ligue = {}
     for m in analyses:
         par_ligue.setdefault(m.get("sport_key"), []).append(m)
@@ -57,10 +80,9 @@ def relier(analyses, maintenant, nb_jours=7):
         slug = LIGUES_ESPN.get(sk)
         if not slug:
             continue
-        try:
-            evs = _get(f"{BASE}/{slug}/scoreboard?dates={debut}-{fin}&limit=300").get("events", [])
-        except Exception as e:
-            journal["ligues"][sk] = f"erreur {e}"[:80]
+        evs, erreur = _evenements(slug, maintenant, nb_jours)
+        if erreur:
+            journal["ligues"][sk] = f"erreur {erreur}"[:220]
             continue
         journal["ligues"][sk] = len(evs)
         for m in ms:
