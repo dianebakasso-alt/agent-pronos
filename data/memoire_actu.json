@@ -454,6 +454,18 @@
    {
     "date": "2026-10-11T08:43:41",
     "texte": "Longues absences : Felici (croisés, retour prévu en avril 2027), Idrissi (croisés, retour possible début novembre), Trepy (retour prévu en décembre), Deiola (ménisque) et Kevin Carlos (cuisse, retour "
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "4e avec 12 points après 5 journées sous Pisacane, meilleur début de saison de l'ère des trois points."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Longues absences : Felici (croisés, retour prévu en avril 2027), Idrissi (croisés, retour possible début novembre), Trepy (retour prévu en décembre)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Romano est courtisé par la Juve et l'Inter, mais le directeur sportif Accardi tient à le garder."
    }
   ]
  },
@@ -467,6 +479,18 @@
    {
     "date": "2026-10-11T08:43:41",
     "texte": "Spalletti alterne 4-2-3-1 et 3-4-2-1. Nico Gonzalez, fraîchement prolongé, sert de joker offensif, et Kolo Muani est le titulaire en attaque."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Yildiz (pied), Locatelli et Thuram (genou), Ekhator, Cabal et Boga restent indisponibles ; Grabara aussi."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Spalletti alterne 4-2-3-1 et 3-4-2-1, avec Kolo Muani en pointe. Nico Gonzalez vient de prolonger et a débuté ce match."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "8 points après 5 journées, avec une défaite à Sassuolo et un nul tardif contre le Milan avant la trêve."
    }
   ]
  },
@@ -534,22 +558,6 @@
   "nom": "SC Freiburg",
   "faits": [
    {
-    "date": "2026-10-11T13:16:28",
-    "texte": "Meilleur début de saison de l'histoire du club en Bundesliga (10 points sur 12, 12 buts en 4 matchs), et invaincu en 7 matchs officiels avant Schalke."
-   },
-   {
-    "date": "2026-10-11T13:16:28",
-    "texte": "Florent Muslija est absent longue durée (ligaments croisés), retour prévu fin décembre 2026."
-   },
-   {
-    "date": "2026-10-11T13:16:28",
-    "texte": "Calendrier chargé : Leverkusen (18/10), Monaco (22/10), Trabzonspor (5/11), Twente (26/11), Panathinaikos (10/12), Kauno Žalgiris (17/12)."
-   },
-   {
-    "date": "2026-10-11T13:38:49",
-    "texte": "Julian Schuster reste entraîneur. Freiburg est 3e de Bundesliga avec un record de 10 points en 4 matchs et une série d'invincibilité en cours (7 matchs officiels avant Schalke, résultat non confirmé)."
-   },
-   {
     "date": "2026-10-11T13:38:49",
     "texte": "Ogbus (problème musculaire) et Yilmaz (opération dentaire) étaient absents avant Schalke. Les infos précédentes sur Muslija (ligaments croisés, retour fin décembre) n'ont pas pu être revérifiées."
    },
@@ -580,24 +588,28 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Calendrier chargé après la trêve : Leverkusen (18/10), Monaco (22/10), Bayern (25/10), Trabzonspor (5/11), Twente (26/11), Panathinaikos (10/12), Kauno Žalgiris (17/12)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Julian Schuster reste entraîneur. Freiburg est invaincu et leader de la Bundesliga après 5 journées (2-1 contre Schalke le 11/10, 2-2 à Francfort avant la trêve)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Yuito Suzuki a été expulsé (second jaune) contre Schalke le 11/10. Vérifier s'il est suspendu pour la Bundesliga, notamment à Leverkusen le 18/10."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Calendrier chargé : Leverkusen (18/10), Monaco (22/10), Bayern (25/10), Trabzonspor (5/11). Des rotations sont possibles."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Muslija est blessé longtemps (ligaments croisés), retour attendu vers fin décembre. Ce point reste non confirmé par les sources récentes."
    }
   ]
  },
  "fk jablonec": {
   "nom": "FK Jablonec",
   "faits": [
-   {
-    "date": "2026-10-11T12:56:38",
-    "texte": "Jiří Sláma, international tchèque, est très sollicité (16 matchs et 1124 minutes depuis fin juillet) et a besoin de repos."
-   },
-   {
-    "date": "2026-10-11T12:56:38",
-    "texte": "Luboš Kozel reste entraîneur. Jablonec joue sa première phase de ligue européenne depuis 5 ans après avoir éliminé les Rangers."
-   },
-   {
-    "date": "2026-10-11T12:56:38",
-    "texte": "Jablonec est plus fragile à l'extérieur (2 victoires, 4 défaites en 7 matchs)."
-   },
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Luboš Kozel reste entraîneur et fait tourner l'effectif, par exemple en laissant Sláma au repos."
@@ -633,6 +645,18 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Il a éliminé les Rangers en barrage (victoire 1-0 de justesse contre Brno juste avant le match de Freiburg). Prochains matchs européens : Brighton, Lugano et Iberia Tbilisi à domicile ; Trabzonspor et"
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Luboš Kozel reste entraîneur. Il pratique la rotation entre les matchs européens et ceux du championnat."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Jablonec est le seul club tchèque en Conference League et sa phase de ligue est la première depuis 5 ans. Il joue à Trabzonspor et à Riga, et reçoit Brighton, Lugano et Iberia Tbilisi."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Kozel voit les matchs à domicile contre Lugano et Riga comme la clé de la qualification."
    }
   ]
  },
@@ -1214,18 +1238,6 @@
   "nom": "Real Racing Club de Santander",
   "faits": [
    {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Défense très fragile : 21 buts encaissés en 7 journées, dont 0-5 à Vigo et 2-7 contre Barcelone"
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Zabiri (6 buts) est le principal buteur, avec Canales et Vicente en soutien"
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Eriksson (gardien) est blessé"
-   },
-   {
     "date": "2026-10-11T13:16:28",
     "texte": "Défense très fragile : 21 buts encaissés en 7 journées, dont 0-5 à Vigo et 2-7 contre Barcelone."
    },
@@ -1260,28 +1272,24 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Zabiri (6 buts) est le principal buteur ; Eriksson (gardien remplaçant) est blessé et Andrés Martín revient de blessure au genou."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Défense très fragile : 18 buts encaissés sur les 5 derniers matchs, dont 2-7 à Barcelone et 0-5 à Vigo."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Invaincu à domicile (2 victoires, 1 nul) mais 4 défaites en 4 matchs à l'extérieur."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Zabiri est le principal buteur de l'équipe (6 buts). Le gardien remplaçant Simon Eriksson est blessé. Andrés Martín revient d'une blessure au genou après environ six semaines d'absence."
    }
   ]
  },
  "valencia": {
   "nom": "Valencia",
   "faits": [
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Javier Aguirre a remplacé Corberán pendant la trêve d'octobre et débute à Santander"
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Pire attaque de la Liga : 4 buts en 7 journées, une seule victoire, 19e avec 4 points"
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Blessés de longue durée : Diego López (retour mi-février 2027), Canós (début décembre 2026), Sadiq (début novembre 2026)"
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Foulquier devrait revenir fin octobre 2026"
-   },
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Javier Aguirre est le nouvel entraîneur depuis la trêve d'octobre 2026 (il remplace Corberán). Son premier match est à Santander."
@@ -1313,6 +1321,22 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Longues absences : Diego López (retour mi-février 2027), Canós (début décembre 2026), Sadiq (début novembre 2026), Foulquier (fin octobre 2026)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Javier Aguirre a remplacé Corberán pendant la trêve d'octobre 2026 ; son premier match est à Santander."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Valencia est dernier ou 19e avec 4 points et la pire attaque (4 buts en 7 journées)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Blessés de longue durée : Diego López (retour mi-février 2027), Canós (début décembre 2026), Sadiq (début novembre 2026), Foulquier (fin octobre 2026)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Valencia a perdu 4 de ses 5 derniers matchs de Liga."
    }
   ]
  },
@@ -1498,6 +1522,126 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Ljubicic (genou), Höjlund, Siebeking et Heekeren étaient signalés absents dans les avant-matchs. Je n'ai pas pu vérifier la durée de ces absences."
+   }
+  ]
+ },
+ "troyes": {
+  "nom": "Troyes",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Défense fragile : 10 buts encaissés sur 3 journées de L1."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Boura est absent plusieurs semaines (blessure à la hanche)."
+   }
+  ]
+ },
+ "marseille": {
+  "nom": "Marseille",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Début de saison très difficile : relégable après 5 journées, avec 1 victoire et 4 défaites."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Genesio est sous pression et le contexte financier du club est tendu."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Højbjerg (ischio-jambiers) et Cornelius sont blessés après la trêve internationale."
+   }
+  ]
+ },
+ "arouca": {
+  "nom": "Arouca",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Changement d'entraîneur : Vítor Severino remplace Vasco Seabra (parti à Rio Ave), premier match le 11/10/2026."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Miguel Puche est blessé longue durée (grave blessure au genou, saison précédente)."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Arouca a marqué lors de 13 matchs de championnat à domicile de suite."
+   }
+  ]
+ },
+ "cf estrela": {
+  "nom": "CF Estrela",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Bon début de saison sous Pepa, mais l'attaquant Leandro Antonetti n'a pas marqué lors de ses 3 derniers matchs."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Défense fragile à l'extérieur : but encaissé dans 17 de ses 18 derniers matchs hors de ses bases."
+   }
+  ]
+ },
+ "villarreal": {
+  "nom": "Villarreal",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Tajon Buchanan est blessé aux ischio-jambiers, sans date de retour confirmée."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Le club est en méforme : une seule victoire récente sur neuf matchs selon Freetips (winless sur 7 des 9 derniers) et une longue série sans victoire en C1 (douze matchs)."
+   }
+  ]
+ },
+ "napoli": {
+  "nom": "Napoli",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Vergara (mollet), Buongiorno, Alisson Santos et Favasuli sont absents pour une durée indéterminée."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Napoli est invaincu sur ses 3 derniers matchs, mais n'a pas gagné lors de ses six derniers déplacements de C1."
+   }
+  ]
+ },
+ "atlético madrid": {
+  "nom": "Atlético Madrid",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Défaite 2-1 à Liverpool en ouverture de C1 2026-27 et défaite en championnat à l'Athletic, avant un 3-0 contre la Real Sociedad."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Défense irrégulière: 8 buts encaissés sur 5 matchs toutes compétitions confondues."
+   }
+  ]
+ },
+ "manchester united": {
+  "nom": "Manchester United",
+  "faits": [
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Šeško blessé au tibia, sans calendrier de retour et avec une opération possible."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Dorgu absent plusieurs semaines (ischio) et Mazraoui blessé: United manque de latéraux."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Ugarte est out longue durée (ligaments croisés, opéré) et de Ligt est touché au dos."
+   },
+   {
+    "date": "2026-10-11T18:00:05",
+    "texte": "Pression croissante sur Michael Carrick après un début de saison jugé très décevant."
    }
   ]
  }

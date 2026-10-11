@@ -6,8 +6,8 @@
   "proba": 0.2278,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 30.9,
   "jambes": [
    {
     "id": "a8801462cb97a43570956e4b3ef4aedf",
@@ -17,7 +17,10 @@
     "exterieur": "Borussia Monchengladbach",
     "pari": "Victoire 1. FC Köln",
     "court": "1",
-    "cote": 1.93
+    "cote": 1.93,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "5d3606630a2d3a218a6340d082c1bdc6",
@@ -27,7 +30,10 @@
     "exterieur": "Strasbourg",
     "pari": "Victoire Nice",
     "court": "1",
-    "cote": 2.12
+    "cote": 2.12,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    }
   ]
  }
