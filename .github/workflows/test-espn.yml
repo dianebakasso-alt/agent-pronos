@@ -1,0 +1,17 @@
+name: Test ESPN
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          for u in "fra.1/scoreboard?dates=20261011-20261018" "fra.1/scoreboard?dates=20261011" "eng.1/scoreboard?dates=20261018" "fra.1/scoreboard"; do
+            echo "=== $u" >> data/espn_test.txt
+            curl -s -i "https://site.api.espn.com/apis/site/v2/sports/soccer/$u" | grep -iE "^HTTP|access-control-allow-origin" >> data/espn_test.txt
+            curl -s "https://site.api.espn.com/apis/site/v2/sports/soccer/$u" | python3 -c "import sys,json; d=json.load(sys.stdin); ev=d.get('events',[]); print(len(ev),'events', [(e['date'][:10], e['shortName']) for e in ev[:4]])" >> data/espn_test.txt 2>&1 || echo "json ko" >> data/espn_test.txt
+          done
+          git config user.name "agent-pronos"; git config user.email "agent-pronos@users.noreply.github.com"
+          git add data/espn_test.txt; git commit -m "test espn"; git push
