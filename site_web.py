@@ -111,6 +111,14 @@ def ligne_match(m):
       </div>"""
 
 
+def avis_jambe(j):
+    a = j.get("avis")
+    if not a:
+        return ""
+    cls, titre = AVIS.get(a.get("avis"), AVIS["prudence"])
+    return f"""<li class="avis-j {cls}"><b>{titre} :</b> {e(a.get("resume", ""))}</li>"""
+
+
 def carte_combine(c):
     if not c:
         return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
@@ -120,7 +128,7 @@ def carte_combine(c):
         m = j["match"]
         jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
           <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
-          <span class="j-cote">{j["cote"]:.2f}</span></li>"""
+          <span class="j-cote">{j["cote"]:.2f}</span></li>{avis_jambe(j)}"""
     if c["conseille"]:
         entete = f'<div class="combo-t">🎟️ Ton combiné du jour <span class="badge c-bonne">Conseillé</span></div>'
         note = f'Chaque match a un avantage chez {e(c["bookmaker"])} : le ticket garde un avantage de <b class="vert">{pct(c["edge"], True)}</b>.'
@@ -166,6 +174,18 @@ def section_historique(historique, b):
     </div>
     <p class="note">Le rendement compte plus que le nombre de paris gagnés. Juge l'agent sur 200 paris minimum, pas sur une semaine.</p>
     <table class="hist">{lignes}</table>"""
+
+
+def statut_ia(ia):
+    if not ia:
+        return ""
+    if ia["etat"] == "active":
+        return f"🤖 IA active : {ia['ok']} match{'s' if ia['ok'] > 1 else ''} vérifié{'s' if ia['ok'] > 1 else ''} (actu, compos, avis d'experts)."
+    if ia["etat"] == "rien":
+        return "🤖 IA prête : aucun match à vérifier aujourd'hui."
+    if ia["etat"] == "erreur":
+        return f"🤖 IA en erreur : {e(ia.get('erreur') or '')}"
+    return "🤖 IA éteinte (clé ANTHROPIC_API_KEY absente)."
 
 
 def generer(chemin, analyses, values, historique, b, infos, combine=None):
@@ -328,6 +348,10 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
 .j-txt b {{ display:block; font-size:14px; }}
 .j-txt small {{ display:block; color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
 .j-cote {{ font:700 20px "Barlow Condensed",sans-serif; }}
+.jambes li.avis-j {{ display:block; background:none; padding:0 4px 4px 12px; margin-top:-4px; font-size:13px; color:var(--muted);
+  border-left:3px solid var(--warn); border-radius:0; }}
+.avis-j.ok {{ border-color:var(--ok); }} .avis-j.bad {{ border-color:var(--bad); }}
+.avis-j.ok b {{ color:var(--ok); }} .avis-j.warn b {{ color:var(--warn); }} .avis-j.bad b {{ color:var(--bad); }}
 .combo-note {{ margin-top:10px; font-size:13px; line-height:1.45; }}
 .vide-c p {{ margin-top:6px; }}
 .calc span {{ display:block; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }}
@@ -437,6 +461,7 @@ footer b {{ color:var(--text); }}
   <p>Aucun pari n'est sûr. Ne mise que ce que tu peux perdre et respecte les mises conseillées.
   Besoin d'aide : <b>Joueurs Info Service, 09 74 75 13 13</b> (appel non surtaxé).</p>
   <p>Généré automatiquement{credits}.</p>
+  <p>{statut_ia(infos.get("ia"))}</p>
 </footer>
 <script>
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {{}});

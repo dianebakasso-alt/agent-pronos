@@ -109,11 +109,10 @@ Réponds UNIQUEMENT avec ce JSON, en français :
 (ex. joueur clé absent que la cote n'a peut-être pas encore intégré)."""
 
 
-def avis_expert(m, cfg, cle_ia):
-    v = m["value"]
+def avis_expert(m, v, cfg, cle_ia):
     corps = {
         "model": cfg["modele_ia"],
-        "max_tokens": 1500,
+        "max_tokens": 3000,
         "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 4}],
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
@@ -226,19 +225,43 @@ def main():
     values = sorted([a for a in analyses if a["value"]], key=lambda a: -a["value"]["edge"])
     print(f"    {len(analyses)} matchs analysés, {len(values)} value bets")
 
+    combine = moteur.combine_du_jour(analyses, cfg)
+
+    # l'IA vérifie l'actu des paris simples, puis des matchs du combiné
+    taches, vus = [], set()
+    for m in values:
+        taches.append((m, m["value"], m)); vus.add(m["id"])
+    for j in (combine or {}).get("jambes", []):
+        if j["match"]["id"] not in vus:
+            taches.append((j["match"], j, j)); vus.add(j["match"]["id"])
+        else:
+            j["avis_de"] = j["match"]
+    taches = taches[: cfg["analyse_ia_max_matchs"]]
+
     cle_ia = os.environ.get("ANTHROPIC_API_KEY")
-    if cfg.get("analyse_ia") and values:
+    ia = {"etat": "eteinte", "ok": 0, "erreur": None}
+    if cfg.get("analyse_ia") and taches:
         if demo:
             import demo as d
-            for m in values[: cfg["analyse_ia_max_matchs"]]:
-                m["avis"] = d.avis_fictif(m)
+            for m, v, cible in taches:
+                cible["avis"] = d.avis_fictif({"value": {"edge": v.get("edge", 0)}})
+            ia["etat"], ia["ok"] = "active", len(taches)
         elif cle_ia:
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
-            for m in values[: cfg["analyse_ia_max_matchs"]]:
+            for m, v, cible in taches:
                 try:
-                    m["avis"] = avis_expert(m, cfg, cle_ia)
+                    cible["avis"] = avis_expert(m, v, cfg, cle_ia)
+                    ia["ok"] += 1
                 except Exception as e:
-                    print(f"  ! IA {m['domicile']}: {e}")
+                    detail = e.read().decode()[:200] if hasattr(e, "read") else str(e)[:200]
+                    print(f"  ! IA {m['domicile']}: {e} {detail}")
+                    ia["erreur"] = f"{getattr(e, 'code', '')} {detail}".strip()
+            ia["etat"] = "active" if ia["ok"] else "erreur"
+    elif cfg.get("analyse_ia") and cle_ia:
+        ia["etat"] = "rien"
+    for j in (combine or {}).get("jambes", []):
+        if "avis_de" in j and j["avis_de"].get("avis"):
+            j["avis"] = j["avis_de"]["avis"]
 
     if not demo:
         enregistrer_paris(historique, values)
@@ -250,8 +273,8 @@ def main():
         "credits_restants": api.credits_restants if api else None,
         "credits_utilises": api.credits_utilises if api else None,
         "bankroll": cfg["bankroll_euros"],
+        "ia": ia,
     }
-    combine = moteur.combine_du_jour(analyses, cfg)
     site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combine)
     print("Site généré : site/index.html")
 
