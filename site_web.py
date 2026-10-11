@@ -6,6 +6,8 @@ from datetime import datetime
 from html import escape
 from zoneinfo import ZoneInfo
 
+from ecussons import championnat, ecusson
+
 PARIS = ZoneInfo("Europe/Paris")
 JOURS = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
 MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
@@ -36,6 +38,31 @@ AVIS = {
 }
 
 
+def barre_probas(m, surligne=None):
+    segs = ""
+    for i in m["issues"]:
+        cls = {"1": "s1", "N": "sn", "2": "s2"}[i["court"]]
+        on = " on" if i["court"] == surligne else ""
+        segs += f'<span class="{cls}{on}" style="flex:{i["proba"]:.3f}"></span>'
+    return f'<div class="barre-p">{segs}</div>'
+
+
+def affiche(m, grand=False):
+    t = 52 if grand else 40
+    d = datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(PARIS)
+    jour = f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]}"
+    return f"""<div class="affiche{' grande' if grand else ''}">
+        <div class="eq">{ecusson(m["domicile"], t)}<span>{e(m["domicile"])}</span></div>
+        <div class="ko"><b>{d:%H:%M}</b><small>{jour}</small></div>
+        <div class="eq">{ecusson(m["exterieur"], t)}<span>{e(m["exterieur"])}</span></div>
+      </div>"""
+
+
+def tag_champ(m):
+    drap, nom = championnat(m.get("sport_key", ""), m["championnat"])
+    return f'<span class="champ"><i>{drap}</i>{e(nom)}</span>'
+
+
 def carte_value(m):
     v = m["value"]
     avis_html = ""
@@ -51,12 +78,13 @@ def carte_value(m):
       </div>"""
     return f"""
     <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}">
-      <div class="meta"><span>{e(m["championnat"])}</span><span>{heure(m["debut"])}</span></div>
-      <h3>{e(m["domicile"])} <span class="vs">–</span> {e(m["exterieur"])}</h3>
+      <div class="meta">{tag_champ(m)}<span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span></div>
+      {affiche(m, grand=True)}
+      {barre_probas(m, v["court"])}
       <div class="pari">
-        <div><div class="lbl">Pari</div><div class="choix">{e(v["issue"])}</div></div>
+        <div><div class="lbl">Le pari</div><div class="choix">{e(v["issue"])}</div></div>
         <div class="cote"><div class="lbl">Cote</div><div class="num">{v["cote"]:.2f}</div>
-          <div class="bk">{e(v["bookmaker"])}</div></div>
+          <div class="bk">chez {e(v["bookmaker"])}</div></div>
       </div>
       <div class="grille">
         <div><span>Proba marché</span><b>{pct(v["proba"])}</b></div>
@@ -64,8 +92,7 @@ def carte_value(m):
         <div><span>Avantage</span><b class="vert">{pct(v["edge"], True)}</b></div>
         <div><span>Mise</span><b>{euros(v["mise"])}</b></div>
       </div>
-      <div class="pied-carte"><span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span>
-        <span class="src">Réf. : {e(m["source_proba"])} · {m["nb_bookmakers"]} bookmakers</span></div>{avis_html}
+      <div class="src">Réf. : {e(m["source_proba"])} · {m["nb_bookmakers"]} bookmakers comparés</div>{avis_html}
     </article>"""
 
 
@@ -78,8 +105,8 @@ def ligne_match(m):
           <b>{i["cote"]:.2f}</b><span class="p">{pct(i["proba"])}</span></div>"""
     return f"""
       <div class="match">
-        <div class="mh"><span class="t">{e(m["domicile"])} – {e(m["exterieur"])}</span>
-          <span class="h">{heure(m["debut"])}</span></div>
+        {affiche(m)}
+        {barre_probas(m, vcourt)}
         <div class="cases">{cases}</div>
       </div>"""
 
@@ -115,18 +142,29 @@ def generer(chemin, analyses, values, historique, b, infos):
     if values:
         cartes = "".join(carte_value(m) for m in values)
     else:
-        cartes = """<div class="rien"><b>Rien à jouer aujourd'hui.</b>
+        cartes = """<div class="rien"><div class="sifflet">🧘</div><b>Rien à jouer aujourd'hui.</b>
         <p>Aucune cote ne paie plus que le vrai risque. Ne pas parier, c'est aussi une décision gagnante.</p></div>"""
+    if analyses:
+        choc = max(analyses, key=lambda m: (m["nb_bookmakers"], -abs(m["issues"][0]["proba"] - m["issues"][-1]["proba"])))
+        cartes += f"""
+    <h2>L'affiche du jour <small>le match le plus suivi</small></h2>
+    <article class="carte choc">
+      <div class="meta">{tag_champ(choc)}<span class="src">{choc["nb_bookmakers"]} bookmakers</span></div>
+      {affiche(choc, grand=True)}
+      {barre_probas(choc)}
+      <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
+    </article>"""
 
     par_champ = OrderedDict()
-    for m in sorted(analyses, key=lambda m: (m["championnat"], m["debut"])):
-        par_champ.setdefault(m["championnat"], []).append(m)
+    for m in sorted(analyses, key=lambda m: (-sum(1 for x in analyses if x["sport_key"] == m["sport_key"] and x["value"]),
+                                             championnat(m.get("sport_key", ""), m["championnat"])[1], m["debut"])):
+        par_champ.setdefault(championnat(m.get("sport_key", ""), m["championnat"]), []).append(m)
     groupes = ""
     for champ, ms in par_champ.items():
         nv = sum(1 for m in ms if m["value"])
         tag = f'<span class="nv">{nv} value</span>' if nv else ""
         groupes += f"""
-    <details{' open' if nv else ''}><summary><span>{e(champ)}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
+    <details{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
       {''.join(ligne_match(m) for m in ms)}
     </details>"""
 
@@ -157,19 +195,26 @@ def generer(chemin, analyses, values, historique, b, infos):
   --bg:#0e1411; --surface:#161e1a; --surface2:#1d2722; --line:#2a3630;
   --text:#ecf2ee; --muted:#93a39a; --accent:#c8f169; --accent-ink:#13200a;
   --ok:#5fd38d; --warn:#f2c14e; --bad:#ff6b6b;
+  --p1:#c8f169; --pn:#7d8a83; --p2:#5aa9e6; --pitch:rgba(200,241,105,.10); --glow:rgba(200,241,105,.07);
 }}
 @media (prefers-color-scheme: light) {{
   :root:not([data-theme="dark"]) {{
     --bg:#f3f5f1; --surface:#ffffff; --surface2:#eef2ec; --line:#dbe2d9;
     --text:#14201a; --muted:#5d6b63; --accent:#2f7d32; --accent-ink:#ffffff;
     --ok:#1f8a4c; --warn:#a86b00; --bad:#c62828;
+    --p1:#3c9a3f; --pn:#a3ada7; --p2:#2f78c4; --pitch:rgba(47,125,50,.14); --glow:rgba(47,125,50,.08);
   }}
 }}
 * {{ box-sizing:border-box; margin:0; padding:0; }}
 body {{ background:var(--bg); color:var(--text); font:15px/1.45 Inter, system-ui, sans-serif;
   padding:0 16px calc(32px + env(safe-area-inset-bottom)); max-width:640px; margin:0 auto; }}
 h1,h2,h3,.num,.choix,.bilan b,.grille b {{ font-family:"Barlow Condensed", Inter, sans-serif; letter-spacing:.01em; }}
-header {{ padding:calc(20px + env(safe-area-inset-top)) 0 18px; }}
+header {{ position:relative; padding:calc(20px + env(safe-area-inset-top)) 0 18px; }}
+header::before {{ content:""; position:absolute; z-index:-1; inset:0 -16px; pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 100%, transparent 58px, var(--pitch) 59px, var(--pitch) 60px, transparent 61px),
+    linear-gradient(180deg, var(--glow), transparent 75%);
+  border-bottom:1px solid var(--pitch); }}
 .haut {{ display:flex; justify-content:space-between; align-items:center; gap:8px; }}
 .maj {{ background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:99px;
   font:600 13px Inter, sans-serif; padding:6px 12px; cursor:pointer; }}
@@ -180,6 +225,7 @@ header {{ padding:calc(20px + env(safe-area-inset-top)) 0 18px; }}
 .date {{ color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }}
 h1 {{ font-size:40px; line-height:1; margin-top:4px; }}
 h1 em {{ font-style:normal; color:var(--accent); }}
+.ballon {{ font-size:28px; vertical-align:6px; }}
 .resume {{ display:flex; gap:8px; margin-top:16px; }}
 .resume div {{ flex:1; background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:10px 12px; }}
 .resume span {{ display:block; color:var(--muted); font-size:12px; }}
@@ -190,7 +236,29 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
   padding:6px; border-radius:0 0 10px 10px; }}
 .carte {{ background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:12px; }}
 .carte.barre {{ opacity:.6; }}
-.meta {{ display:flex; justify-content:space-between; color:var(--muted); font-size:12px; gap:8px; }}
+.meta {{ display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:12px; gap:8px; }}
+.champ {{ display:inline-flex; align-items:center; gap:6px; font-weight:600; color:var(--text); }}
+.champ i {{ font-style:normal; font-size:15px; line-height:1; }}
+.champ.g i {{ font-size:18px; }}
+.affiche {{ display:grid; grid-template-columns:1fr auto 1fr; align-items:start; gap:6px; text-align:center; margin:4px 0 10px; }}
+.affiche.grande {{ margin:14px 0 14px; }}
+.eq {{ display:flex; flex-direction:column; align-items:center; gap:6px; min-width:0; }}
+.eq span {{ font-weight:600; font-size:13px; line-height:1.2; overflow-wrap:anywhere; }}
+.affiche.grande .eq span {{ font-family:"Barlow Condensed",sans-serif; font-size:19px; font-weight:700; }}
+.ecu {{ display:block; filter:drop-shadow(0 2px 3px rgba(0,0,0,.25)); }}
+.ko {{ display:flex; flex-direction:column; align-items:center; padding-top:8px; min-width:62px; }}
+.ko b {{ font-family:"Barlow Condensed",sans-serif; font-size:22px; line-height:1; }}
+.affiche.grande .ko b {{ font-size:28px; padding-top:4px; }}
+.ko small {{ color:var(--muted); font-size:11px; margin-top:3px; white-space:nowrap; }}
+.barre-p {{ display:flex; gap:3px; height:6px; margin:0 0 12px; }}
+.barre-p span {{ border-radius:3px; opacity:.55; }}
+.barre-p span.on {{ opacity:1; box-shadow:0 0 0 2px var(--surface), 0 0 0 3px currentColor; }}
+.s1 {{ background:var(--p1); color:var(--p1); }} .sn {{ background:var(--pn); color:var(--pn); }} .s2 {{ background:var(--p2); color:var(--p2); }}
+.leg {{ display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--muted); }}
+.leg i {{ display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:7px; vertical-align:-1px; }}
+.leg b {{ color:var(--text); }}
+.choc {{ background:linear-gradient(160deg, var(--glow), transparent 60%), var(--surface); }}
+.sifflet {{ font-size:30px; margin-bottom:6px; }}
 .carte h3 {{ font-size:23px; margin:6px 0 12px; line-height:1.1; }}
 .vs {{ color:var(--muted); }}
 .pari {{ display:flex; justify-content:space-between; align-items:flex-end; background:var(--accent); color:var(--accent-ink);
@@ -209,6 +277,7 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
 .badge {{ font-size:12px; font-weight:600; padding:3px 9px; border-radius:99px; background:var(--surface2); }}
 .c-forte,.c-bonne {{ color:var(--ok); }} .c-moyenne {{ color:var(--warn); }} .c-faible {{ color:var(--muted); }}
 .src {{ font-size:11px; color:var(--muted); }}
+.carte > .src {{ margin-top:10px; }}
 .avis {{ margin-top:12px; border-left:3px solid var(--warn); padding:4px 0 2px 12px; font-size:14px; }}
 .avis.ok {{ border-color:var(--ok); }} .avis.bad {{ border-color:var(--bad); }}
 .avis-t {{ font-weight:600; font-size:13px; }}
@@ -221,7 +290,8 @@ summary {{ list-style:none; cursor:pointer; padding:13px 14px; display:flex; jus
 summary::-webkit-details-marker {{ display:none; }}
 .cpt {{ color:var(--muted); font-weight:500; font-size:13px; white-space:nowrap; }}
 .nv {{ color:var(--accent); margin-right:8px; }}
-.match {{ border-top:1px solid var(--line); padding:10px 14px 12px; }}
+.match {{ border-top:1px solid var(--line); padding:12px 14px 14px; }}
+.match .barre-p {{ height:4px; margin-bottom:8px; }}
 .mh {{ display:flex; justify-content:space-between; gap:8px; font-size:14px; }}
 .mh .h {{ color:var(--muted); font-size:12px; white-space:nowrap; }}
 .cases {{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:8px; }}
@@ -229,6 +299,9 @@ summary::-webkit-details-marker {{ display:none; }}
 .case .k {{ color:var(--muted); font-size:12px; font-weight:600; }}
 .case .p {{ margin-left:auto; color:var(--muted); font-size:12px; }}
 .case.val {{ outline:2px solid var(--accent); }}
+.carte {{ animation:monte .45s ease both; }}
+@keyframes monte {{ from {{ opacity:0; transform:translateY(8px); }} }}
+@media (prefers-reduced-motion: reduce) {{ .carte {{ animation:none; }} }}
 .bilan {{ display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }}
 .bilan div {{ background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:8px; text-align:center; }}
 .bilan span {{ display:block; font-size:11px; color:var(--muted); }}
@@ -252,7 +325,7 @@ footer b {{ color:var(--text); }}
 <header>
   <div class="haut"><div class="date">{date_txt} · mis à jour {d:%H:%M}</div>
     <button class="maj" onclick="location.reload()">Actualiser</button></div>
-  <h1>Pronos <em>du jour</em></h1>
+  <h1>Pronos <em>du jour</em> <span class="ballon">⚽</span></h1>
   <div class="resume">
     <div><span>Matchs analysés</span><b>{len(analyses)}</b></div>
     <div><span>Value bets</span><b>{len(values)}</b></div>
