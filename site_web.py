@@ -1,5 +1,7 @@
 """Fabrique la page web (une seule page, pensée pour le téléphone)."""
+import shutil
 from collections import OrderedDict
+from pathlib import Path
 from datetime import datetime
 from html import escape
 from zoneinfo import ZoneInfo
@@ -140,6 +142,13 @@ def generer(chemin, analyses, values, historique, b, infos):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0e1411">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pronos">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
 <title>Pronos du jour</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -160,7 +169,14 @@ def generer(chemin, analyses, values, historique, b, infos):
 body {{ background:var(--bg); color:var(--text); font:15px/1.45 Inter, system-ui, sans-serif;
   padding:0 16px calc(32px + env(safe-area-inset-bottom)); max-width:640px; margin:0 auto; }}
 h1,h2,h3,.num,.choix,.bilan b,.grille b {{ font-family:"Barlow Condensed", Inter, sans-serif; letter-spacing:.01em; }}
-header {{ padding:28px 0 18px; }}
+header {{ padding:calc(20px + env(safe-area-inset-top)) 0 18px; }}
+.haut {{ display:flex; justify-content:space-between; align-items:center; gap:8px; }}
+.maj {{ background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:99px;
+  font:600 13px Inter, sans-serif; padding:6px 12px; cursor:pointer; }}
+.installer {{ display:none; background:var(--surface); border:1px solid var(--accent); border-radius:12px;
+  padding:12px 14px; margin-top:14px; font-size:14px; }}
+.installer b {{ color:var(--accent); }}
+.installer button {{ float:right; background:none; border:0; color:var(--muted); font-size:18px; line-height:1; cursor:pointer; }}
 .date {{ color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }}
 h1 {{ font-size:40px; line-height:1; margin-top:4px; }}
 h1 em {{ font-style:normal; color:var(--accent); }}
@@ -234,13 +250,16 @@ footer b {{ color:var(--text); }}
 <body>
 {bandeau_demo}
 <header>
-  <div class="date">{date_txt} · mis à jour {d:%H:%M}</div>
+  <div class="haut"><div class="date">{date_txt} · mis à jour {d:%H:%M}</div>
+    <button class="maj" onclick="location.reload()">Actualiser</button></div>
   <h1>Pronos <em>du jour</em></h1>
   <div class="resume">
     <div><span>Matchs analysés</span><b>{len(analyses)}</b></div>
     <div><span>Value bets</span><b>{len(values)}</b></div>
     <div><span>Mise totale</span><b>{euros(total_mises)}</b></div>
   </div>
+  <div class="installer" id="installer"><button onclick="fermer()" aria-label="Fermer">×</button>
+    <b>Installe l'appli :</b> touche <b>Partager</b> en bas de Safari, puis <b>Sur l'écran d'accueil</b>.</div>
 </header>
 
 <h2>À jouer <small>bankroll {euros(infos["bankroll"])}</small></h2>
@@ -260,7 +279,26 @@ footer b {{ color:var(--text); }}
   Besoin d'aide : <b>Joueurs Info Service, 09 74 75 13 13</b> (appel non surtaxé).</p>
   <p>Généré automatiquement{credits}.</p>
 </footer>
+<script>
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {{}});
+const appli = window.navigator.standalone || matchMedia("(display-mode: standalone)").matches;
+const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+let vu = null; try {{ vu = localStorage.getItem("installer-vu"); }} catch (e) {{}}
+if (ios && !appli && !vu) document.getElementById("installer").style.display = "block";
+function fermer() {{
+  document.getElementById("installer").style.display = "none";
+  try {{ localStorage.setItem("installer-vu", "1"); }} catch (e) {{}}
+}}
+document.addEventListener("visibilitychange", () => {{
+  // l'appli revient au premier plan après plus d'une heure : on recharge les pronos
+  if (document.visibilityState === "visible" && Date.now() - performance.timeOrigin > 3600e3) location.reload();
+}});
+</script>
 </body>
 </html>"""
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(html, encoding="utf-8")
+    # fichiers de l'appli (icônes, manifeste, mode hors ligne)
+    app = Path(__file__).parent / "app"
+    for f in app.glob("*"):
+        shutil.copy(f, chemin.parent / f.name)
