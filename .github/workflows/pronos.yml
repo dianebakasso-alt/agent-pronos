@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "agent-pronos"
           git config user.email "agent-pronos@users.noreply.github.com"
-          git add data/historique.json
+          git add data/
           git diff --cached --quiet || git commit -m "Historique du $(date +%F)"
           git push
 

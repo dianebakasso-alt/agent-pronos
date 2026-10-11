@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import moteur
+import stats
 import site_web
 
 ICI = Path(__file__).parent
@@ -96,6 +97,7 @@ def recuperer_matchs(api, cfg, championnats, maintenant):
 CONSIGNE_IA = """Tu es un pronostiqueur football expérimenté et prudent.
 Match : {dom} - {ext} ({champ}), coup d'envoi {debut} UTC.
 Pari envisagé : {issue} à la cote {cote:.2f} (probabilité du marché {proba:.0%}).
+{stats}
 
 Cherche sur le web les infos les plus récentes : compositions probables, blessés et suspendus,
 déclarations des coachs, forme récente, contexte (enjeu, calendrier chargé, ambiance),
@@ -116,7 +118,8 @@ def avis_expert(m, v, cfg, cle_ia):
         "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 4}],
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
-            issue=v["issue"], cote=v["cote"], proba=v["proba"])}],
+            issue=v["issue"], cote=v["cote"], proba=v["proba"],
+            stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]))}],
     }
     data, _ = http_json("https://api.anthropic.com/v1/messages",
                         data=json.dumps(corps).encode(),
@@ -154,30 +157,83 @@ def enregistrer_paris(historique, analyses):
         })
 
 
-def regler_paris(api, historique, maintenant):
-    """Va chercher les scores des paris terminés (2 crédits par championnat)."""
-    a_regler = [h for h in historique if h["statut"] == "en attente"
-                and datetime.fromisoformat(h["date"].replace("Z", "+00:00")) < maintenant - timedelta(hours=3)]
-    for cle in {h["sport_key"] for h in a_regler}:
+COMBINES = DATA / "combines.json"
+
+
+def _termine(date_iso, maintenant):
+    return datetime.fromisoformat(date_iso.replace("Z", "+00:00")) < maintenant - timedelta(hours=3)
+
+
+def _resultat(s, dom, ext):
+    if not s or not s.get("completed") or not s.get("scores"):
+        return None, None
+    buts = {x["name"]: int(x["score"]) for x in s["scores"]}
+    d, e = buts.get(dom), buts.get(ext)
+    if d is None or e is None:
+        return None, None
+    return ("1" if d > e else "2" if e > d else "N"), f"{d}-{e}"
+
+
+def regler_paris(api, historique, combines, maintenant):
+    """Va chercher les scores des paris et combinés terminés (2 crédits par championnat)."""
+    simples = [h for h in historique if h["statut"] == "en attente" and _termine(h["date"], maintenant)]
+    jambes = [j for c in combines if c["statut"] == "en attente" for j in c["jambes"]
+              if not j.get("res") and _termine(j["date"], maintenant)]
+    cles = {h["sport_key"] for h in simples} | {j["sport_key"] for j in jambes}
+    scores = {}
+    for cle in cles:
         try:
-            scores = {s["id"]: s for s in api.get(f"/sports/{cle}/scores", daysFrom=3)}
+            scores.update({s["id"]: s for s in api.get(f"/sports/{cle}/scores", daysFrom=3)})
         except Exception as e:
             print(f"  ! scores {cle}: {e}")
+    for h in simples:
+        res, score = _resultat(scores.get(h["id"]), h["domicile"], h["exterieur"])
+        if not res:
             continue
-        for h in a_regler:
-            s = scores.get(h["id"])
-            if h["sport_key"] != cle or not s or not s.get("completed") or not s.get("scores"):
-                continue
-            buts = {x["name"]: int(x["score"]) for x in s["scores"]}
-            d, e = buts.get(h["domicile"]), buts.get(h["exterieur"])
-            if d is None or e is None:
-                continue
-            res = "1" if d > e else "2" if e > d else "N"
-            h["score"] = f"{d}-{e}"
-            if res == h["court"]:
-                h["statut"], h["gain"] = "gagné", round(h["mise"] * (h["cote"] - 1), 2)
-            else:
-                h["statut"], h["gain"] = "perdu", -h["mise"]
+        h["score"] = score
+        if res == h["court"]:
+            h["statut"], h["gain"] = "gagné", round(h["mise"] * (h["cote"] - 1), 2)
+        else:
+            h["statut"], h["gain"] = "perdu", -h["mise"]
+    for j in jambes:
+        res, score = _resultat(scores.get(j["id"]), j["domicile"], j["exterieur"])
+        if res:
+            j["res"], j["score"], j["ok"] = res, score, res == j["court"]
+    for c in combines:
+        if c["statut"] != "en attente":
+            continue
+        if any(j.get("ok") is False for j in c["jambes"]):
+            c["statut"], c["gain"] = "perdu", -c["mise"]
+        elif all(j.get("ok") for j in c["jambes"]):
+            c["statut"], c["gain"] = "gagné", round(c["mise"] * (c["cote"] - 1), 2)
+
+
+def enregistrer_combine(combines, combine, maintenant):
+    """Garde le combiné du jour (un par jour, celui du matin), mise fictive de 10 €."""
+    if not combine:
+        return
+    jour = maintenant.astimezone(site_web.PARIS).strftime("%Y-%m-%d")
+    if any(c["jour"] == jour for c in combines):
+        return
+    combines.append({
+        "jour": jour, "bookmaker": combine["bookmaker"], "cote": round(combine["cote"], 2),
+        "proba": round(combine["proba"], 4), "conseille": combine["conseille"], "mise": 10,
+        "statut": "en attente", "gain": 0,
+        "jambes": [{"id": j["match"]["id"], "sport_key": j["match"]["sport_key"], "date": j["match"]["debut"],
+                    "domicile": j["match"]["domicile"], "exterieur": j["match"]["exterieur"],
+                    "pari": j["issue"], "court": j["court"], "cote": j["cote"]} for j in combine["jambes"]],
+    })
+
+
+def bilan_combines(combines):
+    def calc(cs):
+        r = [c for c in cs if c["statut"] in ("gagné", "perdu")]
+        mises = sum(c["mise"] for c in r)
+        gains = sum(c["gain"] for c in r)
+        return {"nb": len(r), "gagnes": sum(c["statut"] == "gagné" for c in r),
+                "benefice": round(gains, 2), "roi": gains / mises if mises else None}
+    return {"tous": calc(combines), "conseilles": calc([c for c in combines if c["conseille"]]),
+            "en_attente": sum(c["statut"] == "en attente" for c in combines)}
 
 
 def bilan(historique):
@@ -195,6 +251,11 @@ def bilan(historique):
 
 
 # ---------------------------------------------------------------- programme principal
+def d_stats(a):
+    import demo as d
+    return d.stats_fictives(a)
+
+
 def main():
     demo = "--demo" in sys.argv
     cfg = charger_config()
@@ -205,6 +266,7 @@ def main():
         import demo as d
         matchs = d.matchs_fictifs(maintenant)
         historique = d.historique_fictif(maintenant)
+        combines = d.combines_fictifs(maintenant)
         api = None
     else:
         cle = os.environ.get("ODDS_API_KEY")
@@ -212,8 +274,9 @@ def main():
             sys.exit("Il manque la clé ODDS_API_KEY (voir le guide).")
         api = OddsAPI(cle)
         historique = charger_historique()
+        combines = json.loads(COMBINES.read_text(encoding="utf-8")) if COMBINES.exists() else []
         print("1/4 Règlement des paris passés…")
-        regler_paris(api, historique, maintenant)
+        regler_paris(api, historique, combines, maintenant)
         print("2/4 Recherche des championnats avec des matchs…")
         champs = choisir_championnats(api, cfg, maintenant)
         print(f"    {len(champs)} championnats retenus")
@@ -224,6 +287,20 @@ def main():
     analyses.sort(key=lambda a: a["debut"])
     values = sorted([a for a in analyses if a["value"]], key=lambda a: -a["value"]["edge"])
     print(f"    {len(analyses)} matchs analysés, {len(values)} value bets")
+
+    print("    Forme et stats des équipes…")
+    st = stats.Stats(maintenant)
+    for a in analyses:
+        if demo:
+            a["stats"] = d_stats(a)
+        else:
+            try:
+                a["stats"] = st.pour_match(a)
+            except Exception as e:
+                print(f"  ! stats {a['domicile']}: {e}")
+    if not demo:
+        (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
     combine = moteur.combine_du_jour(analyses, cfg)
 
@@ -265,7 +342,9 @@ def main():
 
     if not demo:
         enregistrer_paris(historique, values)
+        enregistrer_combine(combines, combine, maintenant)
         HISTORIQUE.write_text(json.dumps(historique, ensure_ascii=False, indent=1), encoding="utf-8")
+        COMBINES.write_text(json.dumps(combines, ensure_ascii=False, indent=1), encoding="utf-8")
 
     infos = {
         "genere": maintenant,
@@ -274,6 +353,8 @@ def main():
         "credits_utilises": api.credits_utilises if api else None,
         "bankroll": cfg["bankroll_euros"],
         "ia": ia,
+        "combines": combines,
+        "bilan_combines": bilan_combines(combines),
     }
     site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combine)
     print("Site généré : site/index.html")

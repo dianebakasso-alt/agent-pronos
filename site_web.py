@@ -81,6 +81,7 @@ def carte_value(m):
       <div class="meta">{tag_champ(m)}<span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span></div>
       {affiche(m, grand=True)}
       {barre_probas(m, v["court"])}
+      {bloc_stats(m)}
       <div class="pari">
         <div><div class="lbl">Le pari</div><div class="choix">{e(v["issue"])}</div></div>
         <div class="cote"><div class="lbl">Cote</div><div class="num">{v["cote"]:.2f}</div>
@@ -107,6 +108,7 @@ def ligne_match(m):
       <div class="match">
         {affiche(m)}
         {barre_probas(m, vcourt)}
+        {bloc_stats(m, compact=True)}
         <div class="cases">{cases}</div>
       </div>"""
 
@@ -153,6 +155,60 @@ def carte_combine(c):
       </div>
       <p class="src combo-note">{note}</p>
     </article>"""
+
+
+def pastilles(forme):
+    return "".join(f'<i class="f-{x}">{x}</i>' for x in forme) or '<small>—</small>'
+
+
+def bloc_stats(m, compact=False):
+    st = m.get("stats")
+    if not st:
+        return ""
+    d, x, f = st["domicile"], st["exterieur"], st["face"]
+    ligne_forme = f"""<div class="st-l"><div class="pas">{pastilles(d["forme"])}</div><span>Forme</span>
+        <div class="pas r">{pastilles(x["forme"])}</div></div>"""
+    if compact:
+        return f'<div class="stats compact">{ligne_forme}</div>'
+    def nb(v):
+        return f"{v:.1f}".replace(".", ",")
+    face = ""
+    if f["n"]:
+        face = f"""<div class="st-l"><b>{f["v_dom"]}</b><span>Face-à-face ({f["n"]} derniers) · {f["nuls"]} nul{'s' if f["nuls"] > 1 else ''}</span><b>{f["v_ext"]}</b></div>"""
+    return f"""<div class="stats">
+        {ligne_forme}
+        <div class="st-l"><div class="pas">{pastilles(d["forme_lieu"])}</div><span>À dom. / à l'ext.</span>
+          <div class="pas r">{pastilles(x["forme_lieu"])}</div></div>
+        <div class="st-l"><b>{nb(d["buts_pour"])}</b><span>Buts marqués / match</span><b>{nb(x["buts_pour"])}</b></div>
+        <div class="st-l"><b>{nb(d["buts_contre"])}</b><span>Buts encaissés / match</span><b>{nb(x["buts_contre"])}</b></div>
+        {face}
+      </div>"""
+
+
+def section_combines(cs, bc):
+    if not cs:
+        return '<p class="vide">Le suivi des combinés commence demain matin.</p>'
+    def roi(x):
+        return pct(x["roi"], True) if x["roi"] is not None else "—"
+    t, k = bc["tous"], bc["conseilles"]
+    cls = "vert" if t["benefice"] >= 0 else "rouge"
+    lignes = ""
+    for c in sorted(cs, key=lambda c: c["jour"], reverse=True)[:15]:
+        st = {"gagné": "ok", "perdu": "bad"}.get(c["statut"], "att")
+        j_txt = " + ".join(f'{"✅" if j.get("ok") else "❌" if j.get("ok") is False else "⏳"} {e(j["pari"])}' for j in c["jambes"])
+        tag = "" if c["conseille"] else ' <span class="c-risque">· non conseillé</span>'
+        lignes += f"""<tr><td>{e(c["jour"][8:10])}/{e(c["jour"][5:7])} · cote {c["cote"]:.2f}{tag}<small>{j_txt}</small></td>
+          <td class="r"><span class="st {st}">{e(c["statut"])}</span><small>{euros(c["gain"], True) if c["statut"] != "en attente" else ""}</small></td></tr>"""
+    return f"""
+    <p class="note">Comme si tu avais misé <b>10 € chaque jour</b> sur le combiné de l'agent.</p>
+    <div class="bilan">
+      <div><span>Tickets réglés</span><b>{t["nb"]}</b></div>
+      <div><span>Passés</span><b>{t["gagnes"]}</b></div>
+      <div><span>Bénéfice</span><b class="{cls}">{euros(t["benefice"], True)}</b></div>
+      <div><span>Rendement</span><b class="{cls}">{roi(t)}</b></div>
+    </div>
+    <p class="note">Seulement les combinés <b>conseillés</b> : {k["nb"]} ticket{'s' if k["nb"] > 1 else ''}, {k["gagnes"]} passé{'s' if k["gagnes"] > 1 else ''}, bénéfice <b class="{'vert' if k['benefice'] >= 0 else 'rouge'}">{euros(k["benefice"], True)}</b> ({roi(k)}).</p>
+    <table class="hist">{lignes}</table>"""
 
 
 def section_historique(historique, b):
@@ -208,6 +264,7 @@ def generer(chemin, analyses, values, historique, b, infos, combine=None):
       <div class="meta">{tag_champ(choc)}<span class="src">{choc["nb_bookmakers"]} bookmakers</span></div>
       {affiche(choc, grand=True)}
       {barre_probas(choc)}
+      {bloc_stats(choc)}
       <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
     </article>"""
 
@@ -352,6 +409,18 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
   border-left:3px solid var(--warn); border-radius:0; }}
 .avis-j.ok {{ border-color:var(--ok); }} .avis-j.bad {{ border-color:var(--bad); }}
 .avis-j.ok b {{ color:var(--ok); }} .avis-j.warn b {{ color:var(--warn); }} .avis-j.bad b {{ color:var(--bad); }}
+.stats {{ background:var(--surface2); border-radius:12px; padding:8px 10px; margin:-2px 0 12px; display:flex; flex-direction:column; gap:6px; }}
+.stats.compact {{ background:none; padding:0; margin:0 0 8px; }}
+.st-l {{ display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:8px; font-size:12px; }}
+.st-l > span {{ color:var(--muted); text-align:center; white-space:nowrap; }}
+.st-l > b {{ font:700 17px "Barlow Condensed",sans-serif; }}
+.st-l > b:last-child {{ text-align:right; }}
+.pas {{ display:flex; gap:3px; }}
+.pas.r {{ justify-content:flex-end; }}
+.pas i {{ font-style:normal; font:700 10px Inter,sans-serif; width:17px; height:17px; border-radius:5px; display:grid; place-items:center; color:#fff; }}
+.f-V {{ background:#2f9e55; }} .f-N {{ background:#8a958f; }} .f-D {{ background:#d64545; }}
+.sous {{ font-size:19px; margin:18px 0 8px; }}
+.hist td small + small {{ margin-top:0; }}
 .combo-note {{ margin-top:10px; font-size:13px; line-height:1.45; }}
 .vide-c p {{ margin-top:6px; }}
 .calc span {{ display:block; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }}
@@ -452,12 +521,16 @@ footer b {{ color:var(--text); }}
 {groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
 
 <h2>Bilan de l'agent</h2>
+<h3 class="sous">Paris simples</h3>
 {section_historique(historique, b)}
+<h3 class="sous">Combinés</h3>
+{section_combines(infos.get("combines") or [], infos.get("bilan_combines") or {"tous": {}, "conseilles": {}})}
 
 <footer>
   <p><b>Comment lire :</b> la « proba marché » vient du bookmaker le plus juste (Pinnacle), marge retirée.
   Un value bet, c'est quand la meilleure cote en France paie plus que ce risque réel.
-  L'« avantage » est le gain moyen espéré par euro misé, sur la durée.</p>
+  L'« avantage » est le gain moyen espéré par euro misé, sur la durée.
+  <b>Forme :</b> V victoire, N nul, D défaite, le match le plus récent à droite (source : football-data.co.uk).</p>
   <p>Aucun pari n'est sûr. Ne mise que ce que tu peux perdre et respecte les mises conseillées.
   Besoin d'aide : <b>Joueurs Info Service, 09 74 75 13 13</b> (appel non surtaxé).</p>
   <p>Généré automatiquement{credits}.</p>

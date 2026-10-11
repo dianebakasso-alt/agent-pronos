@@ -69,3 +69,29 @@ def historique_fictif(maintenant):
                   "gain": round(mise * (cote - 1), 2) if gagne else -mise,
                   "score": "2-1" if gagne else "0-1"})
     return h
+
+
+def stats_fictives(m):
+    rnd = random.Random(m["domicile"])
+    f = lambda: [rnd.choice("VVVNND") for _ in range(5)]
+    def eq():
+        fo = f()
+        return {"forme": fo, "points": sum(3 if x == "V" else 1 if x == "N" else 0 for x in fo),
+                "buts_pour": rnd.uniform(0.8, 2.2), "buts_contre": rnd.uniform(0.6, 1.8), "forme_lieu": f(), "derniers": []}
+    v1, v2 = rnd.randint(0, 3), rnd.randint(0, 2)
+    return {"domicile": eq(), "exterieur": eq(),
+            "face": {"n": 5, "v_dom": v1, "v_ext": v2, "nuls": 5 - v1 - v2, "scores": []}}
+
+
+def combines_fictifs(maintenant):
+    rnd = random.Random(5)
+    out = []
+    for i in range(6):
+        cote = round(rnd.uniform(3.2, 7.5), 2)
+        ok = rnd.random() < 1 / cote * 1.1
+        jour = (maintenant - timedelta(days=i + 1)).strftime("%Y-%m-%d")
+        out.append({"jour": jour, "bookmaker": "Winamax", "cote": cote, "proba": 1 / cote, "conseille": i % 3 != 2,
+                    "mise": 10, "statut": "gagné" if ok else "perdu", "gain": round(10 * (cote - 1), 2) if ok else -10,
+                    "jambes": [{"domicile": "Équipe A", "exterieur": "Équipe B", "pari": "Victoire Équipe A", "court": "1",
+                                "cote": 2.1, "ok": ok or j, "score": "2-0"} for j in range(2)]})
+    return out
