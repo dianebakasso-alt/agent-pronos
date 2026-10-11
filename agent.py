@@ -344,6 +344,23 @@ def main():
     for a in analyses:
         a["buts"] = moteur.analyser_buts(a)
 
+    # matchs du jour déjà commencés : la source des cotes ne les donne plus après le coup d'envoi,
+    # on les reprend du passage précédent pour les afficher et les suivre en direct (jamais conseillés)
+    if not demo:
+        fichier_jour = DATA / "aujourdhui.json"
+        jour_local = maintenant.astimezone(site_web.PARIS).strftime("%Y-%m-%d")
+        avant = memoire.charger(fichier_jour, {})
+        presents = {a["id"] for a in analyses}
+        if avant.get("jour") == jour_local:
+            for a in avant.get("matchs", []):
+                if a["id"] not in presents and datetime.fromisoformat(a["debut"].replace("Z", "+00:00")) <= maintenant:
+                    a.update({"value": None, "deja_commence": True})
+                    analyses.append(a)
+            analyses.sort(key=lambda a: a["debut"])
+        garder = [{k: v for k, v in a.items() if k not in ("avis", "_memoire", "favori")}
+                  for a in analyses if jour_de(a) == jour_local]
+        fichier_jour.write_text(json.dumps({"jour": jour_local, "matchs": garder}, ensure_ascii=False, default=str), encoding="utf-8")
+
     # aujourd'hui et demain : chacun ses paris et ses combinés
     local = maintenant.astimezone(site_web.PARIS)
     auj = local.strftime("%Y-%m-%d")
@@ -352,10 +369,11 @@ def main():
         cle = (local + timedelta(days=k)).strftime("%Y-%m-%d")
         quand = "aujourd'hui" if k == 0 else "demain" if k == 1 else site_web.nom_jour(cle)
         an_j = [a for a in analyses if jour_de(a) == cle]
+        jouables = [a for a in an_j if not a.get("deja_commence")]
         jours.append({"cle": cle, "quand": quand, "analyses": an_j,
                       "values": [a for a in values if jour_de(a) == cle],
-                      "combos": moteur.combines_experts(an_j, cfg) + moteur.combines_buts(an_j),
-                      "buts": moteur.pronos_buts(an_j)})
+                      "combos": moteur.combines_experts(jouables, cfg) + moteur.combines_buts(jouables),
+                      "buts": moteur.pronos_buts(jouables)})
     if not demo:
         (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
             "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2), round(c["proba"], 3)) for c in j["combos"]]}
