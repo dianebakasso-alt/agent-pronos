@@ -123,6 +123,12 @@ def analyser_match(match, cfg):
                      mise=mise_conseillee(top["proba"], top["cote"], cfg),
                      confiance=niveau_confiance(top["edge"], len(par_bk), ref_ok))
 
+    # cotes de chaque bookmaker jouable (utile pour les combinés, qui se jouent chez un seul bookmaker)
+    jouables = set(cfg["bookmakers_jouables"])
+    code = {dom: "1", NUL: "N", ext: "2"}
+    cotes_bk = {cle: {"titre": v["titre"], **{code[k]: c for k, c in v["cotes"].items() if k in code}}
+                for cle, v in par_bk.items() if cle in jouables}
+
     favori = max(issues, key=lambda i: i["proba"]) if issues else None
     return {
         "id": match["id"],
@@ -136,4 +142,67 @@ def analyser_match(match, cfg):
         "issues": issues,
         "favori": favori,
         "value": value,
+        "cotes_bk": cotes_bk,
     }
+
+
+def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0):
+    meilleur = None
+    for bk in cfg["bookmakers_jouables"]:
+        jambes = []
+        for m in analyses:
+            cotes = m.get("cotes_bk", {}).get(bk)
+            if not cotes:
+                continue
+            options = []
+            for i in m["issues"]:
+                c = cotes.get(i["court"])
+                if not c or c > cfg["cote_max"] or i["proba"] < p_min:
+                    continue
+                edge = i["proba"] * c - 1
+                if edge > edge_min:
+                    options.append({"match": m, "issue": i["issue"], "court": i["court"],
+                                    "cote": c, "proba": i["proba"], "edge": edge})
+            if options:
+                jambes.append(max(options, key=lambda o: o["edge"]))
+        # les plus sûres d'abord parmi celles qui ont de la valeur, puis on retire
+        # des matchs tant que le ticket a trop peu de chances de passer
+        jambes.sort(key=lambda o: (-o["edge"] * o["proba"]))
+        jambes = jambes[:n_max]
+        while len(jambes) > 2 and _prod(j["proba"] for j in jambes) < chance_min:
+            jambes.remove(min(jambes, key=lambda o: o["proba"]))
+        if len(jambes) < 2 or _prod(j["proba"] for j in jambes) < chance_min:
+            continue
+        cote, proba = 1.0, 1.0
+        for j in jambes:
+            cote *= j["cote"]
+            proba *= j["proba"]
+        edge = proba * cote - 1
+        if meilleur is None or edge > meilleur["edge"]:
+            titre = jambes[0]["match"]["cotes_bk"][bk]["titre"]
+            meilleur = {"bookmaker": titre, "jambes": jambes, "cote": cote, "proba": proba, "edge": edge}
+    return meilleur
+
+
+def _prod(xs):
+    r = 1.0
+    for x in xs:
+        r *= x
+    return r
+
+
+def combine_du_jour(analyses, cfg):
+    """Ticket combiné chez UN seul bookmaker jouable.
+
+    1) Combiné conseillé : chaque match a un avantage chez ce bookmaker, donc le ticket aussi.
+    2) Sinon, le combiné le moins coûteux (2 matchs, favoris raisonnables), marqué « non conseillé ».
+    """
+    c = _meilleur_combine(analyses, cfg, cfg.get("combine_max_matchs", 3), cfg.get("combine_proba_min", 0.40), 0,
+                          cfg.get("combine_chance_min", 0.15))
+    if c:
+        c["conseille"] = True
+        return c
+    c = _meilleur_combine(analyses, cfg, 2, 0.45, -1)
+    if c:
+        c["conseille"] = False
+    return c

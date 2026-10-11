@@ -77,7 +77,7 @@ def carte_value(m):
         {f'<ul>{points}</ul>' if points else ''}
       </div>"""
     return f"""
-    <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}">
+    <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}" data-poids="{0 if a and a.get('avis') == 'eviter' else v['mise']}" data-cote="{v['cote']:.2f}">
       <div class="meta">{tag_champ(m)}<span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span></div>
       {affiche(m, grand=True)}
       {barre_probas(m, v["court"])}
@@ -86,11 +86,11 @@ def carte_value(m):
         <div class="cote"><div class="lbl">Cote</div><div class="num">{v["cote"]:.2f}</div>
           <div class="bk">chez {e(v["bookmaker"])}</div></div>
       </div>
+      <div class="calc" hidden></div>
       <div class="grille">
         <div><span>Proba marché</span><b>{pct(v["proba"])}</b></div>
         <div><span>Cote juste</span><b>{v["cote_juste"]:.2f}</b></div>
         <div><span>Avantage</span><b class="vert">{pct(v["edge"], True)}</b></div>
-        <div><span>Mise</span><b>{euros(v["mise"])}</b></div>
       </div>
       <div class="src">Réf. : {e(m["source_proba"])} · {m["nb_bookmakers"]} bookmakers comparés</div>{avis_html}
     </article>"""
@@ -109,6 +109,42 @@ def ligne_match(m):
         {barre_probas(m, vcourt)}
         <div class="cases">{cases}</div>
       </div>"""
+
+
+def carte_combine(c):
+    if not c:
+        return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
+      <p class="src">Pas assez de matchs avec des cotes correctes chez un même bookmaker.</p></article>"""
+    jambes = ""
+    for j in c["jambes"]:
+        m = j["match"]
+        jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
+          <span class="j-cote">{j["cote"]:.2f}</span></li>"""
+    if c["conseille"]:
+        entete = f'<div class="combo-t">🎟️ Ton combiné du jour <span class="badge c-bonne">Conseillé</span></div>'
+        note = f'Chaque match a un avantage chez {e(c["bookmaker"])} : le ticket garde un avantage de <b class="vert">{pct(c["edge"], True)}</b>.'
+    else:
+        entete = f'<div class="combo-t">🎟️ Combiné à risque <span class="badge c-risque">Non conseillé</span></div>'
+        perte = -c["edge"] * 10
+        note = (f'Aucun combiné rentable aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
+                f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
+    return f"""
+    <article class="carte combo{'' if c['conseille'] else ' risque'}" id="combo" data-cote="{c['cote']:.4f}">
+      {entete}
+      <ul class="jambes">{jambes}</ul>
+      <div class="pari">
+        <div><div class="lbl">Cote du ticket</div><div class="choix">{len(c["jambes"])} matchs chez {e(c["bookmaker"])}</div></div>
+        <div class="cote"><div class="lbl">Cote</div><div class="num">{c["cote"]:.2f}</div></div>
+      </div>
+      <div class="calc" hidden></div>
+      <div class="grille">
+        <div><span>Chance que ça passe</span><b>{pct(c["proba"])}</b></div>
+        <div><span>Soit environ</span><b>1 fois sur {max(1, round(1 / c["proba"]))}</b></div>
+        <div><span>Avantage</span><b class="{'vert' if c['edge'] > 0 else 'rouge'}">{pct(c["edge"], True)}</b></div>
+      </div>
+      <p class="src combo-note">{note}</p>
+    </article>"""
 
 
 def section_historique(historique, b):
@@ -132,7 +168,7 @@ def section_historique(historique, b):
     <table class="hist">{lignes}</table>"""
 
 
-def generer(chemin, analyses, values, historique, b, infos):
+def generer(chemin, analyses, values, historique, b, infos, combine=None):
     d = infos["genere"].astimezone(PARIS)
     date_txt = f"{['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'][d.weekday()]} {d.day} {MOIS[d.month-1]}"
 
@@ -142,7 +178,7 @@ def generer(chemin, analyses, values, historique, b, infos):
     if values:
         cartes = "".join(carte_value(m) for m in values)
     else:
-        cartes = """<div class="rien"><div class="sifflet">🧘</div><b>Rien à jouer aujourd'hui.</b>
+        cartes = """<div class="rien"><div class="sifflet">🧘</div><b>Aucun pari simple aujourd'hui.</b>
         <p>Aucune cote ne paie plus que le vrai risque. Ne pas parier, c'est aussi une décision gagnante.</p></div>"""
     if analyses:
         choc = max(analyses, key=lambda m: (m["nb_bookmakers"], -abs(m["issues"][0]["proba"] - m["issues"][-1]["proba"])))
@@ -259,6 +295,45 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
 .leg b {{ color:var(--text); }}
 .choc {{ background:linear-gradient(160deg, var(--glow), transparent 60%), var(--surface); }}
 .sifflet {{ font-size:30px; margin-bottom:6px; }}
+.budget {{ background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:14px; margin-top:22px; }}
+.budget label {{ font-family:"Barlow Condensed",sans-serif; font-weight:700; font-size:20px; display:block; }}
+.saisie {{ display:flex; align-items:center; gap:8px; margin-top:8px; background:var(--surface2); border:2px solid var(--line);
+  border-radius:12px; padding:4px 14px; }}
+.saisie:focus-within {{ border-color:var(--accent); }}
+.saisie input {{ flex:1; min-width:0; background:none; border:0; outline:0; color:var(--text);
+  font:700 30px "Barlow Condensed",sans-serif; padding:6px 0; }}
+.saisie span {{ font:700 24px "Barlow Condensed",sans-serif; color:var(--muted); }}
+.puces {{ display:flex; gap:6px; margin-top:8px; }}
+.puces button {{ flex:1; background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:99px;
+  font:600 14px Inter,sans-serif; padding:8px 0; cursor:pointer; }}
+.puces button.on {{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }}
+.budget-res {{ margin-top:10px; font-size:14px; color:var(--muted); }}
+.budget-res b {{ color:var(--text); }}
+.budget-res .gros {{ color:var(--ok); }}
+.calc {{ margin-top:10px; border:2px dashed var(--accent); border-radius:12px; padding:10px 12px;
+  display:flex; justify-content:space-between; align-items:center; gap:8px; }}
+.calc[hidden] {{ display:none; }}
+.mode {{ display:grid; grid-template-columns:1fr 1fr; gap:4px; margin-top:10px; background:var(--surface2); border-radius:12px; padding:4px; }}
+.mode button {{ background:none; border:0; border-radius:9px; padding:9px 0; font:600 14px Inter,sans-serif; color:var(--muted); cursor:pointer; }}
+.mode button.on {{ background:var(--surface); color:var(--text); box-shadow:0 1px 3px rgba(0,0,0,.2); }}
+.combo {{ border:1.5px solid var(--accent); background:linear-gradient(160deg, var(--glow), transparent 55%), var(--surface); }}
+.combo.risque {{ border-color:var(--warn); }}
+.combo.risque .pari {{ background:var(--surface2); color:var(--text); }}
+.combo-t {{ font:700 21px "Barlow Condensed",sans-serif; display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap; }}
+.c-risque {{ color:var(--warn); }}
+.jambes {{ list-style:none; margin:12px 0; display:flex; flex-direction:column; gap:8px; }}
+.jambes li {{ display:flex; align-items:center; gap:4px; background:var(--surface2); border-radius:12px; padding:8px 10px; }}
+.jambes .ecu {{ flex:none; }}
+.j-txt {{ flex:1; min-width:0; margin-left:6px; }}
+.j-txt b {{ display:block; font-size:14px; }}
+.j-txt small {{ display:block; color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
+.j-cote {{ font:700 20px "Barlow Condensed",sans-serif; }}
+.combo-note {{ margin-top:10px; font-size:13px; line-height:1.45; }}
+.vide-c p {{ margin-top:6px; }}
+.calc span {{ display:block; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }}
+.calc b {{ font:700 24px "Barlow Condensed",sans-serif; }}
+.calc .r b {{ color:var(--ok); }}
+.calc .r {{ text-align:right; }}
 .carte h3 {{ font-size:23px; margin:6px 0 12px; line-height:1.1; }}
 .vs {{ color:var(--muted); }}
 .pari {{ display:flex; justify-content:space-between; align-items:flex-end; background:var(--accent); color:var(--accent-ink);
@@ -268,7 +343,7 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
 .cote {{ text-align:right; }}
 .num {{ font-size:34px; font-weight:700; line-height:1; }}
 .bk {{ font-size:12px; font-weight:600; }}
-.grille {{ display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:10px; }}
+.grille {{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:10px; }}
 .grille div {{ background:var(--surface2); border-radius:10px; padding:8px 4px; text-align:center; }}
 .grille span {{ display:block; font-size:11px; color:var(--muted); }}
 .grille b {{ font-size:18px; white-space:nowrap; }}
@@ -317,7 +392,7 @@ summary::-webkit-details-marker {{ display:none; }}
 footer {{ margin-top:32px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:16px; }}
 footer p + p {{ margin-top:8px; }}
 footer b {{ color:var(--text); }}
-@media (max-width:380px) {{ .grille,.bilan {{ grid-template-columns:repeat(2,1fr); }} h1 {{ font-size:34px; }} }}
+@media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} h1 {{ font-size:34px; }} }}
 </style>
 </head>
 <body>
@@ -329,13 +404,24 @@ footer b {{ color:var(--text); }}
   <div class="resume">
     <div><span>Matchs analysés</span><b>{len(analyses)}</b></div>
     <div><span>Value bets</span><b>{len(values)}</b></div>
-    <div><span>Mise totale</span><b>{euros(total_mises)}</b></div>
+    <div><span>Championnats</span><b>{len({m["sport_key"] for m in analyses})}</b></div>
   </div>
   <div class="installer" id="installer"><button onclick="fermer()" aria-label="Fermer">×</button>
     <b>Installe l'appli :</b> touche <b>Partager</b> en bas de Safari, puis <b>Sur l'écran d'accueil</b>.</div>
 </header>
 
-<h2>À jouer <small>bankroll {euros(infos["bankroll"])}</small></h2>
+<section class="budget">
+  <label for="somme">Ma mise du jour</label>
+  <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
+  <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
+  <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
+  <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
+</section>
+
+<h2>Combiné <small>un seul ticket, chez un seul bookmaker</small></h2>
+{carte_combine(combine)}
+
+<h2>Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes}
 
 <h2>Tous les matchs <small>meilleure cote · proba marché</small></h2>
@@ -358,6 +444,57 @@ const appli = window.navigator.standalone || matchMedia("(display-mode: standalo
 const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
 let vu = null; try {{ vu = localStorage.getItem("installer-vu"); }} catch (e) {{}}
 if (ios && !appli && !vu) document.getElementById("installer").style.display = "block";
+// ---- ma mise du jour : répartition sur les paris jouables
+const champ = document.getElementById("somme");
+const cartesV = [...document.querySelectorAll("article[data-poids]")].filter(c => +c.dataset.poids > 0);
+const fmt = x => x.toFixed(2).replace(".", ",").replace(",00", "") + " €";
+const combo = document.getElementById("combo");
+let mode = "combine";
+try {{ mode = localStorage.getItem("mode-mise") || "combine"; }} catch (e) {{}}
+function choisirMode(m) {{
+  mode = m;
+  document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === m));
+  try {{ localStorage.setItem("mode-mise", m); }} catch (e) {{}}
+  repartir();
+}}
+function repartir() {{
+  const total = Math.max(0, parseFloat(String(champ.value).replace(",", ".")) || 0);
+  const res = document.getElementById("budget-res");
+  document.querySelectorAll(".puces button").forEach(b => b.classList.toggle("on", +b.dataset.v === total));
+  document.querySelectorAll(".calc").forEach(c => c.hidden = true);
+  try {{ localStorage.setItem("mise-jour", JSON.stringify({{ jour: "{d:%Y-%m-%d}", v: champ.value }})); }} catch (e) {{}}
+  if (!total) {{ res.innerHTML = "Tape la somme que tu sors aujourd'hui."; return; }}
+  if (mode === "combine") {{
+    if (!combo) {{ res.innerHTML = "<b>Pas de combiné aujourd'hui.</b> Garde tes " + fmt(total) + " en poche."; return; }}
+    const gain = total * +combo.dataset.cote;
+    const z = combo.querySelector(".calc");
+    z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(total)}}</b></div><div class="r"><span>Si ça passe, tu touches</span><b>${{fmt(gain)}}</b></div>`;
+    z.hidden = false;
+    res.innerHTML = `Tes <b>${{fmt(total)}}</b> sur le combiné : si les ${{combo.querySelectorAll(".jambes li").length}} matchs passent, tu touches <b class="gros">${{fmt(gain)}}</b>. ` +
+      `Un seul raté et tu perds ${{fmt(total)}}.` + (combo.classList.contains("risque") ? " <b>⚠️ Combiné non conseillé aujourd'hui.</b>" : "");
+    return;
+  }}
+  if (!cartesV.length) {{ res.innerHTML = "<b>Aucun bon pari aujourd'hui.</b> Garde tes " + fmt(total) + " en poche : c'est la meilleure décision du jour."; return; }}
+  const somme = cartesV.reduce((t, c) => t + +c.dataset.poids, 0);
+  let reste = Math.round(total * 10), maxi = 0;
+  cartesV.forEach((c, i) => {{
+    const dixiemes = i === cartesV.length - 1 ? reste : Math.round(total * 10 * c.dataset.poids / somme);
+    reste -= dixiemes;
+    const mise = dixiemes / 10, gain = mise * +c.dataset.cote;
+    maxi += gain;
+    const z = c.querySelector(".calc");
+    z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(mise)}}</b></div><div class="r"><span>Si ça passe, tu touches</span><b>${{fmt(gain)}}</b></div>`;
+    z.hidden = false;
+  }});
+  res.innerHTML = `<b>${{fmt(total)}}</b> répartis sur <b>${{cartesV.length}} pari${{cartesV.length > 1 ? "s" : ""}}</b>. ` +
+    `Si tout passe : <b class="gros">${{fmt(maxi)}}</b>. Si rien ne passe : tu perds ${{fmt(total)}}.`;
+}}
+champ.addEventListener("input", repartir);
+document.querySelectorAll(".mode button").forEach(b => b.addEventListener("click", () => choisirMode(b.dataset.m)));
+document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === mode));
+document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; repartir(); }}));
+try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
+
 function fermer() {{
   document.getElementById("installer").style.display = "none";
   try {{ localStorage.setItem("installer-vu", "1"); }} catch (e) {{}}

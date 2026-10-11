@@ -251,7 +251,8 @@ def main():
         "credits_utilises": api.credits_utilises if api else None,
         "bankroll": cfg["bankroll_euros"],
     }
-    site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos)
+    combine = moteur.combine_du_jour(analyses, cfg)
+    site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combine)
     print("Site généré : site/index.html")
 
 
