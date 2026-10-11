@@ -42,10 +42,7 @@ def _evenements(slug, maintenant, nb_jours):
     """Matchs ESPN de la semaine : d'abord en une requête, sinon jour par jour."""
     d0 = maintenant.strftime("%Y%m%d")
     d1 = (maintenant + timedelta(days=nb_jours)).strftime("%Y%m%d")
-    try:
-        return _get(f"{BASE}/{slug}/scoreboard?dates={d0}-{d1}").get("events", []), None
-    except Exception as e:
-        erreur = str(e)
+    erreur = None
     evs, vus = [], set()
     for k in range(nb_jours + 1):
         d = (maintenant + timedelta(days=k)).strftime("%Y%m%d")
