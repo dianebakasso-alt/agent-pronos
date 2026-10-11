@@ -2,22 +2,22 @@
  {
   "jour": "2026-10-11",
   "bookmaker": "Betclic (FR)",
-  "cote": 3.9,
-  "proba": 0.2295,
+  "cote": 3.11,
+  "proba": 0.2893,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
    {
-    "id": "a8801462cb97a43570956e4b3ef4aedf",
-    "sport_key": "soccer_germany_bundesliga",
-    "date": "2026-10-11T13:30:00Z",
-    "domicile": "1. FC Köln",
-    "exterieur": "Borussia Monchengladbach",
-    "pari": "Victoire 1. FC Köln",
-    "court": "1",
-    "cote": 1.92
+    "id": "407f7d03157d1dfad384876e6a6bc910",
+    "sport_key": "soccer_italy_serie_a",
+    "date": "2026-10-11T18:45:00Z",
+    "domicile": "Cagliari",
+    "exterieur": "Juventus",
+    "pari": "Victoire Juventus",
+    "court": "2",
+    "cote": 1.53
    },
    {
     "id": "87af86a487f65496a87ff2a8193d8928",

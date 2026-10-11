@@ -213,6 +213,18 @@
    {
     "date": "2026-10-11T07:41:50",
     "texte": "Première défaite de la saison au Clássico (3-1) lors de la 7e journée. Benfica a l'attaque la plus prolifique du championnat avec 22 buts en 7 matchs."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Première défaite de la saison au Clássico à Porto (3-1) lors de la 7e journée."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Longues absences : Barrenechea, Kamiński, Banjaqui et Umeh sont blessés. Lenglet est suspendu après son expulsion au Dragão, durée à vérifier."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Marco Silva est l'entraîneur. Bah et Sudakov restent à suivre."
    }
   ]
  },
@@ -238,6 +250,18 @@
    {
     "date": "2026-10-11T07:41:50",
     "texte": "Ndoye est suspendu pour ce match ; Vitória est 14e avec 5 points."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "14e avec 5 points après 7 journées, sans victoire en championnat depuis quatre journées."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Attaque très faible (5 buts en 7 matchs). Cinq défaites de suite à l'extérieur en championnat, sans victoire loin de Guimarães depuis avril."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Ndoye est suspendu pour ce match. Gustavo Silva est incertain, avec des problèmes physiques."
    }
   ]
  },
@@ -318,6 +342,14 @@
    {
     "date": "2026-10-11T07:41:50",
     "texte": "Nacho Ferri est parti, mais Bassette (4 buts en 5 matchs) compense pour l'instant."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Série de 3 victoires en championnat avant ce match, avec une attaque en forme (12 buts sur les 5 derniers matchs)."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Bassette est un atout offensif au tir cadré. Le départ de Ferri n'est pas confirmé par mes recherches."
    }
   ]
  },
@@ -331,6 +363,14 @@
    {
     "date": "2026-10-11T07:41:50",
     "texte": "Foulon et Hamdaoui sont blessés (incertitude de courte durée), et l'équipe est en crise : 13e au classement."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Crise en cours : 4 défaites de suite et 0 point sur 12, 13e avec 7 points sous l'entraîneur Marvin Comper."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Défense fragile : pas de clean sheet sur les 5 derniers matchs. Renders et Hamdaoui sont blessés, sans durée annoncée. Deuff est suspendu pour ce match."
    }
   ]
  },
@@ -369,6 +409,92 @@
    {
     "date": "2026-10-11T07:41:50",
     "texte": "Enchaîne avec la Ligue des champions (Real Madrid à domicile mercredi), risque de rotation"
+   }
+  ]
+ },
+ "cagliari": {
+  "nom": "Cagliari",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Meilleur début de saison de l'ère des trois points, 4e avec 12 points après 5 journées, sous Pisacane."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Longues absences : Felici (croisés, retour prévu en avril 2027), Idrissi (croisés, retour possible début novembre), Trepy (retour prévu en décembre), Deiola (ménisque) et Kevin Carlos (cuisse, retour "
+   }
+  ]
+ },
+ "juventus": {
+  "nom": "Juventus",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Effectif très touché au milieu et en attaque : Yildiz (fracture du pied), Thuram et Locatelli (genou), Boga et Ekhator (cuisse) sont absents, avec des retours après ce match."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Spalletti alterne 4-2-3-1 et 3-4-2-1. Nico Gonzalez, fraîchement prolongé, sert de joker offensif, et Kolo Muani est le titulaire en attaque."
+   }
+  ]
+ },
+ "besiktas jk": {
+  "nom": "Besiktas JK",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Rashica est absent environ un mois (blessure à la cuisse, début octobre 2026)."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Orkun Kökçü est à un carton jaune de la suspension avant Trabzonspor."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Calendrier chargé : 8 matchs en 29 jours, avec Hoffenheim, Trabzonspor, Kasımpaşa et Celtic à jouer à l'extérieur."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Défaite surprise à Amedspor avant la trêve internationale, après une série de victoires."
+   }
+  ]
+ },
+ "kocaelispor": {
+  "nom": "Kocaelispor",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Plusieurs blessés en défense : Haidara (cuisse), Zoukrou, Dijksteel, et Petkovic (muscle)."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Bonne dynamique : 4 victoires sur les 5 derniers matchs de championnat, et seulement 2 défaites à l'extérieur (Başakşehir et Galatasaray)."
+   }
+  ]
+ },
+ "grêmio": {
+  "nom": "Grêmio",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Renato Portaluppi a remplacé Luís Castro sur le banc; Grêmio est dans le Z4 (18e, 30 pts) avec 64,4 % de risque de relégation selon l'UFMG."
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Dodi est suspendu pour ce match; Grêmio compte aussi plusieurs joueurs à surveiller physiquement."
+   }
+  ]
+ },
+ "internacional": {
+  "nom": "Internacional",
+  "faits": [
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Eduardo Baptista a remplacé Paulo Pezzolano; il a gagné 2-1 contre Corinthians pour son premier match. Inter est 17e (31 pts) dans le Z4, avec environ 68 % de risque de relégation selon la presse loca"
+   },
+   {
+    "date": "2026-10-11T08:43:41",
+    "texte": "Félix Torres (prêté par Corinthians) est de retour de sélection; Victor Gabriel est de nouveau disponible."
    }
   ]
  }
