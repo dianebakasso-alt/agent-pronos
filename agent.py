@@ -394,6 +394,13 @@ def main():
         for j in c["jambes"]:
             if (j["match"]["id"], j["court"]) not in vus:
                 taches.append((j["match"], j, j)); vus.add((j["match"]["id"], j["court"]))
+    # puis l'affiche du jour (le match le plus suivi) si elle n'est pas déjà vérifiée
+    an_jour = [a for a in jours[0]["analyses"] if not a.get("deja_commence")]
+    if an_jour:
+        choc = max(an_jour, key=lambda m: (m["nb_bookmakers"], -abs(m["issues"][0]["proba"] - m["issues"][-1]["proba"])))
+        fav = max(choc["issues"], key=lambda i: i["proba"])
+        if (choc["id"], fav["court"]) not in vus and not choc.get("value"):
+            taches.insert(min(len(taches), 3), (choc, fav, choc))
     taches = taches[: cfg["analyse_ia_max_matchs"]]
 
     actu = memoire.charger(DATA / "memoire_actu.json", {})

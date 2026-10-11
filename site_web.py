@@ -80,6 +80,74 @@ def tag_champ(m):
     return f'<span class="champ"><i>{drap}</i>{e(nom)}</span>'
 
 
+def _nb(v):
+    return f"{v:.1f}".replace(".", ",")
+
+
+def _forme_txt(nom, f):
+    v = f["forme"].count("V")
+    n = len(f["forme"])
+    if not n:
+        return ""
+    if v >= 4 or f["points"] >= 11:
+        return f"{nom} est en forme ({v} victoires sur {n})"
+    if v == 0 and f["forme"].count("N") <= 1:
+        return f"{nom} est en crise (aucune victoire sur {n})"
+    if v <= 1:
+        return f"{nom} gagne peu ({v} victoire sur {n})"
+    return ""
+
+
+def pourquoi_1n2(m, court, cote=None, bk=None, valeur=True):
+    """Une à deux phrases simples qui expliquent un pari 1-N-2."""
+    i = next((x for x in m["issues"] if x["court"] == court), None)
+    if not i:
+        return ""
+    p = i["proba"]
+    morceaux = []
+    if valeur and cote:
+        morceaux.append(f"La cote {cote:.2f}{' chez ' + bk if bk else ''} paie plus que le vrai risque : "
+                        f"{pct(p)} de chances, soit une cote juste de {1 / p:.2f}")
+    else:
+        morceaux.append(f"{pct(p)} de chances selon le marché")
+    st, b = m.get("stats"), m.get("buts")
+    if st:
+        d, x, f = st["domicile"], st["exterieur"], st["face"]
+        if court == "1":
+            morceaux += [t for t in (_forme_txt(m["domicile"], d), _forme_txt(m["exterieur"], x)) if "crise" in t or "forme" in t]
+        elif court == "2":
+            morceaux += [t for t in (_forme_txt(m["exterieur"], x), _forme_txt(m["domicile"], d)) if "crise" in t or "forme" in t]
+        else:
+            if f["n"] >= 3 and f["nuls"] >= 2:
+                morceaux.append(f"face-à-face serrés : {f['nuls']} nuls sur les {f['n']} derniers")
+            if abs(d["points"] - x["points"]) <= 3 and d["forme"] and x["forme"]:
+                morceaux.append("deux équipes de niveau proche en ce moment")
+    if court == "N" and b and b["total"] < 2.45:
+        morceaux.append(f"peu de buts attendus ({_nb(b['total'])})")
+    a = (m.get("avis") or {}).get("avis")
+    if a == "confirme":
+        morceaux.append("l'actu va dans le même sens")
+    elif a == "eviter":
+        morceaux.append("mais l'actu le déconseille")
+    texte = " ; ".join(morceaux[:3])
+    return texte[0].upper() + texte[1:] + "." if texte else ""
+
+
+def pourquoi_buts(m, marche):
+    b, st = m.get("buts"), m.get("stats")
+    if not b:
+        return ""
+    if marche in ("plus25", "btts", "plus15"):
+        t = f"{_nb(b['total'])} buts attendus ({_nb(b['lh'])} pour {m['domicile']}, {_nb(b['la'])} pour {m['exterieur']})"
+        if st and min(st["domicile"]["buts_pour"], st["exterieur"]["buts_pour"]) >= 1.3:
+            t += " ; les deux attaques marquent régulièrement"
+    else:
+        t = f"seulement {_nb(b['total'])} buts attendus : match plutôt fermé"
+        if st and max(st["domicile"]["buts_contre"], st["exterieur"]["buts_contre"]) <= 1.0:
+            t += " ; deux défenses solides"
+    return t[0].upper() + t[1:] + "."
+
+
 def carte_value(m):
     v = m["value"]
     avis_html = ""
@@ -111,6 +179,7 @@ def carte_value(m):
         <div><span>Cote juste</span><b>{v["cote_juste"]:.2f}</b></div>
         <div><span>Avantage</span><b class="vert">{pct(v["edge"], True)}</b></div>
       </div>
+      <p class="pq">💡 {e(pourquoi_1n2(m, v["court"], v["cote"], v["bookmaker"]))}</p>
       <div class="src">Réf. : {e(m["source_proba"])} · {m["nb_bookmakers"]} bookmakers comparés</div>{avis_html}
       {BOUTON_JOUE}
     </article>"""
@@ -155,7 +224,8 @@ def carte_combine_estime(c, jour):
         m = j["match"]
         etiquette = "⚽" if j["type"] == "buts" else "🎯"
         jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
-          <div class="j-txt"><b>{etiquette} {e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
+          <div class="j-txt"><b>{etiquette} {e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small>
+          <small class="pq-j">💡 {e(pourquoi_buts(m, j["marche"]) if j["type"] == "buts" else pourquoi_1n2(m, j["court"], valeur=False))}</small></div>
           <span class="j-cote">{pct(j["proba"])}</span></li>"""
     legs = [{"id": j["match"]["id"], **({"marche": j["marche"]} if j["type"] == "buts" else {"court": j["court"]}),
              "pari": j["issue"]} for j in c["jambes"]]
@@ -184,11 +254,14 @@ def carte_combine(c, jour=""):
     if not c:
         return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
       <p class="src">Pas assez de matchs avec des cotes correctes chez un même bookmaker.</p></article>"""
+    if c.get("estime"):
+        return carte_combine_estime(c, jour)
     jambes = ""
     for j in c["jambes"]:
         m = j["match"]
         jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
-          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small>
+          <small class="pq-j">💡 {e(pourquoi_1n2(m, j["court"], j["cote"], None, valeur=j.get("edge", 0) > 0))}</small></div>
           <span class="j-cote">{j["cote"]:.2f}</span></li>{avis_jambe(j)}"""
     style = c.get("style", "equilibre")
     if c.get("estime"):
@@ -251,6 +324,7 @@ def carte_buts(c, jour):
     <article class="carte prono-buts" style="--lig:{couleur_ligue(m.get('sport_key', ''))}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
       <div class="meta">{tag_champ(m)}<span class="badge c-bonne">{pct(c["proba"])} de chances</span></div>
       {affiche(m)}
+      <p class="pq">💡 {e(pourquoi_buts(m, c["marche"]))}</p>
       <div class="pb-pari"><b>{e(c["libelle"])}</b>
         <span>Cote juste <b>{c["cote_juste"]:.2f}</b> · joue-le seulement si ton bookmaker propose <b class="vert">{c["cote_cible"]:.2f} ou plus</b></span></div>
       {bloc_buts(m, compact=True)}
@@ -422,6 +496,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
       {bloc_stats(choc)}
       {bloc_buts(choc)}
       <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
+      {f'<div class="avis {AVIS.get(choc["avis"].get("avis"), AVIS["prudence"])[0]}"><div class="avis-t">🤖 L&#39;actu du match</div><p>{e(choc["avis"].get("resume", ""))}</p></div>' if choc.get("avis") else ""}
     </article>"""
 
     par_champ = OrderedDict()
@@ -470,6 +545,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
       {bloc_stats(choc)}
       {bloc_buts(choc)}
       <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
+      {f'<div class="avis {AVIS.get(choc["avis"].get("avis"), AVIS["prudence"])[0]}"><div class="avis-t">🤖 L&#39;actu du match</div><p>{e(choc["avis"].get("resume", ""))}</p></div>' if choc.get("avis") else ""}
     </article>"""
         combos_j = "".join(carte_combine(c, j["cle"]) for c in j["combos"]) or carte_combine(None)
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
@@ -1031,6 +1107,9 @@ html.verrouille body > *:not(#verrou) {{ visibility:hidden; }}
 .vr-pad .vr-x[data-k="del"] {{ font-size:24px; }}
 .vr-reste {{ display:block; margin-top:20px; font-size:13px; color:var(--muted); }}
 .vr-oubli {{ margin-top:10px; background:none; border:0; color:var(--muted); text-decoration:underline; font-size:13px; cursor:pointer; }}
+.pq {{ font-size:13px; line-height:1.45; margin:10px 0 0; padding:8px 10px; border-radius:10px;
+  background:color-mix(in srgb, #fbbf24 10%, var(--surface2)); border-left:3px solid #fbbf24; }}
+.pq-j {{ color:var(--text) !important; opacity:.85; white-space:normal !important; margin-top:3px; font-size:12px; line-height:1.35; }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}

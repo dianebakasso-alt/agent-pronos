@@ -37,9 +37,19 @@ def cotes_1n2(match):
 
 
 def probas_marche(par_bk, reference):
-    """Vraie probabilité selon le marché + source utilisée."""
-    if reference in par_bk:
-        return probas_sans_marge(par_bk[reference]["cotes"]), par_bk[reference]["titre"]
+    """Vraie probabilité selon le marché + source utilisée.
+
+    `reference` : un bookmaker ou {bookmaker: poids}. Les références « sharp » (Pinnacle, Betfair Exchange)
+    sont mélangées, marge retirée. Sans elles, on prend le consensus de tous les bookmakers."""
+    refs = reference if isinstance(reference, dict) else {reference: 1.0}
+    dispo = {k: w for k, w in refs.items() if k in par_bk}
+    if dispo:
+        mix, total_w = {}, sum(dispo.values())
+        for k, w in dispo.items():
+            for i, p in probas_sans_marge(par_bk[k]["cotes"]).items():
+                mix[i] = mix.get(i, 0) + p * w / total_w
+        t = sum(mix.values())
+        return {i: v / t for i, v in mix.items()}, " + ".join(par_bk[k]["titre"] for k in dispo)
     toutes = [probas_sans_marge(v["cotes"]) for v in par_bk.values()]
     toutes = [p for p in toutes if p]
     if not toutes:
@@ -87,7 +97,13 @@ def analyser_match(match, cfg):
     if len(par_bk) < cfg["bookmakers_minimum"]:
         return None
 
-    probas, source = probas_marche(par_bk, cfg["bookmaker_reference"])
+    probas, source = probas_marche(par_bk, cfg.get("references") or cfg["bookmaker_reference"])
+    # les deux références sont-elles d'accord ? (un écart fort = prix incertain → moins de confiance)
+    refs = [k for k in (cfg.get("references") or {}) if k in par_bk]
+    ecart = 0.0
+    if len(refs) >= 2:
+        pa, pb = probas_sans_marge(par_bk[refs[0]]["cotes"]), probas_sans_marge(par_bk[refs[1]]["cotes"])
+        ecart = max(abs(pa.get(i, 0) - pb.get(i, 0)) for i in pa)
     if not probas:
         return None
     best = meilleures_cotes(par_bk, set(cfg["bookmakers_jouables"]))
@@ -123,7 +139,9 @@ def analyser_match(match, cfg):
         candidats = []
     if candidats:
         top = max(candidats, key=lambda i: i["edge"])
-        ref_ok = cfg["bookmaker_reference"] in par_bk
+        ref_ok = bool(refs) or cfg["bookmaker_reference"] in par_bk
+        if ecart > 0.04:
+            ref_ok = False
         value = dict(top,
                      mise=mise_conseillee(top["proba"], top["cote"], cfg),
                      confiance=niveau_confiance(top["edge"], len(par_bk), ref_ok))
@@ -144,6 +162,7 @@ def analyser_match(match, cfg):
         "exterieur": ext,
         "nb_bookmakers": len(par_bk),
         "source_proba": source,
+        "ecart_refs": round(ecart, 3),
         "issues": issues,
         "favori": favori,
         "value": value,

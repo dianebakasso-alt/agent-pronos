@@ -12,6 +12,7 @@
                            "netbet_fr", "betfair_ex_eu", "onexbet", "marathonbet", "sport888"],
   "bookmakers_jouables": ["betclic_fr", "winamax_fr", "unibet_fr", "pmu_fr", "netbet_fr"],
   "bookmaker_reference": "pinnacle",
+  "references": {"pinnacle": 0.6, "betfair_ex_eu": 0.4},
 
   "combine_max_matchs": 3,
   "combine_proba_min": 0.40,
@@ -39,6 +40,6 @@
   ],
 
   "analyse_ia": true,
-  "analyse_ia_max_matchs": 7,
+  "analyse_ia_max_matchs": 10,
   "modele_ia": "claude-sonnet-5-5"
 }
