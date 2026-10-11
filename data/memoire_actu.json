@@ -699,16 +699,24 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Calendrier chargé : Bosz dit que les blessures viennent de l'intensité et du calendrier."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Pléa (opéré) et Sildillia (opéré) sont absents longtemps. Wanner est absent plusieurs semaines. Pepi (blessure musculaire) est absent pour une durée indéterminée. Schouten est absent longtemps."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Le PSV manque d'attaquants : Lammers et Ouaissa ne sont pas encore au niveau physique pour jouer, et Bosz doit improviser avec des jeunes. Bosz attribue les blessures à l'intensité et au calendrier ch"
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Peter Bosz est toujours l'entraîneur et le PSV est champion en titre. Il vient de perdre à Twente et a pris 0-4 contre l'AZ en Supercoupe."
    }
   ]
  },
  "real betis": {
   "nom": "Real Betis",
   "faits": [
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Junior Firpo absent environ un mois (lésion à l'adducteur gauche, contractée en sélection)."
-   },
    {
     "date": "2026-10-11T09:46:02",
     "texte": "Aitor Ruibal toujours en convalescence après une opération du ménisque."
@@ -740,6 +748,22 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Calendrier dense jusqu'à fin octobre (Osasuna, Barcelone, Porto, Feyenoord, Celta, Málaga, Copa) : rotations probables de Pellegrini."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Junior Firpo est absent environ un mois (blessure contractée avec la République dominicaine)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Aitor Ruibal est en phase de retour après son opération du genou, sans rythme de compétition pour l'instant."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Le Betis est 3e de Liga avec 19 points, à 5 points du Barça. Il a gagné 5-2 contre Osasuna le 11 octobre."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Le calendrier est dense : Barcelone, puis Feyenoord (21/10), Celta, Málaga, Copa, Dortmund (4/11). Des rotations de Pellegrini sont probables."
    }
   ]
  },
@@ -767,18 +791,6 @@
  "rennes": {
   "nom": "Rennes",
   "faits": [
-   {
-    "date": "2026-10-11T12:56:38",
-    "texte": "Lepaul, international français, porte l'attaque. Ses 3 buts en L1 datent du début de saison."
-   },
-   {
-    "date": "2026-10-11T12:56:38",
-    "texte": "Rennes est invaincu à domicile en L1 2026-27."
-   },
-   {
-    "date": "2026-10-11T13:16:28",
-    "texte": "Défaite 0-4 à Lyon avant la trêve et trois matchs sans marquer. Lepaul n'a pas marqué en L1 depuis la 2e journée (3 buts en tout)."
-   },
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Les sources ne confirment pas clairement l'invincibilité à domicile en L1 2026-27, à revérifier."
@@ -814,6 +826,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Pour l'instant, Rennes n'a pris qu'1 point en Europa League (0-0 à Sturm Graz)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Franck Haise est l'entraîneur : il a eu un groupe complet, sans blessé ni suspendu, avant Auxerre."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Attaque en difficulté avant Auxerre (1 but en 82 tirs) et forte dépendance à Lepaul."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Seulement 1 point en Europa League après deux journées (0-0 à Sturm Graz)."
    }
   ]
  },
@@ -1192,14 +1216,6 @@
   "nom": "Excelsior",
   "faits": [
    {
-    "date": "2026-10-11T11:01:54",
-    "texte": "Noah Naujoks est blessé, sans date de retour connue."
-   },
-   {
-    "date": "2026-10-11T11:01:54",
-    "texte": "Début de saison 2026-27 solide (9 points sur 12), puis net ralentissement (2 points sur 9)."
-   },
-   {
     "date": "2026-10-11T13:38:49",
     "texte": "Entraîneur Ruben den Uil."
    },
@@ -1234,6 +1250,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Le club n'a plus gagné depuis le 5 septembre et vient de lourdement perdre contre Groningen (1-5, à confirmer)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Ruben den Uil reste l'entraîneur ; le club est 8e après le 1-5 contre Groningen."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Noah Naujoks est toujours absent, sans date de retour connue."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Défense fragile récemment : erreurs individuelles (Widell, Van Gassel) contre Groningen. Irakli Yegoian reste le principal danger offensif."
    }
   ]
  },
@@ -1647,6 +1675,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Tajon Buchanan touché aux ischio-jambiers (retour non confirmé)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Série de 12 matchs de C1 sans victoire (10 défaites) avant ce match."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Buchanan blessé aux ischio-jambiers, sans date de retour confirmée."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Défense friable : au moins 2 buts encaissés dans 8 de leurs 10 derniers matchs de C1 (selon Legalbet)."
    }
   ]
  },
@@ -1672,6 +1712,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Anguissa, Alisson Santos et Buongiorno sont cités parmi les absents (durée à confirmer)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Aucune victoire lors des 6 derniers déplacements de C1 (5 défaites)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Absences de durée indéterminée : Buongiorno (opéré du genou), Alisson Santos, Vergara et Favasuli (début novembre selon FotMob). Anguissa à surveiller."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Allegri alterne entre une défense à 3 (3-4-2-1) et une défense à 4, avec De Bruyne et Højlund en attaque."
    }
   ]
  },
@@ -1723,6 +1775,10 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Sa dernière sortie à domicile est un 2-2 contre ADO Den Haag."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Mauvais début de saison : 13e après 7 journées, 1 victoire, 5 buts marqués seulement. La dernière défaite est 0-1 contre AZ."
    }
   ]
  },
@@ -1744,6 +1800,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Le club joue la Ligue des champions en parallèle, avec un calendrier chargé."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Premier d'Eredivisie après le 2-0 contre AZ (10/10/2026), invaincu en championnat cette saison (6 victoires, 2 nuls)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Longues absences en défense : Bos (genou, retour attendu vers janvier 2027) et Beelen (jambe cassée, durée inconnue) restent indisponibles. Smal, Moder et Nieuwkoop sont à surveiller."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Attaque très prolifique, mais la défense est plus fragile : 5-1 encaissé à Barcelone en Ligue des champions."
    }
   ]
  },
@@ -1757,6 +1825,14 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Heerenveen est 10e après 8 journées (9 points avant PSV, aucun point pris à PSV), avec peu de victoires : seulement 2 avant ce match."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Robin Veldman reste l'entraîneur."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Attaque peu efficace : 11 buts en 7 matchs et seulement 2 victoires avant le déplacement à Eindhoven. Bat rarement ses adversaires malgré les occasions créées."
    }
   ]
  },
@@ -1774,6 +1850,22 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Résultats irréguliers en début de saison : 1-4 à Côme en LdC, 1-3 à Brême et 0-2 à Leverkusen, mais 5-0 contre Hambourg et 6-0 contre Francfort."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Martin Demichelis est entraîneur depuis l'été 2026 et reste sous pression malgré le soutien de Roger Schmidt. Le nom de Nagelsmann circule dans la presse allemande."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Ouédraogo est absent jusqu'à l'an prochain. Baumgartner (long retour) et Guiu (ischio-jambiers) sont aussi blessés."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Leipzig est solide à domicile (14 de ses 15 buts en Bundesliga) mais fragile à l'extérieur (défaites à Brême, Leverkusen et Côme). Yan Diomande est parti au Real Madrid pour plus de 125 M€, et Nkunku "
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Calendrier lourd : Bayern le 17 octobre, puis le Real Madrid au Bernabéu."
    }
   ]
  },
@@ -1791,6 +1883,22 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Nehuén Pérez (blessure musculaire) proche du retour ; João Costa, Vasco Sousa et d'autres encore en reprise progressive."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Bednarek est suspendu pour la Ligue des champions, au 2e match de sa suspension, soit le match contre le Betis."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Smalling est arrivé après la clôture des inscriptions européennes et n'est donc pas utilisable en Ligue des champions."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "William Gomes est absent au moins 2 semaines (entorse à la cheville droite)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Nehuén Pérez est presque revenu de sa blessure musculaire ; João Costa et Vasco Sousa sont encore en reprise."
    }
   ]
  },
@@ -1812,6 +1920,14 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Pas d'arrière gauche naturel disponible pour le moment."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Maatsen (cheville) absent jusqu'à fin novembre environ, et Ruggeri blessé aux ischio-jambiers le 10 octobre (durée à confirmer) : pas d'arrière gauche de métier."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Mauvais début de saison en Premier League : 16e après 5 journées (4 points), puis nul 2-2 contre Brentford après avoir mené 2-1."
    }
   ]
  },
@@ -1829,6 +1945,14 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Mert Müldür (genou) est incertain et Muriqi est signalé blessé."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "İsmail Kartal est l'entraîneur ; l'équipe sort d'un 3-0 à Rizespor et d'un nul 1-1 contre la Roma en Ligue des champions."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Mert Müldür est blessé (déchirure du ménisque). Oosterwolde, Söyüncü, Becao et Mert Hakan ne sont pas sur la liste UEFA de Ligue des champions."
    }
   ]
  },
@@ -1842,6 +1966,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "L'OFI a gagné son premier match de phase de ligue d'Europa League, 3 points au compteur."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Entraîneur : Christos Kontis (source FotMob)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Bon début de saison : victoire à l'Olympiacos, qualification via le barrage contre le CSKA Sofia et victoire 2-0 en Europa League pour le premier match de phase de ligue."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Prochains matchs européens : Leverkusen à domicile le 22/10, puis Beer-Sheva à l'extérieur le 05/11."
    }
   ]
  },
@@ -1859,6 +1995,22 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Deux victoires de suite en championnat avant ce match, et Lech est leader de l'Ekstraklasa."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "João Moutinho (arrière gauche) est absent environ 4 mois après une opération du pied (depuis début octobre 2026)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Ali Gholizadeh (ligaments croisés) devrait être absent jusqu'à mi-janvier 2027. Alex Douglas est aussi blessé."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Série en cours : deux victoires de suite en championnat (5-1 et 4-1), et Lech est leader de l'Ekstraklasa à la 10e journée."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Prochains matchs : Korona Kielce (18/10), Sunderland en Europa League (22/10), Legia (25/10)."
    }
   ]
  },
@@ -1876,6 +2028,22 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Carles Martínez est l'entraîneur actuel."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Carles Martínez est l'entraîneur depuis juillet 2026 (contrat de 2 ans, il remplace Hjulmand). Bilan de 5 victoires, 1 nul et 1 défaite en 7 matchs."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Victor Boniface n'est pas inscrit pour l'Europa League, et il y a de la tension avec le coach après son départ du banc à Mainz."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Eliesse Ben Seghir enchaîne les blessures musculaires : c'est le troisième arrêt depuis le début de la préparation estivale."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Prochain match : Freiburg en Bundesliga le 18/10."
    }
   ]
  },
@@ -1897,6 +2065,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Yaya Fofana, joueur du mois de septembre en Ligue 2 (UNFP)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Invaincu en Ligue 2 2026-27 après 7 journées (3 victoires, 4 nuls), avec beaucoup de nuls (0-0 à Nantes)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Yaya Fofana, élu meilleur joueur de Ligue 2 de septembre (UNFP), et Chamsedin Kouranfal, Pépite du mois de septembre. Blessures longues de Gbané et Sylla non reconfirmées cette semaine."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Prochain gros match à domicile : Saint-Étienne le 21 novembre (J13)."
    }
   ]
  },
@@ -1906,6 +2086,18 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "9e de Ligue 2 après 7 journées, avec un jeu ouvert (nombreux matchs où les deux équipes marquent)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Promu de National (champion 2025-26), entraîneur Baptiste Ridira. Il a gagné ses deux derniers matchs avant la trêve internationale et reste en difficulté à domicile."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Michaël Barreto (hanche) absent jusqu'à la semaine du 19 octobre environ. Hatem Mimoune (cheville) et le gardien remplaçant Enzo Ketterlé aussi blessés."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Tom Meynadier, latéral droit, a signé pour un an."
    }
   ]
  },
@@ -1919,6 +2111,27 @@
    {
     "date": "2026-10-11T19:41:27",
     "texte": "Après le 0-1 à Nancy (8e journée), la presse locale s'inquiète pour la suite de la saison. Le coach a critiqué publiquement la défense et la gestion de la supériorité numérique."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Sylvain Ripoll est toujours l'entraîneur. Après Nancy, il a publiquement critiqué la tactique défensive et la gestion de la supériorité numérique."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Gautier Ott et Darly N'Landu sont blessés de longue durée (ligaments croisés)."
+   },
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Guingamp est 11e après 8 journées, avec des problèmes défensifs récurrents et des points perdus dans les fins de match."
+   }
+  ]
+ },
+ "pau fc": {
+  "nom": "Pau FC",
+  "faits": [
+   {
+    "date": "2026-10-11T19:51:33",
+    "texte": "Thierry Debès est l'entraîneur. Pau reste sur deux victoires de suite à domicile (Laval 3-2, 9 octobre) et se situe en haut de tableau (7e, 11 points)."
    }
   ]
  }
