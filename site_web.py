@@ -138,16 +138,20 @@ def carte_combine(c):
         jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
           <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
           <span class="j-cote">{j["cote"]:.2f}</span></li>{avis_jambe(j)}"""
+    style = c.get("style", "equilibre")
+    badge = '<span class="badge c-bonne">Conseillé</span>' if c["conseille"] else '<span class="badge c-risque">Non conseillé</span>'
+    entete = f"""<div class="combo-t"><span>{c.get("emoji", "🎟️")} {e(c.get("nom", "Combiné"))}</span>{badge}</div>
+      <p class="combo-desc">{e(c.get("desc", ""))}</p>
+      <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
+        <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>"""
     if c["conseille"]:
-        entete = f'<div class="combo-t">Ton combiné du jour <span class="badge c-bonne">Conseillé</span></div>'
         note = f'Chaque match a un avantage chez {e(c["bookmaker"])} : le ticket garde un avantage de <b class="vert">{pct(c["edge"], True)}</b>.'
     else:
-        entete = f'<div class="combo-t">Combiné à risque <span class="badge c-risque">Non conseillé</span></div>'
         perte = -c["edge"] * 10
-        note = (f'Aucun combiné rentable aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
+        note = (f'Pas de ticket rentable dans ce style aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
                 f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
     return f"""
-    <article class="carte combo{'' if c['conseille'] else ' risque'}" id="combo" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
+    <article class="carte combo st-{style}{'' if c['conseille'] else ' risque'}" id="combo-{style}" data-style="{style}" data-nom="{e(c.get('nom', 'Combiné'))}" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + style + "-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + c.get("nom", "") + " · " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
       {entete}
       <ul class="jambes">{jambes}</ul>
       <div class="pari">
@@ -268,7 +272,10 @@ def statut_ia(ia):
     return "🤖 IA éteinte (clé ANTHROPIC_API_KEY absente)."
 
 
-def generer(chemin, analyses, values, historique, b, infos, combine=None):
+def generer(chemin, analyses, values, historique, b, infos, combos=None):
+    if isinstance(combos, dict):
+        combos = [combos]
+    combos = [c for c in (combos or []) if c]
     d = infos["genere"].astimezone(PARIS)
     date_txt = f"{['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'][d.weekday()]} {d.day} {MOIS[d.month-1]}"
 
@@ -589,7 +596,7 @@ h2 {{ font-size:26px; }}
 .combo.risque {{ background:linear-gradient(135deg,#f59e0b,#ef4444); }}
 .combo.risque .pari {{ background:var(--surface2); color:var(--text); box-shadow:none; }}
 .combo-t {{ font-size:23px; }}
-.combo:not(.risque) .combo-t {{ background:var(--grad-ticket); -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.combo:not(.risque) .combo-t > span {{ background:var(--grad-ticket); -webkit-background-clip:text; background-clip:text; color:transparent; }}
 .combo .combo-t .badge {{ -webkit-text-fill-color:initial; }}
 .jambes li {{ border-left:3px solid #ec4899; }}
 .combo.risque .jambes li {{ border-left-color:var(--warn); }}
@@ -606,6 +613,23 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .btn-joue {{ border:1px solid transparent; background:linear-gradient(var(--surface2),var(--surface2)) padding-box, var(--grad) border-box; }}
 .maj {{ background:var(--grad); color:var(--accent-ink); border:0; }}
 .installer {{ border:0; background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
+.styles {{ display:grid; grid-auto-flow:column; grid-auto-columns:1fr; gap:6px; margin-top:8px; }}
+.styles[hidden] {{ display:none; }}
+.styles button {{ background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:10px;
+  padding:8px 4px; font:600 13px Inter,sans-serif; cursor:pointer; white-space:nowrap; }}
+.styles button.on {{ background:var(--grad-ticket); color:#fff; border-color:transparent; }}
+.combo {{ margin-bottom:14px; cursor:pointer; transition:transform .2s, box-shadow .2s; }}
+.combo.choisi {{ transform:scale(1.01); box-shadow:0 0 0 3px color-mix(in srgb, #ec4899 45%, transparent), 0 16px 36px -14px rgba(236,72,153,.7); }}
+.combo.st-prudent {{ --grad-ticket:linear-gradient(135deg,#22d3ee 0%,#3b82f6 60%,#6366f1 100%); }}
+.combo.st-gros {{ --grad-ticket:linear-gradient(135deg,#f97316 0%,#ef4444 50%,#db2777 100%); }}
+.combo.st-prudent .jambes li {{ border-left-color:#3b82f6; }}
+.combo.st-gros .jambes li {{ border-left-color:#f97316; }}
+.combo-desc {{ color:var(--muted); font-size:13px; margin-top:2px; }}
+.chance {{ display:grid; grid-template-columns:1fr auto; grid-template-rows:auto auto; column-gap:10px; align-items:center; margin-top:10px; }}
+.chance-b {{ height:10px; border-radius:99px; background:var(--surface2); overflow:hidden; }}
+.chance-b span {{ display:block; height:100%; border-radius:99px; background:var(--grad-ticket); }}
+.chance b {{ font:700 26px "Barlow Condensed",sans-serif; grid-row:span 2; }}
+.chance small {{ color:var(--muted); font-size:12px; }}
 @media (prefers-reduced-motion: reduce) {{ .ballon, .pari::after {{ animation:none; }} }}
 @media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} }}
 </style>
@@ -630,11 +654,12 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
   <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
+  <div class="styles" id="styles">{''.join(f'<button data-s="{c["style"]}">{c["emoji"]} {e(c["nom"])}</button>' for c in combos)}</div>
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 
-<h2>🎟️ Combiné <small>un seul ticket, chez un seul bookmaker</small></h2>
-{carte_combine(combine)}
+<h2>🎟️ Combinés d'experts <small>3 styles · chaque ticket chez un seul bookmaker</small></h2>
+{''.join(carte_combine(c) for c in combos) or carte_combine(None)}
 
 <h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes}
@@ -674,7 +699,16 @@ if (ios && !appli && !vu) document.getElementById("installer").style.display = "
 const champ = document.getElementById("somme");
 const cartesV = [...document.querySelectorAll("article[data-poids]")].filter(c => +c.dataset.poids > 0);
 const fmt = x => x.toFixed(2).replace(".", ",").replace(",00", "") + " €";
-const combo = document.getElementById("combo");
+const tickets = [...document.querySelectorAll(".combo[data-style]")];
+let styleTicket = "equilibre";
+try {{ styleTicket = localStorage.getItem("style-ticket") || "equilibre"; }} catch (e) {{}}
+if (!tickets.some(t => t.dataset.style === styleTicket) && tickets.length) styleTicket = (tickets.find(t => t.dataset.style === "equilibre") || tickets[0]).dataset.style;
+const ticketChoisi = () => tickets.find(t => t.dataset.style === styleTicket);
+function choisirStyle(st) {{
+  styleTicket = st;
+  try {{ localStorage.setItem("style-ticket", st); }} catch (e) {{}}
+  repartir();
+}}
 let mode = "combine";
 try {{ mode = localStorage.getItem("mode-mise") || "combine"; }} catch (e) {{}}
 function choisirMode(m) {{
@@ -690,13 +724,17 @@ function repartir() {{
   document.querySelectorAll(".calc").forEach(c => c.hidden = true);
   try {{ localStorage.setItem("mise-jour", JSON.stringify({{ jour: "{d:%Y-%m-%d}", v: champ.value }})); }} catch (e) {{}}
   if (!total) {{ res.innerHTML = "Tape la somme que tu sors aujourd'hui."; return; }}
+  document.getElementById("styles").hidden = mode !== "combine" || tickets.length < 2;
+  document.querySelectorAll("#styles button").forEach(b => b.classList.toggle("on", b.dataset.s === styleTicket));
+  tickets.forEach(t => t.classList.toggle("choisi", mode === "combine" && t.dataset.style === styleTicket));
   if (mode === "combine") {{
+    const combo = ticketChoisi();
     if (!combo) {{ res.innerHTML = "<b>Pas de combiné aujourd'hui.</b> Garde tes " + fmt(total) + " en poche."; return; }}
     const gain = total * +combo.dataset.cote;
     const z = combo.querySelector(".calc");
     z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(total)}}</b></div><div class="r"><span>Si ça passe, tu touches</span><b>${{fmt(gain)}}</b></div>`;
     z.hidden = false;
-    res.innerHTML = `Tes <b>${{fmt(total)}}</b> sur le combiné : si les ${{combo.querySelectorAll(".jambes li").length}} matchs passent, tu touches <b class="gros">${{fmt(gain)}}</b>. ` +
+    res.innerHTML = `Tes <b>${{fmt(total)}}</b> sur le combiné <b>${{combo.dataset.nom}}</b> : si les ${{combo.querySelectorAll(".jambes li:not(.avis-j)").length}} matchs passent, tu touches <b class="gros">${{fmt(gain)}}</b>. ` +
       `Un seul raté et tu perds ${{fmt(total)}}.` + (combo.classList.contains("risque") ? " <b>⚠️ Combiné non conseillé aujourd'hui.</b>" : "");
     return;
   }}
@@ -717,6 +755,8 @@ function repartir() {{
 }}
 champ.addEventListener("input", repartir);
 document.querySelectorAll(".mode button").forEach(b => b.addEventListener("click", () => choisirMode(b.dataset.m)));
+document.querySelectorAll("#styles button").forEach(b => b.addEventListener("click", () => choisirStyle(b.dataset.s)));
+tickets.forEach(t => t.addEventListener("click", ev => {{ if (mode === "combine" && !ev.target.closest(".joue")) choisirStyle(t.dataset.style); }}));
 document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === mode));
 document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; repartir(); }}));
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}

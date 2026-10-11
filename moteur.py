@@ -151,7 +151,13 @@ def analyser_match(match, cfg):
     }
 
 
-def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0):
+def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
+                      tri=None, critere=None, n_min=2):
+    """Meilleur ticket chez un seul bookmaker.
+    tri     : ordre de préférence des matchs (par défaut : valeur x chance)
+    critere : ce qu'on maximise entre bookmakers (par défaut : l'avantage)"""
+    tri = tri or (lambda o: -o["edge"] * o["proba"])
+    critere = critere or (lambda c: c["edge"])
     meilleur = None
     for bk in cfg["bookmakers_jouables"]:
         jambes = []
@@ -172,20 +178,21 @@ def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0):
                 jambes.append(max(options, key=lambda o: o["edge"]))
         # les plus sûres d'abord parmi celles qui ont de la valeur, puis on retire
         # des matchs tant que le ticket a trop peu de chances de passer
-        jambes.sort(key=lambda o: (-o["edge"] * o["proba"]))
+        jambes.sort(key=tri)
         jambes = jambes[:n_max]
-        while len(jambes) > 2 and _prod(j["proba"] for j in jambes) < chance_min:
+        while len(jambes) > n_min and _prod(j["proba"] for j in jambes) < chance_min:
             jambes.remove(min(jambes, key=lambda o: o["proba"]))
-        if len(jambes) < 2 or _prod(j["proba"] for j in jambes) < chance_min:
+        if len(jambes) < n_min or _prod(j["proba"] for j in jambes) < chance_min:
             continue
         cote, proba = 1.0, 1.0
         for j in jambes:
             cote *= j["cote"]
             proba *= j["proba"]
         edge = proba * cote - 1
-        if meilleur is None or edge > meilleur["edge"]:
-            titre = jambes[0]["match"]["cotes_bk"][bk]["titre"]
-            meilleur = {"bookmaker": titre, "jambes": jambes, "cote": cote, "proba": proba, "edge": edge}
+        titre = jambes[0]["match"]["cotes_bk"][bk]["titre"]
+        c = {"bookmaker": titre, "jambes": jambes, "cote": cote, "proba": proba, "edge": edge}
+        if meilleur is None or critere(c) > critere(meilleur):
+            meilleur = c
     return meilleur
 
 
@@ -211,3 +218,49 @@ def combine_du_jour(analyses, cfg):
     if c:
         c["conseille"] = False
     return c
+
+
+STYLES = {
+    "prudent": {"nom": "Prudent", "emoji": "🛡️", "desc": "2 matchs, des favoris : la meilleure chance de passer."},
+    "equilibre": {"nom": "Équilibré", "emoji": "⚖️", "desc": "Le meilleur rapport valeur / chance du jour."},
+    "gros": {"nom": "Gros gain", "emoji": "🚀", "desc": "3 à 4 matchs : grosse cote, plus risqué."},
+}
+
+
+def combines_experts(analyses, cfg):
+    """Trois tickets au choix : prudent, équilibré, gros gain.
+    Chacun : un seul bookmaker, chaque match avec un avantage positif ; sinon repli « non conseillé »."""
+    def prudent(edge_min):
+        return _meilleur_combine(analyses, cfg, 2, 0.48, edge_min, 0.28,
+                                 tri=lambda o: -o["proba"], critere=lambda c: (c["proba"], c["edge"]))
+
+    def gros(edge_min):
+        return _meilleur_combine(analyses, cfg, 4, 0.30, edge_min, 0.04, n_min=3,
+                                 critere=lambda c: (c["edge"] > 0, len(c["jambes"]), c["cote"] * (1 + c["edge"])))
+
+    out = {}
+    for style, fn in (("prudent", prudent), ("gros", gros)):
+        c = fn(0)
+        if c:
+            c["conseille"] = True
+        else:
+            c = fn(-1)
+            if c:
+                c["conseille"] = False
+        out[style] = c
+    out["equilibre"] = combine_du_jour(analyses, cfg)
+
+    # pas deux fois le même ticket
+    vus, resultat = set(), []
+    for style in ("prudent", "equilibre", "gros"):
+        c = out[style]
+        if not c:
+            continue
+        cle = (c["bookmaker"], tuple(sorted((j["match"]["id"], j["court"]) for j in c["jambes"])))
+        if cle in vus:
+            continue
+        vus.add(cle)
+        c["style"] = style
+        c.update({k: v for k, v in STYLES[style].items()})
+        resultat.append(c)
+    return resultat

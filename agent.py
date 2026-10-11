@@ -320,17 +320,18 @@ def main():
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
-    combine = moteur.combine_du_jour(analyses, cfg)
+    combine = moteur.combine_du_jour(analyses, cfg)      # le combiné suivi dans le bilan
+    combos = moteur.combines_experts(analyses, cfg)       # les 3 tickets proposés
 
-    # l'IA vérifie l'actu des paris simples, puis des matchs du combiné
+    # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
+    ordre = sorted(combos, key=lambda c: {"equilibre": 0, "prudent": 1, "gros": 2}[c["style"]])
     taches, vus = [], set()
     for m in values:
-        taches.append((m, m["value"], m)); vus.add(m["id"])
-    for j in (combine or {}).get("jambes", []):
-        if j["match"]["id"] not in vus:
-            taches.append((j["match"], j, j)); vus.add(j["match"]["id"])
-        else:
-            j["avis_de"] = j["match"]
+        taches.append((m, m["value"], m)); vus.add((m["id"], m["value"]["court"]))
+    for c in ordre:
+        for j in c["jambes"]:
+            if (j["match"]["id"], j["court"]) not in vus:
+                taches.append((j["match"], j, j)); vus.add((j["match"]["id"], j["court"]))
     taches = taches[: cfg["analyse_ia_max_matchs"]]
 
     actu = memoire.charger(DATA / "memoire_actu.json", {})
@@ -359,9 +360,14 @@ def main():
             (DATA / "memoire_actu.json").write_text(json.dumps(actu, ensure_ascii=False, indent=1), encoding="utf-8")
     elif cfg.get("analyse_ia") and cle_ia:
         ia["etat"] = "rien"
-    for j in (combine or {}).get("jambes", []):
-        if "avis_de" in j and j["avis_de"].get("avis"):
-            j["avis"] = j["avis_de"]["avis"]
+    # un même pari analysé une fois : on recopie l'avis partout où il apparaît
+    avis_par_pari = {}
+    for m, v, cible in taches:
+        if cible.get("avis"):
+            avis_par_pari[(m["id"], v["court"])] = cible["avis"]
+    for c in combos + ([combine] if combine else []):
+        for j in c["jambes"]:
+            j.setdefault("avis", avis_par_pari.get((j["match"]["id"], j["court"])))
 
     if not demo:
         enregistrer_paris(historique, values)
@@ -384,7 +390,7 @@ def main():
                       **{j["id"]: {"res": j["res"], "score": j.get("score", "")}
                          for c in combines for j in c["jambes"] if j.get("res") and j.get("id")}},
     }
-    site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combine)
+    site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combos)
     print("Site généré : site/index.html")
 
 
