@@ -10,10 +10,10 @@
   "soccer_epl",
   "soccer_germany_bundesliga",
   "soccer_portugal_primeira_liga",
-  "soccer_argentina_primera_division",
-  "soccer_brazil_campeonato"
+  "soccer_brazil_campeonato",
+  "soccer_france_ligue_two"
  ],
  "ligues_ko": [],
- "equipes_trouvees": 84,
+ "equipes_trouvees": 90,
  "equipes_manquees": []
 }

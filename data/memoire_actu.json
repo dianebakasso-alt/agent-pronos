@@ -90,14 +90,6 @@
   "faits": [
    {
     "date": "2026-10-11T03:12:54",
-    "texte": "Ache (blessure musculaire) et Dallinga (ligaments croisés, absent plusieurs mois, probablement pas de retour cette saison) sont absents, d'où un manque de point d'ancrage en attaque."
-   },
-   {
-    "date": "2026-10-11T03:12:54",
-    "texte": "Timo Hübers est absent depuis près d'un an (genou), et l'équipe n'a plus gardé ses cages inviolées depuis 7 matchs."
-   },
-   {
-    "date": "2026-10-11T03:12:54",
     "texte": "1 seul point pris sur les 3 derniers matchs après la victoire 3-2 contre Hoffenheim en ouverture. René Wagner est sous pression."
    },
    {
@@ -127,6 +119,22 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Après la victoire d'ouverture 3-2 contre Hoffenheim, Köln n'a pris qu'1 point sur 3 matchs. René Wagner est sous pression."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Ache (cuisse, environ 3-4 semaines) et Dallinga (ligaments croisés, probablement absent toute la saison) manquent : pénurie d'attaquants."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Hübers est absent depuis près d'un an (genou). Castro-Montes revient d'une blessure."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Défense friable : but encaissé à chaque match de championnat, aucun clean sheet."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "René Wagner est contesté après un début de saison irrégulier. Son poste dépend des résultats."
    }
   ]
  },
@@ -168,6 +176,18 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Leopold (ligaments croisés, saison terminée), Castrop (épaule, plusieurs mois) et Kühn (déchirure musculaire) sont absents longtemps. Honorat est blessé depuis le 3 octobre."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Alexander Blessin remplace Polanski, limogé après le 0-5 à Fribourg. Lichte a assuré l'intérim (3-4 contre Mayence)."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Début de saison catastrophique : 4 défaites, 0 point, 16 buts encaissés."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Leopold (ligaments croisés, saison terminée), Castrop (épaule, plusieurs mois) et Kühn (déchirure musculaire) sont absents longtemps. Honorat est blessé musculairement depuis le 3 octobre."
    }
   ]
  },
@@ -181,6 +201,18 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Absences de plusieurs semaines à surveiller : Barrenechea, Kamiński, Banjaqui et Lenglet. La presse cite aussi Bah et Sudakov comme incertains."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Barrenechea, Kamiński et Banjaqui sont absents sur la durée ; Umeh est aussi blessé. Bah et Sudakov sont à suivre."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Lenglet manquait ce match pour suspension après son expulsion au Dragão. Ce n'est pas une blessure longue : il faudra vérifier la durée de sa suspension."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Première défaite de la saison au Clássico (3-1) lors de la 7e journée. Benfica a l'attaque la plus prolifique du championnat avec 22 buts en 7 matchs."
    }
   ]
  },
@@ -194,6 +226,18 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Attaque très pauvre (5 buts en 7 matchs). Gonçalo Nogueira est le joueur le plus dangereux, sous la direction de Tiago Margarido."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Série de cinq défaites de suite à l'extérieur en championnat, sans victoire loin de Guimarães depuis le 18 avril."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Attaque très pauvre (5 buts en 7 matchs), Gonçalo Nogueira étant la principale menace. L'entraîneur est Tiago Margarido."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Ndoye est suspendu pour ce match ; Vitória est 14e avec 5 points."
    }
   ]
  },
@@ -215,6 +259,22 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Série en cours : leader de Pro League avec 19 points sur 21 après 7 journées, entraîneur David Hubert."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Kevin Mac Allister : ligaments croisés rompus (match contre Lommel, mi-septembre), opéré en Argentine, absence longue."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Ross Sykes : blessé à l'épaule depuis début août, revalidation en bonne voie mais retour non daté."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Kevin Rodriguez : ischios touchés à l'Antwerp, absent contre Leuven, blessures à répétition cette saison."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Série de six victoires de rang avant la trêve ; David Hubert est entraîneur depuis octobre 2025."
    }
   ]
  },
@@ -245,6 +305,70 @@
    {
     "date": "2026-10-11T03:27:11",
     "texte": "Série de quatre nuls et une défaite en cinq matchs, sans victoire, avec très peu de buts marqués."
+   }
+  ]
+ },
+ "westerlo": {
+  "nom": "Westerlo",
+  "faits": [
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Série de 3 victoires en championnat avant la trêve internationale (10 buts marqués)."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Nacho Ferri est parti, mais Bassette (4 buts en 5 matchs) compense pour l'instant."
+   }
+  ]
+ },
+ "royal antwerp": {
+  "nom": "Royal Antwerp",
+  "faits": [
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Série de 4 défaites de rang en Pro League avant ce match, avec une défense qui encaisse beaucoup (2.8 buts par match)."
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Foulon et Hamdaoui sont blessés (incertitude de courte durée), et l'équipe est en crise : 13e au classement."
+   }
+  ]
+ },
+ "como": {
+  "nom": "Como",
+  "faits": [
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Kean a des gênes physiques au retour de sélection, à surveiller les semaines suivantes"
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Premier revers de la saison à Frosinone (0-2) avant la pause, après 3 victoires et 1 nul"
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Défense qui prend des buts (6 encaissés en 5 matchs), conséquence du jeu offensif de Fabregas"
+   }
+  ]
+ },
+ "as roma": {
+  "nom": "AS Roma",
+  "faits": [
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Svilar (fracture du doigt) absent environ un mois, Gollini dans les buts"
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Cristante blessé (genou), absence à suivre"
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Leader de Serie A et invaincue (4V 1N), Malen meilleur buteur avec 6 buts"
+   },
+   {
+    "date": "2026-10-11T07:41:50",
+    "texte": "Enchaîne avec la Ligue des champions (Real Madrid à domicile mercredi), risque de rotation"
    }
   ]
  }
