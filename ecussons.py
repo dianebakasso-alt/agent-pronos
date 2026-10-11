@@ -178,3 +178,20 @@ def championnat(sport_key, titre):
     if sport_key in CHAMPIONNATS:
         return CHAMPIONNATS[sport_key]
     return "⚽", titre
+
+
+# couleur d'accent par championnat (pour le liseré des cartes)
+COULEURS_LIGUES = {
+    "soccer_france_ligue_one": "#3b82f6", "soccer_france_ligue_two": "#60a5fa", "soccer_epl": "#a855f7",
+    "soccer_efl_champ": "#c084fc", "soccer_spain_la_liga": "#f43f5e", "soccer_italy_serie_a": "#06b6d4",
+    "soccer_germany_bundesliga": "#ef4444", "soccer_uefa_champs_league": "#6366f1",
+    "soccer_uefa_europa_league": "#f97316", "soccer_uefa_europa_conference_league": "#22c55e",
+    "soccer_netherlands_eredivisie": "#fb923c", "soccer_portugal_primeira_liga": "#10b981",
+    "soccer_belgium_first_div": "#facc15", "soccer_turkey_super_league": "#e11d48",
+    "soccer_brazil_campeonato": "#22c55e", "soccer_argentina_primera_division": "#38bdf8",
+    "soccer_usa_mls": "#2563eb", "soccer_japan_j_league": "#ec4899",
+}
+
+
+def couleur_ligue(sport_key):
+    return COULEURS_LIGUES.get(sport_key, "#c6ff3d")

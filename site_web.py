@@ -7,7 +7,7 @@ from datetime import datetime
 from html import escape
 from zoneinfo import ZoneInfo
 
-from ecussons import championnat, ecusson
+from ecussons import championnat, couleur_ligue, ecusson
 
 PARIS = ZoneInfo("Europe/Paris")
 JOURS = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
@@ -83,7 +83,7 @@ def carte_value(m):
         {f'<ul>{points}</ul>' if points else ''}
       </div>"""
     return f"""
-    <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}" data-poids="{0 if a and a.get('avis') == 'eviter' else v['mise']}" data-cote="{v['cote']:.2f}" data-pari="{e(json.dumps({"type": "simple", "id": m["id"], "date": m["debut"], "match": m["domicile"] + " – " + m["exterieur"], "pari": v["issue"], "court": v["court"], "cote": v["cote"], "bk": v["bookmaker"]}, ensure_ascii=False))}">
+    <article style="--lig:{couleur_ligue(m.get('sport_key', ''))}" class="carte value{' barre' if a and a.get('avis') == 'eviter' else ''}" data-poids="{0 if a and a.get('avis') == 'eviter' else v['mise']}" data-cote="{v['cote']:.2f}" data-pari="{e(json.dumps({"type": "simple", "id": m["id"], "date": m["debut"], "match": m["domicile"] + " – " + m["exterieur"], "pari": v["issue"], "court": v["court"], "cote": v["cote"], "bk": v["bookmaker"]}, ensure_ascii=False))}">
       <div class="meta">{tag_champ(m)}<span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span></div>
       {affiche(m, grand=True)}
       {barre_probas(m, v["court"])}
@@ -139,10 +139,10 @@ def carte_combine(c):
           <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
           <span class="j-cote">{j["cote"]:.2f}</span></li>{avis_jambe(j)}"""
     if c["conseille"]:
-        entete = f'<div class="combo-t">🎟️ Ton combiné du jour <span class="badge c-bonne">Conseillé</span></div>'
+        entete = f'<div class="combo-t">Ton combiné du jour <span class="badge c-bonne">Conseillé</span></div>'
         note = f'Chaque match a un avantage chez {e(c["bookmaker"])} : le ticket garde un avantage de <b class="vert">{pct(c["edge"], True)}</b>.'
     else:
-        entete = f'<div class="combo-t">🎟️ Combiné à risque <span class="badge c-risque">Non conseillé</span></div>'
+        entete = f'<div class="combo-t">Combiné à risque <span class="badge c-risque">Non conseillé</span></div>'
         perte = -c["edge"] * 10
         note = (f'Aucun combiné rentable aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
                 f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
@@ -283,8 +283,8 @@ def generer(chemin, analyses, values, historique, b, infos, combine=None):
     if analyses:
         choc = max(analyses, key=lambda m: (m["nb_bookmakers"], -abs(m["issues"][0]["proba"] - m["issues"][-1]["proba"])))
         cartes += f"""
-    <h2>L'affiche du jour <small>le match le plus suivi</small></h2>
-    <article class="carte choc">
+    <h2>🔥 L'affiche du jour <small>le match le plus suivi</small></h2>
+    <article class="carte choc" style="--lig:{couleur_ligue(choc.get('sport_key', ''))}">
       <div class="meta">{tag_champ(choc)}<span class="src">{choc["nb_bookmakers"]} bookmakers</span></div>
       {affiche(choc, grand=True)}
       {barre_probas(choc)}
@@ -301,7 +301,7 @@ def generer(chemin, analyses, values, historique, b, infos, combine=None):
         nv = sum(1 for m in ms if m["value"])
         tag = f'<span class="nv">{nv} value</span>' if nv else ""
         groupes += f"""
-    <details{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
+    <details style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
       {''.join(ligne_match(m) for m in ms)}
     </details>"""
 
@@ -316,7 +316,7 @@ def generer(chemin, analyses, values, historique, b, infos, combine=None):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#0e1411">
+<meta name="theme-color" content="#060b09">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -522,7 +522,92 @@ summary::-webkit-details-marker {{ display:none; }}
 footer {{ margin-top:32px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:16px; }}
 footer p + p {{ margin-top:8px; }}
 footer b {{ color:var(--text); }}
-@media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} h1 {{ font-size:34px; }} }}
+
+/* ===================== thème vif ===================== */
+:root {{
+  --bg:#060b09; --surface:#0f1814; --surface2:#16231d; --line:#22352c;
+  --text:#f2fbf5; --muted:#9db3a6; --accent:#c6ff3d; --accent-ink:#0b1500;
+  --ok:#34d399; --warn:#fbbf24; --bad:#fb7185;
+  --p1:#c6ff3d; --pn:#fbbf24; --p2:#38bdf8;
+  --grad:linear-gradient(120deg,#c6ff3d 0%,#34d399 55%,#22d3ee 100%);
+  --grad-ticket:linear-gradient(135deg,#a855f7 0%,#ec4899 50%,#f97316 100%);
+  --pitch:rgba(198,255,61,.12); --glow:rgba(198,255,61,.10);
+}}
+@media (prefers-color-scheme: light) {{
+  :root:not([data-theme="dark"]) {{
+    --bg:#f2f7f1; --surface:#ffffff; --surface2:#eef5ec; --line:#d9e6d6;
+    --text:#0d1a12; --muted:#56685d; --accent:#16a34a; --accent-ink:#ffffff;
+    --ok:#059669; --warn:#d97706; --bad:#e11d48;
+    --p1:#22c55e; --pn:#f59e0b; --p2:#0ea5e9;
+    --grad:linear-gradient(120deg,#16a34a 0%,#059669 55%,#0891b2 100%);
+    --pitch:rgba(22,163,74,.14); --glow:rgba(22,163,74,.10);
+  }}
+}}
+body {{
+  background:
+    radial-gradient(600px 380px at 0% -5%, rgba(198,255,61,.16), transparent 70%),
+    radial-gradient(520px 360px at 100% 0%, rgba(34,211,238,.14), transparent 70%),
+    radial-gradient(700px 500px at 50% 110%, rgba(168,85,247,.10), transparent 70%),
+    var(--bg);
+  background-attachment:fixed;
+}}
+h1 {{ font-size:clamp(32px, 10.5vw, 46px); white-space:nowrap; }}
+h1 em {{ background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.ballon {{ display:inline-block; animation:roule 6s linear infinite; }}
+@keyframes roule {{ to {{ transform:rotate(360deg); }} }}
+.resume div {{ position:relative; overflow:hidden; border:0; background:var(--surface);
+  box-shadow:inset 0 0 0 1px var(--line); }}
+.resume div::before {{ content:""; position:absolute; inset:0 0 auto 0; height:3px; }}
+.resume div:nth-child(1)::before {{ background:#38bdf8; }}
+.resume div:nth-child(2)::before {{ background:var(--accent); }}
+.resume div:nth-child(3)::before {{ background:#a855f7; }}
+.resume div:nth-child(2) b {{ color:var(--accent); }}
+h2 {{ font-size:26px; }}
+.carte {{ position:relative; overflow:hidden; box-shadow:0 10px 30px -18px rgba(0,0,0,.6); }}
+.carte.value::before, .carte.choc::before {{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--lig, var(--accent)); }}
+.carte.value {{ background:radial-gradient(400px 160px at 100% 0%, color-mix(in srgb, var(--lig) 16%, transparent), transparent 70%), var(--surface); }}
+.choc {{ background:radial-gradient(420px 200px at 50% 0%, color-mix(in srgb, var(--lig) 22%, transparent), transparent 70%), var(--surface); }}
+.pari {{ background:var(--grad); color:var(--accent-ink); position:relative; overflow:hidden; box-shadow:0 8px 24px -10px rgba(52,211,153,.55); }}
+.pari::after {{ content:""; position:absolute; top:0; bottom:0; width:40%; left:-60%;
+  background:linear-gradient(100deg, transparent, rgba(255,255,255,.45), transparent); animation:brille 3.8s ease-in-out infinite; }}
+@keyframes brille {{ 0%,55% {{ left:-60%; }} 100% {{ left:130%; }} }}
+@media (prefers-color-scheme: light) {{ :root:not([data-theme="dark"]) .pari {{ color:#fff; }} }}
+.grille div {{ border:1px solid var(--line); }}
+.vert {{ color:var(--ok); }}
+.badge {{ border:1px solid currentColor; background:transparent; }}
+.barre-p {{ height:8px; }}
+.barre-p span {{ opacity:.85; }}
+/* combiné façon ticket */
+.combo {{ border:0; padding:2px; background:var(--grad-ticket); box-shadow:0 14px 34px -16px rgba(236,72,153,.6); }}
+.combo > * {{ position:relative; }}
+.combo::after {{ content:""; position:absolute; inset:2px; border-radius:14px; background:
+  radial-gradient(420px 180px at 100% 0%, rgba(236,72,153,.14), transparent 70%), var(--surface); z-index:0; }}
+.combo > * {{ z-index:1; margin-left:14px; margin-right:14px; }}
+.combo > .combo-t {{ margin-top:14px; }}
+.combo > .joue {{ margin-bottom:14px; }}
+.combo .pari {{ background:var(--grad-ticket); color:#fff; box-shadow:0 8px 24px -10px rgba(236,72,153,.6); }}
+.combo.risque {{ background:linear-gradient(135deg,#f59e0b,#ef4444); }}
+.combo.risque .pari {{ background:var(--surface2); color:var(--text); box-shadow:none; }}
+.combo-t {{ font-size:23px; }}
+.combo:not(.risque) .combo-t {{ background:var(--grad-ticket); -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.combo .combo-t .badge {{ -webkit-text-fill-color:initial; }}
+.jambes li {{ border-left:3px solid #ec4899; }}
+.combo.risque .jambes li {{ border-left-color:var(--warn); }}
+.jambes li.avis-j {{ border-left-width:3px; }}
+/* saisie de la mise */
+.budget {{ border:0; background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
+.puces button.on, .mode button.on {{ background:var(--grad); color:var(--accent-ink); border-color:transparent; }}
+.saisie input {{ color:var(--accent); }}
+.calc {{ border-color:var(--ok); background:color-mix(in srgb, var(--ok) 8%, transparent); }}
+/* liste des matchs */
+details {{ border-left:4px solid var(--lig, var(--line)); }}
+.case.val {{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 14%, var(--surface2)); }}
+.f-V {{ background:#10b981; }} .f-N {{ background:#64748b; }} .f-D {{ background:#f43f5e; }}
+.btn-joue {{ border:1px solid transparent; background:linear-gradient(var(--surface2),var(--surface2)) padding-box, var(--grad) border-box; }}
+.maj {{ background:var(--grad); color:var(--accent-ink); border:0; }}
+.installer {{ border:0; background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
+@media (prefers-reduced-motion: reduce) {{ .ballon, .pari::after {{ animation:none; }} }}
+@media (max-width:380px) {{ .bilan {{ grid-template-columns:repeat(2,1fr); }} }}
 </style>
 </head>
 <body>
@@ -548,19 +633,19 @@ footer b {{ color:var(--text); }}
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 
-<h2>Combiné <small>un seul ticket, chez un seul bookmaker</small></h2>
+<h2>🎟️ Combiné <small>un seul ticket, chez un seul bookmaker</small></h2>
 {carte_combine(combine)}
 
-<h2>Paris simples <small>selon l'avantage de chaque pari</small></h2>
+<h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes}
 
-<h2>Tous les matchs <small>meilleure cote · proba marché</small></h2>
+<h2>📅 Tous les matchs <small>meilleure cote · proba marché</small></h2>
 {groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
 
-<h2 id="mes-paris-t">Mes paris <small>enregistrés sur ce téléphone</small></h2>
+<h2 id="mes-paris-t">✍️ Mes paris <small>enregistrés sur ce téléphone</small></h2>
 <div id="mes-paris"><p class="vide">Touche « J'ai joué ce pari » sur un pari ou un combiné : il apparaîtra ici et sera réglé tout seul.</p></div>
 
-<h2>Bilan de l'agent</h2>
+<h2>📊 Bilan de l'agent</h2>
 <h3 class="sous">🧠 Ce que l'agent a appris</h3>
 {section_appris(infos.get("appris"))}
 <h3 class="sous">Paris simples</h3>
