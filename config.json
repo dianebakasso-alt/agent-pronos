@@ -39,6 +39,6 @@
   ],
 
   "analyse_ia": true,
-  "analyse_ia_max_matchs": 5,
+  "analyse_ia_max_matchs": 7,
   "modele_ia": "claude-sonnet-5-5"
 }

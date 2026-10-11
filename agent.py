@@ -56,6 +56,20 @@ def iso(dt):
 
 
 # ---------------------------------------------------------------- collecte
+NB_JOURS = 7
+
+
+def fin_fenetre(maintenant):
+    """Jusqu'à la fin du 7e jour (heure de Paris) : toute la semaine qui vient."""
+    local = maintenant.astimezone(site_web.PARIS)
+    fin = (local + timedelta(days=NB_JOURS)).replace(hour=0, minute=0, second=0, microsecond=0)
+    return fin.astimezone(timezone.utc)
+
+
+def jour_de(m):
+    return datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(site_web.PARIS).strftime("%Y-%m-%d")
+
+
 def choisir_championnats(api, cfg, maintenant):
     """Liste les championnats de foot qui ont des matchs bientôt (gratuit)."""
     sports = api.get("/sports")
@@ -64,7 +78,7 @@ def choisir_championnats(api, cfg, maintenant):
     prio = cfg["championnats_prioritaires"]
     foot.sort(key=lambda k: (prio.index(k) if k in prio else len(prio), k))
 
-    fin = maintenant + timedelta(hours=cfg["heures_a_venir"])
+    fin = fin_fenetre(maintenant)
     retenus = []
     for cle in foot:
         if len(retenus) >= cfg["credits_max_par_jour"]:
@@ -81,7 +95,7 @@ def choisir_championnats(api, cfg, maintenant):
 
 
 def recuperer_matchs(api, cfg, championnats, maintenant):
-    fin = maintenant + timedelta(hours=cfg["heures_a_venir"])
+    fin = fin_fenetre(maintenant)
     matchs = []
     for cle in championnats:
         try:
@@ -320,13 +334,31 @@ def main():
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
-    combine = moteur.combine_du_jour(analyses, cfg)      # le combiné suivi dans le bilan
-    combos = moteur.combines_experts(analyses, cfg)       # les 3 tickets proposés
+    # aujourd'hui et demain : chacun ses paris et ses combinés
+    local = maintenant.astimezone(site_web.PARIS)
+    auj = local.strftime("%Y-%m-%d")
+    jours = []
+    for k in range(NB_JOURS):
+        cle = (local + timedelta(days=k)).strftime("%Y-%m-%d")
+        quand = "aujourd'hui" if k == 0 else "demain" if k == 1 else site_web.nom_jour(cle)
+        an_j = [a for a in analyses if jour_de(a) == cle]
+        jours.append({"cle": cle, "quand": quand, "analyses": an_j,
+                      "values": [a for a in values if jour_de(a) == cle],
+                      "combos": moteur.combines_experts(an_j, cfg)})
+    if not demo:
+        (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
+            "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2)) for c in j["combos"]]}
+            for j in jours], ensure_ascii=False, indent=1), encoding="utf-8")
+    an_auj = jours[0]["analyses"]
+    combine = moteur.combine_du_jour(an_auj, cfg)        # le combiné suivi dans le bilan (aujourd'hui)
+    combos = [c for j in jours for c in j["combos"]]
 
     # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
-    ordre = sorted(combos, key=lambda c: {"equilibre": 0, "prudent": 1, "gros": 2}[c["style"]])
+    # priorité à aujourd'hui, puis demain
+    ordre = sorted(combos, key=lambda c: (jour_de(c["jambes"][0]["match"]) != auj,
+                                         {"equilibre": 0, "prudent": 1, "gros": 2}[c["style"]]))
     taches, vus = [], set()
-    for m in values:
+    for m in sorted(values, key=lambda m: jour_de(m) != auj):
         taches.append((m, m["value"], m)); vus.add((m["id"], m["value"]["court"]))
     for c in ordre:
         for j in c["jambes"]:
@@ -370,7 +402,7 @@ def main():
             j.setdefault("avis", avis_par_pari.get((j["match"]["id"], j["court"])))
 
     if not demo:
-        enregistrer_paris(historique, values)
+        enregistrer_paris(historique, [v for v in values if jour_de(v) == auj])
         enregistrer_combine(combines, combine, maintenant)
         HISTORIQUE.write_text(json.dumps(historique, ensure_ascii=False, indent=1), encoding="utf-8")
         COMBINES.write_text(json.dumps(combines, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -385,6 +417,7 @@ def main():
         "combines": combines,
         "bilan_combines": bilan_combines(combines),
         "appris": appris,
+        "jours": jours,
         "memoire_equipes": len(actu),
         "resultats": {**{h["id"]: {"res": h["res"], "score": h.get("score", "")} for h in historique if h.get("res")},
                       **{j["id"]: {"res": j["res"], "score": j.get("score", "")}

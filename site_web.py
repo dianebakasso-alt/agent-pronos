@@ -14,6 +14,14 @@ JOURS = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
 MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 
 
+NOMS_JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+
+
+def nom_jour(cle):
+    d = datetime.strptime(cle, "%Y-%m-%d")
+    return f"{NOMS_JOURS[d.weekday()]} {d.day}"
+
+
 def e(x):
     return escape(str(x))
 
@@ -128,7 +136,7 @@ def avis_jambe(j):
     return f"""<li class="avis-j {cls}"><b>{titre} :</b> {e(a.get("resume", ""))}</li>"""
 
 
-def carte_combine(c):
+def carte_combine(c, jour=""):
     if not c:
         return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
       <p class="src">Pas assez de matchs avec des cotes correctes chez un même bookmaker.</p></article>"""
@@ -151,7 +159,7 @@ def carte_combine(c):
         note = (f'Pas de ticket rentable dans ce style aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
                 f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
     return f"""
-    <article class="carte combo st-{style}{'' if c['conseille'] else ' risque'}" id="combo-{style}" data-style="{style}" data-nom="{e(c.get('nom', 'Combiné'))}" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + style + "-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + c.get("nom", "") + " · " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
+    <article class="carte combo st-{style}{'' if c['conseille'] else ' risque'}" id="combo-{jour}-{style}" data-style="{style}" data-nom="{e(c.get('nom', 'Combiné'))}" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + style + "-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + c.get("nom", "") + " · " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
       {entete}
       <ul class="jambes">{jambes}</ul>
       <div class="pari">
@@ -259,11 +267,11 @@ def section_historique(historique, b):
     <table class="hist">{lignes}</table>"""
 
 
-def mot_agent(analyses, values, combos):
+def mot_agent(analyses, values, combos, quand="aujourd'hui", k=0):
     jouables = [m for m in values if (m.get("avis") or {}).get("avis") != "eviter"]
     conseilles = [c for c in combos if c.get("conseille")]
     if jouables or conseilles:
-        icone, titre = "🎯", "Il y a de quoi jouer aujourd'hui"
+        icone, titre = "🎯", f"Il y a de quoi jouer {quand}"
         lignes = []
         if jouables:
             m = jouables[0]; v = m["value"]
@@ -277,7 +285,7 @@ def mot_agent(analyses, values, combos):
             lignes.append(f"⚠️ L'IA a écarté {eviter} pari{'s' if eviter > 1 else ''} après lecture de l'actu.")
         ton = "go"
     else:
-        icone, titre = "🧘", "Aujourd'hui, le plus malin c'est d'attendre"
+        icone, titre = "🧘", f"{quand[0].upper() + quand[1:]}, le plus malin c'est d'attendre"
         lignes = ["Aucune cote ne paie plus que le vrai risque : les bookmakers sont trop gourmands sur ces matchs. "
                   "Garder ton argent, c'est gagner contre eux."]
         if combos:
@@ -285,6 +293,11 @@ def mot_agent(analyses, values, combos):
             lignes.append(f"Si tu veux quand même jouer, le ticket le moins cher est le {c['emoji']} <b>{e(c['nom'])}</b> "
                           f"({round(c['proba'] * 100)} % de chances).")
         ton = "calme"
+    if not analyses:
+        icone, titre, ton = "📭", f"Pas de match suivi {quand}", "calme"
+        lignes = ["Les bookmakers n'ont pas encore publié de cotes pour ce jour dans les championnats suivis."]
+    if k >= 1 and analyses:
+        lignes.append("🕒 <i>Verdict provisoire : les cotes et les compos bougent. L'agent refait le point chaque matin à 6 h 45.</i>")
     return f"""<section class="mot {ton}"><div class="mot-i">{icone}</div><div><div class="mot-t">Le mot de l'agent</div>
       <h3>{titre}</h3>{''.join(f'<p>{l}</p>' for l in lignes)}</div></section>"""
 
@@ -341,6 +354,47 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
     <details data-l="{e(champ[1])}" style="--lig:{couleur_ligue(ms[0].get('sport_key', ''))}"{' open' if nv else ''}><summary><span class="champ g"><i>{champ[0]}</i>{e(champ[1])}</span><span class="cpt">{tag}{len(ms)} match{'s' if len(ms) > 1 else ''}</span></summary>
       {''.join(ligne_match(m) for m in ms)}
     </details>"""
+
+    jours = infos.get("jours") or [{"cle": d.strftime("%Y-%m-%d"), "quand": "aujourd'hui",
+                                     "analyses": analyses, "values": values, "combos": combos}]
+    selecteur, mots, corps = "", "", ""
+    for k, j in enumerate(jours):
+        jv = [m for m in j["values"] if (m.get("avis") or {}).get("avis") != "eviter"]
+        jc = [c for c in j["combos"] if c.get("conseille")]
+        if not j["analyses"]:
+            etat, sous = "vide", "—"
+        elif jv or jc:
+            n = len(jv) + len(jc)
+            etat, sous = "go", f"{n} à jouer"
+        else:
+            etat, sous = "calme", "attendre"
+        dt = datetime.strptime(j["cle"], "%Y-%m-%d")
+        titre_j = "Auj." if k == 0 else "Demain" if k == 1 else NOMS_JOURS[dt.weekday()][:3] + "."
+        selecteur += f"""<button data-j="{j["cle"]}" class="j-{etat}"><span>{titre_j}</span><b>{dt.day}</b><small>{sous}</small></button>"""
+        mots += f"""<div class="jour-mot" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>{mot_agent(j["analyses"], j["values"], j["combos"], j["quand"], k)}</div>"""
+        if j["values"]:
+            cartes_j = "".join(carte_value(m) for m in j["values"])
+        else:
+            cartes_j = f"""<div class="rien"><div class="sifflet">🧘</div><b>Aucun pari simple {e(j["quand"])}.</b>
+        <p>Aucune cote ne paie plus que le vrai risque. Ne pas parier, c'est aussi une décision gagnante.</p></div>"""
+        if j["analyses"]:
+            choc = max(j["analyses"], key=lambda m: (m["nb_bookmakers"], -abs(m["issues"][0]["proba"] - m["issues"][-1]["proba"])))
+            cartes_j += f"""
+    <h2>🔥 L'affiche {'du jour' if k == 0 else 'de ' + e(j["quand"])} <small>le match le plus suivi</small></h2>
+    <article class="carte choc" style="--lig:{couleur_ligue(choc.get('sport_key', ''))}">
+      <div class="meta">{tag_champ(choc)}<span class="src">{choc["nb_bookmakers"]} bookmakers</span></div>
+      {affiche(choc, grand=True)}
+      {barre_probas(choc)}
+      {bloc_stats(choc)}
+      <div class="leg">{''.join(f'<span><i class="{ {"1":"s1","N":"sn","2":"s2"}[i["court"]] }"></i>{e(i["issue"])} <b>{pct(i["proba"])}</b> · {i["cote"]:.2f}</span>' for i in choc["issues"])}</div>
+    </article>"""
+        combos_j = "".join(carte_combine(c, j["cle"]) for c in j["combos"]) or carte_combine(None)
+        corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
+<h2>🎟️ Combinés d'experts <small>3 styles · chaque ticket chez un seul bookmaker</small></h2>
+{combos_j}
+<h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
+{cartes_j}
+</div>"""
 
     bandeau_demo = '<div class="demo">Mode démo : données fictives</div>' if infos.get("demo") else ""
     credits = ""
@@ -708,6 +762,22 @@ header.reduit h1 {{ font-size:30px; }}
 .chips button {{ flex:none; background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:99px;
   padding:6px 11px; font:600 13px Inter,sans-serif; cursor:pointer; }}
 .chips button.on {{ background:var(--grad); color:var(--accent-ink); border-color:transparent; }}
+.semaine {{ display:flex; gap:6px; overflow-x:auto; margin:4px -16px 12px; padding:2px 16px 4px; scrollbar-width:none; }}
+.semaine::-webkit-scrollbar {{ display:none; }}
+.semaine button {{ flex:none; width:64px; display:flex; flex-direction:column; align-items:center; gap:1px; padding:8px 0 7px;
+  border-radius:14px; border:1px solid var(--line); background:var(--surface); color:var(--text); cursor:pointer; position:relative; }}
+.semaine button span {{ font:600 11px Inter,sans-serif; color:var(--muted); text-transform:capitalize; }}
+.semaine button b {{ font:700 22px "Barlow Condensed",sans-serif; line-height:1.05; }}
+.semaine button small {{ font:600 10px Inter,sans-serif; white-space:nowrap; }}
+.semaine .j-go small {{ color:var(--ok); }}
+.semaine .j-calme small {{ color:var(--muted); }}
+.semaine .j-vide {{ opacity:.5; }}
+.semaine .j-go::after {{ content:""; position:absolute; top:6px; right:7px; width:7px; height:7px; border-radius:50%; background:var(--ok);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); }}
+.semaine button.on {{ border:0; background:var(--grad); color:var(--accent-ink); }}
+.semaine button.on span, .semaine button.on small {{ color:var(--accent-ink); }}
+.jour-mot[hidden], .jour-corps[hidden], #styles button[hidden] {{ display:none !important; }}
+.jour-mot .mot {{ margin-top:0; }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -740,32 +810,28 @@ header.reduit h1 {{ font-size:30px; }}
   </g>
 </svg><div><h1>Prono <em>Malin</em></h1><div class="slogan">Parier moins, parier mieux.</div></div></div>
   <div class="resume">
-    <div><span>Matchs analysés</span><b>{len(analyses)}</b></div>
+    <div><span>Matchs sur 7 jours</span><b>{len(analyses)}</b></div>
     <div><span>Value bets</span><b>{len(values)}</b></div>
     <div><span>Championnats</span><b>{len({m["sport_key"] for m in analyses})}</b></div>
   </div>
-  {mot_agent(analyses, values, combos)}
   <div class="installer" id="installer"><button onclick="fermer()" aria-label="Fermer">×</button>
     <b>Installe Prono Malin :</b> touche <b>Partager</b> en bas de Safari, puis <b>Sur l'écran d'accueil</b>.</div>
 </header>
 
 <main>
 <div class="onglet" id="t-jour">
+<div class="semaine" id="semaine">{selecteur}</div>
+{mots}
 <section class="budget">
   <label for="somme">Ma mise du jour</label>
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
   <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
-  <div class="styles" id="styles">{''.join(f'<button data-s="{c["style"]}">{c["emoji"]} {e(c["nom"])}</button>' for c in combos)}</div>
+  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button></div>
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 
-<h2>🎟️ Combinés d'experts <small>3 styles · chaque ticket chez un seul bookmaker</small></h2>
-{''.join(carte_combine(c) for c in combos) or carte_combine(None)}
-
-<h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
-{cartes}
-
+{corps}
 </div>
 
 <div class="onglet" id="t-matchs" hidden>
@@ -822,13 +888,27 @@ let vu = null; try {{ vu = localStorage.getItem("installer-vu"); }} catch (e) {{
 if (ios && !appli && !vu) document.getElementById("installer").style.display = "block";
 // ---- ma mise du jour : répartition sur les paris jouables
 const champ = document.getElementById("somme");
-const cartesV = [...document.querySelectorAll("article[data-poids]")].filter(c => +c.dataset.poids > 0);
 const fmt = x => x.toFixed(2).replace(".", ",").replace(",00", "") + " €";
-const tickets = [...document.querySelectorAll(".combo[data-style]")];
+let jourActif = "{jours[0]["cle"]}", cartesV = [], tickets = [];
 let styleTicket = "equilibre";
 try {{ styleTicket = localStorage.getItem("style-ticket") || "equilibre"; }} catch (e) {{}}
-if (!tickets.some(t => t.dataset.style === styleTicket) && tickets.length) styleTicket = (tickets.find(t => t.dataset.style === "equilibre") || tickets[0]).dataset.style;
-const ticketChoisi = () => tickets.find(t => t.dataset.style === styleTicket);
+function majJour() {{
+  const corps = document.querySelector(`.jour-corps[data-jour="${{jourActif}}"]`);
+  cartesV = [...corps.querySelectorAll("article[data-poids]")].filter(c => +c.dataset.poids > 0);
+  tickets = [...corps.querySelectorAll(".combo[data-style]")];
+  document.querySelectorAll("#styles button").forEach(b => b.hidden = !tickets.some(t => t.dataset.style === b.dataset.s));
+}}
+const ticketChoisi = () => tickets.find(t => t.dataset.style === styleTicket) || tickets.find(t => t.dataset.style === "equilibre") || tickets[0];
+function choisirJour(cle) {{
+  jourActif = cle;
+  document.querySelectorAll(".jour-mot, .jour-corps").forEach(el => el.hidden = el.dataset.jour !== cle);
+  document.querySelectorAll("#semaine button").forEach(b => b.classList.toggle("on", b.dataset.j === cle));
+  const lbl = document.querySelector('label[for="somme"]');
+  const b = document.querySelector(`#semaine button[data-j="${{cle}}"]`);
+  lbl.textContent = cle === "{jours[0]["cle"]}" ? "Ma mise du jour" : "Ma mise pour " + (b.querySelector("span").textContent === "Demain" ? "demain" : b.querySelector("span").textContent.toLowerCase() + " " + b.querySelector("b").textContent);
+  try {{ sessionStorage.setItem("jour", cle); }} catch (e) {{}}
+  majJour(); repartir();
+}}
 function choisirStyle(st) {{
   styleTicket = st;
   try {{ localStorage.setItem("style-ticket", st); }} catch (e) {{}}
@@ -850,20 +930,21 @@ function repartir() {{
   try {{ localStorage.setItem("mise-jour", JSON.stringify({{ jour: "{d:%Y-%m-%d}", v: champ.value }})); }} catch (e) {{}}
   if (!total) {{ res.innerHTML = "Tape la somme que tu sors aujourd'hui."; return; }}
   document.getElementById("styles").hidden = mode !== "combine" || tickets.length < 2;
-  document.querySelectorAll("#styles button").forEach(b => b.classList.toggle("on", b.dataset.s === styleTicket));
-  tickets.forEach(t => t.classList.toggle("choisi", mode === "combine" && t.dataset.style === styleTicket));
+  const eff = tickets.length ? ticketChoisi().dataset.style : "";
+  document.querySelectorAll("#styles button").forEach(b => b.classList.toggle("on", b.dataset.s === eff));
+  document.querySelectorAll(".combo[data-style]").forEach(t => t.classList.toggle("choisi", mode === "combine" && tickets.includes(t) && t.dataset.style === eff));
   if (mode === "combine") {{
     const combo = ticketChoisi();
-    if (!combo) {{ res.innerHTML = "<b>Pas de combiné aujourd'hui.</b> Garde tes " + fmt(total) + " en poche."; return; }}
+    if (!combo) {{ res.innerHTML = "<b>Pas de combiné ce jour-là.</b> Garde tes " + fmt(total) + " en poche."; return; }}
     const gain = total * +combo.dataset.cote;
     const z = combo.querySelector(".calc");
     z.innerHTML = `<div><span>Ta mise</span><b>${{fmt(total)}}</b></div><div class="r"><span>Si ça passe, tu touches</span><b>${{fmt(gain)}}</b></div>`;
     z.hidden = false;
     res.innerHTML = `Tes <b>${{fmt(total)}}</b> sur le combiné <b>${{combo.dataset.nom}}</b> : si les ${{combo.querySelectorAll(".jambes li:not(.avis-j)").length}} matchs passent, tu touches <b class="gros">${{fmt(gain)}}</b>. ` +
-      `Un seul raté et tu perds ${{fmt(total)}}.` + (combo.classList.contains("risque") ? " <b>⚠️ Combiné non conseillé aujourd'hui.</b>" : "");
+      `Un seul raté et tu perds ${{fmt(total)}}.` + (combo.classList.contains("risque") ? " <b>⚠️ Combiné non conseillé ce jour-là.</b>" : "");
     return;
   }}
-  if (!cartesV.length) {{ res.innerHTML = "<b>Aucun bon pari aujourd'hui.</b> Garde tes " + fmt(total) + " en poche : c'est la meilleure décision du jour."; return; }}
+  if (!cartesV.length) {{ res.innerHTML = "<b>Aucun bon pari ce jour-là.</b> Garde tes " + fmt(total) + " en poche : c'est la meilleure décision du jour."; return; }}
   const somme = cartesV.reduce((t, c) => t + +c.dataset.poids, 0);
   let reste = Math.round(total * 10), maxi = 0;
   cartesV.forEach((c, i) => {{
@@ -881,7 +962,10 @@ function repartir() {{
 champ.addEventListener("input", repartir);
 document.querySelectorAll(".mode button").forEach(b => b.addEventListener("click", () => choisirMode(b.dataset.m)));
 document.querySelectorAll("#styles button").forEach(b => b.addEventListener("click", () => choisirStyle(b.dataset.s)));
-tickets.forEach(t => t.addEventListener("click", ev => {{ if (mode === "combine" && !ev.target.closest(".joue")) choisirStyle(t.dataset.style); }}));
+document.querySelectorAll(".combo[data-style]").forEach(t => t.addEventListener("click", ev => {{ if (mode === "combine" && !ev.target.closest(".joue")) choisirStyle(t.dataset.style); }}));
+document.querySelectorAll("#semaine button").forEach(b => b.addEventListener("click", () => choisirJour(b.dataset.j)));
+majJour();
+try {{ const j = sessionStorage.getItem("jour"); if (j && document.querySelector(`#semaine button[data-j="${{j}}"]`)) choisirJour(j); else choisirJour(jourActif); }} catch (e) {{ choisirJour(jourActif); }}
 document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === mode));
 document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; repartir(); }}));
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
