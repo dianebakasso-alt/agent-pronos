@@ -2,23 +2,13 @@
  {
   "jour": "2026-10-11",
   "bookmaker": "Betclic (FR)",
-  "cote": 2.92,
-  "proba": 0.3137,
+  "cote": 2.9,
+  "proba": 0.313,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
-   {
-    "id": "a8801462cb97a43570956e4b3ef4aedf",
-    "sport_key": "soccer_germany_bundesliga",
-    "date": "2026-10-11T13:30:00Z",
-    "domicile": "1. FC Köln",
-    "exterieur": "Borussia Monchengladbach",
-    "pari": "Victoire 1. FC Köln",
-    "court": "1",
-    "cote": 1.95
-   },
    {
     "id": "984691837d31fd0c59c088f377f55f75",
     "sport_key": "soccer_spain_la_liga",
@@ -28,6 +18,16 @@
     "pari": "Victoire Real Betis",
     "court": "1",
     "cote": 1.5
+   },
+   {
+    "id": "a8801462cb97a43570956e4b3ef4aedf",
+    "sport_key": "soccer_germany_bundesliga",
+    "date": "2026-10-11T13:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Borussia Monchengladbach",
+    "pari": "Victoire 1. FC Köln",
+    "court": "1",
+    "cote": 1.93
    }
   ]
  }

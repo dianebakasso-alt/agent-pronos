@@ -1,11 +1,11 @@
 {
  "ligues_ok": [
-  "soccer_netherlands_eredivisie",
-  "soccer_italy_serie_a",
   "soccer_efl_champ",
   "soccer_spain_la_liga",
+  "soccer_netherlands_eredivisie",
   "soccer_france_ligue_one",
   "soccer_epl",
+  "soccer_italy_serie_a",
   "soccer_germany_bundesliga",
   "soccer_portugal_primeira_liga",
   "soccer_france_ligue_two"
@@ -15,8 +15,6 @@
   "soccer_uefa_europa_league",
   "soccer_uefa_europa_conference_league"
  ],
- "equipes_trouvees": 171,
- "equipes_manquees": [
-  "soccer_france_ligue_two: Stade Lavallois"
- ]
+ "equipes_trouvees": 174,
+ "equipes_manquees": []
 }
