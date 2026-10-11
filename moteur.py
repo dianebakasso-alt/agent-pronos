@@ -363,8 +363,9 @@ def pronos_buts(analyses, n=4):
         # préférence aux marchés les plus parlants (2,5 buts et BTTS) quand ils sont nets
         k, p = max(options, key=lambda o: o[1] + (0.25 if o[0] in ("plus25", "moins25", "btts", "pas_btts") else 0))
         choix.append({"match": m, "marche": k, "libelle": LIBELLES_BUTS[k], "proba": p,
+                      "principal": k in ("plus25", "moins25", "btts", "pas_btts"),
                       "cote_juste": _cote(p), "cote_cible": round(1.05 / p, 2)})
-    choix.sort(key=lambda c: -c["proba"])
+    choix.sort(key=lambda c: (not c["principal"], -c["proba"]))
     vus, res = set(), []
     for c in choix:
         if c["match"]["id"] not in vus:
