@@ -495,6 +495,27 @@ Si ton bookmaker propose <b>au moins la cote indiquée</b>, le pari vaut le coup
         }
     donnees_json = json.dumps(donnees, ensure_ascii=False).replace("</", "<\\/")
 
+    # vue « par heure » : tous les matchs de la semaine dans l'ordre chronologique
+    chrono, jour_prec, heure_prec = "", None, None
+    for m in sorted(analyses, key=lambda m: m["debut"]):
+        dl = datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(PARIS)
+        cle_j = dl.strftime("%Y-%m-%d")
+        if cle_j != jour_prec:
+            if jour_prec is not None:
+                chrono += "</div></div>"
+            chrono += (f'<div class="ch-jour" data-jour="{cle_j}"><div class="ch-jt">'
+                       f'{["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"][dl.weekday()]} {dl.day} {MOIS[dl.month-1]}</div><div>')
+            jour_prec, heure_prec = cle_j, None
+        h = dl.strftime("%H:%M")
+        if h != heure_prec:
+            chrono += f'<div class="ch-h" data-jour="{cle_j}">🕒 {h}</div>'
+            heure_prec = h
+        drap, nom = championnat(m.get("sport_key", ""), m["championnat"])
+        chrono += (f'<div class="ch-m" data-l="{e(nom)}" style="--lig:{couleur_ligue(m.get("sport_key", ""))}">'
+                   f'<div class="ch-l">{drap} {e(nom)}</div>{ligne_match(m)}</div>')
+    if jour_prec is not None:
+        chrono += "</div></div>"
+
     # rangée de jours de l'onglet Matchs (avec le nombre de matchs par jour)
     selecteur_m = '<button data-jm="" class="j-tous"><span>Semaine</span><b>7 j</b><small>' + str(len(analyses)) + ' matchs</small></button>'
     for k, j in enumerate(jours):
@@ -838,7 +859,7 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .chance b {{ font:700 26px "Barlow Condensed",sans-serif; grid-row:span 2; }}
 .chance small {{ color:var(--muted); font-size:12px; }}
 body {{ padding-bottom:calc(92px + env(safe-area-inset-bottom)); }}
-.onglet[hidden], .match[hidden], details[hidden], .toast[hidden], #aucun[hidden] {{ display:none !important; }}
+.onglet[hidden], .match[hidden], details[hidden], .ch-m[hidden], .ch-h[hidden], .ch-jour[hidden], #vue-heure[hidden], #vue-champ[hidden], .toast[hidden], #aucun[hidden] {{ display:none !important; }}
 header.reduit .resume, header.reduit .mot, header.reduit .installer {{ display:none !important; }}
 header.reduit {{ padding-bottom:4px; }}
 header.reduit h1 {{ font-size:30px; }}
@@ -868,7 +889,7 @@ header.reduit h1 {{ font-size:30px; }}
 .cd.live {{ color:#fb7185; animation:clignote 1.4s ease-in-out infinite; }}
 .cd.fini {{ color:var(--muted); }}
 @keyframes clignote {{ 50% {{ opacity:.35; }} }}
-.filtres {{ position:sticky; top:0; z-index:5; padding:8px 0 10px; margin:0 -16px 6px; padding-left:16px; padding-right:16px;
+.filtres {{ position:relative; z-index:5; padding:8px 0 10px; margin:0 -16px 6px; padding-left:16px; padding-right:16px;
   background:linear-gradient(var(--bg) 75%, transparent); }}
 #cherche {{ width:100%; background:var(--surface); border:1px solid var(--line); border-radius:12px; color:var(--text);
   font:500 15px Inter,sans-serif; padding:10px 12px; outline:0; }}
@@ -972,6 +993,15 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
 .semaine-m button b {{ font-size:19px; }}
 .semaine-m button.on {{ border:0; background:var(--grad); color:var(--accent-ink); }}
 .semaine-m button.on span, .semaine-m button.on small {{ color:var(--accent-ink); }}
+.vues {{ display:grid; grid-template-columns:1fr 1fr; gap:4px; background:var(--surface2); border-radius:12px; padding:4px; margin:0 0 12px; }}
+.vues button {{ background:none; border:0; border-radius:9px; padding:8px 0; font:600 13px Inter,sans-serif; color:var(--muted); cursor:pointer; }}
+.vues button.on {{ background:var(--surface); color:var(--text); box-shadow:0 1px 3px rgba(0,0,0,.25); }}
+.ch-jt {{ font:700 22px "Barlow Condensed",sans-serif; margin:14px 0 6px; padding-bottom:4px; border-bottom:2px solid var(--line); }}
+.ch-h {{ position:sticky; top:calc(8px + env(safe-area-inset-top)); z-index:3; display:inline-block; margin:10px 0 6px; padding:4px 12px; border-radius:99px;
+  background:var(--grad); color:var(--accent-ink); font:700 14px Inter,sans-serif; }}
+.ch-m {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--lig, var(--line)); border-radius:12px; margin-bottom:8px; overflow:hidden; }}
+.ch-l {{ font-size:12px; font-weight:600; color:var(--muted); padding:8px 14px 0; }}
+.ch-m .match {{ border-top:0; padding-top:4px; }}
 .toast {{ position:fixed; z-index:60; left:50%; transform:translateX(-50%); bottom:calc(96px + env(safe-area-inset-bottom));
   background:var(--text); color:var(--bg); font:600 14px Inter,sans-serif; padding:10px 16px; border-radius:99px;
   box-shadow:0 8px 24px rgba(0,0,0,.35); animation:monte .25s ease both; }}
@@ -1039,7 +1069,9 @@ button.case.pris, .ajout-buts button.pris {{ outline:2px solid #ec4899 !importan
   <input id="cherche" type="search" placeholder="🔍 Chercher une équipe…" autocomplete="off">
   <div class="chips" id="chips"><button class="on" data-l="">Tous</button>{''.join(f'<button data-l="{e(ch[1])}">{ch[0]} {e(ch[1])}</button>' for ch in par_champ)}</div>
 </div>
-{groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
+<div class="vues"><button data-v="heure" class="on">🕒 Par heure</button><button data-v="champ">🏆 Par championnat</button></div>
+<div id="vue-heure">{chrono or '<p class="vide">Aucun match dans les prochains jours.</p>'}</div>
+<div id="vue-champ" hidden>{groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}</div>
 <p class="vide" id="aucun" hidden>Aucun match ne correspond.</p>
 </div>
 
@@ -1315,9 +1347,35 @@ try {{ const t = sessionStorage.getItem("onglet"); if (t) ouvrirOnglet(t, false)
 // ---- filtres des matchs
 let ligue = "", jourM = "{jours[0]["cle"]}";
 try {{ const v = sessionStorage.getItem("jour-m"); if (v !== null) jourM = v; }} catch (e) {{}}
+let vueM = "heure";
+try {{ vueM = localStorage.getItem("vue-matchs") || "heure"; }} catch (e) {{}}
+function choisirVue(v) {{
+  vueM = v;
+  document.getElementById("vue-heure").hidden = v !== "heure";
+  document.getElementById("vue-champ").hidden = v !== "champ";
+  document.querySelectorAll(".vues button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
+  try {{ localStorage.setItem("vue-matchs", v); }} catch (e) {{}}
+  filtrer();
+}}
 function filtrer() {{
   const q = document.getElementById("cherche").value.trim().toLowerCase();
   let visibles = 0;
+  if (vueM === "heure") {{
+    document.querySelectorAll("#vue-heure .ch-m").forEach(c => {{
+      const m = c.querySelector(".match");
+      const ok = (!ligue || c.dataset.l === ligue) && (!jourM || m.dataset.jour === jourM) && (!q || c.textContent.toLowerCase().includes(q));
+      c.hidden = !ok; m.hidden = !ok; if (ok) visibles++;
+    }});
+    // on masque les repères d'heure et de jour devenus vides
+    document.querySelectorAll("#vue-heure .ch-h").forEach(h => {{
+      let el = h.nextElementSibling, n = 0;
+      while (el && !el.classList.contains("ch-h")) {{ if (!el.hidden) n++; el = el.nextElementSibling; }}
+      h.hidden = n === 0;
+    }});
+    document.querySelectorAll("#vue-heure .ch-jour").forEach(j => j.hidden = !j.querySelector(".ch-m:not([hidden])"));
+    document.getElementById("aucun").hidden = visibles > 0;
+    return;
+  }}
   document.querySelectorAll("#t-matchs details").forEach(d => {{
     const okL = !ligue || d.dataset.l === ligue;
     let n = 0;
@@ -1340,7 +1398,8 @@ function choisirJourM(v) {{
   filtrer();
 }}
 document.querySelectorAll("#jours-m button").forEach(b => b.addEventListener("click", () => choisirJourM(b.dataset.jm)));
-choisirJourM(jourM);
+document.querySelectorAll(".vues button").forEach(b => b.addEventListener("click", () => choisirVue(b.dataset.v)));
+choisirJourM(jourM); choisirVue(vueM);
 document.querySelectorAll("#chips button").forEach(b => b.addEventListener("click", () => {{
   ligue = b.dataset.l;
   document.querySelectorAll("#chips button").forEach(x => x.classList.toggle("on", x === b));
