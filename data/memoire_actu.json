@@ -21,6 +21,22 @@
    {
     "date": "2026-10-11T03:18:46",
     "texte": "Belloumi est le seul joueur de Hull à avoir marqué plus d'une fois cette saison. Hull est sans victoire depuis 3 matchs de championnat."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Promu, entraîneur Sergej Jakirovic, 5-4-1 solide : aucun but encaissé à domicile après 5 journées."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Longues absences : Matazo (ligament croisé, retour vers février), Butland et Gyabi (vers décembre)."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Ansah, Stroud et Hughes sont attendus de retour fin octobre."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Sans victoire sur ses 3 derniers matchs de championnat."
    }
   ]
  },
@@ -50,6 +66,22 @@
    {
     "date": "2026-10-11T03:18:46",
     "texte": "Les Friedkin cherchent un investisseur ou une vente du club (annonce du 9 octobre 2026)."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Invaincu en 2026/27 sous Moyes (2V 3N), 3 buts encaissés en 5 matchs mais attaque peu prolifique."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Effectif court : Mykolenko est le seul arrière gauche de métier (Aznou prêté à Malaga), et Thierno Barry est le seul attaquant de métier."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Norgaard revient de blessure et Röhl est incertain."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Les Friedkin cherchent un investisseur ou une vente du club (annoncé le 9 octobre 2026)."
    }
   ]
  },
@@ -79,6 +111,22 @@
    {
     "date": "2026-10-11T03:18:46",
     "texte": "Cologne a pris 1 point sur 3 matchs après sa victoire d'ouverture, et René Wagner est sous pression."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Ache (cuisse, retour estimé à 3-4 semaines) et Dallinga (ligaments croisés, probablement absent toute la saison) manquent en attaque."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Hübers est absent depuis près d'un an (genou), Castro-Montes est blessé à la cuisse."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Köln encaisse à chaque match de championnat cette saison (9 buts en 4 matchs) et n'a pas fait de clean sheet."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Après la victoire d'ouverture 3-2 contre Hoffenheim, Köln n'a pris qu'1 point sur 3 matchs. René Wagner est sous pression."
    }
   ]
  },
@@ -108,6 +156,95 @@
    {
     "date": "2026-10-11T03:18:46",
     "texte": "Leopold (ligaments croisés), Castrop (épaule, plusieurs mois) et Kühn (déchirure musculaire) sont absents longtemps. Honorat est blessé musculairement depuis le 3 octobre."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Alexander Blessin est le nouvel entraîneur depuis fin septembre, après le limogeage de Polanski. Jan-Moritz Lichte a assuré l'intérim lors du 3-4 contre Mayence."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Début de saison catastrophique : 4 défaites, 0 point, 16 buts encaissés, dernier du classement. Gladbach n'a pas marqué lors de ses deux matchs à l'extérieur."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Leopold (ligaments croisés, saison terminée), Castrop (épaule, plusieurs mois) et Kühn (déchirure musculaire) sont absents longtemps. Honorat est blessé depuis le 3 octobre."
+   }
+  ]
+ },
+ "benfica": {
+  "nom": "Benfica",
+  "faits": [
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Première défaite de la saison au Clássico à Porto (3-1) lors de la 7e journée. Il n'a plus perdu en championnat avant cela."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Absences de plusieurs semaines à surveiller : Barrenechea, Kamiński, Banjaqui et Lenglet. La presse cite aussi Bah et Sudakov comme incertains."
+   }
+  ]
+ },
+ "vitória sc": {
+  "nom": "Vitória SC",
+  "faits": [
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Mauvais début de saison : 14e après 7 journées, sans victoire à l'extérieur depuis avril (cinq défaites de suite loin de Guimarães)."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Attaque très pauvre (5 buts en 7 matchs). Gonçalo Nogueira est le joueur le plus dangereux, sous la direction de Tiago Margarido."
+   }
+  ]
+ },
+ "union saint-gilloise": {
+  "nom": "Union Saint-Gilloise",
+  "faits": [
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Kevin Mac Allister : saison terminée après une grave blessure, opéré en Argentine (blessure longue)."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Ross Sykes : absent depuis la blessure à l'épaule subie début août, retour encore incertain."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Kevin Rodriguez : blessures à répétition (ischio-jambiers), toujours pas rétabli début octobre."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Série en cours : leader de Pro League avec 19 points sur 21 après 7 journées, entraîneur David Hubert."
+   }
+  ]
+ },
+ "san lorenzo": {
+  "nom": "San Lorenzo",
+  "faits": [
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Insúa est en poste pour son troisième passage et n'a pas encore gagné depuis son retour."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Le club traverse des difficultés financières (comptes saisis, salaires en retard). Matías Reali a été prêté à Independiente Rivadavia."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Corujo (biceps fémoral) et Perruzzi (genoux) sont blessés, à surveiller pour les prochains matchs."
+   }
+  ]
+ },
+ "deportivo riestra": {
+  "nom": "Deportivo Riestra",
+  "faits": [
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Guillermo Duró est l'entraîneur et le club n'a gagné que deux matchs dans ce Clausura."
+   },
+   {
+    "date": "2026-10-11T03:27:11",
+    "texte": "Série de quatre nuls et une défaite en cinq matchs, sans victoire, avec très peu de buts marqués."
    }
   ]
  }

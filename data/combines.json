@@ -2,7 +2,7 @@
  {
   "jour": "2026-10-11",
   "bookmaker": "Betclic (FR)",
-  "cote": 4.18,
+  "cote": 4.2,
   "proba": 0.2119,
   "conseille": false,
   "mise": 10,
@@ -27,7 +27,7 @@
     "exterieur": "Borussia Monchengladbach",
     "pari": "Victoire 1. FC Köln",
     "court": "1",
-    "cote": 2.02
+    "cote": 2.03
    }
   ]
  }
