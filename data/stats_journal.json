@@ -10,14 +10,10 @@
   "soccer_epl",
   "soccer_germany_bundesliga",
   "soccer_portugal_primeira_liga",
-  "soccer_brazil_campeonato",
-  "soccer_usa_mls"
+  "soccer_argentina_primera_division",
+  "soccer_brazil_campeonato"
  ],
  "ligues_ko": [],
- "equipes_trouvees": 73,
- "equipes_manquees": [
-  "soccer_turkey_super_league: Basaksehir",
-  "soccer_portugal_primeira_liga: Vitória SC",
-  "soccer_usa_mls: LA Galaxy"
- ]
+ "equipes_trouvees": 84,
+ "equipes_manquees": []
 }
