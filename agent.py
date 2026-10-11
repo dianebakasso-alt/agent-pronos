@@ -12,6 +12,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import memoire
 import moteur
 import stats
 import site_web
@@ -98,6 +99,7 @@ CONSIGNE_IA = """Tu es un pronostiqueur football expérimenté et prudent.
 Match : {dom} - {ext} ({champ}), coup d'envoi {debut} UTC.
 Pari envisagé : {issue} à la cote {cote:.2f} (probabilité du marché {proba:.0%}).
 {stats}
+{memoire}
 
 Cherche sur le web les infos les plus récentes : compositions probables, blessés et suspendus,
 déclarations des coachs, forme récente, contexte (enjeu, calendrier chargé, ambiance),
@@ -106,7 +108,10 @@ et ce que disent les pronostiqueurs et la presse locale.
 Réponds UNIQUEMENT avec ce JSON, en français :
 {{"avis": "confirme" | "prudence" | "eviter",
   "resume": "2 phrases maximum",
-  "points": ["3 à 5 faits courts et vérifiés"]}}
+  "points": ["3 à 5 faits courts et vérifiés"],
+  "a_retenir": {{"{dom}": ["faits durables utiles pour les prochains matchs"], "{ext}": ["..."]}}}}
+"a_retenir" = seulement des faits qui resteront vrais quelques semaines (blessure longue, suspension,
+crise, changement d'entraîneur, série en cours). Liste vide si rien de durable.
 "confirme" = rien ne contredit le pari. "prudence" = signal mitigé. "eviter" = info importante contre le pari
 (ex. joueur clé absent que la cote n'a peut-être pas encore intégré)."""
 
@@ -119,7 +124,8 @@ def avis_expert(m, v, cfg, cle_ia):
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
             issue=v["issue"], cote=v["cote"], proba=v["proba"],
-            stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]))}],
+            stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]),
+            memoire=m.get("_memoire", ""))}],
     }
     data, _ = http_json("https://api.anthropic.com/v1/messages",
                         data=json.dumps(corps).encode(),
@@ -146,9 +152,10 @@ def enregistrer_paris(historique, analyses):
         v = m["value"]
         if not v or m["id"] in deja:
             continue
-        if m.get("avis", {}).get("avis") == "eviter":
-            continue
+        avis = (m.get("avis") or {}).get("avis")
         historique.append({
+            "championnat": site_web.championnat(m["sport_key"], m["championnat"])[1], "proba": round(v["proba"], 4), "edge": round(v["edge"], 4),
+            "avis": avis, "joue": avis != "eviter",
             "id": m["id"], "sport_key": m["sport_key"], "date": m["debut"],
             "match": f'{m["domicile"]} - {m["exterieur"]}',
             "domicile": m["domicile"], "exterieur": m["exterieur"],
@@ -190,7 +197,7 @@ def regler_paris(api, historique, combines, maintenant):
         res, score = _resultat(scores.get(h["id"]), h["domicile"], h["exterieur"])
         if not res:
             continue
-        h["score"] = score
+        h["score"], h["res"] = score, res
         if res == h["court"]:
             h["statut"], h["gain"] = "gagné", round(h["mise"] * (h["cote"] - 1), 2)
         else:
@@ -213,8 +220,13 @@ def enregistrer_combine(combines, combine, maintenant):
     if not combine:
         return
     jour = maintenant.astimezone(site_web.PARIS).strftime("%Y-%m-%d")
-    if any(c["jour"] == jour for c in combines):
-        return
+    du_jour = [c for c in combines if c["jour"] == jour]
+    if du_jour:
+        c = du_jour[0]
+        commence = any(datetime.fromisoformat(j["date"].replace("Z", "+00:00")) <= maintenant for j in c["jambes"])
+        if commence or c["statut"] != "en attente":
+            return
+        combines.remove(c)
     combines.append({
         "jour": jour, "bookmaker": combine["bookmaker"], "cote": round(combine["cote"], 2),
         "proba": round(combine["proba"], 4), "conseille": combine["conseille"], "mise": 10,
@@ -237,6 +249,7 @@ def bilan_combines(combines):
 
 
 def bilan(historique):
+    historique = [h for h in historique if h.get("joue", True)]
     regles = [h for h in historique if h["statut"] in ("gagné", "perdu")]
     mises = sum(h["mise"] for h in regles)
     gains = sum(h["gain"] for h in regles)
@@ -267,6 +280,7 @@ def main():
         matchs = d.matchs_fictifs(maintenant)
         historique = d.historique_fictif(maintenant)
         combines = d.combines_fictifs(maintenant)
+        appris = memoire.apprendre(historique, combines)
         api = None
     else:
         cle = os.environ.get("ODDS_API_KEY")
@@ -277,6 +291,10 @@ def main():
         combines = json.loads(COMBINES.read_text(encoding="utf-8")) if COMBINES.exists() else []
         print("1/4 Règlement des paris passés…")
         regler_paris(api, historique, combines, maintenant)
+        appris = memoire.apprendre(historique, combines)
+        cfg["ajustements"] = appris["ajustements"]
+        (DATA / "memoire.json").write_text(json.dumps(appris, ensure_ascii=False, indent=1), encoding="utf-8")
+        print("    " + " | ".join(appris["lecons"]))
         print("2/4 Recherche des championnats avec des matchs…")
         champs = choisir_championnats(api, cfg, maintenant)
         print(f"    {len(champs)} championnats retenus")
@@ -315,8 +333,11 @@ def main():
             j["avis_de"] = j["match"]
     taches = taches[: cfg["analyse_ia_max_matchs"]]
 
+    actu = memoire.charger(DATA / "memoire_actu.json", {})
+    for m, v, cible in taches:
+        m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
     cle_ia = os.environ.get("ANTHROPIC_API_KEY")
-    ia = {"etat": "eteinte", "ok": 0, "erreur": None}
+    ia = {"etat": "eteinte", "ok": 0, "erreur": None, "souvenirs": sum(1 for m, _, _ in taches if m["_memoire"])}
     if cfg.get("analyse_ia") and taches:
         if demo:
             import demo as d
@@ -328,12 +349,14 @@ def main():
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)
+                    memoire.retenir(actu, cible["avis"].get("a_retenir"), maintenant)
                     ia["ok"] += 1
                 except Exception as e:
                     detail = e.read().decode()[:200] if hasattr(e, "read") else str(e)[:200]
                     print(f"  ! IA {m['domicile']}: {e} {detail}")
                     ia["erreur"] = f"{getattr(e, 'code', '')} {detail}".strip()
             ia["etat"] = "active" if ia["ok"] else "erreur"
+            (DATA / "memoire_actu.json").write_text(json.dumps(actu, ensure_ascii=False, indent=1), encoding="utf-8")
     elif cfg.get("analyse_ia") and cle_ia:
         ia["etat"] = "rien"
     for j in (combine or {}).get("jambes", []):
@@ -355,6 +378,11 @@ def main():
         "ia": ia,
         "combines": combines,
         "bilan_combines": bilan_combines(combines),
+        "appris": appris,
+        "memoire_equipes": len(actu),
+        "resultats": {**{h["id"]: {"res": h["res"], "score": h.get("score", "")} for h in historique if h.get("res")},
+                      **{j["id"]: {"res": j["res"], "score": j.get("score", "")}
+                         for c in combines for j in c["jambes"] if j.get("res") and j.get("id")}},
     }
     site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combine)
     print("Site généré : site/index.html")

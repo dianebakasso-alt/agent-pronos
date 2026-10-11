@@ -113,9 +113,14 @@ def analyser_match(match, cfg):
             "edge": edge,
         })
 
+    # mémoire : championnats où l'agent a perdu sur la durée → critères durcis ou pause
+    ajust = cfg.get("ajustements", {}).get(match.get("sport_key"), {})
+    seuil = (cfg["edge_minimum_pourcent"] + ajust.get("edge_bonus", 0)) / 100
     value = None
     candidats = [i for i in issues
-                 if i["edge"] >= cfg["edge_minimum_pourcent"] / 100 and i["cote"] <= cfg["cote_max"]]
+                 if i["edge"] >= seuil and i["cote"] <= cfg["cote_max"]]
+    if ajust.get("pause"):
+        candidats = []
     if candidats:
         top = max(candidats, key=lambda i: i["edge"])
         ref_ok = cfg["bookmaker_reference"] in par_bk

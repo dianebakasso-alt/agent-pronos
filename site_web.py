@@ -1,4 +1,5 @@
 """Fabrique la page web (une seule page, pensée pour le téléphone)."""
+import json
 import shutil
 from collections import OrderedDict
 from pathlib import Path
@@ -30,6 +31,11 @@ def euros(x, signe=False):
 def pct(x, signe=False):
     return (f"{x * 100:+.1f}" if signe else f"{x * 100:.0f}").replace(".", ",") + " %"
 
+
+BOUTON_JOUE = """<div class="joue"><button class="btn-joue" onclick="ouvrirJoue(this)">✍️ J'ai joué ce pari</button>
+      <div class="joue-f" hidden><label>Mise <input type="number" inputmode="decimal" step="0.5" min="0" class="j-mise"> €</label>
+        <label>Cote <input type="number" inputmode="decimal" step="0.01" min="1" class="jj-cote"></label>
+        <button onclick="enregistrerJoue(this)">Enregistrer</button></div></div>"""
 
 AVIS = {
     "confirme": ("ok", "L'actu confirme"),
@@ -77,7 +83,7 @@ def carte_value(m):
         {f'<ul>{points}</ul>' if points else ''}
       </div>"""
     return f"""
-    <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}" data-poids="{0 if a and a.get('avis') == 'eviter' else v['mise']}" data-cote="{v['cote']:.2f}">
+    <article class="carte{' barre' if a and a.get('avis') == 'eviter' else ''}" data-poids="{0 if a and a.get('avis') == 'eviter' else v['mise']}" data-cote="{v['cote']:.2f}" data-pari="{e(json.dumps({"type": "simple", "id": m["id"], "date": m["debut"], "match": m["domicile"] + " – " + m["exterieur"], "pari": v["issue"], "court": v["court"], "cote": v["cote"], "bk": v["bookmaker"]}, ensure_ascii=False))}">
       <div class="meta">{tag_champ(m)}<span class="badge c-{e(v["confiance"]).lower()}">Confiance {e(v["confiance"]).lower()}</span></div>
       {affiche(m, grand=True)}
       {barre_probas(m, v["court"])}
@@ -94,6 +100,7 @@ def carte_value(m):
         <div><span>Avantage</span><b class="vert">{pct(v["edge"], True)}</b></div>
       </div>
       <div class="src">Réf. : {e(m["source_proba"])} · {m["nb_bookmakers"]} bookmakers comparés</div>{avis_html}
+      {BOUTON_JOUE}
     </article>"""
 
 
@@ -140,7 +147,7 @@ def carte_combine(c):
         note = (f'Aucun combiné rentable aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
                 f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
     return f"""
-    <article class="carte combo{'' if c['conseille'] else ' risque'}" id="combo" data-cote="{c['cote']:.4f}">
+    <article class="carte combo{'' if c['conseille'] else ' risque'}" id="combo" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
       {entete}
       <ul class="jambes">{jambes}</ul>
       <div class="pari">
@@ -154,6 +161,7 @@ def carte_combine(c):
         <div><span>Avantage</span><b class="{'vert' if c['edge'] > 0 else 'rouge'}">{pct(c["edge"], True)}</b></div>
       </div>
       <p class="src combo-note">{note}</p>
+      {BOUTON_JOUE}
     </article>"""
 
 
@@ -183,6 +191,21 @@ def bloc_stats(m, compact=False):
         <div class="st-l"><b>{nb(d["buts_contre"])}</b><span>Buts encaissés / match</span><b>{nb(x["buts_contre"])}</b></div>
         {face}
       </div>"""
+
+
+def section_appris(a):
+    if not a:
+        return ""
+    lecons = "".join(f"<li>{e(l)}</li>" for l in a["lecons"])
+    lignes = ""
+    for nom, sg in list(a["par_championnat"].items())[:8]:
+        roi = pct(sg["roi"], True) if sg["roi"] is not None else "—"
+        cls = "vert" if (sg["roi"] or 0) >= 0 else "rouge"
+        nom = championnat(nom, nom)[1] if nom.startswith("soccer_") else nom
+        lignes += f"""<tr><td>{e(nom)}<small>{sg["gagnes"]} gagnés sur {sg["n"]} · {sg["gagnes_attendus"]} attendus</small></td>
+          <td class="r"><b class="{cls}">{roi}</b></td></tr>"""
+    tableau = f'<table class="hist">{lignes}</table>' if lignes else ""
+    return f"""<ul class="lecons">{lecons}</ul>{tableau}"""
 
 
 def section_combines(cs, bc):
@@ -236,7 +259,8 @@ def statut_ia(ia):
     if not ia:
         return ""
     if ia["etat"] == "active":
-        return f"🤖 IA active : {ia['ok']} match{'s' if ia['ok'] > 1 else ''} vérifié{'s' if ia['ok'] > 1 else ''} (actu, compos, avis d'experts)."
+        souv = f" 🧠 {ia['souvenirs']} avec des souvenirs des jours précédents." if ia.get("souvenirs") else ""
+        return f"🤖 IA active : {ia['ok']} match{'s' if ia['ok'] > 1 else ''} vérifié{'s' if ia['ok'] > 1 else ''} (actu, compos, avis d'experts).{souv}"
     if ia["etat"] == "rien":
         return "🤖 IA prête : aucun match à vérifier aujourd'hui."
     if ia["etat"] == "erreur":
@@ -421,6 +445,19 @@ h2 small {{ font-family:Inter,sans-serif; font-size:12px; color:var(--muted); fo
 .f-V {{ background:#2f9e55; }} .f-N {{ background:#8a958f; }} .f-D {{ background:#d64545; }}
 .sous {{ font-size:19px; margin:18px 0 8px; }}
 .hist td small + small {{ margin-top:0; }}
+.joue {{ margin-top:12px; }}
+.btn-joue {{ width:100%; background:var(--surface2); color:var(--text); border:1px dashed var(--line); border-radius:12px;
+  padding:10px; font:600 14px Inter,sans-serif; cursor:pointer; }}
+.btn-joue.fait {{ border-style:solid; border-color:var(--ok); color:var(--ok); }}
+.joue-f {{ display:flex; gap:8px; align-items:center; margin-top:8px; flex-wrap:wrap; font-size:13px; color:var(--muted); }}
+.joue-f[hidden] {{ display:none; }}
+.joue-f input {{ width:70px; background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:8px;
+  padding:7px; font:600 15px Inter,sans-serif; }}
+.joue-f button {{ margin-left:auto; background:var(--accent); color:var(--accent-ink); border:0; border-radius:10px;
+  padding:9px 14px; font:700 14px Inter,sans-serif; cursor:pointer; }}
+.mp-act {{ display:flex; gap:6px; justify-content:flex-end; margin-top:4px; }}
+.mp-act button {{ background:var(--surface2); border:1px solid var(--line); color:var(--muted); border-radius:8px; font-size:12px; padding:3px 7px; cursor:pointer; }}
+.lecons {{ margin:0 0 10px 18px; font-size:14px; display:flex; flex-direction:column; gap:6px; }}
 .combo-note {{ margin-top:10px; font-size:13px; line-height:1.45; }}
 .vide-c p {{ margin-top:6px; }}
 .calc span {{ display:block; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }}
@@ -520,7 +557,12 @@ footer b {{ color:var(--text); }}
 <h2>Tous les matchs <small>meilleure cote · proba marché</small></h2>
 {groupes or '<p class="vide">Aucun match dans les prochaines heures.</p>'}
 
+<h2 id="mes-paris-t">Mes paris <small>enregistrés sur ce téléphone</small></h2>
+<div id="mes-paris"><p class="vide">Touche « J'ai joué ce pari » sur un pari ou un combiné : il apparaîtra ici et sera réglé tout seul.</p></div>
+
 <h2>Bilan de l'agent</h2>
+<h3 class="sous">🧠 Ce que l'agent a appris</h3>
+{section_appris(infos.get("appris"))}
 <h3 class="sous">Paris simples</h3>
 {section_historique(historique, b)}
 <h3 class="sous">Combinés</h3>
@@ -535,6 +577,7 @@ footer b {{ color:var(--text); }}
   Besoin d'aide : <b>Joueurs Info Service, 09 74 75 13 13</b> (appel non surtaxé).</p>
   <p>Généré automatiquement{credits}.</p>
   <p>{statut_ia(infos.get("ia"))}</p>
+  <p>🧠 Mémoire de l'actu : {infos.get("memoire_equipes", 0)} équipe{'s' if infos.get("memoire_equipes", 0) > 1 else ''} suivie{'s' if infos.get("memoire_equipes", 0) > 1 else ''} (21 jours).</p>
 </footer>
 <script>
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {{}});
@@ -592,6 +635,69 @@ document.querySelectorAll(".mode button").forEach(b => b.addEventListener("click
 document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", b.dataset.m === mode));
 document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; repartir(); }}));
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
+
+// ---- mes vrais paris (gardés sur ce téléphone, réglés avec les résultats publiés par l'agent)
+const RESULTATS = {json.dumps(infos.get("resultats") or {}, ensure_ascii=False)};
+const lireMP = () => {{ try {{ return JSON.parse(localStorage.getItem("mes-paris") || "[]"); }} catch (e) {{ return []; }} }};
+const ecrireMP = l => {{ try {{ localStorage.setItem("mes-paris", JSON.stringify(l)); }} catch (e) {{}} }};
+function ouvrirJoue(btn) {{
+  const carte = btn.closest("article"), f = carte.querySelector(".joue-f");
+  const p = JSON.parse(carte.dataset.pari);
+  const calc = carte.querySelector(".calc:not([hidden]) b");
+  f.querySelector(".j-mise").value = calc ? calc.textContent.replace(/[^0-9,]/g, "").replace(",", ".") : "";
+  f.querySelector(".jj-cote").value = p.cote;
+  f.hidden = !f.hidden;
+}}
+function enregistrerJoue(btn) {{
+  const carte = btn.closest("article"), f = carte.querySelector(".joue-f");
+  const p = JSON.parse(carte.dataset.pari);
+  const mise = parseFloat(f.querySelector(".j-mise").value), cote = parseFloat(f.querySelector(".jj-cote").value);
+  if (!(mise > 0) || !(cote > 1)) {{ alert("Indique ta mise et la cote que tu as eue."); return; }}
+  const l = lireMP();
+  l.push({{ ...p, mise, cote, uid: Date.now() + "-" + Math.random().toString(36).slice(2, 6), joueLe: new Date().toISOString() }});
+  ecrireMP(l); f.hidden = true; marquerJoues(); afficherMP();
+  document.getElementById("mes-paris-t").scrollIntoView({{ behavior: "smooth" }});
+}}
+function statutMP(p) {{
+  if (p.manuel) return p.manuel;
+  if (p.type === "combine") {{
+    const r = p.jambes.map(j => RESULTATS[j.id] ? RESULTATS[j.id].res === j.court : null);
+    if (r.includes(false)) return "perdu";
+    return r.every(x => x === true) ? "gagné" : "en attente";
+  }}
+  const r = RESULTATS[p.id];
+  return r ? (r.res === p.court ? "gagné" : "perdu") : "en attente";
+}}
+function marquerJoues() {{
+  const ids = new Set(lireMP().map(p => p.id));
+  document.querySelectorAll("article[data-pari]").forEach(c => {{
+    const b = c.querySelector(".btn-joue");
+    if (b && ids.has(JSON.parse(c.dataset.pari).id)) {{ b.classList.add("fait"); b.textContent = "✅ Joué — rejouer ?"; }}
+  }});
+}}
+function regler(uid, v) {{ const l = lireMP(); const p = l.find(x => x.uid === uid); if (p) {{ p.manuel = v; ecrireMP(l); afficherMP(); }} }}
+function suppr(uid) {{ if (confirm("Supprimer ce pari de ta liste ?")) {{ ecrireMP(lireMP().filter(x => x.uid !== uid)); afficherMP(); marquerJoues(); }} }}
+function afficherMP() {{
+  const l = lireMP(), z = document.getElementById("mes-paris");
+  if (!l.length) return;
+  let mises = 0, gains = 0, n = 0, g = 0, att = 0, lignes = "";
+  l.slice().sort((a, b) => b.joueLe.localeCompare(a.joueLe)).forEach(p => {{
+    const st = statutMP(p), gain = st === "gagné" ? p.mise * (p.cote - 1) : st === "perdu" ? -p.mise : 0;
+    if (st === "en attente") att++; else {{ n++; mises += p.mise; gains += gain; if (st === "gagné") g++; }}
+    const cls = {{ "gagné": "ok", "perdu": "bad" }}[st] || "att";
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }})[c]);
+    lignes += `<tr><td>${{esc(p.pari)}}<small>${{esc(p.match)}} · cote ${{p.cote.toFixed(2)}} · ${{esc(p.bk || "")}}</small></td>
+      <td class="r">${{fmt(p.mise)}}<small class="st ${{cls}}">${{st}}${{st !== "en attente" ? " " + (gain >= 0 ? "+" : "") + fmt(gain) : ""}}</small>
+      <div class="mp-act"><button onclick="regler('${{p.uid}}','gagné')">✓</button><button onclick="regler('${{p.uid}}','perdu')">✗</button><button onclick="suppr('${{p.uid}}')">🗑</button></div></td></tr>`;
+  }});
+  const roi = mises ? (gains >= 0 ? "+" : "") + (gains / mises * 100).toFixed(1).replace(".", ",") + " %" : "—";
+  const c = gains >= 0 ? "vert" : "rouge";
+  z.innerHTML = `<div class="bilan"><div><span>Paris réglés</span><b>${{n}}</b></div><div><span>Gagnés</span><b>${{g}}</b></div>
+    <div><span>Bénéfice</span><b class="${{c}}">${{(gains >= 0 ? "+" : "") + fmt(gains)}}</b></div><div><span>Rendement</span><b class="${{c}}">${{roi}}</b></div></div>
+    <p class="note">${{att}} en attente · misé au total ${{fmt(mises)}}. Réglés tout seuls avec les scores ; ✓ ✗ pour corriger à la main.</p>
+    <table class="hist">${{lignes}}</table>`;
+}}
+marquerJoues(); afficherMP();
 
 function fermer() {{
   document.getElementById("installer").style.display = "none";
