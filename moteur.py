@@ -371,3 +371,62 @@ def pronos_buts(analyses, n=4):
         if c["match"]["id"] not in vus:
             vus.add(c["match"]["id"]); res.append(c)
     return res[:n]
+
+
+# ---------------------------------------------------------------- combinés avec des paris de buts
+def _jambe_buts(m):
+    """Le pari de buts le plus net d'un match (2,5 buts ou les 2 marquent), ou None."""
+    b = m.get("buts")
+    if not b:
+        return None
+    options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]), ("pas_btts", 1 - b["btts"])]
+    options = [(k, p) for k, p in options if 0.56 <= p <= 0.82]
+    if not options:
+        return None
+    k, p = max(options, key=lambda o: o[1])
+    return {"match": m, "type": "buts", "marche": k, "issue": LIBELLES_BUTS[k], "proba": p, "cote": 1 / p}
+
+
+def _ticket_estime(style, jambes, cfg_marge=1.05):
+    proba = _prod(j["proba"] for j in jambes)
+    juste = _prod(1 / j["proba"] for j in jambes)
+    return {"style": style, **STYLES_BUTS[style], "jambes": jambes, "proba": proba, "cote": juste * cfg_marge,
+            "cote_juste": juste, "cote_cible": juste * cfg_marge, "edge": 0.0, "conseille": None,
+            "estime": True, "bookmaker": "ton bookmaker"}
+
+
+STYLES_BUTS = {
+    "buts": {"nom": "Buts", "emoji": "⚽", "desc": "2 à 3 paris de buts sur des matchs différents."},
+    "mixte": {"nom": "Mixte", "emoji": "🔀", "desc": "Un favori + des paris de buts sur d'autres matchs."},
+}
+
+
+def combines_buts(analyses):
+    """Tickets avec des paris de buts. Les cotes des bookmakers ne sont pas connues pour ces paris :
+    on donne la cote juste du ticket et la cote minimum à accepter (+5 %)."""
+    jambes_buts = sorted(filter(None, (_jambe_buts(m) for m in analyses)), key=lambda j: -j["proba"])
+    tickets = []
+
+    # ⚽ combiné buts : les 3 plus nets, on retire le moins sûr si le ticket passe moins de 25 % du temps
+    jb = jambes_buts[:3]
+    while len(jb) > 2 and _prod(j["proba"] for j in jb) < 0.25:
+        jb.pop()
+    if len(jb) >= 2:
+        tickets.append(_ticket_estime("buts", jb))
+
+    # 🔀 mixte : le favori le plus sûr + 1 à 2 paris de buts sur d'autres matchs
+    favoris = []
+    for m in analyses:
+        i = max(m["issues"], key=lambda x: x["proba"])
+        if 0.55 <= i["proba"] <= 0.85:
+            favoris.append({"match": m, "type": "1n2", "court": i["court"], "issue": i["issue"],
+                            "proba": i["proba"], "cote": i["cote"], "bk": i["bookmaker"]})
+    if favoris:
+        fav = max(favoris, key=lambda f: f["proba"])
+        autres = [j for j in jambes_buts if j["match"]["id"] != fav["match"]["id"]]
+        jm = [fav] + autres[:2]
+        while len(jm) > 2 and _prod(j["proba"] for j in jm) < 0.22:
+            jm.pop()
+        if len(jm) >= 2:
+            tickets.append(_ticket_estime("mixte", jm))
+    return tickets

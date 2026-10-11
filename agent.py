@@ -347,11 +347,11 @@ def main():
         an_j = [a for a in analyses if jour_de(a) == cle]
         jours.append({"cle": cle, "quand": quand, "analyses": an_j,
                       "values": [a for a in values if jour_de(a) == cle],
-                      "combos": moteur.combines_experts(an_j, cfg),
+                      "combos": moteur.combines_experts(an_j, cfg) + moteur.combines_buts(an_j),
                       "buts": moteur.pronos_buts(an_j)})
     if not demo:
         (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
-            "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2)) for c in j["combos"]]}
+            "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2), round(c["proba"], 3)) for c in j["combos"]]}
             for j in jours], ensure_ascii=False, indent=1), encoding="utf-8")
     an_auj = jours[0]["analyses"]
     combine = moteur.combine_du_jour(an_auj, cfg)        # le combiné suivi dans le bilan (aujourd'hui)
@@ -359,8 +359,9 @@ def main():
 
     # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
     # priorité à aujourd'hui, puis demain
-    ordre = sorted(combos, key=lambda c: (jour_de(c["jambes"][0]["match"]) != auj,
-                                         {"equilibre": 0, "prudent": 1, "gros": 2}[c["style"]]))
+    ordre = sorted([c for c in combos if not c.get("estime")],
+                   key=lambda c: (jour_de(c["jambes"][0]["match"]) != auj,
+                                  {"equilibre": 0, "prudent": 1, "gros": 2}.get(c["style"], 3)))
     taches, vus = [], set()
     for m in sorted(values, key=lambda m: jour_de(m) != auj):
         taches.append((m, m["value"], m)); vus.add((m["id"], m["value"]["court"]))
@@ -403,7 +404,7 @@ def main():
             avis_par_pari[(m["id"], v["court"])] = cible["avis"]
     for c in combos + ([combine] if combine else []):
         for j in c["jambes"]:
-            j.setdefault("avis", avis_par_pari.get((j["match"]["id"], j["court"])))
+            j.setdefault("avis", avis_par_pari.get((j["match"]["id"], j.get("court"))))
 
     if not demo:
         enregistrer_paris(historique, [v for v in values if jour_de(v) == auj])

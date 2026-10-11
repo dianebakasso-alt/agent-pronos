@@ -139,6 +139,38 @@ def avis_jambe(j):
     return f"""<li class="avis-j {cls}"><b>{titre} :</b> {e(a.get("resume", ""))}</li>"""
 
 
+def carte_combine_estime(c, jour):
+    style = c["style"]
+    jambes = ""
+    for j in c["jambes"]:
+        m = j["match"]
+        etiquette = "⚽" if j["type"] == "buts" else "🎯"
+        jambes += f"""<li>{ecusson(m["domicile"], 26)}{ecusson(m["exterieur"], 26)}
+          <div class="j-txt"><b>{etiquette} {e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
+          <span class="j-cote">{pct(j["proba"])}</span></li>"""
+    legs = [{"id": j["match"]["id"], **({"marche": j["marche"]} if j["type"] == "buts" else {"court": j["court"]}),
+             "pari": j["issue"]} for j in c["jambes"]]
+    pari = {"type": "combine", "id": f"combo-{style}-{c['jambes'][0]['match']['id']}", "date": c["jambes"][0]["match"]["debut"],
+            "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]),
+            "pari": f"Combiné {c['nom']} · {len(c['jambes'])} matchs", "cote": round(c["cote_cible"], 2), "bk": "ton bookmaker", "jambes": legs}
+    return f"""
+    <article class="carte combo st-{style} estime" id="combo-{jour}-{style}" data-style="{style}" data-nom="{e(c['nom'])}" data-cote="{c['cote_cible']:.4f}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
+      <div class="combo-t"><span class="ct"><i class="ct-e">{c["emoji"]}</i> <span class="ct-n">{e(c["nom"])}</span></span><span class="badge c-moyenne">À vérifier</span></div>
+      <p class="combo-desc">{e(c["desc"])}</p>
+      <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
+        <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>
+      <ul class="jambes">{jambes}</ul>
+      <div class="pari">
+        <div><div class="lbl">Cote juste du ticket</div><div class="choix">{c["cote_juste"]:.2f}</div></div>
+        <div class="cote"><div class="lbl">Prends-le à</div><div class="num">{c["cote_cible"]:.2f}+</div></div>
+      </div>
+      <div class="calc" hidden></div>
+      <p class="src combo-note">L'agent n'a pas les cotes des bookmakers pour les paris de buts. Compose ce ticket chez ton bookmaker :
+        <b>s'il te propose {c["cote_cible"]:.2f} ou plus</b>, le ticket vaut le coup ; en dessous, passe. Le gain affiché est calculé à {c["cote_cible"]:.2f}.</p>
+      {BOUTON_JOUE}
+    </article>"""
+
+
 def carte_combine(c, jour=""):
     if not c:
         return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
@@ -150,8 +182,10 @@ def carte_combine(c, jour=""):
           <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(m["domicile"])} – {e(m["exterieur"])} · {heure(m["debut"])}</small></div>
           <span class="j-cote">{j["cote"]:.2f}</span></li>{avis_jambe(j)}"""
     style = c.get("style", "equilibre")
+    if c.get("estime"):
+        return carte_combine_estime(c, jour)
     badge = '<span class="badge c-bonne">Conseillé</span>' if c["conseille"] else '<span class="badge c-risque">Non conseillé</span>'
-    entete = f"""<div class="combo-t"><span>{c.get("emoji", "🎟️")} {e(c.get("nom", "Combiné"))}</span>{badge}</div>
+    entete = f"""<div class="combo-t"><span class="ct"><i class="ct-e">{c.get("emoji", "🎟️")}</i> <span class="ct-n">{e(c.get("nom", "Combiné"))}</span></span>{badge}</div>
       <p class="combo-desc">{e(c.get("desc", ""))}</p>
       <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
         <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>"""
@@ -430,7 +464,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
     </article>"""
         combos_j = "".join(carte_combine(c, j["cle"]) for c in j["combos"]) or carte_combine(None)
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
-<h2>🎟️ Combinés d'experts <small>3 styles · chaque ticket chez un seul bookmaker</small></h2>
+<h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
 <h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
 {cartes_j}
@@ -731,7 +765,8 @@ h2 {{ font-size:26px; }}
 .combo.risque {{ background:linear-gradient(135deg,#f59e0b,#ef4444); }}
 .combo.risque .pari {{ background:var(--surface2); color:var(--text); box-shadow:none; }}
 .combo-t {{ font-size:23px; }}
-.combo:not(.risque) .combo-t > span {{ background:var(--grad-ticket); -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.combo:not(.risque) .combo-t .ct-n {{ background:var(--grad-ticket); -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.ct-e {{ font-style:normal; }}
 .combo .combo-t .badge {{ -webkit-text-fill-color:initial; }}
 .jambes li {{ border-left:3px solid #ec4899; }}
 .combo.risque .jambes li {{ border-left-color:var(--warn); }}
@@ -748,7 +783,8 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .btn-joue {{ border:1px solid transparent; background:linear-gradient(var(--surface2),var(--surface2)) padding-box, var(--grad) border-box; }}
 .maj {{ background:var(--grad); color:var(--accent-ink); border:0; }}
 .installer {{ border:0; background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
-.styles {{ display:grid; grid-auto-flow:column; grid-auto-columns:1fr; gap:6px; margin-top:8px; }}
+.styles {{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }}
+.styles button {{ flex:1 1 30%; }}
 .styles[hidden] {{ display:none; }}
 .styles button {{ background:var(--surface2); color:var(--text); border:1px solid var(--line); border-radius:10px;
   padding:8px 4px; font:600 13px Inter,sans-serif; cursor:pointer; white-space:nowrap; }}
@@ -756,6 +792,11 @@ details {{ border-left:4px solid var(--lig, var(--line)); }}
 .combo {{ margin-bottom:14px; cursor:pointer; transition:transform .2s, box-shadow .2s; }}
 .combo.choisi {{ transform:scale(1.01); box-shadow:0 0 0 3px color-mix(in srgb, #ec4899 45%, transparent), 0 16px 36px -14px rgba(236,72,153,.7); }}
 .combo.st-prudent {{ --grad-ticket:linear-gradient(135deg,#22d3ee 0%,#3b82f6 60%,#6366f1 100%); }}
+.combo.st-buts {{ --grad-ticket:linear-gradient(135deg,#fbbf24 0%,#f59e0b 50%,#ea580c 100%); }}
+.combo.st-mixte {{ --grad-ticket:linear-gradient(135deg,#22c55e 0%,#14b8a6 50%,#f59e0b 100%); }}
+.combo.st-buts .jambes li {{ border-left-color:#f59e0b; }}
+.combo.st-mixte .jambes li {{ border-left-color:#14b8a6; }}
+.combo.estime .pari .choix {{ font-size:30px; }}
 .combo.st-gros {{ --grad-ticket:linear-gradient(135deg,#f97316 0%,#ef4444 50%,#db2777 100%); }}
 .combo.st-prudent .jambes li {{ border-left-color:#3b82f6; }}
 .combo.st-gros .jambes li {{ border-left-color:#f97316; }}
@@ -887,7 +928,7 @@ header.reduit h1 {{ font-size:30px; }}
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
   <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
-  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button></div>
+  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button><button data-s="buts">⚽ Buts</button><button data-s="mixte">🔀 Mixte</button></div>
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 
@@ -1062,7 +1103,16 @@ function statutMP(p) {{
     return ok === undefined ? "en attente" : ok ? "gagné" : "perdu";
   }}
   if (p.type === "combine") {{
-    const r = p.jambes.map(j => RESULTATS[j.id] ? RESULTATS[j.id].res === j.court : null);
+    const r = p.jambes.map(j => {{
+      const x = RESULTATS[j.id];
+      if (!x) return null;
+      if (j.marche) {{
+        if (!x.score) return null;
+        const [d, e] = x.score.split("-").map(Number), t = d + e, b = d > 0 && e > 0;
+        return {{ plus25: t >= 3, moins25: t < 3, btts: b, pas_btts: !b }}[j.marche] ?? null;
+      }}
+      return x.res === j.court;
+    }});
     if (r.includes(false)) return "perdu";
     return r.every(x => x === true) ? "gagné" : "en attente";
   }}
