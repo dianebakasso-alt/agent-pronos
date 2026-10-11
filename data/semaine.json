@@ -1,0 +1,146 @@
+[
+ {
+  "jour": "2026-10-11",
+  "matchs": 25,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.68
+   ],
+   [
+    "equilibre",
+    false,
+    2.92
+   ],
+   [
+    "gros",
+    false,
+    16.6
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-12",
+  "matchs": 6,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    2.72
+   ],
+   [
+    "gros",
+    false,
+    16.33
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-13",
+  "matchs": 17,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.31
+   ],
+   [
+    "equilibre",
+    false,
+    2.16
+   ],
+   [
+    "gros",
+    false,
+    16.84
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-14",
+  "matchs": 13,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.54
+   ],
+   [
+    "equilibre",
+    false,
+    3.21
+   ],
+   [
+    "gros",
+    false,
+    18.51
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-15",
+  "matchs": 36,
+  "value_bets": 1,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.14
+   ],
+   [
+    "equilibre",
+    false,
+    2.94
+   ],
+   [
+    "gros",
+    false,
+    9.79
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-16",
+  "matchs": 10,
+  "value_bets": 0,
+  "combines": [
+   [
+    "equilibre",
+    false,
+    3.53
+   ],
+   [
+    "gros",
+    false,
+    14.43
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-17",
+  "matchs": 33,
+  "value_bets": 1,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.43
+   ],
+   [
+    "equilibre",
+    false,
+    2.92
+   ],
+   [
+    "gros",
+    false,
+    13.52
+   ]
+  ]
+ }
+]
