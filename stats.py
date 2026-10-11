@@ -48,7 +48,7 @@ ALIAS = {
     "1. fc heidenheim": "heidenheim", "hamburger sv": "hamburg", "fc st. pauli": "st pauli", "rb leipzig": "rb leipzig",
     "sporting lisbon": "sp lisbon", "fc porto": "porto", "sc braga": "sp braga", "psv eindhoven": "psv eindhoven",
     "az alkmaar": "az alkmaar", "standard liege": "standard", "club brugge": "club brugge",
-    "basaksehir": "buyuksehyr", "istanbul basaksehir": "buyuksehyr", "vitoria sc": "guimaraes",
+    "stade lavallois": "laval", "basaksehir": "buyuksehyr", "istanbul basaksehir": "buyuksehyr", "vitoria sc": "guimaraes",
     "la galaxy": "los angeles galaxy", "los angeles fc": "los angeles fc",
     "union saint-gilloise": "st. gilloise", "royal antwerp": "antwerp", "sint-truiden": "st truiden",
 }
