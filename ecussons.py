@@ -131,21 +131,14 @@ def ecusson(nom, taille=44):
     """Petit écusson SVG original aux couleurs du club."""
     c1, c2 = couleurs(nom)
     n = normaliser(nom)
-    motif = int(hashlib.md5(("m" + n).encode()).hexdigest(), 16) % 4
+    motif = MOTIFS.get(n) or ["moitie", "bande", "echarpe", "uni"][int(hashlib.md5(("m" + n).encode()).hexdigest(), 16) % 4]
     global _COMPTEUR
     _COMPTEUR += 1
     uid = f"{hashlib.md5(n.encode()).hexdigest()[:6]}{_COMPTEUR}"  # unique dans la page
     forme = "M24 2 L44 8 V24 C44 36 35 43 24 47 C13 43 4 36 4 24 V8 Z"
-    if motif == 0:    # moitié verticale
-        deco = f'<rect x="24" y="0" width="24" height="50" fill="{c2}"/>'
-    elif motif == 1:  # bande horizontale
-        deco = f'<rect x="0" y="17" width="48" height="12" fill="{c2}"/>'
-    elif motif == 2:  # écharpe diagonale
-        deco = f'<path d="M-4 40 L40 -4 L52 8 L8 52 Z" fill="{c2}"/>'
-    else:             # rayures
-        deco = "".join(f'<rect x="{x}" y="0" width="6" height="50" fill="{c2}"/>' for x in (9, 21, 33))
+    deco = _deco(motif, c1, c2)
     txt = code(nom)
-    fs = 13 if len(txt) <= 3 else 11
+    fs = {1: 14, 2: 14, 3: 13, 4: 11}.get(len(txt), 9.5)
     return f"""<svg class="ecu" width="{taille}" height="{taille}" viewBox="0 0 48 50" aria-hidden="true">
 <defs><clipPath id="c{uid}"><path d="{forme}"/></clipPath></defs>
 <g clip-path="url(#c{uid})"><rect width="48" height="50" fill="{c1}"/>{deco}</g>
@@ -153,6 +146,128 @@ def ecusson(nom, taille=44):
 <rect x="8" y="17.5" width="32" height="13" rx="6.5" fill="rgba(10,14,12,.72)"/>
 <text x="24" y="27.6" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="{fs}" fill="#fff">{txt}</text>
 </svg>"""
+
+
+
+
+# ---------------------------------------------------------------- style des maillots (inspiré des tenues, pas des logos)
+# motifs : uni, rayures, cerceaux, moitie, bande (horizontale), bandev (verticale centrale),
+#          echarpe, diagonale, croix, epaules
+MOTIFS = {
+    # France
+    "paris saint germain": "bandev", "marseille": "uni", "lyon": "epaules", "monaco": "diagonale", "lille": "uni",
+    "rennes": "bande", "lens": "bande", "nice": "rayures", "nantes": "uni", "strasbourg": "uni", "toulouse": "uni",
+    "montpellier": "uni", "reims": "epaules", "brest": "uni", "auxerre": "uni", "angers": "rayures", "le havre": "moitie",
+    "saint etienne": "uni", "lorient": "uni", "metz": "uni", "paris fc": "uni", "troyes": "uni", "bordeaux": "bande",
+    # Angleterre
+    "arsenal": "epaules", "aston villa": "epaules", "bournemouth": "rayures", "brentford": "rayures",
+    "brighton and hove albion": "rayures", "chelsea": "uni", "crystal palace": "rayures", "everton": "uni", "fulham": "uni",
+    "liverpool": "uni", "manchester city": "uni", "manchester united": "uni", "newcastle united": "rayures",
+    "nottingham forest": "uni", "tottenham hotspur": "uni", "west ham united": "epaules", "wolverhampton wanderers": "uni",
+    "leeds united": "uni", "burnley": "epaules", "sunderland": "rayures", "leicester city": "uni", "southampton": "rayures",
+    "ipswich town": "uni", "sheffield united": "rayures", "norwich city": "uni", "west bromwich albion": "rayures",
+    "stoke city": "rayures", "queens park rangers": "cerceaux", "hull city": "rayures", "blackburn rovers": "moitie",
+    "celtic": "cerceaux", "rangers": "uni",
+    # Espagne
+    "real madrid": "uni", "barcelona": "rayures", "atletico madrid": "rayures", "athletic bilbao": "rayures",
+    "real sociedad": "rayures", "sevilla": "uni", "real betis": "rayures", "villarreal": "uni", "valencia": "uni",
+    "celta vigo": "uni", "osasuna": "uni", "getafe": "uni", "girona": "rayures", "mallorca": "uni",
+    "rayo vallecano": "echarpe", "espanyol": "rayures", "alaves": "rayures", "elche cf": "bande", "levante": "rayures",
+    "real oviedo": "uni",
+    # Italie
+    "inter milan": "rayures", "ac milan": "rayures", "juventus": "rayures", "napoli": "uni", "as roma": "uni",
+    "lazio": "uni", "atalanta bc": "rayures", "fiorentina": "uni", "bologna": "rayures", "torino": "uni",
+    "genoa": "moitie", "udinese": "rayures", "sassuolo": "rayures", "cagliari": "moitie", "lecce": "rayures",
+    "parma": "croix", "como": "uni", "hellas verona": "uni", "cremonese": "rayures", "pisa": "rayures",
+    # Allemagne
+    "bayern munich": "uni", "borussia dortmund": "uni", "bayer leverkusen": "uni", "rb leipzig": "uni",
+    "eintracht frankfurt": "uni", "vfb stuttgart": "bande", "sc freiburg": "uni", "vfl wolfsburg": "uni",
+    "borussia monchengladbach": "uni", "werder bremen": "uni", "tsg hoffenheim": "uni", "1. fsv mainz 05": "uni",
+    "fc augsburg": "uni", "union berlin": "uni", "1. fc koln": "uni", "1. fc heidenheim": "uni", "hamburger sv": "uni",
+    "fc st. pauli": "uni",
+    # Portugal, Pays-Bas, Belgique, Turquie
+    "benfica": "uni", "fc porto": "rayures", "sporting lisbon": "cerceaux", "sc braga": "epaules", "ajax": "bandev",
+    "psv eindhoven": "rayures", "feyenoord": "moitie", "az alkmaar": "uni", "fc twente": "uni", "club brugge": "rayures",
+    "anderlecht": "uni", "standard liege": "uni", "charleroi": "rayures", "genk": "uni", "gent": "uni",
+    "royal antwerp": "uni", "westerlo": "uni", "union saint-gilloise": "uni", "galatasaray": "moitie",
+    "fenerbahce": "rayures", "besiktas": "rayures", "trabzonspor": "rayures",
+    # Amériques
+    "flamengo": "cerceaux", "palmeiras": "uni", "corinthians": "uni", "sao paulo": "bande", "santos": "uni",
+    "atletico mineiro": "rayures", "fluminense": "rayures", "botafogo": "rayures", "gremio": "rayures",
+    "internacional": "uni", "boca juniors": "bande", "river plate": "echarpe",
+}
+
+COULEURS.update({
+    "stoke city": ("#e03a3e", "#ffffff"), "queens park rangers": ("#1d5ba4", "#ffffff"), "hull city": ("#f5a12d", "#1a1a1a"),
+    "blackburn rovers": ("#009ee0", "#ffffff"), "celtic": ("#018749", "#ffffff"), "rangers": ("#1b458f", "#ffffff"),
+    "royal antwerp": ("#e30613", "#ffffff"), "westerlo": ("#fdd700", "#004c99"), "union saint-gilloise": ("#fcd116", "#00337f"),
+    "bordeaux": ("#0a1f44", "#ffffff"), "le havre": ("#7cb4e3", "#0f2a4a"), "lyon": ("#ffffff", "#e2001a"),
+    "arsenal": ("#ef0107", "#ffffff"), "aston villa": ("#670e36", "#95bfe5"), "west ham united": ("#7a263a", "#1bb1e7"),
+    "burnley": ("#6c1d45", "#99d6ea"), "reims": ("#e2001a", "#ffffff"), "sc braga": ("#d6001c", "#ffffff"),
+    "barcelona": ("#a50044", "#004d98"), "levante": ("#004d98", "#a50044"), "bologna": ("#a21c26", "#1a2f48"),
+    "genoa": ("#a51d2d", "#002a5c"), "cagliari": ("#a00f2e", "#002350"), "parma": ("#ffffff", "#1a1a1a"),
+    "galatasaray": ("#a90432", "#fdb912"), "feyenoord": ("#e30613", "#ffffff"), "ajax": ("#ffffff", "#d2122e"),
+    "paris saint germain": ("#004170", "#da291c"), "vfb stuttgart": ("#ffffff", "#e32219"), "rennes": ("#e13327", "#1a1a1a"),
+    "boca juniors": ("#103f79", "#f3b229"), "sao paulo": ("#ffffff", "#e30613"), "elche cf": ("#ffffff", "#05642c"),
+    "monaco": ("#e51b22", "#ffffff"), "rayo vallecano": ("#ffffff", "#e53027"), "river plate": ("#ffffff", "#e30613"),
+    "fluminense": ("#870a28", "#00613c"), "gremio": ("#0d80bf", "#1a1a1a"), "fenerbahce": ("#fcdc00", "#002d72"),
+    "besiktas": ("#1a1a1a", "#ffffff"), "trabzonspor": ("#7a1931", "#4fb6e6"), "flamengo": ("#c3281e", "#1a1a1a"),
+    "fc porto": ("#ffffff", "#003f8a"), "sporting lisbon": ("#008057", "#ffffff"), "club brugge": ("#0067b1", "#1a1a1a"),
+    "charleroi": ("#1a1a1a", "#ffffff"), "crystal palace": ("#c4122e", "#1b458f"), "brighton and hove albion": ("#0057b8", "#ffffff"),
+    "bournemouth": ("#da291c", "#1a1a1a"), "brentford": ("#e30613", "#ffffff"), "southampton": ("#d71920", "#ffffff"),
+    "sunderland": ("#eb172b", "#ffffff"), "sheffield united": ("#ee2737", "#ffffff"), "west bromwich albion": ("#122f67", "#ffffff"),
+    "girona": ("#cd2534", "#ffffff"), "espanyol": ("#007fc8", "#ffffff"), "alaves": ("#0761af", "#ffffff"),
+    "real sociedad": ("#0067b1", "#ffffff"), "real betis": ("#00954c", "#ffffff"), "lecce": ("#ffed00", "#d71920"),
+    "udinese": ("#ffffff", "#1a1a1a"), "sassuolo": ("#00a752", "#1a1a1a"), "atalanta bc": ("#1e71b8", "#1a1a1a"),
+    "cremonese": ("#c8102e", "#7a8b99"), "pisa": ("#1a1a1a", "#00539f"), "atletico mineiro": ("#1a1a1a", "#ffffff"),
+    "botafogo": ("#1a1a1a", "#ffffff"), "psv eindhoven": ("#ed1c24", "#ffffff"), "angers": ("#1a1a1a", "#ffffff"),
+    "juventus": ("#ffffff", "#1a1a1a"), "newcastle united": ("#1a1a1a", "#ffffff"), "nice": ("#d50000", "#1a1a1a"),
+    "lens": ("#ffd400", "#e30613"),
+})
+
+# abréviations courantes (celles qu'on lit dans la presse et chez les bookmakers)
+CODES.update({
+    "marseille": "OM", "lyon": "OL", "lille": "LOSC", "monaco": "ASM", "rennes": "SRFC", "lens": "RCL", "nice": "OGCN",
+    "nantes": "FCN", "strasbourg": "RCSA", "toulouse": "TFC", "montpellier": "MHSC", "reims": "SDR", "brest": "SB29",
+    "auxerre": "AJA", "angers": "SCO", "lorient": "FCL", "metz": "FCM", "troyes": "ESTAC", "bordeaux": "FCGB",
+    "arsenal": "ARS", "liverpool": "LIV", "chelsea": "CHE", "everton": "EVE", "fulham": "FUL", "brentford": "BRE",
+    "bournemouth": "BOU", "burnley": "BUR", "sunderland": "SUN", "leicester city": "LEI", "southampton": "SOU",
+    "ipswich town": "IPS", "hull city": "HUL", "stoke city": "STK", "queens park rangers": "QPR", "west bromwich albion": "WBA",
+    "celtic": "CEL", "rangers": "RAN", "barcelona": "BAR", "sevilla": "SEV", "villarreal": "VIL", "valencia": "VAL",
+    "girona": "GIR", "mallorca": "MLL", "osasuna": "OSA", "getafe": "GET", "espanyol": "ESP", "alaves": "ALA",
+    "levante": "LEV", "juventus": "JUV", "napoli": "NAP", "lazio": "LAZ", "fiorentina": "FIO", "bologna": "BFC",
+    "torino": "TOR", "genoa": "GEN", "udinese": "UDI", "lecce": "LEC", "parma": "PAR", "como": "COM", "cagliari": "CAG",
+    "sassuolo": "SAS", "cremonese": "CRE", "pisa": "PIS", "benfica": "SLB", "ajax": "AJA", "feyenoord": "FEY",
+    "galatasaray": "GS", "fenerbahce": "FB", "besiktas": "BJK", "trabzonspor": "TS", "flamengo": "FLA",
+    "palmeiras": "PAL", "corinthians": "COR", "santos": "SAN", "fluminense": "FLU", "botafogo": "BOT",
+    "gremio": "GRE", "internacional": "INT", "royal antwerp": "RAFC", "union saint-gilloise": "USG", "anderlecht": "RSCA",
+    "genk": "KRC", "gent": "KAAG", "westerlo": "KVCW", "manchester city": "MCI", "manchester united": "MUN",
+})
+
+
+def _deco(motif, c1, c2):
+    if motif == "uni":
+        return f'<path d="M4 8 L24 2 L44 8" fill="none" stroke="{c2}" stroke-width="3"/>'
+    if motif == "rayures":
+        return "".join(f'<rect x="{x}" y="0" width="5.5" height="50" fill="{c2}"/>' for x in (3, 14, 25, 36))
+    if motif == "cerceaux":
+        return "".join(f'<rect x="0" y="{y}" width="48" height="5.5" fill="{c2}"/>' for y in (6, 17, 28, 39))
+    if motif == "moitie":
+        return f'<rect x="24" y="0" width="24" height="50" fill="{c2}"/>'
+    if motif == "bande":
+        return f'<rect x="0" y="9" width="48" height="8" fill="{c2}"/>'
+    if motif == "bandev":
+        return (f'<rect x="17" y="0" width="14" height="50" fill="{c2}"/>'
+                f'<rect x="15" y="0" width="2" height="50" fill="#fff" opacity=".9"/><rect x="31" y="0" width="2" height="50" fill="#fff" opacity=".9"/>')
+    if motif == "echarpe":
+        return f'<path d="M-4 6 L6 -4 L52 42 L42 52 Z" fill="{c2}"/>'
+    if motif == "diagonale":
+        return f'<path d="M48 0 L48 50 L0 50 Z" fill="{c2}"/>'
+    if motif == "croix":
+        return f'<rect x="20" y="0" width="8" height="50" fill="{c2}"/><rect x="0" y="12" width="48" height="8" fill="{c2}"/>'
+    if motif == "epaules":
+        return f'<path d="M0 0 L14 0 L4 22 L0 22 Z M48 0 L34 0 L44 22 L48 22 Z" fill="{c2}"/>'
+    return ""
 
 
 # ---------------------------------------------------------------- championnats
