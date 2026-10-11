@@ -1,0 +1,23 @@
+{
+ "ligues_ok": [
+  "soccer_netherlands_eredivisie",
+  "soccer_italy_serie_a",
+  "soccer_turkey_super_league",
+  "soccer_efl_champ",
+  "soccer_belgium_first_div",
+  "soccer_spain_la_liga",
+  "soccer_france_ligue_one",
+  "soccer_epl",
+  "soccer_germany_bundesliga",
+  "soccer_portugal_primeira_liga",
+  "soccer_brazil_campeonato",
+  "soccer_usa_mls"
+ ],
+ "ligues_ko": [],
+ "equipes_trouvees": 73,
+ "equipes_manquees": [
+  "soccer_turkey_super_league: Basaksehir",
+  "soccer_portugal_primeira_liga: Vitória SC",
+  "soccer_usa_mls: LA Galaxy"
+ ]
+}

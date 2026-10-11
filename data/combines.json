@@ -1,0 +1,34 @@
+[
+ {
+  "jour": "2026-10-11",
+  "bookmaker": "Betclic (FR)",
+  "cote": 4.24,
+  "proba": 0.2119,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "0bdae4d304810578e47386606bff7106",
+    "sport_key": "soccer_epl",
+    "date": "2026-10-11T13:00:00Z",
+    "domicile": "Hull City",
+    "exterieur": "Everton",
+    "pari": "Victoire Everton",
+    "court": "2",
+    "cote": 2.1
+   },
+   {
+    "id": "a8801462cb97a43570956e4b3ef4aedf",
+    "sport_key": "soccer_germany_bundesliga",
+    "date": "2026-10-11T13:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Borussia Monchengladbach",
+    "pari": "Victoire 1. FC Köln",
+    "court": "1",
+    "cote": 2.02
+   }
+  ]
+ }
+]
