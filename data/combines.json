@@ -2,23 +2,13 @@
  {
   "jour": "2026-10-11",
   "bookmaker": "Betclic (FR)",
-  "cote": 4.07,
-  "proba": 0.2199,
+  "cote": 2.75,
+  "proba": 0.328,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
-   {
-    "id": "6dbab232dd8d2aed0cb1d6f7978fb7b1",
-    "sport_key": "soccer_epl",
-    "date": "2026-10-11T15:30:00Z",
-    "domicile": "Liverpool",
-    "exterieur": "Manchester City",
-    "pari": "Victoire Manchester City",
-    "court": "2",
-    "cote": 2.1
-   },
    {
     "id": "a8801462cb97a43570956e4b3ef4aedf",
     "sport_key": "soccer_germany_bundesliga",
@@ -28,6 +18,16 @@
     "pari": "Victoire 1. FC Köln",
     "court": "1",
     "cote": 1.94
+   },
+   {
+    "id": "34f584ab922e220dc4f3b81217959d6d",
+    "sport_key": "soccer_france_ligue_one",
+    "date": "2026-10-11T15:15:00Z",
+    "domicile": "Rennes",
+    "exterieur": "Auxerre",
+    "pari": "Victoire Rennes",
+    "court": "1",
+    "cote": 1.42
    }
   ]
  }

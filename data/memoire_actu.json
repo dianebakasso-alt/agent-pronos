@@ -89,22 +89,6 @@
   "nom": "1. FC Köln",
   "faits": [
    {
-    "date": "2026-10-11T07:41:50",
-    "texte": "René Wagner est contesté après un début de saison irrégulier. Son poste dépend des résultats."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Dallinga est blessé au genou (ligaments croisés) et Ache a une blessure musculaire de plusieurs semaines. Köln manque d'attaquants."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Hübers est toujours absent et Castro-Montes revient tout juste de blessure."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "René Wagner est sous pression, avec un contrat jusqu'en 2028, et son avenir dépend des résultats."
-   },
-   {
     "date": "2026-10-11T09:46:02",
     "texte": "Köln n'a pris que 4 points en 4 matchs, après une victoire d'ouverture contre Hoffenheim, et encaisse à chaque match."
    },
@@ -135,28 +119,28 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Köln a pris 4 points en 4 matchs et n'a pas gagné lors des trois derniers (défaite 1-2 à Hambourg). Il a marqué et encaissé à chaque match de championnat (6-9 en buts)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Dallinga est absent plusieurs mois (ligaments croisés), probablement pour toute la saison."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Ache est absent plusieurs semaines (retour attendu en novembre)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Hübers est absent depuis près d'un an (genou) et toujours en rééducation."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Köln n'a pas gagné lors de ses trois derniers matchs de championnat (4 points en 4 matchs) et René Wagner est sous pression."
    }
   ]
  },
  "borussia monchengladbach": {
   "nom": "Borussia Monchengladbach",
   "faits": [
-   {
-    "date": "2026-10-11T07:41:50",
-    "texte": "Leopold (ligaments croisés, saison terminée), Castrop (épaule, plusieurs mois) et Kühn (déchirure musculaire) sont absents longtemps. Honorat est blessé musculairement depuis le 3 octobre."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Alexander Blessin a remplacé Polanski, limogé après le 0-5 à Fribourg. Il privilégie un pressing offensif."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Gladbach n'a aucun point en 4 matchs et a encaissé 16 buts, la pire défense de Bundesliga."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Leopold (ligaments croisés), Castrop et Kühn sont absents longtemps, et Honorat est blessé musculairement depuis début octobre."
-   },
    {
     "date": "2026-10-11T09:46:02",
     "texte": "Kleindienst et Itakura sont incertains."
@@ -188,28 +172,28 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Kühn, Leopold (blessure longue), Castrop (épaule, plusieurs mois) et Honorat (blessé depuis le 3 octobre) sont absents ; Kleindienst et Itakura sont incertains."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Alexander Blessin est entraîneur depuis le 22 septembre (Polanski limogé après le 0-5 à Fribourg ; Lichte intérimaire pour le 3-4 contre Mayence)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Leopold (ligaments croisés, saison terminée), Castrop (épaule) et Kühn (déchirure musculaire) sont absents longtemps."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Gladbach a perdu ses 4 premiers matchs, est dernier avec 6-16 en buts et n'a pas encore gagné à l'extérieur cette saison."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Honorat est blessé musculairement depuis le 3 octobre et Itakura a une blessure à la cheville."
    }
   ]
  },
  "benfica": {
   "nom": "Benfica",
   "faits": [
-   {
-    "date": "2026-10-11T08:43:41",
-    "texte": "Longues absences : Barrenechea, Kamiński, Banjaqui et Umeh sont blessés. Lenglet est suspendu après son expulsion au Dragão, durée à vérifier."
-   },
-   {
-    "date": "2026-10-11T08:43:41",
-    "texte": "Marco Silva est l'entraîneur. Bah et Sudakov restent à suivre."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Barrenechea, Kamiński, Banjaqui et Umeh sont blessés. Aucune date de retour n'est connue."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Première défaite de la saison au Clássico (3-1 à Porto), avec l'expulsion de Lenglet. Benfica a la meilleure attaque du championnat (22 buts en 7 matchs). Marco Silva est l'entraîneur."
-   },
    {
     "date": "2026-10-11T09:46:02",
     "texte": "Lenglet manque ce match pour suspension. La durée exacte n'est pas confirmée."
@@ -241,24 +225,28 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Barrenechea (opération du ménisque) et Kaminski (lésion musculaire) sont absents, sans date de retour connue ; Sudakov et Barreiro étaient annoncés incertains avant ce match."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Entraîneur : Marco Silva."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Barrenechea (blessé) et Kaminski sont absents, sans date de retour connue."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Lenglet est suspendu pour ce match seulement, après son expulsion contre Porto."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Banjaqui est absent pour une gêne musculaire jugée peu grave ; Sudakov revient d'une blessure et son état reste à surveiller."
    }
   ]
  },
  "vitória sc": {
   "nom": "Vitória SC",
   "faits": [
-   {
-    "date": "2026-10-11T07:41:50",
-    "texte": "Ndoye est suspendu pour ce match ; Vitória est 14e avec 5 points."
-   },
-   {
-    "date": "2026-10-11T08:43:41",
-    "texte": "14e avec 5 points après 7 journées, sans victoire en championnat depuis quatre journées."
-   },
-   {
-    "date": "2026-10-11T08:43:41",
-    "texte": "Attaque très faible (5 buts en 7 matchs). Cinq défaites de suite à l'extérieur en championnat, sans victoire loin de Guimarães depuis avril."
-   },
    {
     "date": "2026-10-11T08:43:41",
     "texte": "Ndoye est suspendu pour ce match. Gustavo Silva est incertain, avec des problèmes physiques."
@@ -294,6 +282,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Attaque très faible (5 buts en 7 matchs). Ndoye est suspendu pour ce match uniquement ; Gustavo Silva est incertain."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Tiago Margarido est l'entraîneur ; l'équipe est 14e, avec une seule victoire et 5 points après 7 journées."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Attaque faible et aucune victoire à l'extérieur depuis avril."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Ndoye est suspendu pour ce match seulement ; Gustavo Silva est à surveiller (problème physique)."
    }
   ]
  },
@@ -560,6 +560,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Les prochains matchs sont Leverkusen (18/10), Monaco en Conference League (22/10) et le Bayern (25/10)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Série d'invincibilité de 7 matchs officiels avant Schalke (11/10), avec une attaque prolifique (24 buts en 7 matchs)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Florent Muslija est absent longtemps (ligaments croisés), retour attendu vers fin décembre 2026 (source non confirmée officiellement)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Enchaînement chargé : Leverkusen (17-18/10), Monaco en Conference League (22/10), puis le Bayern (25/10)."
    }
   ]
  },
@@ -593,6 +605,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Jablonec est 8e de Chance Liga avec 14 points après 9 journées."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Le gardien Klemen Mihelak et Kevin-Prince Milla sont blessés, sans date de retour connue (début octobre)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Jiří Sláma est international tchèque et titulaire à gauche, mais très sollicité physiquement."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Jablonec est 8e de Chance Liga (14 points après 9 journées) et a éliminé les Rangers en barrage de Conference League."
    }
   ]
  },
@@ -710,6 +734,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Lepaul, international français depuis la dernière trêve, n'a pas marqué en L1 depuis la 2e journée."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Franck Haise est l'entraîneur depuis février 2026, avec 2,05 points par match en 17 matchs de L1."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Défense friable (9 buts encaissés en 5 journées) et attaque en panne : aucun but marqué sur les trois derniers matchs avant Auxerre, après le 0-4 à Lyon."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Lepaul, international français depuis la dernière trêve, reste très attendu devant le but."
    }
   ]
  },
@@ -747,6 +783,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Makosso est suspendu pour ce match uniquement."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Will Still est l'entraîneur ; Auxerre a enchaîné deux victoires (Nice, Brest) après 3 défaites en début de mandat."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Blessés de longue durée : Okoh, Dioussé, Senaya et Siwe (les trois derniers sont en phase de reprise), plus Fofana (pas encore joué cette saison) et Mandengue (adducteurs)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Défense fragile à l'extérieur (12 buts encaissés en 5 journées) ; Archer est en forme (3 buts en 3 matchs)."
    }
   ]
  },
@@ -780,6 +828,18 @@
    {
     "date": "2026-10-11T10:46:18",
     "texte": "La défense reste fragile depuis le début de saison."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Olivier Pantaloni a succédé à Claude Puel. Le club a pris 5 points en 5 journées et est 14e après sa première victoire (2-1 contre Lille)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Mendy, Bombito et Abergel sont absents de longue date, et la défense reste fragile."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Nice est invaincu à domicile cette saison, avec une série de nuls (NNNNV à domicile)."
    }
   ]
  },
@@ -809,6 +869,14 @@
    {
     "date": "2026-10-11T10:46:18",
     "texte": "Équipe offensivement talentueuse mais irrégulière, surtout à l'extérieur."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Panichelli est absent jusqu'en 2027 d'après la presse locale. Godo et Doukouré sont aussi blessés."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Hugo Oliveira est l'entraîneur. L'équipe est 8e avec 7 points après 5 journées, offensive mais irrégulière à l'extérieur."
    }
   ]
  },
@@ -842,6 +910,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Isak et Gakpo sont absents à court terme, sans durée annoncée, mais Iraola ne parle pas de blessures longues."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Bradley (genou), Leoni (croisés) et Ekitike (Achille) sont absents pour plusieurs semaines."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Isak (cuisse) et Gakpo (cheville) sont absents à court terme, sans durée précise annoncée."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Invaincu sous Iraola (2 victoires, 3 nuls), avec une défense plus solide depuis qu'Araujo joue arrière droit, mais peu efficace en attaque."
    }
   ]
  },
@@ -871,6 +951,22 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "<cite index='17-4'>Seulement 2 clean sheets en 5 matchs.</cite>"
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Série de 5 victoires en 5 matchs de championnat sous Maresca."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Reconnu coupable sur 114 charges. Le club a fait appel et une éventuelle sanction (retrait de points) reste en suspens."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Foden revient de suspension après le match contre Liverpool."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Défense friable : seulement 2 clean sheets en 5 matchs."
    }
   ]
  },
@@ -892,6 +988,22 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Palace n'a gagné qu'un match de championnat sur 5 sous Pierre Sage (3-2 à Fulham)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Pierre Sage est l'entraîneur, sous pression avec 1 victoire en championnat sur 5."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Chris Riad est opéré du genou et absent longtemps. Je n'ai pas pu confirmer la date de retour (juin 2027) annoncée plus tôt."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Mateta est absent depuis le match d'ouverture contre Everton. Retour espéré autour du match de Lyon (Europa League), non confirmé."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Disasi purge une suspension après son rouge contre Ipswich."
    }
   ]
  },
@@ -913,6 +1025,22 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Forest marque peu à domicile (0 but en 4 matches officiels) mais se débrouille mieux à l'extérieur (4 points)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Oliver Glasner est l'entraîneur depuis cette saison (ex-Palace)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Igor Jesus est blessé au mollet, absence possible d'un mois environ. Savona reste longue durée (genou)."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Forest est invaincu en déplacement en championnat mais marque peu : 0 but en 4 matchs officiels à domicile."
+   },
+   {
+    "date": "2026-10-11T11:08:26",
+    "texte": "Milenkovic (contusion osseuse) devrait seulement manquer ce match."
    }
   ]
  },
