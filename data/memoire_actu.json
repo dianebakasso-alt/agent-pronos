@@ -195,22 +195,6 @@
   "nom": "Benfica",
   "faits": [
    {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Barrenechea est blessé (opération du ménisque), sans date de retour connue."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Kaminski est absent, sans date de retour connue."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Sudakov revient d'une blessure et son état reste à surveiller."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Première défaite de la saison à Porto (3-1) ; Lenglet y a été expulsé et manque ce match seulement."
-   },
-   {
     "date": "2026-10-11T12:56:38",
     "texte": "Barrenechea est blessé au ménisque et sera absent environ un mois de plus (info du 11/10)."
    },
@@ -241,20 +225,28 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Première défaite de la saison à Porto (3-1) après huit victoires de suite ; Marco Silva reste l'entraîneur, et Benfica est 2e avec 16 points."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Barrenechea est blessé au genou (ménisque) et absent encore environ un mois."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Kaminski (adducteurs) et Banjaqui (musculaire) sont blessés, et Umeh est aussi indisponible."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Lenglet n'est suspendu que pour ce match (expulsé au Dragão)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Première défaite de la saison à Porto (3-1) après huit victoires de suite ; Marco Silva reste l'entraîneur."
    }
   ]
  },
  "vitória sc": {
   "nom": "Vitória SC",
   "faits": [
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Attaque faible et aucune victoire à l'extérieur depuis avril."
-   },
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Ndoye est suspendu pour ce match seulement ; Gustavo Silva est à surveiller (problème physique)."
-   },
    {
     "date": "2026-10-11T12:41:29",
     "texte": "Seulement 5 points et une victoire après 7 journées, 14e du classement ; Tiago Margarido est l'entraîneur."
@@ -294,6 +286,14 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Aucune victoire à l'extérieur depuis avril ; Gonçalo Nogueira porte l'essentiel de la menace offensive."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Seulement 5 points après 7 journées (14e) et aucune victoire en championnat depuis le 23 août."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Ndoye est suspendu pour ce match ; Tiago Margarido reste l'entraîneur."
    }
   ]
  },
@@ -534,18 +534,6 @@
   "nom": "SC Freiburg",
   "faits": [
    {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Calendrier chargé : Leverkusen (18/10), Monaco (22/10), puis le Bayern (25/10)."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Record du club en Bundesliga : 10 points et 12 buts après 4 journées, 3e au classement avant Schalke."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Invaincu en 7 matchs officiels avant la réception de Schalke le 11/10."
-   },
-   {
     "date": "2026-10-11T12:50:55",
     "texte": "Calendrier : Leverkusen (18/10), Monaco en Conference League (22/10), puis le Bayern (25/10)."
    },
@@ -580,24 +568,24 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Calendrier chargé : Leverkusen (18/10), Monaco (22/10), Trabzonspor (5/11), Twente (26/11), Panathinaikos (10/12), Kauno Žalgiris (17/12)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Julian Schuster reste entraîneur. Freiburg est 3e de Bundesliga avec un record de 10 points en 4 matchs et une série d'invincibilité en cours (7 matchs officiels avant Schalke, résultat non confirmé)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Ogbus (problème musculaire) et Yilmaz (opération dentaire) étaient absents avant Schalke. Les infos précédentes sur Muslija (ligaments croisés, retour fin décembre) n'ont pas pu être revérifiées."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Calendrier très chargé : Leverkusen (18/10), Monaco (22/10), Bayern (25/10), Trabzonspor (5/11), Twente (26/11), Panathinaikos (10/12), Kauno Žalgiris (17/12)."
    }
   ]
  },
  "fk jablonec": {
   "nom": "FK Jablonec",
   "faits": [
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Jablonec a éliminé les Rangers en barrage et joue sa première phase de ligue européenne sous Luboš Kozel."
-   },
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Prochain match en Conference League : Brighton à domicile le 22/10."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Jiří Sláma, international tchèque, est très sollicité physiquement : 16 matchs depuis fin juillet et fatigue visible après la trêve internationale."
-   },
    {
     "date": "2026-10-11T12:50:55",
     "texte": "Jablonec a éliminé les Rangers en barrage et joue sa première phase de ligue européenne depuis 5 ans sous Luboš Kozel."
@@ -633,6 +621,18 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Il a battu Brno 1-0 le 10/10, sa première victoire à l'extérieur en championnat après une longue attente."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Luboš Kozel reste entraîneur. Jablonec est 8e du championnat tchèque (4 victoires, 2 nuls, 3 défaites)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Le club a battu Brno 1-0 le 10/10, juste avant de jouer à Freiburg. Il avait éliminé les Rangers en barrage et revient en phase de ligue européenne pour la première fois depuis 5 ans."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Matchs européens à suivre : Brighton, Lugano et Iberia Tbilisi à domicile, Trabzonspor et Riga à l'extérieur."
    }
   ]
  },
@@ -716,18 +716,6 @@
   "nom": "Rennes",
   "faits": [
    {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Lepaul, international français depuis la dernière trêve, reste très attendu devant le but."
-   },
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Attaque en panne : un seul but sur les quatre derniers matchs, amical compris, avant Auxerre (selon Haise)."
-   },
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Défaite 4-0 à Lyon en championnat : Rennes a encaissé 9 buts en 5 journées de L1 2026-27."
-   },
-   {
     "date": "2026-10-11T12:41:29",
     "texte": "Lepaul est international français mais ne marque plus en L1 depuis la 2e journée."
    },
@@ -762,28 +750,24 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Les sources ne confirment pas clairement l'invincibilité à domicile en L1 2026-27, à revérifier."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Lepaul (international français depuis la trêve) n'a pas marqué en L1 depuis la 2e journée (3 buts au total) : l'attaque dépend de lui."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Défense friable : 9 buts encaissés en 5 journées, dont 0-4 à Lyon."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Invaincu à domicile en L1 2026-27 après 3 matchs, selon une source (dailysports) : à revérifier."
    }
   ]
  },
  "auxerre": {
   "nom": "Auxerre",
   "faits": [
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Défense fragile à l'extérieur : 12 buts encaissés en 5 journées."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Will Still est entraîneur. Auxerre a gagné ses deux derniers matchs de L1 (Nice, Brest)."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Dioussé et Okoh sont absents longtemps. Senaya, Siwe, Fofana et Mandengue sont aussi indisponibles, ce qui laisse l'infirmerie pleine."
-   },
-   {
-    "date": "2026-10-11T12:50:55",
-    "texte": "Auxerre a perdu ses deux premiers déplacements (Lens, Lyon) en encaissant 8 buts. Archer est en forme."
-   },
    {
     "date": "2026-10-11T12:56:38",
     "texte": "Will Still est entraîneur. Auxerre a gagné ses deux derniers matchs de L1 (Nice, Brest) après un début de saison difficile."
@@ -815,6 +799,22 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Défense fragile à l'extérieur : 8 buts encaissés à Lens et Lyon."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Longues blessures : Okoh et Dioussé (ligaments croisés), Siwe, Fofana (n'a pas encore joué cette saison) et Mandengue (adducteur, sans date de retour). Senaya est blessé ou incertain (ischio)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Makosso est suspendu pour ce match seulement."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Auxerre a perdu ses deux premiers déplacements (Lens, Lyon, 8 buts encaissés) avant de battre Nice (1-0) et Brest (2-1). Will Still est l'entraîneur."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Archer est en forme (3 buts en 3 matchs de L1) et Auxerre a marqué dans chacun de ses matchs de L1."
    }
   ]
  },
@@ -929,10 +929,6 @@
   "faits": [
    {
     "date": "2026-10-11T10:46:18",
-    "texte": "Ekitike (Achille) est absent jusqu'en décembre environ, et Bradley (genou) jusqu'à fin novembre."
-   },
-   {
-    "date": "2026-10-11T10:46:18",
     "texte": "Leoni (croisés) doit revenir à l'entraînement collectif ; son retour en match est espéré ce mois-ci."
    },
    {
@@ -966,16 +962,24 @@
    {
     "date": "2026-10-11T11:08:26",
     "texte": "Invaincu sous Iraola (2 victoires, 3 nuls), avec une défense plus solide depuis qu'Araujo joue arrière droit, mais peu efficace en attaque."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Bradley (genou), Leoni (genou/croisés) et Ekitike (Achille) sont absents. La durée exacte n'est pas confirmée, mais ce sont des blessures sérieuses."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Isak (cuisse) et Gakpo (cheville) sont blessés depuis la trêve internationale, sans durée précise annoncée."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Invaincu sous Iraola (2V, 3N), avec une défense plus solide depuis qu'Araujo joue arrière droit, mais une attaque peu efficace."
    }
   ]
  },
  "manchester city": {
   "nom": "Manchester City",
   "faits": [
-   {
-    "date": "2026-10-11T10:46:18",
-    "texte": "Série en cours : 5 victoires en 5 matchs de championnat sous Enzo Maresca."
-   },
    {
     "date": "2026-10-11T10:46:18",
     "texte": "Le club a été reconnu coupable sur 114 charges de la Premier League ; une sanction (déduction de points évoquée) reste en suspens."
@@ -1011,6 +1015,18 @@
    {
     "date": "2026-10-11T11:08:26",
     "texte": "Défense friable : seulement 2 clean sheets en 5 matchs."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Série de 5 victoires en 5 matchs de championnat sous Maresca, leader de la Premier League."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Reconnu coupable de 114 charges sur 115 : une sanction (retrait de points) reste en suspens et pèse sur le contexte."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Foden est suspendu pour ce match (carton rouge contre Manchester United), une absence de courte durée."
    }
   ]
  },
@@ -1130,6 +1146,18 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Début de saison 2026-27 solide (9 points sur 12), puis net ralentissement (2 points sur 9)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Entraîneur Ruben den Uil."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Série en cours : 2 points sur 9 après 9 sur 12 en début de saison 2026-27."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Noah Naujoks blessé, sans date de retour connue."
    }
   ]
  },
@@ -1143,16 +1171,24 @@
    {
     "date": "2026-10-11T11:01:54",
     "texte": "Entraîneur Dick Lukkien. Groningen bat Excelsior 2-0 en décembre 2025 puis perd 2-3 à domicile en mai 2026."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Entraîneur Dick Lukkien."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Van der Laan et Mercera sont toujours indisponibles après la pause internationale."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Travis Hernes revient de blessure et reprend avec Jong Groningen. Ryan Metu est de retour à l'entraînement mais reste incertain."
    }
   ]
  },
  "real racing club de santander": {
   "nom": "Real Racing Club de Santander",
   "faits": [
-   {
-    "date": "2026-10-11T12:41:29",
-    "texte": "Série de 18 matchs consécutifs avec au moins un but encaissé, et défense très friable (0-5 contre le Celta, 2-7 contre Barcelone)."
-   },
    {
     "date": "2026-10-11T12:41:29",
     "texte": "Zabiri (21 ans) est l'attaquant en forme avec 6 buts en 7 matchs. Le Racing est promu et 16e après 7 journées."
@@ -1192,6 +1228,14 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Pablo Ramón (lésion musculaire) et Andrés Martín sont à surveiller."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Invaincu à domicile cette saison (2 victoires, 1 nul) mais 4 défaites en 4 matchs à l'extérieur."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Zabiri (6 buts) est le principal buteur. Andrés Martín revient de blessure au genou ; le gardien remplaçant Eriksson reste blessé."
    }
   ]
  },
@@ -1237,6 +1281,14 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Blessés de longue durée : Diego López (retour mi-février 2027), Canós (début décembre 2026), Sadiq (début novembre 2026). Foulquier devrait revenir fin octobre."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Javier Aguirre a remplacé Corberán pendant la trêve d'octobre ; son premier match est à Santander."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Dernier de Liga avec 4 points et la pire attaque (4 buts en 7 journées)."
    }
   ]
  },
@@ -1326,6 +1378,18 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Défense friable (13 buts encaissés en 7 matchs) et pas de victoire à domicile depuis début septembre."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Odriozola (ligaments croisés) absent jusqu'à début novembre 2026."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Défense fragile : 13 buts encaissés en 7 journées."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Aramburu (blessure musculaire) et Zubeldia/Héctor Fort à surveiller pour les prochains matchs."
    }
   ]
  },
@@ -1343,6 +1407,22 @@
    {
     "date": "2026-10-11T13:16:28",
     "texte": "Invaincu à l'extérieur cette saison, avec 4 nuls en 7 journées."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Aubameyang (ménisque) absent jusqu'à mi-novembre environ."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Casadó (blessure musculaire) absent longtemps, peut-être jusqu'en 2027."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Eddahchouri (fracture du poignet) absent. Sans Aubameyang, le Dépor passe à un seul avant-centre (Nsongo)."
+   },
+   {
+    "date": "2026-10-11T13:38:49",
+    "texte": "Promu, invaincu à l'extérieur cette saison avec beaucoup de nuls."
    }
   ]
  },
