@@ -76,9 +76,10 @@ def _ressemblance(a, b):
 def trouver_equipe(nom, equipes):
     n = _norm(nom)
     cible = ALIAS.get(n, n)
-    for e in equipes:
-        if _norm(e) == cible:
-            return e
+    for c in (n, cible):  # nom exact d'abord, puis l'alias
+        for e in equipes:
+            if _norm(e) == c:
+                return e
     meilleur, score = None, 0.0
     for e in equipes:
         s = _ressemblance(cible, e)
