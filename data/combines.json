@@ -40,13 +40,23 @@
  {
   "jour": "2026-10-12",
   "bookmaker": "Betclic (FR)",
-  "cote": 2.79,
-  "proba": 0.3129,
+  "cote": 3.21,
+  "proba": 0.2796,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
+   {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "sport_key": "soccer_epl",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Coventry City",
+    "exterieur": "Newcastle United",
+    "pari": "Victoire Newcastle United",
+    "court": "2",
+    "cote": 2.1
+   },
    {
     "id": "0f2e7ff90b994f31d5cd48a9680943e1",
     "sport_key": "soccer_italy_serie_a",
@@ -55,17 +65,7 @@
     "exterieur": "Venezia",
     "pari": "Victoire Atalanta BC",
     "court": "1",
-    "cote": 1.55
-   },
-   {
-    "id": "789c3dd95a7fcef675ce5a40b07371a2",
-    "sport_key": "soccer_portugal_primeira_liga",
-    "date": "2026-10-12T19:15:00Z",
-    "domicile": "Famalicão",
-    "exterieur": "Alverca",
-    "pari": "Victoire Famalicão",
-    "court": "1",
-    "cote": 1.8
+    "cote": 1.53
    }
   ]
  }

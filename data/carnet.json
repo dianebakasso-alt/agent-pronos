@@ -11,8 +11,8 @@
     "exterieur": "Venezia",
     "championnat": "Serie A",
     "pari": "Victoire Atalanta BC",
-    "cote": 1.55,
-    "proba": 0.6111,
+    "cote": 1.53,
+    "proba": 0.6195,
     "court": "1",
     "espn": {
      "ligue": "ita.1",
@@ -20,8 +20,8 @@
     }
    }
   ],
-  "cote": 1.55,
-  "proba": 0.6111,
+  "cote": 1.53,
+  "proba": 0.6195,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -40,8 +40,8 @@
     "exterieur": "Udinese",
     "championnat": "Serie A",
     "pari": "Victoire Torino",
-    "cote": 2.35,
-    "proba": 0.3932,
+    "cote": 2.38,
+    "proba": 0.3903,
     "court": "1",
     "espn": {
      "ligue": "ita.1",
@@ -49,8 +49,8 @@
     }
    }
   ],
-  "cote": 2.35,
-  "proba": 0.3932,
+  "cote": 2.38,
+  "proba": 0.3903,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -69,8 +69,8 @@
     "exterieur": "Metz",
     "championnat": "Ligue 2",
     "pari": "Victoire Metz",
-    "cote": 2.55,
-    "proba": 0.3828,
+    "cote": 2.43,
+    "proba": 0.3922,
     "court": "2",
     "espn": {
      "ligue": "fra.2",
@@ -78,8 +78,8 @@
     }
    }
   ],
-  "cote": 2.55,
-  "proba": 0.3828,
+  "cote": 2.43,
+  "proba": 0.3922,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -98,8 +98,8 @@
     "exterieur": "Newcastle United",
     "championnat": "Premier League",
     "pari": "Victoire Newcastle United",
-    "cote": 2.12,
-    "proba": 0.4395,
+    "cote": 2.1,
+    "proba": 0.4514,
     "court": "2",
     "espn": {
      "ligue": "eng.1",
@@ -107,8 +107,8 @@
     }
    }
   ],
-  "cote": 2.12,
-  "proba": 0.4395,
+  "cote": 2.1,
+  "proba": 0.4514,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -128,7 +128,7 @@
     "championnat": "Liga",
     "pari": "Victoire Levante",
     "cote": 2.7,
-    "proba": 0.3536,
+    "proba": 0.3509,
     "court": "1",
     "espn": {
      "ligue": "esp.1",
@@ -137,7 +137,7 @@
    }
   ],
   "cote": 2.7,
-  "proba": 0.3536,
+  "proba": 0.3509,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -157,7 +157,7 @@
     "championnat": "Liga Portugal",
     "pari": "Victoire Famalicão",
     "cote": 1.8,
-    "proba": 0.512,
+    "proba": 0.5131,
     "court": "1",
     "espn": {
      "ligue": "por.1",
@@ -166,7 +166,7 @@
    }
   ],
   "cote": 1.8,
-  "proba": 0.512,
+  "proba": 0.5131,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -185,8 +185,8 @@
     "exterieur": "Venezia",
     "championnat": "Serie A",
     "pari": "Victoire Atalanta BC",
-    "cote": 1.55,
-    "proba": 0.6111,
+    "cote": 1.53,
+    "proba": 0.6195,
     "court": "1",
     "espn": {
      "ligue": "ita.1",
@@ -201,7 +201,7 @@
     "championnat": "Liga Portugal",
     "pari": "Victoire Famalicão",
     "cote": 1.8,
-    "proba": 0.512,
+    "proba": 0.5131,
     "court": "1",
     "espn": {
      "ligue": "por.1",
@@ -209,8 +209,52 @@
     }
    }
   ],
-  "cote": 2.79,
-  "proba": 0.3129,
+  "cote": 2.75,
+  "proba": 0.3179,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Coventry City",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.1,
+    "proba": 0.4514,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879267"
+    }
+   },
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.53,
+    "proba": 0.6195,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875005"
+    }
+   }
+  ],
+  "cote": 3.21,
+  "proba": 0.2796,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -223,18 +267,18 @@
   "cat": "gros",
   "jambes": [
    {
-    "id": "f4a28510bb0c835280a2aca709c19d50",
-    "date": "2026-10-12T18:45:00Z",
-    "domicile": "Torino",
-    "exterieur": "Udinese",
-    "championnat": "Serie A",
-    "pari": "Match nul",
-    "cote": 3.15,
-    "proba": 0.311,
-    "court": "N",
+    "id": "529fc26c7774d5b469932e275c668921",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Levante",
+    "exterieur": "Sevilla",
+    "championnat": "Liga",
+    "pari": "Victoire Levante",
+    "cote": 2.7,
+    "proba": 0.3509,
+    "court": "1",
     "espn": {
-     "ligue": "ita.1",
-     "id": "401874763"
+     "ligue": "esp.1",
+     "id": "401882852"
     }
    },
    {
@@ -243,10 +287,10 @@
     "domicile": "Dijon",
     "exterieur": "Metz",
     "championnat": "Ligue 2",
-    "pari": "Victoire Metz",
-    "cote": 2.55,
-    "proba": 0.3828,
-    "court": "2",
+    "pari": "Victoire Dijon",
+    "cote": 2.8,
+    "proba": 0.3357,
+    "court": "1",
     "espn": {
      "ligue": "fra.2",
      "id": "401876735"
@@ -259,8 +303,8 @@
     "exterieur": "Newcastle United",
     "championnat": "Premier League",
     "pari": "Victoire Newcastle United",
-    "cote": 2.12,
-    "proba": 0.4395,
+    "cote": 2.05,
+    "proba": 0.4514,
     "court": "2",
     "espn": {
      "ligue": "eng.1",
@@ -268,8 +312,8 @@
     }
    }
   ],
-  "cote": 17.03,
-  "proba": 0.0523,
+  "cote": 15.5,
+  "proba": 0.0532,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -289,7 +333,7 @@
     "championnat": "Serie A",
     "pari": "Moins de 2,5 buts",
     "cote": null,
-    "proba": 0.6402,
+    "proba": 0.6477,
     "marche": "moins25",
     "espn": {
      "ligue": "ita.1",
@@ -297,23 +341,23 @@
     }
    },
    {
-    "id": "529fc26c7774d5b469932e275c668921",
-    "date": "2026-10-12T19:00:00Z",
-    "domicile": "Levante",
-    "exterieur": "Sevilla",
-    "championnat": "Liga",
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
     "pari": "Moins de 2,5 buts",
     "cote": null,
-    "proba": 0.6067,
+    "proba": 0.6128,
     "marche": "moins25",
     "espn": {
-     "ligue": "esp.1",
-     "id": "401882852"
+     "ligue": "por.1",
+     "id": "401885425"
     }
    }
   ],
-  "cote": 2.7,
-  "proba": 0.3884,
+  "cote": 2.65,
+  "proba": 0.3969,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -332,8 +376,8 @@
     "exterieur": "Venezia",
     "championnat": "Serie A",
     "pari": "Victoire Atalanta BC",
-    "cote": 1.55,
-    "proba": 0.6111,
+    "cote": 1.53,
+    "proba": 0.6195,
     "court": "1",
     "espn": {
      "ligue": "ita.1",
@@ -348,7 +392,7 @@
     "championnat": "Serie A",
     "pari": "Moins de 2,5 buts",
     "cote": null,
-    "proba": 0.6402,
+    "proba": 0.6477,
     "marche": "moins25",
     "espn": {
      "ligue": "ita.1",
@@ -356,23 +400,23 @@
     }
    },
    {
-    "id": "529fc26c7774d5b469932e275c668921",
-    "date": "2026-10-12T19:00:00Z",
-    "domicile": "Levante",
-    "exterieur": "Sevilla",
-    "championnat": "Liga",
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
     "pari": "Moins de 2,5 buts",
     "cote": null,
-    "proba": 0.6067,
+    "proba": 0.6128,
     "marche": "moins25",
     "espn": {
-     "ligue": "esp.1",
-     "id": "401882852"
+     "ligue": "por.1",
+     "id": "401885425"
     }
    }
   ],
-  "cote": 4.42,
-  "proba": 0.2374,
+  "cote": 4.27,
+  "proba": 0.2459,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -385,36 +429,6 @@
   "cat": "semaine",
   "jambes": [
    {
-    "id": "ca3f4b075d835413f9cb7bd3c439fdd0",
-    "date": "2026-10-13T19:00:00Z",
-    "domicile": "Inter Milan",
-    "exterieur": "Club Brugge",
-    "championnat": "Ligue des champions",
-    "pari": "Victoire Inter Milan",
-    "cote": 1.24,
-    "proba": 0.7688,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915413"
-    }
-   },
-   {
-    "id": "feda75190a774fb92164059453b037be",
-    "date": "2026-10-15T19:00:00Z",
-    "domicile": "Benfica",
-    "exterieur": "Celtic",
-    "championnat": "Europa League",
-    "pari": "Victoire Benfica",
-    "cote": 1.2,
-    "proba": 0.7676,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.europa",
-     "id": "401915562"
-    }
-   },
-   {
     "id": "0def5b7ac0c0a816aa080774d7082c9b",
     "date": "2026-10-15T19:00:00Z",
     "domicile": "Bournemouth",
@@ -422,7 +436,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bournemouth",
     "cote": 1.18,
-    "proba": 0.8085,
+    "proba": 0.8075,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -436,17 +450,91 @@
     "exterieur": "Lille",
     "championnat": "Ligue des champions",
     "pari": "Victoire Arsenal",
-    "cote": 1.2,
-    "proba": 0.7845,
+    "cote": 1.19,
+    "proba": 0.7865,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
     }
+   },
+   {
+    "id": "9b2bf9bed21283dcad774dd5be7ba1da",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "Rennes",
+    "exterieur": "OFI Crete",
+    "championnat": "Europa League",
+    "pari": "Victoire Rennes",
+    "cote": 1.25,
+    "proba": 0.7682,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa",
+     "id": "401915572"
+    }
+   },
+   {
+    "id": "ca3f4b075d835413f9cb7bd3c439fdd0",
+    "date": "2026-10-13T19:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Club Brugge",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.22,
+    "proba": 0.7712,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915413"
+    }
    }
   ],
-  "cote": 2.11,
-  "proba": 0.3742,
+  "cote": 2.14,
+  "proba": 0.3762,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "jour:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "jour",
+  "jambes": [
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.53,
+    "proba": 0.6195,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875005"
+    }
+   },
+   {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Coventry City",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.1,
+    "proba": 0.4514,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879267"
+    }
+   }
+  ],
+  "cote": 3.21,
+  "proba": 0.2796,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
