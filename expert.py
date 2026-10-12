@@ -228,3 +228,16 @@ def noter_ticket(carnet, cle, cat, jour, tk, analyses, maintenant):
             return
         carnet.remove(ancien)
     carnet.append(nouveau)
+
+
+MIN_PAUSE, ROI_PAUSE = 30, -0.15
+
+
+def pauses(carnet):
+    """Les types de pronos qui perdent sur la durée : l'expert arrête de les conseiller."""
+    out = {}
+    for k in CATEGORIES:
+        s = _seg([p for p in carnet if p["cat"] == k])
+        if s["n"] >= MIN_PAUSE and s["roi"] is not None and s["roi"] < ROI_PAUSE:
+            out[k] = s
+    return out

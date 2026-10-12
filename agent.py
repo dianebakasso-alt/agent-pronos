@@ -121,6 +121,9 @@ Pari envisagé : {issue} à la cote {cote:.2f} (probabilité du marché {proba:.
 Cherche sur le web les infos les plus récentes : compositions probables, blessés et suspendus,
 déclarations des coachs, forme récente, contexte (enjeu, calendrier chargé, ambiance),
 et ce que disent les pronostiqueurs et la presse locale.
+Cherche surtout les SIGNAUX DE SURPRISE qui font tomber les favoris : fatigue (match européen ou de coupe
+3 jours avant ou après), rotation annoncée, cadres absents, série sans victoire à domicile, adversaire qui
+remonte (nouvel entraîneur, série positive), match sans enjeu pour le favori. Un favori n'est jamais « sûr ».
 
 Réponds UNIQUEMENT avec ce JSON, en français :
 {{"avis": "confirme" | "prudence" | "eviter",
@@ -516,6 +519,16 @@ def main():
                      semaine=ticket_semaine, analyses_semaine=analyses)
         expert.noter_ticket(carnet, f"jour:{auj}", "jour", auj, jours[0].get("ticket"), analyses, maintenant)
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
+    # l'expert apprend de ses résultats : un type de ticket qui perd sur la durée n'est plus conseillé
+    en_pause = expert.pauses(carnet)
+    for j in jours:
+        for c in j["combos"]:
+            s = en_pause.get(c.get("style"))
+            if s:
+                c["conseille"] = False if c.get("conseille") is not None else None
+                c["desc"] = f"⛔ En pause : ce type de ticket perd sur la durée ({s['roi'] * 100:+.0f} % sur {s['n']} tickets). " + c["desc"]
+        if "jour" in en_pause:
+            j["ticket"] = None
     res_carnet = {}
     for p in carnet:
         for j in p["jambes"]:

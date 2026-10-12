@@ -115,10 +115,20 @@ def ticket(sel, analyses, bookmakers):
           and (s.get("avis") or {}).get("avis") != "eviter"]
     # confirmés par l'IA d'abord, puis par note
     ok.sort(key=lambda s: (-((s.get("avis") or {}).get("avis") == "confirme"), -s["note"]))
-    jambes = ok[:4]
+    # au plus UN match jugé « prudence » par l'IA : un doute, passe ; deux doutes, c'est trop
+    jambes, doutes = [], 0
+    for s in ok:
+        if (s.get("avis") or {}).get("avis") == "prudence":
+            if doutes:
+                continue
+            doutes += 1
+        jambes.append(s)
+    jambes = jambes[:3]          # 3 matchs maximum : chaque match en plus multiplie les chances de tout perdre
     prod = lambda xs: __import__("math").prod(xs)
-    while len(jambes) > 2 and prod(s["proba"] for s in jambes) < 0.15:
+    while len(jambes) > 2 and prod(s["proba"] for s in jambes) < 0.25:
         jambes.pop()
+    if len(jambes) >= 2 and prod(s["proba"] for s in jambes) < 0.20:
+        return None             # même à 2 matchs, trop peu de chances : pas de ticket
     if len(jambes) < 2:
         return None
     meilleur = None
