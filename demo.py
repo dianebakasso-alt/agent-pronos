@@ -95,3 +95,29 @@ def combines_fictifs(maintenant):
                     "jambes": [{"domicile": "Équipe A", "exterieur": "Équipe B", "pari": "Victoire Équipe A", "court": "1",
                                 "cote": 2.1, "ok": ok or j, "score": "2-0"} for j in range(2)]})
     return out
+
+
+def carnet_fictif(maintenant):
+    """60 pronos réglés + quelques-uns en attente, pour la démo du tableau de bord."""
+    import random
+    rnd = random.Random(7)
+    cats = ["match"] * 6 + ["value"] * 2 + ["prudent", "equilibre", "gros", "buts", "mixte"]
+    equipes = [("Rennes", "Lens"), ("Marseille", "Nice"), ("Lyon", "Lille"), ("Arsenal", "Chelsea"), ("Inter", "Roma")]
+    out = []
+    for k in range(66):
+        cat = rnd.choice(cats)
+        cote = {"match": rnd.uniform(1.4, 2.6), "value": rnd.uniform(2, 4), "prudent": rnd.uniform(2, 3),
+                "equilibre": rnd.uniform(3, 5), "gros": rnd.uniform(8, 20), "buts": rnd.uniform(2.5, 4), "mixte": rnd.uniform(3, 5)}[cat]
+        proba = min(0.9, 1 / cote * rnd.uniform(0.95, 1.12))
+        jour = (maintenant - timedelta(days=12 - k // 6)).strftime("%Y-%m-%d")
+        regle = k < 60
+        ok = rnd.random() < proba
+        d, x = equipes[k % 5]
+        out.append({"cle": f"{cat}:{k}", "jour": jour, "cat": cat, "cote": round(cote, 2), "proba": round(proba, 4),
+                    "estime": cat in ("buts", "mixte"), "conseille": True, "mise": 10.0,
+                    "statut": ("gagné" if ok else "perdu") if regle else "en attente",
+                    "gain": (round(10 * (cote - 1), 2) if ok else -10.0) if regle else 0.0,
+                    "jambes": [{"id": f"x{k}", "date": f"{jour}T18:00:00Z", "domicile": d, "exterieur": x,
+                                "pari": f"Victoire {d}", "court": "1", "cote": round(cote, 2),
+                                **({"ok": ok, "score": "2-1" if ok else "0-1"} if regle else {})}]})
+    return out

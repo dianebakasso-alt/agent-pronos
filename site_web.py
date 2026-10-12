@@ -421,6 +421,91 @@ def section_combines(cs, bc):
     <table class="hist">{lignes}</table>"""
 
 
+def _courbe_svg(pts, w=340, h=90):
+    if len(pts) < 2:
+        return ""
+    vals = [0.0] + pts
+    lo, hi = min(vals + [0]), max(vals + [0])
+    rng = (hi - lo) or 1
+    xs = lambda i: round(i * w / (len(vals) - 1), 1)
+    ys = lambda v: round(h - 6 - (v - lo) * (h - 12) / rng, 1)
+    ligne = " ".join(f"{xs(i)},{ys(v)}" for i, v in enumerate(vals))
+    zero = ys(0)
+    coul = "var(--ok)" if vals[-1] >= 0 else "var(--bad)"
+    return f"""<svg class="courbe" viewBox="0 0 {w} {h}" preserveAspectRatio="none" aria-label="Évolution du bénéfice">
+      <defs><linearGradient id="cb-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{coul}" stop-opacity=".35"/><stop offset="1" stop-color="{coul}" stop-opacity="0"/></linearGradient></defs>
+      <line x1="0" y1="{zero}" x2="{w}" y2="{zero}" stroke="var(--line)" stroke-dasharray="4 4"/>
+      <polygon points="0,{zero} {ligne} {w},{zero}" fill="url(#cb-g)"/>
+      <polyline points="{ligne}" fill="none" stroke="{coul}" stroke-width="2.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    </svg>"""
+
+
+def section_expert(t):
+    from expert import CATEGORIES, SEUIL_JUGER
+    if not t:
+        return ""
+    tot = t["total"]
+    n = tot["n"]
+    roi = tot["roi"]
+    if n == 0:
+        verdict, vcls, vtxt = "⏳ Le compteur démarre", "att", (
+            f"L'expert note chacun de ses pronos dès aujourd'hui ({t['en_attente']} en attente). "
+            "Les premiers résultats tombent après les matchs.")
+    elif n < SEUIL_JUGER:
+        verdict, vcls = "🔍 Trop tôt pour juger", "att"
+        vtxt = f"{n} pronos réglés sur {SEUIL_JUGER} minimum. Sur si peu, la chance pèse plus que le talent."
+    elif roi >= 0:
+        verdict, vcls, vtxt = "🏆 Dans le vert : c'est un expert", "ok", f"Sur {n} pronos, il gagne de l'argent."
+    else:
+        verdict, vcls, vtxt = "📉 Dans le rouge pour l'instant", "bad", f"Sur {n} pronos, il perd de l'argent : il s'ajuste."
+    cls = "vert" if tot["benefice"] >= 0 else "rouge"
+    reussite = f"{tot['gagnes'] / n * 100:.0f} %" if n else "—"
+    attendu = f"{tot['attendus'] / n * 100:.0f} %" if n else "—"
+    mieux = ""
+    if n >= 10:
+        d = tot["gagnes"] - tot["attendus"]
+        mieux = (f'<p class="note">Il a trouvé <b class="vert">{d:+.0f} bons pronos de plus</b> que ce que les cotes prévoyaient.</p>' if d > 0.5
+                 else f'<p class="note">Il a trouvé <b class="rouge">{d:+.0f} bons pronos</b> par rapport à ce que les cotes prévoyaient.</p>' if d < -0.5
+                 else '<p class="note">Il trouve autant de bons pronos que ce que les cotes prévoyaient.</p>')
+    lignes = ""
+    for k, (emo, nom) in CATEGORIES.items():
+        s = t["par_cat"].get(k) or {}
+        if not s.get("n"):
+            continue
+        c = "vert" if s["benefice"] >= 0 else "rouge"
+        lignes += f"""<tr><td>{emo} {e(nom)}<small>{s["gagnes"]} réussis sur {s["n"]}</small></td>
+          <td class="r"><b class="{c}">{euros(s["benefice"], True)}</b><small>{pct(s["roi"], True) if s["roi"] is not None else "—"}</small></td></tr>"""
+    derniers = ""
+    for p in t["derniers"][:8]:
+        emo = CATEGORIES.get(p["cat"], ("•", ""))[0]
+        jb = " + ".join(f'{"✅" if j.get("ok") else "❌" if j.get("ok") is False else "➖"} {e(j["pari"])}'
+                        + (f' <i>({e(j["score"])})</i>' if j.get("score") else "") for j in p["jambes"])
+        st = "ok" if p["statut"] == "gagné" else "bad"
+        derniers += f"""<tr><td>{emo} {e(p["jour"][8:10])}/{e(p["jour"][5:7])} · cote {p["cote"]:.2f}<small>{jb}</small></td>
+          <td class="r"><span class="st {st}">{euros(p["gain"], True)}</span></td></tr>"""
+    s7 = t["sept_jours"]
+    return f"""
+    <div class="ex-carte ex-{vcls}">
+      <div class="ex-t">L'expert est-il vraiment un expert ?</div>
+      <div class="ex-v">{verdict}</div>
+      <p class="ex-p">{vtxt}</p>
+      <div class="ex-gros"><b class="{cls}">{euros(tot["benefice"], True)}</b><span>de bénéfice si tu avais misé <b>10 € sur chaque prono</b></span></div>
+      {_courbe_svg(t["courbe"])}
+      <div class="bilan">
+        <div><span>Pronos réglés</span><b>{n}</b></div>
+        <div><span>Réussite</span><b>{reussite}</b></div>
+        <div><span>Prévue par les cotes</span><b>{attendu}</b></div>
+        <div><span>Rendement</span><b class="{cls}">{pct(roi, True) if roi is not None else "—"}</b></div>
+      </div>
+      {mieux}
+      <p class="note">7 derniers jours : <b>{s7["n"]}</b> pronos, <b class="{'vert' if s7['benefice'] >= 0 else 'rouge'}">{euros(s7["benefice"], True)}</b> · {t["en_attente"]} en attente de résultat.</p>
+    </div>
+    <div id="toi-bilan"></div>
+    {f'<h3 class="sous">Par type de prono</h3><table class="hist">{lignes}</table>' if lignes else ''}
+    {f'<h3 class="sous">Derniers résultats</h3><table class="hist">{derniers}</table>' if derniers else ''}
+    <p class="note">Le rendement, c'est le bénéfice pour 100 € misés. Un vrai expert se juge sur des centaines de pronos : un bon ou un mauvais soir ne veut rien dire.</p>"""
+
+
 def section_historique(historique, b):
     if not historique:
         return '<p class="vide">Le suivi commencera après les premiers paris.</p>'
@@ -1182,6 +1267,21 @@ html.verrouille body > *:not(#verrou) {{ visibility:hidden; }}
   box-shadow:0 18px 40px -24px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.04); }}
 h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style:italic; }}
 .carte h3, .combo-t {{ letter-spacing:.01em; }}
+.ex-carte {{ position:relative; overflow:hidden; border-radius:18px; padding:16px; margin-bottom:12px;
+  background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--grad) border-box; border:2px solid transparent; }}
+.ex-carte.ex-bad {{ background:linear-gradient(var(--surface),var(--surface)) padding-box, linear-gradient(120deg,#fb7185,#f97316) border-box; }}
+.ex-carte.ex-att {{ background:linear-gradient(var(--surface),var(--surface)) padding-box, linear-gradient(120deg,#38bdf8,#a855f7) border-box; }}
+.ex-t {{ font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); font-weight:700; }}
+.ex-v {{ font:800 italic 26px "Barlow Condensed",sans-serif; margin-top:2px; line-height:1.1; }}
+.ex-p {{ color:var(--muted); font-size:14px; margin-top:4px; }}
+.ex-gros {{ display:flex; align-items:baseline; gap:10px; margin:14px 0 6px; flex-wrap:wrap; }}
+.ex-gros b {{ font:800 46px/1 "Barlow Condensed",sans-serif; }}
+.ex-gros span {{ color:var(--muted); font-size:13px; flex:1; min-width:150px; }}
+.ex-gros span b {{ font:600 13px Inter,sans-serif; color:var(--text); }}
+.courbe {{ display:block; width:100%; height:90px; margin:4px 0 12px; }}
+.toi {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid #ec4899; border-radius:14px; padding:12px 14px; margin-bottom:12px; }}
+.toi b.g {{ font:800 28px "Barlow Condensed",sans-serif; }}
+.hist td i {{ font-style:normal; color:var(--muted); }}
 </style>
 </head>
 <body>
@@ -1271,7 +1371,8 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 </div>
 
 <div class="onglet" id="t-bilan" hidden>
-<h2>📊 Bilan de l'agent</h2>
+<h2>📊 Bilan de l'expert</h2>
+{section_expert(infos.get("expert"))}
 <h3 class="sous">🧠 Ce que l'agent a appris</h3>
 {section_appris(infos.get("appris"))}
 <h3 class="sous">Paris simples</h3>
@@ -1479,11 +1580,23 @@ function marquerJoues() {{
 }}
 function regler(uid, v) {{ const l = lireMP(); const p = l.find(x => x.uid === uid); if (p) {{ p.manuel = v; ecrireMP(l); afficherMP(); }} }}
 function suppr(uid) {{ if (confirm("Supprimer ce pari de ta liste ?")) {{ ecrireMP(lireMP().filter(x => x.uid !== uid)); afficherMP(); marquerJoues(); }} }}
+function bilanToi() {{
+  const z = document.getElementById("toi-bilan"); if (!z) return;
+  const l = lireMP(); if (!l.length) {{ z.innerHTML = ""; return; }}
+  let n = 0, g = 0, mises = 0, ben = 0;
+  l.forEach(p => {{ const s = statutMP(p), m = +p.mise || 0;
+    if (s === "gagné") {{ n++; g++; mises += m; ben += m * ((+p.cote || 1) - 1); }}
+    else if (s === "perdu") {{ n++; mises += m; ben -= m; }} }});
+  const att = l.length - n, c = ben >= 0 ? "vert" : "rouge", f = x => (x >= 0 ? "+" : "−") + Math.abs(x).toFixed(2).replace(".", ",") + " €";
+  z.innerHTML = `<div class="toi"><div class="ex-t">✍️ Toi, avec tes vrais paris</div>
+    <b class="g ${{c}}">${{n ? f(ben) : "—"}}</b> <span class="note">${{n}} réglé${{n > 1 ? "s" : ""}}, ${{g}} gagné${{g > 1 ? "s" : ""}}${{mises ? " · rendement " + (ben / mises * 100 >= 0 ? "+" : "") + (ben / mises * 100).toFixed(0) + " %" : ""}}${{att ? " · " + att + " en attente" : ""}}</span></div>`;
+}}
 function afficherMP() {{
+  setTimeout(bilanToi, 0);
   const l = lireMP(), z = document.getElementById("mes-paris");
   if (!l.length) return;
   let mises = 0, gains = 0, n = 0, g = 0, att = 0, engage = 0, lignes = "";
-  l.slice().sort((a, b) => b.joueLe.localeCompare(a.joueLe)).forEach(p => {{
+  l.slice().sort((a, b) => (b.joueLe || "").localeCompare(a.joueLe || "")).forEach(p => {{
     const st = statutMP(p), gain = st === "gagné" ? p.mise * (p.cote - 1) : st === "perdu" ? -p.mise : 0;
     engage += p.mise;
     if (st === "en attente") att++; else {{ n++; mises += p.mise; gains += gain; if (st === "gagné") g++; }}

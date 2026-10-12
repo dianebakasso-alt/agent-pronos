@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import memoire
+import expert
 import direct
 import moteur
 import stats
@@ -444,7 +445,27 @@ def main():
         HISTORIQUE.write_text(json.dumps(historique, ensure_ascii=False, indent=1), encoding="utf-8")
         COMBINES.write_text(json.dumps(combines, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    # le carnet de l'expert : chaque prono noté puis réglé tout seul (scores ESPN, sans crédit)
+    if demo:
+        import demo as d
+        carnet = d.carnet_fictif(maintenant)
+    else:
+        carnet = expert.charger(DATA / "carnet.json")
+        try:
+            expert.regler(carnet, maintenant)
+        except Exception as e:
+            print(f"  ! carnet réglement : {e}")
+        expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant)
+        (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
+    res_carnet = {}
+    for p in carnet:
+        for j in p["jambes"]:
+            if j.get("score") and "-" in j["score"]:
+                dd, xx = map(int, j["score"].split("-"))
+                res_carnet[j["id"]] = {"res": "1" if dd > xx else "2" if xx > dd else "N", "score": j["score"]}
+
     infos = {
+        "expert": expert.tableau(carnet),
         "genere": maintenant,
         "demo": demo,
         "credits_restants": api.credits_restants if api else None,
@@ -456,7 +477,7 @@ def main():
         "appris": appris,
         "jours": jours,
         "memoire_equipes": len(actu),
-        "resultats": {**{h["id"]: {"res": h["res"], "score": h.get("score", "")} for h in historique if h.get("res")},
+        "resultats": {**res_carnet, **{h["id"]: {"res": h["res"], "score": h.get("score", "")} for h in historique if h.get("res")},
                       **{j["id"]: {"res": j["res"], "score": j.get("score", "")}
                          for c in combines for j in c["jambes"] if j.get("res") and j.get("id")}},
     }
