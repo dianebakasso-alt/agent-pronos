@@ -506,6 +506,64 @@ def section_expert(t):
     <p class="note">Le rendement, c'est le bénéfice pour 100 € misés. Un vrai expert se juge sur des centaines de pronos : un bon ou un mauvais soir ne veut rien dire.</p>"""
 
 
+def section_semaine(s):
+    if not s:
+        return ""
+    suivis = s.get("suivis") or []
+    tk = s.get("ticket")
+    if not suivis:
+        return ""
+    def quand(iso):
+        d = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(PARIS)
+        return f"{JOURS[d.weekday()]} {d.day} · {d:%H:%M}"
+    ticket_html = ""
+    if tk:
+        jambes = ""
+        for j in tk["jambes"]:
+            a = j.get("avis") or {}
+            cls, titre = AVIS.get(a.get("avis"), ("att", "Analyse en cours"))
+            jambes += f"""<li>{ecusson(j["domicile"], 26)}{ecusson(j["exterieur"], 26)}
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(j["domicile"])} – {e(j["exterieur"])} · {quand(j["debut"])}</small>
+          <small class="pq-j">🤖 <b class="sm-{cls}">{titre}</b>{' : ' + e(a.get("resume", "")) if a.get("resume") else ''}</small></div>
+          <span class="j-cote">{j["cote_t"]:.2f}</span></li>"""
+        pari = {"type": "combine", "id": "semaine-" + "-".join(j["id"][:6] for j in tk["jambes"]), "date": tk["jambes"][0]["debut"],
+                "match": " + ".join(j["domicile"] + " – " + j["exterieur"] for j in tk["jambes"]),
+                "pari": f"Ticket de la semaine · {len(tk['jambes'])} matchs", "cote": round(tk["cote"], 2), "bk": tk["bookmaker"],
+                "jambes": [{"id": j["id"], "court": j["court"], "pari": j["issue"]} for j in tk["jambes"]]}
+        ticket_html = f"""
+    <article class="carte combo st-semaine" data-style="semaine" data-cote="{tk['cote']:.4f}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
+      <div class="combo-t"><span class="ct"><i class="ct-e">🔭</i> <span class="ct-n">Ticket de la semaine</span></span><span class="badge c-forte">Suivi de près</span></div>
+      <p class="combo-desc">Les matchs où l'expert a le plus confiance, analysés en profondeur chaque jour jusqu'au coup d'envoi.</p>
+      <div class="chance"><div class="chance-b"><span style="width:{max(3, round(tk["proba"] * 100))}%"></span></div>
+        <b>{pct(tk["proba"])}</b><small>de chances que ça passe</small></div>
+      <ul class="jambes">{jambes}</ul>
+      <div class="pari">
+        <div><div class="lbl">Cote du ticket</div><div class="choix">{len(tk["jambes"])} matchs chez {e(tk["bookmaker"])}</div></div>
+        <div class="cote"><div class="lbl">Cote</div><div class="num">{tk["cote"]:.2f}</div></div>
+      </div>
+      <div class="calc" hidden></div>
+      {BOUTON_JOUE}
+    </article>"""
+    lignes = ""
+    for x in suivis:
+        a = x.get("avis") or {}
+        if x["statut"] == "suivi":
+            etat = {"confirme": "✅ confirmé", "prudence": "⚠️ prudence"}.get(a.get("avis"), "🔎 en analyse")
+            det = e(a.get("resume", "")) if a.get("resume") else f"{pct(x['proba'])} de chances · cote {x['cote']:.2f}"
+        else:
+            etat, det = "❌ retiré", e(x.get("raison", ""))
+        n = len(x.get("analyses") or [])
+        lignes += f"""<li class="sm-l {'out' if x['statut'] != 'suivi' else ''}"><div><b>{e(x["issue"])}</b>
+          <small>{e(x["domicile"])} – {e(x["exterieur"])} · {quand(x["debut"])}</small><small class="sm-d">{det}</small></div>
+          <span class="sm-e">{etat}<small>{n} analyse{'s' if n > 1 else ''}</small></span></li>"""
+    return f"""
+<section class="sem">
+  <h2>🔭 La sélection de la semaine <small>suivie jusqu'au jour J</small></h2>
+  {ticket_html or '<p class="note">Pas encore assez de matchs solides pour un ticket : l\'expert continue de chercher.</p>'}
+  <details class="sm-det"><summary>Les {len(suivis)} matchs suivis par l'expert <span class="cpt">▾</span></summary><ul class="sm-liste">{lignes}</ul></details>
+</section>"""
+
+
 def section_historique(historique, b):
     if not historique:
         return '<p class="vide">Le suivi commencera après les premiers paris.</p>'
@@ -1282,6 +1340,18 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .toi {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid #ec4899; border-radius:14px; padding:12px 14px; margin-bottom:12px; }}
 .toi b.g {{ font:800 28px "Barlow Condensed",sans-serif; }}
 .hist td i {{ font-style:normal; color:var(--muted); }}
+.combo.st-semaine {{ --grad-ticket:linear-gradient(135deg,#c6ff3d 0%,#22d3ee 50%,#a855f7 100%); }}
+.combo.st-semaine .jambes li {{ border-left-color:#22d3ee; }}
+.sem h2 {{ margin-top:22px; }}
+.sm-ok {{ color:var(--ok); }} .sm-warn {{ color:var(--warn); }} .sm-bad {{ color:var(--bad); }} .sm-att {{ color:var(--muted); }}
+.sm-det {{ border-left:4px solid #22d3ee; }}
+.j-txt .pq-j b {{ display:inline; font-size:12px; }}
+.sm-liste {{ list-style:none; padding:0 14px 10px; display:flex; flex-direction:column; gap:8px; }}
+.sm-l {{ display:flex; justify-content:space-between; gap:10px; padding-top:8px; border-top:1px solid var(--line); }}
+.sm-l small {{ display:block; color:var(--muted); font-size:12px; }}
+.sm-l .sm-d {{ color:var(--text); opacity:.8; margin-top:2px; }}
+.sm-l.out {{ opacity:.55; }}
+.sm-e {{ text-align:right; font-size:12px; font-weight:600; white-space:nowrap; }}
 </style>
 </head>
 <body>
@@ -1334,6 +1404,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 </section>
 <div class="semaine" id="semaine">{selecteur}</div>
 {mots}
+{section_semaine(infos.get("semaine"))}
 <section class="budget">
   <label for="somme">Ma mise du jour</label>
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>

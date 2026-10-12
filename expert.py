@@ -20,6 +20,7 @@ CATEGORIES = {
     "gros": ("🚀", "Combiné Gros gain"),
     "buts": ("⚽", "Combiné Buts"),
     "mixte": ("🔀", "Combiné Mixte"),
+    "semaine": ("🔭", "Ticket de la semaine"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
 
@@ -46,7 +47,7 @@ def _prono(cle, jour, cat, jambes, cote, proba, estime=False, conseille=None):
             "estime": estime, "conseille": conseille, "mise": MISE, "statut": "en attente", "gain": 0.0}
 
 
-def noter(carnet, jour, analyses, values, combos, maintenant):
+def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, analyses_semaine=None):
     """Ajoute (ou remplace tant que rien n'a commencé) les pronos du jour."""
     nouveaux = []
     for m in analyses:
@@ -74,6 +75,19 @@ def noter(carnet, jour, analyses, values, combos, maintenant):
         nouveaux.append(_prono(f"{c['style']}:{jour}", jour, c["style"], jb, cote, c["proba"],
                                estime=bool(c.get("estime")), conseille=c.get("conseille")))
 
+    if semaine:
+        sem = maintenant.isocalendar()
+        jb = []
+        for s in semaine["jambes"]:
+            m = {"id": s["id"], "debut": s["debut"], "domicile": s["domicile"], "exterieur": s["exterieur"],
+                 "sport_key": s.get("sport_key"), "championnat": s.get("championnat", "")}
+            esp = next((a.get("espn") for a in analyses_semaine if a["id"] == s["id"]), None) if analyses_semaine else None
+            if esp:
+                m["espn"] = esp
+            jb.append(_jambe(m, court=s["court"], pari=s["issue"], cote=s["cote_t"], proba=s["proba"]))
+        nouveaux.append(_prono(f"semaine:{sem[0]}-{sem[1]}", jour, "semaine", jb, semaine["cote"], semaine["proba"],
+                               conseille=True))
+
     par_cle = {p["cle"]: p for p in carnet}
     for n in nouveaux:
         ancien = par_cle.get(n["cle"])
@@ -86,7 +100,7 @@ def noter(carnet, jour, analyses, values, combos, maintenant):
         par_cle[n["cle"]] = n
     # un ticket d'expert qui a disparu avant de commencer (plus proposé) n'est plus suivi
     cles_jour = {n["cle"] for n in nouveaux}
-    for p in [p for p in carnet if p["jour"] == jour and p["cle"] not in cles_jour and p["statut"] == "en attente"]:
+    for p in [p for p in carnet if p["jour"] == jour and p["cle"] not in cles_jour and p["statut"] == "en attente" and p["cat"] != "semaine"]:
         if all(_dt(j["date"]) > maintenant for j in p["jambes"]):
             carnet.remove(p)
     return carnet

@@ -2,22 +2,37 @@
   "bankroll_euros": 200,
   "mise_max_pourcent": 2,
   "fraction_kelly": 0.25,
-
   "edge_minimum_pourcent": 3,
   "cote_max": 6.0,
   "bookmakers_minimum": 4,
   "heures_a_venir": 36,
-
-  "bookmakers_interroges": ["pinnacle", "betclic_fr", "winamax_fr", "unibet_fr", "pmu_fr",
-                           "netbet_fr", "betfair_ex_eu", "onexbet", "marathonbet", "sport888"],
-  "bookmakers_jouables": ["betclic_fr", "winamax_fr", "unibet_fr", "pmu_fr", "netbet_fr"],
+  "bookmakers_interroges": [
+    "pinnacle",
+    "betclic_fr",
+    "winamax_fr",
+    "unibet_fr",
+    "pmu_fr",
+    "netbet_fr",
+    "betfair_ex_eu",
+    "onexbet",
+    "marathonbet",
+    "sport888"
+  ],
+  "bookmakers_jouables": [
+    "betclic_fr",
+    "winamax_fr",
+    "unibet_fr",
+    "pmu_fr",
+    "netbet_fr"
+  ],
   "bookmaker_reference": "pinnacle",
-  "references": {"pinnacle": 0.6, "betfair_ex_eu": 0.4},
-
+  "references": {
+    "pinnacle": 0.6,
+    "betfair_ex_eu": 0.4
+  },
   "combine_max_matchs": 3,
-  "combine_proba_min": 0.40,
+  "combine_proba_min": 0.4,
   "combine_chance_min": 0.15,
-
   "credits_max_par_jour": 12,
   "championnats_prioritaires": [
     "soccer_france_ligue_one",
@@ -38,8 +53,8 @@
     "soccer_argentina_primera_division",
     "soccer_usa_mls"
   ],
-
   "analyse_ia": true,
   "analyse_ia_max_matchs": 10,
-  "modele_ia": "claude-sonnet-5-5"
+  "modele_ia": "claude-sonnet-5-5",
+  "analyse_profonde_max": 6
 }

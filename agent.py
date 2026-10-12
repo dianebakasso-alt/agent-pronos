@@ -14,6 +14,7 @@ from pathlib import Path
 
 import memoire
 import expert
+import selection
 import direct
 import moteur
 import stats
@@ -131,17 +132,25 @@ crise, changement d'entraîneur, série en cours). Liste vide si rien de durable
 "confirme" = rien ne contredit le pari. "prudence" = signal mitigé. "eviter" = info importante contre le pari
 (ex. joueur clé absent que la cote n'a peut-être pas encore intégré)."""
 
+PROFOND = """
 
-def avis_expert(m, v, cfg, cle_ia):
+ANALYSE APPROFONDIE : ce match fait partie de la sélection de la semaine, l'expert le suit jusqu'au jour J.
+Creuse davantage que d'habitude : blessés ET leur importance réelle dans l'équipe, rotation probable
+(match de coupe ou d'Europe avant/après), enjeu au classement pour chacun, série en cours,
+déplacement, météo, arbitre, et ce qui a changé depuis hier. Sois exigeant : au moindre doute sérieux, « prudence » ;
+une info qui retourne le match, « eviter »."""
+
+
+def avis_expert(m, v, cfg, cle_ia, profond=False):
     corps = {
         "model": cfg["modele_ia"],
         "max_tokens": 3000,
-        "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 4}],
+        "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 7 if profond else 4}],
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
             issue=v["issue"], cote=v["cote"], proba=v["proba"],
             stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]),
-            memoire=m.get("_memoire", ""))}],
+            memoire=m.get("_memoire", "")) + (PROFOND if profond else "")}],
     }
     data, _ = http_json("https://api.anthropic.com/v1/messages",
                         data=json.dumps(corps).encode(),
@@ -383,6 +392,10 @@ def main():
     combine = moteur.combine_du_jour(an_auj, cfg)        # le combiné suivi dans le bilan (aujourd'hui)
     combos = [c for j in jours for c in j["combos"]]
 
+    # la sélection de la semaine : les matchs où l'expert a le plus confiance, suivis jusqu'au jour J
+    sel = {"matchs": {}} if demo else selection.charger(DATA / "selection.json")
+    focus = selection.mettre_a_jour(sel, [a for a in analyses if not a.get("deja_commence")], maintenant)
+
     # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
     # priorité à aujourd'hui, puis demain
     ordre = sorted([c for c in combos if not c.get("estime")],
@@ -409,14 +422,27 @@ def main():
         m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
     cle_ia = os.environ.get("ANTHROPIC_API_KEY")
     ia = {"etat": "eteinte", "ok": 0, "erreur": None, "souvenirs": sum(1 for m, _, _ in taches if m["_memoire"])}
-    if cfg.get("analyse_ia") and taches:
+    if cfg.get("analyse_ia") and (taches or focus):
         if demo:
             import demo as d
             for m, v, cible in taches:
                 cible["avis"] = d.avis_fictif({"value": {"edge": v.get("edge", 0)}})
+            for m in focus:
+                selection.noter_avis(sel, m["id"], d.avis_fictif({"value": {"edge": 0.05}}), maintenant)
             ia["etat"], ia["ok"] = "active", len(taches)
         elif cle_ia:
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
+            for m in focus[: cfg.get("analyse_profonde_max", 6)]:
+                s = sel["matchs"][m["id"]]
+                v = {"issue": s["issue"], "cote": s["cote"], "proba": s["proba"], "court": s["court"]}
+                m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
+                try:
+                    a = avis_expert(m, v, cfg, cle_ia, profond=True)
+                    selection.noter_avis(sel, m["id"], a, maintenant)
+                    memoire.retenir(actu, a.get("a_retenir"), maintenant)
+                    ia["ok"] += 1
+                except Exception as e:
+                    print(f"  ! IA sélection {m['domicile']}: {e}")
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)
@@ -445,6 +471,10 @@ def main():
         HISTORIQUE.write_text(json.dumps(historique, ensure_ascii=False, indent=1), encoding="utf-8")
         COMBINES.write_text(json.dumps(combines, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    ticket_semaine = selection.ticket(sel, analyses, cfg["bookmakers_jouables"])
+    if not demo:
+        (DATA / "selection.json").write_text(json.dumps(sel, ensure_ascii=False, indent=1), encoding="utf-8")
+
     # le carnet de l'expert : chaque prono noté puis réglé tout seul (scores ESPN, sans crédit)
     if demo:
         import demo as d
@@ -455,7 +485,8 @@ def main():
             expert.regler(carnet, maintenant)
         except Exception as e:
             print(f"  ! carnet réglement : {e}")
-        expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant)
+        expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant,
+                     semaine=ticket_semaine, analyses_semaine=analyses)
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
     res_carnet = {}
     for p in carnet:
@@ -466,6 +497,7 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
+        "semaine": {"ticket": ticket_semaine, "suivis": sorted(sel["matchs"].values(), key=lambda s: s["debut"])},
         "genere": maintenant,
         "demo": demo,
         "credits_restants": api.credits_restants if api else None,
