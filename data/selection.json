@@ -17,7 +17,36 @@
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Sturm Graz est très diminué (Kiteishvili absent, plusieurs autres blessés) et enchaîne les matchs. Mais Bournemouth, sous Marco Rose, est 17e de Premier League, vient de perdre 5-1 à Chelsea et manque de joueurs offensifs : une cote de 1.18 (81 %) paraît trop courte."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Sturm Graz est très diminué (Kiteishvili absent, plusieurs autres blessés) et enchaîne les matchs. Mais Bournemouth, sous Marco Rose, est 17e de Premier League, vient de perdre 5-1 à Chelsea et manque de joueurs offensifs : une cote de 1.18 (81 %) paraît trop courte.",
+    "points": [
+     "<cite index='51-3,51-7'>Bournemouth cherche encore sa première victoire en Premier League sous Marco Rose, qui a remplacé Iraola cet été, et occupe la 17e place avec 3 points en 5 matchs.</cite> <cite index='32-3,31-8'>Le club vient de perdre 5-1 à Chelsea (10/10) et reste sur 2 défaites de suite.</cite>",
+     "<cite index='50-6'>Alex Scott devrait être absent jusqu'en novembre.</cite> <cite index='40-3'>Kroupi (pied) est out jusqu'à fin octobre, Milosavljević est incertain et Adli (mollet) est annoncé pour la mi-octobre.</cite> <cite index='50-9'>Kluivert se rapproche d'un retour, mais Rose le voyait trop juste pour le match suivant à Sunderland.</cite> Les retours attendus de Brooks, Adli et Milosavljević ne sont pas confirmés.",
+     "<cite index='27-11'>Sturm doit se passer d'Otar Kiteishvili, son principal créateur au milieu.</cite> <cite index='21-13,21-14'>Rózga, Jatta et Weiper sont aussi absents, et il ne resterait que cinq milieux totalement aptes.</cite> <cite index='21-12'>Mamageishvili est également touché, avec une gravité encore floue.</cite>",
+     "<cite index='45-18'>Bournemouth a gagné 2-1 à la Real Sociedad pour ses débuts en Europe, alors que Sturm a fait 0-0 à domicile contre Rennes.</cite> <cite index='10-2,10-3'>Sturm a battu l'Austria Vienne 2-0 dimanche, puis voyage à Bournemouth.</cite> Les deux équipes jouent donc à quelques jours d'écart, avec un calendrier chargé côté Sturm.",
+     "<cite index='28-5,28-7'>Sturm enchaîne les semaines à trois matchs jusqu'à début novembre, avec le derby contre le GAK puis Marseille juste après.</cite> Une rotation est possible côté autrichien. Je n'ai trouvé ni arbitre ni météo confirmés. <cite index='47-3,47-8'>Un pronostiqueur français mise sur plus de 3,5 buts avec un score central de 2-2, ce qui ne dit pas que Bournemouth gagne.</cite>"
+    ],
+    "a_retenir": {
+     "Bournemouth": [
+      "Marco Rose a remplacé Iraola cet été : 3 points en 6 matchs de Premier League, 17e, 2 défaites de suite (dont 1-5 à Chelsea).",
+      "Alex Scott est out jusqu'en novembre ; Kroupi (pied) est absent jusqu'à fin octobre ; Kluivert, Adli, Araujo et Milosavljević reviennent progressivement.",
+      "Les victoires en Europe (2-1 à la Real Sociedad) contrastent avec la fragilité en championnat."
+     ],
+     "SK Sturm Graz": [
+      "Kiteishvili (blessure au mollet) est absent pour plusieurs semaines, probablement sur la plupart des 9 matchs prévus en un mois.",
+      "Rózga, Jatta (épaule), Weiper et Grgić (ligament croisé) sont aussi blessés, et Mamageishvili est incertain : le milieu est très dégarni.",
+      "Calendrier chargé jusqu'à début novembre (derby GAK, Marseille) ; l'entraîneur Ingolitsch doit gérer la charge de travail."
+     ]
+    }
+   }
   },
   "93177465a42a0fb7802f1c8b06d6ee3a": {
    "id": "93177465a42a0fb7802f1c8b06d6ee3a",
@@ -28,15 +57,47 @@
    "sport_key": "soccer_uefa_champs_league",
    "court": "1",
    "issue": "Victoire Arsenal",
-   "proba": 0.7824722555857189,
+   "proba": 0.7845096734355982,
    "proba_depart": 0.7824722555857189,
-   "cote": 1.22,
+   "cote": 1.21,
    "bk": "Betclic (FR)",
    "note": 0.7444,
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Arsenal est nettement supérieur et très solide à domicile. Mais la rotation attendue avant le déplacement à Forest puis à Bayern, la défense amoindrie (Saliba absent, Hincapié et Konsa incertains) et une cote de 1.21 déjà très basse ne laissent presque aucune marge d'erreur."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Arsenal est nettement supérieur et très solide à domicile. Mais la rotation attendue avant le déplacement à Forest puis à Bayern, la défense amoindrie (Saliba absent, Hincapié et Konsa incertains) et une cote de 1.21 déjà très basse ne laissent presque aucune marge d'erreur.",
+    "points": [
+     "Arsenal a gagné ses huit derniers matchs à domicile, toutes compétitions confondues. Il vient de battre Leeds 2-1 et a gagné 1-0 à Naples en ouverture de la Ligue des champions. Les bookmakers le donnent à 1/4 contre 12/1 pour Lille.",
+     "Arsenal sans Saliba (dos) ni Tzolis (ischio, « quelques semaines »). Hincapié (cheville) et Zubimendi ont été touchés à l'échauffement d'après-match contre Leeds. Konsa et Havertz sortent de blessures récentes. Arteta devait faire le point en conférence de presse lundi : à suivre.",
+     "Rotation probable : jusqu'à cinq changements annoncés. Arsenal joue à Nottingham Forest dimanche puis à Bayern mercredi suivant, ce qui rend un onze remanié et un Arsenal moins fluide plausibles.",
+     "Lille est diminué : Ethan Mbappé est suspendu pour ce match et les deux suivants en Ligue des champions, Igamane est blessé de longue durée (croisés), et les latéraux Tiago Santos (genou, sorti sur civière) et Perraud sont sortis blessés contre Le Havre.",
+     "Lille a perdu 3-2 contre le Betis en ouverture, puis a battu Le Havre 1-0 après sa défaite à Nice. Ancelotti se dit insatisfait de son jeu avec le ballon, mais l'équipe contre-attaque bien et Arsenal a déjà été fragile défensivement : un but encaissé est possible et un nul n'est pas à exclure. Je n'ai trouvé ni arbitre ni météo vérifiés."
+    ],
+    "a_retenir": {
+     "Arsenal": [
+      "Saliba (dos) : retour évoqué en novembre ou décembre selon certaines sources.",
+      "Tzolis (ischio-jambiers) absent environ 3 semaines.",
+      "Hincapié (cheville) : diagnostic précis attendu.",
+      "Calendrier chargé : Forest en championnat, puis Bayern en Ligue des champions, ce qui implique de la rotation.",
+      "Série de 8 victoires à domicile et 2 victoires en 2 en Ligue des champions."
+     ],
+     "Lille": [
+      "Ethan Mbappé suspendu pour 3 matchs de Ligue des champions, soit 2 matchs après Arsenal.",
+      "Igamane (rupture des ligaments croisés) absent jusqu'à fin 2026 ou début 2027.",
+      "Tiago Santos (genou) et Perraud : blessures à suivre, ce qui fragilise les côtés.",
+      "Équipe irrégulière : défaite à Nice, défaite 3-2 contre le Betis en Ligue des champions, puis victoire 1-0 contre Le Havre."
+     ]
+    }
+   }
   },
   "9b2bf9bed21283dcad774dd5be7ba1da": {
    "id": "9b2bf9bed21283dcad774dd5be7ba1da",
@@ -47,7 +108,7 @@
    "sport_key": "soccer_uefa_europa_league",
    "court": "1",
    "issue": "Victoire Rennes",
-   "proba": 0.7664793247731038,
+   "proba": 0.7681830546008439,
    "proba_depart": 0.7664793247731038,
    "cote": 1.25,
    "bk": "PMU (FR)",
@@ -55,7 +116,36 @@
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Rennes joue à domicile avec un groupe quasi complet et sort d'un 4-1 contre Auxerre. Mais la cote de 1.25 est basse face à un OFI en grande forme, et Rennes a un historique européen fragile (1 point en 1 match, Haise sans victoire en Europa League). Le match d'après, à Paris FC dimanche, rend aussi une rotation possible."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Rennes joue à domicile avec un groupe quasi complet et sort d'un 4-1 contre Auxerre. Mais la cote de 1.25 est basse face à un OFI en grande forme, et Rennes a un historique européen fragile (1 point en 1 match, Haise sans victoire en Europa League). Le match d'après, à Paris FC dimanche, rend aussi une rotation possible.",
+    "points": [
+     "<cite index=\"11-3\">Avant Auxerre, Haise disposait d'un groupe complet, sans blessé ni suspendu.</cite> <cite index=\"15-4\">Merlin et Nordin, décevants, n'avaient pas été convoqués.</cite> Je n'ai pas trouvé de nouvelle absence annoncée pour l'OFI Crète.",
+     "<cite index=\"22-3\">Haise a enchaîné 17 matchs de Ligue Europa sans victoire (12 défaites, 5 nuls) après le 0-0 à Graz.</cite> <cite index=\"23-8\">Rennes avait frappé 23 fois au but sans marquer à Graz.</cite>",
+     "Rennes a battu Auxerre 4-1 et <cite index=\"21-2\">occupe la 3e place de Ligue 1</cite>. Boulaye Dia a fait un doublé, donc la dépendance à Lepaul est moins nette qu'annoncé. Haise reconnaît pourtant <cite index=\"24-9\">un manque d'agressivité et des problèmes de replacement défensif</cite> en première période.",
+     "<cite index=\"37-4\">L'OFI de Kontis a battu Hoffenheim 2-0 pour sa première sortie en phase de ligue après sa victoire à l'Olympiacos.</cite> <cite index=\"35-6\">Il est présenté comme l'équipe la plus compacte et la plus en forme de Grèce, avec la Coupe et la Super Coupe en poche.</cite> <cite index=\"55-3\">Il avait 4 victoires et 2 nuls sur ses 6 matchs avant la trêve.</cite>",
+     "<cite index=\"49-6,49-7\">Côté OFI, Iseka (adducteur) et Sielis (quadriceps) étaient absents pour le match à l'AEK du 10/10.</cite> Marinakis était aussi hors du groupe. Leur statut pour jeudi n'est pas confirmé. Le déplacement est long et l'OFI a affrété un vol charter pour ses supporters. Le calendrier est chargé pour Rennes, qui joue à <cite index=\"14-5,14-6\">Paris FC le 18 octobre</cite>. Les cotes varient selon les bookmakers : <cite index=\"42-11\">1.34 chez Betclic</cite>, soit plus que votre 1.25."
+    ],
+    "a_retenir": {
+     "Rennes": [
+      "Haise n'a jamais gagné en Ligue Europa (0 victoire en 17 matchs avec Lens, Nice et Rennes), et Rennes n'a pris qu'un point en 1 match cette saison.",
+      "Groupe au complet avant Auxerre, avec Merlin et Nordin écartés pour raisons sportives. Série en cours : 4-1 contre Auxerre, 13 points en 6 journées de L1.",
+      "Calendrier : Paris FC en Ligue 1 le 18 octobre, risque de rotation après l'Europa League."
+     ],
+     "OFI Crete": [
+      "Détenteur de la Coupe de Grèce et de la Super Coupe sous Kontis, en bonne forme (victoire sur Hoffenheim, qualification contre le CSKA Sofia).",
+      "Absences à suivre : Sielis (quadriceps) et Iseka (adducteur), plus Marinakis, Kalafatis et d'autres blessés à la mi-octobre.",
+      "Prochains matchs européens : Leverkusen à domicile le 22/10, Beer-Sheva à l'extérieur le 05/11."
+     ]
+    }
+   }
   },
   "ca3f4b075d835413f9cb7bd3c439fdd0": {
    "id": "ca3f4b075d835413f9cb7bd3c439fdd0",
@@ -74,7 +164,36 @@
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Inter n'a pas de absence décisive (Stones et Curtis Jones sont out, et Brugge est quasi au complet hors Ordóñez) et reste nettement favori à domicile. À 1.24 (77 %), la cote laisse peu de marge face à une défense qui s'est montrée fragile en Europe et à un Brugge en forme."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Inter n'a pas de absence décisive (Stones et Curtis Jones sont out, et Brugge est quasi au complet hors Ordóñez) et reste nettement favori à domicile. À 1.24 (77 %), la cote laisse peu de marge face à une défense qui s'est montrée fragile en Europe et à un Brugge en forme.",
+    "points": [
+     "Inter sans John Stones (flexor) ni Curtis Jones (cuisse, environ trois semaines). Ce sont des absences gérables, car Chivu garde de bonnes options en défense.",
+     "Inter a perdu trois matchs de C1 de suite pour la deuxième fois de son histoire. À Madrid, il a concédé neuf grosses occasions malgré 64,4 % de possession.",
+     "Les deux équipes sont à 0 point : Inter a perdu 2-1 à Madrid, Brugge 3-2 contre Aston Villa. Le club belge a des absents : Siquet manque, Ordóñez (pied) est out, et Forbs est incertain après une sortie sur blessure musculaire.",
+     "Brugge a gagné 4-1 à La Louvière lors de son dernier match de championnat. Vetlesen et Tresoldi marquent régulièrement, donc Brugge peut marquer. Cela fragilise un 'clean sheet' ou une grosse marge.",
+     "Lautaro est resté six matchs de C1 sans marquer, mais Inter a battu Parma 3-0 en championnat et a de l'élan. Chivu avait fait tourner contre Parma (Barella, Lautaro, Akanji, Bastoni, Zielinski sur le banc au départ), donc les titulaires sont frais. L'arbitre est le Norvégien Rohit Saggi, qui dirige Inter pour la première fois."
+    ],
+    "a_retenir": {
+     "Inter Milan": [
+      "John Stones est blessé (flexor) : <cite index=\"4-9\">retour attendu vers le 8 novembre</cite>.",
+      "Curtis Jones est blessé à la cuisse : <cite index=\"10-10\">absence possible jusqu'en novembre</cite>.",
+      "<cite index=\"2-11\">Série de trois défaites de suite en C1 (la dernière à Madrid)</cite>, avec une défense vulnérable face aux grosses occasions."
+     ],
+     "Club Brugge": [
+      "Joel Ordóñez est out pour une <cite index=\"6-3\">fracture du métatarse</cite>.",
+      "Hugo Siquet est absent sur blessure musculaire depuis plusieurs semaines.",
+      "<cite index=\"16-9\">Trois victoires de suite en matchs récents</cite>, après une défaite d'entrée en C1 (3-2 contre Aston Villa)."
+     ]
+    }
+   }
   },
   "d7576351b8cb2396e32cc3de0446f3de": {
    "id": "d7576351b8cb2396e32cc3de0446f3de",
@@ -93,7 +212,37 @@
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Stuttgart est nettement supérieur sur le papier : Slovan est affaibli, sans victoire en Ligue des champions et venait de perdre lourdement lors de la 1re journée. Mais la cote de 1.27 laisse peu de marge face à une défense stuttgartoise amoindrie (Mittelstädt probablement absent), une forme irrégulière en Bundesliga et un possible turnover avant Atlético Madrid."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Stuttgart est nettement supérieur sur le papier : Slovan est affaibli, sans victoire en Ligue des champions et venait de perdre lourdement lors de la 1re journée. Mais la cote de 1.27 laisse peu de marge face à une défense stuttgartoise amoindrie (Mittelstädt probablement absent), une forme irrégulière en Bundesliga et un possible turnover avant Atlético Madrid.",
+    "points": [
+     "Mittelstädt (arrière gauche) devrait manquer au moins ce match : blessure à la peau du talon droit, qui a dû être recousue. Chabot est sorti à Paderborn avec un souci à la cuisse, mais le club annonce une blessure non grave.",
+     "Al-Dakhil souffre d'une blessure au genou. Hendriks était incertain avant Paderborn, avec une main touchée que Hoeneß pensait être une simple contusion. Je n'ai pas trouvé de composition officielle ni d'info sur l'arbitre ou la météo.",
+     "Stuttgart a bien commencé sa campagne de Ligue des champions en battant Viking 3-1. Demirović a marqué les trois buts avant la 32e minute. Stuttgart a aussi gagné 2-0 à Paderborn en Bundesliga, après un début de championnat difficile (1 victoire, 3 défaites, 6 buts marqués pour 9 encaissés après 4 matchs).",
+     "Slovan a perdu 1-6 lors de sa première journée, avec 0 point. C'est la 10e tentative du champion slovaque en Ligue des champions, et il a perdu tous ses matchs jusqu'ici. Le club a perdu plusieurs cadres depuis la défaite 1-3 de janvier 2025 contre Stuttgart, et l'entraîneur a changé.",
+     "Stuttgart reçoit Atlético Madrid le 20 octobre et joue à Hambourg le 17 octobre : un turnover est possible. Slovan doit lui aussi jouer un derby à Trnava le week-end suivant (selon SME) et sera soutenu par un Tehelné pole annoncé bruyant."
+    ],
+    "a_retenir": {
+     "ŠK Slovan Bratislava": [
+      "Yaya Touré est le nouvel entraîneur depuis l'été 2026 et mise sur un effectif plus jeune et moins expérimenté.",
+      "Départs ou retraites de Kashia, Weiss, Mak, Strelec, Tolič et Zuberu : l'effectif est reconstruit.",
+      "Slovan reste sans point en Ligue des champions : 0 sur 9 depuis ses débuts, avant ce match."
+     ],
+     "VfB Stuttgart": [
+      "Justin Diehl est absent longtemps (Ligainsider).",
+      "Zagadou, Tiago Tomás et Malanga sont en reprise ou convalescence ; Al-Dakhil a des blessures récurrentes.",
+      "Mittelstädt est blessé au talon (plaie recousue) : à suivre pour le calendrier chargé (HSV le 17/10, Atlético le 20/10).",
+      "Début de saison irrégulier en Bundesliga (1V-3D après 4 journées), puis victoire 2-0 à Paderborn."
+     ]
+    }
+   }
   },
   "feda75190a774fb92164059453b037be": {
    "id": "feda75190a774fb92164059453b037be",
@@ -106,13 +255,42 @@
    "issue": "Victoire Benfica",
    "proba": 0.7675535652492664,
    "proba_depart": 0.7675535652492664,
-   "cote": 1.23,
+   "cote": 1.22,
    "bk": "Winamax (FR)",
    "note": 0.7137,
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
-   "analyses": []
+   "analyses": [
+    {
+     "jour": "2026-10-12",
+     "avis": "prudence",
+     "resume": "Benfica reste très favori à domicile face à un Celtic qui sort de trois défaites, mais la cote de 1.22 ne laisse aucune marge. Benfica a plusieurs absents et une fin de match fragile contre Guimarães, tandis que Celtic va mieux et que Carter-Vickers est incertain."
+    }
+   ],
+   "avis": {
+    "avis": "prudence",
+    "resume": "Benfica reste très favori à domicile face à un Celtic qui sort de trois défaites, mais la cote de 1.22 ne laisse aucune marge. Benfica a plusieurs absents et une fin de match fragile contre Guimarães, tandis que Celtic va mieux et que Carter-Vickers est incertain.",
+    "points": [
+     "Kaminski s'est blessé musculairement avec la Pologne et devrait manquer au moins quelques semaines. Umeh, blessé musculairement depuis la pré-saison, ne serait pas rétabli avant la mi-novembre. Banjaqui a un gêne musculaire, jugée sans gravité.",
+     "Lenglet et Barrenechea étaient forts absents pour Guimarães. Lenglet y était suspendu pour ce match seulement, donc il devrait être disponible jeudi. Barrenechea (ménisque) reste absent. Sudakov, qui était incertain, est entré contre Guimarães et a marqué.",
+     "Benfica a battu Guimarães 2-0 dimanche, avec une nette supériorité. Mais la seconde période a été plus faible, avec beaucoup d'erreurs. Benfica est repassé deuxième du championnat.",
+     "Celtic a battu Motherwell 2-0 et mis fin à une série de trois défaites. Il avait perdu à domicile contre Ferencvaros lors de son premier match européen. Carter-Vickers va probablement manquer le match à cause d'une élongation. Yang Hyun-jun est incertain (ischio-jambiers), et Johnston et Osmand ne seraient pas prêts.",
+     "Benfica est 7e du classement Europa League avec 3 points, Celtic 28e avec 0 point. La presse locale voit les Portugais très favoris. Observador décrit un Celtic en crise. Cet avis date d'avant la victoire de Celtic à Motherwell."
+    ],
+    "a_retenir": {
+     "Benfica": [
+      "Kaminski est blessé musculairement (probablement quelques semaines), Barrenechea (ménisque) est absent environ un mois, et Umeh ne reviendrait pas avant la mi-novembre.",
+      "Marco Silva a Sudakov et Bah de retour après leurs gênes. La défaite contre Porto reste la seule de la saison.",
+      "Calendrier : Omonia en Europa League le 22 octobre, puis Lech Poznań le 5 novembre."
+     ],
+     "Celtic": [
+      "Carter-Vickers est touché (élongation) et probablement absent jeudi. Sa durée d'absence n'est pas connue.",
+      "Jota est de retour après 533 jours d'absence, mais il n'est pas dans la liste Europa League.",
+      "Celtic est leader de la Premiership après le 2-0 à Motherwell, mais reste en crise en Europe après sa défaite 3-1 contre Ferencvaros."
+     ]
+    }
+   }
   }
  }
 }

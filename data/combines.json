@@ -40,8 +40,8 @@
  {
   "jour": "2026-10-12",
   "bookmaker": "Betclic (FR)",
-  "cote": 2.81,
-  "proba": 0.3097,
+  "cote": 2.79,
+  "proba": 0.31,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
@@ -55,7 +55,7 @@
     "exterieur": "Venezia",
     "pari": "Victoire Atalanta BC",
     "court": "1",
-    "cote": 1.56
+    "cote": 1.55
    },
    {
     "id": "789c3dd95a7fcef675ce5a40b07371a2",
