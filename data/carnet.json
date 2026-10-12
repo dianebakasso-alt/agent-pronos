@@ -1,0 +1,382 @@
+[
+ {
+  "cle": "match:0f2e7ff90b994f31d5cd48a9680943e1",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.52,
+    "proba": 0.626,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875005"
+    }
+   }
+  ],
+  "cote": 1.52,
+  "proba": 0.626,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:f4a28510bb0c835280a2aca709c19d50",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "f4a28510bb0c835280a2aca709c19d50",
+    "date": "2026-10-12T18:45:00Z",
+    "domicile": "Torino",
+    "exterieur": "Udinese",
+    "championnat": "Serie A",
+    "pari": "Victoire Torino",
+    "cote": 2.42,
+    "proba": 0.3939,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874763"
+    }
+   }
+  ],
+  "cote": 2.42,
+  "proba": 0.3939,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1abc2ac67c0776b1afb48749fe005ee2",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1abc2ac67c0776b1afb48749fe005ee2",
+    "date": "2026-10-12T18:45:00Z",
+    "domicile": "Dijon",
+    "exterieur": "Metz",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Metz",
+    "cote": 2.55,
+    "proba": 0.377,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876735"
+    }
+   }
+  ],
+  "cote": 2.55,
+  "proba": 0.377,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:acd5bd945dd953ad1e300df5bfe696f9",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Coventry City",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.12,
+    "proba": 0.4342,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879267"
+    }
+   }
+  ],
+  "cote": 2.12,
+  "proba": 0.4342,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:529fc26c7774d5b469932e275c668921",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "529fc26c7774d5b469932e275c668921",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Levante",
+    "exterieur": "Sevilla",
+    "championnat": "Liga",
+    "pari": "Victoire Levante",
+    "cote": 2.7,
+    "proba": 0.3546,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882852"
+    }
+   }
+  ],
+  "cote": 2.7,
+  "proba": 0.3546,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:789c3dd95a7fcef675ce5a40b07371a2",
+  "jour": "2026-10-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Famalicão",
+    "cote": 1.8,
+    "proba": 0.5125,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885425"
+    }
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.5125,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.52,
+    "proba": 0.626,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875005"
+    }
+   },
+   {
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Famalicão",
+    "cote": 1.8,
+    "proba": 0.5125,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885425"
+    }
+   }
+  ],
+  "cote": 2.74,
+  "proba": 0.3209,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "1abc2ac67c0776b1afb48749fe005ee2",
+    "date": "2026-10-12T18:45:00Z",
+    "domicile": "Dijon",
+    "exterieur": "Metz",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Metz",
+    "cote": 2.55,
+    "proba": 0.377,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876735"
+    }
+   },
+   {
+    "id": "529fc26c7774d5b469932e275c668921",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Levante",
+    "exterieur": "Sevilla",
+    "championnat": "Liga",
+    "pari": "Victoire Levante",
+    "cote": 2.63,
+    "proba": 0.3546,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882852"
+    }
+   },
+   {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "date": "2026-10-12T19:00:00Z",
+    "domicile": "Coventry City",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.12,
+    "proba": 0.4342,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879267"
+    }
+   }
+  ],
+  "cote": 14.22,
+  "proba": 0.0581,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "f4a28510bb0c835280a2aca709c19d50",
+    "date": "2026-10-12T18:45:00Z",
+    "domicile": "Torino",
+    "exterieur": "Udinese",
+    "championnat": "Serie A",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6411,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874763"
+    }
+   },
+   {
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6027,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885425"
+    }
+   }
+  ],
+  "cote": 2.72,
+  "proba": 0.3864,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-10-12",
+  "jour": "2026-10-12",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.52,
+    "proba": 0.626,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875005"
+    }
+   },
+   {
+    "id": "f4a28510bb0c835280a2aca709c19d50",
+    "date": "2026-10-12T18:45:00Z",
+    "domicile": "Torino",
+    "exterieur": "Udinese",
+    "championnat": "Serie A",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6411,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874763"
+    }
+   },
+   {
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6027,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885425"
+    }
+   }
+  ],
+  "cote": 4.34,
+  "proba": 0.2419,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ }
+]

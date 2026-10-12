@@ -36,5 +36,37 @@
     "ok": true
    }
   ]
+ },
+ {
+  "jour": "2026-10-12",
+  "bookmaker": "Betclic (FR)",
+  "cote": 2.74,
+  "proba": 0.3209,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "0f2e7ff90b994f31d5cd48a9680943e1",
+    "sport_key": "soccer_italy_serie_a",
+    "date": "2026-10-12T16:30:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Venezia",
+    "pari": "Victoire Atalanta BC",
+    "court": "1",
+    "cote": 1.52
+   },
+   {
+    "id": "789c3dd95a7fcef675ce5a40b07371a2",
+    "sport_key": "soccer_portugal_primeira_liga",
+    "date": "2026-10-12T19:15:00Z",
+    "domicile": "Famalicão",
+    "exterieur": "Alverca",
+    "pari": "Victoire Famalicão",
+    "court": "1",
+    "cote": 1.8
+   }
+  ]
  }
 ]
