@@ -395,6 +395,8 @@ def main():
     # la sélection de la semaine : les matchs où l'expert a le plus confiance, suivis jusqu'au jour J
     sel = {"matchs": {}} if demo else selection.charger(DATA / "selection.json")
     focus = selection.mettre_a_jour(sel, [a for a in analyses if not a.get("deja_commence")], maintenant)
+    jouables_auj = [a for a in jours[0]["analyses"] if not a.get("deja_commence")]
+    avis_jour = {}
 
     # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
     # priorité à aujourd'hui, puis demain
@@ -443,6 +445,21 @@ def main():
                     ia["ok"] += 1
                 except Exception as e:
                     print(f"  ! IA sélection {m['domicile']}: {e}")
+            # le ticket du jour : ses matchs sont aussi analysés en profondeur
+            deja = {x["id"] for x in focus}
+            tk0 = selection.ticket_du_jour(jouables_auj, cfg["bookmakers_jouables"])
+            for s in (tk0 or {}).get("jambes", [])[:3]:
+                if s["id"] in deja:
+                    continue
+                m = next(a for a in analyses if a["id"] == s["id"])
+                m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
+                try:
+                    a = avis_expert(m, s, cfg, cle_ia, profond=True)
+                    avis_jour[m["id"]] = a
+                    memoire.retenir(actu, a.get("a_retenir"), maintenant)
+                    ia["ok"] += 1
+                except Exception as e:
+                    print(f"  ! IA ticket du jour {m['domicile']}: {e}")
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)
@@ -472,6 +489,16 @@ def main():
         COMBINES.write_text(json.dumps(combines, ensure_ascii=False, indent=1), encoding="utf-8")
 
     ticket_semaine = selection.ticket(sel, analyses, cfg["bookmakers_jouables"])
+    # chaque jour : un ticket du jour et l'avis de l'expert sur chaque match
+    avis_connus = {k: s["avis"] for k, s in sel["matchs"].items() if s.get("avis")}
+    avis_connus.update(avis_jour)
+    for a in analyses:
+        if a["id"] in avis_connus and not a.get("avis"):
+            a["avis"] = avis_connus[a["id"]]
+    for j in jours:
+        jj = [a for a in j["analyses"] if not a.get("deja_commence")]
+        j["ticket"] = selection.ticket_du_jour(jj, cfg["bookmakers_jouables"], avis_connus)
+        j["pronos"] = {a["id"]: selection.avis_match(a) for a in j["analyses"]}
     if not demo:
         (DATA / "selection.json").write_text(json.dumps(sel, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -487,6 +514,7 @@ def main():
             print(f"  ! carnet réglement : {e}")
         expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant,
                      semaine=ticket_semaine, analyses_semaine=analyses)
+        expert.noter_ticket(carnet, f"jour:{auj}", "jour", auj, jours[0].get("ticket"), analyses, maintenant)
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
     res_carnet = {}
     for p in carnet:

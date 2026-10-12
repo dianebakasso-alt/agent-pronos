@@ -131,10 +131,10 @@ def pourquoi_1n2(m, court, cote=None, bk=None, valeur=True):
     st, b = m.get("stats"), m.get("buts")
     if st:
         d, x, f = st["domicile"], st["exterieur"], st["face"]
-        if court == "1":
-            morceaux += [t for t in (_forme_txt(m["domicile"], d), _forme_txt(m["exterieur"], x)) if "crise" in t or "forme" in t]
-        elif court == "2":
-            morceaux += [t for t in (_forme_txt(m["exterieur"], x), _forme_txt(m["domicile"], d)) if "crise" in t or "forme" in t]
+        if court in ("1", "2"):
+            (moi, fm), (lui, fl) = ((m["domicile"], d), (m["exterieur"], x)) if court == "1" else ((m["exterieur"], x), (m["domicile"], d))
+            t_moi, t_lui = _forme_txt(moi, fm), _forme_txt(lui, fl)
+            morceaux += [z for z in (t_moi if "est en forme" in t_moi else "", t_lui if "crise" in t_lui or "gagne peu" in t_lui else "") if z]
         else:
             if f["n"] >= 3 and f["nuls"] >= 2:
                 morceaux.append(f"face-à-face serrés : {f['nuls']} nuls sur les {f['n']} derniers")
@@ -506,6 +506,104 @@ def section_expert(t):
     <p class="note">Le rendement, c'est le bénéfice pour 100 € misés. Un vrai expert se juge sur des centaines de pronos : un bon ou un mauvais soir ne veut rien dire.</p>"""
 
 
+def _quand(iso):
+    d = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(PARIS)
+    return f"{JOURS[d.weekday()]} {d.day} · {d:%H:%M}"
+
+
+def carte_ticket(tk, style, emoji, nom, desc, badge):
+    jambes = ""
+    for j in tk["jambes"]:
+        a = j.get("avis") or {}
+        cls, titre = AVIS.get(a.get("avis"), ("att", "Analyse IA à venir"))
+        jambes += f"""<li>{ecusson(j["domicile"], 26)}{ecusson(j["exterieur"], 26)}
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(j["domicile"])} – {e(j["exterieur"])} · {_quand(j["debut"])}</small>
+          <small class="pq-j">🤖 <b class="sm-{cls}">{titre}</b>{' : ' + e(a.get("resume", "")) if a.get("resume") else ''}</small></div>
+          <span class="j-cote">{j["cote_t"]:.2f}</span></li>"""
+    pari = {"type": "combine", "id": f"{style}-" + "-".join(j["id"][:6] for j in tk["jambes"]), "date": tk["jambes"][0]["debut"],
+            "match": " + ".join(j["domicile"] + " – " + j["exterieur"] for j in tk["jambes"]),
+            "pari": f"{nom} · {len(tk['jambes'])} matchs", "cote": round(tk["cote"], 2), "bk": tk["bookmaker"],
+            "jambes": [{"id": j["id"], "court": j["court"], "pari": j["issue"]} for j in tk["jambes"]]}
+    return f"""
+    <article class="carte combo st-{style}" data-style="{style}" data-cote="{tk['cote']:.4f}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
+      <div class="combo-t"><span class="ct"><i class="ct-e">{emoji}</i> <span class="ct-n">{e(nom)}</span></span><span class="badge c-forte">{e(badge)}</span></div>
+      <p class="combo-desc">{e(desc)}</p>
+      <div class="chance"><div class="chance-b"><span style="width:{max(3, round(tk["proba"] * 100))}%"></span></div>
+        <b>{pct(tk["proba"])}</b><small>de chances que ça passe</small></div>
+      <ul class="jambes">{jambes}</ul>
+      <div class="pari">
+        <div><div class="lbl">Cote du ticket</div><div class="choix">{len(tk["jambes"])} matchs chez {e(tk["bookmaker"])}</div></div>
+        <div class="cote"><div class="lbl">Cote</div><div class="num">{tk["cote"]:.2f}</div></div>
+      </div>
+      <div class="calc" hidden></div>
+      {BOUTON_JOUE}
+    </article>"""
+
+
+NIV_CLS = {"forte": "ok", "bonne": "ok", "moyenne": "warn", "ouvert": "att"}
+
+
+def resume_jour(j, bankroll):
+    tk = j.get("ticket")
+    jv = [m for m in j["values"] if (m.get("avis") or {}).get("avis") != "eviter"]
+    pr = j.get("pronos") or {}
+    par_id = {m["id"]: m for m in j["analyses"]}
+    eviter = [m for m in j["analyses"] if (m.get("avis") or {}).get("avis") == "eviter"]
+    pieges = [par_id[k] for k, a in pr.items() if a and a.get("piege") and k in par_id]
+    lignes = []
+    mise = max(1, round(bankroll * 0.02))
+    if tk:
+        lignes.append(f"📌 <b>Le ticket du jour</b> à <b>{tk['cote']:.2f}</b> ({pct(tk['proba'])} de chances) : mise <b>{mise} €</b> pour {bankroll} € de budget.")
+    for m in jv[:2]:
+        v = m["value"]
+        lignes.append(f"💎 <b>{e(v['issue'])}</b> à {v['cote']:.2f} chez {e(v['bookmaker'])} : mise <b>{euros(v['mise'])}</b>.")
+    if not lignes:
+        lignes.append("🧘 <b>Rien de solide</b> : je ne jouerais pas aujourd'hui. Garder son argent, c'est aussi gagner.")
+    a_eviter = [f"{e(m['domicile'])} – {e(m['exterieur'])}" for m in (eviter + pieges)[:3]]
+    ev = f'<p class="rj-ev">🚫 <b>À éviter :</b> {", ".join(a_eviter)} (favori en mauvaise forme ou mauvaise nouvelle).</p>' if a_eviter else ""
+    nb_forte = sum(1 for a in pr.values() if a and a["niveau"] in ("forte", "bonne"))
+    return f"""
+<section class="rj">
+  <div class="ex-t">🧠 Ce que je jouerais {e(j["quand"])}</div>
+  <ul>{"".join(f"<li>{l}</li>" for l in lignes)}</ul>
+  {ev}
+  <p class="rj-n">{len(j["analyses"])} matchs étudiés · {nb_forte} où l'expert a confiance.</p>
+</section>"""
+
+
+def liste_avis(j):
+    pr = j.get("pronos") or {}
+    if not pr:
+        return ""
+    lignes = ""
+    ordre = {"forte": 0, "bonne": 1, "moyenne": 2, "ouvert": 3}
+    for m in sorted(j["analyses"], key=lambda m: (ordre.get((pr.get(m["id"]) or {}).get("niveau"), 4), m["debut"])):
+        a = pr.get(m["id"])
+        if not a:
+            continue
+        cls = NIV_CLS[a["niveau"]]
+        if a["niveau"] == "ouvert":
+            txt = "Trop incertain pour un pari 1-N-2."
+            b = m.get("buts")
+            if b and max(b["plus25"], 1 - b["plus25"]) >= 0.58:
+                txt += " Piste buts : " + ("plus de 2,5 buts" if b["plus25"] >= 0.5 else "moins de 2,5 buts") + f" ({pct(max(b['plus25'], 1 - b['plus25']))})."
+            pari = "Pas de pari conseillé"
+        else:
+            txt = pourquoi_1n2(m, a["court"], valeur=False)
+            pari = f"{a['issue']} · {a['cote']:.2f}"
+        ia = (m.get("avis") or {})
+        ia_txt = f'<small class="av-ia">🤖 {e(ia.get("resume", ""))}</small>' if ia.get("resume") else ""
+        piege = ' <span class="av-p">⚠️ piège</span>' if a.get("piege") else ""
+        lignes += f"""<li class="av-l av-{cls}"><div class="av-h"><span>{ecusson(m["domicile"], 22)}{ecusson(m["exterieur"], 22)}</span>
+          <div><b>{e(m["domicile"])} – {e(m["exterieur"])}</b><small>{heure(m["debut"])} · {e(championnat(m.get("sport_key", ""), m["championnat"])[1])}</small></div>
+          <em class="av-n">{NIVEAUX_TXT[a["niveau"]]}</em></div>
+          <div class="av-p1"><b>{e(pari)}</b>{piege}</div><small class="av-t">💡 {e(txt)}</small>{ia_txt}</li>"""
+    return f"""<h2>🗂️ L'avis de l'expert <small>match par match</small></h2><ul class="av">{lignes}</ul>"""
+
+
+NIVEAUX_TXT = {"forte": "💪 Forte", "bonne": "👍 Bonne", "moyenne": "🤔 Moyenne", "ouvert": "🎲 Ouvert"}
+
+
 def section_semaine(s):
     if not s:
         return ""
@@ -691,7 +789,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         dt = datetime.strptime(j["cle"], "%Y-%m-%d")
         titre_j = "Auj." if k == 0 else "Demain" if k == 1 else NOMS_JOURS[dt.weekday()][:3] + "."
         selecteur += f"""<button data-j="{j["cle"]}" class="j-{etat}"><span>{titre_j}</span><b>{dt.day}</b><small>{sous}</small></button>"""
-        mots += f"""<div class="jour-mot" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>{mot_agent(j["analyses"], j["values"], j["combos"], j["quand"], k)}</div>"""
+        mots += f"""<div class="jour-mot" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>{mot_agent(j["analyses"], j["values"], j["combos"], j["quand"], k)}{resume_jour(j, infos.get("bankroll") or 100)}</div>"""
         if j["values"]:
             cartes_j = "".join(carte_value(m) for m in j["values"])
         else:
@@ -711,7 +809,10 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
       {f'<div class="avis {AVIS.get(choc["avis"].get("avis"), AVIS["prudence"])[0]}"><div class="avis-t">🤖 L&#39;actu du match</div><p>{e(choc["avis"].get("resume", ""))}</p></div>' if choc.get("avis") else ""}
     </article>"""
         combos_j = "".join(carte_combine(c, j["cle"]) for c in j["combos"]) or carte_combine(None)
+        tkj = carte_ticket(j["ticket"], "jour", "📌", "Ticket du jour", "Les 2 à 3 matchs les plus solides du jour, vérifiés en profondeur par l'IA.", "Le plus solide") if j.get("ticket") else ""
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
+{tkj}
+{liste_avis(j)}
 <h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
 <h2>🎯 Paris simples <small>selon l'avantage de chaque pari</small></h2>
@@ -1352,6 +1453,27 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .sm-l .sm-d {{ color:var(--text); opacity:.8; margin-top:2px; }}
 .sm-l.out {{ opacity:.55; }}
 .sm-e {{ text-align:right; font-size:12px; font-weight:600; white-space:nowrap; }}
+.combo.st-jour {{ --grad-ticket:linear-gradient(135deg,#34d399 0%,#22d3ee 55%,#3b82f6 100%); }}
+.combo.st-jour .jambes li {{ border-left-color:#34d399; }}
+.rj {{ margin:14px 0 12px; padding:14px; border-radius:16px; background:linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%), var(--surface);
+  border:1px solid color-mix(in srgb, var(--accent) 40%, var(--line)); }}
+.rj ul {{ list-style:none; margin:8px 0 0; display:flex; flex-direction:column; gap:8px; font-size:15px; }}
+.rj-ev {{ margin-top:10px; font-size:13px; color:var(--warn); }}
+.rj-n {{ margin-top:8px; font-size:12px; color:var(--muted); }}
+.av {{ list-style:none; display:flex; flex-direction:column; gap:8px; }}
+.av-l {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--muted); border-radius:12px; padding:10px 12px; }}
+.av-l.av-ok {{ border-left-color:var(--ok); }} .av-l.av-warn {{ border-left-color:var(--warn); }} .av-l.av-att {{ opacity:.8; }}
+.av-h {{ display:flex; align-items:center; gap:8px; }}
+.av-h > span {{ display:flex; gap:2px; flex:none; }}
+.av-h > div {{ flex:1; min-width:0; }}
+.av-h b {{ display:block; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
+.av-h small {{ display:block; color:var(--muted); font-size:12px; }}
+.av-n {{ font-style:normal; font-size:12px; font-weight:700; white-space:nowrap; }}
+.av-ok .av-n {{ color:var(--ok); }} .av-warn .av-n {{ color:var(--warn); }} .av-att .av-n {{ color:var(--muted); }}
+.av-p1 {{ margin-top:6px; font:700 18px "Barlow Condensed",sans-serif; }}
+.av-p {{ font:700 12px Inter,sans-serif; color:var(--warn); margin-left:6px; }}
+.av-t, .av-ia {{ display:block; font-size:12px; color:var(--muted); margin-top:3px; line-height:1.4; }}
+.av-ia {{ color:var(--text); opacity:.85; }}
 </style>
 </head>
 <body>

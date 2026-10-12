@@ -143,3 +143,53 @@ def charger(chemin):
         return json.loads(chemin.read_text(encoding="utf-8"))
     except Exception:
         return {"matchs": {}}
+
+
+# ---------------------------------------------------------------- le jour : ticket du jour et avis par match
+def ticket_du_jour(analyses, bookmakers, avis_connus=None):
+    """2 à 3 matchs du jour, les plus solides, avec au moins 25 % de chances de passer."""
+    sel = {"matchs": {}}
+    cands = [(c["note"], m, c) for m in analyses if (c := candidat(m))]
+    for _, m, c in sorted(cands, key=lambda x: -x[0])[:5]:
+        s = {"id": m["id"], "debut": m["debut"], "domicile": m["domicile"], "exterieur": m["exterieur"],
+             "championnat": m["championnat"], "sport_key": m.get("sport_key"), "court": c["court"], "issue": c["issue"],
+             "proba": c["proba"], "cote": c["cote"], "bk": c["bk"], "note": c["note"], "statut": "suivi"}
+        a = (avis_connus or {}).get(m["id"])
+        if a:
+            s["avis"] = a
+            if a.get("avis") == "eviter":
+                continue
+        sel["matchs"][m["id"]] = s
+    import math
+    ok = sorted(sel["matchs"].values(), key=lambda s: -s["note"])[:3]
+    while len(ok) > 2 and math.prod(s["proba"] for s in ok) < 0.25:
+        ok.pop()
+    sel["matchs"] = {s["id"]: s for s in ok}
+    return ticket(sel, analyses, bookmakers)
+
+
+NIVEAUX = {"forte": "Confiance forte", "bonne": "Bonne confiance", "moyenne": "Confiance moyenne", "ouvert": "Match ouvert"}
+
+
+def avis_match(m):
+    """Le prono de l'expert pour un match, avec un niveau de confiance."""
+    if not m.get("issues"):
+        return None
+    c = candidat(m)
+    fav = max(m["issues"], key=lambda i: i["proba"])
+    a = (m.get("avis") or {}).get("avis")
+    v = m.get("value")
+    if v and a != "eviter":
+        return {"court": v["court"], "issue": v["issue"], "proba": v["proba"], "cote": v["cote"],
+                "niveau": "bonne" if v["proba"] < 0.45 else "forte", "piege": False, "value": True}
+    if c:
+        niveau = "forte" if (c["forme"] and c["proba"] >= 0.55 and a != "prudence") else "bonne"
+        court, issue, proba, cote = c["court"], c["issue"], c["proba"], c["cote"]
+    elif fav["proba"] >= 0.45:
+        niveau, court, issue, proba, cote = "moyenne", fav["court"], fav["issue"], fav["proba"], fav["cote"]
+    else:
+        niveau, court, issue, proba, cote = "ouvert", fav["court"], fav["issue"], fav["proba"], fav["cote"]
+    if a == "eviter":
+        niveau = "ouvert"
+    piege = fav["proba"] >= 0.5 and _forme_ok(m, fav["court"]) is False
+    return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege}

@@ -20,6 +20,7 @@ CATEGORIES = {
     "gros": ("🚀", "Combiné Gros gain"),
     "buts": ("⚽", "Combiné Buts"),
     "mixte": ("🔀", "Combiné Mixte"),
+    "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
@@ -208,3 +209,22 @@ def charger(chemin):
         return json.loads(chemin.read_text(encoding="utf-8"))
     except Exception:
         return []
+
+
+def noter_ticket(carnet, cle, cat, jour, tk, analyses, maintenant):
+    """Note un ticket (du jour) dans le carnet ; remplacé tant qu'aucun match n'a commencé."""
+    if not tk:
+        return
+    par_id = {a["id"]: a for a in analyses}
+    jb = []
+    for s in tk["jambes"]:
+        m = dict(par_id.get(s["id"]) or {"id": s["id"], "debut": s["debut"], "domicile": s["domicile"],
+                                          "exterieur": s["exterieur"], "sport_key": s.get("sport_key"), "championnat": s.get("championnat", "")})
+        jb.append(_jambe(m, court=s["court"], pari=s["issue"], cote=s["cote_t"], proba=s["proba"]))
+    nouveau = _prono(cle, jour, cat, jb, tk["cote"], tk["proba"], conseille=True)
+    ancien = next((p for p in carnet if p["cle"] == cle), None)
+    if ancien:
+        if ancien["statut"] != "en attente" or any(_dt(j["date"]) <= maintenant for j in ancien["jambes"]):
+            return
+        carnet.remove(ancien)
+    carnet.append(nouveau)
