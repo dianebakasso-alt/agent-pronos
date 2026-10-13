@@ -44,8 +44,8 @@
   "proba": 0.2796,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "acd5bd945dd953ad1e300df5bfe696f9",
@@ -55,7 +55,10 @@
     "exterieur": "Newcastle United",
     "pari": "Victoire Newcastle United",
     "court": "2",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "1",
+    "score": "4-1",
+    "ok": false
    },
    {
     "id": "0f2e7ff90b994f31d5cd48a9680943e1",
@@ -65,7 +68,42 @@
     "exterieur": "Venezia",
     "pari": "Victoire Atalanta BC",
     "court": "1",
-    "cote": 1.53
+    "cote": 1.53,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-13",
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.24,
+  "proba": 0.2804,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "09e41b63d1d59bd4d971c54ffce154d3",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-13T19:00:00Z",
+    "domicile": "Villarreal",
+    "exterieur": "Napoli",
+    "pari": "Victoire Villarreal",
+    "court": "1",
+    "cote": 2.05
+   },
+   {
+    "id": "da9e9e9eb9a238ed97827c4a8fbe6044",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-13T19:00:00Z",
+    "domicile": "RB Leipzig",
+    "exterieur": "PSV Eindhoven",
+    "pari": "Victoire RB Leipzig",
+    "court": "1",
+    "cote": 1.58
    }
   ]
  }
