@@ -22,6 +22,7 @@ CATEGORIES = {
     "mixte": ("🔀", "Combiné Mixte"),
     "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
+    "rebond": ("🔄", "Rebond"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
 
@@ -221,6 +222,8 @@ def noter_ticket(carnet, cle, cat, jour, tk, analyses, maintenant):
         m = dict(par_id.get(s["id"]) or {"id": s["id"], "debut": s["debut"], "domicile": s["domicile"],
                                           "exterieur": s["exterieur"], "sport_key": s.get("sport_key"), "championnat": s.get("championnat", "")})
         jb.append(_jambe(m, court=s["court"], pari=s["issue"], cote=s["cote_t"], proba=s["proba"]))
+        if s.get("rebond"):
+            jb[-1]["rebond"] = True
     nouveau = _prono(cle, jour, cat, jb, tk["cote"], tk["proba"], conseille=True)
     ancien = next((p for p in carnet if p["cle"] == cle), None)
     if ancien:

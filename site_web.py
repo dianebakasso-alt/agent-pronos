@@ -602,6 +602,9 @@ def liste_avis(j):
         ia = (m.get("avis") or {})
         ia_txt = f'<small class="av-ia">🤖 {e(ia.get("resume", ""))}</small>' if ia.get("resume") else ""
         piege = ' <span class="av-p">⚠️ piège</span>' if a.get("piege") else ""
+        if a.get("rebond"):
+            piege += ' <span class="av-r">🔄 rebond</span>'
+            txt = "Bonne équipe en mauvaise passe, encore nettement favorite pour le marché. Suivi à part pour tester la méthode. " + txt
         lignes += f"""<li class="av-l av-{cls}"><div class="av-h"><span>{ecusson(m["domicile"], 22)}{ecusson(m["exterieur"], 22)}</span>
           <div><b>{e(m["domicile"])} – {e(m["exterieur"])}</b><small>{heure(m["debut"])} · {e(championnat(m.get("sport_key", ""), m["championnat"])[1])}</small></div>
           <em class="av-n">{NIVEAUX_TXT[a["niveau"]]}</em></div>
@@ -668,6 +671,30 @@ def section_semaine(s):
   {ticket_html or '<p class="note">Pas encore assez de matchs solides pour un ticket : l\'expert continue de chercher.</p>'}
   <details class="sm-det"><summary>Les {len(suivis)} matchs suivis par l'expert <span class="cpt">▾</span></summary><ul class="sm-liste">{lignes}</ul></details>
 </section>"""
+
+
+def section_autopsie(lecons, ajust):
+    from autopsie import TRAITS, MIN_N
+    if not lecons and not ajust:
+        return '<p class="vide">Dès qu\'un prono sera perdu, l\'expert en fera l\'autopsie ici.</p>'
+    cartes = ""
+    for l in reversed(lecons or []):
+        prev = {"oui": ("bad", "Prévisible"), "en partie": ("warn", "En partie prévisible"), "non": ("ok", "Malchance")}.get(l.get("previsible"), ("att", "?"))
+        cartes += f"""<li class="ap"><div class="ap-h"><b>{e(l["match"])}</b><span class="ap-s">{e(l.get("score") or "")}</span></div>
+          <small>❌ {e(l["pari"])}{f' · cote {l["cote"]:.2f}' if l.get("cote") else ''}{f' · {pct(l["proba"])} de chances' if l.get("proba") else ''}</small>
+          <p>{e(l.get("pourquoi") or "")}</p>
+          {f'<p class="ap-sig">🔎 Signal raté : {e(l["signal_rate"])}</p>' if l.get("signal_rate") else ''}
+          <p class="ap-l"><span class="ap-p ap-{prev[0]}">{prev[1]}</span> 📚 {e(l.get("lecon") or "")}</p></li>"""
+    lignes = ""
+    for k, s in sorted((ajust or {}).items(), key=lambda x: -x[1]["n"]):
+        if k not in TRAITS:
+            continue
+        c = "vert" if s["ecart"] >= 0 else "rouge"
+        etat = ("⬇️ pénalisé" if s["ajust"] < 0 else "⬆️ favorisé" if s["ajust"] > 0 else "observé") if s["n"] >= MIN_N else f"observé ({s['n']}/{MIN_N})"
+        lignes += f"""<tr><td>{e(TRAITS[k])}<small>{pct(s["reussite"])} réussis · {pct(s["attendu"])} attendus · {etat}</small></td>
+          <td class="r"><b class="{c}">{s["ecart"] * 100:+.0f} pts</b></td></tr>"""
+    return f"""{f'<ul class="aps">{cartes}</ul>' if cartes else ''}
+    {f'<h3 class="sous">📐 Ce qu\'il ajuste tout seul</h3><p class="note">Pour chaque type de pari : réussite réelle contre réussite attendue. Au-delà de {MIN_N} pronos, un écart de 8 points change sa sélection.</p><table class="hist">{lignes}</table>' if lignes else ''}"""
 
 
 def section_historique(historique, b):
@@ -1482,6 +1509,17 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .av-p {{ font:700 12px Inter,sans-serif; color:var(--warn); margin-left:6px; }}
 .av-t, .av-ia {{ display:block; font-size:12px; color:var(--muted); margin-top:3px; line-height:1.4; }}
 .av-ia {{ color:var(--text); opacity:.85; }}
+.aps {{ list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:6px; }}
+.ap {{ background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--bad); border-radius:12px; padding:10px 12px; }}
+.ap-h {{ display:flex; justify-content:space-between; gap:8px; }}
+.ap-s {{ font:700 18px "Barlow Condensed",sans-serif; }}
+.ap small {{ display:block; color:var(--muted); font-size:12px; }}
+.ap p {{ font-size:13px; margin-top:6px; line-height:1.4; }}
+.ap-sig {{ color:var(--warn); }}
+.ap-l {{ color:var(--text); }}
+.ap-p {{ font-size:11px; font-weight:700; padding:2px 7px; border-radius:99px; margin-right:4px; border:1px solid currentColor; }}
+.ap-bad {{ color:var(--bad); }} .ap-warn {{ color:var(--warn); }} .ap-ok {{ color:var(--ok); }} .ap-att {{ color:var(--muted); }}
+.av-r {{ font:700 12px Inter,sans-serif; color:#38bdf8; margin-left:6px; }}
 </style>
 </head>
 <body>
@@ -1574,6 +1612,8 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 <div class="onglet" id="t-bilan" hidden>
 <h2>📊 Bilan de l'expert</h2>
 {section_expert(infos.get("expert"))}
+<h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>
+{section_autopsie(infos.get("lecons"), infos.get("ajust"))}
 <h3 class="sous">🧠 Ce que l'agent a appris</h3>
 {section_appris(infos.get("appris"))}
 <h3 class="sous">Paris simples</h3>

@@ -15,6 +15,7 @@ from pathlib import Path
 import memoire
 import expert
 import selection
+import autopsie
 import direct
 import moteur
 import stats
@@ -144,6 +145,20 @@ déplacement, météo, arbitre, et ce qui a changé depuis hier. Sois exigeant :
 une info qui retourne le match, « eviter »."""
 
 
+LECONS_TXT = ""
+
+
+def appel_ia(texte, cfg, cle_ia, max_uses=3):
+    corps = {"model": cfg["modele_ia"], "max_tokens": 2000,
+             "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
+             "messages": [{"role": "user", "content": texte}]}
+    data, _ = http_json("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
+                        headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
+                                 "content-type": "application/json"}, timeout=180)
+    txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
+
+
 def avis_expert(m, v, cfg, cle_ia, profond=False):
     corps = {
         "model": cfg["modele_ia"],
@@ -153,7 +168,7 @@ def avis_expert(m, v, cfg, cle_ia, profond=False):
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
             issue=v["issue"], cote=v["cote"], proba=v["proba"],
             stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]),
-            memoire=m.get("_memoire", "")) + (PROFOND if profond else "")}],
+            memoire=m.get("_memoire", "") + ("\n" + LECONS_TXT if LECONS_TXT else "")) + (PROFOND if profond else "")}],
     }
     data, _ = http_json("https://api.anthropic.com/v1/messages",
                         data=json.dumps(corps).encode(),
@@ -395,6 +410,22 @@ def main():
     combine = moteur.combine_du_jour(an_auj, cfg)        # le combiné suivi dans le bilan (aujourd'hui)
     combos = [c for j in jours for c in j["combos"]]
 
+    # le carnet de l'expert (réglé tôt) : ce qu'il a appris de ses résultats oriente la sélection
+    global LECONS_TXT
+    if demo:
+        import demo as d
+        carnet = d.carnet_fictif(maintenant)
+        lecons = d.lecons_fictives(maintenant)
+    else:
+        carnet = expert.charger(DATA / "carnet.json")
+        try:
+            expert.regler(carnet, maintenant)
+        except Exception as e:
+            print(f"  ! carnet réglement : {e}")
+        lecons = autopsie.charger(DATA / "lecons.json")
+    selection.AJUST = autopsie.ajustements(carnet)
+    LECONS_TXT = autopsie.texte_lecons(lecons)
+
     # la sélection de la semaine : les matchs où l'expert a le plus confiance, suivis jusqu'au jour J
     sel = {"matchs": {}} if demo else selection.charger(DATA / "selection.json")
     focus = selection.mettre_a_jour(sel, [a for a in analyses if not a.get("deja_commence")], maintenant)
@@ -427,7 +458,7 @@ def main():
         m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
     cle_ia = os.environ.get("ANTHROPIC_API_KEY")
     ia = {"etat": "eteinte", "ok": 0, "erreur": None, "souvenirs": sum(1 for m, _, _ in taches if m["_memoire"])}
-    if cfg.get("analyse_ia") and (taches or focus):
+    if cfg.get("analyse_ia") and (taches or focus or autopsie.a_autopsier(carnet, maintenant)):
         if demo:
             import demo as d
             for m, v, cible in taches:
@@ -437,6 +468,13 @@ def main():
             ia["etat"], ia["ok"] = "active", len(taches)
         elif cle_ia:
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
+            for j in autopsie.a_autopsier(carnet, maintenant):
+                try:
+                    autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia), maintenant)
+                    ia["ok"] += 1
+                except Exception as e:
+                    print(f"  ! autopsie {j['domicile']}: {e}")
+            LECONS_TXT = autopsie.texte_lecons(lecons)
             for m in focus[: cfg.get("analyse_profonde_max", 6)]:
                 s = sel["matchs"][m["id"]]
                 v = {"issue": s["issue"], "cote": s["cote"], "proba": s["proba"], "court": s["court"]}
@@ -506,18 +544,20 @@ def main():
         (DATA / "selection.json").write_text(json.dumps(sel, ensure_ascii=False, indent=1), encoding="utf-8")
 
     # le carnet de l'expert : chaque prono noté puis réglé tout seul (scores ESPN, sans crédit)
-    if demo:
-        import demo as d
-        carnet = d.carnet_fictif(maintenant)
-    else:
-        carnet = expert.charger(DATA / "carnet.json")
-        try:
-            expert.regler(carnet, maintenant)
-        except Exception as e:
-            print(f"  ! carnet réglement : {e}")
+    if not demo:
         expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant,
                      semaine=ticket_semaine, analyses_semaine=analyses)
         expert.noter_ticket(carnet, f"jour:{auj}", "jour", auj, jours[0].get("ticket"), analyses, maintenant)
+        # les « rebonds » du jour : suivis à part pour savoir si la méthode rapporte
+        for a in jours[0]["analyses"]:
+            c = selection.candidat(a)
+            if c and c.get("rebond"):
+                expert.noter_ticket(carnet, f"rebond:{a['id']}", "rebond", auj,
+                                    {"jambes": [{"id": a["id"], "debut": a["debut"], "domicile": a["domicile"], "exterieur": a["exterieur"],
+                                                 "court": c["court"], "issue": c["issue"], "proba": c["proba"], "cote_t": c["cote"], "rebond": True}],
+                                     "cote": c["cote"], "proba": c["proba"]}, analyses, maintenant)
+        autopsie.enrichir(carnet, analyses)
+        (DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
     # l'expert apprend de ses résultats : un type de ticket qui perd sur la durée n'est plus conseillé
     en_pause = expert.pauses(carnet)
@@ -538,6 +578,7 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
+        "lecons": lecons[-8:], "ajust": selection.AJUST,
         "semaine": {"ticket": ticket_semaine, "suivis": sorted(sel["matchs"].values(), key=lambda s: s["debut"])},
         "genere": maintenant,
         "demo": demo,

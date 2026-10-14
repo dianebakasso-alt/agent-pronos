@@ -13,7 +13,8 @@ from datetime import datetime
 NB_SUIVIS = 6
 P_MIN, P_MAX = 0.45, 0.82       # ni loterie, ni cote ridicule
 EDGE_MIN = -0.06                # la cote ne doit pas être trop rabotée par le bookmaker
-BAISSE_MAX = 0.06               # si les chances baissent de plus de 6 points : retiré
+BAISSE_MAX = 0.06
+AJUST = {}                      # rempli par l'agent : ce que l'expert a appris (autopsie.ajustements)               # si les chances baissent de plus de 6 points : retiré
 
 
 def _dt(iso):
@@ -44,13 +45,24 @@ def candidat(m):
         if i["court"] == "N" or not (P_MIN <= i["proba"] <= P_MAX) or i["edge"] < EDGE_MIN:
             continue
         f = _forme_ok(m, i["court"])
+        rebond = False
         if f is False:
-            continue
+            # mauvaise passe… mais le marché la donne encore nettement favorite : c'est un « rebond » possible
+            if i["proba"] >= 0.58 and i["edge"] >= -0.03:
+                rebond, f = True, None
+            else:
+                continue
         note = i["proba"] + 1.5 * i["edge"] + (0.05 if f else 0) + (0.03 if m.get("value") else 0) \
             + min(m.get("nb_bookmakers", 0), 10) * 0.003
+        # ce que l'expert a appris de ses résultats passés (types de paris qui ratent plus que prévu)
+        traits = (["exterieur"] if i["court"] == "2" else []) + (["petite_cote"] if i["cote"] < 1.40 else []) \
+            + (["favori_net"] if i["proba"] >= 0.65 else []) + (["rebond"] if rebond else []) \
+            + (["doute_ia"] if (m.get("avis") or {}).get("avis") == "prudence" else [])
+        note += sum(AJUST.get(tr, {}).get("ajust", 0) for tr in traits)
         if not best or note > best["note"]:
             best = {"court": i["court"], "issue": i["issue"], "proba": i["proba"], "cote": i["cote"],
-                    "bk": i["bookmaker"], "edge": i["edge"], "forme": f, "note": round(note, 4)}
+                    "bk": i["bookmaker"], "edge": i["edge"], "forme": f, "note": round(note, 4),
+                    "rebond": rebond, "traits": traits}
     return best
 
 
@@ -84,7 +96,7 @@ def mettre_a_jour(sel, analyses, maintenant):
             if m["id"] in suivis:
                 continue
             c = candidat(m)
-            if c:
+            if c and not c.get("rebond"):
                 cands.append((c["note"], m, c))
         for _, m, c in sorted(cands, key=lambda x: -x[0])[:places]:
             suivis[m["id"]] = {
@@ -159,7 +171,7 @@ def charger(chemin):
 def ticket_du_jour(analyses, bookmakers, avis_connus=None):
     """2 à 3 matchs du jour, les plus solides, avec au moins 25 % de chances de passer."""
     sel = {"matchs": {}}
-    cands = [(c["note"], m, c) for m in analyses if (c := candidat(m))]
+    cands = [(c["note"], m, c) for m in analyses if (c := candidat(m)) and not c.get("rebond")]
     for _, m, c in sorted(cands, key=lambda x: -x[0])[:5]:
         s = {"id": m["id"], "debut": m["debut"], "domicile": m["domicile"], "exterieur": m["exterieur"],
              "championnat": m["championnat"], "sport_key": m.get("sport_key"), "court": c["court"], "issue": c["issue"],
@@ -208,5 +220,6 @@ def avis_match(m):
     if v and a != "eviter":
         niveau = ordre[max(1, k)]      # un value bet reste jouable, même s'il n'est pas sûr
     piege = fav["proba"] >= 0.5 and _forme_ok(m, fav["court"]) is False
-    return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege,
-            "value": bool(v and a != "eviter"), "doute": a == "prudence"}
+    rb = bool((candidat(m) or {}).get("rebond")) and not (v and a != "eviter")
+    return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege and not rb,
+            "value": bool(v and a != "eviter"), "doute": a == "prudence", "rebond": rb}

@@ -121,3 +121,16 @@ def carnet_fictif(maintenant):
                                 "pari": f"Victoire {d}", "court": "1", "cote": round(cote, 2),
                                 **({"ok": ok, "score": "2-1" if ok else "0-1"} if regle else {})}]})
     return out
+
+
+def lecons_fictives(maintenant):
+    j = (maintenant - timedelta(days=1)).strftime("%Y-%m-%d")
+    return [
+        {"date": j, "match": "PAOK - Kalamata", "pari": "Victoire PAOK", "cote": 1.17, "proba": 0.76, "score": "1-3",
+         "pourquoi": "Exemple : PAOK a fait tourner après son match européen et a encaissé deux buts sur coups de pied arrêtés.",
+         "previsible": "en partie", "signal_rate": "Match européen trois jours avant, rotation annoncée en conférence.",
+         "tags": ["rotation", "fatigue"], "lecon": "Un favori qui sort d'un match européen en semaine perd beaucoup de sa marge."},
+        {"date": j, "match": "Jaguares - Tolima", "pari": "Victoire Tolima", "cote": 1.54, "proba": 0.59, "score": "3-2",
+         "pourquoi": "Exemple : Tolima a dominé mais a encaissé à la 93e minute.", "previsible": "non", "signal_rate": "",
+         "tags": ["malchance"], "lecon": "Un but à la dernière minute reste de la malchance : ne pas changer de méthode pour ça."},
+    ]
