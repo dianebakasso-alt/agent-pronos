@@ -1,0 +1,73 @@
+[
+ {
+  "date": "2026-10-14",
+  "match": "Viking FK - Bayern Munich",
+  "pari": "Victoire Bayern Munich",
+  "cote": 1.1,
+  "proba": 0.869,
+  "score": "3-3",
+  "pourquoi": "Le Bayern a encaissé très tôt sur corner (2e) puis sur une contre-attaque éclair (38e). Il a ensuite remonté à 3-2 grâce à Kane (penalty et tête) et Díaz, mais Olise a été expulsé (74e) pour un second jaune et Viking a égalisé à la 90e sur une perte de balle.",
+  "previsible": "en partie",
+  "signal_rate": "Le Bayern avait déjà concédé un but très tôt le samedi précédent à Augsbourg. Les rapports d'avant-match insistaient sur le danger des coups de pied arrêtés de Viking, et le Bayern défendait de façon passive. Le terrain synthétique et un déplacement en Norvège étaient aussi des facteurs de risque.",
+  "tags": [
+   "defense_fragile",
+   "carton_rouge",
+   "penalty",
+   "favori_surcote"
+  ],
+  "lecon": "Une cote très basse (1.1) ne laisse aucune marge face à un adversaire dangereux sur coups de pied arrêtés, surtout si le favori a déjà montré des failles défensives à ses derniers matchs, et un seul carton rouge peut faire perdre un match que l'on contrôle."
+ },
+ {
+  "date": "2026-10-14",
+  "match": "Inter Milan - Club Brugge",
+  "pari": "Victoire Inter Milan",
+  "cote": 1.22,
+  "proba": 0.7712,
+  "score": "3-4",
+  "pourquoi": "Bruges a ouvert le score sur un penalty provoqué par Çalhanoğlu (30'), puis a puni la ligne haute de l'Inter en contre. Tresoldi a signé un triplé, dont un but né d'un malentendu Akanji-Martínez, et Vermant a marqué en contre à 87'. Le match a été ouvert (xG 3,93 contre 4,26, 12 tirs cadrés contre 8) et l'Inter, avec ses 2 buts de Lautaro et celui de Bonny dans les arrêts de jeu, a trop concédé pour s'imposer.",
+  "previsible": "en partie",
+  "signal_rate": "L'Inter restait sur 3 défaites de suite en Ligue des champions avant ce match (la 4e est arrivée ici). Elle enchaînait les contre-performances en Europe, avec une défense fébrile et un pressing haut qui laissait des espaces. Une cote de 1.22 (77 %) surestimait donc un favori en méforme.",
+  "tags": [
+   "favori_surcote",
+   "defense_fragile",
+   "penalty"
+  ],
+  "lecon": "Une cote très basse sur un favori en série de défaites, avec une défense qui concède beaucoup d'occasions et joue haut, est souvent surévaluée, car un adversaire organisé qui joue en contre peut le battre même sans dominer."
+ },
+ {
+  "date": "2026-10-14",
+  "match": "Wolverhampton Wanderers - Bolton Wanderers",
+  "pari": "Victoire Wolverhampton Wanderers",
+  "cote": 1.36,
+  "proba": 0.6879,
+  "score": "1-3",
+  "pourquoi": "Wolves a dominé la possession (58 %) et le xG (2,21 contre 1,55 selon ESPN), mais a perdu 1-3 face à une équipe de Bolton plus tranchante. Bolton a ouvert le score après une main molle de Jose Sa (28'), Wolves a égalisé à la 50', puis a encaissé deux buts en fin de match : Dalby de près (72') et Sheehan d'une frappe lointaine sur coup de pied arrêté (82'). Sky Sports juge l'ouverture du score de Bolton méritée, car les visiteurs avaient déjà eu des occasions franches avant le but.",
+  "previsible": "en partie",
+  "signal_rate": "Une cote de 1.36 (69 %) laissait peu de marge à un match piégeux à domicile contre un adversaire pourtant plus faible au classement (Bolton : 10 pts, 3V-1N-5D). Wolves avait gagné tous ses matchs à domicile jusque-là, mais le marché a probablement surestimé la série. Le gardien de Wolves était fragile et le match s'est joué sur peu d'actions, ce qui augmente la variance.",
+  "tags": [
+   "malchance",
+   "attaque_inefficace",
+   "defense_fragile",
+   "favori_surcote"
+  ],
+  "lecon": "Un favori à cote basse (~1.35) perd régulièrement même s'il domine les statistiques, car une erreur individuelle et l'efficacité de l'adversaire suffisent à faire basculer un match, donc la valeur est rarement du côté du favori dans ces cas-là."
+ },
+ {
+  "date": "2026-10-14",
+  "match": "Burnley - Charlton Athletic",
+  "pari": "Victoire Burnley",
+  "cote": 1.59,
+  "proba": 0.587,
+  "score": "2-2",
+  "pourquoi": "Burnley menait 1-0 puis 2-1 (but de Ramazani à la 57e) mais a concédé l'égalisation de Mesik à la 96e minute, après un but de Ramsay dès le retour des vestiaires. Charlton a dominé les statistiques de qualité d'occasions (xG ≈ 2,1 contre ≈ 1,1 pour Burnley, 4 grosses occasions contre 1), donc le nul n'est pas un pur accident.",
+  "previsible": "en partie",
+  "signal_rate": "Burnley restait sur 360 jours sans victoire en championnat à domicile, était privé d'Amdouni (blessé) et venait d'enchaîner après un déplacement à Watford. Le marché (59 %) surestimait donc probablement un favori sans solidité à domicile, face à un Charlton compact et dangereux sur coups de pied arrêtés et longs ballons.",
+  "tags": [
+   "favori_surcote",
+   "defense_fragile",
+   "malchance",
+   "blessure"
+  ],
+  "lecon": "Un favori à cote basse qui n'a plus gagné à domicile depuis longtemps et qui perd un attaquant clé est souvent surcoté, et une avance d'un but reste fragile quand l'adversaire crée plus d'occasions."
+ }
+]

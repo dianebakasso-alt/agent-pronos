@@ -808,18 +808,6 @@
   "nom": "Rennes",
   "faits": [
    {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Merlin (concurrencé par Nagida) et Nordin sont écartés du groupe pour raisons sportives."
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Calendrier chargé : Paris FC en L1 le 18/10, puis Juventus en Europa League le 22/10. Rotation possible."
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Haise : 0 victoire en Europa League sur 17 matchs (chiffre annoncé les jours précédents, non revérifié aujourd'hui)."
-   },
-   {
     "date": "2026-10-13T12:11:36",
     "texte": "Haise n'a gagné aucun de ses 17 derniers matchs d'Europa League (5 nuls, 12 défaites depuis 2009/10) ; à revérifier après le match du 15/10."
    },
@@ -854,6 +842,18 @@
    {
     "date": "2026-10-14T11:56:58",
     "texte": "Merlin écarté du groupe après la défaite 0-4 à Lyon ; Nagida titulaire à gauche."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Haise reste sans victoire en Ligue Europa, 17 matchs de série après le nul à Graz. Un autre décompte annonce 19 matchs en Europe toutes compétitions. À revérifier après le 15/10."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Merlin est écarté du groupe après le 0-4 à Lyon, et Nagida est titulaire à gauche."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Rennes est 3e de Ligue 1 avec 13 points. Calendrier : Paris FC le 18/10, Juventus le 22/10, puis Olympiakos."
    }
   ]
  },
@@ -2100,18 +2100,6 @@
   "nom": "OFI Crete",
   "faits": [
    {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Prochains matchs européens : Leverkusen à domicile le 22/10, Beer-Sheva à l'extérieur le 05/11."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Blessés : Sielis (cuisse, quelques semaines selon FotMob), Iseka et Marinakis (durée inconnue) ; Kenourgiakis et Romano sont aussi touchés."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Série en cours : 2-2 contre Asteras puis défaite 3-0 à l'AEK avant ce déplacement. Prochain match européen : Leverkusen à domicile le 22/10."
-   },
-   {
     "date": "2026-10-12T12:27:51",
     "texte": "Blessés : Iseka (adducteur), Sielis (durée plus longue) et Marinakis (durée inconnue). Kenourgiakis, Romano et Nikolaou sont aussi touchés."
    },
@@ -2146,6 +2134,18 @@
    {
     "date": "2026-10-14T11:56:58",
     "texte": "Prochains matchs : Kalamata le 18/10, Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11 ; fragile sur coups de pied arrêtés."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Leya Iseka et Sielis (cuisse) et Marinakis (blessé) sont absents pour plusieurs semaines."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Cantalapiedra est suspendu pour le match de championnat contre Kalamata (18/10), mais disponible en Europe."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "La défense est fragile sur coups de pied arrêtés (défaite 0-3 à l'AEK). Prochains matchs : Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11."
    }
   ]
  },
@@ -2657,22 +2657,6 @@
   "nom": "ŠK Slovan Bratislava",
   "faits": [
    {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Slovan n'a pris aucun point en 9 matchs de phase principale de Ligue des champions, dont le 1-6 contre le PSG."
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Mauvaise forme nationale : nul 1-1 à Skalica, avec une direction qui parle d'un résultat inacceptable. Kucharevych est blessé depuis un moment et devrait revenir d'ici environ une semaine, Medveděv es"
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Calendrier chargé : 9 matchs en 29 jours, avec Rome et LASK Linz à venir en Ligue des champions."
-   },
-   {
-    "date": "2026-10-13T12:11:36",
-    "texte": "Yaya Touré est entraîneur depuis l'été 2026. L'effectif a été largement remanié : Kashia, Weiss et Mak ont pris leur retraite, Strelec, Tolič, Savvidis, Zuberu et Metsoko sont partis."
-   },
-   {
     "date": "2026-10-13T12:11:36",
     "texte": "0 point en Ligue des champions après le 1-6 contre le PSG. En championnat : 4e, à 6 points du leader, après un nul 1-1 à Skalica et une série irrégulière."
    },
@@ -2703,28 +2687,28 @@
    {
     "date": "2026-10-14T11:56:58",
     "texte": "Kucharevych est blessé, retour attendu dans environ une semaine. Šporar est le principal danger offensif."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Yaya Touré est entraîneur depuis l'été 2026 (premier poste de numéro un), avec un effectif très remanié après les départs de Strelec, Tolič, Savvidis et Zuberu et les retraites de Kashia, Weiss et Mak"
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Aucun point en Ligue des champions après le 1-6 contre le PSG. Prochains matchs européens : Rome le 20/10 et LASK le 3/11."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Le club est 4e du championnat, à 6 points du leader, alors qu'il a gagné huit titres de suite."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Šporar est le principal danger offensif. Kucharevych est blessé."
    }
   ]
  },
  "vfb stuttgart": {
   "nom": "VfB Stuttgart",
   "faits": [
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Jeff Chabot s'est blessé à Paderborn (problème musculaire, examen sans gravité) : à suivre pour la suite du calendrier."
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Début de saison irrégulier en Bundesliga (1 victoire, 3 défaites après 4 journées, puis 2-0 à Paderborn), mais démarrage solide en Ligue des champions (3-1 contre Viking)."
-   },
-   {
-    "date": "2026-10-12T12:27:51",
-    "texte": "Le calendrier est chargé : HSV le 17/10 puis Atlético le 20/10. Mittelstädt (blessure au talon/à la cheville) est à surveiller."
-   },
-   {
-    "date": "2026-10-13T12:11:36",
-    "texte": "Absences durables : Al-Dakhil (genou) et Tiago Tomás reviendraient fin octobre, Diehl est absent longtemps, Zagadou et Stergiou ne sont pas inscrits en Ligue des champions."
-   },
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Mittelstädt (blessé à Paderborn) est incertain pour le HSV (17/10) et l'Atlético (20/10)."
@@ -2756,6 +2740,22 @@
    {
     "date": "2026-10-14T11:56:58",
     "texte": "Calendrier chargé : HSV le 17/10 puis Atlético le 20/10, risque de rotation. Début de saison irrégulier en Bundesliga."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Mittelstädt est absent pour une durée indéterminée. Tiago Tomás, Diehl, Zagadou, Al-Dakhil et Nartey sont absents, avec des retours annoncés plutôt fin octobre."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Début de saison irrégulier en Bundesliga (2 victoires seulement), avec des défaites contre Dortmund et Hoffenheim."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Seimen (20 ans) est le gardien numéro un prévu, avec Bredlow en alternance à cause de la charge de matchs."
+   },
+   {
+    "date": "2026-10-14T12:07:11",
+    "texte": "Calendrier chargé : HSV le 17/10 puis Atlético le 20/10."
    }
   ]
  },
