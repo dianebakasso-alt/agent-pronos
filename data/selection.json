@@ -87,11 +87,6 @@
     {
      "jour": "2026-10-12",
      "avis": "prudence",
-     "resume": "Rennes joue à domicile avec un groupe quasi complet et sort d'un 4-1 contre Auxerre. Mais la cote de 1.25 est basse face à un OFI en grande forme, et Rennes a un historique européen fragile (1 point en 1 match, Haise sans victoire en Europa League). Le match d'après, à Paris FC dimanche, rend aussi une rotation possible."
-    },
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
      "resume": "Rennes est favori à domicile : il a besoin d'une victoire, l'OFI a trois absents et vient de perdre 3-0 à l'AEK. Mais la cote de 1.25 est courte (les meilleures cotes françaises sont autour de 1.30-1.34), l'attaque rennaise manque d'efficacité en Europe, Haise n'a jamais gagné en C3, et une rotation est possible avant Paris FC."
     },
     {
@@ -108,27 +103,33 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "Rennes part favori, avec un groupe complet et un OFI Crète amoindri, mais la cote de 1.25 laisse très peu de marge. Rennes reste fragile en Europe (nul 0-0 à Graz, Haise sans victoire en Europa League) et une rotation est possible avant la Juventus."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "Rien de concret ne contredit le pari : Rennes a un groupe complet et l'OFI Crète est privé de trois joueurs. Mais à 1,25 la marge est mince, vu la malédiction européenne de Haise, un Rennes irrégulier et un OFI solide défensivement en Europe (0 but encaissé en 3 matchs européens)."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "Rennes part favori, avec un groupe complet et un OFI Crète amoindri, mais la cote de 1.25 laisse très peu de marge. Rennes reste fragile en Europe (nul 0-0 à Graz, Haise sans victoire en Europa League) et une rotation est possible avant la Juventus.",
+    "resume": "Rien de concret ne contredit le pari : Rennes a un groupe complet et l'OFI Crète est privé de trois joueurs. Mais à 1,25 la marge est mince, vu la malédiction européenne de Haise, un Rennes irrégulier et un OFI solide défensivement en Europe (0 but encaissé en 3 matchs européens).",
     "points": [
-     "<cite index='44-1,44-2'>Rennes aligne un groupe complet. L'OFI est privé de Leya Iseka, Sielis et Marinakis.</cite> <cite index='53-4'>La presse grecque confirme que Iseka et Sielis ne sont pas du voyage.</cite>",
-     "<cite index='33-7,33-8'>Cantalapiedra, expulsé contre l'AEK, n'est suspendu que pour le prochain match de championnat contre Kalamata. Il peut jouer contre Rennes.</cite> <cite index='30-5'>Les trois buts de l'AEK sont venus de coups de pied arrêtés.</cite>",
-     "<cite index='11-2'>Rennes a battu Auxerre 4-1 dimanche et est 3e avec 13 points.</cite> <cite index='20-6'>Rennes a la meilleure attaque de L1 (12 buts en six matchs, dont 10 en quatre matchs à domicile).</cite> Mais <cite index='43-7'>Rennes a quitté le terrain sous les sifflets à la mi-temps</cite> et la défense reste poreuse.",
-     "Signal de surprise : <cite index='16-11'>après le nul à Graz, Haise comptait 17 matchs d'Europa League sans victoire (5 nuls, 12 défaites)</cite>. Une autre source parle de 19 matchs, donc le chiffre exact reste incertain. <cite index='11-14'>Rennes enchaîne avec le Paris FC</cite>, puis la Juventus le 22/10, d'où un risque de rotation. Les compositions probables restent contradictoires : un forum de supporters annonce une équipe remaniée, la presse un onze type.",
-     "<cite index='2-4'>L'OFI a battu Hoffenheim 2-0</cite> et <cite index='33-10'>n'a perdu avec deux buts d'écart ou plus que dans un seul de ses 14 derniers matchs</cite> (le 0-3 contre l'AEK, à dix). Je n'ai pas trouvé l'arbitre ni de météo notable."
+     "Rennes n'a ni suspendu ni blessé. L'OFI Crète est privé de Marinakis, Sielis et Leya Iseka, et Cantalapiedra, expulsé en championnat, reste disponible en Europe.",
+     "Pas de signal de fatigue : Rennes n'a pas joué en semaine avant ce match (Auxerre le 11/10) et enchaîne avec Paris FC le 18/10 puis la Juventus le 22/10, ce qui laisse planer un risque de rotation. L'OFI joue Kalamata puis Leverkusen.",
+     "Enjeu réel pour Rennes : les Rouge et Noir doivent gagner ce premier match à domicile pour espérer finir dans les 24 premiers. Ils n'ont qu'un point (0-0 à Graz).",
+     "Série défavorable : Haise en était à 17 matchs consécutifs sans victoire en Ligue Europa (5 nuls, 12 défaites) après Graz. Un autre média parle de 19 matchs sans victoire en compétitions européennes.",
+     "Côté OFI : 2-0 contre Hoffenheim et aucun but encaissé lors de ses trois derniers matchs européens. Rennes a pourtant été bien plus en difficulté que le score (4-1) contre Auxerre. Arbitre : Andrea Colombo (ITA)."
     ],
     "a_retenir": {
      "Rennes": [
-      "Haise : série noire en Europa League (17 matchs sans victoire d'après la presse, un autre décompte parle de 19). À revérifier après le 15/10.",
-      "3e de Ligue 1 avec 13 points après le 4-1 contre Auxerre. Calendrier chargé : Paris FC le 18/10, Juventus le 22/10, puis Olympiakos."
+      "Haise sans victoire en Europa League depuis 2009/10 (5 nuls, 12 défaites, nul 0-0 à Graz inclus) : à revérifier après le 15/10.",
+      "3e de Ligue 1 avec 13 points. Calendrier chargé : Paris FC le 18/10, Juventus le 22/10, puis Olympiakos.",
+      "Merlin écarté du groupe après la défaite 0-4 à Lyon ; Nagida titulaire à gauche."
      ],
      "OFI Crete": [
-      "Leya Iseka et Sielis (problèmes musculaires, durée plus longue) et Marinakis (pas encore joué cette saison) sont absents pour plusieurs semaines.",
-      "Cantalapiedra est suspendu pour le match de championnat contre Kalamata le 18/10. Il reste disponible en Europe.",
-      "Défense fragile sur coups de pied arrêtés (3 buts encaissés ainsi contre l'AEK). Prochains matchs européens : Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11."
+      "Leya Iseka et Sielis (cuisse) et Marinakis (pas encore joué cette saison) absents pour plusieurs semaines.",
+      "Cantalapiedra suspendu pour Kalamata (18/10) en championnat, mais disponible en Europe.",
+      "Prochains matchs : Kalamata le 18/10, Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11 ; fragile sur coups de pied arrêtés."
      ]
     }
    }
@@ -142,20 +143,15 @@
    "sport_key": "soccer_uefa_champs_league",
    "court": "2",
    "issue": "Victoire VfB Stuttgart",
-   "proba": 0.743750889756275,
+   "proba": 0.7149136512572957,
    "proba_depart": 0.7520672921254881,
-   "cote": 1.27,
+   "cote": 1.33,
    "bk": "Betclic (FR)",
    "note": 0.7148,
    "forme": null,
    "ajoute": "2026-10-12",
    "statut": "suivi",
    "analyses": [
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Stuttgart est nettement supérieur sur le papier : Slovan est affaibli, sans victoire en Ligue des champions et venait de perdre lourdement lors de la 1re journée. Mais la cote de 1.27 laisse peu de marge face à une défense stuttgartoise amoindrie (Mittelstädt probablement absent), une forme irrégulière en Bundesliga et un possible turnover avant Atlético Madrid."
-    },
     {
      "jour": "2026-10-12",
      "avis": "prudence",
@@ -175,28 +171,33 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "Stuttgart reste favori face à un Slovan sans point en Ligue des champions, mais la cote de 1.27 ne laisse aucune marge. L'effectif est très amoindri (Mittelstädt forfait, huit autres absents), le jeune gardien Seimen est incertain, la pelouse est abîmée et Hoeneß garde sa rotation secrète avant l'Atlético."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "Stuttgart reste favori (Slovan a 0 point et reste sans victoire contre lui), mais une cote de 1.33 laisse peu de marge face à ces signaux. Les absences nombreuses, un gardien de 20 ans, la rotation possible avant HSV et l'Atlético, et la pelouse abîmée pèsent contre un favori « sûr »."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "Stuttgart reste favori face à un Slovan sans point en Ligue des champions, mais la cote de 1.27 ne laisse aucune marge. L'effectif est très amoindri (Mittelstädt forfait, huit autres absents), le jeune gardien Seimen est incertain, la pelouse est abîmée et Hoeneß garde sa rotation secrète avant l'Atlético.",
+    "resume": "Stuttgart reste favori (Slovan a 0 point et reste sans victoire contre lui), mais une cote de 1.33 laisse peu de marge face à ces signaux. Les absences nombreuses, un gardien de 20 ans, la rotation possible avant HSV et l'Atlético, et la pelouse abîmée pèsent contre un favori « sûr ».",
     "points": [
-     "Mittelstädt est forfait à cause d'une plaie au talon. Chabot, remplacé à Paderborn, est de nouveau disponible. Il y a donc deux corrections par rapport à mes notes : la blessure de Mittelstädt n'est pas musculaire, et Chabot est apte.",
-     "Tipico donne neuf absents côté Stuttgart : Zagadou, Tiago Tomás, Diehl, Stergiou, Drljaca, Yigit, Nartey, Al-Dakhil et Mittelstädt. Hoeneß garde pour l'instant secrète sa rotation pendant ce calendrier chargé. Il n'a pas dit si Seimen, 20 ans, sera encore titulaire dans les buts après ses débuts en Bundesliga à Paderborn.",
-     "Stuttgart n'a obtenu que sa deuxième victoire en championnat à Paderborn (2-0). Le club venait d'enchaîner deux défaites en championnat, contre Hoffenheim et Dortmund. Il a bien démarré en Ligue des champions avec un 3-1 contre Viking. L'Atlético suit le 20/10, avec le HSV le 17/10 entre-temps.",
-     "Slovan est invaincu depuis quatre matchs, toutes compétitions confondues. Sa dernière défaite est le 1-6 contre le PSG. Il a fait 1-1 à Skalica et est 4e du championnat, à six points du leader. Mes notes disaient « 0 point en 9 matchs » : ce total cumule les matchs de phase principale des deux saisons, et il n'y a eu qu'un match cette saison. Toure dit que tous les joueurs de la liste européenne sont en bonne santé. Tipico ne signale que Kukharevych comme absent.",
-     "La pelouse du Tehelné pole a été abîmée par un concert récent, et les travaux continuaient mardi. L'arbitre est Peljto (Bosnie-Herzégovine). Stuttgart n'a jamais perdu contre Slovan (deux victoires en trois matchs). Slovan reste sur trois matchs à domicile sans victoire."
+     "Stuttgart sans Mittelstädt, Zagadou, Al-Dakhil, Tiago Tomás, Diehl ni Nartey. Chabot, sorti blessé à Paderborn, est annoncé apte. Stergiou n'est pas inscrit en Ligue des champions.",
+     "Gardien non confirmé : Hoeneß garde le secret sur Seimen (20 ans, un seul match de Bundesliga, titulaire à Paderborn). Bredlow doit aussi jouer à cause de la charge de matchs. Hoeneß n'a pas non plus dévoilé sa rotation, avec HSV le 17/10 et l'Atlético le 20/10.",
+     "La pelouse du Tehelné pole est décrite comme très abîmée, ce qui peut gêner le jeu de Stuttgart. Hoeneß dit s'y adapter. Slovan a un nouvel entraîneur (Yaya Touré), un effectif remanié, 0 point après le 1-6 contre le PSG, et aucune victoire lors de ses trois derniers matchs au Tehelné pole.",
+     "Les pronostiqueurs voient Stuttgart gagnant, mais avec une confiance limitée. WinDrawWin parle d'une confiance faible et ne recommande qu'une petite mise. Les autres sites misent surtout sur un score avec but des deux côtés, car Šporar est en forme et la défense de Slovan est poreuse. Les cotes vont de 1.26 à 1.33.",
+     "Stuttgart reste dans le haut du tableau européen après son 3-1 contre Viking, mais son début de saison en Bundesliga est irrégulier. Undav n'a pas encore marqué cette saison. Les sources divergent sur le détail des résultats récents de Stuttgart."
     ],
     "a_retenir": {
      "ŠK Slovan Bratislava": [
-      "Yaya Touré est entraîneur depuis l'été 2026 (premier poste d'entraîneur principal), avec un effectif très remanié : Kashia, Weiss et Mak ont pris leur retraite, Strelec, Tolič, Savvidis et Zuberu sont partis.",
-      "Aucun point en Ligue des champions cette saison après le 1-6 contre le PSG ; 4e du championnat, à 6 points du leader, après un 1-1 à Skalica.",
-      "Prochains matchs européens : Rome le 20/10 et LASK le 3/11. Kucharevych est toujours blessé."
+      "Yaya Touré est entraîneur depuis l'été 2026 (premier poste de numéro un) et l'effectif est très remanié : Kashia, Weiss et Mak ont pris leur retraite, Strelec, Tolič, Savvidis et Zuberu sont partis.",
+      "0 point en Ligue des champions après le 1-6 contre le PSG. Prochains matchs européens : Rome le 20/10 et LASK le 3/11.",
+      "Kucharevych est blessé, retour attendu dans environ une semaine. Šporar est le principal danger offensif."
      ],
      "VfB Stuttgart": [
-      "Mittelstädt est absent à cause d'une plaie au talon, pour une durée indéterminée.",
-      "Tiago Tomás, Diehl, Zagadou et Al-Dakhil sont absents ; leurs retours sont annoncés pour fin octobre. Stergiou et Zagadou ne sont pas inscrits en Ligue des champions.",
-      "Début de saison irrégulier en Bundesliga (2 victoires seulement) et Seimen est le nouveau gardien numéro un. Le calendrier est chargé : HSV le 17/10, Atlético le 20/10."
+      "Absences longues : Tiago Tomás, Diehl, Zagadou, Al-Dakhil et Nartey, retours annoncés plutôt fin octobre. Mittelstädt est absent à cause d'une plaie au talon, pour une durée indéterminée.",
+      "Seimen (20 ans) est le gardien numéro un prévu, avec Bredlow en alternance à cause du calendrier.",
+      "Calendrier chargé : HSV le 17/10 puis Atlético le 20/10, risque de rotation. Début de saison irrégulier en Bundesliga."
      ]
     }
    }
@@ -221,11 +222,6 @@
    "analyses": [
     {
      "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Benfica reste très favori à domicile face à un Celtic qui sort de trois défaites, mais la cote de 1.22 ne laisse aucune marge. Benfica a plusieurs absents et une fin de match fragile contre Guimarães, tandis que Celtic va mieux et que Carter-Vickers est incertain."
-    },
-    {
-     "jour": "2026-10-12",
      "avis": "confirme",
      "resume": "Rien d'important ne contredit le pari : Benfica est quasi au complet, en forme à domicile et affronte un Celtic en crise européenne, privé de Carter-Vickers. Le principal bémol est la cote de 1.21, très courte, qui laisse peu de valeur et peu de marge si le match dérape."
     },
@@ -243,32 +239,36 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "Celtic est affaibli (28e, sans Carter-Vickers ni Johnston) et Benfica reste largement favori à domicile. Mais Marco Silva annonce une rotation importante (jusqu'à 8 changements évoqués) avec un couloir droit fragile, et une cote de 1.22 laisse peu de marge pour une équipe remaniée."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "Benfica est nettement supérieur (invaincu à domicile contre les clubs écossais, Celtic en crise et sans Carter-Vickers), mais la cote de 1.22 laisse peu de marge. Marco Silva annonce une rotation possible, avec des incertitudes à droite de la défense et en attaque (Durán), donc le risque d'un nul ou d'une surprise est réel."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "Celtic est affaibli (28e, sans Carter-Vickers ni Johnston) et Benfica reste largement favori à domicile. Mais Marco Silva annonce une rotation importante (jusqu'à 8 changements évoqués) avec un couloir droit fragile, et une cote de 1.22 laisse peu de marge pour une équipe remaniée.",
+    "resume": "Benfica est nettement supérieur (invaincu à domicile contre les clubs écossais, Celtic en crise et sans Carter-Vickers), mais la cote de 1.22 laisse peu de marge. Marco Silva annonce une rotation possible, avec des incertitudes à droite de la défense et en attaque (Durán), donc le risque d'un nul ou d'une surprise est réel.",
     "points": [
-     "Marco Silva juge la rotation « possible » et veut donner du temps de jeu à des joueurs de l'équipe B. La presse portugaise évoque jusqu'à huit changements. Benfica n'a pas de match ce week-end et reçoit Omonia une semaine plus tard.",
-     "Barrenechea est le seul absent confirmé. Kaminski reste en doute (lésion musculaire). Durán a ressenti une gêne pendant la trêve mais n'est pas exclu. Bah a été remplacé contre Vitória pour fatigue à la cuisse. Les deux latéraux droits de métier pourraient manquer. Aursnes pourrait être décalé en défense.",
-     "Carter-Vickers a peu de chances d'être apte (« Thursday might be too early »). Johnston et Osmand reviennent de blessures aux ischio-jambiers, mais le match arrive probablement trop tôt. Jota n'est pas dans la liste européenne. Celtic reste 28e après sa défaite 3-1 contre Ferencváros.",
-     "Forme : Benfica a gagné 9 de ses 10 derniers matches, dont 2-0 à l'AC Milan. Benfica est invaincu à domicile. Le Celtic a perdu trois de ses quatre derniers matches et vient de gagner 2-0 à Motherwell. La presse portugaise parle de « signes de vie » du Celtic.",
-     "L'arbitre est le Monténégrin Nikola Dabanovic. Météo annoncée : 25° et ciel dégagé. Cotes : 1.23 Benfica, 4.90 nul, 7.90 Celtic. Les pronostiqueurs voient surtout un 3-0 ou 3-1."
+     "<cite index='7-15,7-16'>Marco Silva a dit qu'une rotation était « une possibilité », avec des joueurs de l'équipe B qui pourraient jouer</cite>. <cite index='21-3,21-4'>Une partie de la presse portugaise y voit un bluff, car Benfica ne joue pas ce week-end</cite>. <cite index='22-3'>Le Record parle d'une rotation contrôlée, sans révolution</cite>.",
+     "<cite index='12-7'>Absents côté Benfica : Bah, Barrenechea (ménisque), Umeh (blessure musculaire) et Kamiński (adducteur)</cite>. <cite index='23-6,23-7'>Durán a eu une gêne pendant la trêve, mais Silva n'a pas dit qu'il manquerait le match</cite>. La profondeur d'effectif reste correcte, mais le couloir droit est fragile.",
+     "<cite index='16-1,16-9'>Carter-Vickers (élongation) devrait manquer le match</cite> ; <cite index='11-3'>Johnston et Yang Hyun-jun sont aussi indisponibles</cite>. <cite index='10-6'>Oxlade-Chamberlain est de nouveau disponible après sa suspension</cite>. <cite index='10-13'>Jota n'est pas dans la liste Europa League</cite>.",
+     "<cite index='3-4'>Benfica a gagné les quatre matchs à domicile contre le Celtic en Coupe d'Europe, 9-1 au cumul</cite>. <cite index='3-5'>Le Celtic n'a gardé que deux cleans sheets en 29 matchs d'Europa League et a perdu 3-1 contre Ferencváros à la journée 1</cite>. <cite index='6-7'>Benfica a battu l'AC Milan 2-0 à la journée 1</cite>.",
+     "<cite index='26-8,26-10'>Pas de match de Benfica ce week-end et Omonia seulement une semaine plus tard</cite> : aucune fatigue liée au calendrier. <cite index='20-6'>Benfica vient de subir sa première défaite de la saison, au Clássico</cite>. <cite index='8-19'>L'arbitre est le Monténégrin Nikola Dabanovic</cite>."
     ],
     "a_retenir": {
      "Benfica": [
-      "Marco Silva est l'entraîneur depuis l'été 2026 et pratique une rotation importante en Europe.",
       "Barrenechea (genou) est absent jusqu'en novembre.",
-      "Le poste de latéral droit est fragile : Bah et Banjaqui ont des soucis physiques et Durán est à surveiller.",
-      "Kaminski (lésion musculaire) est incertain, durée non confirmée.",
-      "Benfica a perdu 3-1 à Porto, ce qui a mis fin à une longue série sans défaite en championnat. Il a battu Vitória 2-0 depuis."
+      "Bah est blessé pour quelques semaines et le poste de latéral droit reste fragile (Banjaqui à surveiller).",
+      "Kamiński est absent ou incertain (blessure musculaire).",
+      "Marco Silva, entraîneur depuis l'été 2026, fait beaucoup tourner en Europe.",
+      "Pavlidis est en grande forme (14 buts en 14 matchs selon Sports Mole). Benfica compte 5 points de retard sur Porto en championnat après le Clássico perdu."
      ],
      "Celtic": [
-      "Martin O'Neill est sous pression : trois défaites avant la trêve, un 0 point en Europe et des spéculations sur son avenir.",
-      "Carter-Vickers (élongation) est incertain à court terme et a critiqué les tactiques du club, ce qui nourrit des rumeurs de tension.",
-      "Johnston et Osmand sont proches d'un retour après des blessures aux ischio-jambiers.",
-      "Jota est de retour après 18 mois d'absence mais n'est pas dans la liste Europa League.",
-      "Calendrier chargé : Hearts, Celta Vigo et Hibernian arrivent dans les deux semaines suivantes."
+      "Martin O'Neill est sous pression : trois défaites avant la trêve et 0 point en Europe, avec un seul match joué (défaite 3-1 contre Ferencváros).",
+      "Carter-Vickers (élongation) est absent à court terme.",
+      "Johnston et Osmand reviennent de blessures aux ischio-jambiers, retour probable dans les prochaines semaines.",
+      "Jota est revenu après 18 mois d'absence mais n'est pas dans la liste Europa League."
      ]
     }
    }
@@ -282,7 +282,7 @@
    "sport_key": "soccer_epl",
    "court": "1",
    "issue": "Victoire Manchester City",
-   "proba": 0.8001585125280507,
+   "proba": 0.7929708330341573,
    "proba_depart": 0.8001585125280507,
    "cote": 1.2,
    "bk": "Winamax (FR)",
@@ -295,29 +295,34 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "City reste très solide : 6 victoires en 6 en championnat et un 3-0 à Anfield. Mais le match tombe trois jours après PSG en Ligue des champions, au milieu de 4 matchs en 10 jours, donc la rotation est possible, et la cote de 1.20 laisse très peu de marge."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "City est favori net : 6 victoires en 6 matchs de championnat, aucun blessé, et Ipswich sans Fatawu et défensivement fragile. Mais la cote de 1.20 laisse peu de marge face au risque de rotation : match de Ligue des champions contre le PSG mercredi, moins de 72 h avant, puis AEK Athènes mardi."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "City reste très solide : 6 victoires en 6 en championnat et un 3-0 à Anfield. Mais le match tombe trois jours après PSG en Ligue des champions, au milieu de 4 matchs en 10 jours, donc la rotation est possible, et la cote de 1.20 laisse très peu de marge.",
+    "resume": "City est favori net : 6 victoires en 6 matchs de championnat, aucun blessé, et Ipswich sans Fatawu et défensivement fragile. Mais la cote de 1.20 laisse peu de marge face au risque de rotation : match de Ligue des champions contre le PSG mercredi, moins de 72 h avant, puis AEK Athènes mardi.",
     "points": [
-     "City compte 6 victoires en 6 matchs (+11 de différence de buts, 18 points) ; Ipswich a 3 victoires et 3 défaites (9 points). City a battu Liverpool 3-0 à Anfield.",
-     "Risque de fatigue : City joue après le match de mercredi contre le PSG en Ligue des champions, le deuxième d'une série de quatre matchs en 10 jours. AEK Athènes se présente ensuite le mardi 20 octobre. Aucune rotation n'est annoncée, mais elle est possible ici ou contre AEK.",
-     "Effectif : City n'a ni blessé ni suspendu avant le PSG, et Foden a fini sa suspension et peut affronter Ipswich. Les compositions probables sont plutôt fortes que remaniées (presse spécialisée), mais elles seront à revérifier après le PSG.",
-     "Ipswich est irrégulier : entraîneur Gary O'Neil, 11e de Premier League, défaite 2-5 à Manchester United le 30 août. Ils viennent de battre Fulham 2-1 sur deux buts tardifs. Fatawu est suspendu jusqu'au 17 octobre.",
-     "Valeur du pari : City a été chanceux en attaque : 13 buts pour 9,7 de xG post-tir, hors Anfield. À 1.20 (80 %), le gain potentiel est faible face au risque de rotation ou d'accident après un gros match européen."
+     "City est 1er avec 6 victoires en 6 matchs (16 buts marqués, 5 encaissés) ; Ipswich est 10e avec 3 victoires et 3 défaites (9 buts marqués, 12 encaissés).",
+     "City n'a aucun blessé, donc la question est la rotation, avec le PSG au même stade mercredi, à moins de 72 h de la réception d'Ipswich. C'est le 2e match d'une série de 4 matchs en 10 jours, et on ne sait pas si la rotation aura lieu contre Ipswich ou contre l'AEK. Le résultat du match contre le PSG n'était pas encore connu lors de ma recherche.",
+     "Fatawu est le seul absent côté Ipswich (suspension). O'Neil dit que tout le monde est en forme.",
+     "Ipswich a encaissé 5 buts à Manchester United, puis 2 face à Liverpool. Le même preview note aussi que l'attaque de City a surperformé ses xG. Et le 3-0 à Anfield ne s'est ouvert qu'après l'exclusion d'un joueur de Liverpool.",
+     "City a été reconnu coupable de 80 charges financières et de 34 des 35 charges de non-coopération ; le club fait appel. La sanction sera décidée lors d'une audience séparée. Aucune sanction ne s'applique pour l'instant. Foden est de nouveau disponible après ses 3 matchs de suspension, ce qui confirme l'info déjà apprise."
     ],
     "a_retenir": {
      "Manchester City": [
-      "Enzo Maresca est entraîneur depuis juin 2026 et City est leader avec un début de saison parfait (6/6 en championnat, 3-0 à Anfield).",
-      "Reconnu coupable de 114 charges financières, le club a fait appel : une sanction (retrait de points) reste possible.",
+      "Enzo Maresca est entraîneur depuis juin 2026 ; City est invaincu en championnat avec 6 victoires en 6 matchs.",
+      "Reconnu coupable des charges financières, le club a fait appel ; la sanction reste à fixer, avec un risque de retrait de points ou pire si l'appel échoue.",
       "Calendrier chargé : PSG le 14 octobre, Ipswich le 17, AEK Athènes le 20 octobre en Ligue des champions. Rotation possible.",
-      "Phil Foden a fini sa suspension de 3 matchs et est de nouveau disponible."
+      "Foden a fini sa suspension de 3 matchs en championnat."
      ],
      "Ipswich Town": [
-      "Gary O'Neil est l'entraîneur ; le club est promu en Premier League et occupe le milieu de tableau (11e).",
-      "Fatawu est suspendu jusqu'au 17 octobre, après une expulsion contre Everton.",
-      "Défense fragile (2-5 à Manchester United), mais victoire 2-1 contre Fulham le 10 octobre."
+      "Gary O'Neil est entraîneur depuis juin 2026, après Kieran McKenna ; le club est promu et se situe autour de la 10e-11e place.",
+      "Défense poreuse face aux gros adversaires (2-5 à Manchester United, 2 buts encaissés contre Liverpool), mais victoire 2-1 contre Fulham.",
+      "Fatawu est suspendu jusqu'au 17 octobre (expulsion pour deux jaunes) ; il sera disponible ensuite."
      ]
     }
    }
@@ -344,29 +349,34 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "Le Bayern reste favori à domicile, mais il est irrégulier : deux nuls en cinq matchs de Bundesliga, un 3-3 mardi en Norvège et des buts encaissés très tôt, alors que Leipzig arrive avec deux victoires sans but encaissé. À 1.20 la marge d'erreur est faible, donc je ne confirme pas."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "Bayern reste favori à domicile, mais la cote de 1.20 paraît basse : il est sans victoire sur ses deux derniers matchs, encaisse très tôt et a un gardien incertain. Leipzig arrive avec deux victoires sans but encaissé, même si ses résultats à l'extérieur sont mauvais."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "Le Bayern reste favori à domicile, mais il est irrégulier : deux nuls en cinq matchs de Bundesliga, un 3-3 mardi en Norvège et des buts encaissés très tôt, alors que Leipzig arrive avec deux victoires sans but encaissé. À 1.20 la marge d'erreur est faible, donc je ne confirme pas.",
+    "resume": "Bayern reste favori à domicile, mais la cote de 1.20 paraît basse : il est sans victoire sur ses deux derniers matchs, encaisse très tôt et a un gardien incertain. Leipzig arrive avec deux victoires sans but encaissé, même si ses résultats à l'extérieur sont mauvais.",
     "points": [
-     "Bayern a fait 3-3 à Viking mardi après avoir mené, et Olise a été expulsé (jaune-rouge) avant l'égalisation norvégienne tardive. La suspension d'Olise vise le prochain match de Ligue des champions contre Arsenal, donc il devrait pouvoir jouer samedi.",
-     "Kompany note que Bayern a encaissé après huit secondes contre Augsburg puis après une minute et demie en Norvège. Neuer a été forfait à Viking à cause d'un problème au pied et avait commis une erreur sur le premier but à Augsburg. Son état pour samedi n'est pas confirmé.",
-     "Au classement, Bayern est 3e avec 11 points (3 V, 2 N, 0 D, 16-4), derrière Fribourg et Dortmund (13 points), et Leipzig est 5e avec 9 points (15-5). L'enjeu est réel pour les deux équipes.",
-     "Leipzig a battu Francfort 6-0 le 10 octobre, puis le PSV 1-0 mardi en Ligue des champions (but de Gruda à la 74e). Ce premier succès européen est tombé trois jours après le 6-0. Les deux équipes ont donc joué en Europe en milieu de semaine, Bayern avec le déplacement en Norvège.",
-     "Leipzig est privé de Baumgartner, Ouédraogo, Guiu et Gebel. Côté Bayern, Musiala est absent, tout comme Buchmann. Bayern a gagné quatre des cinq derniers face-à-face, le seul point perdu étant le 3-3 de mai 2025."
+     "<cite index=\"60-10\">Bayern reste sans victoire pour la deuxième fois d'affilée, après un départ raté</cite> : <cite index=\"34-4\">3-3 à Viking après avoir été mené 0-2 à la pause</cite>, puis <cite index=\"63-9\">2-2 à Augsburg</cite>. <cite index=\"17-4\">Cela fait cinq buts encaissés en deux matchs.</cite>",
+     "<cite index=\"63-9\">Neuer a une gêne au pied depuis le match d'Augsburg</cite>, où il avait commis une grosse erreur. Il a donc manqué le match de Viking. Kompany estimait que <cite index=\"63-10\">ce n'était sans doute pas grave</cite>, mais aucune confirmation de sa présence samedi n'a été trouvée. Urbig est la solution de repli et a encaissé trois buts à Viking.",
+     "Olise a pris un jaune-rouge en Ligue des champions, ce que Kompany a qualifié de geste « überblöd ». Cette suspension concerne le match contre Arsenal. Je n'ai rien trouvé qui l'écarte de ce match de Bundesliga contre Leipzig, mais ce n'est pas formellement confirmé. <cite index=\"59-2,59-3\">Kompany attend une réaction samedi contre Leipzig, avant Arsenal en Ligue des champions.</cite>",
+     "Les deux équipes ont joué en Ligue des champions mardi, donc la fatigue est comparable. Kompany a beaucoup tourné à Viking, avec six changements. Le risque de rotation reste réel avant Arsenal, puis Fribourg et Dortmund.",
+     "<cite index=\"5-5\">Leipzig a gagné 6-0 contre Francfort, puis 1-0 contre le PSV avec un but de Gruda à la 74e.</cite> Les absents sont Baumgartner, Ouédraogo et Guiu, aucun n'étant un cadre déterminant. Mais Leipzig n'a pas encore pris de point à l'extérieur en Bundesliga, <cite index=\"58-5\">et Bayern a gagné ses trois derniers matchs à domicile contre lui par un total de 13-1.</cite>"
     ],
     "a_retenir": {
      "Bayern Munich": [
-      "Un début de saison irrégulier : aucune défaite en Bundesliga mais 2 nuls en 5 matchs, avec des buts encaissés très tôt à répétition.",
-      "Neuer s'est blessé au pied avant le match de Ligue des champions à Viking et il a commis des erreurs à Augsburg. Urbig est la solution de rechange.",
-      "Musiala est toujours indisponible.",
-      "Olise est suspendu pour le prochain match de Ligue des champions contre Arsenal."
+      "Défense fragile et départs ratés : buts encaissés après 8 secondes à Augsburg et 71 secondes à Viking, deux matchs de suite sans victoire.",
+      "Neuer, gêné au pied après son erreur à Augsburg, est incertain. Urbig est la solution de repli.",
+      "Musiala est toujours absent (blessure musculaire). Olise est suspendu pour le match de Ligue des champions contre Arsenal.",
+      "Calendrier chargé : Leipzig, Arsenal, puis Fribourg et Dortmund en octobre."
      ],
      "RB Leipzig": [
-      "Ouédraogo est blessé à l'épaule jusqu'à fin décembre 2026. Baumgartner et Guiu sont aussi blessés.",
-      "Série de deux victoires sans but encaissé (6-0 contre Francfort, 1-0 contre le PSV) après un 1-4 à Côme en ouverture de Ligue des champions.",
-      "Martín Demichelis est le nouvel entraîneur depuis l'été 2026. Une victoire à Munich apaiserait la pression qui pèse sur lui."
+      "Ouédraogo (épaule) est absent jusqu'à fin décembre 2026. Baumgartner (reprise après blessure) et Guiu (cuisse) sont aussi blessés.",
+      "Martín Demichelis est l'entraîneur depuis l'été 2026. Série de deux victoires sans but encaissé (6-0 contre Francfort, 1-0 contre le PSV).",
+      "Solide à domicile mais fragile à l'extérieur : aucun point pris en déplacement en Bundesliga. Déplacement au Bernabéu contre le Real Madrid ensuite."
      ]
     }
    }
@@ -380,7 +390,7 @@
    "sport_key": "soccer_spain_la_liga",
    "court": "2",
    "issue": "Victoire Barcelona",
-   "proba": 0.6776875572947177,
+   "proba": 0.6783551104326838,
    "proba_depart": 0.6776875572947177,
    "cote": 1.41,
    "bk": "Winamax (FR)",
@@ -393,27 +403,36 @@
      "jour": "2026-10-14",
      "avis": "prudence",
      "resume": "Barcelone est invaincu en 10 matchs et reste favori, mais le déplacement se joue entre le Galatasaray (mardi) et le PSG (le 20), avec le Real Madrid ensuite. Cela rend une rotation de Flick probable. Le Betis, 3e et en confiance à domicile, joue lui aussi en C1 mercredi (Porto). À 1,41, la marge d'erreur est faible."
+    },
+    {
+     "jour": "2026-10-14",
+     "avis": "prudence",
+     "resume": "Barcelone reste nettement favori, mais il arrive après un déplacement à Galatasaray mardi, avec PSG et le Clásico qui suivent. Raphinha (14 buts) et De Jong sont probablement absents. Betis a gagné ses 5 matchs à domicile, mais joue Porto en C1 mercredi. À 1.41, la marge d'erreur est faible."
     }
    ],
    "avis": {
     "avis": "prudence",
-    "resume": "Barcelone est invaincu en 10 matchs et reste favori, mais le déplacement se joue entre le Galatasaray (mardi) et le PSG (le 20), avec le Real Madrid ensuite. Cela rend une rotation de Flick probable. Le Betis, 3e et en confiance à domicile, joue lui aussi en C1 mercredi (Porto). À 1,41, la marge d'erreur est faible.",
+    "resume": "Barcelone reste nettement favori, mais il arrive après un déplacement à Galatasaray mardi, avec PSG et le Clásico qui suivent. Raphinha (14 buts) et De Jong sont probablement absents. Betis a gagné ses 5 matchs à domicile, mais joue Porto en C1 mercredi. À 1.41, la marge d'erreur est faible.",
     "points": [
-     "Barcelone a gagné 4-1 à Galatasaray le 13/10 après avoir été mené. Il compte 10 victoires en 10 matchs toutes compétitions. Le match à Séville tombe 4 jours après Istanbul et 3 jours avant le PSG, puis le Real Madrid, d'où un risque de rotation.",
-     "Côté Barça, Raphinha (cuisse) est annoncé de retour contre le Betis, mais sans certitude. De Jong est visé pour ce match par Flick, alors que d'autres sources évoquent plutôt le 31/10. Christensen est out jusqu'au 31/10 environ et Bardghji (ligaments croisés) est absent jusqu'en février.",
-     "Le Betis est 3e avec 19 points après son 5-2 contre Osasuna. Il joue Porto en C1 mercredi 14/10, puis Barcelone, Feyenoord (21/10) et Dortmund (4/11). Pellegrini fait tourner son effectif, et les absents confirmés sont Ruibal (genou) et Junior Firpo.",
-     "Ces absences touchent peu l'équipe type du Betis. Antony est disponible, Bellerín, Bartra, Natan, Isco et Abde sont annoncés titulaires contre Porto. Le Betis a gagné ses 5 derniers matchs à domicile, à La Cartuja devant environ 65 000 personnes, avec 2,0 buts marqués par match.",
-     "Les deux derniers face-à-face récents ont été ouverts : 5-3 et 3-1 pour Barcelone. Le Betis n'a pas battu le Barça depuis décembre 2021, mais il lui a marqué 3 buts à chaque fois. Un 1,41 laisse peu de marge face à un adversaire capable de marquer, et le nul ou le but encaissé restent plausibles."
+     "Calendrier : Barcelone jouait à Galatasaray en C1 mardi 13 octobre, soit 3 jours avant Betis. Betis reçoit Porto en C1 mercredi, avec la même fatigue. Les deux équipes sont donc touchées, et Pellegrini devrait faire tourner (déjà noté les jours précédents).",
+     "Raphinha : il avait inscrit 14 buts avant la pause internationale. Le club vise un retour contre Betis (le staff voulait le récupérer pour ce match), mais Yahoo Sports juge qu'il manquera probablement ce match. Cela contredit le point « sorti de blessure » du 14/10 : il est ménagé et son retour est incertain.",
+     "De Jong : toujours indisponible, il s'entraîne avec le groupe mais manque de rythme après sa blessure au genou. Son retour est plus que douteux.",
+     "Forme et enjeu : Barcelone a gagné 3-0 contre Getafe et compte 8 victoires en 8 matchs de Liga. Betis est 3e avec 19 points et a gagné 4 matchs sur 4 à domicile, avec 14 buts marqués et 9 encaissés (les 5-0 en incluent peut-être un de plus, comme le dit ton brief). Match important pour Betis, 3e, et sans enjeu de repos pour Barcelone en tête.",
+     "Modèles externes : Barcelone favori à 73 % selon une prévia fantasy, dans la lignée du marché (68 %). Aucun signal de crise côté Barcelone, ni de nouvel entraîneur ou de série négative côté Betis. Arbitre et météo : rien trouvé."
     ],
     "a_retenir": {
      "Real Betis": [
-      "Ruibal (genou, opéré du ménisque) est toujours en phase de retour. Junior Firpo est absent environ un mois, depuis l'international avec la République dominicaine.",
-      "Le calendrier est très chargé jusqu'au 4/11 : Porto, Barça, Feyenoord, Celta, Málaga, Copa, Dortmund. Pellegrini fait tourner son équipe, et le Betis est 3e de Liga avec 5 victoires sur 5 à domicile."
+      "Junior Firpo absent environ un mois (blessure avec la République dominicaine, signalée le 11/10).",
+      "Aitor Ruibal en phase de retour après l'opération du ménisque, sans rythme de compétition.",
+      "Calendrier très chargé jusqu'au 4/11 (Porto, Barça, Feyenoord, Celta, Málaga, Copa, Dortmund) : rotations probables de Pellegrini.",
+      "3e de Liga avec 19 points, 5 victoires de suite à domicile (selon le brief) et nette victoire 5-2 contre Osasuna."
      ],
      "Barcelona": [
-      "Bardghji est out longtemps (ligaments croisés, retour estimé fin février). Christensen (cuisse) doit revenir vers le 31/10 (Alavés).",
-      "Barcelone enchaîne 10 victoires en 10 matchs toutes compétitions et mène la Liga. Le calendrier est très dense : PSG le 20/10, puis le Real Madrid.",
-      "Raphinha (cuisse) est sorti de blessure avec prudence. De Jong n'a pas encore rejoué cette saison après sa blessure au genou, et son retour en match est à surveiller."
+      "Bardghji (ligaments croisés) absent longtemps, retour estimé fin février.",
+      "Christensen (cuisse) de retour vers le 31/10 (Alavés).",
+      "De Jong : retour progressif après sa blessure au genou, sans rythme de compétition.",
+      "Raphinha (cuisse) ménagé par Flick après deux rechutes la saison dernière : retour prudent.",
+      "Leader de la Liga avec 8 victoires en 8 matchs, série de victoires toutes compétitions. Calendrier lourd : PSG le 20/10, Clásico le 25/10."
      ]
     }
    }

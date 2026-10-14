@@ -1433,7 +1433,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Como",
     "cote": 2.05,
-    "proba": 0.4489,
+    "proba": 0.4509,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1442,7 +1442,7 @@
    }
   ],
   "cote": 2.05,
-  "proba": 0.4489,
+  "proba": 0.4509,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1462,7 +1462,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Liverpool",
     "cote": 1.35,
-    "proba": 0.6969,
+    "proba": 0.7005,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1471,7 +1471,7 @@
    }
   ],
   "cote": 1.35,
-  "proba": 0.6969,
+  "proba": 0.7005,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1491,7 +1491,7 @@
     "championnat": "Championship",
     "pari": "Victoire Queens Park Rangers",
     "cote": 1.62,
-    "proba": 0.5772,
+    "proba": 0.5678,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -1500,7 +1500,7 @@
    }
   ],
   "cote": 1.62,
-  "proba": 0.5772,
+  "proba": 0.5678,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1520,7 +1520,7 @@
     "championnat": "Championship",
     "pari": "Victoire Norwich City",
     "cote": 2.33,
-    "proba": 0.3829,
+    "proba": 0.3874,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -1529,7 +1529,7 @@
    }
   ],
   "cote": 2.33,
-  "proba": 0.3829,
+  "proba": 0.3874,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1549,7 +1549,7 @@
     "championnat": "Championship",
     "pari": "Victoire Portsmouth",
     "cote": 2.23,
-    "proba": 0.4029,
+    "proba": 0.4101,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -1558,7 +1558,7 @@
    }
   ],
   "cote": 2.23,
-  "proba": 0.4029,
+  "proba": 0.4101,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1578,7 +1578,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire AEK Athens",
     "cote": 2.53,
-    "proba": 0.3649,
+    "proba": 0.3595,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1587,7 +1587,7 @@
    }
   ],
   "cote": 2.53,
-  "proba": 0.3649,
+  "proba": 0.3595,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1606,8 +1606,8 @@
     "exterieur": "Real Madrid",
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Madrid",
-    "cote": 1.9,
-    "proba": 0.4962,
+    "cote": 1.89,
+    "proba": 0.5003,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1615,8 +1615,8 @@
     }
    }
   ],
-  "cote": 1.9,
-  "proba": 0.4962,
+  "cote": 1.89,
+  "proba": 0.5003,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1635,8 +1635,8 @@
     "exterieur": "Fenerbahce",
     "championnat": "Ligue des champions",
     "pari": "Victoire Aston Villa",
-    "cote": 1.67,
-    "proba": 0.5661,
+    "cote": 1.66,
+    "proba": 0.5635,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -1644,8 +1644,8 @@
     }
    }
   ],
-  "cote": 1.67,
-  "proba": 0.5661,
+  "cote": 1.66,
+  "proba": 0.5635,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1664,8 +1664,8 @@
     "exterieur": "Borussia Dortmund",
     "championnat": "Ligue des champions",
     "pari": "Victoire Borussia Dortmund",
-    "cote": 2.15,
-    "proba": 0.437,
+    "cote": 2.12,
+    "proba": 0.439,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1673,8 +1673,8 @@
     }
    }
   ],
-  "cote": 2.15,
-  "proba": 0.437,
+  "cote": 2.12,
+  "proba": 0.439,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1693,8 +1693,8 @@
     "exterieur": "Paris Saint Germain",
     "championnat": "Ligue des champions",
     "pari": "Victoire Manchester City",
-    "cote": 2.0,
-    "proba": 0.4819,
+    "cote": 1.97,
+    "proba": 0.4733,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -1702,8 +1702,8 @@
     }
    }
   ],
-  "cote": 2.0,
-  "proba": 0.4819,
+  "cote": 1.97,
+  "proba": 0.4733,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1723,7 +1723,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Betis",
     "cote": 2.02,
-    "proba": 0.4646,
+    "proba": 0.4686,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -1732,7 +1732,7 @@
    }
   ],
   "cote": 2.02,
-  "proba": 0.4646,
+  "proba": 0.4686,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1751,8 +1751,8 @@
     "exterieur": "VfB Stuttgart",
     "championnat": "Ligue des champions",
     "pari": "Victoire VfB Stuttgart",
-    "cote": 1.27,
-    "proba": 0.7438,
+    "cote": 1.33,
+    "proba": 0.7149,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1760,8 +1760,8 @@
     }
    }
   ],
-  "cote": 1.27,
-  "proba": 0.7438,
+  "cote": 1.33,
+  "proba": 0.7149,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1780,8 +1780,8 @@
     "exterieur": "West Ham United",
     "championnat": "Championship",
     "pari": "Victoire West Ham United",
-    "cote": 1.63,
-    "proba": 0.5602,
+    "cote": 1.64,
+    "proba": 0.5605,
     "court": "2",
     "espn": {
      "ligue": "eng.2",
@@ -1789,8 +1789,8 @@
     }
    }
   ],
-  "cote": 1.63,
-  "proba": 0.5602,
+  "cote": 1.64,
+  "proba": 0.5605,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -1809,8 +1809,8 @@
     "exterieur": "VfB Stuttgart",
     "championnat": "Ligue des champions",
     "pari": "Victoire VfB Stuttgart",
-    "cote": 1.27,
-    "proba": 0.7438,
+    "cote": 1.33,
+    "proba": 0.7149,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1825,7 +1825,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Liverpool",
     "cote": 1.35,
-    "proba": 0.6969,
+    "proba": 0.7005,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -1833,8 +1833,8 @@
     }
    }
   ],
-  "cote": 1.71,
-  "proba": 0.5183,
+  "cote": 1.8,
+  "proba": 0.5008,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -1847,58 +1847,14 @@
   "cat": "equilibre",
   "jambes": [
    {
-    "id": "5a1a6a04c5561897741105e30d5d7ec4",
-    "date": "2026-10-14T19:00:00Z",
-    "domicile": "Manchester City",
-    "exterieur": "Paris Saint Germain",
-    "championnat": "Ligue des champions",
-    "pari": "Victoire Manchester City",
-    "cote": 1.97,
-    "proba": 0.4819,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915407"
-    }
-   },
-   {
-    "id": "35d7cc4a96b152b4a31b0b151cb70feb",
-    "date": "2026-10-14T18:45:00Z",
-    "domicile": "Queens Park Rangers",
-    "exterieur": "Derby County",
-    "championnat": "Championship",
-    "pari": "Victoire Queens Park Rangers",
-    "cote": 1.62,
-    "proba": 0.5772,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880221"
-    }
-   }
-  ],
-  "cote": 3.19,
-  "proba": 0.2781,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "gros:2026-10-14",
-  "jour": "2026-10-14",
-  "cat": "gros",
-  "jambes": [
-   {
     "id": "4c7f87780ae5ab8bec9e83d6d6ec9909",
     "date": "2026-10-14T19:00:00Z",
     "domicile": "Real Betis",
     "exterieur": "Porto",
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Betis",
-    "cote": 2.0,
-    "proba": 0.4646,
+    "cote": 2.02,
+    "proba": 0.4686,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -1912,47 +1868,76 @@
     "exterieur": "Real Madrid",
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Madrid",
-    "cote": 1.88,
-    "proba": 0.4962,
+    "cote": 1.89,
+    "proba": 0.5003,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915414"
     }
-   },
-   {
-    "id": "5d6f9accd6f79ae4216dfd29ccc342b2",
-    "date": "2026-10-14T16:45:00Z",
-    "domicile": "Feyenoord",
-    "exterieur": "Como",
-    "championnat": "Ligue des champions",
-    "pari": "Victoire Como",
-    "cote": 2.05,
-    "proba": 0.4489,
-    "court": "2",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915416"
-    }
-   },
+   }
+  ],
+  "cote": 3.82,
+  "proba": 0.2345,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "gros",
+  "jambes": [
    {
     "id": "ca87a3874b0eae31b4173ae4a9324957",
     "date": "2026-10-14T19:00:00Z",
     "domicile": "Bodø/Glimt",
     "exterieur": "Borussia Dortmund",
     "championnat": "Ligue des champions",
-    "pari": "Victoire Borussia Dortmund",
-    "cote": 2.1,
-    "proba": 0.437,
-    "court": "2",
+    "pari": "Victoire Bodø/Glimt",
+    "cote": 2.85,
+    "proba": 0.3158,
+    "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915393"
     }
+   },
+   {
+    "id": "0f961390e790ad2c80ecb3f302cad4a6",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Shakhtar Donetsk",
+    "exterieur": "AEK Athens",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Shakhtar Donetsk",
+    "cote": 2.55,
+    "proba": 0.3564,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915406"
+    }
+   },
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Manchester City",
+    "cote": 1.95,
+    "proba": 0.4733,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915407"
+    }
    }
   ],
-  "cote": 16.19,
-  "proba": 0.0452,
+  "cote": 14.17,
+  "proba": 0.0533,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -1972,26 +1957,11 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7017,
+    "proba": 0.6904,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915405"
-    }
-   },
-   {
-    "id": "2903ee092f7e08c549b130a3d394ac3c",
-    "date": "2026-10-14T16:45:00Z",
-    "domicile": "LASK",
-    "exterieur": "Liverpool",
-    "championnat": "Ligue des champions",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.6648,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915415"
     }
    },
    {
@@ -2002,16 +1972,31 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6607,
+    "proba": 0.6599,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915407"
     }
+   },
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6379,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
    }
   ],
-  "cote": 3.41,
-  "proba": 0.3082,
+  "cote": 3.61,
+  "proba": 0.2906,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -2030,27 +2015,12 @@
     "exterieur": "VfB Stuttgart",
     "championnat": "Ligue des champions",
     "pari": "Victoire VfB Stuttgart",
-    "cote": 1.27,
-    "proba": 0.7438,
+    "cote": 1.33,
+    "proba": 0.7149,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915405"
-    }
-   },
-   {
-    "id": "2903ee092f7e08c549b130a3d394ac3c",
-    "date": "2026-10-14T16:45:00Z",
-    "domicile": "LASK",
-    "exterieur": "Liverpool",
-    "championnat": "Ligue des champions",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.6648,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915415"
     }
    },
    {
@@ -2061,16 +2031,31 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6607,
+    "proba": 0.6599,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915407"
     }
+   },
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6379,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
    }
   ],
-  "cote": 3.21,
-  "proba": 0.3267,
+  "cote": 3.49,
+  "proba": 0.3009,
   "estime": true,
   "conseille": null,
   "mise": 10.0,

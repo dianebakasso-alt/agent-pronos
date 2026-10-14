@@ -115,33 +115,33 @@
  },
  {
   "jour": "2026-10-14",
-  "bookmaker": "PMU (FR)",
-  "cote": 3.19,
-  "proba": 0.2781,
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.82,
+  "proba": 0.2345,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
    {
-    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "id": "4c7f87780ae5ab8bec9e83d6d6ec9909",
     "sport_key": "soccer_uefa_champs_league",
     "date": "2026-10-14T19:00:00Z",
-    "domicile": "Manchester City",
-    "exterieur": "Paris Saint Germain",
-    "pari": "Victoire Manchester City",
+    "domicile": "Real Betis",
+    "exterieur": "Porto",
+    "pari": "Victoire Real Betis",
     "court": "1",
-    "cote": 1.97
+    "cote": 2.02
    },
    {
-    "id": "35d7cc4a96b152b4a31b0b151cb70feb",
-    "sport_key": "soccer_efl_champ",
-    "date": "2026-10-14T18:45:00Z",
-    "domicile": "Queens Park Rangers",
-    "exterieur": "Derby County",
-    "pari": "Victoire Queens Park Rangers",
-    "court": "1",
-    "cote": 1.62
+    "id": "d4ef112438afa4c2cdbbfc9376a009c9",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "AS Roma",
+    "exterieur": "Real Madrid",
+    "pari": "Victoire Real Madrid",
+    "court": "2",
+    "cote": 1.89
    }
   ]
  }
