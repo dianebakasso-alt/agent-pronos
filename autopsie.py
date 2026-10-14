@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 MIN_N = 25          # pronos réglés avant d'ajuster un type de pari
 ECART = 0.08        # 8 points de réussite en dessous (ou au-dessus) de l'attendu
-MAX_AUTOPSIES = 4   # par passage (coût IA)
+MAX_AUTOPSIES = 15  # par passage : toutes les erreurs récentes (quelques centimes chacune)
 
 TRAITS = {
     "exterieur": "Favori à l'extérieur",
@@ -20,6 +20,8 @@ TRAITS = {
     "doute_ia": "Joué malgré un doute de l'IA",
     "rebond": "Rebond (bonne équipe en mauvaise passe)",
     "favori_net": "Gros favori (plus de 65 %)",
+    "buts_plus": "Paris « beaucoup de buts » (+2,5, les 2 marquent)",
+    "buts_moins": "Paris « peu de buts » (−2,5, pas les 2)",
 }
 
 CONSIGNE = """Tu es un analyste football. Un pronostic a perdu, explique pourquoi.
@@ -44,6 +46,8 @@ def _dt(iso):
 
 def traits_jambe(j, m=None):
     t = []
+    if j.get("marche"):
+        return ["buts_" + ("plus" if j["marche"].startswith("plus") or j["marche"] == "btts" else "moins")]
     if j.get("court") == "2":
         t.append("exterieur")
     if j.get("cote") and j["cote"] < 1.40:
@@ -63,7 +67,7 @@ def enrichir(carnet, analyses):
     par_id = {a["id"]: a for a in analyses}
     for p in carnet:
         for j in p["jambes"]:
-            if "traits" not in j and "court" in j:
+            if "traits" not in j:
                 j["traits"] = traits_jambe(j, par_id.get(j["id"]))
 
 
@@ -73,9 +77,9 @@ def ajustements(carnet):
     vus = set()
     for p in carnet:
         for j in p["jambes"]:
-            if j.get("ok") is None or "court" not in j or not j.get("proba"):
+            if j.get("ok") is None or not j.get("proba"):
                 continue
-            cle = (j["id"], j["court"])
+            cle = (j["id"], j.get("court") or j.get("marche"))
             if cle in vus:
                 continue
             vus.add(cle)
@@ -100,9 +104,10 @@ def a_autopsier(carnet, maintenant):
     jambes, vus = [], set()
     for p in carnet:
         for j in p["jambes"]:
-            if j.get("ok") is False and "autopsie" not in j and j.get("score") and "court" in j \
-                    and _dt(j["date"]) > maintenant - timedelta(days=4) and j["id"] not in vus:
-                vus.add(j["id"])
+            cle = (j["id"], j.get("court") or j.get("marche"))
+            if j.get("ok") is False and "autopsie" not in j and j.get("score") \
+                    and _dt(j["date"]) > maintenant - timedelta(days=10) and cle not in vus:
+                vus.add(cle)
                 jambes.append(j)
     return sorted(jambes, key=lambda j: -(j.get("proba") or 0))[:MAX_AUTOPSIES]
 
@@ -117,7 +122,7 @@ def noter_autopsie(carnet, lecons, j, res, maintenant):
     res = {k: res.get(k) for k in ("pourquoi", "previsible", "signal_rate", "tags", "lecon")}
     for p in carnet:
         for x in p["jambes"]:
-            if x["id"] == j["id"]:
+            if x["id"] == j["id"] and (x.get("court") or x.get("marche")) == (j.get("court") or j.get("marche")):
                 x["autopsie"] = res
     lecons.append({"date": maintenant.strftime("%Y-%m-%d"), "match": f"{j['domicile']} - {j['exterieur']}",
                    "pari": j["pari"], "cote": j.get("cote"), "proba": j.get("proba"), "score": j.get("score"), **res})
