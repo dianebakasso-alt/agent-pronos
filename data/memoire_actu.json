@@ -195,22 +195,6 @@
   "nom": "Benfica",
   "faits": [
    {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Calendrier : Omonia en Europa League le 22 octobre, puis Lech Poznań le 5 novembre."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Barrenechea (ménisque) absent environ un mois, d'après mes notes des jours précédents ; Marco Silva confirme qu'il est blessé."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Kaminski (blessure musculaire contractée avec la Pologne) absent plusieurs semaines. Umeh ne reviendrait pas avant la mi-novembre."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "<cite index=\"10-5,10-6\">Avant la défaite à Porto, Benfica restait sur 8 victoires de suite toutes compétitions. Cette défaite est la seule de la saison.</cite>"
-   },
-   {
     "date": "2026-10-12T12:27:51",
     "texte": "Barrenechea (ménisque, opéré au genou gauche) reste indisponible : son retour est attendu dans environ un mois. Les sources consultées ne donnent pas de date précise."
    },
@@ -241,6 +225,22 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Le prochain match de Benfica, contre l'Omonia en Europa League, a lieu une semaine après Celtic."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Marco Silva est l'entraîneur depuis l'été 2026 et pratique une rotation importante en Europe."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Barrenechea (genou) est absent jusqu'en novembre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Le poste de latéral droit est fragile : Bah et Banjaqui ont des soucis physiques et Durán est à surveiller."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Kaminski (lésion musculaire) est incertain, durée non confirmée."
    }
   ]
  },
@@ -718,14 +718,6 @@
   "nom": "Real Betis",
   "faits": [
    {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Aitor Ruibal toujours en convalescence après une opération du ménisque."
-   },
-   {
-    "date": "2026-10-11T09:46:02",
-    "texte": "Série de 14 matchs de Liga sans défaite à domicile avant cette rencontre ; Betis est 3e du classement."
-   },
-   {
     "date": "2026-10-11T10:46:18",
     "texte": "Junior Firpo est absent environ un mois (lésion à l'adducteur gauche, contractée avec la République dominicaine), à partir du 11 octobre 2026."
    },
@@ -764,6 +756,14 @@
    {
     "date": "2026-10-11T19:51:33",
     "texte": "Le calendrier est dense : Barcelone, puis Feyenoord (21/10), Celta, Málaga, Copa, Dortmund (4/11). Des rotations de Pellegrini sont probables."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ruibal (genou, opéré du ménisque) est toujours en phase de retour. Junior Firpo est absent environ un mois, depuis l'international avec la République dominicaine."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Le calendrier est très chargé jusqu'au 4/11 : Porto, Barça, Feyenoord, Celta, Málaga, Copa, Dortmund. Pellegrini fait tourner son équipe, et le Betis est 3e de Liga avec 5 victoires sur 5 à domicile."
    }
   ]
  },
@@ -791,14 +791,6 @@
  "rennes": {
   "nom": "Rennes",
   "faits": [
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Calendrier : Paris FC en Ligue 1 le 18 octobre, risque de rotation après l'Europa League."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Haise n'a toujours aucune victoire en Ligue Europa (0 sur 17 avec Lens, Nice et Rennes) ; à surveiller à l'issue de ce match."
-   },
    {
     "date": "2026-10-12T08:48:05",
     "texte": "Série en cours : 4-1 contre Auxerre, 13 points en 6 journées de Ligue 1, 3e place. 0-0 à Sturm Graz en Europa League."
@@ -838,6 +830,14 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Calendrier : Paris FC le 18/10, puis Juventus en Europa League le 22/10."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Haise : série noire en Europa League (17 matchs sans victoire d'après la presse, un autre décompte parle de 19). À revérifier après le 15/10."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "3e de Ligue 1 avec 13 points après le 4-1 contre Auxerre. Calendrier chargé : Paris FC le 18/10, Juventus le 22/10, puis Olympiakos."
    }
   ]
  },
@@ -1004,22 +1004,6 @@
   "nom": "Liverpool",
   "faits": [
    {
-    "date": "2026-10-11T11:01:54",
-    "texte": "<cite index='2-9'>Bradley (genou), Ekitike (Achille) et Leoni (croisés) sont indisponibles.</cite> <cite index='3-10'>Pour Bradley, Iraola parle d'une blessure de longue durée.</cite> <cite index='5-1"
-   },
-   {
-    "date": "2026-10-11T11:01:54",
-    "texte": "<cite index='11-4'>Invaincu sous Iraola, avec une défense plus solide depuis l'arrivée d'Araujo à droite.</cite>"
-   },
-   {
-    "date": "2026-10-11T11:01:54",
-    "texte": "Isak et Gakpo sont absents à court terme, sans durée annoncée, mais Iraola ne parle pas de blessures longues."
-   },
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Bradley (genou), Leoni (croisés) et Ekitike (Achille) sont absents pour plusieurs semaines."
-   },
-   {
     "date": "2026-10-11T11:08:26",
     "texte": "Isak (cuisse) et Gakpo (cheville) sont absents à court terme, sans durée précise annoncée."
    },
@@ -1050,28 +1034,28 @@
    {
     "date": "2026-10-11T14:43:02",
     "texte": "Invaincu sous Iraola (4 victoires, 3 nuls toutes compétitions confondues), avec une défense plus solide depuis qu'Araujo joue arrière droit."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ekitike (Achille) devrait revenir en décembre, Bradley (genou) fin novembre et Leoni (genou) début novembre, selon LiveScore."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Isak, Gakpo et Szoboszlai sont blessés depuis la trêve internationale. Iraola dit qu'ils ne sont pas loin, mais n'a donné aucune date, y compris pour Brentford, Villarreal et Brighton."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Défaite 3-0 contre Manchester City : la série d'invincibilité sous Iraola est terminée."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Calendrier chargé : neuf matches en 28 jours, avec Brentford puis Villarreal juste après LASK."
    }
   ]
  },
  "manchester city": {
   "nom": "Manchester City",
   "faits": [
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Reconnu coupable sur 114 charges. Le club a fait appel et une éventuelle sanction (retrait de points) reste en suspens."
-   },
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Foden revient de suspension après le match contre Liverpool."
-   },
-   {
-    "date": "2026-10-11T11:08:26",
-    "texte": "Défense friable : seulement 2 clean sheets en 5 matchs."
-   },
-   {
-    "date": "2026-10-11T13:38:49",
-    "texte": "Série de 5 victoires en 5 matchs de championnat sous Maresca, leader de la Premier League."
-   },
    {
     "date": "2026-10-11T13:38:49",
     "texte": "Reconnu coupable de 114 charges sur 115 : une sanction (retrait de points) reste en suspens et pèse sur le contexte."
@@ -1103,6 +1087,22 @@
    {
     "date": "2026-10-12T08:48:05",
     "texte": "La suspension de Foden est terminée : il est de nouveau disponible."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Enzo Maresca est entraîneur depuis juin 2026 et City est leader avec un début de saison parfait (6/6 en championnat, 3-0 à Anfield)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Reconnu coupable de 114 charges financières, le club a fait appel : une sanction (retrait de points) reste possible."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Calendrier chargé : PSG le 14 octobre, Ipswich le 17, AEK Athènes le 20 octobre en Ligue des champions. Rotation possible."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Phil Foden a fini sa suspension de 3 matchs et est de nouveau disponible."
    }
   ]
  },
@@ -1922,6 +1922,18 @@
    {
     "date": "2026-10-11T19:51:33",
     "texte": "Calendrier lourd : Bayern le 17 octobre, puis le Real Madrid au Bernabéu."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ouédraogo est blessé à l'épaule jusqu'à fin décembre 2026. Baumgartner et Guiu sont aussi blessés."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de deux victoires sans but encaissé (6-0 contre Francfort, 1-0 contre le PSV) après un 1-4 à Côme en ouverture de Ligue des champions."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Martín Demichelis est le nouvel entraîneur depuis l'été 2026. Une victoire à Munich apaiserait la pression qui pèse sur lui."
    }
   ]
  },
@@ -1963,10 +1975,6 @@
   "faits": [
    {
     "date": "2026-10-11T19:41:27",
-    "texte": "Ian Maatsen (cheville) absent au moins jusqu'à fin octobre, voire fin novembre."
-   },
-   {
-    "date": "2026-10-11T19:41:27",
     "texte": "Onana (ligaments croisés) absent jusqu'à mi-avril 2027."
    },
    {
@@ -1996,6 +2004,22 @@
    {
     "date": "2026-10-12T08:35:59",
     "texte": "Mauvais début de saison en Premier League : 16e après 5 journées, puis nul 2-2 contre Brentford après avoir mené 2-1."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ruggeri (ischio-jambiers) absent plus d'un mois, soit jusqu'après la trêve internationale de novembre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Maatsen (cheville) : retour attendu dans une à deux semaines, selon Emery le 13 octobre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Onana (genou) est absent de longue durée. Goretzka est de retour dans le groupe après une blessure au genou, sans avoir encore joué. Harwood-Bellis n'est pas dans la liste UEFA pour la Ligue des champ"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Mauvais début de saison en Premier League : 16e avec 5 points après 6 journées, aucune victoire à domicile en 3 matchs (2 défaites, 1 nul), mais invaincu depuis 13 matchs européens à Villa Park."
    }
   ]
  },
@@ -2029,24 +2053,28 @@
    {
     "date": "2026-10-12T08:35:59",
     "texte": "Oosterwolde, Söyüncü, Becao et Mert Hakan Yandaş absents de la liste UEFA de Ligue des champions, sauf modification."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Oosterwolde (blessure musculaire à l'arrière de la cuisse) et Müldür (genou/ménisque) sont blessés."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Lukaku est un doute après un coup reçu contre Rizespor."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de deux victoires en championnat avec 11 buts marqués (8-0 puis 3-0). Dans la lignée d'un nul 1-1 contre Roma en Ligue des champions, sans victoire sur ses huit derniers matchs de phase finale d"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Guendouzi : suspension UEFA réduite, mais il reste sous probation d'un an."
    }
   ]
  },
  "ofi crete": {
   "nom": "OFI Crete",
   "faits": [
-   {
-    "date": "2026-10-11T19:41:27",
-    "texte": "L'OFI a gagné son premier match de phase de ligue d'Europa League, 3 points au compteur."
-   },
-   {
-    "date": "2026-10-11T19:51:33",
-    "texte": "Entraîneur : Christos Kontis (source FotMob)."
-   },
-   {
-    "date": "2026-10-11T19:51:33",
-    "texte": "Bon début de saison : victoire à l'Olympiacos, qualification via le barrage contre le CSKA Sofia et victoire 2-0 en Europa League pour le premier match de phase de ligue."
-   },
    {
     "date": "2026-10-11T19:51:33",
     "texte": "Prochains matchs européens : Leverkusen à domicile le 22/10, puis Beer-Sheva à l'extérieur le 05/11."
@@ -2082,6 +2110,18 @@
    {
     "date": "2026-10-12T12:27:51",
     "texte": "Calendrier : Kalamata en championnat le 18/10, puis Leverkusen à domicile le 22/10 et Beer-Sheva à l'extérieur le 05/11."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Leya Iseka et Sielis (problèmes musculaires, durée plus longue) et Marinakis (pas encore joué cette saison) sont absents pour plusieurs semaines."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Cantalapiedra est suspendu pour le match de championnat contre Kalamata le 18/10. Il reste disponible en Europe."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Défense fragile sur coups de pied arrêtés (3 buts encaissés ainsi contre l'AEK). Prochains matchs européens : Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11."
    }
   ]
  },
@@ -2593,18 +2633,6 @@
   "nom": "ŠK Slovan Bratislava",
   "faits": [
    {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Yaya Touré est le nouvel entraîneur depuis l'été 2026 et mise sur un effectif plus jeune et moins expérimenté."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Départs ou retraites de Kashia, Weiss, Mak, Strelec, Tolič et Zuberu : l'effectif est reconstruit."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Slovan reste sans point en Ligue des champions : 0 sur 9 depuis ses débuts, avant ce match."
-   },
-   {
     "date": "2026-10-12T08:48:05",
     "texte": "Yaya Touré est entraîneur depuis l'été 2026. Kashia, Weiss et Mak ont pris leur retraite, Strelec, Tolič, Savvidis, Zuberu et Metsoko sont partis."
    },
@@ -2639,24 +2667,24 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Calendrier chargé : 9 matchs en 29 jours, avec Rome (20/10) et LASK (3/11) en Ligue des champions. Kucharevych devrait revenir d'ici environ une semaine, Medveděv est blessé."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Yaya Touré est entraîneur depuis l'été 2026 (premier poste d'entraîneur principal), avec un effectif très remanié : Kashia, Weiss et Mak ont pris leur retraite, Strelec, Tolič, Savvidis et Zuberu sont"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Aucun point en Ligue des champions cette saison après le 1-6 contre le PSG ; 4e du championnat, à 6 points du leader, après un 1-1 à Skalica."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Prochains matchs européens : Rome le 20/10 et LASK le 3/11. Kucharevych est toujours blessé."
    }
   ]
  },
  "vfb stuttgart": {
   "nom": "VfB Stuttgart",
   "faits": [
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Zagadou, Tiago Tomás et Malanga sont en reprise ou convalescence ; Al-Dakhil a des blessures récurrentes."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Mittelstädt est blessé au talon (plaie recousue) : à suivre pour le calendrier chargé (HSV le 17/10, Atlético le 20/10)."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Début de saison irrégulier en Bundesliga (1V-3D après 4 journées), puis victoire 2-0 à Paderborn."
-   },
    {
     "date": "2026-10-12T08:48:05",
     "texte": "Mittelstädt (plaie à la cheville) est incertain pour la suite, selon la cicatrisation, avec HSV le 17/10 et l'Atlético le 20/10. Justin Diehl est absent longtemps."
@@ -2692,28 +2720,24 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Début de saison irrégulier en Bundesliga (1 victoire, 3 défaites, puis 2-0 à Paderborn), mais victoire 3-1 contre Viking en Ligue des champions. Calendrier chargé avec 9 matchs en 29 jours."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Mittelstädt est absent à cause d'une plaie au talon, pour une durée indéterminée."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Tiago Tomás, Diehl, Zagadou et Al-Dakhil sont absents ; leurs retours sont annoncés pour fin octobre. Stergiou et Zagadou ne sont pas inscrits en Ligue des champions."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Début de saison irrégulier en Bundesliga (2 victoires seulement) et Seimen est le nouveau gardien numéro un. Le calendrier est chargé : HSV le 17/10, Atlético le 20/10."
    }
   ]
  },
  "celtic": {
   "nom": "Celtic",
   "faits": [
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Jota est de retour après 533 jours d'absence, mais il n'est pas dans la liste Europa League."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Celtic est leader de la Premiership après le 2-0 à Motherwell, mais reste en crise en Europe après sa défaite 3-1 contre Ferencvaros."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "<cite index=\"3-9,3-12\">Crise européenne : 0 point après 1 match et une défaite 3-1 contre Ferencváros.</cite>"
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "<cite index=\"16-10\">Martin O'Neill est l'entraîneur et a évoqué sa propre avenir après le 0-1 contre les Rangers.</cite>"
-   },
    {
     "date": "2026-10-12T08:48:05",
     "texte": "Carter-Vickers (élongation) a une durée d'absence incertaine. Jota est revenu après 18 mois d'absence mais n'est pas dans la liste Europa League."
@@ -2745,6 +2769,22 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Jota est revenu après environ 18 mois d'absence mais n'est pas dans la liste Europa League du Celtic."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Martin O'Neill est sous pression : trois défaites avant la trêve, un 0 point en Europe et des spéculations sur son avenir."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Carter-Vickers (élongation) est incertain à court terme et a critiqué les tactiques du club, ce qui nourrit des rumeurs de tension."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Johnston et Osmand sont proches d'un retour après des blessures aux ischio-jambiers."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Jota est de retour après 18 mois d'absence mais n'est pas dans la liste Europa League."
    }
   ]
  },
@@ -2774,6 +2814,14 @@
    {
     "date": "2026-10-12T08:48:05",
     "texte": "Début de saison irrégulier : 12e, une seule victoire sur 8 matchs, dont une défaite 0-4 à Heerenveen."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Début de saison 2026-27 difficile : 14e après 8 journées, 6 points, 20 buts encaissés (source du 14/10 ; les notes précédentes disaient 12e)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Absences longues signalées début octobre : Van Bergen, Mito et Max de Ligt (blessé depuis le 3 septembre), sans date de retour connue."
    }
   ]
  },
@@ -2803,6 +2851,14 @@
    {
     "date": "2026-10-12T08:48:05",
     "texte": "Blessés de longue durée : Hoogma (genou), Muller, Lachkar, Zarrouk. Le gardien Didillon est annoncé de retour fin octobre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Promu et dernier de l'Eredivisie : 2 points en 8 matchs, aucune victoire, 23 buts encaissés (pire défense)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "John Stegeman est entraîneur depuis l'été 2025. Il parle publiquement de situation critique et la pression monte."
    }
   ]
  },
@@ -3101,18 +3157,6 @@
   "nom": "Metz",
   "faits": [
    {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Nampalys Mendy (genou) est blessé, sans date de retour connue. Mangondo, Pandore, M'Bala, Marchal et Nassoko sont aussi absents."
-   },
-   {
-    "date": "2026-10-12T08:35:59",
-    "texte": "Peu efficace en déplacement : 3 tirs cadrés sur 33 tentés à l'extérieur en Ligue 2 avant ce match."
-   },
-   {
-    "date": "2026-10-12T08:48:05",
-    "texte": "Grégory Proment est entraîneur depuis le 30 septembre 2026, après le départ de Luc Holtz. L'objectif affiché est la remontée immédiate en Ligue 1, et Bouna Sarr reste capitaine."
-   },
-   {
     "date": "2026-10-12T08:48:05",
     "texte": "Nampalys Mendy (34 ans) est absent plusieurs mois avec une rupture du tendon quadricipital du genou gauche."
    },
@@ -3147,6 +3191,18 @@
    {
     "date": "2026-10-12T12:27:51",
     "texte": "Une seule victoire sur les cinq derniers matchs de championnat, et peu d'efficacité en déplacement."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Grégory Proment est entraîneur depuis fin septembre 2026, après le départ de Luc Holtz. Sa première (défaite 4-2 à Dijon) s'est mal passée, et le club parle de crise."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Nampalys Mendy est absent plusieurs mois (rupture du tendon quadricipital, genou gauche). Mangondo et Duarte sont aussi absents de longue date."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Une seule victoire sur les cinq derniers matchs, et peu d'efficacité en déplacement ; défense fragile (4 buts encaissés à Dijon)."
    }
   ]
  },
@@ -3286,6 +3342,18 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Bonne dynamique à l'extérieur (1-0 à West Brom le 10/10) et 7e du classement, mais seulement 2 clean sheets cette saison."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Paik Seung-ho est absent au moins pour Preston et QPR, avec une réévaluation ensuite."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Bird, Gardner-Hickman et Gray reviennent progressivement de blessure; ils ne sont pas encore prêts à enchaîner les titularisations."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Invaincu à domicile sur 7 matchs, avec une défense peu hermétique (2 clean sheets)."
    }
   ]
  },
@@ -3361,6 +3429,22 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Kaplan, Fonville et Bischoff reviennent de blessure et sont ramenés progressivement."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Sandler, Nuytinck et Mor sont absents de longue durée."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "NEC cumule Eredivisie et Europa League : Dinamo Zagreb le 22/10, Omonia le 05/11, après une défaite 0-5 à la Juventus."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série en cours : 6 matchs sans victoire toutes compétitions (début octobre), dont 4 à domicile."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Effectif très renouvelé, avec beaucoup de recrues sans expérience du plus haut niveau."
    }
   ]
  },
@@ -3386,6 +3470,18 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Fortuna a battu NEC lors des deux dernières confrontations (3-2 puis 2-3)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Danny Buijs reste entraîneur, et l'équipe est 6e avec 13 points après 8 journées."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Márquez est absent depuis environ 100 jours, Oukili est blessé à l'aine et Bayram est absent de longue date."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Fortuna reste sur deux victoires contre NEC (3-2 puis 2-3)."
    }
   ]
  },
@@ -3493,6 +3589,18 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Série en cours : neuf victoires d'affilée toutes compétitions confondues, leader de la Liga avec huit victoires en huit matchs. Prochain match : le PSG en C1 le 20 octobre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Bardghji est out longtemps (ligaments croisés, retour estimé fin février). Christensen (cuisse) doit revenir vers le 31/10 (Alavés)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Barcelone enchaîne 10 victoires en 10 matchs toutes compétitions et mène la Liga. Le calendrier est très dense : PSG le 20/10, puis le Real Madrid."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Raphinha (cuisse) est sorti de blessure avec prudence. De Jong n'a pas encore rejoué cette saison après sa blessure au genou, et son retour en match est à surveiller."
    }
   ]
  },
@@ -3629,6 +3737,22 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Série en cours : défaites 0-1 à Wolverhampton et contre Birmingham sur ses trois derniers matchs de championnat."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Nolan Galves est absent jusqu'à la fin de la saison (blessure grave au genou)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Mikey Johnston a une cheville récurrente qui le met souvent sur la touche, et le club manque d'ailiers de métier."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de deux défaites 1-0 (Wolves, Birmingham) avec un jeu offensif peu inspiré ; Heggebo est en méforme."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "James Morrison est confirmé head coach depuis le 30 avril 2026 ; Jimmy-Jay Morgan est le meilleur buteur avec 5 buts."
    }
   ]
  },
@@ -3646,6 +3770,18 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Absences de longue durée : Forshaw (hanche, opération possible), Ohashi, Miller, Ribeiro. Wharton et Jørgensen reviennent progressivement."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Tony Mowbray est de retour sur le banc depuis juin 2026 et la BBC dit qu'il a transformé l'équipe."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Forshaw (hanche, opération) et Ohashi (encore 2-3 semaines d'absence) manquent longtemps ; Wharton, Jørgensen et d'autres reviennent progressivement."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "L'effectif est court et les blessures musculaires se répètent (Ribeiro, Alebiosu, Morishita, Montgomery) ; Mowbray fait tourner."
    }
   ]
  },
@@ -3659,6 +3795,22 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "L'entraîneur est Grégory Poirier. Corredor (ischio-jambiers) et Centonze (genou) revenaient de blessure début octobre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Poirier est l'entraîneur, avec 7 points en 4 matchs lors de ses premiers matchs."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "La défense était la 3e plus perméable de Ligue 2 (13 buts encaissés en 7 matchs) avant la clean sheet contre Reims."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Concurrence entre Carlgren et Dupé dans les buts, avec Mirbach absent pour l'instant."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Contexte instable autour du projet de rachat et de la DNCG."
    }
   ]
  },
@@ -3672,6 +3824,18 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Selon Footmercato, le club s'apprête à recruter M'Baye Niang après Nzonzi. Wikipedia indique Albert Sánchez comme entraîneur."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de 3 défaites sur ses 4 derniers matchs en Ligue 2, dont Pau (0-2) et Annecy (0-1)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Aucune victoire à l'extérieur cette saison."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Albert Sánchez est l'entraîneur, avec des signatures annoncées (Nzonzi, puis M'Baye Niang selon Footmercato)."
    }
   ]
  },
@@ -3693,6 +3857,214 @@
    {
     "date": "2026-10-13T12:11:36",
     "texte": "Attaque peu prolifique : 4 buts en 4 matchs de championnat à domicile ; aucune victoire à domicile en 5 matchs."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Julien Stéphan est toujours entraîneur. QPR est invaincu en 5 matchs de championnat (surtout des nuls)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Infirmerie chargée: Burrell (reprise individuelle), Saito (reprise partielle), Dembélé (ligaments croisés), Obikwu, Lamptey (cheville). Chair est proche d'un retour."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de trois matchs en 10 jours (Derby, Birmingham, Swansea) et attaque peu prolifique."
+   }
+  ]
+ },
+ "ipswich town": {
+  "nom": "Ipswich Town",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Gary O'Neil est l'entraîneur ; le club est promu en Premier League et occupe le milieu de tableau (11e)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Fatawu est suspendu jusqu'au 17 octobre, après une expulsion contre Everton."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Défense fragile (2-5 à Manchester United), mais victoire 2-1 contre Fulham le 10 octobre."
+   }
+  ]
+ },
+ "bayern munich": {
+  "nom": "Bayern Munich",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Un début de saison irrégulier : aucune défaite en Bundesliga mais 2 nuls en 5 matchs, avec des buts encaissés très tôt à répétition."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Neuer s'est blessé au pied avant le match de Ligue des champions à Viking et il a commis des erreurs à Augsburg. Urbig est la solution de rechange."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Musiala est toujours indisponible."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Olise est suspendu pour le prochain match de Ligue des champions contre Arsenal."
+   }
+  ]
+ },
+ "lask": {
+  "nom": "LASK",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Reste sur quatre matches sans victoire avant ce match, dont une défaite 2-0 contre Rapid Vienne."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Bello (arrière gauche) et Usor (attaquant) se sont blessés contre Rapid, durée d'indisponibilité inconnue."
+   }
+  ]
+ },
+ "norwich city": {
+  "nom": "Norwich City",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Philippe Clement est l'entraîneur depuis novembre 2025."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ali Ahmed a subi une blessure grave (déclaration de Clement) et est en rééducation ; Fisher, Makama et Diallo revenaient de blessure avant la saison, statut actuel non confirmé."
+   }
+  ]
+ },
+ "portsmouth": {
+  "nom": "Portsmouth",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Infirmerie longue en 2026-27 : Shaughnessy, Arthur, Ogilvie (retour espéré en novembre), Brooke-Smith, Waddingham, Umeh (ischio) et Kosznovszky (genou)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "19e du Championship, avec une défaite 1-0 à Southampton avant la réception de Sheffield United."
+   }
+  ]
+ },
+ "shakhtar donetsk": {
+  "nom": "Shakhtar Donetsk",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Joue ses matchs « à domicile » de Ligue des champions 2026-27 à Stamford Bridge, à cause de la guerre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Longue liste de blessés : Eguinaldo et Azarov sont absents, Pedrinho et Marlon Santos reviennent d'une blessure musculaire, et Ghram s'est blessé en septembre."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de victoires en championnat ukrainien sans but encaissé (quatre matchs au 14/10) sous Arda Turan."
+   }
+  ]
+ },
+ "aek athens": {
+  "nom": "AEK Athens",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Barnabas Varga est blessé (cuisse), après un début de saison où il a beaucoup marqué."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Thomas Strakosha est absent longtemps (fracture du poignet)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Invaincu depuis la Supercoupe de Grèce du 12 août, avec Marko Nikolic comme entraîneur."
+   }
+  ]
+ },
+ "bristol city": {
+  "nom": "Bristol City",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Michael Skubala est l'entraîneur actuel."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Rob Dickie est absent pour une blessure au genou, sans ACL, avec une durée incertaine."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Les défenseurs Luke McNally et De Keersmaecker reviennent de blessure et sont à surveiller en charge de jeu."
+   }
+  ]
+ },
+ "sheffield united": {
+  "nom": "Sheffield United",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Chris Wilder est l'entraîneur, de retour depuis septembre 2025."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Femi Seriki revient très progressivement après une longue blessure, avec un retour possible vers Derby le 24/10."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Les Blades étaient en difficulté avant la trêve (3 défaites de suite), puis ont gagné 3-0 contre Lincoln."
+   }
+  ]
+ },
+ "fc twente": {
+  "nom": "FC Twente",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Gardien Unnerstall blessé depuis le 9 octobre 2026, retour inconnu"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Lemkin (long blessé) vient de reprendre l'entraînement début octobre"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Joue la Conference League (Thun) : enchaîne les matchs jeudi-dimanche"
+   }
+  ]
+ },
+ "fc utrecht": {
+  "nom": "FC Utrecht",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Stepanov (attaquant titulaire) blessé à la cheville, retour prévu vers le 24/10/2026"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Jensen, Engwanda, Paredes et Jonathans sont blessés, retours attendus entre novembre et janvier 2027 selon les listes"
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Ohio est blessé au genou (ligaments croisés), retour attendu début 2027"
+   }
+  ]
+ },
+ "sochaux": {
+  "nom": "Sochaux",
+  "faits": [
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Promu de National, installé dans le haut du milieu de tableau (environ 8e). Vincent Hognon est l'entraîneur."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Série de nuls : 1-1 à Laval et 1-1 contre Boulogne, avec peu de buts marqués (jamais plus d'un but par match cette saison)."
+   },
+   {
+    "date": "2026-10-14T09:44:47",
+    "texte": "Benjamin Gomel (buteur à domicile) et Mehdi Jeannin (meilleures notes) sont les hommes en forme."
    }
   ]
  }

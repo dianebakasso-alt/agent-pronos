@@ -82,8 +82,8 @@
   "proba": 0.2804,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 22.4,
   "jambes": [
    {
     "id": "09e41b63d1d59bd4d971c54ffce154d3",
@@ -93,7 +93,10 @@
     "exterieur": "Napoli",
     "pari": "Victoire Villarreal",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "da9e9e9eb9a238ed97827c4a8fbe6044",
@@ -103,7 +106,42 @@
     "exterieur": "PSV Eindhoven",
     "pari": "Victoire RB Leipzig",
     "court": "1",
-    "cote": 1.58
+    "cote": 1.58,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-14",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.19,
+  "proba": 0.2781,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "pari": "Victoire Manchester City",
+    "court": "1",
+    "cote": 1.97
+   },
+   {
+    "id": "35d7cc4a96b152b4a31b0b151cb70feb",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-10-14T18:45:00Z",
+    "domicile": "Queens Park Rangers",
+    "exterieur": "Derby County",
+    "pari": "Victoire Queens Park Rangers",
+    "court": "1",
+    "cote": 1.62
    }
   ]
  }

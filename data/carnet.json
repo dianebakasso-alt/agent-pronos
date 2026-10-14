@@ -492,7 +492,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
-    }
+    },
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "9b2bf9bed21283dcad774dd5be7ba1da",
@@ -522,7 +524,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915413"
-    }
+    },
+    "score": "3-4",
+    "ok": false
    }
   ],
   "cote": 2.14,
@@ -530,8 +534,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "jour:2026-10-12",
@@ -599,7 +603,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915418"
-    }
+    },
+    "score": "0-2",
+    "ok": false
    }
   ],
   "cote": 2.5,
@@ -607,8 +613,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:46f726554e6876fb828c767bfbfdfdad",
@@ -628,7 +634,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915436"
-    }
+    },
+    "score": "2-0",
+    "ok": false
    }
   ],
   "cote": 1.88,
@@ -636,8 +644,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:59aa75d21f765e6ec2c671f4d8e76a27",
@@ -657,7 +665,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880231"
-    }
+    },
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.02,
@@ -665,8 +675,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:bd2a85de0af046a3b15fdfac6e78d0c5",
@@ -686,7 +696,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880226"
-    }
+    },
+    "score": "1-3",
+    "ok": false
    }
   ],
   "cote": 1.36,
@@ -694,8 +706,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:6742eb24c0e60f9d3fec73a2aa324227",
@@ -715,7 +727,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880230"
-    }
+    },
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.59,
@@ -723,8 +737,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:3cd5667183559b0598e304d98a23cc20",
@@ -744,7 +758,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880229"
-    }
+    },
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.6,
@@ -752,8 +768,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.0
  },
  {
   "cle": "match:a1b3fc4030f9f511934c8165151346a3",
@@ -773,7 +789,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880228"
-    }
+    },
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.35,
@@ -781,8 +799,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c46cfc0e1bcc460e455e006428cd4e83",
@@ -802,7 +820,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880225"
-    }
+    },
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 2.23,
@@ -810,8 +830,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:93177465a42a0fb7802f1c8b06d6ee3a",
@@ -831,7 +851,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
-    }
+    },
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -839,8 +861,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.9
  },
  {
   "cle": "match:a9c22e08b395ee5753c8a65bc0eb97cf",
@@ -860,7 +882,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915412"
-    }
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.88,
@@ -868,8 +892,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.8
  },
  {
   "cle": "match:dd431688ed5c8f383b6434fd4f01e883",
@@ -889,7 +913,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915435"
-    }
+    },
+    "score": "1-4",
+    "ok": true
    }
   ],
   "cote": 1.27,
@@ -897,8 +923,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.7
  },
  {
   "cle": "match:8a9d20b23417357011c10585a99335e9",
@@ -918,7 +944,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915411"
-    }
+    },
+    "score": "3-3",
+    "ok": false
    }
   ],
   "cote": 1.1,
@@ -926,8 +954,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:ca3f4b075d835413f9cb7bd3c439fdd0",
@@ -947,7 +975,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915413"
-    }
+    },
+    "score": "3-4",
+    "ok": false
    }
   ],
   "cote": 1.22,
@@ -955,8 +985,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:09e41b63d1d59bd4d971c54ffce154d3",
@@ -976,7 +1006,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915410"
-    }
+    },
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 2.05,
@@ -984,8 +1016,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.5
  },
  {
   "cle": "match:da9e9e9eb9a238ed97827c4a8fbe6044",
@@ -1005,7 +1037,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915434"
-    }
+    },
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.58,
@@ -1013,8 +1047,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.8
  },
  {
   "cle": "match:c12dc476d773ac521742384d8d8d1481",
@@ -1034,7 +1068,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880232"
-    }
+    },
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.48,
@@ -1042,8 +1078,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.8
  },
  {
   "cle": "match:b7eaf1b7d03aaf459509c65197a1fa26",
@@ -1063,7 +1099,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880227"
-    }
+    },
+    "score": "2-3",
+    "ok": true
    }
   ],
   "cote": 1.92,
@@ -1071,8 +1109,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.2
  },
  {
   "cle": "prudent:2026-10-13",
@@ -1092,7 +1130,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915411"
-    }
+    },
+    "score": "3-3",
+    "ok": false
    },
    {
     "id": "93177465a42a0fb7802f1c8b06d6ee3a",
@@ -1107,7 +1147,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
-    }
+    },
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.3,
@@ -1115,8 +1157,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-10-13",
@@ -1136,7 +1178,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915410"
-    }
+    },
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "da9e9e9eb9a238ed97827c4a8fbe6044",
@@ -1151,7 +1195,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915434"
-    }
+    },
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 3.24,
@@ -1159,8 +1205,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 22.4
  },
  {
   "cle": "gros:2026-10-13",
@@ -1180,7 +1226,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880232"
-    }
+    },
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "2b0a946cac613732fcbf57ce931490a1",
@@ -1195,7 +1243,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915418"
-    }
+    },
+    "score": "0-2",
+    "ok": true
    },
    {
     "id": "a1b3fc4030f9f511934c8165151346a3",
@@ -1210,7 +1260,9 @@
     "espn": {
      "ligue": "eng.2",
      "id": "401880228"
-    }
+    },
+    "score": "0-1",
+    "ok": false
    },
    {
     "id": "09e41b63d1d59bd4d971c54ffce154d3",
@@ -1225,7 +1277,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915410"
-    }
+    },
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 17.74,
@@ -1233,8 +1287,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-10-13",
@@ -1254,7 +1308,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915435"
-    }
+    },
+    "score": "1-4",
+    "ok": true
    },
    {
     "id": "da9e9e9eb9a238ed97827c4a8fbe6044",
@@ -1269,7 +1325,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915434"
-    }
+    },
+    "score": "1-0",
+    "ok": false
    },
    {
     "id": "93177465a42a0fb7802f1c8b06d6ee3a",
@@ -1284,7 +1342,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
-    }
+    },
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 2.66,
@@ -1292,8 +1352,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-10-13",
@@ -1313,7 +1373,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915417"
-    }
+    },
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "dd431688ed5c8f383b6434fd4f01e883",
@@ -1328,7 +1390,9 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915435"
-    }
+    },
+    "score": "1-4",
+    "ok": true
    },
    {
     "id": "da9e9e9eb9a238ed97827c4a8fbe6044",
@@ -1343,11 +1407,670 @@
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915434"
-    }
+    },
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 2.24,
   "proba": 0.4681,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:5d6f9accd6f79ae4216dfd29ccc342b2",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "5d6f9accd6f79ae4216dfd29ccc342b2",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "Feyenoord",
+    "exterieur": "Como",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Como",
+    "cote": 2.05,
+    "proba": 0.4489,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915416"
+    }
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4489,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:2903ee092f7e08c549b130a3d394ac3c",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Liverpool",
+    "cote": 1.35,
+    "proba": 0.6969,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
+   }
+  ],
+  "cote": 1.35,
+  "proba": 0.6969,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:35d7cc4a96b152b4a31b0b151cb70feb",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "35d7cc4a96b152b4a31b0b151cb70feb",
+    "date": "2026-10-14T18:45:00Z",
+    "domicile": "Queens Park Rangers",
+    "exterieur": "Derby County",
+    "championnat": "Championship",
+    "pari": "Victoire Queens Park Rangers",
+    "cote": 1.62,
+    "proba": 0.5772,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880221"
+    }
+   }
+  ],
+  "cote": 1.62,
+  "proba": 0.5772,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a6a5201c913ad65608fee5eb63532c62",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a6a5201c913ad65608fee5eb63532c62",
+    "date": "2026-10-14T18:45:00Z",
+    "domicile": "Norwich City",
+    "exterieur": "Southampton",
+    "championnat": "Championship",
+    "pari": "Victoire Norwich City",
+    "cote": 2.33,
+    "proba": 0.3829,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880223"
+    }
+   }
+  ],
+  "cote": 2.33,
+  "proba": 0.3829,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:6e99ceb52a57b3410b81067110589458",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "6e99ceb52a57b3410b81067110589458",
+    "date": "2026-10-14T18:45:00Z",
+    "domicile": "Portsmouth",
+    "exterieur": "Sheffield United",
+    "championnat": "Championship",
+    "pari": "Victoire Portsmouth",
+    "cote": 2.23,
+    "proba": 0.4029,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880222"
+    }
+   }
+  ],
+  "cote": 2.23,
+  "proba": 0.4029,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0f961390e790ad2c80ecb3f302cad4a6",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0f961390e790ad2c80ecb3f302cad4a6",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Shakhtar Donetsk",
+    "exterieur": "AEK Athens",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire AEK Athens",
+    "cote": 2.53,
+    "proba": 0.3649,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915406"
+    }
+   }
+  ],
+  "cote": 2.53,
+  "proba": 0.3649,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d4ef112438afa4c2cdbbfc9376a009c9",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d4ef112438afa4c2cdbbfc9376a009c9",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "AS Roma",
+    "exterieur": "Real Madrid",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.9,
+    "proba": 0.4962,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915414"
+    }
+   }
+  ],
+  "cote": 1.9,
+  "proba": 0.4962,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3f3cb74e560dfcc3e795b667ed9ebdef",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3f3cb74e560dfcc3e795b667ed9ebdef",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Aston Villa",
+    "exterieur": "Fenerbahce",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Aston Villa",
+    "cote": 1.67,
+    "proba": 0.5661,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915409"
+    }
+   }
+  ],
+  "cote": 1.67,
+  "proba": 0.5661,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:ca87a3874b0eae31b4173ae4a9324957",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "ca87a3874b0eae31b4173ae4a9324957",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Bodø/Glimt",
+    "exterieur": "Borussia Dortmund",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Borussia Dortmund",
+    "cote": 2.15,
+    "proba": 0.437,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915393"
+    }
+   }
+  ],
+  "cote": 2.15,
+  "proba": 0.437,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:5a1a6a04c5561897741105e30d5d7ec4",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Manchester City",
+    "cote": 2.0,
+    "proba": 0.4819,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915407"
+    }
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.4819,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:4c7f87780ae5ab8bec9e83d6d6ec9909",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "4c7f87780ae5ab8bec9e83d6d6ec9909",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Real Betis",
+    "exterieur": "Porto",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Betis",
+    "cote": 2.02,
+    "proba": 0.4646,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915408"
+    }
+   }
+  ],
+  "cote": 2.02,
+  "proba": 0.4646,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d7576351b8cb2396e32cc3de0446f3de",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d7576351b8cb2396e32cc3de0446f3de",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "ŠK Slovan Bratislava",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire VfB Stuttgart",
+    "cote": 1.27,
+    "proba": 0.7438,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915405"
+    }
+   }
+  ],
+  "cote": 1.27,
+  "proba": 0.7438,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b6f4ecaf15915781326083408fba0e52",
+  "jour": "2026-10-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b6f4ecaf15915781326083408fba0e52",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Lincoln City",
+    "exterieur": "West Ham United",
+    "championnat": "Championship",
+    "pari": "Victoire West Ham United",
+    "cote": 1.63,
+    "proba": 0.5602,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880224"
+    }
+   }
+  ],
+  "cote": 1.63,
+  "proba": 0.5602,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "d7576351b8cb2396e32cc3de0446f3de",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "ŠK Slovan Bratislava",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire VfB Stuttgart",
+    "cote": 1.27,
+    "proba": 0.7438,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915405"
+    }
+   },
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Liverpool",
+    "cote": 1.35,
+    "proba": 0.6969,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
+   }
+  ],
+  "cote": 1.71,
+  "proba": 0.5183,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Manchester City",
+    "cote": 1.97,
+    "proba": 0.4819,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915407"
+    }
+   },
+   {
+    "id": "35d7cc4a96b152b4a31b0b151cb70feb",
+    "date": "2026-10-14T18:45:00Z",
+    "domicile": "Queens Park Rangers",
+    "exterieur": "Derby County",
+    "championnat": "Championship",
+    "pari": "Victoire Queens Park Rangers",
+    "cote": 1.62,
+    "proba": 0.5772,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880221"
+    }
+   }
+  ],
+  "cote": 3.19,
+  "proba": 0.2781,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "4c7f87780ae5ab8bec9e83d6d6ec9909",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Real Betis",
+    "exterieur": "Porto",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Betis",
+    "cote": 2.0,
+    "proba": 0.4646,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915408"
+    }
+   },
+   {
+    "id": "d4ef112438afa4c2cdbbfc9376a009c9",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "AS Roma",
+    "exterieur": "Real Madrid",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.88,
+    "proba": 0.4962,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915414"
+    }
+   },
+   {
+    "id": "5d6f9accd6f79ae4216dfd29ccc342b2",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "Feyenoord",
+    "exterieur": "Como",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Como",
+    "cote": 2.05,
+    "proba": 0.4489,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915416"
+    }
+   },
+   {
+    "id": "ca87a3874b0eae31b4173ae4a9324957",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Bodø/Glimt",
+    "exterieur": "Borussia Dortmund",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Borussia Dortmund",
+    "cote": 2.1,
+    "proba": 0.437,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915393"
+    }
+   }
+  ],
+  "cote": 16.19,
+  "proba": 0.0452,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "d7576351b8cb2396e32cc3de0446f3de",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "ŠK Slovan Bratislava",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7017,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915405"
+    }
+   },
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6648,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
+   },
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6607,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915407"
+    }
+   }
+  ],
+  "cote": 3.41,
+  "proba": 0.3082,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-10-14",
+  "jour": "2026-10-14",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "d7576351b8cb2396e32cc3de0446f3de",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "ŠK Slovan Bratislava",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire VfB Stuttgart",
+    "cote": 1.27,
+    "proba": 0.7438,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915405"
+    }
+   },
+   {
+    "id": "2903ee092f7e08c549b130a3d394ac3c",
+    "date": "2026-10-14T16:45:00Z",
+    "domicile": "LASK",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6648,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915415"
+    }
+   },
+   {
+    "id": "5a1a6a04c5561897741105e30d5d7ec4",
+    "date": "2026-10-14T19:00:00Z",
+    "domicile": "Manchester City",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6607,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915407"
+    }
+   }
+  ],
+  "cote": 3.21,
+  "proba": 0.3267,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
