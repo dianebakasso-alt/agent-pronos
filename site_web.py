@@ -557,8 +557,16 @@ def resume_jour(j, bankroll):
     for m in jv[:2]:
         v = m["value"]
         lignes.append(f"💎 <b>{e(v['issue'])}</b> à {v['cote']:.2f} chez {e(v['bookmaker'])} : mise <b>{euros(v['mise'])}</b>.")
+    if not tk:
+        # pas de ticket : on nomme quand même les paris simples où l'expert a confiance
+        surs = sorted([(a, par_id[k]) for k, a in pr.items() if a and k in par_id and a["niveau"] in ("forte", "bonne")
+                       and not a.get("value") and not par_id[k].get("deja_commence")], key=lambda x: -x[0]["proba"])[:3]
+        for a, m in surs:
+            doute = " (l'IA a un doute)" if a.get("doute") else ""
+            lignes.append(f"{'💪' if a['niveau'] == 'forte' else '👍'} <b>{e(a['issue'])}</b> à {a['cote']:.2f} "
+                          f"({pct(a['proba'])} de chances){doute} : en simple, mise <b>{max(1, round(bankroll * 0.01))} €</b>.")
     if not lignes:
-        lignes.append("🧘 <b>Rien de solide</b> : je ne jouerais pas aujourd'hui. Garder son argent, c'est aussi gagner.")
+        lignes.append(f"🧘 <b>Rien de solide</b> : je ne jouerais pas {e(j['quand'])}. Garder son argent, c'est aussi gagner.")
     a_eviter = [f"{e(m['domicile'])} – {e(m['exterieur'])}" for m in (eviter + pieges)[:3]]
     ev = f'<p class="rj-ev">🚫 <b>À éviter :</b> {", ".join(a_eviter)} (favori en mauvaise forme ou mauvaise nouvelle).</p>' if a_eviter else ""
     nb_forte = sum(1 for a in pr.values() if a and a["niveau"] in ("forte", "bonne"))

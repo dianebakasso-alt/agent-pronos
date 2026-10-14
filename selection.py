@@ -182,24 +182,31 @@ NIVEAUX = {"forte": "Confiance forte", "bonne": "Bonne confiance", "moyenne": "C
 
 
 def avis_match(m):
-    """Le prono de l'expert pour un match, avec un niveau de confiance."""
+    """Le prono de l'expert pour un match. Le niveau dépend d'abord des vraies chances :
+    forte ≥ 65 %, bonne ≥ 55 %, moyenne ≥ 45 %, sinon match ouvert ;
+    on descend d'un cran si la forme contredit le pari ou si l'IA a un doute."""
     if not m.get("issues"):
         return None
-    c = candidat(m)
     fav = max(m["issues"], key=lambda i: i["proba"])
     a = (m.get("avis") or {}).get("avis")
     v = m.get("value")
     if v and a != "eviter":
-        return {"court": v["court"], "issue": v["issue"], "proba": v["proba"], "cote": v["cote"],
-                "niveau": "bonne" if v["proba"] < 0.45 else "forte", "piege": False, "value": True}
-    if c:
-        niveau = "forte" if (c["forme"] and c["proba"] >= 0.55 and a != "prudence") else "bonne"
-        court, issue, proba, cote = c["court"], c["issue"], c["proba"], c["cote"]
-    elif fav["proba"] >= 0.45:
-        niveau, court, issue, proba, cote = "moyenne", fav["court"], fav["issue"], fav["proba"], fav["cote"]
+        court, issue, proba, cote = v["court"], v["issue"], v["proba"], v["cote"]
     else:
-        niveau, court, issue, proba, cote = "ouvert", fav["court"], fav["issue"], fav["proba"], fav["cote"]
+        c = candidat(m) or {}
+        src = c if c else fav
+        court, issue, proba, cote = src["court"], src["issue"], src["proba"], src["cote"]
+    ordre = ["ouvert", "moyenne", "bonne", "forte"]
+    k = 3 if proba >= 0.65 else 2 if proba >= 0.55 else 1 if proba >= 0.45 else 0
+    if court != "N" and _forme_ok(m, court) is False:
+        k -= 1
+    if a == "prudence":
+        k -= 1
     if a == "eviter":
-        niveau = "ouvert"
+        k = 0
+    niveau = ordre[max(0, k)]
+    if v and a != "eviter":
+        niveau = ordre[max(1, k)]      # un value bet reste jouable, même s'il n'est pas sûr
     piege = fav["proba"] >= 0.5 and _forme_ok(m, fav["court"]) is False
-    return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege}
+    return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege,
+            "value": bool(v and a != "eviter"), "doute": a == "prudence"}
