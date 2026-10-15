@@ -146,6 +146,18 @@ une info qui retourne le match, « eviter »."""
 
 
 LECONS_TXT = ""
+ERREURS_IA = []
+
+
+def _err(e):
+    detail = ""
+    try:
+        detail = e.read().decode()[:300] if hasattr(e, "read") else ""
+    except Exception:
+        pass
+    txt = f"{getattr(e, 'code', '')} {e} {detail}".strip()[:400]
+    ERREURS_IA.append(txt)
+    return txt
 
 
 def appel_ia(texte, cfg, cle_ia, max_uses=3):
@@ -209,7 +221,7 @@ def verdicts_du_jour(matchs, cfg, cle_ia):
         try:
             out.update(_verdicts_paquet(paquet, cfg, cle_ia))
         except Exception as e:
-            print(f"  ! IA verdicts (paquet {k // TAILLE_PAQUET + 1}) : {e}")
+            print(f"  ! IA verdicts (paquet {k // TAILLE_PAQUET + 1}) : {_err(e)}")
     return out
 
 
@@ -528,7 +540,7 @@ def main():
                     autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia), maintenant)
                     ia["ok"] += 1
                 except Exception as e:
-                    print(f"  ! autopsie {j['domicile']}: {e}")
+                    print(f"  ! autopsie {j['domicile']}: {_err(e)}")
             LECONS_TXT = autopsie.texte_lecons(lecons)
             for m in focus[: cfg.get("analyse_profonde_max", 6)]:
                 s = sel["matchs"][m["id"]]
@@ -540,7 +552,7 @@ def main():
                     memoire.retenir(actu, a.get("a_retenir"), maintenant)
                     ia["ok"] += 1
                 except Exception as e:
-                    print(f"  ! IA sélection {m['domicile']}: {e}")
+                    print(f"  ! IA sélection {m['domicile']}: {_err(e)}")
             # le ticket du jour : ses matchs sont aussi analysés en profondeur
             deja = {x["id"] for x in focus}
             tk0 = selection.ticket_du_jour(jouables_auj, cfg["bookmakers_jouables"])
@@ -555,7 +567,7 @@ def main():
                     memoire.retenir(actu, a.get("a_retenir"), maintenant)
                     ia["ok"] += 1
                 except Exception as e:
-                    print(f"  ! IA ticket du jour {m['domicile']}: {e}")
+                    print(f"  ! IA ticket du jour {m['domicile']}: {_err(e)}")
             # le verdict de l'IA sur chaque match du jour (un seul appel)
             try:
                 for a in jouables_auj:
@@ -564,7 +576,7 @@ def main():
                 verdicts = verdicts_du_jour(sorted(jouables_auj, key=lambda a: a["debut"]), cfg, cle_ia) if jouables_auj else {}
                 ia["ok"] += 1 if verdicts else 0
             except Exception as e:
-                print(f"  ! IA verdicts du jour : {e}")
+                print(f"  ! IA verdicts du jour : {_err(e)}")
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)
@@ -572,7 +584,7 @@ def main():
                     ia["ok"] += 1
                 except Exception as e:
                     detail = e.read().decode()[:200] if hasattr(e, "read") else str(e)[:200]
-                    print(f"  ! IA {m['domicile']}: {e} {detail}")
+                    print(f"  ! IA {m['domicile']}: {_err(e)} {detail}")
                     ia["erreur"] = f"{getattr(e, 'code', '')} {detail}".strip()
             ia["etat"] = "active" if ia["ok"] else "erreur"
             (DATA / "memoire_actu.json").write_text(json.dumps(actu, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -665,6 +677,9 @@ def main():
                       **{j["id"]: {"res": j["res"], "score": j.get("score", "")}
                          for c in combines for j in c["jambes"] if j.get("res") and j.get("id")}},
     }
+    if not demo:
+        (DATA / "ia_journal.json").write_text(json.dumps({"quand": maintenant.isoformat(), "etat": ia.get("etat"), "ok": ia.get("ok"),
+            "erreurs": ERREURS_IA[:20]}, ensure_ascii=False, indent=1), encoding="utf-8")
     site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combos)
     print("Site généré : site/index.html")
 
