@@ -120,8 +120,8 @@
   "proba": 0.234,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 28.2,
   "jambes": [
    {
     "id": "4c7f87780ae5ab8bec9e83d6d6ec9909",
@@ -131,7 +131,10 @@
     "exterieur": "Porto",
     "pari": "Victoire Real Betis",
     "court": "1",
-    "cote": 2.02
+    "cote": 2.02,
+    "res": "1",
+    "score": "3-2",
+    "ok": true
    },
    {
     "id": "d4ef112438afa4c2cdbbfc9376a009c9",
@@ -141,7 +144,42 @@
     "exterieur": "Real Madrid",
     "pari": "Victoire Real Madrid",
     "court": "2",
-    "cote": 1.89
+    "cote": 1.89,
+    "res": "2",
+    "score": "3-4",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-15",
+  "bookmaker": "Betclic (FR)",
+  "cote": 1.5,
+  "proba": 0.6292,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "feda75190a774fb92164059453b037be",
+    "sport_key": "soccer_uefa_europa_league",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Celtic",
+    "pari": "Victoire Benfica",
+    "court": "1",
+    "cote": 1.22
+   },
+   {
+    "id": "1425f07b2aa42fe7c1ba0cb919a1a283",
+    "sport_key": "soccer_uefa_europa_conference_league",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "FK Jablonec",
+    "pari": "Victoire SC Freiburg",
+    "court": "1",
+    "cote": 1.23
    }
   ]
  }

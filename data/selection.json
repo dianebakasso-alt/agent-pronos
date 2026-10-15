@@ -75,10 +75,10 @@
    "sport_key": "soccer_uefa_europa_league",
    "court": "1",
    "issue": "Victoire Rennes",
-   "proba": 0.7699590702712961,
+   "proba": 0.7976558044317698,
    "proba_depart": 0.7664793247731038,
-   "cote": 1.25,
-   "bk": "PMU (FR)",
+   "cote": 1.2,
+   "bk": "Betclic (FR)",
    "note": 0.7336,
    "forme": null,
    "ajoute": "2026-10-12",
@@ -134,76 +134,6 @@
     }
    }
   },
-  "d7576351b8cb2396e32cc3de0446f3de": {
-   "id": "d7576351b8cb2396e32cc3de0446f3de",
-   "debut": "2026-10-14T19:00:00Z",
-   "domicile": "ŠK Slovan Bratislava",
-   "exterieur": "VfB Stuttgart",
-   "championnat": "UEFA Champions League",
-   "sport_key": "soccer_uefa_champs_league",
-   "court": "2",
-   "issue": "Victoire VfB Stuttgart",
-   "proba": 0.7142174822406704,
-   "proba_depart": 0.7520672921254881,
-   "cote": 1.33,
-   "bk": "Betclic (FR)",
-   "note": 0.7148,
-   "forme": null,
-   "ajoute": "2026-10-12",
-   "statut": "suivi",
-   "analyses": [
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Stuttgart reste nettement favori face à un Slovan sans point en Ligue des champions, battu 1-6 à Paris et tenu en échec à Skalica. Mais à 1.27, la cote laisse peu de marge : Chabot est incertain, la défense est diminuée, une rotation est possible avant HSV et l'Atlético, et la forme en Bundesliga est irrégulière."
-    },
-    {
-     "jour": "2026-10-13",
-     "avis": "prudence",
-     "resume": "Stuttgart est nettement supérieur sur le papier, face à un Slovan à 0 point et en crise de résultats. Mais la défense est très amoindrie (Mittelstädt probablement absent, plusieurs centraux blessés), une rotation est possible avant l'Atlético, et une cote de 1.25 laisse peu de marge pour un match à l'extérieur."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Stuttgart reste favori face à un Slovan sans point en Ligue des champions, mais la cote de 1.27 ne laisse aucune marge. L'effectif est très amoindri (Mittelstädt forfait, huit autres absents), le jeune gardien Seimen est incertain, la pelouse est abîmée et Hoeneß garde sa rotation secrète avant l'Atlético."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Stuttgart reste favori (Slovan a 0 point et reste sans victoire contre lui), mais une cote de 1.33 laisse peu de marge face à ces signaux. Les absences nombreuses, un gardien de 20 ans, la rotation possible avant HSV et l'Atlético, et la pelouse abîmée pèsent contre un favori « sûr »."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Stuttgart reste nettement supérieur sur le papier, face à un Slovan sans point en Ligue des champions. Mais une cote de 1.33 laisse peu de marge : Stuttgart est irrégulier, doit composer avec une longue liste d'absents, a un calendrier chargé, peut faire tourner et jouera avec un jeune gardien, ce qui correspond à vos leçons sur les favoris à cote basse."
-    }
-   ],
-   "avis": {
-    "avis": "prudence",
-    "resume": "Stuttgart reste nettement supérieur sur le papier, face à un Slovan sans point en Ligue des champions. Mais une cote de 1.33 laisse peu de marge : Stuttgart est irrégulier, doit composer avec une longue liste d'absents, a un calendrier chargé, peut faire tourner et jouera avec un jeune gardien, ce qui correspond à vos leçons sur les favoris à cote basse.",
-    "points": [
-     "Stuttgart n'a que 2 victoires en Bundesliga, avec des défaites contre Dortmund et Hoffenheim. Il vient de gagner 3-1 contre Viking en Ligue des champions, puis 2-0 à Paderborn.",
-     "Absents côté Stuttgart : Mittelstädt (blessure au talon, durée indéterminée), Zagadou, Al-Dakhil, Tiago Tomás, Diehl et Nartey. Stergiou n'est pas inscrit en Ligue des champions. Chabot est apte malgré une sortie sur blessure à Paderborn.",
-     "Hoeneß garde sa composition secrète, ce qui laisse planer un risque de rotation en pleine semaine anglaise (HSV le 17/10, Atlético le 20/10). Le gardien n'est pas fixé : Seimen (20 ans, un seul match de Bundesliga) ou Bredlow.",
-     "Slovan est dernier de la phase de ligue après son 1-6 contre le PSG et est 4e du championnat slovaque, mais reste solide à domicile : il a marqué lors de ses 7 derniers matchs à domicile. Šporar (4 buts en 3 matchs) est sa principale menace, et seul Kucharevych est absent.",
-     "Stuttgart n'a jamais perdu contre Slovan (3-1 à Bratislava en janvier 2025)."
-    ],
-    "a_retenir": {
-     "ŠK Slovan Bratislava": [
-      "Yaya Touré est entraîneur depuis l'été 2026 (premier poste de numéro un), avec un effectif très remanié après les départs de Strelec, Tolič, Savvidis et Zuberu et les retraites de Kashia, Weiss et Mak.",
-      "Aucun point en Ligue des champions après le 1-6 contre le PSG. Prochains matchs européens : Rome le 20/10 et LASK le 3/11.",
-      "Le club est 4e du championnat, à 6 points du leader, alors qu'il a gagné huit titres de suite.",
-      "Šporar est le principal danger offensif. Kucharevych est blessé."
-     ],
-     "VfB Stuttgart": [
-      "Mittelstädt est absent pour une durée indéterminée. Tiago Tomás, Diehl, Zagadou, Al-Dakhil et Nartey sont absents, avec des retours annoncés plutôt fin octobre.",
-      "Début de saison irrégulier en Bundesliga (2 victoires seulement), avec des défaites contre Dortmund et Hoffenheim.",
-      "Seimen (20 ans) est le gardien numéro un prévu, avec Bredlow en alternance à cause de la charge de matchs.",
-      "Calendrier chargé : HSV le 17/10 puis Atlético le 20/10."
-     ]
-    }
-   }
-  },
   "feda75190a774fb92164059453b037be": {
    "id": "feda75190a774fb92164059453b037be",
    "debut": "2026-10-15T19:00:00Z",
@@ -213,10 +143,10 @@
    "sport_key": "soccer_uefa_europa_league",
    "court": "1",
    "issue": "Victoire Benfica",
-   "proba": 0.7685703760383569,
+   "proba": 0.7985777884163985,
    "proba_depart": 0.7675535652492664,
    "cote": 1.22,
-   "bk": "Winamax (FR)",
+   "bk": "Betclic (FR)",
    "note": 0.7137,
    "forme": null,
    "ajoute": "2026-10-12",
@@ -284,9 +214,9 @@
    "sport_key": "soccer_epl",
    "court": "1",
    "issue": "Victoire Manchester City",
-   "proba": 0.7922654449535516,
+   "proba": 0.7896661190699812,
    "proba_depart": 0.8001585125280507,
-   "cote": 1.2,
+   "cote": 1.19,
    "bk": "Winamax (FR)",
    "note": 0.8204,
    "forme": true,
@@ -338,7 +268,7 @@
    "sport_key": "soccer_germany_bundesliga",
    "court": "1",
    "issue": "Victoire Bayern Munich",
-   "proba": 0.7848959246422027,
+   "proba": 0.7878772854894732,
    "proba_depart": 0.7848959246422027,
    "cote": 1.2,
    "bk": "Winamax (FR)",
@@ -392,9 +322,9 @@
    "sport_key": "soccer_spain_la_liga",
    "court": "2",
    "issue": "Victoire Barcelona",
-   "proba": 0.6789576146986291,
+   "proba": 0.6813134614980744,
    "proba_depart": 0.6776875572947177,
-   "cote": 1.42,
+   "cote": 1.38,
    "bk": "Winamax (FR)",
    "note": 0.688,
    "forme": true,
@@ -438,6 +368,25 @@
      ]
     }
    }
+  },
+  "1425f07b2aa42fe7c1ba0cb919a1a283": {
+   "id": "1425f07b2aa42fe7c1ba0cb919a1a283",
+   "debut": "2026-10-15T19:00:00Z",
+   "domicile": "SC Freiburg",
+   "exterieur": "FK Jablonec",
+   "championnat": "UEFA Europa Conference League",
+   "sport_key": "soccer_uefa_europa_conference_league",
+   "court": "1",
+   "issue": "Victoire SC Freiburg",
+   "proba": 0.7878428880837429,
+   "proba_depart": 0.7878428880837429,
+   "cote": 1.23,
+   "bk": "Betclic (FR)",
+   "note": 0.7654,
+   "forme": null,
+   "ajoute": "2026-10-15",
+   "statut": "suivi",
+   "analyses": []
   }
  }
 }
