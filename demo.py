@@ -134,3 +134,13 @@ def lecons_fictives(maintenant):
          "pourquoi": "Exemple : Tolima a dominé mais a encaissé à la 93e minute.", "previsible": "non", "signal_rate": "",
          "tags": ["malchance"], "lecon": "Un but à la dernière minute reste de la malchance : ne pas changer de méthode pour ça."},
     ]
+
+
+def verdicts_fictifs(matchs):
+    out = {}
+    for k, m in enumerate(matchs):
+        fav = max(m["issues"], key=lambda i: i["proba"])
+        v = ["jouer", "prudence", "eviter"][k % 3]
+        out[m["id"]] = {"verdict": v, "pari": fav["court"] if v != "eviter" else None,
+                        "raison": "Exemple : l'IA résume ici l'actu du match et dit pourquoi elle joue ou non ce pari."}
+    return out

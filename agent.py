@@ -149,7 +149,7 @@ LECONS_TXT = ""
 
 
 def appel_ia(texte, cfg, cle_ia, max_uses=3):
-    corps = {"model": cfg["modele_ia"], "max_tokens": 2000,
+    corps = {"model": cfg["modele_ia"], "max_tokens": 6000,
              "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
              "messages": [{"role": "user", "content": texte}]}
     data, _ = http_json("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
@@ -157,6 +157,45 @@ def appel_ia(texte, cfg, cle_ia, max_uses=3):
                                  "content-type": "application/json"}, timeout=180)
     txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
+
+
+CONSIGNE_JOUR = """Tu es un pronostiqueur football expert, exigeant et honnête. Voici les matchs du jour.
+Pour CHAQUE match, cherche sur le web l'actu récente (blessés, suspendus, rotation, forme, enjeu, fatigue)
+puis donne TON verdict : est-ce qu'il y a un bon pari 1-N-2 à jouer, oui ou non ?
+
+{matchs}
+
+{lecons}
+
+Réponds UNIQUEMENT avec ce JSON, en français :
+{{"verdicts": [{{"n": numéro du match, "verdict": "jouer" | "prudence" | "eviter",
+  "pari": "1" | "N" | "2" | "aucun", "raison": "1 à 2 phrases concrètes, avec les faits trouvés"}}]}}
+"jouer" = tu le jouerais vraiment, l'actu et la forme vont dans le sens du pari.
+"prudence" = jouable mais avec un vrai doute. "eviter" = pas bon : piège, actu défavorable ou match trop ouvert (pari "aucun").
+Sois sévère : les favoris à petite cote perdent souvent, ne dis « jouer » que si tu y crois vraiment."""
+
+
+def verdicts_du_jour(matchs, cfg, cle_ia):
+    """Un seul appel : l'IA donne son verdict sur chaque match du jour."""
+    lignes = []
+    for k, m in enumerate(matchs, 1):
+        cotes = " / ".join(f'{i["court"]} {i["cote"]:.2f}' for i in m["issues"])
+        st = stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"])
+        deja = (m.get("avis") or {}).get("resume")
+        lignes.append(f"{k}. {m['domicile']} - {m['exterieur']} ({m['championnat']}, {m['debut'][:16]} UTC). "
+                      f"Cotes 1/N/2 : {cotes}. {st}" + (f" Déjà noté : {deja}" if deja else ""))
+    res = appel_ia(CONSIGNE_JOUR.format(matchs="\n".join(lignes), lecons=LECONS_TXT), cfg, cle_ia,
+                   max_uses=min(12, 2 + len(matchs)))
+    out = {}
+    for v in res.get("verdicts", []):
+        try:
+            m = matchs[int(v["n"]) - 1]
+        except Exception:
+            continue
+        if v.get("verdict") in ("jouer", "prudence", "eviter"):
+            out[m["id"]] = {"verdict": v["verdict"], "pari": v.get("pari") if v.get("pari") in ("1", "N", "2") else None,
+                            "raison": str(v.get("raison", ""))[:300]}
+    return out
 
 
 def avis_expert(m, v, cfg, cle_ia, profond=False):
@@ -430,7 +469,7 @@ def main():
     sel = {"matchs": {}} if demo else selection.charger(DATA / "selection.json")
     focus = selection.mettre_a_jour(sel, [a for a in analyses if not a.get("deja_commence")], maintenant)
     jouables_auj = [a for a in jours[0]["analyses"] if not a.get("deja_commence")]
-    avis_jour = {}
+    avis_jour, verdicts = {}, {}
 
     # l'IA vérifie l'actu des paris simples, puis des matchs des combinés (équilibré d'abord)
     # priorité à aujourd'hui, puis demain
@@ -465,6 +504,7 @@ def main():
                 cible["avis"] = d.avis_fictif({"value": {"edge": v.get("edge", 0)}})
             for m in focus:
                 selection.noter_avis(sel, m["id"], d.avis_fictif({"value": {"edge": 0.05}}), maintenant)
+            verdicts = d.verdicts_fictifs(jouables_auj)
             ia["etat"], ia["ok"] = "active", len(taches)
         elif cle_ia:
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
@@ -501,6 +541,15 @@ def main():
                     ia["ok"] += 1
                 except Exception as e:
                     print(f"  ! IA ticket du jour {m['domicile']}: {e}")
+            # le verdict de l'IA sur chaque match du jour (un seul appel)
+            try:
+                for a in jouables_auj:
+                    if a["id"] in avis_jour and not a.get("avis"):
+                        a["avis"] = avis_jour[a["id"]]
+                verdicts = verdicts_du_jour(jouables_auj[:20], cfg, cle_ia) if jouables_auj else {}
+                ia["ok"] += 1 if verdicts else 0
+            except Exception as e:
+                print(f"  ! IA verdicts du jour : {e}")
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)
@@ -533,6 +582,12 @@ def main():
     # chaque jour : un ticket du jour et l'avis de l'expert sur chaque match
     avis_connus = {k: s["avis"] for k, s in sel["matchs"].items() if s.get("avis")}
     avis_connus.update(avis_jour)
+    for a in analyses:
+        v = verdicts.get(a["id"])
+        if v:
+            a["verdict_ia"] = v
+            avis_connus.setdefault(a["id"], {"avis": {"jouer": "confirme", "prudence": "prudence", "eviter": "eviter"}[v["verdict"]],
+                                             "resume": v["raison"]})
     for a in analyses:
         if a["id"] in avis_connus and not a.get("avis"):
             a["avis"] = avis_connus[a["id"]]

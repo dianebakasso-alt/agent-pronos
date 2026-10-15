@@ -557,7 +557,14 @@ def resume_jour(j, bankroll):
     for m in jv[:2]:
         v = m["value"]
         lignes.append(f"💎 <b>{e(v['issue'])}</b> à {v['cote']:.2f} chez {e(v['bookmaker'])} : mise <b>{euros(v['mise'])}</b>.")
-    if not tk:
+    bons = [m for m in j["analyses"] if (m.get("verdict_ia") or {}).get("verdict") == "jouer" and not m.get("deja_commence")]
+    for m in bons[:3]:
+        v = m["verdict_ia"]
+        issue = next((i for i in m["issues"] if i["court"] == v.get("pari")), None)
+        if issue:
+            lignes.append(f"✅ <b>{e(issue['issue'])}</b> à {issue['cote']:.2f} : l'IA dit que c'est bon. "
+                          f"En simple, mise <b>{max(1, round(bankroll * 0.01))} €</b>.")
+    if not tk and not bons:
         # pas de ticket : on nomme quand même les paris simples où l'expert a confiance
         surs = sorted([(a, par_id[k]) for k, a in pr.items() if a and k in par_id and a["niveau"] in ("forte", "bonne")
                        and not a.get("value") and not par_id[k].get("deja_commence")], key=lambda x: -x[0]["proba"])[:3]
@@ -569,14 +576,19 @@ def resume_jour(j, bankroll):
         lignes.append(f"🧘 <b>Rien de solide</b> : je ne jouerais pas {e(j['quand'])}. Garder son argent, c'est aussi gagner.")
     a_eviter = [f"{e(m['domicile'])} – {e(m['exterieur'])}" for m in (eviter + pieges)[:3]]
     ev = f'<p class="rj-ev">🚫 <b>À éviter :</b> {", ".join(a_eviter)} (favori en mauvaise forme ou mauvaise nouvelle).</p>' if a_eviter else ""
-    nb_forte = sum(1 for a in pr.values() if a and a["niveau"] in ("forte", "bonne"))
+    nb_forte = sum(1 for m in j["analyses"] if (m.get("verdict_ia") or {}).get("verdict") == "jouer") \
+        or sum(1 for a in pr.values() if a and a["niveau"] in ("forte", "bonne"))
     return f"""
 <section class="rj">
   <div class="ex-t">🧠 Ce que je jouerais {e(j["quand"])}</div>
   <ul>{"".join(f"<li>{l}</li>" for l in lignes)}</ul>
   {ev}
-  <p class="rj-n">{len(j["analyses"])} matchs étudiés · {nb_forte} où l'expert a confiance.</p>
+  <p class="rj-n">{len(j["analyses"])} matchs étudiés · {nb_forte} que l'expert jouerait.</p>
 </section>"""
+
+
+VERDICT_IA = {"jouer": ("ok", "✅ L'IA dit : c'est bon"), "prudence": ("warn", "⚠️ L'IA dit : prudence"),
+              "eviter": ("bad", "❌ L'IA dit : pas bon")}
 
 
 def liste_avis(j):
@@ -584,32 +596,42 @@ def liste_avis(j):
     if not pr:
         return ""
     lignes = ""
-    ordre = {"forte": 0, "bonne": 1, "moyenne": 2, "ouvert": 3}
-    for m in sorted(j["analyses"], key=lambda m: (ordre.get((pr.get(m["id"]) or {}).get("niveau"), 4), m["debut"])):
+    rang_v = {"jouer": 0, "prudence": 1, "eviter": 3}
+    rang_n = {"forte": 1, "bonne": 1, "moyenne": 2, "ouvert": 3}
+
+    def rang(m):
+        v = m.get("verdict_ia")
+        return (rang_v[v["verdict"]] if v else 2 + rang_n.get((pr.get(m["id"]) or {}).get("niveau"), 2) / 10, m["debut"])
+
+    for m in sorted(j["analyses"], key=rang):
         a = pr.get(m["id"])
         if not a:
             continue
-        cls = NIV_CLS[a["niveau"]]
-        if a["niveau"] == "ouvert":
-            txt = "Trop incertain pour un pari 1-N-2."
-            b = m.get("buts")
-            if b and max(b["plus25"], 1 - b["plus25"]) >= 0.58:
-                txt += " Piste buts : " + ("plus de 2,5 buts" if b["plus25"] >= 0.5 else "moins de 2,5 buts") + f" ({pct(max(b['plus25'], 1 - b['plus25']))})."
-            pari = "Pas de pari conseillé"
+        v = m.get("verdict_ia")
+        piege = ""
+        if v:
+            cls, badge = VERDICT_IA[v["verdict"]]
+            issue = next((i for i in m["issues"] if i["court"] == v.get("pari")), None)
+            pari = f"{issue['issue']} · {issue['cote']:.2f}" if issue and v["verdict"] != "eviter" else \
+                (f"Ne pas jouer {issue['issue'].lower()}" if issue else "Pas de pari")
+            txt = v["raison"]
+            icone = "🤖"
         else:
-            txt = pourquoi_1n2(m, a["court"], valeur=False)
-            pari = f"{a['issue']} · {a['cote']:.2f}"
-        ia = (m.get("avis") or {})
-        ia_txt = f'<small class="av-ia">🤖 {e(ia.get("resume", ""))}</small>' if ia.get("resume") else ""
-        piege = ' <span class="av-p">⚠️ piège</span>' if a.get("piege") else ""
+            cls, badge = "att", "⏳ Avis de l'IA à venir"
+            if a["niveau"] == "ouvert":
+                pari = "Pas de pari conseillé"
+            else:
+                pari = f"{a['issue']} · {a['cote']:.2f}"
+            ia = (m.get("avis") or {})
+            txt = ia.get("resume") or "L'IA donnera son verdict au prochain passage du matin."
+            icone = "🤖" if ia.get("resume") else "💡"
         if a.get("rebond"):
             piege += ' <span class="av-r">🔄 rebond</span>'
-            txt = "Bonne équipe en mauvaise passe, encore nettement favorite pour le marché. Suivi à part pour tester la méthode. " + txt
         lignes += f"""<li class="av-l av-{cls}"><div class="av-h"><span>{ecusson(m["domicile"], 22)}{ecusson(m["exterieur"], 22)}</span>
-          <div><b>{e(m["domicile"])} – {e(m["exterieur"])}</b><small>{heure(m["debut"])} · {e(championnat(m.get("sport_key", ""), m["championnat"])[1])}</small></div>
-          <em class="av-n">{NIVEAUX_TXT[a["niveau"]]}</em></div>
-          <div class="av-p1"><b>{e(pari)}</b>{piege}</div><small class="av-t">💡 {e(txt)}</small>{ia_txt}</li>"""
-    return f"""<h2>🗂️ L'avis de l'expert <small>match par match</small></h2><ul class="av">{lignes}</ul>"""
+          <div><b>{e(m["domicile"])} – {e(m["exterieur"])}</b><small>{heure(m["debut"])} · {e(championnat(m.get("sport_key", ""), m["championnat"])[1])}</small></div></div>
+          <div class="av-v">{badge}</div>
+          <div class="av-p1"><b>{e(pari)}</b>{piege}</div><small class="av-ia">{icone} {e(txt)}</small></li>"""
+    return f"""<h2>🗂️ L'avis de l'expert <small>le verdict de l'IA, match par match</small></h2><ul class="av">{lignes}</ul>"""
 
 
 NIVEAUX_TXT = {"forte": "💪 Forte", "bonne": "👍 Bonne", "moyenne": "🤔 Moyenne", "ouvert": "🎲 Ouvert"}
@@ -1520,6 +1542,9 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .ap-p {{ font-size:11px; font-weight:700; padding:2px 7px; border-radius:99px; margin-right:4px; border:1px solid currentColor; }}
 .ap-bad {{ color:var(--bad); }} .ap-warn {{ color:var(--warn); }} .ap-ok {{ color:var(--ok); }} .ap-att {{ color:var(--muted); }}
 .av-r {{ font:700 12px Inter,sans-serif; color:#38bdf8; margin-left:6px; }}
+.av-v {{ margin-top:6px; font:800 13px Inter,sans-serif; }}
+.av-ok .av-v {{ color:var(--ok); }} .av-warn .av-v {{ color:var(--warn); }} .av-bad .av-v {{ color:var(--bad); }} .av-att .av-v {{ color:var(--muted); }}
+.av-l.av-bad {{ border-left-color:var(--bad); opacity:.85; }}
 </style>
 </head>
 <body>
