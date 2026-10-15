@@ -154,7 +154,7 @@ def appel_ia(texte, cfg, cle_ia, max_uses=3):
              "messages": [{"role": "user", "content": texte}]}
     data, _ = http_json("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
                         headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
-                                 "content-type": "application/json"}, timeout=180)
+                                 "content-type": "application/json"}, timeout=timeout)
     txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
 
@@ -175,8 +175,7 @@ Réponds UNIQUEMENT avec ce JSON, en français :
 Sois sévère : les favoris à petite cote perdent souvent, ne dis « jouer » que si tu y crois vraiment."""
 
 
-def verdicts_du_jour(matchs, cfg, cle_ia):
-    """Un seul appel : l'IA donne son verdict sur chaque match du jour."""
+def _verdicts_paquet(matchs, cfg, cle_ia):
     lignes = []
     for k, m in enumerate(matchs, 1):
         cotes = " / ".join(f'{i["court"]} {i["cote"]:.2f}' for i in m["issues"])
@@ -185,7 +184,7 @@ def verdicts_du_jour(matchs, cfg, cle_ia):
         lignes.append(f"{k}. {m['domicile']} - {m['exterieur']} ({m['championnat']}, {m['debut'][:16]} UTC). "
                       f"Cotes 1/N/2 : {cotes}. {st}" + (f" Déjà noté : {deja}" if deja else ""))
     res = appel_ia(CONSIGNE_JOUR.format(matchs="\n".join(lignes), lecons=LECONS_TXT), cfg, cle_ia,
-                   max_uses=min(12, 2 + len(matchs)))
+                   max_uses=len(matchs) + 1, max_tokens=4000, timeout=300)
     out = {}
     for v in res.get("verdicts", []):
         try:
@@ -195,6 +194,22 @@ def verdicts_du_jour(matchs, cfg, cle_ia):
         if v.get("verdict") in ("jouer", "prudence", "eviter"):
             out[m["id"]] = {"verdict": v["verdict"], "pari": v.get("pari") if v.get("pari") in ("1", "N", "2") else None,
                             "raison": str(v.get("raison", ""))[:300]}
+    return out
+
+
+TAILLE_PAQUET = 6
+MAX_VERDICTS = 36
+
+
+def verdicts_du_jour(matchs, cfg, cle_ia):
+    """L'IA donne son verdict sur chaque match du jour, par paquets de 6 (réponse complète, pas tronquée)."""
+    out = {}
+    for k in range(0, min(len(matchs), MAX_VERDICTS), TAILLE_PAQUET):
+        paquet = matchs[k:k + TAILLE_PAQUET]
+        try:
+            out.update(_verdicts_paquet(paquet, cfg, cle_ia))
+        except Exception as e:
+            print(f"  ! IA verdicts (paquet {k // TAILLE_PAQUET + 1}) : {e}")
     return out
 
 
@@ -546,7 +561,7 @@ def main():
                 for a in jouables_auj:
                     if a["id"] in avis_jour and not a.get("avis"):
                         a["avis"] = avis_jour[a["id"]]
-                verdicts = verdicts_du_jour(jouables_auj[:20], cfg, cle_ia) if jouables_auj else {}
+                verdicts = verdicts_du_jour(sorted(jouables_auj, key=lambda a: a["debut"]), cfg, cle_ia) if jouables_auj else {}
                 ia["ok"] += 1 if verdicts else 0
             except Exception as e:
                 print(f"  ! IA verdicts du jour : {e}")
