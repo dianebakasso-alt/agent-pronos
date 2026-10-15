@@ -2462,7 +2462,7 @@
     "championnat": "Europa League",
     "pari": "Victoire AC Milan",
     "cote": 1.84,
-    "proba": 0.5091,
+    "proba": 0.5039,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2474,7 +2474,7 @@
    }
   ],
   "cote": 1.84,
-  "proba": 0.5091,
+  "proba": 0.5039,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2494,7 +2494,7 @@
     "championnat": "Europa League",
     "pari": "Victoire AZ Alkmaar",
     "cote": 1.31,
-    "proba": 0.7134,
+    "proba": 0.7141,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -2507,7 +2507,7 @@
    }
   ],
   "cote": 1.31,
-  "proba": 0.7134,
+  "proba": 0.7141,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2527,7 +2527,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bayer Leverkusen",
     "cote": 1.4,
-    "proba": 0.6802,
+    "proba": 0.6806,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2540,7 +2540,7 @@
    }
   ],
   "cote": 1.4,
-  "proba": 0.6802,
+  "proba": 0.6806,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2560,7 +2560,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Crystal Palace",
     "cote": 2.65,
-    "proba": 0.3678,
+    "proba": 0.3701,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2572,7 +2572,7 @@
    }
   ],
   "cote": 2.65,
-  "proba": 0.3678,
+  "proba": 0.3701,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2592,7 +2592,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Sparta Prague",
     "cote": 1.28,
-    "proba": 0.731,
+    "proba": 0.7332,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -2605,7 +2605,7 @@
    }
   ],
   "cote": 1.28,
-  "proba": 0.731,
+  "proba": 0.7332,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2625,7 +2625,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Omonoia FC",
     "cote": 2.43,
-    "proba": 0.3822,
+    "proba": 0.3836,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2637,7 +2637,7 @@
    }
   ],
   "cote": 2.43,
-  "proba": 0.3822,
+  "proba": 0.3836,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2657,7 +2657,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Real Sociedad",
     "cote": 2.52,
-    "proba": 0.3745,
+    "proba": 0.3735,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2669,7 +2669,7 @@
    }
   ],
   "cote": 2.52,
-  "proba": 0.3745,
+  "proba": 0.3735,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2689,7 +2689,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Sunderland",
     "cote": 1.22,
-    "proba": 0.7736,
+    "proba": 0.7733,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2703,7 +2703,7 @@
    }
   ],
   "cote": 1.22,
-  "proba": 0.7736,
+  "proba": 0.7733,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2723,7 +2723,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Gent",
     "cote": 1.6,
-    "proba": 0.5743,
+    "proba": 0.575,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2733,7 +2733,7 @@
    }
   ],
   "cote": 1.6,
-  "proba": 0.5743,
+  "proba": 0.575,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2753,7 +2753,7 @@
     "championnat": "Conference League",
     "pari": "Victoire AS Monaco",
     "cote": 1.41,
-    "proba": 0.6652,
+    "proba": 0.6681,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2766,7 +2766,7 @@
    }
   ],
   "cote": 1.41,
-  "proba": 0.6652,
+  "proba": 0.6681,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2786,7 +2786,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Ajax",
     "cote": 1.57,
-    "proba": 0.5969,
+    "proba": 0.5964,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2798,7 +2798,7 @@
    }
   ],
   "cote": 1.57,
-  "proba": 0.5969,
+  "proba": 0.5964,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2818,7 +2818,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Riga FC",
     "cote": 1.86,
-    "proba": 0.4996,
+    "proba": 0.4991,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2828,7 +2828,7 @@
    }
   ],
   "cote": 1.86,
-  "proba": 0.4996,
+  "proba": 0.4991,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2848,7 +2848,7 @@
     "championnat": "Conference League",
     "pari": "Victoire FC Lugano",
     "cote": 2.22,
-    "proba": 0.4066,
+    "proba": 0.4087,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2858,7 +2858,7 @@
    }
   ],
   "cote": 2.22,
-  "proba": 0.4066,
+  "proba": 0.4087,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2877,8 +2877,8 @@
     "exterieur": "FC Midtjylland",
     "championnat": "Conference League",
     "pari": "Victoire FC Midtjylland",
-    "cote": 1.47,
-    "proba": 0.6363,
+    "cote": 1.43,
+    "proba": 0.647,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2889,8 +2889,8 @@
     ]
    }
   ],
-  "cote": 1.47,
-  "proba": 0.6363,
+  "cote": 1.43,
+  "proba": 0.647,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2910,7 +2910,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Panathinaikos FC",
     "cote": 1.2,
-    "proba": 0.7838,
+    "proba": 0.7861,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2923,7 +2923,7 @@
    }
   ],
   "cote": 1.2,
-  "proba": 0.7838,
+  "proba": 0.7861,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2943,7 +2943,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Universitatea Craiova",
     "cote": 2.63,
-    "proba": 0.3464,
+    "proba": 0.3475,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2953,7 +2953,7 @@
    }
   ],
   "cote": 2.63,
-  "proba": 0.3464,
+  "proba": 0.3475,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2973,7 +2973,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Mjällby AIF",
     "cote": 1.39,
-    "proba": 0.683,
+    "proba": 0.6837,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2986,7 +2986,7 @@
    }
   ],
   "cote": 1.39,
-  "proba": 0.683,
+  "proba": 0.6837,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3006,7 +3006,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Trabzonspor",
     "cote": 1.52,
-    "proba": 0.6138,
+    "proba": 0.6126,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3018,7 +3018,7 @@
    }
   ],
   "cote": 1.52,
-  "proba": 0.6138,
+  "proba": 0.6126,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3068,7 +3068,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Benfica",
     "cote": 1.18,
-    "proba": 0.8113,
+    "proba": 0.8114,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3082,7 +3082,7 @@
    }
   ],
   "cote": 1.18,
-  "proba": 0.8113,
+  "proba": 0.8114,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3102,7 +3102,7 @@
     "championnat": "Europa League",
     "pari": "Victoire TSG Hoffenheim",
     "cote": 1.91,
-    "proba": 0.4941,
+    "proba": 0.4905,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3112,7 +3112,7 @@
    }
   ],
   "cote": 1.91,
-  "proba": 0.4941,
+  "proba": 0.4905,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3132,7 +3132,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bournemouth",
     "cote": 1.13,
-    "proba": 0.8362,
+    "proba": 0.8364,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3145,7 +3145,7 @@
    }
   ],
   "cote": 1.13,
-  "proba": 0.8362,
+  "proba": 0.8364,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3165,7 +3165,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Juventus",
     "cote": 2.1,
-    "proba": 0.4317,
+    "proba": 0.4336,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3177,7 +3177,7 @@
    }
   ],
   "cote": 2.1,
-  "proba": 0.4317,
+  "proba": 0.4336,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3197,7 +3197,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Jagiellonia Białystok",
     "cote": 1.38,
-    "proba": 0.6829,
+    "proba": 0.6719,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3210,7 +3210,7 @@
    }
   ],
   "cote": 1.38,
-  "proba": 0.6829,
+  "proba": 0.6719,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3230,7 +3230,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Ferencváros TC",
     "cote": 1.88,
-    "proba": 0.4955,
+    "proba": 0.4957,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3240,7 +3240,7 @@
    }
   ],
   "cote": 1.88,
-  "proba": 0.4955,
+  "proba": 0.4957,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3259,8 +3259,8 @@
     "exterieur": "Olympiakos Piraeus",
     "championnat": "Europa League",
     "pari": "Victoire Marseille",
-    "cote": 2.27,
-    "proba": 0.4043,
+    "cote": 2.3,
+    "proba": 0.3991,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3269,8 +3269,8 @@
     "traits": []
    }
   ],
-  "cote": 2.27,
-  "proba": 0.4043,
+  "cote": 2.3,
+  "proba": 0.3991,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3290,7 +3290,7 @@
     "championnat": "Europa League",
     "pari": "Victoire NEC Nijmegen",
     "cote": 1.83,
-    "proba": 0.5065,
+    "proba": 0.5058,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3300,7 +3300,7 @@
    }
   ],
   "cote": 1.83,
-  "proba": 0.5065,
+  "proba": 0.5058,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3320,7 +3320,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Rennes",
     "cote": 1.19,
-    "proba": 0.8022,
+    "proba": 0.8034,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3334,7 +3334,7 @@
    }
   ],
   "cote": 1.19,
-  "proba": 0.8022,
+  "proba": 0.8034,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3354,7 +3354,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Atalanta BC",
     "cote": 1.29,
-    "proba": 0.7312,
+    "proba": 0.7289,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3367,7 +3367,7 @@
    }
   ],
   "cote": 1.29,
-  "proba": 0.7312,
+  "proba": 0.7289,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3387,7 +3387,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Brighton and Hove Albion",
     "cote": 1.01,
-    "proba": 0.9578,
+    "proba": 0.9572,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3400,7 +3400,7 @@
    }
   ],
   "cote": 1.01,
-  "proba": 0.9578,
+  "proba": 0.9572,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3420,7 +3420,7 @@
     "championnat": "Conference League",
     "pari": "Victoire FC Copenhagen",
     "cote": 2.3,
-    "proba": 0.3964,
+    "proba": 0.396,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3430,7 +3430,7 @@
    }
   ],
   "cote": 2.3,
-  "proba": 0.3964,
+  "proba": 0.396,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3450,7 +3450,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Sint Truiden",
     "cote": 1.18,
-    "proba": 0.7852,
+    "proba": 0.7847,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3463,7 +3463,7 @@
    }
   ],
   "cote": 1.18,
-  "proba": 0.7852,
+  "proba": 0.7847,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3581,7 +3581,7 @@
     "championnat": "Conference League",
     "pari": "Victoire SK Brann",
     "cote": 1.14,
-    "proba": 0.829,
+    "proba": 0.8296,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3594,7 +3594,7 @@
    }
   ],
   "cote": 1.14,
-  "proba": 0.829,
+  "proba": 0.8296,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3614,7 +3614,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Brighton and Hove Albion",
     "cote": 1.01,
-    "proba": 0.9578,
+    "proba": 0.9572,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3633,7 +3633,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bournemouth",
     "cote": 1.13,
-    "proba": 0.8362,
+    "proba": 0.8364,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3646,7 +3646,7 @@
    }
   ],
   "cote": 1.14,
-  "proba": 0.8009,
+  "proba": 0.8006,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -3666,7 +3666,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Brighton and Hove Albion",
     "cote": 1.01,
-    "proba": 0.9578,
+    "proba": 0.9572,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3685,7 +3685,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bayer Leverkusen",
     "cote": 1.39,
-    "proba": 0.6802,
+    "proba": 0.6806,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3719,7 +3719,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Crystal Palace",
     "cote": 2.55,
-    "proba": 0.3678,
+    "proba": 0.3701,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3737,7 +3737,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Real Sociedad",
     "cote": 2.5,
-    "proba": 0.3745,
+    "proba": 0.3735,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3755,7 +3755,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Omonoia FC",
     "cote": 2.43,
-    "proba": 0.3822,
+    "proba": 0.3836,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3767,7 +3767,7 @@
    }
   ],
   "cote": 15.49,
-  "proba": 0.0526,
+  "proba": 0.053,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -3787,7 +3787,7 @@
     "championnat": "Europa League",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7948,
+    "proba": 0.7955,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.europa",
@@ -3823,7 +3823,7 @@
     "championnat": "Europa League",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7648,
+    "proba": 0.7639,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.europa",
@@ -3834,8 +3834,8 @@
     ]
    }
   ],
-  "cote": 2.17,
-  "proba": 0.4829,
+  "cote": 2.18,
+  "proba": 0.4827,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -3855,7 +3855,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Bournemouth",
     "cote": 1.13,
-    "proba": 0.8362,
+    "proba": 0.8364,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3874,7 +3874,7 @@
     "championnat": "Europa League",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7948,
+    "proba": 0.7955,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.europa",
@@ -3904,7 +3904,7 @@
    }
   ],
   "cote": 1.99,
-  "proba": 0.528,
+  "proba": 0.5286,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -3924,7 +3924,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Benfica",
     "cote": 1.18,
-    "proba": 0.8113,
+    "proba": 0.8114,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3957,7 +3957,7 @@
    }
   ],
   "cote": 1.42,
-  "proba": 0.6425,
+  "proba": 0.6426,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
