@@ -160,8 +160,8 @@ def _err(e):
     return txt
 
 
-def appel_ia(texte, cfg, cle_ia, max_uses=3):
-    corps = {"model": cfg["modele_ia"], "max_tokens": 6000,
+def appel_ia(texte, cfg, cle_ia, max_uses=3, max_tokens=6000, timeout=240):
+    corps = {"model": cfg["modele_ia"], "max_tokens": max_tokens,
              "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
              "messages": [{"role": "user", "content": texte}]}
     data, _ = http_json("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
