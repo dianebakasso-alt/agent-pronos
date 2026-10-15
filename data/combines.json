@@ -153,14 +153,24 @@
  },
  {
   "jour": "2026-10-15",
-  "bookmaker": "NetBet",
-  "cote": 1.4,
-  "proba": 0.6515,
+  "bookmaker": "Betclic (FR)",
+  "cote": 1.93,
+  "proba": 0.4695,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
   "gain": 0,
   "jambes": [
+   {
+    "id": "4cfd3c3636333951706a205b96dc1db3",
+    "sport_key": "soccer_uefa_europa_league",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "TSG Hoffenheim",
+    "exterieur": "Besiktas JK",
+    "pari": "Victoire TSG Hoffenheim",
+    "court": "1",
+    "cote": 1.91
+   },
    {
     "id": "5ff465ad69bca8753070b0d3bb7dd3d5",
     "sport_key": "soccer_uefa_europa_conference_league",
@@ -170,16 +180,6 @@
     "pari": "Victoire Brighton and Hove Albion",
     "court": "1",
     "cote": 1.01
-   },
-   {
-    "id": "c3923b733e33ae8ebd1f024cd5312d1e",
-    "sport_key": "soccer_uefa_europa_league",
-    "date": "2026-10-15T16:45:00Z",
-    "domicile": "Lech Poznań",
-    "exterieur": "Bayer Leverkusen",
-    "pari": "Victoire Bayer Leverkusen",
-    "court": "2",
-    "cote": 1.39
    }
   ]
  }

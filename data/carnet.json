@@ -2461,8 +2461,8 @@
     "exterieur": "AC Milan",
     "championnat": "Europa League",
     "pari": "Victoire AC Milan",
-    "cote": 1.84,
-    "proba": 0.5039,
+    "cote": 1.85,
+    "proba": 0.5029,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2473,8 +2473,8 @@
     ]
    }
   ],
-  "cote": 1.84,
-  "proba": 0.5039,
+  "cote": 1.85,
+  "proba": 0.5029,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2560,7 +2560,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Crystal Palace",
     "cote": 2.65,
-    "proba": 0.3701,
+    "proba": 0.3719,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2572,7 +2572,7 @@
    }
   ],
   "cote": 2.65,
-  "proba": 0.3701,
+  "proba": 0.3719,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2592,7 +2592,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Sparta Prague",
     "cote": 1.28,
-    "proba": 0.7332,
+    "proba": 0.7338,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -2605,7 +2605,7 @@
    }
   ],
   "cote": 1.28,
-  "proba": 0.7332,
+  "proba": 0.7338,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2657,7 +2657,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Real Sociedad",
     "cote": 2.52,
-    "proba": 0.3735,
+    "proba": 0.3728,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -2669,7 +2669,7 @@
    }
   ],
   "cote": 2.52,
-  "proba": 0.3735,
+  "proba": 0.3728,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2753,7 +2753,7 @@
     "championnat": "Conference League",
     "pari": "Victoire AS Monaco",
     "cote": 1.41,
-    "proba": 0.6681,
+    "proba": 0.669,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2766,7 +2766,7 @@
    }
   ],
   "cote": 1.41,
-  "proba": 0.6681,
+  "proba": 0.669,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2786,7 +2786,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Ajax",
     "cote": 1.57,
-    "proba": 0.5964,
+    "proba": 0.597,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2798,7 +2798,7 @@
    }
   ],
   "cote": 1.57,
-  "proba": 0.5964,
+  "proba": 0.597,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -2818,7 +2818,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Riga FC",
     "cote": 1.86,
-    "proba": 0.4991,
+    "proba": 0.4996,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -2828,7 +2828,7 @@
    }
   ],
   "cote": 1.86,
-  "proba": 0.4991,
+  "proba": 0.4996,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3006,7 +3006,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Trabzonspor",
     "cote": 1.52,
-    "proba": 0.6126,
+    "proba": 0.615,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3018,7 +3018,7 @@
    }
   ],
   "cote": 1.52,
-  "proba": 0.6126,
+  "proba": 0.615,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3038,7 +3038,7 @@
     "championnat": "Europa League",
     "pari": "Victoire Dinamo Zagreb",
     "cote": 1.91,
-    "proba": 0.4795,
+    "proba": 0.4789,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa",
@@ -3048,7 +3048,7 @@
    }
   ],
   "cote": 1.91,
-  "proba": 0.4795,
+  "proba": 0.4789,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3354,7 +3354,7 @@
     "championnat": "Conference League",
     "pari": "Victoire Atalanta BC",
     "cote": 1.29,
-    "proba": 0.7289,
+    "proba": 0.7283,
     "court": "1",
     "espn": {
      "ligue": "uefa.europa.conf",
@@ -3367,7 +3367,7 @@
    }
   ],
   "cote": 1.29,
-  "proba": 0.7289,
+  "proba": 0.7283,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -3659,6 +3659,22 @@
   "cat": "equilibre",
   "jambes": [
    {
+    "id": "4cfd3c3636333951706a205b96dc1db3",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "TSG Hoffenheim",
+    "exterieur": "Besiktas JK",
+    "championnat": "Europa League",
+    "pari": "Victoire TSG Hoffenheim",
+    "cote": 1.91,
+    "proba": 0.4905,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa",
+     "id": "401915563"
+    },
+    "traits": []
+   },
+   {
     "id": "5ff465ad69bca8753070b0d3bb7dd3d5",
     "date": "2026-10-15T19:00:00Z",
     "domicile": "Brighton and Hove Albion",
@@ -3676,30 +3692,10 @@
      "petite_cote",
      "favori_net"
     ]
-   },
-   {
-    "id": "c3923b733e33ae8ebd1f024cd5312d1e",
-    "date": "2026-10-15T16:45:00Z",
-    "domicile": "Lech Poznań",
-    "exterieur": "Bayer Leverkusen",
-    "championnat": "Europa League",
-    "pari": "Victoire Bayer Leverkusen",
-    "cote": 1.39,
-    "proba": 0.6806,
-    "court": "2",
-    "espn": {
-     "ligue": "uefa.europa",
-     "id": "401915576"
-    },
-    "traits": [
-     "exterieur",
-     "petite_cote",
-     "favori_net"
-    ]
    }
   ],
-  "cote": 1.4,
-  "proba": 0.6515,
+  "cote": 1.93,
+  "proba": 0.4695,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -3718,8 +3714,8 @@
     "exterieur": "Crystal Palace",
     "championnat": "Europa League",
     "pari": "Victoire Crystal Palace",
-    "cote": 2.55,
-    "proba": 0.3701,
+    "cote": 2.65,
+    "proba": 0.3719,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
@@ -3730,18 +3726,18 @@
     ]
    },
    {
-    "id": "3809b92a425c41c325bafc8d8d598512",
-    "date": "2026-10-15T16:45:00Z",
-    "domicile": "Union Saint-Gilloise",
-    "exterieur": "Real Sociedad",
+    "id": "74f9b907f2114c72382b930fb94c1373",
+    "date": "2026-10-15T19:00:00Z",
+    "domicile": "Marseille",
+    "exterieur": "Olympiakos Piraeus",
     "championnat": "Europa League",
-    "pari": "Victoire Real Sociedad",
-    "cote": 2.5,
-    "proba": 0.3735,
+    "pari": "Victoire Olympiakos Piraeus",
+    "cote": 2.8,
+    "proba": 0.3257,
     "court": "2",
     "espn": {
      "ligue": "uefa.europa",
-     "id": "401915574"
+     "id": "401915550"
     },
     "traits": [
      "exterieur"
@@ -3754,7 +3750,7 @@
     "exterieur": "Omonoia FC",
     "championnat": "Europa League",
     "pari": "Victoire Omonoia FC",
-    "cote": 2.43,
+    "cote": 2.4,
     "proba": 0.3836,
     "court": "2",
     "espn": {
@@ -3766,8 +3762,8 @@
     ]
    }
   ],
-  "cote": 15.49,
-  "proba": 0.053,
+  "cote": 17.81,
+  "proba": 0.0465,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
