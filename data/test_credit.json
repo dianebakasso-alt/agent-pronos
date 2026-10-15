@@ -1,0 +1,7 @@
+{
+ "quand": "2026-10-15T22:46:49.305813+00:00",
+ "cle_presente": true,
+ "ok": false,
+ "code": 400,
+ "erreur": "{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cg4qSDfQ3FdffdQfhCVqV\"}"
+}
