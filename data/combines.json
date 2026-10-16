@@ -158,8 +158,8 @@
   "proba": 0.4695,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "4cfd3c3636333951706a205b96dc1db3",
@@ -169,7 +169,10 @@
     "exterieur": "Besiktas JK",
     "pari": "Victoire TSG Hoffenheim",
     "court": "1",
-    "cote": 1.91
+    "cote": 1.91,
+    "res": "2",
+    "score": "2-3",
+    "ok": false
    },
    {
     "id": "5ff465ad69bca8753070b0d3bb7dd3d5",
@@ -179,7 +182,42 @@
     "exterieur": "FK Kauno Žalgiris",
     "pari": "Victoire Brighton and Hove Albion",
     "court": "1",
-    "cote": 1.01
+    "cote": 1.01,
+    "res": "1",
+    "score": "4-0",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-16",
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.73,
+  "proba": 0.2395,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "947bd5d924835af090d9cdc7bbdf10f6",
+    "sport_key": "soccer_germany_bundesliga",
+    "date": "2026-10-16T18:30:00Z",
+    "domicile": "Eintracht Frankfurt",
+    "exterieur": "1. FC Köln",
+    "pari": "Victoire Eintracht Frankfurt",
+    "court": "1",
+    "cote": 1.82
+   },
+   {
+    "id": "19ee731602634e5c9e3106630e087464",
+    "sport_key": "soccer_spain_la_liga",
+    "date": "2026-10-16T19:00:00Z",
+    "domicile": "Deportivo La Coruña",
+    "exterieur": "Levante",
+    "pari": "Victoire Deportivo La Coruña",
+    "court": "1",
+    "cote": 2.05
    }
   ]
  }

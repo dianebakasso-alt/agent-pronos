@@ -1,210 +1,5 @@
 {
  "matchs": {
-  "0def5b7ac0c0a816aa080774d7082c9b": {
-   "id": "0def5b7ac0c0a816aa080774d7082c9b",
-   "debut": "2026-10-15T19:00:00Z",
-   "domicile": "Bournemouth",
-   "exterieur": "SK Sturm Graz",
-   "championnat": "UEFA Europa League",
-   "sport_key": "soccer_uefa_europa_league",
-   "court": "1",
-   "issue": "Victoire Bournemouth",
-   "proba": 0.8058160170394943,
-   "proba_depart": 0.8084692245724142,
-   "cote": 1.17,
-   "bk": "PMU (FR)",
-   "note": 0.7695,
-   "forme": null,
-   "ajoute": "2026-10-12",
-   "statut": "retiré",
-   "analyses": [
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Sturm Graz est très diminué (Kiteishvili absent, plusieurs autres blessés) et enchaîne les matchs. Mais Bournemouth, sous Marco Rose, est 17e de Premier League, vient de perdre 5-1 à Chelsea et manque de joueurs offensifs : une cote de 1.18 (81 %) paraît trop courte."
-    },
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Sturm est très diminué (8 blessés), ce qui joue pour Bournemouth, mais les Cherries n'ont toujours pas gagné en championnat (3 points en 6 matchs, 1-5 à Chelsea) et sortent de deux défaites de suite. À 1.18, le pari ne laisse presque aucune marge d'erreur."
-    },
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Sturm est très diminué et Bournemouth joue à domicile, mais la cote de 1.18 (81 %) est plus haute que les modèles, qui donnent 42 à 68 %. Bournemouth n'a pas gagné en championnat, Scott est out et l'équipe tend à faire beaucoup de matchs nuls à domicile, donc la valeur n'y est pas."
-    },
-    {
-     "jour": "2026-10-13",
-     "avis": "eviter",
-     "resume": "À 1.17 (81 %), le marché est nettement plus optimiste que les modèles, qui donnent Bournemouth entre 42 % et 68 %. L'équipe est en crise (17e, 1-5 à Chelsea), privée de Scott et Kluivert, très portée au nul à domicile, et elle enchaîne Sunderland (dimanche) puis Milan (jeudi suivant), ce qui laisse craindre de la rotation."
-    }
-   ],
-   "avis": {
-    "avis": "eviter",
-    "resume": "À 1.17 (81 %), le marché est nettement plus optimiste que les modèles, qui donnent Bournemouth entre 42 % et 68 %. L'équipe est en crise (17e, 1-5 à Chelsea), privée de Scott et Kluivert, très portée au nul à domicile, et elle enchaîne Sunderland (dimanche) puis Milan (jeudi suivant), ce qui laisse craindre de la rotation.",
-    "points": [
-     "<cite index='1-3'>Alex Scott et Justin Kluivert manquent la réception de Sturm Graz.</cite> Les deux hommes sont confirmés absents par deux sources (WhoScored, Sofascore/Starting11). Scott est annoncé absent jusqu'en novembre. Kluivert, absent depuis la Real Sociedad, est donné de retour vers le 25 octobre.",
-     "<cite index='5-12'>À domicile, Bournemouth reste sur 13 matchs sans défaite sur 15, mais n'a pas gagné 9 des 11 derniers, avec 9 nuls.</cite> <cite index='5-4'>L'équipe vient de perdre 5-1 à Chelsea.</cite>",
-     "Les modèles sont loin de 81 % : <cite index='5-8'>Forebet donne 42 % pour Bournemouth</cite>, <cite index='3-7'>l'ELO de BeSoccer 56,4 %</cite>, <cite index='24-8'>Smartbet 46 %</cite> et <cite index='7-9'>WinDrawWin 68 %</cite>. Une cote à 1.17 laisse peu de marge pour un pari à risque (nul ou surprise).",
-     "Calendrier chargé pour Bournemouth : <cite index='39-4'>Sunderland le 18 octobre, Milan le 22, Man United le 25 puis Aston Villa en EFL Cup le 28.</cite> Une rotation est possible, même si <cite index='20-5'>WhoScored n'attend pas de changements majeurs de Rose en milieu de semaine.</cite>",
-     "Sturm Graz est diminué mais solide : <cite index='26-3'>l'attaque est touchée (Kiteishvili, Mamageishvili, Rózga, Jatta, Weiper), avec un 20-ans, Kayombo, enregistré en renfort.</cite> L'équipe vient de gagner 2-0 à l'Austria Vienne et <cite index='20-6'>Diakité, auteur d'un doublé, devrait débuter.</cite> <cite index='5-13'>Sa moyenne est de 0,81 but encaissé par match.</cite> Sturm joue aussi le derby contre le GAK dimanche puis Marseille le 22, d'où un possible turnover côté autrichien."
-    ],
-    "a_retenir": {
-     "Bournemouth": [
-      "Alex Scott est absent jusqu'en novembre (cuisse).",
-      "Kluivert (muscle) est annoncé de retour vers le 25 octobre.",
-      "Rose est sous pression : 17e de Premier League après le 1-5 à Chelsea.",
-      "Calendrier dense : Sunderland le 18, Milan le 22, Man United le 25, Aston Villa (EFL Cup) le 28.",
-      "Beaucoup de nuls à domicile : 9 en 15 matchs."
-     ],
-     "SK Sturm Graz": [
-      "Kiteishvili (mollet), Mamageishvili (pied), Jatta (épaule) et Weiper (pubis) sont indisponibles pour plusieurs semaines.",
-      "Sturm doit jouer neuf matchs en un mois, avec le GAK le 18 et Marseille le 22.",
-      "Diakité est en forme : doublé à l'Austria Vienne."
-     ]
-    }
-   },
-   "raison": "L'analyse approfondie l'a écarté : À 1.17 (81 %), le marché est nettement plus optimiste que les modèles, qui donnent Bournemouth entre 42 % et 68 %. L'équipe est en crise (17e, 1-5 à Chelsea), privée de Scott et Kluivert, très portée au nul à domicile, et elle enchaîne Sunderland (dimanche) puis Milan (jeudi suivant), ce qui laisse craindre de la rotation."
-  },
-  "9b2bf9bed21283dcad774dd5be7ba1da": {
-   "id": "9b2bf9bed21283dcad774dd5be7ba1da",
-   "debut": "2026-10-15T19:00:00Z",
-   "domicile": "Rennes",
-   "exterieur": "OFI Crete",
-   "championnat": "UEFA Europa League",
-   "sport_key": "soccer_uefa_europa_league",
-   "court": "1",
-   "issue": "Victoire Rennes",
-   "proba": 0.8034447273188536,
-   "proba_depart": 0.7664793247731038,
-   "cote": 1.19,
-   "bk": "PMU (FR)",
-   "note": 0.7336,
-   "forme": null,
-   "ajoute": "2026-10-12",
-   "statut": "suivi",
-   "analyses": [
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Rien de grave ne contredit Rennes : effectif complet, 3e de L1, et un OFI Crete diminué par les blessures. Mais à 1,25 la marge est mince : défense friable, rotation possible avant Paris FC (18/10) et Juventus (22/10), et un OFI qui a battu Hoffenheim 2-0 pour son entrée en Europe."
-    },
-    {
-     "jour": "2026-10-13",
-     "avis": "prudence",
-     "resume": "Rennes est favori à domicile et n'a ni blessé ni suspendu, mais la cote de 1.25 (77 %) paraît trop basse. Forebet donne seulement 52 % de victoire à Rennes, Haise n'a jamais gagné en Europa League sur ses 17 derniers matchs, et OFI Crète a gagné 2-0 lors de la première journée."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Rennes part favori, avec un groupe complet et un OFI Crète amoindri, mais la cote de 1.25 laisse très peu de marge. Rennes reste fragile en Europe (nul 0-0 à Graz, Haise sans victoire en Europa League) et une rotation est possible avant la Juventus."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Rien de concret ne contredit le pari : Rennes a un groupe complet et l'OFI Crète est privé de trois joueurs. Mais à 1,25 la marge est mince, vu la malédiction européenne de Haise, un Rennes irrégulier et un OFI solide défensivement en Europe (0 but encaissé en 3 matchs européens)."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Rennes est au complet, en forme à domicile et affronte un OFI Crète amoindri, donc le favori est logique. Mais 1.25 laisse peu de marge : Haise est sans victoire en Europe depuis des années, Rennes a calé à Graz malgré 23 tirs, et l'OFI a battu Hoffenheim 2-0 avec un bloc compact."
-    }
-   ],
-   "avis": {
-    "avis": "prudence",
-    "resume": "Rennes est au complet, en forme à domicile et affronte un OFI Crète amoindri, donc le favori est logique. Mais 1.25 laisse peu de marge : Haise est sans victoire en Europe depuis des années, Rennes a calé à Graz malgré 23 tirs, et l'OFI a battu Hoffenheim 2-0 avec un bloc compact.",
-    "points": [
-     "Rennes n'a ni blessé ni suspendu, selon plusieurs avant-matchs. La presse annonce Samba ; Reynolds, Cresswell, Rouault, Nagida ; Camara, Rongier, Thomasson ; Al-Tamari/Mayenda/Blas, Lepaul, Soumaré. Le statut de Rouault reste à confirmer sur les feuilles de match, et le onze d'attaque varie selon les sources.",
-     "Rennes reste sur trois victoires et un nul à domicile cette saison, avec 10 buts marqués en quatre matchs au Roazhon Park. Il vient de battre Auxerre 4-1 dimanche, avec un doublé de Lepaul. Il est 3e de Ligue 1 avec 13 points. Le Paris FC (18/10) puis la Juventus (22/10) arrivent ensuite, donc une rotation partielle est possible, comme un début de match pour Mayenda.",
-     "Franck Haise reste sans victoire en Ligue Europa, avec 17 matchs de série selon la presse après le 0-0 à Graz. Un autre décompte parle de 19 matchs sans succès sur l'ensemble des compétitions européennes. Rennes avait dominé à Graz (plus de 60 % de possession, 23 tirs) sans marquer. Cela montre un problème de réalisme européen.",
-     "L'OFI Crète n'a ni Leya Iseka (cuisse), ni Sielis (cuisse, défenseur), ni Marinakis (blessé, pas encore joué cette saison). Il vient de perdre 0-3 à l'AEK Athènes, avec l'expulsion de Cantalapiedra, qui reste disponible en Europe. Il a pourtant battu Hoffenheim 2-0 à la maison pour sa première sortie européenne, en 3-4-3 avec Fountas, Cantalapiedra et Kodro devant.",
-     "La plupart des pronostiqueurs voient une victoire rennaise, souvent avec plus de 2,5 buts (Sports Mole 3-1, Sportskeeda 2-1). The Stats Zone préfère le « draw no bet » par prudence, et Football Whispers prévoit un match ouvert avec but des deux équipes. La cote de victoire est autour de 1.25-1.27 et la double chance à 1.23, donc la valeur est faible."
-    ],
-    "a_retenir": {
-     "Rennes": [
-      "Haise reste sans victoire en Ligue Europa, 17 matchs de série après le nul à Graz. Un autre décompte annonce 19 matchs en Europe toutes compétitions. À revérifier après le 15/10.",
-      "Merlin est écarté du groupe après le 0-4 à Lyon, et Nagida est titulaire à gauche.",
-      "Rennes est 3e de Ligue 1 avec 13 points. Calendrier : Paris FC le 18/10, Juventus le 22/10, puis Olympiakos."
-     ],
-     "OFI Crete": [
-      "Leya Iseka et Sielis (cuisse) et Marinakis (blessé) sont absents pour plusieurs semaines.",
-      "Cantalapiedra est suspendu pour le match de championnat contre Kalamata (18/10), mais disponible en Europe.",
-      "La défense est fragile sur coups de pied arrêtés (défaite 0-3 à l'AEK). Prochains matchs : Leverkusen à domicile le 22/10, puis Beer-Sheva le 05/11."
-     ]
-    }
-   }
-  },
-  "feda75190a774fb92164059453b037be": {
-   "id": "feda75190a774fb92164059453b037be",
-   "debut": "2026-10-15T19:00:00Z",
-   "domicile": "Benfica",
-   "exterieur": "Celtic",
-   "championnat": "UEFA Europa League",
-   "sport_key": "soccer_uefa_europa_league",
-   "court": "1",
-   "issue": "Victoire Benfica",
-   "proba": 0.8113689405984285,
-   "proba_depart": 0.7675535652492664,
-   "cote": 1.18,
-   "bk": "Betclic (FR)",
-   "note": 0.7137,
-   "forme": null,
-   "ajoute": "2026-10-12",
-   "statut": "suivi",
-   "analyses": [
-    {
-     "jour": "2026-10-12",
-     "avis": "confirme",
-     "resume": "Rien d'important ne contredit le pari : Benfica est quasi au complet, en forme à domicile et affronte un Celtic en crise européenne, privé de Carter-Vickers. Le principal bémol est la cote de 1.21, très courte, qui laisse peu de valeur et peu de marge si le match dérape."
-    },
-    {
-     "jour": "2026-10-12",
-     "avis": "prudence",
-     "resume": "Benfica est nettement supérieur et reçoit un Celtic en crise européenne dont le défenseur Carter-Vickers est incertain. Mais à 1.22 la marge est mince, car Marco Silva a laissé entendre qu'il pourrait faire tourner son effectif et que Kaminski et Durán ne sont pas assurés."
-    },
-    {
-     "jour": "2026-10-13",
-     "avis": "prudence",
-     "resume": "Benfica est très nettement supérieur et reçoit un Celtic en difficulté, mais la cote de 1,22 laisse peu de marge. Marco Silva a confirmé qu'une rotation était possible, et la presse parle de jusqu'à 8 changements. Il manque aussi plusieurs joueurs (Kaminski, Barrenechea, Bah et Durán incertains)."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Celtic est affaibli (28e, sans Carter-Vickers ni Johnston) et Benfica reste largement favori à domicile. Mais Marco Silva annonce une rotation importante (jusqu'à 8 changements évoqués) avec un couloir droit fragile, et une cote de 1.22 laisse peu de marge pour une équipe remaniée."
-    },
-    {
-     "jour": "2026-10-14",
-     "avis": "prudence",
-     "resume": "Benfica est nettement supérieur (invaincu à domicile contre les clubs écossais, Celtic en crise et sans Carter-Vickers), mais la cote de 1.22 laisse peu de marge. Marco Silva annonce une rotation possible, avec des incertitudes à droite de la défense et en attaque (Durán), donc le risque d'un nul ou d'une surprise est réel."
-    }
-   ],
-   "avis": {
-    "avis": "prudence",
-    "resume": "Benfica est nettement supérieur (invaincu à domicile contre les clubs écossais, Celtic en crise et sans Carter-Vickers), mais la cote de 1.22 laisse peu de marge. Marco Silva annonce une rotation possible, avec des incertitudes à droite de la défense et en attaque (Durán), donc le risque d'un nul ou d'une surprise est réel.",
-    "points": [
-     "<cite index='7-15,7-16'>Marco Silva a dit qu'une rotation était « une possibilité », avec des joueurs de l'équipe B qui pourraient jouer</cite>. <cite index='21-3,21-4'>Une partie de la presse portugaise y voit un bluff, car Benfica ne joue pas ce week-end</cite>. <cite index='22-3'>Le Record parle d'une rotation contrôlée, sans révolution</cite>.",
-     "<cite index='12-7'>Absents côté Benfica : Bah, Barrenechea (ménisque), Umeh (blessure musculaire) et Kamiński (adducteur)</cite>. <cite index='23-6,23-7'>Durán a eu une gêne pendant la trêve, mais Silva n'a pas dit qu'il manquerait le match</cite>. La profondeur d'effectif reste correcte, mais le couloir droit est fragile.",
-     "<cite index='16-1,16-9'>Carter-Vickers (élongation) devrait manquer le match</cite> ; <cite index='11-3'>Johnston et Yang Hyun-jun sont aussi indisponibles</cite>. <cite index='10-6'>Oxlade-Chamberlain est de nouveau disponible après sa suspension</cite>. <cite index='10-13'>Jota n'est pas dans la liste Europa League</cite>.",
-     "<cite index='3-4'>Benfica a gagné les quatre matchs à domicile contre le Celtic en Coupe d'Europe, 9-1 au cumul</cite>. <cite index='3-5'>Le Celtic n'a gardé que deux cleans sheets en 29 matchs d'Europa League et a perdu 3-1 contre Ferencváros à la journée 1</cite>. <cite index='6-7'>Benfica a battu l'AC Milan 2-0 à la journée 1</cite>.",
-     "<cite index='26-8,26-10'>Pas de match de Benfica ce week-end et Omonia seulement une semaine plus tard</cite> : aucune fatigue liée au calendrier. <cite index='20-6'>Benfica vient de subir sa première défaite de la saison, au Clássico</cite>. <cite index='8-19'>L'arbitre est le Monténégrin Nikola Dabanovic</cite>."
-    ],
-    "a_retenir": {
-     "Benfica": [
-      "Barrenechea (genou) est absent jusqu'en novembre.",
-      "Bah est blessé pour quelques semaines et le poste de latéral droit reste fragile (Banjaqui à surveiller).",
-      "Kamiński est absent ou incertain (blessure musculaire).",
-      "Marco Silva, entraîneur depuis l'été 2026, fait beaucoup tourner en Europe.",
-      "Pavlidis est en grande forme (14 buts en 14 matchs selon Sports Mole). Benfica compte 5 points de retard sur Porto en championnat après le Clássico perdu."
-     ],
-     "Celtic": [
-      "Martin O'Neill est sous pression : trois défaites avant la trêve et 0 point en Europe, avec un seul match joué (défaite 3-1 contre Ferencváros).",
-      "Carter-Vickers (élongation) est absent à court terme.",
-      "Johnston et Osmand reviennent de blessures aux ischio-jambiers, retour probable dans les prochaines semaines.",
-      "Jota est revenu après 18 mois d'absence mais n'est pas dans la liste Europa League."
-     ]
-    }
-   }
-  },
   "bf2142d1ca76ba2fc9e61afce80f86c0": {
    "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
    "debut": "2026-10-17T14:00:00Z",
@@ -214,7 +9,7 @@
    "sport_key": "soccer_epl",
    "court": "1",
    "issue": "Victoire Manchester City",
-   "proba": 0.7821499532758075,
+   "proba": 0.7822478767153955,
    "proba_depart": 0.8001585125280507,
    "cote": 1.22,
    "bk": "Winamax (FR)",
@@ -268,7 +63,7 @@
    "sport_key": "soccer_germany_bundesliga",
    "court": "1",
    "issue": "Victoire Bayern Munich",
-   "proba": 0.7877170104014546,
+   "proba": 0.7884044938275696,
    "proba_depart": 0.7848959246422027,
    "cote": 1.19,
    "bk": "Winamax (FR)",
@@ -322,10 +117,10 @@
    "sport_key": "soccer_spain_la_liga",
    "court": "2",
    "issue": "Victoire Barcelona",
-   "proba": 0.6845838509742268,
+   "proba": 0.687251771120351,
    "proba_depart": 0.6776875572947177,
-   "cote": 1.39,
-   "bk": "Winamax (FR)",
+   "cote": 1.38,
+   "bk": "PMU (FR)",
    "note": 0.688,
    "forme": true,
    "ajoute": "2026-10-14",
@@ -369,22 +164,60 @@
     }
    }
   },
-  "1425f07b2aa42fe7c1ba0cb919a1a283": {
-   "id": "1425f07b2aa42fe7c1ba0cb919a1a283",
-   "debut": "2026-10-15T19:00:00Z",
-   "domicile": "SC Freiburg",
-   "exterieur": "FK Jablonec",
-   "championnat": "UEFA Europa Conference League",
-   "sport_key": "soccer_uefa_europa_conference_league",
-   "court": "1",
-   "issue": "Victoire SC Freiburg",
-   "proba": 0.7919354571380919,
-   "proba_depart": 0.7878428880837429,
-   "cote": 1.2,
-   "bk": "Betclic (FR)",
-   "note": 0.7654,
+  "ffcb32a8a5597aacba7b654852d47b67": {
+   "id": "ffcb32a8a5597aacba7b654852d47b67",
+   "debut": "2026-10-22T16:45:00Z",
+   "domicile": "OFI Crete",
+   "exterieur": "Bayer Leverkusen",
+   "championnat": "UEFA Europa League",
+   "sport_key": "soccer_uefa_europa_league",
+   "court": "2",
+   "issue": "Victoire Bayer Leverkusen",
+   "proba": 0.7584912845776886,
+   "proba_depart": 0.7584912845776886,
+   "cote": 1.27,
+   "bk": "PMU (FR)",
+   "note": 0.7504,
    "forme": null,
-   "ajoute": "2026-10-15",
+   "ajoute": "2026-10-16",
+   "statut": "suivi",
+   "analyses": []
+  },
+  "eccd63bf768e2f2a358b871d3f33a63d": {
+   "id": "eccd63bf768e2f2a358b871d3f33a63d",
+   "debut": "2026-10-18T19:00:00Z",
+   "domicile": "Real Madrid",
+   "exterieur": "Sevilla",
+   "championnat": "La Liga - Spain",
+   "sport_key": "soccer_spain_la_liga",
+   "court": "1",
+   "issue": "Victoire Real Madrid",
+   "proba": 0.7769306449043479,
+   "proba_depart": 0.7769306449043479,
+   "cote": 1.21,
+   "bk": "Betclic (FR)",
+   "note": 0.7341,
+   "forme": null,
+   "ajoute": "2026-10-16",
+   "statut": "suivi",
+   "analyses": []
+  },
+  "f3034246520a2ee4ff0ac0d5074966f8": {
+   "id": "f3034246520a2ee4ff0ac0d5074966f8",
+   "debut": "2026-10-17T15:15:00Z",
+   "domicile": "Strasbourg",
+   "exterieur": "Paris Saint Germain",
+   "championnat": "Ligue 1 - France",
+   "sport_key": "soccer_france_ligue_one",
+   "court": "2",
+   "issue": "Victoire Paris Saint Germain",
+   "proba": 0.6918884410556407,
+   "proba_depart": 0.6918884410556407,
+   "cote": 1.36,
+   "bk": "Winamax (FR)",
+   "note": 0.7033,
+   "forme": true,
+   "ajoute": "2026-10-16",
    "statut": "suivi",
    "analyses": []
   }
