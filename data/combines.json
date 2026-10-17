@@ -196,8 +196,8 @@
   "proba": 0.2395,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "947bd5d924835af090d9cdc7bbdf10f6",
@@ -207,7 +207,10 @@
     "exterieur": "1. FC Köln",
     "pari": "Victoire Eintracht Frankfurt",
     "court": "1",
-    "cote": 1.82
+    "cote": 1.82,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "19ee731602634e5c9e3106630e087464",
@@ -217,7 +220,42 @@
     "exterieur": "Levante",
     "pari": "Victoire Deportivo La Coruña",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-17",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.63,
+  "proba": 0.2518,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "b6bf48e65d78b5615da5f3ab904fa5d4",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-10-17T14:00:00Z",
+    "domicile": "Swansea City",
+    "exterieur": "West Ham United",
+    "pari": "Victoire West Ham United",
+    "court": "2",
+    "cote": 2.1
+   },
+   {
+    "id": "9a422e1aad1053828eaf629a58d901de",
+    "sport_key": "soccer_germany_bundesliga",
+    "date": "2026-10-17T13:30:00Z",
+    "domicile": "Werder Bremen",
+    "exterieur": "SC Paderborn",
+    "pari": "Victoire Werder Bremen",
+    "court": "1",
+    "cote": 1.73
    }
   ]
  }
