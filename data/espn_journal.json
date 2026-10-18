@@ -1,18 +1,5 @@
 {
- "ligues": {
-  "soccer_epl": 15,
-  "soccer_efl_champ": 24,
-  "soccer_spain_la_liga": 15,
-  "soccer_france_ligue_two": 12,
-  "soccer_italy_serie_a": 14,
-  "soccer_germany_bundesliga": 15,
-  "soccer_netherlands_eredivisie": 12,
-  "soccer_france_ligue_one": 11,
-  "soccer_portugal_primeira_liga": 5,
-  "soccer_uefa_champs_league": 18,
-  "soccer_uefa_europa_conference_league": 18,
-  "soccer_uefa_europa_league": 18
- },
- "relies": 129,
+ "ligues": {},
+ "relies": 0,
  "manques": []
 }

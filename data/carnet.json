@@ -4807,7 +4807,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.22,
@@ -4815,8 +4817,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.2
  },
  {
   "cle": "match:fbbd46f088071f0f022dce6850bcfa80",
@@ -4837,7 +4839,9 @@
      "ligue": "eng.2",
      "id": "401880216"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.44,
@@ -4845,8 +4849,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:4419c1c886cc6f3ad0c00f0d6cfe2b62",
@@ -4867,7 +4871,9 @@
      "ligue": "eng.2",
      "id": "401880211"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.38,
@@ -4875,8 +4881,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.8
  },
  {
   "cle": "match:1d647c4a829133678cfb3a0425b1cd16",
@@ -4897,7 +4903,9 @@
      "ligue": "eng.2",
      "id": "401880215"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.68,
@@ -4905,8 +4913,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:6436925dd15916d7041ba32b60000d48",
@@ -4929,7 +4937,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.63,
@@ -4937,8 +4947,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.3
  },
  {
   "cle": "match:cb07e6b68d8c9fff69c1fcb5ba134b37",
@@ -4959,7 +4969,9 @@
      "ligue": "fra.2",
      "id": "401876723"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.76,
@@ -4967,8 +4979,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.6
  },
  {
   "cle": "match:b03a5da212e1b2cd1c60edaa668a4a9c",
@@ -4989,7 +5001,9 @@
      "ligue": "fra.2",
      "id": "401876722"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 1.6,
@@ -4997,8 +5011,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:907639dade64cca45d1ab639195d201e",
@@ -5021,7 +5035,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.69,
@@ -5029,8 +5045,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:0bf757f3bd903496ce2fa27bd0481869",
@@ -5051,7 +5067,9 @@
      "ligue": "ger.1",
      "id": "401884764"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-3",
+    "ok": true
    }
   ],
   "cote": 2.45,
@@ -5059,8 +5077,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.5
  },
  {
   "cle": "match:d8eac776adb07b0e7f01d8736d097291",
@@ -5083,7 +5101,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 1.54,
@@ -5091,8 +5111,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:606d65d57a9a6d8f9b53faee1ad10009",
@@ -5115,7 +5135,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.3,
@@ -5123,8 +5145,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.0
  },
  {
   "cle": "match:221916b8b36706ec52aa655a64e5f1d2",
@@ -5147,7 +5169,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.76,
@@ -5155,8 +5179,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:9a422e1aad1053828eaf629a58d901de",
@@ -5177,7 +5201,9 @@
      "ligue": "ger.1",
      "id": "401884766"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.73,
@@ -5185,8 +5211,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:8f1945e7272bc7e89016439f5ab321c7",
@@ -5207,7 +5233,9 @@
      "ligue": "eng.1",
      "id": "401879262"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -5215,8 +5243,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:7895f97f2f9577f3b13287a3d086859d",
@@ -5237,7 +5265,9 @@
      "ligue": "eng.1",
      "id": "401878770"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.6,
@@ -5245,8 +5275,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.0
  },
  {
   "cle": "match:bf2142d1ca76ba2fc9e61afce80f86c0",
@@ -5271,7 +5301,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.22,
@@ -5279,8 +5311,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.2
  },
  {
   "cle": "match:35d7df16a960d08a7d38e7f4f706677d",
@@ -5301,7 +5333,9 @@
      "ligue": "eng.2",
      "id": "401880220"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.93,
@@ -5309,8 +5343,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.3
  },
  {
   "cle": "match:37d564daa14e4724b53830d610cf5868",
@@ -5331,7 +5365,9 @@
      "ligue": "eng.2",
      "id": "401880210"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.83,
@@ -5339,8 +5375,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.3
  },
  {
   "cle": "match:899f15da06998732d951a91ed8f5e32f",
@@ -5363,7 +5399,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 1.41,
@@ -5371,8 +5409,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:530a906583ad9f1e013f382e2fe19c5e",
@@ -5393,7 +5431,9 @@
      "ligue": "eng.2",
      "id": "401880219"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.95,
@@ -5401,8 +5441,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:24970eb98cc5999cf3187abfc3a74a27",
@@ -5425,7 +5465,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.33,
@@ -5433,8 +5475,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.3
  },
  {
   "cle": "match:7a8f8a079740c8d4b39c995cdd304e0c",
@@ -5455,7 +5497,9 @@
      "ligue": "eng.2",
      "id": "401880214"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.79,
@@ -5463,8 +5507,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:33ad80e4f2bfa519396049639fd4d31a",
@@ -5485,7 +5529,9 @@
      "ligue": "eng.2",
      "id": "401880209"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-1",
+    "ok": true
    }
   ],
   "cote": 1.53,
@@ -5493,8 +5539,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.3
  },
  {
   "cle": "match:b6bf48e65d78b5615da5f3ab904fa5d4",
@@ -5517,7 +5563,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.1,
@@ -5525,8 +5573,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.0
  },
  {
   "cle": "match:aef660734585649651415961a9d177c6",
@@ -5549,7 +5597,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 1.4,
@@ -5557,8 +5607,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:81b7e4b9208cf3cf7214c9900540d0ff",
@@ -5583,7 +5633,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    }
   ],
   "cote": 1.24,
@@ -5591,8 +5643,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:f3034246520a2ee4ff0ac0d5074966f8",
@@ -5617,7 +5669,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.37,
@@ -5625,8 +5679,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.7
  },
  {
   "cle": "match:bfefc309177723410230fee52f650315",
@@ -5649,7 +5703,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.53,
@@ -5657,8 +5713,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.3
  },
  {
   "cle": "match:d1bbbdcd3d430e70091b518369b559cf",
@@ -5679,7 +5735,9 @@
      "ligue": "eng.1",
      "id": "401879258"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.22,
@@ -5687,8 +5745,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:846e496fc232b2fc20214754836727d0",
@@ -5713,7 +5771,9 @@
      "exterieur",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-5",
+    "ok": true
    }
   ],
   "cote": 1.4,
@@ -5721,8 +5781,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.0
  },
  {
   "cle": "match:9a64448205fdc4b95f45641bb946706c",
@@ -5747,7 +5807,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "6-1",
+    "ok": true
    }
   ],
   "cote": 1.17,
@@ -5755,8 +5817,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.7
  },
  {
   "cle": "match:8b4173a5e68ffca9cca9acd19def2e1b",
@@ -5779,7 +5841,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.18,
@@ -5787,8 +5851,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.8
  },
  {
   "cle": "match:d9b03d772e9b039441049be8b83290e6",
@@ -5813,7 +5877,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-4",
+    "ok": true
    }
   ],
   "cote": 1.28,
@@ -5821,8 +5887,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.8
  },
  {
   "cle": "match:ad25a350c89b64715e15c59cde5653d3",
@@ -5843,7 +5909,9 @@
      "ligue": "fra.1",
      "id": "401876436"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.96,
@@ -5851,8 +5919,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b077aa049133c0358bcd643bfee48da3",
@@ -5875,7 +5943,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.82,
@@ -5883,8 +5953,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.2
  },
  {
   "cle": "match:18d478f469da3bcc654dd4555b85c7e3",
@@ -5905,7 +5975,9 @@
      "ligue": "ita.1",
      "id": "401874935"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.53,
@@ -5913,8 +5985,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.3
  },
  {
   "cle": "match:f00cd1ea41fa39149729d14ebc07aa6c",
@@ -5937,7 +6009,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.27,
@@ -5945,8 +6019,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:fc96145ee5d186e331503870bfef8020",
@@ -5967,7 +6041,9 @@
      "ligue": "ned.1",
      "id": "401875579"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -5975,8 +6051,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "prudent:2026-10-17",
@@ -6001,7 +6077,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "6-1",
+    "ok": true
    },
    {
     "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
@@ -6021,7 +6099,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.43,
@@ -6029,8 +6109,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.3
  },
  {
   "cle": "equilibre:2026-10-17",
@@ -6053,7 +6133,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "9a422e1aad1053828eaf629a58d901de",
@@ -6069,7 +6151,9 @@
      "ligue": "ger.1",
      "id": "401884766"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 3.63,
@@ -6077,8 +6161,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-10-17",
@@ -6099,7 +6183,9 @@
      "ligue": "eng.1",
      "id": "401878771"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false
    },
    {
     "id": "b6bf48e65d78b5615da5f3ab904fa5d4",
@@ -6117,7 +6203,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "4419c1c886cc6f3ad0c00f0d6cfe2b62",
@@ -6135,7 +6223,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false
    }
   ],
   "cote": 16.73,
@@ -6143,8 +6233,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-10-17",
@@ -6167,7 +6257,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "846e496fc232b2fc20214754836727d0",
@@ -6185,7 +6277,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-5",
+    "ok": true
    },
    {
     "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
@@ -6203,7 +6297,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 2.16,
@@ -6211,8 +6307,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.6
  },
  {
   "cle": "mixte:2026-10-17",
@@ -6237,7 +6333,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "6-1",
+    "ok": true
    },
    {
     "id": "81b7e4b9208cf3cf7214c9900540d0ff",
@@ -6255,7 +6353,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "846e496fc232b2fc20214754836727d0",
@@ -6273,7 +6373,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-5",
+    "ok": true
    }
   ],
   "cote": 2.06,
@@ -6281,8 +6383,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.6
  },
  {
   "cle": "jour:2026-10-17",
@@ -6307,7 +6409,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "6-1",
+    "ok": true
    },
    {
     "id": "899f15da06998732d951a91ed8f5e32f",
@@ -6325,7 +6429,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 1.65,
@@ -6333,7 +6439,7 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  }
 ]
