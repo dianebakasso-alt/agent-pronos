@@ -1,7 +1,11 @@
 {
- "quand": "2026-10-19T12:02:16.406476+00:00",
+ "quand": "2026-10-19T12:11:30.423928+00:00",
  "cle_presente": true,
  "ok": false,
  "code": 400,
- "erreur": "{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgBZX8vhGPs817ZA8Y9wE\"}"
+ "erreur": "{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgBaDy7ErzW5J69BcwGjX\"}",
+ "cotes": {
+  "restants": "0",
+  "utilises": "500"
+ }
 }
