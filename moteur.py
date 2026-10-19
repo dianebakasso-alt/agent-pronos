@@ -417,6 +417,8 @@ def _ticket_estime(style, jambes, cfg_marge=1.05):
 STYLES_BUTS = {
     "buts": {"nom": "Buts", "emoji": "⚽", "desc": "2 à 3 paris de buts sur des matchs différents."},
     "mixte": {"nom": "Mixte", "emoji": "🔀", "desc": "Un favori + des paris de buts sur d'autres matchs."},
+    "mixte_gros": {"nom": "Mixte gros gain", "emoji": "💥",
+                   "desc": "2 favoris solides + des paris de buts sur d'autres matchs : grosse cote (6 à 12), sans pari loterie."},
 }
 
 
@@ -448,4 +450,27 @@ def combines_buts(analyses):
             jm.pop()
         if len(jm) >= 2:
             tickets.append(_ticket_estime("mixte", jm))
+
+    # 💥 mixte gros gain : 2 favoris solides (pas de petite cote, pas d'équipe fatiguée)
+    #    + 2 à 3 paris de buts nets sur d'autres matchs, jusqu'à une cote de 6 à 12
+    solides = []
+    for m in analyses:
+        i = max(m["issues"], key=lambda x: x["proba"])
+        if i["court"] != "N" and 0.50 <= i["proba"] <= 0.75 and i["cote"] >= 1.45 \
+                and not (m.get("fatigue") or {}).get(i["court"]):
+            solides.append({"match": m, "type": "1n2", "court": i["court"], "issue": i["issue"],
+                            "proba": i["proba"], "cote": i["cote"], "bk": i["bookmaker"]})
+    solides.sort(key=lambda f: -(f["proba"] + f.get("cote", 0) * 0.02))
+    fav2 = solides[:2]
+    if len(fav2) == 2:
+        pris = {f["match"]["id"] for f in fav2}
+        buts = [j for j in jambes_buts if j["match"]["id"] not in pris and j["proba"] <= 0.78]
+        jg = list(fav2)
+        for j in buts:
+            if _prod(1 / x["proba"] for x in jg) >= 6 or len(jg) >= 5:
+                break
+            jg.append(j)
+        cote = _prod(1 / x["proba"] for x in jg) * 1.05
+        if len(jg) >= 4 and cote >= 5 and _prod(x["proba"] for x in jg) >= 0.07:
+            tickets.append(_ticket_estime("mixte_gros", jg))
     return tickets

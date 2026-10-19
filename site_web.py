@@ -1567,6 +1567,8 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .av-ok .av-v {{ color:var(--ok); }} .av-warn .av-v {{ color:var(--warn); }} .av-bad .av-v {{ color:var(--bad); }} .av-att .av-v {{ color:var(--muted); }}
 .av-l.av-bad {{ border-left-color:var(--bad); opacity:.85; }}
 .secours {{ margin:12px 0; padding:10px 12px; border-radius:12px; font-size:13px; background:color-mix(in srgb, var(--warn) 14%, var(--surface)); border:1px solid var(--warn); }}
+.combo.st-mixte_gros {{ --grad-ticket:linear-gradient(135deg,#f43f5e 0%,#f59e0b 45%,#22c55e 100%); }}
+.combo.st-mixte_gros .jambes li {{ border-left-color:#f43f5e; }}
 </style>
 </head>
 <body>
@@ -1626,7 +1628,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
   <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
-  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button><button data-s="buts">⚽ Buts</button><button data-s="mixte">🔀 Mixte</button></div>
+  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button><button data-s="buts">⚽ Buts</button><button data-s="mixte">🔀 Mixte</button><button data-s="mixte_gros">💥 Mixte gros</button></div>
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 

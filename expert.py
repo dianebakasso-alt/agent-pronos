@@ -20,6 +20,7 @@ CATEGORIES = {
     "gros": ("🚀", "Combiné Gros gain"),
     "buts": ("⚽", "Combiné Buts"),
     "mixte": ("🔀", "Combiné Mixte"),
+    "mixte_gros": ("💥", "Mixte gros gain"),
     "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
     "rebond": ("🔄", "Rebond"),
