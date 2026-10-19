@@ -161,3 +161,60 @@ def marquer_fatigue(analyses, europe, jours=3):
             m["fatigue"] = fat
             n += 1
     return n
+
+
+# ---------------------------------------------------------------- mode secours : cotes ESPN (gratuites)
+def _americaine(v):
+    try:
+        s = str(v).strip().replace("EVEN", "+100")
+        x = float(s)
+    except Exception:
+        return None
+    if x == 0:
+        return None
+    return round(1 + (x / 100 if x > 0 else 100 / -x), 3)
+
+
+def _cotes_ev(ev):
+    """(dom, nul, ext) en cotes décimales depuis les cotes publiées par ESPN, ou None."""
+    comp = (ev.get("competitions") or [{}])[0]
+    for o in comp.get("odds") or []:
+        h = _americaine((o.get("homeTeamOdds") or {}).get("moneyLine"))
+        a = _americaine((o.get("awayTeamOdds") or {}).get("moneyLine"))
+        d = _americaine((o.get("drawOdds") or {}).get("moneyLine"))
+        if not (h and a and d):
+            ml = o.get("moneyline") or {}
+            pick = lambda k: _americaine(((ml.get(k) or {}).get("close") or (ml.get(k) or {}).get("open") or {}).get("odds"))
+            h, a = h or pick("home"), a or pick("away")
+            d = d or _americaine(((o.get("drawOdds") or {}).get("moneyLine")) or ((ml.get("draw") or {}).get("close") or {}).get("odds"))
+        if h and a and d:
+            return h, d, a, (o.get("provider") or {}).get("name") or "ESPN"
+    return None
+
+
+def cotes_espn(maintenant, nb_jours=7, journal=None):
+    """Matchs au format de la source de cotes habituelle, à partir des tableaux ESPN (1 bookmaker)."""
+    matchs = []
+    for sk, slug in LIGUES_ESPN.items():
+        evs, err = _evenements(slug, maintenant, nb_jours)
+        avec = 0
+        for ev in evs:
+            try:
+                t = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
+            except Exception:
+                continue
+            if t <= maintenant:
+                continue
+            c = _cotes_ev(ev)
+            dom, ext = _equipes(ev)
+            if not c or not dom or not ext:
+                continue
+            h, d, a, prov = c
+            avec += 1
+            matchs.append({"id": f"espn-{ev['id']}", "sport_key": sk, "sport_title": slug, "commence_time": ev["date"],
+                           "home_team": dom[0], "away_team": ext[0], "_espn": {"ligue": slug, "id": str(ev["id"])},
+                           "bookmakers": [{"key": "espn", "title": prov, "markets": [{"key": "h2h", "outcomes": [
+                               {"name": dom[0], "price": h}, {"name": ext[0], "price": a}, {"name": "Draw", "price": d}]}]}]})
+        if journal is not None:
+            journal[slug] = {"matchs": len(evs), "avec_cotes": avec, "erreur": err}
+    return matchs

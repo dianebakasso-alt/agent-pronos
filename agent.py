@@ -110,6 +110,7 @@ def jour_de(m):
 
 
 COTES_BUDGET = DATA / "cotes_budget.json"
+SECOURS = {"actif": False}
 
 
 def quota_du_jour(api, cfg, maintenant):
@@ -509,9 +510,25 @@ def main():
         if anciens:
             print(f"    {len(anciens)} matchs repris du cache (cotes d'un passage précédent)")
         matchs = matchs + anciens
-        (DATA / "cotes_cache.json").write_text(json.dumps({"maj": maintenant.isoformat(), "matchs": matchs}, ensure_ascii=False), encoding="utf-8")
+        if not matchs:
+            # mode secours : quota de cotes vide → cotes gratuites publiées par ESPN (un seul bookmaker)
+            print("    Mode secours : cotes ESPN (gratuites)")
+            jl = {}
+            matchs = direct.cotes_espn(maintenant, journal=jl)
+            (DATA / "secours_journal.json").write_text(json.dumps(jl, ensure_ascii=False, indent=1), encoding="utf-8")
+            if matchs:
+                SECOURS["actif"] = True
+                cfg["bookmakers_minimum"] = 1
+                cfg["bookmakers_jouables"] = list(cfg["bookmakers_jouables"]) + ["espn"]
+            print(f"    {len(matchs)} matchs avec cotes ESPN")
+        if not SECOURS["actif"]:
+            (DATA / "cotes_cache.json").write_text(json.dumps({"maj": maintenant.isoformat(), "matchs": matchs}, ensure_ascii=False), encoding="utf-8")
 
     analyses = [a for a in (moteur.analyser_match(m, cfg) for m in matchs) if a]
+    _esp = {m["id"]: m["_espn"] for m in matchs if m.get("_espn")}
+    for a in analyses:
+        if a["id"] in _esp:
+            a["espn"] = _esp[a["id"]]
     analyses.sort(key=lambda a: a["debut"])
     values = sorted([a for a in analyses if a["value"]], key=lambda a: -a["value"]["edge"])
     print(f"    {len(analyses)} matchs analysés, {len(values)} value bets")
@@ -795,6 +812,7 @@ def main():
         "budget_ia": None if demo else {"depense": round(BUDGET["depense"] + BUDGET["run"], 2), "plafond": BUDGET["max"]},
         "semaine": {"ticket": ticket_semaine, "suivis": sorted(sel["matchs"].values(), key=lambda s: s["debut"])},
         "genere": maintenant,
+        "secours": SECOURS["actif"],
         "demo": demo,
         "credits_restants": api.credits_restants if api else None,
         "credits_utilises": api.credits_utilises if api else None,

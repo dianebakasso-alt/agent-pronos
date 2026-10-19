@@ -1566,6 +1566,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .av-v {{ margin-top:6px; font:800 13px Inter,sans-serif; }}
 .av-ok .av-v {{ color:var(--ok); }} .av-warn .av-v {{ color:var(--warn); }} .av-bad .av-v {{ color:var(--bad); }} .av-att .av-v {{ color:var(--muted); }}
 .av-l.av-bad {{ border-left-color:var(--bad); opacity:.85; }}
+.secours {{ margin:12px 0; padding:10px 12px; border-radius:12px; font-size:13px; background:color-mix(in srgb, var(--warn) 14%, var(--surface)); border:1px solid var(--warn); }}
 </style>
 </head>
 <body>
@@ -1611,6 +1612,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 </header>
 
 <main>
+{'<div class="secours">⚠️ <b>Mode secours</b> : le quota de cotes du mois est épuisé. Les chances viennent des cotes publiées par ESPN (un seul bookmaker) : pas de comparaison entre bookmakers ni de value bets jusqu\'au 1er du mois.</div>' if infos.get("secours") else ''}
 <div class="onglet" id="t-jour">
 <section class="direct" id="direct" hidden>
   <div class="direct-t"><b>⚡ En direct</b><button id="btn-alertes" onclick="activerAlertes()">🔔 Alertes buts</button></div>
