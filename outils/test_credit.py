@@ -18,5 +18,14 @@ if cle:
         res.update(ok=False, code=e.code, erreur=e.read().decode()[:300])
     except Exception as e:
         res.update(ok=False, erreur=str(e)[:300])
+# crédits de la source des cotes (The Odds API) : l'appel /sports est gratuit
+co = os.environ.get("ODDS_API_KEY", "")
+if co:
+    try:
+        with urllib.request.urlopen(f"https://api.the-odds-api.com/v4/sports?apiKey={co}", timeout=30) as r:
+            h = {k.lower(): v for k, v in r.headers.items()}
+            res["cotes"] = {"restants": h.get("x-requests-remaining"), "utilises": h.get("x-requests-used")}
+    except urllib.error.HTTPError as e:
+        res["cotes"] = {"erreur": e.code, "detail": e.read().decode()[:200]}
 Path("data/test_credit.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
 print(res.get("ok"), res.get("code"), res.get("erreur", "")[:120])
