@@ -1,11 +1,5 @@
 [
  {
-  "jour": "2026-10-18",
-  "matchs": 0,
-  "value_bets": 0,
-  "combines": []
- },
- {
   "jour": "2026-10-19",
   "matchs": 0,
   "value_bets": 0,
@@ -37,6 +31,12 @@
  },
  {
   "jour": "2026-10-24",
+  "matchs": 0,
+  "value_bets": 0,
+  "combines": []
+ },
+ {
+  "jour": "2026-10-25",
   "matchs": 0,
   "value_bets": 0,
   "combines": []
