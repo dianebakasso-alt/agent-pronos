@@ -109,9 +109,38 @@ def jour_de(m):
     return datetime.fromisoformat(m["debut"].replace("Z", "+00:00")).astimezone(site_web.PARIS).strftime("%Y-%m-%d")
 
 
+COTES_BUDGET = DATA / "cotes_budget.json"
+
+
+def quota_du_jour(api, cfg, maintenant):
+    """Répartit les crédits restants du mois sur les jours restants (les relances du même jour comptent)."""
+    import calendar
+    jour = maintenant.astimezone(site_web.PARIS).strftime("%Y-%m-%d")
+    reste = api.credits_restants if api.credits_restants is not None else 9999
+    b = memoire.charger(COTES_BUDGET, {})
+    if b.get("jour") != jour:
+        nb_jours = calendar.monthrange(maintenant.year, maintenant.month)[1] - maintenant.day + 1
+        b = {"jour": jour, "alloue": min(cfg["credits_max_par_jour"], reste // max(1, nb_jours)), "utilise": 0}
+    cap = max(0, min(b["alloue"] - b["utilise"], reste))
+    b["prevu"] = cap
+    COTES_BUDGET.write_text(json.dumps(b, ensure_ascii=False), encoding="utf-8")
+    return cap
+
+
+def noter_credits(n):
+    b = memoire.charger(COTES_BUDGET, {})
+    if b:
+        b["utilise"] = b.get("utilise", 0) + n
+        COTES_BUDGET.write_text(json.dumps(b, ensure_ascii=False), encoding="utf-8")
+
+
 def choisir_championnats(api, cfg, maintenant):
     """Liste les championnats de foot qui ont des matchs bientôt (gratuit)."""
     sports = api.get("/sports")
+    cap = quota_du_jour(api, cfg, maintenant)
+    print(f"    quota cotes : {cap} championnat(s) aujourd'hui ({api.credits_restants} crédits restants ce mois-ci)")
+    if cap <= 0:
+        return []
     foot = [s["key"] for s in sports
             if s.get("group") == "Soccer" and s.get("active") and not s.get("has_outrights")]
     prio = cfg["championnats_prioritaires"]
@@ -120,7 +149,7 @@ def choisir_championnats(api, cfg, maintenant):
     fin = fin_fenetre(maintenant)
     retenus = []
     for cle in foot:
-        if len(retenus) >= cfg["credits_max_par_jour"]:
+        if len(retenus) >= cap:
             break
         try:
             evts = api.get(f"/sports/{cle}/events",
@@ -325,6 +354,32 @@ def _resultat(s, dom, ext):
     return ("1" if d > e else "2" if e > d else "N"), f"{d}-{e}"
 
 
+def regler_depuis_carnet(historique, combines):
+    """Règle les anciens paris avec les scores déjà trouvés (gratuitement) pour le carnet de l'expert."""
+    res = {}
+    for p in memoire.charger(DATA / "carnet.json", []):
+        for j in p["jambes"]:
+            if j.get("score") and "-" in j["score"]:
+                d, x = map(int, j["score"].split("-"))
+                res[j["id"]] = ("1" if d > x else "2" if x > d else "N", j["score"])
+    for h in historique:
+        if h["statut"] == "en attente" and h["id"] in res:
+            h["res"], h["score"] = res[h["id"]]
+            ok = h["res"] == h["court"]
+            h["statut"], h["gain"] = ("gagné", round(h["mise"] * (h["cote"] - 1), 2)) if ok else ("perdu", -h["mise"])
+    for c in combines:
+        if c["statut"] != "en attente":
+            continue
+        for j in c["jambes"]:
+            if not j.get("res") and j.get("id") in res:
+                j["res"], j["score"] = res[j["id"]]
+                j["ok"] = j["res"] == j["court"]
+        if any(j.get("ok") is False for j in c["jambes"]):
+            c["statut"], c["gain"] = "perdu", -c["mise"]
+        elif all(j.get("ok") for j in c["jambes"]):
+            c["statut"], c["gain"] = "gagné", round(c["mise"] * (c["cote"] - 1), 2)
+
+
 def regler_paris(api, historique, combines, maintenant):
     """Va chercher les scores des paris et combinés terminés (2 crédits par championnat)."""
     simples = [h for h in historique if h["statut"] == "en attente" and _termine(h["date"], maintenant)]
@@ -433,8 +488,8 @@ def main():
         api = OddsAPI(cle)
         historique = charger_historique()
         combines = json.loads(COMBINES.read_text(encoding="utf-8")) if COMBINES.exists() else []
-        print("1/4 Règlement des paris passés…")
-        regler_paris(api, historique, combines, maintenant)
+        print("1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…")
+        regler_depuis_carnet(historique, combines)
         appris = memoire.apprendre(historique, combines)
         cfg["ajustements"] = appris["ajustements"]
         (DATA / "memoire.json").write_text(json.dumps(appris, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -443,7 +498,18 @@ def main():
         champs = choisir_championnats(api, cfg, maintenant)
         print(f"    {len(champs)} championnats retenus")
         print("3/4 Récupération des cotes…")
-        matchs = recuperer_matchs(api, cfg, champs, maintenant)
+        avant = api.credits_utilises
+        matchs = recuperer_matchs(api, cfg, champs, maintenant) if champs else []
+        noter_credits(api.credits_utilises - avant)
+        # cache : les championnats non récupérés aujourd'hui gardent leurs dernières cotes connues
+        cache = memoire.charger(DATA / "cotes_cache.json", {})
+        frais = {m["sport_key"] for m in matchs}
+        anciens = [m for m in cache.get("matchs", []) if m.get("sport_key") not in frais
+                   and datetime.fromisoformat(m["commence_time"].replace("Z", "+00:00")) > maintenant]
+        if anciens:
+            print(f"    {len(anciens)} matchs repris du cache (cotes d'un passage précédent)")
+        matchs = matchs + anciens
+        (DATA / "cotes_cache.json").write_text(json.dumps({"maj": maintenant.isoformat(), "matchs": matchs}, ensure_ascii=False), encoding="utf-8")
 
     analyses = [a for a in (moteur.analyser_match(m, cfg) for m in matchs) if a]
     analyses.sort(key=lambda a: a["debut"])
