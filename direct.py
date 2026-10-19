@@ -191,6 +191,11 @@ def _cotes_ev(ev):
 
 
 def _cotes_une(o):
+    # format « décimal » (ex. Bet365 en coupe d'Europe) : value directement en cote décimale
+    dv = lambda k: (o.get(k) or {}).get("value") if isinstance(o.get(k), dict) else None
+    if all(isinstance(dv(k), (int, float)) and dv(k) > 1 for k in ("homeTeamOdds", "awayTeamOdds", "drawOdds")):
+        return round(1 + dv("homeTeamOdds"), 3) if dv("homeTeamOdds") < 1.01 else dv("homeTeamOdds"), \
+            dv("drawOdds"), dv("awayTeamOdds"), (o.get("provider") or {}).get("name") or "ESPN"
     if True:
         h = _americaine((o.get("homeTeamOdds") or {}).get("moneyLine"))
         a = _americaine((o.get("awayTeamOdds") or {}).get("moneyLine"))
