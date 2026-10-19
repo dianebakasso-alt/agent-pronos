@@ -31,9 +31,13 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python agent.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python agent.py 2>&1 | tee data/derniere_execution.txt
 
       - name: Sauvegarder l'historique des paris
+        if: always()
         run: |
           git config user.name "agent-pronos"
           git config user.email "agent-pronos@users.noreply.github.com"
