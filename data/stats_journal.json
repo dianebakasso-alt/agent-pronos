@@ -2,7 +2,6 @@
  "ligues_ok": [
   "soccer_italy_serie_a",
   "soccer_turkey_super_league",
-  "soccer_sweden_allsvenskan",
   "soccer_france_ligue_two",
   "soccer_epl",
   "soccer_spain_la_liga",
@@ -30,21 +29,20 @@
  ],
  "ligues_ko": [
   "soccer_saudi_arabia_pro_league",
+  "soccer_sweden_allsvenskan",
   "soccer_uefa_champs_league",
   "soccer_uefa_europa_conference_league",
   "soccer_uefa_europa_league",
   "soccer_australia_aleague"
  ],
- "equipes_trouvees": 475,
+ "equipes_trouvees": 463,
  "equipes_manquees": [
   "soccer_spain_la_liga: Athletic Club",
-  "soccer_france_ligue_two: Metz",
   "soccer_germany_bundesliga: FC Cologne",
   "soccer_norway_eliteserien: Hamarkameratene",
   "soccer_belgium_first_div: OH Leuven",
   "soccer_spain_segunda_division: Real Sociedad II",
   "soccer_austria_bundesliga: Rapid Vienna",
-  "soccer_france_ligue_two: Nantes",
   "soccer_spain_la_liga: Deportivo",
   "soccer_usa_mls: Red Bull New York",
   "soccer_spain_la_liga: Athletic Club",

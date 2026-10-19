@@ -7089,6 +7089,106 @@
   "gain": 0.0
  },
  {
+  "cle": "mixte_gros:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "espn-401879257",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Tottenham Hotspur",
+    "exterieur": "Coventry City",
+    "championnat": "Premier League",
+    "pari": "Victoire Tottenham Hotspur",
+    "cote": 1.54,
+    "proba": 0.6209,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879257"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401900895",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Shabab",
+    "exterieur": "Al Faisaly",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Shabab",
+    "cote": 1.61,
+    "proba": 0.5878,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900895"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401882842",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Getafe",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6932,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882842"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "espn-401900897",
+    "date": "2026-10-19T15:05Z",
+    "domicile": "Al Fayha",
+    "exterieur": "Al Ahli",
+    "championnat": "Saudi Pro League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6853,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900897"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401874784",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Parma",
+    "exterieur": "Torino",
+    "championnat": "Serie A",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6446,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874784"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 9.39,
+  "proba": 0.1118,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "semaine:2026-43",
   "jour": "2026-10-19",
   "cat": "semaine",
@@ -7118,8 +7218,8 @@
     "exterieur": "Real Madrid",
     "championnat": "Liga",
     "pari": "Victoire Barcelona",
-    "cote": 1.54,
-    "proba": 0.6113,
+    "cote": 1.56,
+    "proba": 0.6061,
     "court": "1",
     "espn": {
      "ligue": "esp.1",
@@ -7128,8 +7228,8 @@
     "traits": []
    }
   ],
-  "cote": 2.5,
-  "proba": 0.3564,
+  "cote": 2.53,
+  "proba": 0.3534,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
