@@ -1,6 +1,53 @@
 {
- "ligues_ok": [],
- "ligues_ko": [],
- "equipes_trouvees": 0,
- "equipes_manquees": []
+ "ligues_ok": [
+  "soccer_italy_serie_a",
+  "soccer_turkey_super_league",
+  "soccer_sweden_allsvenskan",
+  "soccer_france_ligue_two",
+  "soccer_epl",
+  "soccer_spain_la_liga",
+  "soccer_portugal_primeira_liga",
+  "soccer_argentina_primera_division",
+  "soccer_brazil_campeonato",
+  "soccer_efl_champ",
+  "soccer_england_league1",
+  "soccer_england_league2",
+  "soccer_mexico_ligamx",
+  "soccer_japan_j_league",
+  "soccer_usa_mls",
+  "soccer_germany_bundesliga2",
+  "soccer_austria_bundesliga",
+  "soccer_netherlands_eredivisie",
+  "soccer_germany_bundesliga",
+  "soccer_italy_serie_b",
+  "soccer_spain_segunda_division",
+  "soccer_france_ligue_one",
+  "soccer_belgium_first_div",
+  "soccer_spl",
+  "soccer_norway_eliteserien",
+  "soccer_greece_super_league",
+  "soccer_denmark_superliga"
+ ],
+ "ligues_ko": [
+  "soccer_saudi_arabia_pro_league",
+  "soccer_uefa_champs_league",
+  "soccer_uefa_europa_conference_league",
+  "soccer_australia_aleague"
+ ],
+ "equipes_trouvees": 465,
+ "equipes_manquees": [
+  "soccer_spain_la_liga: Athletic Club",
+  "soccer_germany_bundesliga: FC Cologne",
+  "soccer_norway_eliteserien: Hamarkameratene",
+  "soccer_belgium_first_div: OH Leuven",
+  "soccer_spain_segunda_division: Real Sociedad II",
+  "soccer_austria_bundesliga: Rapid Vienna",
+  "soccer_spain_la_liga: Deportivo",
+  "soccer_usa_mls: Red Bull New York",
+  "soccer_spain_la_liga: Athletic Club",
+  "soccer_denmark_superliga: Sønderjyske Fodbold",
+  "soccer_france_ligue_one: Stade Rennais",
+  "soccer_portugal_primeira_liga: Sporting CP",
+  "soccer_usa_mls: LAFC"
+ ]
 }

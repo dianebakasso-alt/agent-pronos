@@ -6441,5 +6441,699 @@
   "mise": 10.0,
   "statut": "perdu",
   "gain": -10.0
+ },
+ {
+  "cle": "match:espn-401900897",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401900897",
+    "date": "2026-10-19T15:05Z",
+    "domicile": "Al Fayha",
+    "exterieur": "Al Ahli",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Ahli",
+    "cote": 1.39,
+    "proba": 0.6842,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900897"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.39,
+  "proba": 0.6842,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874762",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874762",
+    "date": "2026-10-19T16:30Z",
+    "domicile": "Monza",
+    "exterieur": "Cagliari",
+    "championnat": "Serie A",
+    "pari": "Victoire Monza",
+    "cote": 2.25,
+    "proba": 0.4118,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874762"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.4118,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401888277",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401888277",
+    "date": "2026-10-19T17:00Z",
+    "domicile": "Trabzonspor",
+    "exterieur": "Besiktas",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Trabzonspor",
+    "cote": 2.45,
+    "proba": 0.3838,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888277"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3838,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401842846",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401842846",
+    "date": "2026-10-19T17:00Z",
+    "domicile": "Degerfors IF",
+    "exterieur": "Kalmar FF",
+    "championnat": "Allsvenskan",
+    "pari": "Victoire Kalmar FF",
+    "cote": 2.45,
+    "proba": 0.3869,
+    "court": "2",
+    "espn": {
+     "ligue": "swe.1",
+     "id": "401842846"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3869,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401900896",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401900896",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Hilal",
+    "exterieur": "Al Hazem",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Hilal",
+    "cote": 1.06,
+    "proba": 0.8958,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900896"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.06,
+  "proba": 0.8958,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401900895",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401900895",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Shabab",
+    "exterieur": "Al Faisaly",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Shabab",
+    "cote": 1.61,
+    "proba": 0.5878,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900895"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.61,
+  "proba": 0.5878,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874784",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874784",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Parma",
+    "exterieur": "Torino",
+    "championnat": "Serie A",
+    "pari": "Victoire Torino",
+    "cote": 2.4,
+    "proba": 0.3845,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874784"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3845,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876719",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876719",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Rodez Aveyron",
+    "exterieur": "Montpellier",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Montpellier",
+    "cote": 2.4,
+    "proba": 0.3925,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876719"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3925,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401879257",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401879257",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Tottenham Hotspur",
+    "exterieur": "Coventry City",
+    "championnat": "Premier League",
+    "pari": "Victoire Tottenham Hotspur",
+    "cote": 1.54,
+    "proba": 0.6209,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879257"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.6209,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882842",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882842",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Getafe",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Victoire Rayo Vallecano",
+    "cote": 2.65,
+    "proba": 0.3612,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882842"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.65,
+  "proba": 0.3612,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885480",
+  "jour": "2026-10-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885480",
+    "date": "2026-10-19T19:15Z",
+    "domicile": "Braga",
+    "exterieur": "Gil Vicente",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Braga",
+    "cote": 1.54,
+    "proba": 0.609,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885480"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.609,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "espn-401900896",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Hilal",
+    "exterieur": "Al Hazem",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Hilal",
+    "cote": 1.06,
+    "proba": 0.8958,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900896"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401900897",
+    "date": "2026-10-19T15:05Z",
+    "domicile": "Al Fayha",
+    "exterieur": "Al Ahli",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Ahli",
+    "cote": 1.39,
+    "proba": 0.6842,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900897"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.46,
+  "proba": 0.6129,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "espn-401879257",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Tottenham Hotspur",
+    "exterieur": "Coventry City",
+    "championnat": "Premier League",
+    "pari": "Victoire Tottenham Hotspur",
+    "cote": 1.54,
+    "proba": 0.6209,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879257"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401900895",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Shabab",
+    "exterieur": "Al Faisaly",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Shabab",
+    "cote": 1.61,
+    "proba": 0.5878,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900895"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.47,
+  "proba": 0.365,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "espn-401882842",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Getafe",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Match nul",
+    "cote": 2.9,
+    "proba": 0.3301,
+    "court": "N",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882842"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401876719",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Rodez Aveyron",
+    "exterieur": "Montpellier",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Rodez Aveyron",
+    "cote": 2.85,
+    "proba": 0.3305,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876719"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401888277",
+    "date": "2026-10-19T17:00Z",
+    "domicile": "Trabzonspor",
+    "exterieur": "Besiktas",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Besiktas",
+    "cote": 2.55,
+    "proba": 0.3687,
+    "court": "2",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888277"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 21.08,
+  "proba": 0.0402,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "espn-401882842",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Getafe",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6932,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882842"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "espn-401900897",
+    "date": "2026-10-19T15:05Z",
+    "domicile": "Al Fayha",
+    "exterieur": "Al Ahli",
+    "championnat": "Saudi Pro League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6853,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900897"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401874784",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Parma",
+    "exterieur": "Torino",
+    "championnat": "Serie A",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6446,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874784"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 3.43,
+  "proba": 0.3062,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-10-19",
+  "jour": "2026-10-19",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "espn-401900897",
+    "date": "2026-10-19T15:05Z",
+    "domicile": "Al Fayha",
+    "exterieur": "Al Ahli",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al Ahli",
+    "cote": 1.39,
+    "proba": 0.6842,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900897"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401882842",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Getafe",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6932,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882842"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "espn-401874784",
+    "date": "2026-10-19T18:45Z",
+    "domicile": "Parma",
+    "exterieur": "Torino",
+    "championnat": "Serie A",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6446,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874784"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 3.43,
+  "proba": 0.3057,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "semaine:2026-43",
+  "jour": "2026-10-19",
+  "cat": "semaine",
+  "jambes": [
+   {
+    "id": "espn-401880207",
+    "date": "2026-10-23T19:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "Middlesbrough",
+    "championnat": "Championship",
+    "pari": "Victoire Middlesbrough",
+    "cote": 1.62,
+    "proba": 0.5831,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880207"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "espn-401882832",
+    "date": "2026-10-25T20:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Real Madrid",
+    "championnat": "Liga",
+    "pari": "Victoire Barcelona",
+    "cote": 1.54,
+    "proba": 0.6113,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882832"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.5,
+  "proba": 0.3564,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
  }
 ]

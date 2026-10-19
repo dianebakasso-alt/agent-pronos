@@ -234,8 +234,8 @@
   "proba": 0.2518,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "b6bf48e65d78b5615da5f3ab904fa5d4",
@@ -245,7 +245,10 @@
     "exterieur": "West Ham United",
     "pari": "Victoire West Ham United",
     "court": "2",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "2",
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "9a422e1aad1053828eaf629a58d901de",
@@ -255,7 +258,42 @@
     "exterieur": "SC Paderborn",
     "pari": "Victoire Werder Bremen",
     "court": "1",
-    "cote": 1.73
+    "cote": 1.73,
+    "res": "N",
+    "score": "2-2",
+    "ok": false
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-19",
+  "bookmaker": "DraftKings",
+  "cote": 2.47,
+  "proba": 0.365,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401879257",
+    "sport_key": "soccer_epl",
+    "date": "2026-10-19T19:00Z",
+    "domicile": "Tottenham Hotspur",
+    "exterieur": "Coventry City",
+    "pari": "Victoire Tottenham Hotspur",
+    "court": "1",
+    "cote": 1.541
+   },
+   {
+    "id": "espn-401900895",
+    "sport_key": "soccer_saudi_arabia_pro_league",
+    "date": "2026-10-19T18:00Z",
+    "domicile": "Al Shabab",
+    "exterieur": "Al Faisaly",
+    "pari": "Victoire Al Shabab",
+    "court": "1",
+    "cote": 1.606
    }
   ]
  }
