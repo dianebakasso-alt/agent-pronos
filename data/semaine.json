@@ -112,14 +112,14 @@
  },
  {
   "jour": "2026-10-22",
-  "matchs": 23,
+  "matchs": 40,
   "value_bets": 0,
   "combines": [
    [
     "prudent",
     false,
-    1.64,
-    0.541
+    1.49,
+    0.577
    ],
    [
     "equilibre",
@@ -186,7 +186,7 @@
  },
  {
   "jour": "2026-10-24",
-  "matchs": 82,
+  "matchs": 86,
   "value_bets": 0,
   "combines": [
    [
@@ -217,7 +217,7 @@
  },
  {
   "jour": "2026-10-25",
-  "matchs": 77,
+  "matchs": 79,
   "value_bets": 0,
   "combines": [
    [

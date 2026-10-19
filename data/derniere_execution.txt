@@ -5,19 +5,19 @@
     0 championnats retenus
 3/4 Récupération des cotes…
     Mode secours : cotes ESPN (gratuites)
-    287 matchs avec cotes ESPN
-    287 matchs analysés, 0 value bets
+    310 matchs avec cotes ESPN
+    310 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 287 matchs reliés aux scores en direct
-    fatigue : 55 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 465 équipes trouvées, 13 manquées
+    direct : 310 matchs reliés aux scores en direct
+    fatigue : 60 matchs avec une équipe qui joue en Europe à 3 jours
+    stats : 475 équipes trouvées, 15 manquées
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! autopsie FC Twente Enschede: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbapRYs9RuWA1v2z6BK"}
-  ! autopsie ADO Den Haag: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbaqsNGThYKV4rkXX8D"}
-  ! autopsie RB Leipzig: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbarfERxhagHnmFKVbG"}
-  ! autopsie Sparta Prague: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbasQtXmdyfyqaptZ1b"}
-  ! autopsie Southampton: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbatA2wsW4ds6ZsS7us"}
-  ! IA verdicts (paquet 1) : 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBbattBRzZgMVyzwZpM3"}
+  ! autopsie FC Twente Enschede: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4KJ89v1ke482KpBDp"}
+  ! autopsie ADO Den Haag: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4LihsMHGzrSLa7YXU"}
+  ! autopsie RB Leipzig: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4MTM9T51fJmfYWrE7"}
+  ! autopsie Sparta Prague: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4NC1FqtVFLkCZAujp"}
+  ! autopsie Southampton: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4QPUAnACQTbLtfmxM"}
+  ! IA verdicts (paquet 1) : 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgBc4RE4bnBYUAoHRorR1"}
   ! IA Tottenham Hotspur: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
   ! IA Al Shabab: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
   ! IA Al Hilal: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i

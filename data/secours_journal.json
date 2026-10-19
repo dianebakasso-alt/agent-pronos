@@ -7,7 +7,7 @@
  },
  "eng.2": {
   "matchs": 13,
-  "avec_cotes": 11,
+  "avec_cotes": 13,
   "erreur": null,
   "exemple": null
  },
@@ -25,13 +25,13 @@
  },
  "sco.1": {
   "matchs": 6,
-  "avec_cotes": 5,
+  "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  },
  "ger.1": {
   "matchs": 9,
-  "avec_cotes": 8,
+  "avec_cotes": 9,
   "erreur": null,
   "exemple": null
  },
@@ -91,7 +91,7 @@
  },
  "por.1": {
   "matchs": 10,
-  "avec_cotes": 8,
+  "avec_cotes": 10,
   "erreur": null,
   "exemple": null
  },
@@ -115,9 +115,9 @@
  },
  "uefa.europa": {
   "matchs": 18,
-  "avec_cotes": 0,
+  "avec_cotes": 17,
   "erreur": null,
-  "exemple": "[{\"provider\": {\"id\": \"2000\", \"name\": \"Bet 365\", \"priority\": 0, \"displayName\": \"Bet 365\", \"logos\": [{\"href\": \"https://a.espncdn.com/redesign/assets/img/logos/logo-bet365.png\", \"rel\": [\"light\"]}, {\"href\": \"https://a.espncdn.com/redesign/assets/img/logos/logo-bet365.png\", \"rel\": [\"dark\"]}]}, \"awayTeamOdds\": {\"summary\": \"1/2\", \"value\": 1.5, \"handicap\": 0.0, \"team\": {\"id\": \"140\", \"uid\": \"s:600~t:140\", \"abbreviation\": \"AZ\", \"displayName\": \"AZ Alkmaar\", \"logo\": \"https://a.espncdn.com/i/teamlogos/soccer/500/140.png\"}, \"link\": {\"language\": \"en-US\", \"rel\": [\"away\", \"desktop\", \"bets\", \"bet-365\"], \"href\":"
+  "exemple": null
  },
  "uefa.europa.conf": {
   "matchs": 18,
