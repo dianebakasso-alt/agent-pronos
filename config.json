@@ -54,7 +54,14 @@
     "soccer_usa_mls"
   ],
   "analyse_ia": true,
-  "analyse_ia_max_matchs": 10,
-  "modele_ia": "claude-sonnet-5-5",
-  "analyse_profonde_max": 6
+  "analyse_ia_max_matchs": 4,
+  "modele_ia": "claude-haiku-5-5",
+  "analyse_profonde_max": 0,
+  "verdicts_max": 8,
+  "budget_ia_mois_euros": 4,
+  "prix_ia": {
+    "entree_million": 1.0,
+    "sortie_million": 5.0,
+    "recherche": 0.01
+  }
 }

@@ -105,3 +105,59 @@ def relier(analyses, maintenant, nb_jours=7):
             else:
                 journal["manques"].append(f"{sk}: {m['domicile']} - {m['exterieur']}")
     return journal
+
+
+# ---------------------------------------------------------------- fatigue (gratuit)
+EUROPE = ("uefa.champions", "uefa.europa", "uefa.europa.conf")
+
+
+def matchs_europeens(maintenant, avant=4, apres=7):
+    """[(date, [noms équipe dom], [noms équipe ext], compétition)] des coupes d'Europe autour d'aujourd'hui."""
+    out, vus = [], set()
+    for slug in EUROPE:
+        for k in range(-avant, apres + 1):
+            d = (maintenant + timedelta(days=k)).strftime("%Y%m%d")
+            try:
+                evs = _get(f"{BASE}/{slug}/scoreboard?dates={d}").get("events", [])
+            except Exception:
+                continue
+            for ev in evs:
+                if ev["id"] in vus:
+                    continue
+                vus.add(ev["id"])
+                try:
+                    t = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
+                except Exception:
+                    continue
+                dom, ext = _equipes(ev)
+                if dom and ext:
+                    out.append((t, dom, ext, slug, str(ev["id"])))
+    return out
+
+
+NOMS_COUPES = {"uefa.champions": "Ligue des champions", "uefa.europa": "Europa League", "uefa.europa.conf": "Conference League"}
+
+
+def marquer_fatigue(analyses, europe, jours=3):
+    """m['fatigue'] = {'1': 'texte', '2': 'texte'} si l'équipe joue en Europe 3 jours avant ou après."""
+    n = 0
+    for m in analyses:
+        ko = datetime.fromisoformat(m["debut"].replace("Z", "+00:00"))
+        mon_id = (m.get("espn") or {}).get("id")
+        fat = {}
+        for court, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
+            for t, dom, ext, slug, eid in europe:
+                if eid == mon_id:
+                    continue
+                ecart = (t - ko).total_seconds() / 86400
+                if abs(ecart) > jours or abs(ecart) < 0.2:
+                    continue
+                if max(max(_ressemblance(nom, x) for x in dom if x), max(_ressemblance(nom, x) for x in ext if x)) >= 0.8:
+                    quand = f"il y a {round(-ecart)} jour{'s' if round(-ecart) > 1 else ''}" if ecart < 0 else \
+                        f"dans {round(ecart)} jour{'s' if round(ecart) > 1 else ''}"
+                    fat[court] = f"{nom} joue en {NOMS_COUPES[slug]} {quand}"
+                    break
+        if fat:
+            m["fatigue"] = fat
+            n += 1
+    return n

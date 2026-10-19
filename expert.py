@@ -23,6 +23,7 @@ CATEGORIES = {
     "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
     "rebond": ("🔄", "Rebond"),
+    "foule": ("🎯", "Contre la foule"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
 
@@ -241,6 +242,25 @@ def pauses(carnet):
     out = {}
     for k in CATEGORIES:
         s = _seg([p for p in carnet if p["cat"] == k])
-        if s["n"] >= MIN_PAUSE and s["roi"] is not None and s["roi"] < ROI_PAUSE:
+        if s["roi"] is not None and ((s["n"] >= MIN_PAUSE and s["roi"] < ROI_PAUSE) or (s["n"] >= 6 and s["roi"] <= -0.6)):
             out[k] = s
     return out
+
+
+def specialites(carnet, n_min=15):
+    """Bonus/malus par championnat selon les pronos de match réellement réglés."""
+    g = {}
+    for p in carnet:
+        if p["cat"] != "match" or p["statut"] not in ("gagné", "perdu"):
+            continue
+        g.setdefault(p["jambes"][0].get("championnat"), []).append(p)
+    out, detail = {}, {}
+    for ch, ps in g.items():
+        s = _seg(ps)
+        detail[ch] = s
+        if s["n"] >= n_min and s["roi"] is not None:
+            if s["roi"] < -0.08:
+                out[ch] = -0.06
+            elif s["roi"] > 0.05:
+                out[ch] = 0.02
+    return out, detail

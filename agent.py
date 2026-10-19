@@ -38,6 +38,41 @@ def http_json(url, data=None, headers=None, timeout=60):
         return json.loads(r.read().decode("utf-8")), dict(r.headers)
 
 
+# ---------------------------------------------------------------- budget IA (plafond mensuel strict)
+BUDGET = {"mois": "", "depense": 0.0, "run": 0.0, "max": 4.0, "prix": {}, "appels": 0, "bloque": 0}
+
+
+def charger_budget(cfg, maintenant):
+    mois = maintenant.strftime("%Y-%m")
+    b = {}
+    try:
+        b = json.loads((DATA / "ia_budget.json").read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    BUDGET.update(mois=mois, depense=b.get("depense", 0.0) if b.get("mois") == mois else 0.0, run=0.0,
+                  max=float(cfg.get("budget_ia_mois_euros", 4)), prix=cfg.get("prix_ia", {}), appels=0, bloque=0)
+
+
+def sauver_budget():
+    (DATA / "ia_budget.json").write_text(json.dumps({"mois": BUDGET["mois"], "depense": round(BUDGET["depense"] + BUDGET["run"], 4),
+        "plafond": BUDGET["max"], "appels_dernier_passage": BUDGET["appels"], "bloques": BUDGET["bloque"]},
+        ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def ia_post(url, data=None, headers=None, timeout=60):
+    """Appel à l'IA, refusé si le plafond du mois est atteint ; le coût estimé est compté."""
+    if BUDGET["depense"] + BUDGET["run"] >= BUDGET["max"]:
+        BUDGET["bloque"] += 1
+        raise RuntimeError(f"plafond IA du mois atteint ({BUDGET['max']:.0f} €)")
+    d, h = http_json(url, data, headers, timeout)
+    u, p = d.get("usage") or {}, BUDGET["prix"]
+    cout = (u.get("input_tokens", 0) * p.get("entree_million", 1.0) + u.get("output_tokens", 0) * p.get("sortie_million", 5.0)) / 1e6 \
+        + (u.get("server_tool_use") or {}).get("web_search_requests", 0) * p.get("recherche", 0.01)
+    BUDGET["run"] += cout
+    BUDGET["appels"] += 1
+    return d, h
+
+
 class OddsAPI:
     def __init__(self, cle):
         self.cle = cle
@@ -164,7 +199,7 @@ def appel_ia(texte, cfg, cle_ia, max_uses=3, max_tokens=6000, timeout=240):
     corps = {"model": cfg["modele_ia"], "max_tokens": max_tokens,
              "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
              "messages": [{"role": "user", "content": texte}]}
-    data, _ = http_json("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
+    data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
                         headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
                                  "content-type": "application/json"}, timeout=timeout)
     txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
@@ -236,7 +271,7 @@ def avis_expert(m, v, cfg, cle_ia, profond=False):
             stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]),
             memoire=m.get("_memoire", "") + ("\n" + LECONS_TXT if LECONS_TXT else "")) + (PROFOND if profond else "")}],
     }
-    data, _ = http_json("https://api.anthropic.com/v1/messages",
+    data, _ = ia_post("https://api.anthropic.com/v1/messages",
                         data=json.dumps(corps).encode(),
                         headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
                                  "content-type": "application/json"}, timeout=180)
@@ -432,11 +467,24 @@ def main():
             print(f"    direct : {jd['relies']} matchs reliés aux scores en direct")
         except Exception as e:
             print(f"  ! direct : {e}")
+            jd = {}
+        # fatigue (gratuit) : match de coupe d'Europe 3 jours avant ou après
+        try:
+            europe = direct.matchs_europeens(maintenant)
+            nf = direct.marquer_fatigue(analyses, europe)
+            jd.update(europe=len(europe), fatigue=nf)
+            (DATA / "espn_journal.json").write_text(json.dumps(jd, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"    fatigue : {nf} matchs avec une équipe qui joue en Europe à 3 jours")
+        except Exception as e:
+            print(f"  ! fatigue : {e}")
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
     for a in analyses:
         a["buts"] = moteur.analyser_buts(a)
+        a["champ_nom"] = site_web.championnat(a.get("sport_key", ""), a.get("championnat", ""))[1]
+    if demo and analyses:
+        analyses[0]["fatigue"] = {"2": f"{analyses[0]['exterieur']} joue en Ligue des champions il y a 2 jours"}
 
     # matchs du jour déjà commencés : la source des cotes ne les donne plus après le coup d'envoi,
     # on les reprend du passage précédent pour les afficher et les suivre en direct (jamais conseillés)
@@ -490,6 +538,9 @@ def main():
             print(f"  ! carnet réglement : {e}")
         lecons = autopsie.charger(DATA / "lecons.json")
     selection.AJUST = autopsie.ajustements(carnet)
+    selection.SPECIALITE, spec_detail = expert.specialites(carnet)
+    if not demo:
+        charger_budget(cfg, maintenant)
     LECONS_TXT = autopsie.texte_lecons(lecons)
 
     # la sélection de la semaine : les matchs où l'expert a le plus confiance, suivis jusqu'au jour J
@@ -573,7 +624,15 @@ def main():
                 for a in jouables_auj:
                     if a["id"] in avis_jour and not a.get("avis"):
                         a["avis"] = avis_jour[a["id"]]
-                verdicts = verdicts_du_jour(sorted(jouables_auj, key=lambda a: a["debut"]), cfg, cle_ia) if jouables_auj else {}
+                # économie : l'IA ne juge que les matchs qui comptent (ticket du jour, contre la foule, meilleurs candidats)
+                prio = {s["id"] for s in (tk0 or {}).get("jambes", [])} | {a["id"] for a in jouables_auj if selection.contre_la_foule(a)}
+                notes = sorted(((c["note"], a["id"]) for a in jouables_auj if (c := selection.candidat(a))), reverse=True)
+                for _, i in notes:
+                    if len(prio) >= cfg.get("verdicts_max", 8):
+                        break
+                    prio.add(i)
+                choisis = [a for a in jouables_auj if a["id"] in prio][: cfg.get("verdicts_max", 8)]
+                verdicts = verdicts_du_jour(sorted(choisis, key=lambda a: a["debut"]), cfg, cle_ia) if choisis else {}
                 ia["ok"] += 1 if verdicts else 0
             except Exception as e:
                 print(f"  ! IA verdicts du jour : {_err(e)}")
@@ -620,6 +679,7 @@ def main():
             a["avis"] = avis_connus[a["id"]]
     for j in jours:
         jj = [a for a in j["analyses"] if not a.get("deja_commence")]
+        j["foule"] = sorted(((a, f) for a in jj if (f := selection.contre_la_foule(a))), key=lambda x: -x[1]["edge"])[:3]
         j["ticket"] = selection.ticket_du_jour(jj, cfg["bookmakers_jouables"], avis_connus)
         j["pronos"] = {a["id"]: selection.avis_match(a) for a in j["analyses"]}
     if not demo:
@@ -638,6 +698,11 @@ def main():
                                     {"jambes": [{"id": a["id"], "debut": a["debut"], "domicile": a["domicile"], "exterieur": a["exterieur"],
                                                  "court": c["court"], "issue": c["issue"], "proba": c["proba"], "cote_t": c["cote"], "rebond": True}],
                                      "cote": c["cote"], "proba": c["proba"]}, analyses, maintenant)
+        for a, f in jours[0].get("foule", []):
+            expert.noter_ticket(carnet, f"foule:{a['id']}", "foule", auj,
+                                {"jambes": [{"id": a["id"], "debut": a["debut"], "domicile": a["domicile"], "exterieur": a["exterieur"],
+                                             "court": f["court"], "issue": f["issue"], "proba": f["proba"], "cote_t": f["cote"]}],
+                                 "cote": f["cote"], "proba": f["proba"]}, analyses, maintenant)
         autopsie.enrichir(carnet, analyses)
         (DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -660,7 +725,8 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
-        "lecons": lecons[-8:], "ajust": selection.AJUST,
+        "lecons": lecons[-8:], "ajust": selection.AJUST, "specialites": spec_detail, "specialite_ajust": selection.SPECIALITE,
+        "budget_ia": None if demo else {"depense": round(BUDGET["depense"] + BUDGET["run"], 2), "plafond": BUDGET["max"]},
         "semaine": {"ticket": ticket_semaine, "suivis": sorted(sel["matchs"].values(), key=lambda s: s["debut"])},
         "genere": maintenant,
         "demo": demo,
@@ -678,6 +744,7 @@ def main():
                          for c in combines for j in c["jambes"] if j.get("res") and j.get("id")}},
     }
     if not demo:
+        sauver_budget()
         (DATA / "ia_journal.json").write_text(json.dumps({"quand": maintenant.isoformat(), "etat": ia.get("etat"), "ok": ia.get("ok"),
             "erreurs": ERREURS_IA[:20]}, ensure_ascii=False, indent=1), encoding="utf-8")
     site_web.generer(ICI / "site" / "index.html", analyses, values, historique, bilan(historique), infos, combos)

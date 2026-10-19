@@ -572,6 +572,9 @@ def resume_jour(j, bankroll):
             doute = " (l'IA a un doute)" if a.get("doute") else ""
             lignes.append(f"{'💪' if a['niveau'] == 'forte' else '👍'} <b>{e(a['issue'])}</b> à {a['cote']:.2f} "
                           f"({pct(a['proba'])} de chances){doute} : en simple, mise <b>{max(1, round(bankroll * 0.01))} €</b>.")
+    for m, f in (j.get("foule") or [])[:2]:
+        lignes.append(f"🎯 <b>Contre la foule : {e(f['issue'])}</b> à {f['cote']:.2f} ({e(m['domicile'])} – {e(m['exterieur'])}) : "
+                      f"{pct(f['proba'])} de chances pour une cote qui en paie {pct(1 / f['cote'])}. Petite mise <b>{max(1, round(bankroll * 0.005))} €</b>.")
     if not lignes:
         lignes.append(f"🧘 <b>Rien de solide</b> : je ne jouerais pas {e(j['quand'])}. Garder son argent, c'est aussi gagner.")
     a_eviter = [f"{e(m['domicile'])} – {e(m['exterieur'])}" for m in (eviter + pieges)[:3]]
@@ -625,6 +628,9 @@ def liste_avis(j):
             ia = (m.get("avis") or {})
             txt = ia.get("resume") or "L'IA donnera son verdict au prochain passage du matin."
             icone = "🤖" if ia.get("resume") else "💡"
+        fat = m.get("fatigue") or {}
+        if fat:
+            txt = txt + " 😓 " + " ; ".join(fat.values()) + "."
         if a.get("rebond"):
             piege += ' <span class="av-r">🔄 rebond</span>'
         lignes += f"""<li class="av-l av-{cls}"><div class="av-h"><span>{ecusson(m["domicile"], 22)}{ecusson(m["exterieur"], 22)}</span>
@@ -717,6 +723,21 @@ def section_autopsie(lecons, ajust):
           <td class="r"><b class="{c}">{s["ecart"] * 100:+.0f} pts</b></td></tr>"""
     return f"""{f'<ul class="aps">{cartes}</ul>' if cartes else ''}
     {f'<h3 class="sous">📐 Ce qu\'il ajuste tout seul</h3><p class="note">Pour chaque type de pari : réussite réelle contre réussite attendue. Au-delà de {MIN_N} pronos, un écart de 8 points change sa sélection.</p><table class="hist">{lignes}</table>' if lignes else ''}"""
+
+
+def section_specialites(detail, ajust):
+    if not detail:
+        return ""
+    lignes = ""
+    for ch, s in sorted(detail.items(), key=lambda x: -x[1]["n"]):
+        if not ch or not s["n"]:
+            continue
+        a = (ajust or {}).get(ch, 0)
+        etat = "⭐ spécialité" if a > 0 else "⛔ écarté des tickets" if a < 0 else (f"observé ({s['n']}/15)" if s["n"] < 15 else "neutre")
+        c = "vert" if (s["roi"] or 0) >= 0 else "rouge"
+        lignes += f"""<tr><td>{e(ch)}<small>{s["gagnes"]} gagnés sur {s["n"]} · {etat}</small></td>
+          <td class="r"><b class="{c}">{pct(s["roi"], True) if s["roi"] is not None else "—"}</b></td></tr>"""
+    return f"""<h3 class="sous">🏆 Ses championnats</h3><p class="note">Là où il gagne vraiment, il est favorisé ; là où il perd (15 pronos minimum), il est écarté des tickets.</p><table class="hist">{lignes}</table>"""
 
 
 def section_historique(historique, b):
@@ -1637,6 +1658,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 <div class="onglet" id="t-bilan" hidden>
 <h2>📊 Bilan de l'expert</h2>
 {section_expert(infos.get("expert"))}
+{section_specialites(infos.get("specialites"), infos.get("specialite_ajust"))}
 <h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>
 {section_autopsie(infos.get("lecons"), infos.get("ajust"))}
 <h3 class="sous">🧠 Ce que l'agent a appris</h3>

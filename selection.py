@@ -14,7 +14,10 @@ NB_SUIVIS = 6
 P_MIN, P_MAX = 0.45, 0.82       # ni loterie, ni cote ridicule
 EDGE_MIN = -0.06                # la cote ne doit pas être trop rabotée par le bookmaker
 BAISSE_MAX = 0.06
-AJUST = {}                      # rempli par l'agent : ce que l'expert a appris (autopsie.ajustements)               # si les chances baissent de plus de 6 points : retiré
+AJUST = {}                      # rempli par l'agent : ce que l'expert a appris (autopsie.ajustements)
+SPECIALITE = {}                 # rempli par l'agent : {championnat: bonus/malus} selon ses résultats réels
+COTE_MIN_TICKET = 1.40          # les petites cotes perdent sur la durée : jamais dans un ticket
+EXCLUS_TICKET = {"petite_cote", "fatigue", "champ_faible"}
 
 
 def _dt(iso):
@@ -59,6 +62,21 @@ def candidat(m):
             + (["favori_net"] if i["proba"] >= 0.65 else []) + (["rebond"] if rebond else []) \
             + (["doute_ia"] if (m.get("avis") or {}).get("avis") == "prudence" else [])
         note += sum(AJUST.get(tr, {}).get("ajust", 0) for tr in traits)
+        # spécialisation : les championnats où l'expert gagne (ou perd) vraiment
+        sp = SPECIALITE.get(m.get("champ_nom"), 0)
+        if sp:
+            note += sp
+            if sp < 0:
+                traits.append("champ_faible")
+        # fatigue (données gratuites ESPN) : match européen 3 jours avant ou après
+        fat = m.get("fatigue") or {}
+        adv = "2" if i["court"] == "1" else "1"
+        if fat.get(i["court"]):
+            note -= 0.05
+            traits.append("fatigue")
+        if fat.get(adv):
+            note += 0.02
+            traits.append("adversaire_fatigue")
         if not best or note > best["note"]:
             best = {"court": i["court"], "issue": i["issue"], "proba": i["proba"], "cote": i["cote"],
                     "bk": i["bookmaker"], "edge": i["edge"], "forme": f, "note": round(note, 4),
@@ -96,7 +114,7 @@ def mettre_a_jour(sel, analyses, maintenant):
             if m["id"] in suivis:
                 continue
             c = candidat(m)
-            if c and not c.get("rebond"):
+            if c and not c.get("rebond") and not EXCLUS_TICKET & set(c["traits"]):
                 cands.append((c["note"], m, c))
         for _, m, c in sorted(cands, key=lambda x: -x[0])[:places]:
             suivis[m["id"]] = {
@@ -171,7 +189,8 @@ def charger(chemin):
 def ticket_du_jour(analyses, bookmakers, avis_connus=None):
     """2 à 3 matchs du jour, les plus solides, avec au moins 25 % de chances de passer."""
     sel = {"matchs": {}}
-    cands = [(c["note"], m, c) for m in analyses if (c := candidat(m)) and not c.get("rebond")]
+    cands = [(c["note"], m, c) for m in analyses
+             if (c := candidat(m)) and not c.get("rebond") and not EXCLUS_TICKET & set(c["traits"])]
     for _, m, c in sorted(cands, key=lambda x: -x[0])[:5]:
         s = {"id": m["id"], "debut": m["debut"], "domicile": m["domicile"], "exterieur": m["exterieur"],
              "championnat": m["championnat"], "sport_key": m.get("sport_key"), "court": c["court"], "issue": c["issue"],
@@ -223,3 +242,22 @@ def avis_match(m):
     rb = bool((candidat(m) or {}).get("rebond")) and not (v and a != "eviter")
     return {"court": court, "issue": issue, "proba": proba, "cote": cote, "niveau": niveau, "piege": piege and not rb,
             "value": bool(v and a != "eviter"), "doute": a == "prudence", "rebond": rb}
+
+
+# ---------------------------------------------------------------- contre la foule
+def contre_la_foule(m):
+    """L'outsider (ou le nul) que les bookmakers français paient plus que son vrai risque :
+    le public se jette sur le favori, la cote d'en face devient trop belle."""
+    if m.get("deja_commence") or m.get("ecart_refs", 0) > 0.03 or not m.get("issues"):
+        return None
+    fav = max(m["issues"], key=lambda i: i["proba"])
+    best = None
+    for i in m["issues"]:
+        if i is fav or not (0.25 <= i["proba"] <= 0.48) or i["edge"] < 0.02 or i["cote"] > 4.5:
+            continue
+        if (m.get("fatigue") or {}).get(i["court"]):
+            continue
+        if not best or i["edge"] > best["edge"]:
+            best = {"court": i["court"], "issue": i["issue"], "proba": i["proba"], "cote": i["cote"],
+                    "bk": i["bookmaker"], "edge": i["edge"]}
+    return best
