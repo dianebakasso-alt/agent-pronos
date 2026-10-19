@@ -177,8 +177,21 @@ def _americaine(v):
 
 def _cotes_ev(ev):
     """(dom, nul, ext) en cotes décimales depuis les cotes publiées par ESPN, ou None."""
-    comp = (ev.get("competitions") or [{}])[0]
+    comp = (ev.get("competitions") or [{}])[0] or {}
     for o in comp.get("odds") or []:
+        if not isinstance(o, dict):
+            continue
+        try:
+            r = _cotes_une(o)
+        except Exception:
+            r = None
+        if r:
+            return r
+    return None
+
+
+def _cotes_une(o):
+    if True:
         h = _americaine((o.get("homeTeamOdds") or {}).get("moneyLine"))
         a = _americaine((o.get("awayTeamOdds") or {}).get("moneyLine"))
         d = _americaine((o.get("drawOdds") or {}).get("moneyLine"))
@@ -216,5 +229,7 @@ def cotes_espn(maintenant, nb_jours=7, journal=None):
                            "bookmakers": [{"key": "espn", "title": prov, "markets": [{"key": "h2h", "outcomes": [
                                {"name": dom[0], "price": h}, {"name": ext[0], "price": a}, {"name": "Draw", "price": d}]}]}]})
         if journal is not None:
-            journal[slug] = {"matchs": len(evs), "avec_cotes": avec, "erreur": err}
+            ex = next((((e.get("competitions") or [{}])[0] or {}).get("odds") for e in evs if ((e.get("competitions") or [{}])[0] or {}).get("odds")), None)
+            journal[slug] = {"matchs": len(evs), "avec_cotes": avec, "erreur": err,
+                             "exemple": json.dumps(ex, ensure_ascii=False)[:600] if ex and not avec else None}
     return matchs
