@@ -272,8 +272,8 @@
   "proba": 0.365,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401879257",
@@ -283,7 +283,10 @@
     "exterieur": "Coventry City",
     "pari": "Victoire Tottenham Hotspur",
     "court": "1",
-    "cote": 1.541
+    "cote": 1.541,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "espn-401900895",
@@ -293,7 +296,10 @@
     "exterieur": "Al Faisaly",
     "pari": "Victoire Al Shabab",
     "court": "1",
-    "cote": 1.606
+    "cote": 1.606,
+    "res": "N",
+    "score": "2-2",
+    "ok": false
    }
   ]
  },
