@@ -296,5 +296,37 @@
     "cote": 1.606
    }
   ]
+ },
+ {
+  "jour": "2026-10-20",
+  "bookmaker": "DraftKings",
+  "cote": 3.16,
+  "proba": 0.2893,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401915392",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-20T19:00Z",
+    "domicile": "VfB Stuttgart",
+    "exterieur": "Atlético Madrid",
+    "pari": "Victoire Atlético Madrid",
+    "court": "2",
+    "cote": 2.05
+   },
+   {
+    "id": "espn-401915398",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-20T19:00Z",
+    "domicile": "FC Porto",
+    "exterieur": "PSV Eindhoven",
+    "pari": "Victoire FC Porto",
+    "court": "1",
+    "cote": 1.541
+   }
+  ]
  }
 ]
