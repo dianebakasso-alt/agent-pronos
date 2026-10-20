@@ -135,6 +135,31 @@ def matchs_europeens(maintenant, avant=4, apres=7):
     return out
 
 
+GENERIQUES = {"real", "inter", "fc", "sc", "ac", "as", "cf", "cd", "club", "sporting", "athletic", "atletico", "united",
+              "city", "fk", "sk", "nk", "bk", "if", "ss", "us", "afc", "de", "la", "le", "dinamo", "dynamo", "racing", "olympique"}
+
+
+def _meme_equipe(nom, noms):
+    """Même équipe ? Nom identique, ou mêmes mots distinctifs (pas seulement « Real », « Inter »…)."""
+    from stats import _norm, _mots
+    from difflib import SequenceMatcher
+    a = _norm(nom)
+    ma = _mots(nom) - GENERIQUES
+    for x in noms:
+        if not x:
+            continue
+        b = _norm(x)
+        if a == b or SequenceMatcher(None, a, b).ratio() >= 0.9:
+            return True
+        mb = _mots(x) - GENERIQUES
+        A, B = _mots(nom), _mots(x)
+        if (A - B) and (B - A):
+            continue                     # « Manchester United » ≠ « Manchester City »
+        if ma and mb and (ma <= mb or mb <= ma) and max((len(w) for w in ma & mb), default=0) >= 4:
+            return True
+    return False
+
+
 NOMS_COUPES = {"uefa.champions": "Ligue des champions", "uefa.europa": "Europa League", "uefa.europa.conf": "Conference League"}
 
 
@@ -152,9 +177,9 @@ def marquer_fatigue(analyses, europe, jours=3):
                 ecart = (t - ko).total_seconds() / 86400
                 if abs(ecart) > jours or abs(ecart) < 0.2:
                     continue
-                if max(max(_ressemblance(nom, x) for x in dom if x), max(_ressemblance(nom, x) for x in ext if x)) >= 0.8:
-                    quand = f"il y a {round(-ecart)} jour{'s' if round(-ecart) > 1 else ''}" if ecart < 0 else \
-                        f"dans {round(ecart)} jour{'s' if round(ecart) > 1 else ''}"
+                if _meme_equipe(nom, dom) or _meme_equipe(nom, ext):
+                    nj = max(1, round(abs(ecart)))
+                    quand = (f"il y a {nj} jour{'s' if nj > 1 else ''}" if ecart < 0 else f"dans {nj} jour{'s' if nj > 1 else ''}")
                     fat[court] = f"{nom} joue en {NOMS_COUPES[slug]} {quand}"
                     break
         if fat:
