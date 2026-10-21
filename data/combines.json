@@ -334,5 +334,37 @@
     "cote": 1.541
    }
   ]
+ },
+ {
+  "jour": "2026-10-21",
+  "bookmaker": "DraftKings",
+  "cote": 3.91,
+  "proba": 0.2319,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401915388",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Lens",
+    "pari": "Victoire Club Brugge",
+    "court": "1",
+    "cote": 1.909
+   },
+   {
+    "id": "espn-401915312",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Bayern Munich",
+    "exterieur": "Arsenal",
+    "pari": "Victoire Bayern Munich",
+    "court": "1",
+    "cote": 2.05
+   }
+  ]
  }
 ]

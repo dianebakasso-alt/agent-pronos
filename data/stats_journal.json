@@ -1,10 +1,10 @@
 {
  "ligues_ok": [
-  "soccer_mexico_ligamx",
   "soccer_japan_j_league",
   "soccer_spain_la_liga",
   "soccer_england_league1",
   "soccer_usa_mls",
+  "soccer_mexico_ligamx",
   "soccer_germany_bundesliga2",
   "soccer_turkey_super_league",
   "soccer_denmark_superliga",
@@ -34,7 +34,7 @@
   "soccer_uefa_europa_league",
   "soccer_australia_aleague"
  ],
- "equipes_trouvees": 451,
+ "equipes_trouvees": 469,
  "equipes_manquees": [
   "soccer_spain_la_liga: Athletic Club",
   "soccer_germany_bundesliga: FC Cologne",

@@ -8222,7 +8222,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.25,
@@ -8230,8 +8232,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401915402",
@@ -8255,7 +8257,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.11,
@@ -8263,8 +8267,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.1
  },
  {
   "cle": "match:espn-401915398",
@@ -8285,7 +8289,9 @@
      "ligue": "uefa.champions",
      "id": "401915398"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.54,
@@ -8293,8 +8299,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401915397",
@@ -8315,7 +8321,9 @@
      "ligue": "uefa.champions",
      "id": "401915397"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-3",
+    "ok": true
    }
   ],
   "cote": 1.5,
@@ -8323,8 +8331,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.0
  },
  {
   "cle": "match:espn-401915401",
@@ -8348,7 +8356,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.12,
@@ -8356,8 +8366,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.2
  },
  {
   "cle": "match:espn-401915400",
@@ -8378,7 +8388,9 @@
      "ligue": "uefa.champions",
      "id": "401915400"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-3",
+    "ok": true
    }
   ],
   "cote": 1.77,
@@ -8386,8 +8398,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.7
  },
  {
   "cle": "match:espn-401915399",
@@ -8410,7 +8422,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "4-2",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -8418,8 +8432,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401915392",
@@ -8442,7 +8456,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.05,
@@ -8450,8 +8466,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-10-20",
@@ -8475,7 +8491,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "espn-401915401",
@@ -8494,7 +8512,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.25,
@@ -8502,8 +8522,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.5
  },
  {
   "cle": "equilibre:2026-10-20",
@@ -8526,7 +8546,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    },
    {
     "id": "espn-401915398",
@@ -8542,7 +8564,9 @@
      "ligue": "uefa.champions",
      "id": "401915398"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 3.16,
@@ -8550,8 +8574,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-10-20",
@@ -8644,7 +8668,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "espn-401915401",
@@ -8662,7 +8688,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "espn-401915399",
@@ -8680,7 +8708,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-2",
+    "ok": true
    }
   ],
   "cote": 2.24,
@@ -8688,8 +8718,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.4
  },
  {
   "cle": "mixte:2026-10-20",
@@ -8713,7 +8743,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "espn-401915402",
@@ -8731,7 +8763,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "espn-401915399",
@@ -8749,7 +8783,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-2",
+    "ok": true
    }
   ],
   "cote": 2.07,
@@ -8757,8 +8793,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.7
  },
  {
   "cle": "mixte_gros:2026-10-20",
@@ -8945,8 +8981,1059 @@
   "gain": -10.0
  },
  {
+  "cle": "match:espn-401877589",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877589",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Avispa Fukuoka",
+    "exterieur": "Gamba Osaka",
+    "championnat": "J1 League",
+    "pari": "Victoire Avispa Fukuoka",
+    "cote": 2.55,
+    "proba": 0.3704,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877589"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.55,
+  "proba": 0.3704,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877590",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877590",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Fagiano Okayama",
+    "exterieur": "Mito Hollyhock",
+    "championnat": "J1 League",
+    "pari": "Victoire Fagiano Okayama",
+    "cote": 1.61,
+    "proba": 0.5896,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877590"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.61,
+  "proba": 0.5896,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877595",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877595",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "FC Tokyo",
+    "exterieur": "Kashiwa Reysol",
+    "championnat": "J1 League",
+    "pari": "Victoire FC Tokyo",
+    "cote": 1.8,
+    "proba": 0.5231,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877595"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.5231,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877594",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877594",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Kawasaki Frontale",
+    "exterieur": "Vissel Kobe",
+    "championnat": "J1 League",
+    "pari": "Victoire Vissel Kobe",
+    "cote": 2.2,
+    "proba": 0.4318,
+    "court": "2",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877594"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4318,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877591",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877591",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Kyoto Sanga",
+    "exterieur": "Kashima Antlers",
+    "championnat": "J1 League",
+    "pari": "Victoire Kashima Antlers",
+    "cote": 1.83,
+    "proba": 0.5158,
+    "court": "2",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877591"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.83,
+  "proba": 0.5158,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877571",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877571",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Nagoya Grampus",
+    "exterieur": "Cerezo Osaka",
+    "championnat": "J1 League",
+    "pari": "Victoire Nagoya Grampus",
+    "cote": 2.2,
+    "proba": 0.4293,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877571"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4293,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877592",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877592",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Shimizu S-Pulse",
+    "exterieur": "Machida Zelvia",
+    "championnat": "J1 League",
+    "pari": "Victoire Machida Zelvia",
+    "cote": 2.0,
+    "proba": 0.4706,
+    "court": "2",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877592"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.4706,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877588",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877588",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "V-Varen Nagasaki",
+    "exterieur": "Sanfrecce Hiroshima",
+    "championnat": "J1 League",
+    "pari": "Victoire Sanfrecce Hiroshima",
+    "cote": 1.39,
+    "proba": 0.678,
+    "court": "2",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877588"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.39,
+  "proba": 0.678,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877593",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877593",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Yokohama F. Marinos",
+    "exterieur": "Tokyo Verdy 1969",
+    "championnat": "J1 League",
+    "pari": "Victoire Yokohama F. Marinos",
+    "cote": 1.91,
+    "proba": 0.4945,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877593"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.91,
+  "proba": 0.4945,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401877596",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401877596",
+    "date": "2026-10-21T10:30Z",
+    "domicile": "Urawa Red Diamonds",
+    "exterieur": "JEF United Ichihara-Chiba",
+    "championnat": "J1 League",
+    "pari": "Victoire Urawa Red Diamonds",
+    "cote": 1.51,
+    "proba": 0.6266,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877596"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.51,
+  "proba": 0.6266,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915395",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915395",
+    "date": "2026-10-21T16:45Z",
+    "domicile": "Como",
+    "exterieur": "Manchester United",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Como",
+    "cote": 2.3,
+    "proba": 0.4159,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915395"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.3,
+  "proba": 0.4159,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915396",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915396",
+    "date": "2026-10-21T16:45Z",
+    "domicile": "Lille",
+    "exterieur": "Galatasaray",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Lille",
+    "cote": 2.2,
+    "proba": 0.434,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915396"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.434,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882870",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882870",
+    "date": "2026-10-21T18:00Z",
+    "domicile": "Levante",
+    "exterieur": "Athletic Club",
+    "championnat": "Liga",
+    "pari": "Victoire Athletic Club",
+    "cote": 2.15,
+    "proba": 0.443,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882870"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.15,
+  "proba": 0.443,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401880779",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401880779",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Reading",
+    "exterieur": "Leyton Orient",
+    "championnat": "eng.3",
+    "pari": "Victoire Reading",
+    "cote": 1.54,
+    "proba": 0.6103,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.3",
+     "id": "401880779"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.6103,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915394",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915394",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Aston Villa",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Aston Villa",
+    "cote": 1.24,
+    "proba": 0.7647,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915394"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7647,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915312",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915312",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Bayern Munich",
+    "exterieur": "Arsenal",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bayern Munich",
+    "cote": 2.05,
+    "proba": 0.4637,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915312"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4637,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915388",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915388",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Lens",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Club Brugge",
+    "cote": 1.91,
+    "proba": 0.5,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915388"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.91,
+  "proba": 0.5,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915390",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915390",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Internazionale",
+    "exterieur": "Shakhtar Donetsk",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Internazionale",
+    "cote": 1.2,
+    "proba": 0.7937,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915390"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.2,
+  "proba": 0.7937,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915389",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915389",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Real Betis",
+    "exterieur": "Feyenoord Rotterdam",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Betis",
+    "cote": 1.65,
+    "proba": 0.5777,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915389"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.65,
+  "proba": 0.5777,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915313",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915313",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "RB Leipzig",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.22,
+    "proba": 0.7781,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915313"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7781,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401915391",
+  "jour": "2026-10-21",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401915391",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Sporting CP",
+    "exterieur": "LASK Linz",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Sporting CP",
+    "cote": 1.24,
+    "proba": 0.7728,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915391"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7728,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "espn-401915390",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Internazionale",
+    "exterieur": "Shakhtar Donetsk",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Internazionale",
+    "cote": 1.2,
+    "proba": 0.7937,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915390"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401915313",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "RB Leipzig",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.22,
+    "proba": 0.7781,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915313"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.47,
+  "proba": 0.6176,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "espn-401915388",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Lens",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Club Brugge",
+    "cote": 1.91,
+    "proba": 0.5,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915388"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401915312",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Bayern Munich",
+    "exterieur": "Arsenal",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bayern Munich",
+    "cote": 2.05,
+    "proba": 0.4637,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915312"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 3.91,
+  "proba": 0.2319,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "espn-401915395",
+    "date": "2026-10-21T16:45Z",
+    "domicile": "Como",
+    "exterieur": "Manchester United",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Como",
+    "cote": 2.3,
+    "proba": 0.4159,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915395"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401915396",
+    "date": "2026-10-21T16:45Z",
+    "domicile": "Lille",
+    "exterieur": "Galatasaray",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Lille",
+    "cote": 2.2,
+    "proba": 0.434,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915396"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401877589",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Avispa Fukuoka",
+    "exterieur": "Gamba Osaka",
+    "championnat": "J1 League",
+    "pari": "Victoire Avispa Fukuoka",
+    "cote": 2.55,
+    "proba": 0.3704,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877589"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 12.9,
+  "proba": 0.0668,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "espn-401915390",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Internazionale",
+    "exterieur": "Shakhtar Donetsk",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7752,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915390"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401915391",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Sporting CP",
+    "exterieur": "LASK Linz",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7692,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915391"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401915394",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Aston Villa",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915394"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.43,
+  "proba": 0.4313,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "espn-401915390",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Internazionale",
+    "exterieur": "Shakhtar Donetsk",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Internazionale",
+    "cote": 1.2,
+    "proba": 0.7937,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915390"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401915391",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Sporting CP",
+    "exterieur": "LASK Linz",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7692,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915391"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401915394",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Aston Villa",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915394"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.38,
+  "proba": 0.4415,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "espn-401877596",
+    "date": "2026-10-21T10:30Z",
+    "domicile": "Urawa Red Diamonds",
+    "exterieur": "JEF United Ichihara-Chiba",
+    "championnat": "J1 League",
+    "pari": "Victoire Urawa Red Diamonds",
+    "cote": 1.51,
+    "proba": 0.6266,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877596"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401880779",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Reading",
+    "exterieur": "Leyton Orient",
+    "championnat": "eng.3",
+    "pari": "Victoire Reading",
+    "cote": 1.54,
+    "proba": 0.6103,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.3",
+     "id": "401880779"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401915390",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Internazionale",
+    "exterieur": "Shakhtar Donetsk",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7752,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915390"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401915391",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Sporting CP",
+    "exterieur": "LASK Linz",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7692,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915391"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401915394",
+    "date": "2026-10-21T19:00Z",
+    "domicile": "Aston Villa",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915394"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 6.37,
+  "proba": 0.1649,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "semaine:2026-43",
-  "jour": "2026-10-20",
+  "jour": "2026-10-21",
   "cat": "semaine",
   "jambes": [
    {
@@ -8956,15 +10043,17 @@
     "exterieur": "Sanfrecce Hiroshima",
     "championnat": "J1 League",
     "pari": "Victoire Sanfrecce Hiroshima",
-    "cote": 1.48,
-    "proba": 0.6393,
+    "cote": 1.39,
+    "proba": 0.678,
     "court": "2",
     "espn": {
      "ligue": "jpn.1",
      "id": "401877588"
     },
     "traits": [
-     "exterieur"
+     "exterieur",
+     "petite_cote",
+     "favori_net"
     ]
    },
    {
@@ -8986,8 +10075,54 @@
     ]
    }
   ],
-  "cote": 2.4,
-  "proba": 0.3761,
+  "cote": 2.25,
+  "proba": 0.3989,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "jour:2026-10-21",
+  "jour": "2026-10-21",
+  "cat": "jour",
+  "jambes": [
+   {
+    "id": "espn-401877596",
+    "date": "2026-10-21T10:30Z",
+    "domicile": "Urawa Red Diamonds",
+    "exterieur": "JEF United Ichihara-Chiba",
+    "championnat": "J1 League",
+    "pari": "Victoire Urawa Red Diamonds",
+    "cote": 1.51,
+    "proba": 0.6266,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877596"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401877590",
+    "date": "2026-10-21T10:00Z",
+    "domicile": "Fagiano Okayama",
+    "exterieur": "Mito Hollyhock",
+    "championnat": "J1 League",
+    "pari": "Victoire Fagiano Okayama",
+    "cote": 1.61,
+    "proba": 0.5896,
+    "court": "1",
+    "espn": {
+     "ligue": "jpn.1",
+     "id": "401877590"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.43,
+  "proba": 0.3694,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
