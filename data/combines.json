@@ -310,8 +310,8 @@
   "proba": 0.2893,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401915392",
@@ -321,7 +321,10 @@
     "exterieur": "Atlético Madrid",
     "pari": "Victoire Atlético Madrid",
     "court": "2",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    },
    {
     "id": "espn-401915398",
@@ -331,7 +334,10 @@
     "exterieur": "PSV Eindhoven",
     "pari": "Victoire FC Porto",
     "court": "1",
-    "cote": 1.541
+    "cote": 1.541,
+    "res": "2",
+    "score": "0-1",
+    "ok": false
    }
   ]
  },
@@ -362,6 +368,38 @@
     "domicile": "Bayern Munich",
     "exterieur": "Arsenal",
     "pari": "Victoire Bayern Munich",
+    "court": "1",
+    "cote": 2.05
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-22",
+  "bookmaker": "DraftKings",
+  "cote": 4.0,
+  "proba": 0.2283,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401915552",
+    "sport_key": "soccer_uefa_europa_league",
+    "date": "2026-10-22T19:00Z",
+    "domicile": "AFC Bournemouth",
+    "exterieur": "AC Milan",
+    "pari": "Victoire AFC Bournemouth",
+    "court": "1",
+    "cote": 1.952
+   },
+   {
+    "id": "espn-401915543",
+    "sport_key": "soccer_uefa_europa_league",
+    "date": "2026-10-22T19:00Z",
+    "domicile": "TSG Hoffenheim",
+    "exterieur": "Lyon",
+    "pari": "Victoire TSG Hoffenheim",
     "court": "1",
     "cote": 2.05
    }
