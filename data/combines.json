@@ -348,8 +348,8 @@
   "proba": 0.2319,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401915388",
@@ -359,7 +359,10 @@
     "exterieur": "Lens",
     "pari": "Victoire Club Brugge",
     "court": "1",
-    "cote": 1.909
+    "cote": 1.909,
+    "res": "1",
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "espn-401915312",
@@ -369,7 +372,10 @@
     "exterieur": "Arsenal",
     "pari": "Victoire Bayern Munich",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "N",
+    "score": "2-2",
+    "ok": false
    }
   ]
  },
@@ -402,6 +408,38 @@
     "pari": "Victoire TSG Hoffenheim",
     "court": "1",
     "cote": 2.05
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-23",
+  "bookmaker": "DraftKings",
+  "cote": 4.2,
+  "proba": 0.2137,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401842851",
+    "sport_key": "soccer_sweden_allsvenskan",
+    "date": "2026-10-23T17:00Z",
+    "domicile": "IF Elfsborg",
+    "exterieur": "Malmö FF",
+    "pari": "Victoire IF Elfsborg",
+    "court": "1",
+    "cote": 2.1
+   },
+   {
+    "id": "espn-401885079",
+    "sport_key": "soccer_germany_bundesliga2",
+    "date": "2026-10-23T16:30Z",
+    "domicile": "VfL Bochum",
+    "exterieur": "VfL Wolfsburg",
+    "pari": "Victoire VfL Wolfsburg",
+    "court": "2",
+    "cote": 2.0
    }
   ]
  }
