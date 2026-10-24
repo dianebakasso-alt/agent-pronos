@@ -386,8 +386,8 @@
   "proba": 0.2283,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 30.0,
   "jambes": [
    {
     "id": "espn-401915552",
@@ -397,7 +397,10 @@
     "exterieur": "AC Milan",
     "pari": "Victoire AFC Bournemouth",
     "court": "1",
-    "cote": 1.952
+    "cote": 1.952,
+    "res": "1",
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "espn-401915543",
@@ -407,7 +410,10 @@
     "exterieur": "Lyon",
     "pari": "Victoire TSG Hoffenheim",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "1",
+    "score": "3-0",
+    "ok": true
    }
   ]
  },
@@ -440,6 +446,38 @@
     "pari": "Victoire VfL Wolfsburg",
     "court": "2",
     "cote": 2.0
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-24",
+  "bookmaker": "DraftKings",
+  "cote": 4.0,
+  "proba": 0.229,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401878767",
+    "sport_key": "soccer_epl",
+    "date": "2026-10-24T16:30Z",
+    "domicile": "Chelsea",
+    "exterieur": "Tottenham Hotspur",
+    "pari": "Victoire Chelsea",
+    "court": "1",
+    "cote": 1.952
+   },
+   {
+    "id": "espn-401880202",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-10-24T14:00Z",
+    "domicile": "Preston North End",
+    "exterieur": "West Bromwich Albion",
+    "pari": "Victoire West Bromwich Albion",
+    "court": "2",
+    "cote": 2.05
    }
   ]
  }
