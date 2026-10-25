@@ -13439,7 +13439,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.69,
@@ -13447,8 +13449,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.9
  },
  {
   "cle": "match:espn-401885083",
@@ -13469,7 +13471,9 @@
      "ligue": "ger.2",
      "id": "401885083"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.67,
@@ -13477,8 +13481,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401885077",
@@ -13499,7 +13503,9 @@
      "ligue": "ger.2",
      "id": "401885077"
     },
-    "traits": []
+    "traits": [],
+    "score": "6-1",
+    "ok": true
    }
   ],
   "cote": 1.77,
@@ -13507,8 +13513,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.7
  },
  {
   "cle": "match:espn-401885081",
@@ -13529,7 +13535,9 @@
      "ligue": "ger.2",
      "id": "401885081"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.83,
@@ -13537,8 +13545,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.3
  },
  {
   "cle": "match:espn-401879256",
@@ -13561,7 +13569,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    }
   ],
   "cote": 1.65,
@@ -13569,8 +13579,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880205",
@@ -13593,7 +13603,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 2.15,
@@ -13601,8 +13613,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.5
  },
  {
   "cle": "match:espn-401880203",
@@ -13623,7 +13635,9 @@
      "ligue": "eng.2",
      "id": "401880203"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.5,
@@ -13631,8 +13645,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.0
  },
  {
   "cle": "match:espn-401880200",
@@ -13653,7 +13667,9 @@
      "ligue": "eng.2",
      "id": "401880200"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.8,
@@ -13661,8 +13677,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880772",
@@ -13686,7 +13702,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.3,
@@ -13694,8 +13712,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.0
  },
  {
   "cle": "match:espn-401880771",
@@ -13716,7 +13734,9 @@
      "ligue": "eng.3",
      "id": "401880771"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.25,
@@ -13724,8 +13744,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.5
  },
  {
   "cle": "match:espn-401881299",
@@ -13746,7 +13766,9 @@
      "ligue": "eng.4",
      "id": "401881299"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 1.69,
@@ -13754,8 +13776,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881298",
@@ -13776,7 +13798,9 @@
      "ligue": "eng.4",
      "id": "401881298"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.55,
@@ -13784,8 +13808,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.5
  },
  {
   "cle": "match:espn-401881293",
@@ -13806,7 +13830,9 @@
      "ligue": "eng.4",
      "id": "401881293"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.1,
@@ -13814,8 +13840,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.0
  },
  {
   "cle": "match:espn-401882830",
@@ -13836,7 +13862,9 @@
      "ligue": "esp.1",
      "id": "401882830"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    }
   ],
   "cote": 1.77,
@@ -13844,8 +13872,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401883128",
@@ -13866,7 +13894,9 @@
      "ligue": "esp.2",
      "id": "401883128"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.91,
@@ -13874,8 +13904,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.1
  },
  {
   "cle": "match:espn-401876716",
@@ -13896,7 +13926,9 @@
      "ligue": "fra.2",
      "id": "401876716"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 2.0,
@@ -13904,8 +13936,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401874958",
@@ -13928,7 +13960,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.5,
@@ -13936,8 +13970,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.0
  },
  {
   "cle": "match:espn-401874961",
@@ -13958,7 +13992,9 @@
      "ligue": "ita.1",
      "id": "401874961"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.44,
@@ -13966,8 +14002,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.4
  },
  {
   "cle": "match:espn-401899586",
@@ -13988,7 +14024,9 @@
      "ligue": "ita.2",
      "id": "401899586"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.95,
@@ -13996,8 +14034,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401899583",
@@ -14018,7 +14056,9 @@
      "ligue": "ita.2",
      "id": "401899583"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -14026,8 +14066,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "match:espn-401899581",
@@ -14050,7 +14090,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.6,
@@ -14058,8 +14100,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401899588",
@@ -14080,7 +14122,9 @@
      "ligue": "ita.2",
      "id": "401899588"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.2,
@@ -14088,8 +14132,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401899580",
@@ -14110,7 +14154,9 @@
      "ligue": "ita.2",
      "id": "401899580"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.35,
@@ -14118,8 +14164,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401888270",
@@ -14140,7 +14186,9 @@
      "ligue": "tur.1",
      "id": "401888270"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-3",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -14148,8 +14196,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401842856",
@@ -14173,7 +14221,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.38,
@@ -14181,8 +14231,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.8
  },
  {
   "cle": "match:espn-401842853",
@@ -14203,7 +14253,9 @@
      "ligue": "swe.1",
      "id": "401842853"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 1.57,
@@ -14211,8 +14263,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401884758",
@@ -14233,7 +14285,9 @@
      "ligue": "ger.1",
      "id": "401884758"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.8,
@@ -14241,8 +14295,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401884756",
@@ -14263,7 +14317,9 @@
      "ligue": "ger.1",
      "id": "401884756"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.05,
@@ -14271,8 +14327,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401884757",
@@ -14293,7 +14349,9 @@
      "ligue": "ger.1",
      "id": "401884757"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 1.71,
@@ -14301,8 +14359,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401884762",
@@ -14326,7 +14384,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.39,
@@ -14334,8 +14394,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.9
  },
  {
   "cle": "match:espn-401884755",
@@ -14356,7 +14416,9 @@
      "ligue": "ger.1",
      "id": "401884755"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.35,
@@ -14364,8 +14426,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.5
  },
  {
   "cle": "match:espn-401878768",
@@ -14388,7 +14450,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.44,
@@ -14396,8 +14460,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.4
  },
  {
   "cle": "match:espn-401879255",
@@ -14420,7 +14484,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.25,
@@ -14428,8 +14494,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.5
  },
  {
   "cle": "match:espn-401880208",
@@ -14452,7 +14518,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false
    }
   ],
   "cote": 2.5,
@@ -14460,8 +14528,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880206",
@@ -14484,7 +14552,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -14492,8 +14562,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880204",
@@ -14516,7 +14586,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "4-1",
+    "ok": false
    }
   ],
   "cote": 2.5,
@@ -14524,8 +14596,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880202",
@@ -14548,7 +14620,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.05,
@@ -14556,8 +14630,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880201",
@@ -14578,7 +14652,9 @@
      "ligue": "eng.2",
      "id": "401880201"
     },
-    "traits": []
+    "traits": [],
+    "score": "5-0",
+    "ok": true
    }
   ],
   "cote": 2.45,
@@ -14586,8 +14662,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.5
  },
  {
   "cle": "match:espn-401880199",
@@ -14608,7 +14684,9 @@
      "ligue": "eng.2",
      "id": "401880199"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.45,
@@ -14616,8 +14694,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880198",
@@ -14638,7 +14716,9 @@
      "ligue": "eng.2",
      "id": "401880198"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 1.69,
@@ -14646,8 +14726,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880197",
@@ -14671,7 +14751,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.38,
@@ -14679,8 +14761,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.8
  },
  {
   "cle": "match:espn-401880778",
@@ -14703,7 +14785,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.83,
@@ -14711,8 +14795,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880777",
@@ -14735,7 +14819,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true
    }
   ],
   "cote": 2.45,
@@ -14743,8 +14829,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.5
  },
  {
   "cle": "match:espn-401880776",
@@ -14767,7 +14853,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.95,
@@ -14775,8 +14863,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880774",
@@ -14797,7 +14885,9 @@
      "ligue": "eng.3",
      "id": "401880774"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -14805,8 +14895,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880773",
@@ -14829,7 +14919,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -14837,8 +14929,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880770",
@@ -14861,7 +14953,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.59,
@@ -14869,8 +14963,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880769",
@@ -14891,7 +14985,9 @@
      "ligue": "eng.3",
      "id": "401880769"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.6,
@@ -14899,8 +14995,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401880767",
@@ -14921,7 +15017,9 @@
      "ligue": "eng.3",
      "id": "401880767"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.0,
@@ -14929,8 +15027,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881300",
@@ -14951,7 +15049,9 @@
      "ligue": "eng.4",
      "id": "401881300"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.71,
@@ -14959,8 +15059,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881297",
@@ -14981,7 +15081,9 @@
      "ligue": "eng.4",
      "id": "401881297"
     },
-    "traits": []
+    "traits": [],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.67,
@@ -14989,8 +15091,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.7
  },
  {
   "cle": "match:espn-401881296",
@@ -15013,7 +15115,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.55,
@@ -15021,8 +15125,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881295",
@@ -15043,7 +15147,9 @@
      "ligue": "eng.4",
      "id": "401881295"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.35,
@@ -15051,8 +15157,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.5
  },
  {
   "cle": "match:espn-401881294",
@@ -15075,7 +15181,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true
    }
   ],
   "cote": 2.15,
@@ -15083,8 +15191,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.5
  },
  {
   "cle": "match:espn-401881292",
@@ -15107,7 +15215,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-5",
+    "ok": true
    }
   ],
   "cote": 2.45,
@@ -15115,8 +15225,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.5
  },
  {
   "cle": "match:espn-401881291",
@@ -15137,7 +15247,9 @@
      "ligue": "eng.4",
      "id": "401881291"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-3",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -15145,8 +15257,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881289",
@@ -15167,7 +15279,9 @@
      "ligue": "eng.4",
      "id": "401881289"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.0,
@@ -15175,8 +15289,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.0
  },
  {
   "cle": "match:espn-401878362",
@@ -15197,7 +15311,9 @@
      "ligue": "sco.1",
      "id": "401878362"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 2.1,
@@ -15205,8 +15321,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.0
  },
  {
   "cle": "match:espn-401878361",
@@ -15227,7 +15343,9 @@
      "ligue": "sco.1",
      "id": "401878361"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.87,
@@ -15235,8 +15353,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.7
  },
  {
   "cle": "match:espn-401878358",
@@ -15260,7 +15378,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.21,
@@ -15268,8 +15388,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.1
  },
  {
   "cle": "match:espn-401878357",
@@ -15290,7 +15410,9 @@
      "ligue": "sco.1",
      "id": "401878357"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.25,
@@ -15298,8 +15420,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.5
  },
  {
   "cle": "match:espn-401878968",
@@ -15322,7 +15444,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "3-0",
+    "ok": false
    }
   ],
   "cote": 1.8,
@@ -15330,8 +15454,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401843372",
@@ -15355,7 +15479,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.13,
@@ -15363,8 +15489,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401900886",
@@ -15385,7 +15511,9 @@
      "ligue": "ksa.1",
      "id": "401900886"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -15393,8 +15521,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "match:espn-401882831",
@@ -15415,7 +15543,9 @@
      "ligue": "esp.1",
      "id": "401882831"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.3,
@@ -15423,8 +15553,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.0
  },
  {
   "cle": "match:espn-401883151",
@@ -15447,7 +15577,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.2,
@@ -15455,8 +15587,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401875573",
@@ -15477,7 +15609,9 @@
      "ligue": "ned.1",
      "id": "401875573"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 1.65,
@@ -15485,8 +15619,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401885419",
@@ -15507,7 +15641,9 @@
      "ligue": "por.1",
      "id": "401885419"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false
    }
   ],
   "cote": 1.74,
@@ -15515,8 +15651,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401881764",
@@ -15537,7 +15673,9 @@
      "ligue": "aut.1",
      "id": "401881764"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.87,
@@ -15545,8 +15683,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.7
  },
  {
   "cle": "match:espn-401881762",
@@ -15567,7 +15705,9 @@
      "ligue": "aut.1",
      "id": "401881762"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.2,
@@ -15575,8 +15715,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401900889",
@@ -15597,7 +15737,9 @@
      "ligue": "ksa.1",
      "id": "401900889"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    }
   ],
   "cote": 2.45,
@@ -15605,8 +15747,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401899587",
@@ -15629,7 +15771,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-6",
+    "ok": true
    }
   ],
   "cote": 2.6,
@@ -15637,8 +15781,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 16.0
  },
  {
   "cle": "match:espn-401842850",
@@ -15662,7 +15806,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.17,
@@ -15670,8 +15816,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401842855",
@@ -15692,7 +15838,9 @@
      "ligue": "swe.1",
      "id": "401842855"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    }
   ],
   "cote": 1.77,
@@ -15700,8 +15848,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401874948",
@@ -15722,7 +15870,9 @@
      "ligue": "ita.1",
      "id": "401874948"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-3",
+    "ok": false
    }
   ],
   "cote": 2.55,
@@ -15730,8 +15880,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401896814",
@@ -15752,7 +15902,9 @@
      "ligue": "gre.1",
      "id": "401896814"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 2.7,
@@ -15760,8 +15912,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401843371",
@@ -15784,7 +15936,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -15792,8 +15946,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "match:espn-401878969",
@@ -15814,7 +15968,9 @@
      "ligue": "bel.1",
      "id": "401878969"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.91,
@@ -15822,8 +15978,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401878767",
@@ -15844,7 +16000,9 @@
      "ligue": "eng.1",
      "id": "401878767"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false
    }
   ],
   "cote": 1.95,
@@ -15852,8 +16010,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401884763",
@@ -15874,7 +16032,9 @@
      "ligue": "ger.1",
      "id": "401884763"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.47,
@@ -15882,8 +16042,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.7
  },
  {
   "cle": "match:espn-401882827",
@@ -15906,7 +16066,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 2.1,
@@ -15914,8 +16076,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.0
  },
  {
   "cle": "match:espn-401883150",
@@ -15936,7 +16098,9 @@
      "ligue": "esp.2",
      "id": "401883150"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.2,
@@ -15944,8 +16108,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.0
  },
  {
   "cle": "match:espn-401896743",
@@ -15966,7 +16130,9 @@
      "ligue": "gre.1",
      "id": "401896743"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.0,
@@ -15974,8 +16140,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401875572",
@@ -15996,7 +16162,9 @@
      "ligue": "ned.1",
      "id": "401875572"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-6",
+    "ok": false
    }
   ],
   "cote": 2.5,
@@ -16004,8 +16172,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401885420",
@@ -16026,7 +16194,9 @@
      "ligue": "por.1",
      "id": "401885420"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.15,
@@ -16034,8 +16204,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401896744",
@@ -16059,7 +16229,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-0",
+    "ok": true
    }
   ],
   "cote": 1.12,
@@ -16067,8 +16239,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.2
  },
  {
   "cle": "match:espn-401899589",
@@ -16091,7 +16263,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 2.3,
@@ -16099,8 +16273,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.0
  },
  {
   "cle": "match:espn-761903",
@@ -16123,7 +16297,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 1.5,
@@ -16131,8 +16307,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.0
  },
  {
   "cle": "match:espn-401881765",
@@ -16156,7 +16332,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.21,
@@ -16164,8 +16342,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.1
  },
  {
   "cle": "match:espn-401841641",
@@ -16188,7 +16366,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.15,
@@ -16196,8 +16376,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401900887",
@@ -16220,7 +16400,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -16228,8 +16410,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401885080",
@@ -16250,7 +16432,9 @@
      "ligue": "ger.2",
      "id": "401885080"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.05,
@@ -16258,8 +16442,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401874955",
@@ -16280,7 +16464,9 @@
      "ligue": "ita.1",
      "id": "401874955"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.46,
@@ -16288,8 +16474,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.6
  },
  {
   "cle": "match:espn-401876427",
@@ -16310,7 +16496,9 @@
      "ligue": "fra.1",
      "id": "401876427"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.6,
@@ -16318,8 +16506,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 16.0
  },
  {
   "cle": "match:espn-401876711",
@@ -16340,7 +16528,9 @@
      "ligue": "fra.2",
      "id": "401876711"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.77,
@@ -16348,8 +16538,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.7
  },
  {
   "cle": "match:espn-401878965",
@@ -16370,7 +16560,9 @@
      "ligue": "bel.1",
      "id": "401878965"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-4",
+    "ok": false
    }
   ],
   "cote": 2.1,
@@ -16378,8 +16570,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401878966",
@@ -16402,7 +16594,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "3-0",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -16410,8 +16604,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401882834",
@@ -16435,7 +16629,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.27,
@@ -16443,8 +16639,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.7
  },
  {
   "cle": "match:espn-401883153",
@@ -16465,7 +16661,9 @@
      "ligue": "esp.2",
      "id": "401883153"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false
    }
   ],
   "cote": 1.69,
@@ -16473,8 +16671,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401875571",
@@ -16497,7 +16695,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    }
   ],
   "cote": 2.0,
@@ -16505,8 +16705,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.0
  },
  {
   "cle": "match:espn-401885417",
@@ -16529,7 +16729,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.48,
@@ -16537,8 +16739,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.8
  },
  {
   "cle": "match:espn-401841285",
@@ -16559,7 +16761,9 @@
      "ligue": "bra.1",
      "id": "401841285"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 2.0,
@@ -16567,8 +16771,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.0
  },
  {
   "cle": "match:espn-401841284",
@@ -16589,7 +16793,9 @@
      "ligue": "bra.1",
      "id": "401841284"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.3,
@@ -16597,8 +16803,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401841280",
@@ -16619,7 +16825,9 @@
      "ligue": "bra.1",
      "id": "401841280"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.65,
@@ -16627,8 +16835,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-761890",
@@ -16649,7 +16857,9 @@
      "ligue": "usa.1",
      "id": "761890"
     },
-    "traits": []
+    "traits": [],
+    "score": "4-2",
+    "ok": true
    }
   ],
   "cote": 1.65,
@@ -16657,8 +16867,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.5
  },
  {
   "cle": "match:espn-401841631",
@@ -16679,7 +16889,9 @@
      "ligue": "arg.1",
      "id": "401841631"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 2.25,
@@ -16687,8 +16899,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:espn-401841283",
@@ -16709,7 +16921,9 @@
      "ligue": "bra.1",
      "id": "401841283"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.57,
@@ -16717,8 +16931,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.7
  },
  {
   "cle": "match:espn-401841281",
@@ -16739,7 +16953,9 @@
      "ligue": "bra.1",
      "id": "401841281"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.69,
@@ -16747,8 +16963,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.9
  },
  {
   "cle": "match:espn-761891",
@@ -16771,7 +16987,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false
    }
   ],
   "cote": 1.8,
@@ -16779,8 +16997,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-10-24",
@@ -16804,7 +17022,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-0",
+    "ok": true
    },
    {
     "id": "espn-401843372",
@@ -16823,7 +17043,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 1.27,
@@ -16831,8 +17053,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-10-24",
@@ -16853,7 +17075,9 @@
      "ligue": "eng.1",
      "id": "401878767"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false
    },
    {
     "id": "espn-401880202",
@@ -16871,7 +17095,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 4.0,
@@ -16879,8 +17105,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-10-24",
@@ -16901,7 +17127,9 @@
      "ligue": "eng.2",
      "id": "401880206"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "espn-401882831",
@@ -16919,7 +17147,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    },
    {
     "id": "espn-401876427",
@@ -16935,7 +17165,9 @@
      "ligue": "fra.1",
      "id": "401876427"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 21.09,
@@ -16943,8 +17175,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-10-24",
@@ -16967,7 +17199,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-0",
+    "ok": true
    },
    {
     "id": "espn-401842850",
@@ -16985,7 +17219,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    },
    {
     "id": "espn-401881765",
@@ -17003,7 +17239,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 2.27,
@@ -17011,8 +17249,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.7
  },
  {
   "cle": "mixte:2026-10-24",
@@ -17036,7 +17274,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-0",
+    "ok": true
    },
    {
     "id": "espn-401842850",
@@ -17054,7 +17294,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    },
    {
     "id": "espn-401881765",
@@ -17072,7 +17314,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 2.13,
@@ -17080,8 +17324,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.3
  },
  {
   "cle": "mixte_gros:2026-10-24",
@@ -17102,7 +17346,9 @@
      "ligue": "ita.1",
      "id": "401874955"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "espn-401885417",
@@ -17120,7 +17366,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "espn-401842850",
@@ -17138,7 +17386,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    },
    {
     "id": "espn-401881765",
@@ -17156,7 +17406,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "espn-401885083",
@@ -17174,7 +17426,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 5.89,
@@ -17182,8 +17436,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "jour:2026-10-24",
@@ -17206,7 +17460,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    },
    {
     "id": "espn-401842853",
@@ -17222,11 +17478,2456 @@
      "ligue": "swe.1",
      "id": "401842853"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    }
   ],
   "cote": 2.58,
   "proba": 0.3501,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:espn-401875570",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875570",
+    "date": "2026-10-25T11:15Z",
+    "domicile": "Fortuna Sittard",
+    "exterieur": "Excelsior",
+    "championnat": "Eredivisie",
+    "pari": "Victoire Excelsior",
+    "cote": 2.55,
+    "proba": 0.3716,
+    "court": "2",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875570"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.55,
+  "proba": 0.3716,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401875036",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875036",
+    "date": "2026-10-25T11:30Z",
+    "domicile": "Internazionale",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Victoire Internazionale",
+    "cote": 1.32,
+    "proba": 0.7001,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875036"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.32,
+  "proba": 0.7001,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878360",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878360",
+    "date": "2026-10-25T12:00Z",
+    "domicile": "Hibernian",
+    "exterieur": "Celtic",
+    "championnat": "Premiership",
+    "pari": "Victoire Celtic",
+    "cote": 1.57,
+    "proba": 0.6012,
+    "court": "2",
+    "espn": {
+     "ligue": "sco.1",
+     "id": "401878360"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.57,
+  "proba": 0.6012,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885078",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885078",
+    "date": "2026-10-25T12:30Z",
+    "domicile": "Holstein Kiel",
+    "exterieur": "Dynamo Dresden",
+    "championnat": "2. Bundesliga",
+    "pari": "Victoire Holstein Kiel",
+    "cote": 2.3,
+    "proba": 0.4107,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.2",
+     "id": "401885078"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.3,
+  "proba": 0.4107,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885075",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885075",
+    "date": "2026-10-25T12:30Z",
+    "domicile": "VfL Osnabruck",
+    "exterieur": "SpVgg Greuther Fürth",
+    "championnat": "2. Bundesliga",
+    "pari": "Victoire VfL Osnabruck",
+    "cote": 2.05,
+    "proba": 0.4597,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.2",
+     "id": "401885075"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4597,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878963",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878963",
+    "date": "2026-10-25T12:30Z",
+    "domicile": "Racing Genk",
+    "exterieur": "Standard Liege",
+    "championnat": "Pro League",
+    "pari": "Victoire Racing Genk",
+    "cote": 1.74,
+    "proba": 0.542,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878963"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.74,
+  "proba": 0.542,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882835",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882835",
+    "date": "2026-10-25T13:00Z",
+    "domicile": "Athletic Club",
+    "exterieur": "Getafe",
+    "championnat": "Liga",
+    "pari": "Victoire Athletic Club",
+    "cote": 1.56,
+    "proba": 0.6141,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882835"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.56,
+  "proba": 0.6141,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401883127",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401883127",
+    "date": "2026-10-25T13:00Z",
+    "domicile": "CD Sabadell",
+    "exterieur": "Tenerife",
+    "championnat": "Liga 2",
+    "pari": "Victoire CD Sabadell",
+    "cote": 1.95,
+    "proba": 0.4847,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883127"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.95,
+  "proba": 0.4847,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401888266",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401888266",
+    "date": "2026-10-25T13:00Z",
+    "domicile": "Konyaspor",
+    "exterieur": "Genclerbirligi",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Konyaspor",
+    "cote": 1.91,
+    "proba": 0.498,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888266"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.91,
+  "proba": 0.498,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874735",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874735",
+    "date": "2026-10-25T13:00Z",
+    "domicile": "Silkeborg IF",
+    "exterieur": "FC Nordsjælland",
+    "championnat": "Superliga",
+    "pari": "Victoire FC Nordsjælland",
+    "cote": 1.56,
+    "proba": 0.6063,
+    "court": "2",
+    "espn": {
+     "ligue": "den.1",
+     "id": "401874735"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.56,
+  "proba": 0.6063,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401842857",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401842857",
+    "date": "2026-10-25T13:00Z",
+    "domicile": "GAIS",
+    "exterieur": "IFK Göteborg",
+    "championnat": "Allsvenskan",
+    "pari": "Victoire GAIS",
+    "cote": 2.45,
+    "proba": 0.3853,
+    "court": "1",
+    "espn": {
+     "ligue": "swe.1",
+     "id": "401842857"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3853,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401875569",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875569",
+    "date": "2026-10-25T13:30Z",
+    "domicile": "NEC Nijmegen",
+    "exterieur": "FC Groningen",
+    "championnat": "Eredivisie",
+    "pari": "Victoire NEC Nijmegen",
+    "cote": 2.2,
+    "proba": 0.4278,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875569"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4278,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401875568",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875568",
+    "date": "2026-10-25T13:30Z",
+    "domicile": "PSV Eindhoven",
+    "exterieur": "Feyenoord Rotterdam",
+    "championnat": "Eredivisie",
+    "pari": "Victoire PSV Eindhoven",
+    "cote": 2.1,
+    "proba": 0.4494,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875568"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4494,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401881767",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401881767",
+    "date": "2026-10-25T13:30Z",
+    "domicile": "SK Sturm Graz",
+    "exterieur": "SV Josko Ried",
+    "championnat": "Bundesliga AUT",
+    "pari": "Victoire SK Sturm Graz",
+    "cote": 1.65,
+    "proba": 0.5749,
+    "court": "1",
+    "espn": {
+     "ligue": "aut.1",
+     "id": "401881767"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.65,
+  "proba": 0.5749,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843373",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843373",
+    "date": "2026-10-25T13:30Z",
+    "domicile": "Viking FK",
+    "exterieur": "Tromso",
+    "championnat": "Eliteserien",
+    "pari": "Victoire Viking FK",
+    "cote": 1.54,
+    "proba": 0.6113,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843373"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.6113,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401879254",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401879254",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Crystal Palace",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.4,
+    "proba": 0.3977,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879254"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3977,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878766",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878766",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Hull City",
+    "exterieur": "Brentford",
+    "championnat": "Premier League",
+    "pari": "Victoire Brentford",
+    "cote": 1.65,
+    "proba": 0.578,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878766"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.65,
+  "proba": 0.578,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878765",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878765",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Liverpool",
+    "exterieur": "Brighton & Hove Albion",
+    "championnat": "Premier League",
+    "pari": "Victoire Liverpool",
+    "cote": 2.15,
+    "proba": 0.4469,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878765"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.15,
+  "proba": 0.4469,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401879252",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401879252",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Manchester United",
+    "exterieur": "AFC Bournemouth",
+    "championnat": "Premier League",
+    "pari": "Victoire Manchester United",
+    "cote": 2.25,
+    "proba": 0.4238,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879252"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.4238,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878359",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878359",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Motherwell",
+    "exterieur": "Heart of Midlothian",
+    "championnat": "Premiership",
+    "pari": "Victoire Heart of Midlothian",
+    "cote": 2.05,
+    "proba": 0.4613,
+    "court": "2",
+    "espn": {
+     "ligue": "sco.1",
+     "id": "401878359"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4613,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874972",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874972",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Atalanta",
+    "exterieur": "Frosinone",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta",
+    "cote": 1.83,
+    "proba": 0.5031,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874972"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.83,
+  "proba": 0.5031,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874952",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874952",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Genoa",
+    "exterieur": "Venezia",
+    "championnat": "Serie A",
+    "pari": "Victoire Genoa",
+    "cote": 2.1,
+    "proba": 0.4395,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874952"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4395,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401899582",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401899582",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Palermo",
+    "exterieur": "Carrarese",
+    "championnat": "Serie B",
+    "pari": "Victoire Palermo",
+    "cote": 1.47,
+    "proba": 0.6427,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.2",
+     "id": "401899582"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.47,
+  "proba": 0.6427,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876425",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876425",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "AS Monaco",
+    "exterieur": "Lille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire AS Monaco",
+    "cote": 2.0,
+    "proba": 0.4794,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876425"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.4794,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401896815",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401896815",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Olympiacos",
+    "exterieur": "Kalamata",
+    "championnat": "Super League GRE",
+    "pari": "Victoire Olympiacos",
+    "cote": 1.14,
+    "proba": 0.8235,
+    "court": "1",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896815"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.14,
+  "proba": 0.8235,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401884760",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401884760",
+    "date": "2026-10-25T14:30Z",
+    "domicile": "TSG Hoffenheim",
+    "exterieur": "Bayer Leverkusen",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Bayer Leverkusen",
+    "cote": 2.05,
+    "proba": 0.4493,
+    "court": "2",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884760"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4493,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878964",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878964",
+    "date": "2026-10-25T15:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Sint-Truidense",
+    "championnat": "Pro League",
+    "pari": "Victoire Club Brugge",
+    "cote": 1.35,
+    "proba": 0.7003,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878964"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.35,
+  "proba": 0.7003,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874546",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874546",
+    "date": "2026-10-25T15:00Z",
+    "domicile": "AC Horsens",
+    "exterieur": "Sønderjyske Fodbold",
+    "championnat": "Superliga",
+    "pari": "Victoire AC Horsens",
+    "cote": 2.45,
+    "proba": 0.3845,
+    "court": "1",
+    "espn": {
+     "ligue": "den.1",
+     "id": "401874546"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3845,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882833",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882833",
+    "date": "2026-10-25T15:15Z",
+    "domicile": "Celta Vigo",
+    "exterieur": "Real Betis",
+    "championnat": "Liga",
+    "pari": "Victoire Real Betis",
+    "cote": 2.25,
+    "proba": 0.4279,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882833"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.4279,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401883132",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401883132",
+    "date": "2026-10-25T15:15Z",
+    "domicile": "Albacete",
+    "exterieur": "Eldense",
+    "championnat": "Liga 2",
+    "pari": "Victoire Albacete",
+    "cote": 2.5,
+    "proba": 0.3789,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883132"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.5,
+  "proba": 0.3789,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401883130",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401883130",
+    "date": "2026-10-25T15:15Z",
+    "domicile": "Cádiz",
+    "exterieur": "Ceuta",
+    "championnat": "Liga 2",
+    "pari": "Victoire Cádiz",
+    "cote": 2.1,
+    "proba": 0.4508,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883130"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4508,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885418",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885418",
+    "date": "2026-10-25T15:30Z",
+    "domicile": "Estoril",
+    "exterieur": "Moreirense",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Estoril",
+    "cote": 1.77,
+    "proba": 0.5337,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885418"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.77,
+  "proba": 0.5337,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401842854",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401842854",
+    "date": "2026-10-25T15:30Z",
+    "domicile": "Mjällby AIF",
+    "exterieur": "Hammarby IF",
+    "championnat": "Allsvenskan",
+    "pari": "Victoire Hammarby IF",
+    "cote": 1.44,
+    "proba": 0.658,
+    "court": "2",
+    "espn": {
+     "ligue": "swe.1",
+     "id": "401842854"
+    },
+    "traits": [
+     "exterieur",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.44,
+  "proba": 0.658,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401875567",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875567",
+    "date": "2026-10-25T15:45Z",
+    "domicile": "Sparta Rotterdam",
+    "exterieur": "Ajax Amsterdam",
+    "championnat": "Eredivisie",
+    "pari": "Victoire Ajax Amsterdam",
+    "cote": 1.44,
+    "proba": 0.6552,
+    "court": "2",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875567"
+    },
+    "traits": [
+     "exterieur",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.44,
+  "proba": 0.6552,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401896741",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401896741",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "Volos NFC",
+    "exterieur": "Panathinaikos",
+    "championnat": "Super League GRE",
+    "pari": "Victoire Panathinaikos",
+    "cote": 1.3,
+    "proba": 0.7238,
+    "court": "2",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896741"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.3,
+  "proba": 0.7238,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401881766",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401881766",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "LASK Linz",
+    "exterieur": "RB Salzburg",
+    "championnat": "Bundesliga AUT",
+    "pari": "Victoire LASK Linz",
+    "cote": 2.2,
+    "proba": 0.4305,
+    "court": "1",
+    "espn": {
+     "ligue": "aut.1",
+     "id": "401881766"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4305,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843366",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843366",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "IK Start",
+    "exterieur": "Sandefjord",
+    "championnat": "Eliteserien",
+    "pari": "Victoire IK Start",
+    "cote": 2.35,
+    "proba": 0.4018,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843366"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.4018,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843370",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843370",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "Kristiansund BK",
+    "exterieur": "KFUM Oslo",
+    "championnat": "Eliteserien",
+    "pari": "Victoire Kristiansund BK",
+    "cote": 2.35,
+    "proba": 0.3998,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843370"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.3998,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843369",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843369",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "Lillestrom",
+    "exterieur": "SK Brann",
+    "championnat": "Eliteserien",
+    "pari": "Victoire Lillestrom",
+    "cote": 2.3,
+    "proba": 0.4134,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843369"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.3,
+  "proba": 0.4134,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843367",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843367",
+    "date": "2026-10-25T16:00Z",
+    "domicile": "Sarpsborg FK",
+    "exterieur": "Aalesund",
+    "championnat": "Eliteserien",
+    "pari": "Victoire Sarpsborg FK",
+    "cote": 1.87,
+    "proba": 0.5069,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843367"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.87,
+  "proba": 0.5069,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401899584",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401899584",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Hellas Verona",
+    "exterieur": "Pisa",
+    "championnat": "Serie B",
+    "pari": "Victoire Hellas Verona",
+    "cote": 2.35,
+    "proba": 0.402,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.2",
+     "id": "401899584"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.402,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876429",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876429",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "AJ Auxerre",
+    "exterieur": "Le Mans",
+    "championnat": "Ligue 1",
+    "pari": "Victoire AJ Auxerre",
+    "cote": 2.1,
+    "proba": 0.4543,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876429"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4543,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876430",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876430",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Angers",
+    "exterieur": "Lorient",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Lorient",
+    "cote": 2.45,
+    "proba": 0.3908,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876430"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3908,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876426",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876426",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Marseille",
+    "exterieur": "Le Havre AC",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Marseille",
+    "cote": 1.5,
+    "proba": 0.6356,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876426"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.5,
+  "proba": 0.6356,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876424",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876424",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Stade Rennais",
+    "exterieur": "Strasbourg",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Stade Rennais",
+    "cote": 1.8,
+    "proba": 0.5319,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876424"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.5319,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401876423",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401876423",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Toulouse",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Toulouse",
+    "cote": 1.54,
+    "proba": 0.6209,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876423"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.6209,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878764",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878764",
+    "date": "2026-10-25T16:30Z",
+    "domicile": "Sunderland",
+    "exterieur": "Leeds United",
+    "championnat": "Premier League",
+    "pari": "Victoire Leeds United",
+    "cote": 2.6,
+    "proba": 0.3691,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878764"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.6,
+  "proba": 0.3691,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401884759",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401884759",
+    "date": "2026-10-25T16:30Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "Bayern Munich",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Bayern Munich",
+    "cote": 1.5,
+    "proba": 0.6153,
+    "court": "2",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884759"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.5,
+  "proba": 0.6153,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874772",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874772",
+    "date": "2026-10-25T17:00Z",
+    "domicile": "Lecce",
+    "exterieur": "Juventus",
+    "championnat": "Serie A",
+    "pari": "Victoire Juventus",
+    "cote": 1.51,
+    "proba": 0.6133,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874772"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.51,
+  "proba": 0.6133,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874553",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874553",
+    "date": "2026-10-25T17:00Z",
+    "domicile": "AGF",
+    "exterieur": "Viborg FF",
+    "championnat": "Superliga",
+    "pari": "Victoire AGF",
+    "cote": 2.35,
+    "proba": 0.4013,
+    "court": "1",
+    "espn": {
+     "ligue": "den.1",
+     "id": "401874553"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.4013,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882829",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882829",
+    "date": "2026-10-25T17:30Z",
+    "domicile": "Real Sociedad",
+    "exterieur": "Levante",
+    "championnat": "Liga",
+    "pari": "Victoire Real Sociedad",
+    "cote": 1.57,
+    "proba": 0.6095,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882829"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.57,
+  "proba": 0.6095,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401883129",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401883129",
+    "date": "2026-10-25T17:30Z",
+    "domicile": "Castellón",
+    "exterieur": "Sporting Gijón",
+    "championnat": "Liga 2",
+    "pari": "Victoire Castellón",
+    "cote": 1.5,
+    "proba": 0.6286,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883129"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.5,
+  "proba": 0.6286,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878962",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878962",
+    "date": "2026-10-25T17:30Z",
+    "domicile": "KAA Gent",
+    "exterieur": "Anderlecht",
+    "championnat": "Pro League",
+    "pari": "Victoire KAA Gent",
+    "cote": 2.35,
+    "proba": 0.4013,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878962"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.4013,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401896742",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401896742",
+    "date": "2026-10-25T17:30Z",
+    "domicile": "Aris",
+    "exterieur": "Atromitos",
+    "championnat": "Super League GRE",
+    "pari": "Victoire Aris",
+    "cote": 1.67,
+    "proba": 0.5661,
+    "court": "1",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896742"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.67,
+  "proba": 0.5661,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401841629",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401841629",
+    "date": "2026-10-25T17:45Z",
+    "domicile": "Aldosivi",
+    "exterieur": "Belgrano (Córdoba)",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Belgrano (Córdoba)",
+    "cote": 2.05,
+    "proba": 0.4593,
+    "court": "2",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841629"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4593,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885416",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885416",
+    "date": "2026-10-25T18:00Z",
+    "domicile": "C.D. Nacional",
+    "exterieur": "Braga",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Braga",
+    "cote": 1.5,
+    "proba": 0.6331,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885416"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.5,
+  "proba": 0.6331,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885415",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885415",
+    "date": "2026-10-25T18:00Z",
+    "domicile": "Rio Ave",
+    "exterieur": "FC Famalicao",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire FC Famalicao",
+    "cote": 2.1,
+    "proba": 0.4517,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885415"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4517,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401896740",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401896740",
+    "date": "2026-10-25T18:00Z",
+    "domicile": "OFI Crete",
+    "exterieur": "PAOK",
+    "championnat": "Super League GRE",
+    "pari": "Victoire PAOK",
+    "cote": 1.71,
+    "proba": 0.5501,
+    "court": "2",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896740"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.71,
+  "proba": 0.5501,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401878961",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401878961",
+    "date": "2026-10-25T18:15Z",
+    "domicile": "Union St.-Gilloise",
+    "exterieur": "Cercle Brugge KSV",
+    "championnat": "Pro League",
+    "pari": "Victoire Union St.-Gilloise",
+    "cote": 1.32,
+    "proba": 0.7166,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878961"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.32,
+  "proba": 0.7166,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401843368",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401843368",
+    "date": "2026-10-25T18:15Z",
+    "domicile": "Molde",
+    "exterieur": "Fredrikstad",
+    "championnat": "Eliteserien",
+    "pari": "Victoire Molde",
+    "cote": 1.41,
+    "proba": 0.6675,
+    "court": "1",
+    "espn": {
+     "ligue": "nor.1",
+     "id": "401843368"
+    },
+    "traits": [
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.41,
+  "proba": 0.6675,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401875566",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401875566",
+    "date": "2026-10-25T19:00Z",
+    "domicile": "AZ Alkmaar",
+    "exterieur": "FC Twente",
+    "championnat": "Eredivisie",
+    "pari": "Victoire AZ Alkmaar",
+    "cote": 2.15,
+    "proba": 0.4395,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875566"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.15,
+  "proba": 0.4395,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401874779",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401874779",
+    "date": "2026-10-25T19:45Z",
+    "domicile": "Udinese",
+    "exterieur": "AC Milan",
+    "championnat": "Serie A",
+    "pari": "Victoire AC Milan",
+    "cote": 1.8,
+    "proba": 0.5147,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874779"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.5147,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401882832",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401882832",
+    "date": "2026-10-25T20:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Real Madrid",
+    "championnat": "Liga",
+    "pari": "Victoire Barcelona",
+    "cote": 1.67,
+    "proba": 0.5741,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882832"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.67,
+  "proba": 0.5741,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401841636",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401841636",
+    "date": "2026-10-25T20:00Z",
+    "domicile": "Independiente",
+    "exterieur": "Boca Juniors",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Boca Juniors",
+    "cote": 2.1,
+    "proba": 0.4484,
+    "court": "2",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841636"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4484,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401885413",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401885413",
+    "date": "2026-10-25T20:30Z",
+    "domicile": "Sporting CP",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Sporting CP",
+    "cote": 1.24,
+    "proba": 0.7647,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885413"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7647,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:espn-401841634",
+  "jour": "2026-10-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "espn-401841634",
+    "date": "2026-10-25T22:15Z",
+    "domicile": "River Plate",
+    "exterieur": "Racing Club",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire River Plate",
+    "cote": 1.47,
+    "proba": 0.6452,
+    "court": "1",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841634"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.47,
+  "proba": 0.6452,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "espn-401896815",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Olympiacos",
+    "exterieur": "Kalamata",
+    "championnat": "Super League GRE",
+    "pari": "Victoire Olympiacos",
+    "cote": 1.14,
+    "proba": 0.8235,
+    "court": "1",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896815"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401885413",
+    "date": "2026-10-25T20:30Z",
+    "domicile": "Sporting CP",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Sporting CP",
+    "cote": 1.24,
+    "proba": 0.7647,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885413"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.41,
+  "proba": 0.6298,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "espn-401876425",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "AS Monaco",
+    "exterieur": "Lille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire AS Monaco",
+    "cote": 2.0,
+    "proba": 0.4794,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876425"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401876429",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "AJ Auxerre",
+    "exterieur": "Le Mans",
+    "championnat": "Ligue 1",
+    "pari": "Victoire AJ Auxerre",
+    "cote": 2.1,
+    "proba": 0.4543,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876429"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 4.2,
+  "proba": 0.2178,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "espn-401878964",
+    "date": "2026-10-25T15:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Sint-Truidense",
+    "championnat": "Pro League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7576,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878964"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401896815",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Olympiacos",
+    "exterieur": "Kalamata",
+    "championnat": "Super League GRE",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7367,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896815"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401885413",
+    "date": "2026-10-25T20:30Z",
+    "domicile": "Sporting CP",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885413"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.6,
+  "proba": 0.4037,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "espn-401896815",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Olympiacos",
+    "exterieur": "Kalamata",
+    "championnat": "Super League GRE",
+    "pari": "Victoire Olympiacos",
+    "cote": 1.14,
+    "proba": 0.8235,
+    "court": "1",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896815"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401878964",
+    "date": "2026-10-25T15:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Sint-Truidense",
+    "championnat": "Pro League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7576,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878964"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401885413",
+    "date": "2026-10-25T20:30Z",
+    "domicile": "Sporting CP",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885413"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.33,
+  "proba": 0.4512,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "espn-401841634",
+    "date": "2026-10-25T22:15Z",
+    "domicile": "River Plate",
+    "exterieur": "Racing Club",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire River Plate",
+    "cote": 1.47,
+    "proba": 0.6452,
+    "court": "1",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841634"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401899582",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Palermo",
+    "exterieur": "Carrarese",
+    "championnat": "Serie B",
+    "pari": "Victoire Palermo",
+    "cote": 1.47,
+    "proba": 0.6427,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.2",
+     "id": "401899582"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401878964",
+    "date": "2026-10-25T15:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Sint-Truidense",
+    "championnat": "Pro League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7576,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878964"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401896815",
+    "date": "2026-10-25T14:00Z",
+    "domicile": "Olympiacos",
+    "exterieur": "Kalamata",
+    "championnat": "Super League GRE",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7367,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "gre.1",
+     "id": "401896815"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "espn-401885413",
+    "date": "2026-10-25T20:30Z",
+    "domicile": "Sporting CP",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7232,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885413"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 6.27,
+  "proba": 0.1674,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "jour:2026-10-25",
+  "jour": "2026-10-25",
+  "cat": "jour",
+  "jambes": [
+   {
+    "id": "espn-401842854",
+    "date": "2026-10-25T15:30Z",
+    "domicile": "Mjällby AIF",
+    "exterieur": "Hammarby IF",
+    "championnat": "Allsvenskan",
+    "pari": "Victoire Hammarby IF",
+    "cote": 1.44,
+    "proba": 0.658,
+    "court": "2",
+    "espn": {
+     "ligue": "swe.1",
+     "id": "401842854"
+    },
+    "traits": [
+     "exterieur",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "espn-401841634",
+    "date": "2026-10-25T22:15Z",
+    "domicile": "River Plate",
+    "exterieur": "Racing Club",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire River Plate",
+    "cote": 1.47,
+    "proba": 0.6452,
+    "court": "1",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841634"
+    },
+    "traits": []
+   },
+   {
+    "id": "espn-401876423",
+    "date": "2026-10-25T16:15Z",
+    "domicile": "Toulouse",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Toulouse",
+    "cote": 1.54,
+    "proba": 0.6209,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876423"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 3.24,
+  "proba": 0.2636,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

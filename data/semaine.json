@@ -1,87 +1,38 @@
 [
  {
-  "jour": "2026-10-24",
-  "matchs": 109,
-  "value_bets": 0,
-  "combines": [
-   [
-    "prudent",
-    false,
-    1.27,
-    0.696
-   ],
-   [
-    "equilibre",
-    false,
-    4.0,
-    0.229
-   ],
-   [
-    "gros",
-    false,
-    21.09,
-    0.042
-   ],
-   [
-    "buts",
-    null,
-    2.27,
-    0.462
-   ],
-   [
-    "mixte",
-    null,
-    2.13,
-    0.492
-   ],
-   [
-    "mixte_gros",
-    null,
-    5.89,
-    0.178
-   ]
-  ]
- },
- {
   "jour": "2026-10-25",
-  "matchs": 91,
+  "matchs": 66,
   "value_bets": 0,
   "combines": [
    [
     "prudent",
     false,
-    1.37,
-    0.627
+    1.41,
+    0.63
    ],
    [
     "equilibre",
     false,
-    4.3,
-    0.212
-   ],
-   [
-    "gros",
-    false,
-    21.5,
-    0.041
+    4.2,
+    0.218
    ],
    [
     "buts",
     null,
-    2.35,
-    0.447
+    2.6,
+    0.404
    ],
    [
     "mixte",
     null,
-    2.19,
-    0.479
+    2.33,
+    0.451
    ],
    [
     "mixte_gros",
     null,
-    6.18,
-    0.17
+    6.27,
+    0.167
    ]
   ]
  },
@@ -93,137 +44,137 @@
    [
     "prudent",
     false,
-    1.89,
-    0.464
+    1.91,
+    0.471
    ],
    [
     "equilibre",
     false,
-    3.9,
-    0.23
+    3.82,
+    0.237
    ],
    [
     "gros",
     false,
-    14.4,
-    0.058
+    11.26,
+    0.075
    ],
    [
     "buts",
     null,
-    2.89,
-    0.363
+    2.96,
+    0.355
    ],
    [
     "mixte",
     null,
-    2.93,
-    0.358
+    3.08,
+    0.341
    ],
    [
     "mixte_gros",
     null,
-    7.98,
-    0.132
-   ]
-  ]
- },
- {
-  "jour": "2026-10-27",
-  "matchs": 7,
-  "value_bets": 0,
-  "combines": [
-   [
-    "prudent",
-    false,
-    1.72,
-    0.494
-   ],
-   [
-    "equilibre",
-    false,
-    3.44,
-    0.252
-   ],
-   [
-    "gros",
-    false,
-    9.09,
-    0.087
-   ],
-   [
-    "buts",
-    null,
-    3.96,
-    0.265
-   ],
-   [
-    "mixte",
-    null,
-    3.52,
-    0.298
-   ],
-   [
-    "mixte_gros",
-    null,
-    8.91,
-    0.118
-   ]
-  ]
- },
- {
-  "jour": "2026-10-28",
-  "matchs": 11,
-  "value_bets": 0,
-  "combines": [
-   [
-    "prudent",
-    false,
-    1.92,
-    0.431
-   ],
-   [
-    "equilibre",
-    false,
-    3.14,
-    0.269
-   ],
-   [
-    "gros",
-    false,
-    8.42,
-    0.09
-   ],
-   [
-    "buts",
-    null,
-    2.67,
-    0.393
-   ],
-   [
-    "mixte",
-    null,
-    4.0,
-    0.262
-   ],
-   [
-    "mixte_gros",
-    null,
-    8.12,
+    8.16,
     0.129
    ]
   ]
  },
  {
-  "jour": "2026-10-29",
-  "matchs": 4,
+  "jour": "2026-10-27",
+  "matchs": 21,
   "value_bets": 0,
   "combines": [
    [
     "prudent",
     false,
-    3.0,
-    0.289
+    1.76,
+    0.494
+   ],
+   [
+    "equilibre",
+    false,
+    4.2,
+    0.21
+   ],
+   [
+    "gros",
+    false,
+    11.08,
+    0.074
+   ],
+   [
+    "buts",
+    null,
+    3.83,
+    0.274
+   ],
+   [
+    "mixte",
+    null,
+    3.41,
+    0.308
+   ],
+   [
+    "mixte_gros",
+    null,
+    7.04,
+    0.149
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-28",
+  "matchs": 16,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.55,
+    0.54
+   ],
+   [
+    "equilibre",
+    false,
+    3.81,
+    0.224
+   ],
+   [
+    "gros",
+    false,
+    11.01,
+    0.07
+   ],
+   [
+    "buts",
+    null,
+    3.78,
+    0.278
+   ],
+   [
+    "mixte",
+    null,
+    3.32,
+    0.317
+   ],
+   [
+    "mixte_gros",
+    null,
+    6.95,
+    0.151
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-29",
+  "matchs": 22,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.53,
+    0.562
    ],
    [
     "equilibre",
@@ -234,51 +185,106 @@
    [
     "gros",
     false,
-    13.54,
-    0.054
+    11.07,
+    0.072
+   ],
+   [
+    "buts",
+    null,
+    2.95,
+    0.356
    ],
    [
     "mixte",
     null,
-    3.15,
-    0.333
+    2.67,
+    0.394
+   ],
+   [
+    "mixte_gros",
+    null,
+    8.25,
+    0.127
    ]
   ]
  },
  {
   "jour": "2026-10-30",
-  "matchs": 5,
+  "matchs": 11,
   "value_bets": 0,
   "combines": [
    [
     "prudent",
     false,
-    1.94,
-    0.456
+    1.87,
+    0.472
    ],
    [
     "equilibre",
     false,
-    3.14,
-    0.277
+    2.95,
+    0.295
    ],
    [
     "gros",
     false,
-    6.28,
-    0.126
+    16.83,
+    0.048
    ],
    [
     "buts",
     null,
-    4.15,
-    0.253
+    3.6,
+    0.292
    ],
    [
     "mixte",
     null,
-    4.14,
-    0.253
+    3.6,
+    0.292
+   ]
+  ]
+ },
+ {
+  "jour": "2026-10-31",
+  "matchs": 59,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.23,
+    0.717
+   ],
+   [
+    "equilibre",
+    false,
+    4.0,
+    0.221
+   ],
+   [
+    "gros",
+    false,
+    15.24,
+    0.056
+   ],
+   [
+    "buts",
+    null,
+    3.05,
+    0.344
+   ],
+   [
+    "mixte",
+    null,
+    2.5,
+    0.419
+   ],
+   [
+    "mixte_gros",
+    null,
+    8.48,
+    0.124
    ]
   ]
  }
