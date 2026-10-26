@@ -462,8 +462,8 @@
   "proba": 0.229,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401878767",
@@ -473,7 +473,10 @@
     "exterieur": "Tottenham Hotspur",
     "pari": "Victoire Chelsea",
     "court": "1",
-    "cote": 1.952
+    "cote": 1.952,
+    "res": "2",
+    "score": "0-2",
+    "ok": false
    },
    {
     "id": "espn-401880202",
@@ -483,7 +486,10 @@
     "exterieur": "West Bromwich Albion",
     "pari": "Victoire West Bromwich Albion",
     "court": "2",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    }
   ]
  },
@@ -516,6 +522,38 @@
     "pari": "Victoire AJ Auxerre",
     "court": "1",
     "cote": 2.1
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-26",
+  "bookmaker": "DraftKings",
+  "cote": 3.83,
+  "proba": 0.2359,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401888265",
+    "sport_key": "soccer_turkey_super_league",
+    "date": "2026-10-26T18:30Z",
+    "domicile": "Galatasaray",
+    "exterieur": "Fenerbahce",
+    "pari": "Victoire Galatasaray",
+    "court": "1",
+    "cote": 2.05
+   },
+   {
+    "id": "espn-401882828",
+    "sport_key": "soccer_spain_la_liga",
+    "date": "2026-10-26T20:00Z",
+    "domicile": "Sevilla",
+    "exterieur": "Osasuna",
+    "pari": "Victoire Sevilla",
+    "court": "1",
+    "cote": 1.87
    }
   ]
  }

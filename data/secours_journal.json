@@ -1,7 +1,7 @@
 {
  "eng.1": {
-  "matchs": 14,
-  "avec_cotes": 14,
+  "matchs": 10,
+  "avec_cotes": 10,
   "erreur": null,
   "exemple": null
  },
@@ -24,86 +24,86 @@
   "exemple": null
  },
  "sco.1": {
-  "matchs": 12,
-  "avec_cotes": 11,
-  "erreur": null,
-  "exemple": null
- },
- "ger.1": {
-  "matchs": 11,
-  "avec_cotes": 11,
-  "erreur": null,
-  "exemple": null
- },
- "ger.2": {
-  "matchs": 12,
-  "avec_cotes": 4,
-  "erreur": null,
-  "exemple": null
- },
- "ita.1": {
-  "matchs": 23,
-  "avec_cotes": 14,
-  "erreur": null,
-  "exemple": null
- },
- "ita.2": {
-  "matchs": 22,
+  "matchs": 10,
   "avec_cotes": 9,
   "erreur": null,
   "exemple": null
  },
+ "ger.1": {
+  "matchs": 9,
+  "avec_cotes": 9,
+  "erreur": null,
+  "exemple": null
+ },
+ "ger.2": {
+  "matchs": 9,
+  "avec_cotes": 9,
+  "erreur": null,
+  "exemple": null
+ },
+ "ita.1": {
+  "matchs": 20,
+  "avec_cotes": 20,
+  "erreur": null,
+  "exemple": null
+ },
+ "ita.2": {
+  "matchs": 20,
+  "avec_cotes": 10,
+  "erreur": null,
+  "exemple": null
+ },
  "esp.1": {
-  "matchs": 14,
-  "avec_cotes": 14,
+  "matchs": 11,
+  "avec_cotes": 10,
   "erreur": null,
   "exemple": null
  },
  "esp.2": {
-  "matchs": 13,
-  "avec_cotes": 7,
-  "erreur": null,
-  "exemple": null
- },
- "fra.1": {
-  "matchs": 16,
-  "avec_cotes": 16,
-  "erreur": null,
-  "exemple": null
- },
- "fra.2": {
-  "matchs": 10,
-  "avec_cotes": 2,
-  "erreur": null,
-  "exemple": null
- },
- "ned.1": {
-  "matchs": 14,
-  "avec_cotes": 6,
-  "erreur": null,
-  "exemple": null
- },
- "bel.1": {
-  "matchs": 13,
-  "avec_cotes": 4,
-  "erreur": null,
-  "exemple": null
- },
- "por.1": {
   "matchs": 12,
   "avec_cotes": 5,
   "erreur": null,
   "exemple": null
  },
+ "fra.1": {
+  "matchs": 10,
+  "avec_cotes": 10,
+  "erreur": null,
+  "exemple": null
+ },
+ "fra.2": {
+  "matchs": 11,
+  "avec_cotes": 2,
+  "erreur": null,
+  "exemple": null
+ },
+ "ned.1": {
+  "matchs": 9,
+  "avec_cotes": 9,
+  "erreur": null,
+  "exemple": null
+ },
+ "bel.1": {
+  "matchs": 9,
+  "avec_cotes": 7,
+  "erreur": null,
+  "exemple": null
+ },
+ "por.1": {
+  "matchs": 10,
+  "avec_cotes": 6,
+  "erreur": null,
+  "exemple": null
+ },
  "tur.1": {
-  "matchs": 13,
-  "avec_cotes": 4,
+  "matchs": 12,
+  "avec_cotes": 5,
   "erreur": null,
   "exemple": null
  },
  "gre.1": {
-  "matchs": 9,
-  "avec_cotes": 4,
+  "matchs": 7,
+  "avec_cotes": 5,
   "erreur": null,
   "exemple": null
  },
@@ -126,56 +126,56 @@
   "exemple": null
  },
  "bra.1": {
-  "matchs": 12,
+  "matchs": 13,
   "avec_cotes": 8,
   "erreur": null,
   "exemple": null
  },
  "arg.1": {
-  "matchs": 19,
-  "avec_cotes": 8,
+  "matchs": 18,
+  "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  },
  "usa.1": {
-  "matchs": 30,
-  "avec_cotes": 15,
+  "matchs": 29,
+  "avec_cotes": 14,
   "erreur": null,
   "exemple": null
  },
  "jpn.1": {
-  "matchs": 15,
-  "avec_cotes": 9,
+  "matchs": 10,
+  "avec_cotes": 10,
   "erreur": null,
   "exemple": null
  },
  "mex.1": {
-  "matchs": 14,
-  "avec_cotes": 5,
+  "matchs": 10,
+  "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  },
  "aut.1": {
-  "matchs": 8,
-  "avec_cotes": 3,
+  "matchs": 6,
+  "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  },
  "den.1": {
-  "matchs": 10,
+  "matchs": 7,
   "avec_cotes": 4,
   "erreur": null,
   "exemple": null
  },
  "nor.1": {
-  "matchs": 14,
+  "matchs": 8,
   "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  },
  "swe.1": {
   "matchs": 15,
-  "avec_cotes": 6,
+  "avec_cotes": 8,
   "erreur": null,
   "exemple": null
  },
@@ -192,8 +192,8 @@
   "exemple": null
  },
  "aus.1": {
-  "matchs": 7,
-  "avec_cotes": 2,
+  "matchs": 6,
+  "avec_cotes": 6,
   "erreur": null,
   "exemple": null
  }
