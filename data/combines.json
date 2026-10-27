@@ -500,8 +500,8 @@
   "proba": 0.2178,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401876425",
@@ -511,7 +511,10 @@
     "exterieur": "Lille",
     "pari": "Victoire AS Monaco",
     "court": "1",
-    "cote": 2.0
+    "cote": 2.0,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    },
    {
     "id": "espn-401876429",
@@ -521,7 +524,10 @@
     "exterieur": "Le Mans",
     "pari": "Victoire AJ Auxerre",
     "court": "1",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    }
   ]
  },
@@ -554,6 +560,38 @@
     "pari": "Victoire Sevilla",
     "court": "1",
     "cote": 1.87
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-27",
+  "bookmaker": "DraftKings",
+  "cote": 4.3,
+  "proba": 0.2087,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401841642",
+    "sport_key": "soccer_argentina_primera_division",
+    "date": "2026-10-27T22:00Z",
+    "domicile": "Argentinos Juniors",
+    "exterieur": "Independiente Rivadavia",
+    "pari": "Victoire Argentinos Juniors",
+    "court": "1",
+    "cote": 2.1
+   },
+   {
+    "id": "espn-401881347",
+    "sport_key": "soccer_england_league2",
+    "date": "2026-10-27T19:45Z",
+    "domicile": "Barnet",
+    "exterieur": "York City",
+    "pari": "Victoire Barnet",
+    "court": "1",
+    "cote": 2.05
    }
   ]
  }
