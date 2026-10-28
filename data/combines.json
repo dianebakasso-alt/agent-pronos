@@ -538,8 +538,8 @@
   "proba": 0.2359,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 28.3,
   "jambes": [
    {
     "id": "espn-401888265",
@@ -549,7 +549,10 @@
     "exterieur": "Fenerbahce",
     "pari": "Victoire Galatasaray",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "espn-401882828",
@@ -559,7 +562,10 @@
     "exterieur": "Osasuna",
     "pari": "Victoire Sevilla",
     "court": "1",
-    "cote": 1.87
+    "cote": 1.87,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    }
   ]
  },
@@ -592,6 +598,38 @@
     "pari": "Victoire Barnet",
     "court": "1",
     "cote": 2.05
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-28",
+  "bookmaker": "DraftKings",
+  "cote": 3.9,
+  "proba": 0.2299,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401842860",
+    "sport_key": "soccer_sweden_allsvenskan",
+    "date": "2026-10-28T18:00Z",
+    "domicile": "IFK Göteborg",
+    "exterieur": "Djurgården",
+    "pari": "Victoire Djurgården",
+    "court": "2",
+    "cote": 2.0
+   },
+   {
+    "id": "espn-401878354",
+    "sport_key": "soccer_spl",
+    "date": "2026-10-28T19:45Z",
+    "domicile": "Dundee",
+    "exterieur": "Kilmarnock",
+    "pari": "Victoire Dundee",
+    "court": "1",
+    "cote": 1.952
    }
   ]
  }
