@@ -1,12 +1,8 @@
 {
  "ligues_ok": [
   "soccer_italy_serie_a",
-  "soccer_italy_serie_b",
   "soccer_sweden_allsvenskan",
-  "soccer_spl",
   "soccer_brazil_campeonato",
-  "soccer_usa_mls",
-  "soccer_mexico_ligamx",
   "soccer_turkey_super_league",
   "soccer_germany_bundesliga2",
   "soccer_france_ligue_one",
@@ -21,21 +17,25 @@
   "soccer_spain_la_liga",
   "soccer_portugal_primeira_liga",
   "soccer_argentina_primera_division",
+  "soccer_mexico_ligamx",
   "soccer_japan_j_league",
   "soccer_epl",
   "soccer_england_league1",
   "soccer_spain_segunda_division",
+  "soccer_italy_serie_b",
+  "soccer_spl",
   "soccer_netherlands_eredivisie",
-  "soccer_greece_super_league"
+  "soccer_greece_super_league",
+  "soccer_usa_mls"
  ],
  "ligues_ko": [
   "soccer_saudi_arabia_pro_league",
   "soccer_australia_aleague",
-  "soccer_uefa_champs_league"
+  "soccer_uefa_champs_league",
+  "soccer_uefa_europa_league"
  ],
- "equipes_trouvees": 500,
+ "equipes_trouvees": 465,
  "equipes_manquees": [
-  "soccer_usa_mls: Red Bull New York",
   "soccer_france_ligue_one: Stade Rennais",
   "soccer_portugal_primeira_liga: Sporting CP",
   "soccer_spain_segunda_division: Real Sociedad II",

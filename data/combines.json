@@ -576,8 +576,8 @@
   "proba": 0.2087,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 33.0,
   "jambes": [
    {
     "id": "espn-401841642",
@@ -587,7 +587,10 @@
     "exterieur": "Independiente Rivadavia",
     "pari": "Victoire Argentinos Juniors",
     "court": "1",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "espn-401881347",
@@ -597,7 +600,10 @@
     "exterieur": "York City",
     "pari": "Victoire Barnet",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
    }
   ]
  },
@@ -630,6 +636,38 @@
     "pari": "Victoire Dundee",
     "court": "1",
     "cote": 1.952
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-29",
+  "bookmaker": "DraftKings",
+  "cote": 1.81,
+  "proba": 0.4965,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401842861",
+    "sport_key": "soccer_sweden_allsvenskan",
+    "date": "2026-10-29T17:30Z",
+    "domicile": "Hammarby IF",
+    "exterieur": "IK Sirius",
+    "pari": "Victoire Hammarby IF",
+    "court": "1",
+    "cote": 1.465
+   },
+   {
+    "id": "espn-401900881",
+    "sport_key": "soccer_saudi_arabia_pro_league",
+    "date": "2026-10-29T18:00Z",
+    "domicile": "Al Nassr",
+    "exterieur": "Al Kholood",
+    "pari": "Victoire Al Nassr",
+    "court": "1",
+    "cote": 1.235
    }
   ]
  }
