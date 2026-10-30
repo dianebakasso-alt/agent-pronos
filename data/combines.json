@@ -614,8 +614,8 @@
   "proba": 0.2299,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401842860",
@@ -625,7 +625,10 @@
     "exterieur": "Djurgården",
     "pari": "Victoire Djurgården",
     "court": "2",
-    "cote": 2.0
+    "cote": 2.0,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    },
    {
     "id": "espn-401878354",
@@ -635,7 +638,10 @@
     "exterieur": "Kilmarnock",
     "pari": "Victoire Dundee",
     "court": "1",
-    "cote": 1.952
+    "cote": 1.952,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
    }
   ]
  },
@@ -668,6 +674,38 @@
     "pari": "Victoire Al Nassr",
     "court": "1",
     "cote": 1.235
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-30",
+  "bookmaker": "DraftKings",
+  "cote": 3.71,
+  "proba": 0.2422,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401876705",
+    "sport_key": "soccer_france_ligue_two",
+    "date": "2026-10-30T19:00Z",
+    "domicile": "Metz",
+    "exterieur": "Pau",
+    "pari": "Victoire Metz",
+    "court": "1",
+    "cote": 2.1
+   },
+   {
+    "id": "espn-401881283",
+    "sport_key": "soccer_england_league2",
+    "date": "2026-10-30T19:45Z",
+    "domicile": "Newport County",
+    "exterieur": "Chesterfield",
+    "pari": "Victoire Chesterfield",
+    "court": "2",
+    "cote": 1.769
    }
   ]
  }
