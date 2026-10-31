@@ -652,8 +652,8 @@
   "proba": 0.4965,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 8.1,
   "jambes": [
    {
     "id": "espn-401842861",
@@ -663,7 +663,10 @@
     "exterieur": "IK Sirius",
     "pari": "Victoire Hammarby IF",
     "court": "1",
-    "cote": 1.465
+    "cote": 1.465,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "espn-401900881",
@@ -673,7 +676,10 @@
     "exterieur": "Al Kholood",
     "pari": "Victoire Al Nassr",
     "court": "1",
-    "cote": 1.235
+    "cote": 1.235,
+    "res": "1",
+    "score": "5-3",
+    "ok": true
    }
   ]
  },
@@ -706,6 +712,38 @@
     "pari": "Victoire Chesterfield",
     "court": "2",
     "cote": 1.769
+   }
+  ]
+ },
+ {
+  "jour": "2026-10-31",
+  "bookmaker": "DraftKings",
+  "cote": 4.1,
+  "proba": 0.2222,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "espn-401879248",
+    "sport_key": "soccer_epl",
+    "date": "2026-10-31T12:30Z",
+    "domicile": "Chelsea",
+    "exterieur": "Manchester United",
+    "pari": "Victoire Chelsea",
+    "court": "1",
+    "cote": 2.1
+   },
+   {
+    "id": "espn-401880189",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-10-31T15:00Z",
+    "domicile": "Southampton",
+    "exterieur": "Queens Park Rangers",
+    "pari": "Victoire Southampton",
+    "court": "1",
+    "cote": 1.952
    }
   ]
  }
