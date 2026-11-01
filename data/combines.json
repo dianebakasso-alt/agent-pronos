@@ -690,8 +690,8 @@
   "proba": 0.2422,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "espn-401876705",
@@ -701,7 +701,10 @@
     "exterieur": "Pau",
     "pari": "Victoire Metz",
     "court": "1",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "2",
+    "score": "1-3",
+    "ok": false
    },
    {
     "id": "espn-401881283",
@@ -711,7 +714,10 @@
     "exterieur": "Chesterfield",
     "pari": "Victoire Chesterfield",
     "court": "2",
-    "cote": 1.769
+    "cote": 1.769,
+    "res": "1",
+    "score": "4-1",
+    "ok": false
    }
   ]
  },
@@ -744,6 +750,38 @@
     "pari": "Victoire Southampton",
     "court": "1",
     "cote": 1.952
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-01",
+  "bookmaker": "Winamax (FR)",
+  "cote": 2.72,
+  "proba": 0.3337,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "3757bcd765c7da1538cdf2785e784038",
+    "sport_key": "soccer_spain_la_liga",
+    "date": "2026-11-01T20:00:00Z",
+    "domicile": "Athletic Bilbao",
+    "exterieur": "Real Sociedad",
+    "pari": "Victoire Athletic Bilbao",
+    "court": "1",
+    "cote": 1.94
+   },
+   {
+    "id": "961df571fad52d969150e9ced52b16f7",
+    "sport_key": "soccer_france_ligue_one",
+    "date": "2026-11-01T16:15:00Z",
+    "domicile": "Lyon",
+    "exterieur": "Angers",
+    "pari": "Victoire Lyon",
+    "court": "1",
+    "cote": 1.4
    }
   ]
  }
