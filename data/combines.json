@@ -728,8 +728,8 @@
   "proba": 0.2222,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 31.0,
   "jambes": [
    {
     "id": "espn-401879248",
@@ -739,7 +739,10 @@
     "exterieur": "Manchester United",
     "pari": "Victoire Chelsea",
     "court": "1",
-    "cote": 2.1
+    "cote": 2.1,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "espn-401880189",
@@ -749,7 +752,10 @@
     "exterieur": "Queens Park Rangers",
     "pari": "Victoire Southampton",
     "court": "1",
-    "cote": 1.952
+    "cote": 1.952,
+    "res": "1",
+    "score": "4-1",
+    "ok": true
    }
   ]
  },
@@ -782,6 +788,38 @@
     "pari": "Victoire Lyon",
     "court": "1",
     "cote": 1.4
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-02",
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.32,
+  "proba": 0.2627,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "7a2cd2744fdf15ea675423a6c23df46b",
+    "sport_key": "soccer_spain_la_liga",
+    "date": "2026-11-02T20:00:00Z",
+    "domicile": "Deportivo La Coruña",
+    "exterieur": "CA Osasuna",
+    "pari": "Victoire Deportivo La Coruña",
+    "court": "1",
+    "cote": 2.05
+   },
+   {
+    "id": "bc801530585f54cdc58569622bc3cfc5",
+    "sport_key": "soccer_france_ligue_two",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Stade de Reims",
+    "exterieur": "Sochaux",
+    "pari": "Victoire Stade de Reims",
+    "court": "1",
+    "cote": 1.62
    }
   ]
  }

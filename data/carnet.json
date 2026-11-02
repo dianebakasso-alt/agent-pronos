@@ -29184,7 +29184,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false
    }
   ],
   "cote": 2.27,
@@ -29192,8 +29194,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c0c32575c239ac72913af247ce084ea2",
@@ -29216,7 +29218,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-9",
+    "ok": true
    }
   ],
   "cote": 1.44,
@@ -29224,8 +29228,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.4
  },
  {
   "cle": "match:d7d5552edc5c81a14b6933537ba2043c",
@@ -29248,7 +29252,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "4-2",
+    "ok": false
    }
   ],
   "cote": 2.08,
@@ -29256,8 +29262,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:448a1083448ea9dff55bfebf15ff20b4",
@@ -29278,7 +29284,9 @@
      "ligue": "fra.1",
      "id": "401876414"
     },
-    "traits": []
+    "traits": [],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.79,
@@ -29286,8 +29294,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.9
  },
  {
   "cle": "match:3f9f4bc9a19bf36dcb74be2f29610d55",
@@ -29310,7 +29318,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.44,
@@ -29318,8 +29328,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.4
  },
  {
   "cle": "match:b7b781db85506536dce5e7ce59a59863",
@@ -29340,7 +29350,9 @@
      "ligue": "ita.1",
      "id": "401874782"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.92,
@@ -29348,8 +29360,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.2
  },
  {
   "cle": "match:60eaeb599578cd5c951f917c4fef06ff",
@@ -29372,7 +29384,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false
    }
   ],
   "cote": 2.5,
@@ -29380,8 +29394,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:6c520ed959578ca3aebe351ee3765d53",
@@ -29406,7 +29420,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 1.18,
@@ -29414,8 +29430,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.8
  },
  {
   "cle": "match:fd5c6a92f2448c1cfe7a2d9b8075172b",
@@ -29436,7 +29452,9 @@
      "ligue": "por.1",
      "id": "401885410"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.55,
@@ -29444,8 +29462,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.5
  },
  {
   "cle": "match:961d9c9f07b1f911e211cd6a750cddba",
@@ -29466,7 +29484,9 @@
      "ligue": "ned.1",
      "id": "401875557"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false
    }
   ],
   "cote": 1.68,
@@ -29474,8 +29494,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:cf3a2e2b4a4e9815d1d0be8dcef916da",
@@ -29496,7 +29516,9 @@
      "ligue": "fra.1",
      "id": "401876415"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 2.4,
@@ -29504,8 +29526,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.0
  },
  {
   "cle": "match:961df571fad52d969150e9ced52b16f7",
@@ -29528,7 +29550,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.4,
@@ -29536,8 +29560,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.0
  },
  {
   "cle": "match:6a3819cdbe2ba2fe5a3d8f9b4b459965",
@@ -29560,7 +29584,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.42,
@@ -29568,8 +29594,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.2
  },
  {
   "cle": "match:1eb5e1a69ae9dd9edd92fde344308a4e",
@@ -29590,7 +29616,9 @@
      "ligue": "ger.1",
      "id": "401884752"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 1.49,
@@ -29598,8 +29626,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.9
  },
  {
   "cle": "match:940b9e69539033539039f9af694e2925",
@@ -29622,7 +29650,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 2.42,
@@ -29630,8 +29660,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.2
  },
  {
   "cle": "match:5262991e389930615bec34b642428c93",
@@ -29652,7 +29682,9 @@
      "ligue": "esp.1",
      "id": "401882823"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.25,
@@ -29660,8 +29692,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:ce5c2cbdf5db2a13f40f528d3e5044b9",
@@ -29682,7 +29714,9 @@
      "ligue": "por.1",
      "id": "401885411"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.78,
@@ -29690,8 +29724,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.8
  },
  {
   "cle": "match:6bf5102547eb3f3eb74023133e27d2d3",
@@ -29714,7 +29748,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.12,
@@ -29722,8 +29758,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.2
  },
  {
   "cle": "match:df1e1589c51bbcac432125567d1f7c58",
@@ -29744,7 +29780,9 @@
      "ligue": "fra.1",
      "id": "401876417"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.83,
@@ -29752,8 +29790,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.3
  },
  {
   "cle": "match:aeadf1388a1075328536501576b3d550",
@@ -29774,7 +29812,9 @@
      "ligue": "ita.1",
      "id": "401874949"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.14,
@@ -29782,8 +29822,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.4
  },
  {
   "cle": "match:3757bcd765c7da1538cdf2785e784038",
@@ -29804,7 +29844,9 @@
      "ligue": "esp.1",
      "id": "401882826"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.94,
@@ -29812,8 +29854,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.4
  },
  {
   "cle": "match:12fa9f636dbb126cfd4118fa8cdc8fad",
@@ -29834,7 +29876,9 @@
      "ligue": "por.1",
      "id": "401885409"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.6,
@@ -29842,8 +29886,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.0
  },
  {
   "cle": "prudent:2026-11-01",
@@ -29868,7 +29912,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    },
    {
     "id": "961df571fad52d969150e9ced52b16f7",
@@ -29887,7 +29933,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.63,
@@ -29895,8 +29943,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.3
  },
  {
   "cle": "equilibre:2026-11-01",
@@ -29917,7 +29965,9 @@
      "ligue": "esp.1",
      "id": "401882826"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "961df571fad52d969150e9ced52b16f7",
@@ -29935,7 +29985,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.72,
@@ -29943,8 +29995,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 17.2
  },
  {
   "cle": "gros:2026-11-01",
@@ -29965,7 +30017,9 @@
      "ligue": "esp.1",
      "id": "401882821"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-1",
+    "ok": false
    },
    {
     "id": "940b9e69539033539039f9af694e2925",
@@ -29981,7 +30035,9 @@
      "ligue": "ita.1",
      "id": "401874968"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-2",
+    "ok": false
    },
    {
     "id": "3757bcd765c7da1538cdf2785e784038",
@@ -29997,7 +30053,9 @@
      "ligue": "esp.1",
      "id": "401882826"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 16.6,
@@ -30005,8 +30063,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-01",
@@ -30029,7 +30087,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false
    },
    {
     "id": "ddcc9a51a2d7368e055d1abefacdb74e",
@@ -30047,7 +30107,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false
    },
    {
     "id": "1eb5e1a69ae9dd9edd92fde344308a4e",
@@ -30065,7 +30127,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 3.46,
@@ -30073,8 +30137,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-01",
@@ -30099,7 +30163,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    },
    {
     "id": "940b9e69539033539039f9af694e2925",
@@ -30117,7 +30183,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false
    },
    {
     "id": "ddcc9a51a2d7368e055d1abefacdb74e",
@@ -30135,7 +30203,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false
    }
   ],
   "cote": 2.82,
@@ -30143,8 +30213,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-01",
@@ -30165,7 +30235,9 @@
      "ligue": "ger.1",
      "id": "401884752"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "fd5c6a92f2448c1cfe7a2d9b8075172b",
@@ -30181,7 +30253,9 @@
      "ligue": "por.1",
      "id": "401885410"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "940b9e69539033539039f9af694e2925",
@@ -30199,7 +30273,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false
    },
    {
     "id": "ddcc9a51a2d7368e055d1abefacdb74e",
@@ -30217,7 +30293,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false
    },
    {
     "id": "6bf5102547eb3f3eb74023133e27d2d3",
@@ -30235,7 +30313,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 9.22,
@@ -30243,8 +30323,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "jour:2026-11-01",
@@ -30267,7 +30347,9 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "3f9f4bc9a19bf36dcb74be2f29610d55",
@@ -30285,11 +30367,631 @@
     },
     "traits": [
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.02,
   "proba": 0.4457,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "gagné",
+  "gain": 10.2
+ },
+ {
+  "cle": "match:66608b64d462d1d3deabe573c8456d86",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "66608b64d462d1d3deabe573c8456d86",
+    "date": "2026-11-02T17:30:00Z",
+    "domicile": "Sassuolo",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Victoire Fiorentina",
+    "cote": 2.27,
+    "proba": 0.4012,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874963"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.27,
+  "proba": 0.4012,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:5118966f484adf525196d196a61bc5d6",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "5118966f484adf525196d196a61bc5d6",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Lorient",
+    "exterieur": "Brest",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Lorient",
+    "cote": 2.35,
+    "proba": 0.3927,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876419"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.3927,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:2e488800d615a94e5377c195810303c0",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "2e488800d615a94e5377c195810303c0",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Parma",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.47,
+    "proba": 0.64,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874971"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.47,
+  "proba": 0.64,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b199e41aa8f4e383ecbeedbd329290e9",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b199e41aa8f4e383ecbeedbd329290e9",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Red Star",
+    "exterieur": "Nancy",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Red Star",
+    "cote": 2.3,
+    "proba": 0.4025,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876703"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.3,
+  "proba": 0.4025,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bc801530585f54cdc58569622bc3cfc5",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bc801530585f54cdc58569622bc3cfc5",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Stade de Reims",
+    "exterieur": "Sochaux",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Stade de Reims",
+    "cote": 1.62,
+    "proba": 0.5791,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876702"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.62,
+  "proba": 0.5791,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0f552d9c6990c69474f50ff2fb54e9a3",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0f552d9c6990c69474f50ff2fb54e9a3",
+    "date": "2026-11-02T20:00:00Z",
+    "domicile": "Newcastle United",
+    "exterieur": "Everton",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.06,
+    "proba": 0.4487,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878762"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.06,
+  "proba": 0.4487,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:7a2cd2744fdf15ea675423a6c23df46b",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "7a2cd2744fdf15ea675423a6c23df46b",
+    "date": "2026-11-02T20:00:00Z",
+    "domicile": "Deportivo La Coruña",
+    "exterieur": "CA Osasuna",
+    "championnat": "Liga",
+    "pari": "Victoire Deportivo La Coruña",
+    "cote": 2.07,
+    "proba": 0.4536,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882824"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.07,
+  "proba": 0.4536,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cdf1a22ce6d16f0903216518d909e02a",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cdf1a22ce6d16f0903216518d909e02a",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Benfica",
+    "cote": 1.09,
+    "proba": 0.8576,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885403"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.09,
+  "proba": 0.8576,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:97ce048d06fc45fc59e114548540828f",
+  "jour": "2026-11-02",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "97ce048d06fc45fc59e114548540828f",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Gil Vicente",
+    "exterieur": "Vitória SC",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Vitória SC",
+    "cote": 2.4,
+    "proba": 0.3646,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885407"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3646,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-02",
+  "jour": "2026-11-02",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "cdf1a22ce6d16f0903216518d909e02a",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Benfica",
+    "cote": 1.09,
+    "proba": 0.8576,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885403"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "2e488800d615a94e5377c195810303c0",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Parma",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.47,
+    "proba": 0.64,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874971"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.6,
+  "proba": 0.5488,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-02",
+  "jour": "2026-11-02",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "7a2cd2744fdf15ea675423a6c23df46b",
+    "date": "2026-11-02T20:00:00Z",
+    "domicile": "Deportivo La Coruña",
+    "exterieur": "CA Osasuna",
+    "championnat": "Liga",
+    "pari": "Victoire Deportivo La Coruña",
+    "cote": 2.05,
+    "proba": 0.4536,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882824"
+    },
+    "traits": []
+   },
+   {
+    "id": "bc801530585f54cdc58569622bc3cfc5",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Stade de Reims",
+    "exterieur": "Sochaux",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Stade de Reims",
+    "cote": 1.62,
+    "proba": 0.5791,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876702"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 3.32,
+  "proba": 0.2627,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-02",
+  "jour": "2026-11-02",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "97ce048d06fc45fc59e114548540828f",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Gil Vicente",
+    "exterieur": "Vitória SC",
+    "championnat": "Liga Portugal",
+    "pari": "Match nul",
+    "cote": 2.95,
+    "proba": 0.3095,
+    "court": "N",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885407"
+    },
+    "traits": []
+   },
+   {
+    "id": "0f552d9c6990c69474f50ff2fb54e9a3",
+    "date": "2026-11-02T20:00:00Z",
+    "domicile": "Newcastle United",
+    "exterieur": "Everton",
+    "championnat": "Premier League",
+    "pari": "Victoire Newcastle United",
+    "cote": 2.05,
+    "proba": 0.4487,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878762"
+    },
+    "traits": []
+   },
+   {
+    "id": "66608b64d462d1d3deabe573c8456d86",
+    "date": "2026-11-02T17:30:00Z",
+    "domicile": "Sassuolo",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Victoire Sassuolo",
+    "cote": 2.65,
+    "proba": 0.3344,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874963"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 16.03,
+  "proba": 0.0464,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-02",
+  "jour": "2026-11-02",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "cdf1a22ce6d16f0903216518d909e02a",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7893,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885403"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "97ce048d06fc45fc59e114548540828f",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Gil Vicente",
+    "exterieur": "Vitória SC",
+    "championnat": "Liga Portugal",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6309,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885407"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "2e488800d615a94e5377c195810303c0",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Parma",
+    "championnat": "Serie A",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6248,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874971"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.37,
+  "proba": 0.3111,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-02",
+  "jour": "2026-11-02",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "2e488800d615a94e5377c195810303c0",
+    "date": "2026-11-02T19:45:00Z",
+    "domicile": "Atalanta BC",
+    "exterieur": "Parma",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.47,
+    "proba": 0.64,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874971"
+    },
+    "traits": []
+   },
+   {
+    "id": "cdf1a22ce6d16f0903216518d909e02a",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Alverca",
+    "championnat": "Liga Portugal",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7893,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885403"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "97ce048d06fc45fc59e114548540828f",
+    "date": "2026-11-02T20:15:00Z",
+    "domicile": "Gil Vicente",
+    "exterieur": "Vitória SC",
+    "championnat": "Liga Portugal",
+    "pari": "Moins de 2,5 buts",
+    "cote": null,
+    "proba": 0.6309,
+    "marche": "moins25",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885407"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 3.29,
+  "proba": 0.3187,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "semaine:2026-45",
+  "jour": "2026-11-02",
+  "cat": "semaine",
+  "jambes": [
+   {
+    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
+    "date": "2026-11-07T16:15:00Z",
+    "domicile": "Auxerre",
+    "exterieur": "Paris FC",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Paris FC",
+    "cote": 1.75,
+    "proba": 0.5379,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876411"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "813cc4970b2dcab8457490a332fb5a6c",
+    "date": "2026-11-07T17:00:00Z",
+    "domicile": "Parma",
+    "exterieur": "Bologna",
+    "championnat": "Serie A",
+    "pari": "Victoire Bologna",
+    "cote": 1.82,
+    "proba": 0.5202,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874974"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 3.19,
+  "proba": 0.2798,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
