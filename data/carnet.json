@@ -30401,7 +30401,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "2-4",
+    "ok": true
    }
   ],
   "cote": 2.27,
@@ -30409,8 +30411,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.7
  },
  {
   "cle": "match:5118966f484adf525196d196a61bc5d6",
@@ -30431,7 +30433,9 @@
      "ligue": "fra.1",
      "id": "401876419"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false
    }
   ],
   "cote": 2.35,
@@ -30439,8 +30443,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:2e488800d615a94e5377c195810303c0",
@@ -30461,7 +30465,9 @@
      "ligue": "ita.1",
      "id": "401874971"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    }
   ],
   "cote": 1.47,
@@ -30469,8 +30475,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b199e41aa8f4e383ecbeedbd329290e9",
@@ -30491,7 +30497,9 @@
      "ligue": "fra.2",
      "id": "401876703"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-4",
+    "ok": false
    }
   ],
   "cote": 2.3,
@@ -30499,8 +30507,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:bc801530585f54cdc58569622bc3cfc5",
@@ -30521,7 +30529,9 @@
      "ligue": "fra.2",
      "id": "401876702"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.62,
@@ -30529,8 +30539,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.2
  },
  {
   "cle": "match:0f552d9c6990c69474f50ff2fb54e9a3",
@@ -30551,7 +30561,9 @@
      "ligue": "eng.1",
      "id": "401878762"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    }
   ],
   "cote": 2.06,
@@ -30559,8 +30571,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:7a2cd2744fdf15ea675423a6c23df46b",
@@ -30581,7 +30593,9 @@
      "ligue": "esp.1",
      "id": "401882824"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.07,
@@ -30589,8 +30603,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.7
  },
  {
   "cle": "match:cdf1a22ce6d16f0903216518d909e02a",
@@ -30614,7 +30628,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.09,
@@ -30622,8 +30638,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 0.9
  },
  {
   "cle": "match:97ce048d06fc45fc59e114548540828f",
@@ -30646,7 +30662,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false
    }
   ],
   "cote": 2.4,
@@ -30654,8 +30672,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-02",
@@ -30679,7 +30697,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "2e488800d615a94e5377c195810303c0",
@@ -30695,7 +30715,9 @@
      "ligue": "ita.1",
      "id": "401874971"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    }
   ],
   "cote": 1.6,
@@ -30703,8 +30725,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-11-02",
@@ -30725,7 +30747,9 @@
      "ligue": "esp.1",
      "id": "401882824"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "bc801530585f54cdc58569622bc3cfc5",
@@ -30741,7 +30765,9 @@
      "ligue": "fra.2",
      "id": "401876702"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 3.32,
@@ -30749,8 +30775,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 23.2
  },
  {
   "cle": "gros:2026-11-02",
@@ -30771,7 +30797,9 @@
      "ligue": "por.1",
      "id": "401885407"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-0",
+    "ok": true
    },
    {
     "id": "0f552d9c6990c69474f50ff2fb54e9a3",
@@ -30787,7 +30815,9 @@
      "ligue": "eng.1",
      "id": "401878762"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-1",
+    "ok": false
    },
    {
     "id": "66608b64d462d1d3deabe573c8456d86",
@@ -30803,7 +30833,9 @@
      "ligue": "ita.1",
      "id": "401874963"
     },
-    "traits": []
+    "traits": [],
+    "score": "2-4",
+    "ok": false
    }
   ],
   "cote": 16.03,
@@ -30811,8 +30843,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-02",
@@ -30835,7 +30867,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    },
    {
     "id": "97ce048d06fc45fc59e114548540828f",
@@ -30853,7 +30887,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "0-0",
+    "ok": true
    },
    {
     "id": "2e488800d615a94e5377c195810303c0",
@@ -30871,7 +30907,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 3.37,
@@ -30879,8 +30917,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-02",
@@ -30901,7 +30939,9 @@
      "ligue": "ita.1",
      "id": "401874971"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-3",
+    "ok": false
    },
    {
     "id": "cdf1a22ce6d16f0903216518d909e02a",
@@ -30919,7 +30959,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    },
    {
     "id": "97ce048d06fc45fc59e114548540828f",
@@ -30937,11 +30979,978 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "0-0",
+    "ok": true
    }
   ],
   "cote": 3.29,
   "proba": 0.3187,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:9b8076d3ffa027df6f6cb3189de46706",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9b8076d3ffa027df6f6cb3189de46706",
+    "date": "2026-11-03T17:45:00Z",
+    "domicile": "Galatasaray",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Galatasaray",
+    "cote": 1.95,
+    "proba": 0.4708,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915311"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.95,
+  "proba": 0.4708,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:55e0f74a61f7d72defa7ea0c83532ea5",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "55e0f74a61f7d72defa7ea0c83532ea5",
+    "date": "2026-11-03T17:45:00Z",
+    "domicile": "Shakhtar Donetsk",
+    "exterieur": "Sporting Lisbon",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Sporting Lisbon",
+    "cote": 1.94,
+    "proba": 0.4707,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915310"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.94,
+  "proba": 0.4707,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9469c1977185a1acd0154cc0a3b93331",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9469c1977185a1acd0154cc0a3b93331",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Blackburn Rovers",
+    "exterieur": "Stoke City",
+    "championnat": "Championship",
+    "pari": "Victoire Stoke City",
+    "cote": 2.6,
+    "proba": 0.3564,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880183"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.6,
+  "proba": 0.3564,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:ce065628a1f15d5ea4b46f1fae837753",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "ce065628a1f15d5ea4b46f1fae837753",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Charlton Athletic",
+    "exterieur": "Bolton Wanderers",
+    "championnat": "Championship",
+    "pari": "Victoire Charlton Athletic",
+    "cote": 2.2,
+    "proba": 0.4033,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880174"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4033,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cafeccd566e371032c526c1daf6bca7b",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cafeccd566e371032c526c1daf6bca7b",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Queens Park Rangers",
+    "exterieur": "Burnley",
+    "championnat": "Championship",
+    "pari": "Victoire Queens Park Rangers",
+    "cote": 1.9,
+    "proba": 0.4847,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880179"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.9,
+  "proba": 0.4847,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:fe148f358c99e254a103516534eda646",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "fe148f358c99e254a103516534eda646",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Derby County",
+    "exterieur": "Norwich City",
+    "championnat": "Championship",
+    "pari": "Victoire Norwich City",
+    "cote": 1.94,
+    "proba": 0.4731,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880182"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.94,
+  "proba": 0.4731,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:633a2f32a433aba58b6f088d00fe8b08",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "633a2f32a433aba58b6f088d00fe8b08",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Watford",
+    "exterieur": "Lincoln City",
+    "championnat": "Championship",
+    "pari": "Victoire Lincoln City",
+    "cote": 2.6,
+    "proba": 0.3617,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880178"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.6,
+  "proba": 0.3617,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d0e7ac86c5d75d3a84f482364f366813",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d0e7ac86c5d75d3a84f482364f366813",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Portsmouth",
+    "exterieur": "Swansea City",
+    "championnat": "Championship",
+    "pari": "Victoire Swansea City",
+    "cote": 2.45,
+    "proba": 0.3721,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880181"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.45,
+  "proba": 0.3721,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:35c9b97dba1a8b5d9d03ad42c54c3839",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "35c9b97dba1a8b5d9d03ad42c54c3839",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Preston North End",
+    "exterieur": "Sheffield United",
+    "championnat": "Championship",
+    "pari": "Victoire Sheffield United",
+    "cote": 1.92,
+    "proba": 0.4918,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880180"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.92,
+  "proba": 0.4918,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bc0b6614c9714816038d5a0ff8963144",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bc0b6614c9714816038d5a0ff8963144",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Manchester United",
+    "exterieur": "AS Roma",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Manchester United",
+    "cote": 2.1,
+    "proba": 0.4443,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915308"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4443,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bd680c6ad693dae859030f86e1be2769",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bd680c6ad693dae859030f86e1be2769",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Aston Villa",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.23,
+    "proba": 0.7599,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915387"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.23,
+  "proba": 0.7599,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:61b42fd619617a7a2a3770c2444e8a40",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "61b42fd619617a7a2a3770c2444e8a40",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Bayern Munich",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bayern Munich",
+    "cote": 2.25,
+    "proba": 0.4061,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915386"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.4061,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1a5a84045050d0d7baf1301909d3b465",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1a5a84045050d0d7baf1301909d3b465",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Bodø/Glimt",
+    "exterieur": "Lille",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bodø/Glimt",
+    "cote": 1.63,
+    "proba": 0.5712,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915384"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.63,
+  "proba": 0.5712,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:f6f3cf01c2b20b7f746b5a06097a0569",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "f6f3cf01c2b20b7f746b5a06097a0569",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Feyenoord",
+    "exterieur": "Inter Milan",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.8,
+    "proba": 0.5056,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915307"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.5056,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:adf608a0e9be02eb1d8b0a6f464a12b1",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "adf608a0e9be02eb1d8b0a6f464a12b1",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "LASK",
+    "exterieur": "ŠK Slovan Bratislava",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire LASK",
+    "cote": 1.33,
+    "proba": 0.7066,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915385"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.33,
+  "proba": 0.7066,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a341241606cb5b1b59e425d00be64883",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a341241606cb5b1b59e425d00be64883",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Villarreal",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Paris Saint Germain",
+    "cote": 1.65,
+    "proba": 0.5614,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915309"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.65,
+  "proba": 0.5614,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:adc18acd573bba376b5a42dc2fb78e4d",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "adc18acd573bba376b5a42dc2fb78e4d",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.88,
+    "proba": 0.4994,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880184"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.88,
+  "proba": 0.4994,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:e01ab9f5552d493ee5a76483ad15afe9",
+  "jour": "2026-11-03",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "e01ab9f5552d493ee5a76483ad15afe9",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "West Bromwich Albion",
+    "exterieur": "Southampton",
+    "championnat": "Championship",
+    "pari": "Victoire West Bromwich Albion",
+    "cote": 2.32,
+    "proba": 0.4093,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880177"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.32,
+  "proba": 0.4093,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "bd680c6ad693dae859030f86e1be2769",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Aston Villa",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.23,
+    "proba": 0.7599,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915387"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "adf608a0e9be02eb1d8b0a6f464a12b1",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "LASK",
+    "exterieur": "ŠK Slovan Bratislava",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire LASK",
+    "cote": 1.33,
+    "proba": 0.7066,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915385"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.64,
+  "proba": 0.537,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "35c9b97dba1a8b5d9d03ad42c54c3839",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Preston North End",
+    "exterieur": "Sheffield United",
+    "championnat": "Championship",
+    "pari": "Victoire Sheffield United",
+    "cote": 1.92,
+    "proba": 0.4918,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880180"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "adc18acd573bba376b5a42dc2fb78e4d",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.88,
+    "proba": 0.4994,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880184"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 3.61,
+  "proba": 0.2456,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "adc18acd573bba376b5a42dc2fb78e4d",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.86,
+    "proba": 0.4994,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880184"
+    },
+    "traits": []
+   },
+   {
+    "id": "cafeccd566e371032c526c1daf6bca7b",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Queens Park Rangers",
+    "exterieur": "Burnley",
+    "championnat": "Championship",
+    "pari": "Victoire Queens Park Rangers",
+    "cote": 1.9,
+    "proba": 0.4847,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880179"
+    },
+    "traits": []
+   },
+   {
+    "id": "fe148f358c99e254a103516534eda646",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Derby County",
+    "exterieur": "Norwich City",
+    "championnat": "Championship",
+    "pari": "Victoire Norwich City",
+    "cote": 1.94,
+    "proba": 0.4731,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880182"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "bc0b6614c9714816038d5a0ff8963144",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Manchester United",
+    "exterieur": "AS Roma",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Manchester United",
+    "cote": 2.05,
+    "proba": 0.4443,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915308"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 14.05,
+  "proba": 0.0509,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "adf608a0e9be02eb1d8b0a6f464a12b1",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "LASK",
+    "exterieur": "ŠK Slovan Bratislava",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7324,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915385"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "bd680c6ad693dae859030f86e1be2769",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Aston Villa",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6903,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915387"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "9b8076d3ffa027df6f6cb3189de46706",
+    "date": "2026-11-03T17:45:00Z",
+    "domicile": "Galatasaray",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6833,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915311"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.04,
+  "proba": 0.3455,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "bd680c6ad693dae859030f86e1be2769",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Aston Villa",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.23,
+    "proba": 0.7599,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915387"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "adf608a0e9be02eb1d8b0a6f464a12b1",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "LASK",
+    "exterieur": "ŠK Slovan Bratislava",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7324,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915385"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "9b8076d3ffa027df6f6cb3189de46706",
+    "date": "2026-11-03T17:45:00Z",
+    "domicile": "Galatasaray",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6833,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915311"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.76,
+  "proba": 0.3803,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-03",
+  "jour": "2026-11-03",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "1a5a84045050d0d7baf1301909d3b465",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Bodø/Glimt",
+    "exterieur": "Lille",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bodø/Glimt",
+    "cote": 1.63,
+    "proba": 0.5712,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915384"
+    },
+    "traits": []
+   },
+   {
+    "id": "a341241606cb5b1b59e425d00be64883",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Villarreal",
+    "exterieur": "Paris Saint Germain",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Paris Saint Germain",
+    "cote": 1.65,
+    "proba": 0.5614,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915309"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "adf608a0e9be02eb1d8b0a6f464a12b1",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "LASK",
+    "exterieur": "ŠK Slovan Bratislava",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7324,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915385"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "bd680c6ad693dae859030f86e1be2769",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Aston Villa",
+    "championnat": "Ligue des champions",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6903,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915387"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 6.48,
+  "proba": 0.1621,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -30950,48 +31959,46 @@
  },
  {
   "cle": "semaine:2026-45",
-  "jour": "2026-11-02",
+  "jour": "2026-11-03",
   "cat": "semaine",
   "jambes": [
    {
-    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
-    "date": "2026-11-07T16:15:00Z",
-    "domicile": "Auxerre",
-    "exterieur": "Paris FC",
-    "championnat": "Ligue 1",
-    "pari": "Victoire Paris FC",
-    "cote": 1.75,
-    "proba": 0.5379,
+    "id": "0cfbab01e152f81e34f9014e02c7eb79",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Crystal Palace",
+    "exterieur": "Liverpool",
+    "championnat": "Premier League",
+    "pari": "Victoire Liverpool",
+    "cote": 1.56,
+    "proba": 0.6027,
     "court": "2",
     "espn": {
-     "ligue": "fra.1",
-     "id": "401876411"
+     "ligue": "eng.1",
+     "id": "401879243"
     },
     "traits": [
      "exterieur"
     ]
    },
    {
-    "id": "813cc4970b2dcab8457490a332fb5a6c",
-    "date": "2026-11-07T17:00:00Z",
-    "domicile": "Parma",
-    "exterieur": "Bologna",
-    "championnat": "Serie A",
-    "pari": "Victoire Bologna",
-    "cote": 1.82,
-    "proba": 0.5202,
-    "court": "2",
+    "id": "658bb2b77031ef93a7ae893145b663b3",
+    "date": "2026-11-06T19:00:00Z",
+    "domicile": "Nancy",
+    "exterieur": "Sochaux",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nancy",
+    "cote": 1.68,
+    "proba": 0.5661,
+    "court": "1",
     "espn": {
-     "ligue": "ita.1",
-     "id": "401874974"
+     "ligue": "fra.2",
+     "id": "401876692"
     },
-    "traits": [
-     "exterieur"
-    ]
+    "traits": []
    }
   ],
-  "cote": 3.19,
-  "proba": 0.2798,
+  "cote": 2.62,
+  "proba": 0.3412,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

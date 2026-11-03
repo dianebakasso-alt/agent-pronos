@@ -766,8 +766,8 @@
   "proba": 0.3337,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 17.2,
   "jambes": [
    {
     "id": "3757bcd765c7da1538cdf2785e784038",
@@ -777,7 +777,10 @@
     "exterieur": "Real Sociedad",
     "pari": "Victoire Athletic Bilbao",
     "court": "1",
-    "cote": 1.94
+    "cote": 1.94,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "961df571fad52d969150e9ced52b16f7",
@@ -787,7 +790,10 @@
     "exterieur": "Angers",
     "pari": "Victoire Lyon",
     "court": "1",
-    "cote": 1.4
+    "cote": 1.4,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    }
   ]
  },
@@ -820,6 +826,38 @@
     "pari": "Victoire Stade de Reims",
     "court": "1",
     "cote": 1.62
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-03",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.61,
+  "proba": 0.2456,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "35c9b97dba1a8b5d9d03ad42c54c3839",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-03T19:45:00Z",
+    "domicile": "Preston North End",
+    "exterieur": "Sheffield United",
+    "pari": "Victoire Sheffield United",
+    "court": "2",
+    "cote": 1.92
+   },
+   {
+    "id": "adc18acd573bba376b5a42dc2fb78e4d",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-03T20:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Millwall",
+    "pari": "Victoire Birmingham City",
+    "court": "1",
+    "cote": 1.88
    }
   ]
  }
