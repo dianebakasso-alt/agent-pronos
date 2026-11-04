@@ -804,8 +804,8 @@
   "proba": 0.2627,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 23.2,
   "jambes": [
    {
     "id": "7a2cd2744fdf15ea675423a6c23df46b",
@@ -815,7 +815,10 @@
     "exterieur": "CA Osasuna",
     "pari": "Victoire Deportivo La Coruña",
     "court": "1",
-    "cote": 2.05
+    "cote": 2.05,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "bc801530585f54cdc58569622bc3cfc5",
@@ -825,7 +828,10 @@
     "exterieur": "Sochaux",
     "pari": "Victoire Stade de Reims",
     "court": "1",
-    "cote": 1.62
+    "cote": 1.62,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    }
   ]
  },
@@ -858,6 +864,38 @@
     "pari": "Victoire Birmingham City",
     "court": "1",
     "cote": 1.88
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-04",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.14,
+  "proba": 0.279,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "47523374e8d8cdd5b43677e358317587",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-04T19:45:00Z",
+    "domicile": "Cardiff City",
+    "exterieur": "West Ham United",
+    "pari": "Victoire West Ham United",
+    "court": "2",
+    "cote": 1.88
+   },
+   {
+    "id": "e35b42924a5fe785a52709c4d17c14c2",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-04T19:45:00Z",
+    "domicile": "Wrexham AFC",
+    "exterieur": "Middlesbrough",
+    "pari": "Victoire Middlesbrough",
+    "court": "2",
+    "cote": 1.67
    }
   ]
  }
