@@ -1,23 +1,22 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
-    🎟️ Combinés : +60% de rendement sur 22 tickets.
+    🎟️ Combinés : +69% de rendement sur 23 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 12 championnat(s) aujourd'hui (464 crédits restants ce mois-ci)
+    quota cotes : 12 championnat(s) aujourd'hui (452 crédits restants ce mois-ci)
     12 championnats retenus
 3/4 Récupération des cotes…
-    135 matchs analysés, 5 value bets
+    131 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 135 matchs reliés aux scores en direct
-    fatigue : 25 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 180 équipes trouvées, 0 manquées
+    direct : 131 matchs reliés aux scores en direct
+    fatigue : 28 matchs avec une équipe qui joue en Europe à 3 jours
+    stats : 192 équipes trouvées, 0 manquées
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! autopsie Feyenoord Rotterdam: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxTA5omQP4kdAJpYP1"}
-  ! autopsie Feyenoord Rotterdam: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxUSiEhdFZcUrBBbPo"}
-  ! autopsie Benfica: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxVJZ8Agp7GF6Afu5d"}
-  ! autopsie Celtic: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxWBQ2MnNcFMpxMyBb"}
-  ! autopsie Sporting CP: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxX4EU3KDjgM4nLe4Q"}
-  ! IA verdicts (paquet 1) : 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CghtxXwoaxLTbRKSJSP12"}
-  ! IA Bristol City: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
-  ! IA Blackburn Rovers: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
-  ! IA Watford: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
-  ! IA Rennes: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
+  ! autopsie Feyenoord Rotterdam: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgjocuSFPqYcFW5HYppM9"}
+  ! autopsie Feyenoord Rotterdam: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011Cgjocvk8BnFUDoFK5WdJQ"}
+  ! autopsie Benfica: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgjocwhBb9efYcLB3Wcys"}
+  ! autopsie Celtic: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgjocxVojDJM7hUKpCMc3"}
+  ! autopsie Besiktas: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CgjocyMtaGso5QKDG6kCx"}
+  ! IA Red Star Belgrade: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
+  ! IA Atalanta BC: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
+  ! IA Anderlecht: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
+  ! IA Celta Vigo: 400 HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_i
 Site généré : site/index.html
