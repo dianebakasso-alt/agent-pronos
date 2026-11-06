@@ -170,6 +170,15 @@ def analyser_match(match, cfg):
     }
 
 
+ZONES_FAIBLES = set()   # tranches de proba qui ratent plus que prévu (apprises du carnet)
+CHAMPS_FAIBLES = set()  # championnats où l'expert perd (apprises du carnet)
+
+
+def _jouable(m, p):
+    """Ce match / cette probabilité peut-il entrer dans un combiné ?"""
+    return m.get("champ_nom") not in CHAMPS_FAIBLES and round(int(p * 20) / 20, 2) not in ZONES_FAIBLES
+
+
 def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
                       tri=None, critere=None, n_min=2):
     """Meilleur ticket chez un seul bookmaker.
@@ -187,7 +196,7 @@ def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
             options = []
             for i in m["issues"]:
                 c = cotes.get(i["court"])
-                if not c or c > cfg["cote_max"] or i["proba"] < p_min:
+                if not c or c > cfg["cote_max"] or i["proba"] < p_min or not _jouable(m, i["proba"]):
                     continue
                 edge = i["proba"] * c - 1
                 if edge > edge_min:
@@ -434,7 +443,7 @@ def pronos_buts(analyses, n=4):
 def _jambe_buts(m):
     """Le pari de buts le plus net d'un match (2,5 buts ou les 2 marquent), ou None."""
     b = m.get("buts")
-    if not b:
+    if not b or m.get("champ_nom") in CHAMPS_FAIBLES:
         return None
     options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]), ("pas_btts", 1 - b["btts"])]
     options = [(k, _cal(k, p)) for k, p in options]
@@ -496,7 +505,7 @@ def combines_buts(analyses):
     solides = []
     for m in analyses:
         i = max(m["issues"], key=lambda x: x["proba"])
-        if i["court"] != "N" and 0.50 <= i["proba"] <= 0.75 and i["cote"] >= 1.45 \
+        if i["court"] != "N" and 0.50 <= i["proba"] <= 0.78 and i["cote"] >= 1.30 and _jouable(m, i["proba"]) \
                 and not (m.get("fatigue") or {}).get(i["court"]):
             solides.append({"match": m, "type": "1n2", "court": i["court"], "issue": i["issue"],
                             "proba": i["proba"], "cote": i["cote"], "bk": i["bookmaker"]})

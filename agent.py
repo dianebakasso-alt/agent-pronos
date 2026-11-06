@@ -575,8 +575,12 @@ def main():
 
     if not demo:   # les paris de buts sont corrigés d'après leurs vrais résultats (gratuit)
         try:
-            moteur.CALIB_BUTS = expert.calib_buts(expert.charger(DATA / "carnet.json"))
-            print(f"    calibrage buts : {moteur.CALIB_BUTS}")
+            _c = expert.charger(DATA / "carnet.json")
+            moteur.CALIB_BUTS = expert.calib_buts(_c)
+            moteur.ZONES_FAIBLES = expert.zones_faibles(_c)
+            moteur.CHAMPS_FAIBLES = {k for k, v in expert.specialites(_c)[0].items() if v < 0}
+            print(f"    calibrage buts : {moteur.CALIB_BUTS} · zones évitées : {sorted(moteur.ZONES_FAIBLES)}"
+                  f" · championnats évités : {sorted(moteur.CHAMPS_FAIBLES)}")
         except Exception as e:
             print(f"  ! calibrage buts : {e}")
     for a in analyses:

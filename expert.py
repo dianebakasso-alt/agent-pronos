@@ -254,6 +254,21 @@ def pauses(carnet):
     return out
 
 
+def zones_faibles(carnet, n_min=25, marge=0.03):
+    """Tranches de probabilité (par 5 %) où les favoris gagnent nettement moins que prévu.
+    Ex. les favoris « 55-60 % » passent 51 % du temps : l'expert les évite dans ses combinés."""
+    g = {}
+    for p in carnet:
+        if p["cat"] != "match" or p["statut"] not in ("gagné", "perdu"):
+            continue
+        z = int(p["proba"] * 20) / 20
+        s = g.setdefault(z, [0, 0, 0.0])
+        s[0] += 1
+        s[1] += p["statut"] == "gagné"
+        s[2] += p["proba"]
+    return {round(z, 2) for z, (n, ok, sp) in g.items() if n >= n_min and ok / n < sp / n - marge}
+
+
 def calib_buts(carnet, prior=5.0):
     """Paris de buts : réussite réelle / réussite annoncée, par marché (lissé vers 1).
     Ex. « moins de 2,5 buts » annoncé à 66 % mais passé 45 % du temps → ses probabilités sont baissées."""
