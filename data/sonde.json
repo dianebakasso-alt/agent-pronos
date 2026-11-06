@@ -1,5 +1,5 @@
 {
- "quand": "2026-11-06T01:37:36.917991+00:00",
+ "quand": "2026-11-06T01:39:53.429063+00:00",
  "elo": {
   "I1": {
    "n": 610,
@@ -26,6 +26,50 @@
     "reel": 0.692,
     "annonce": 0.64,
     "roi": 0.011
+   }
+  },
+  "I1_pieges": {
+   "aucune": {
+    "n": 242,
+    "reel": 0.661,
+    "annonce": 0.631,
+    "roi": -0.007
+   },
+   "au_moins_une": {
+    "n": 68,
+    "reel": 0.574,
+    "annonce": 0.581,
+    "roi": -0.059
+   },
+   "série noire": {
+    "n": 33,
+    "reel": 0.545,
+    "annonce": 0.565,
+    "roi": -0.083
+   },
+   "invaincu": {
+    "n": 13,
+    "reel": 0.538,
+    "annonce": 0.624,
+    "roi": -0.182
+   },
+   "derby": {
+    "n": 4,
+    "reel": 0.25,
+    "annonce": 0.605,
+    "roi": -0.62
+   },
+   "exterieur": {
+    "n": 18,
+    "reel": 0.778,
+    "annonce": 0.57,
+    "roi": 0.294
+   },
+   "bête noire": {
+    "n": 4,
+    "reel": 0.25,
+    "annonce": 0.586,
+    "roi": -0.568
    }
   },
   "E0": {
@@ -55,6 +99,50 @@
     "roi": -0.079
    }
   },
+  "E0_pieges": {
+   "aucune": {
+    "n": 228,
+    "reel": 0.575,
+    "annonce": 0.63,
+    "roi": -0.151
+   },
+   "au_moins_une": {
+    "n": 97,
+    "reel": 0.577,
+    "annonce": 0.6,
+    "roi": -0.081
+   },
+   "série noire": {
+    "n": 45,
+    "reel": 0.578,
+    "annonce": 0.604,
+    "roi": -0.071
+   },
+   "exterieur": {
+    "n": 16,
+    "reel": 0.75,
+    "annonce": 0.592,
+    "roi": 0.202
+   },
+   "invaincu": {
+    "n": 27,
+    "reel": 0.444,
+    "annonce": 0.582,
+    "roi": -0.287
+   },
+   "derby": {
+    "n": 10,
+    "reel": 0.8,
+    "annonce": 0.625,
+    "roi": 0.221
+   },
+   "bête noire": {
+    "n": 10,
+    "reel": 0.7,
+    "annonce": 0.58,
+    "roi": 0.167
+   }
+  },
   "F1": {
    "n": 462,
    "brier_elo": 0.5994,
@@ -80,6 +168,50 @@
     "reel": 0.694,
     "annonce": 0.635,
     "roi": 0.024
+   }
+  },
+  "F1_pieges": {
+   "aucune": {
+    "n": 181,
+    "reel": 0.663,
+    "annonce": 0.631,
+    "roi": -0.01
+   },
+   "au_moins_une": {
+    "n": 58,
+    "reel": 0.552,
+    "annonce": 0.596,
+    "roi": -0.143
+   },
+   "exterieur": {
+    "n": 17,
+    "reel": 0.529,
+    "annonce": 0.583,
+    "roi": -0.15
+   },
+   "série noire": {
+    "n": 30,
+    "reel": 0.467,
+    "annonce": 0.58,
+    "roi": -0.255
+   },
+   "derby": {
+    "n": 5,
+    "reel": 1.0,
+    "annonce": 0.642,
+    "roi": 0.48
+   },
+   "invaincu": {
+    "n": 8,
+    "reel": 0.5,
+    "annonce": 0.643,
+    "roi": -0.312
+   },
+   "bête noire": {
+    "n": 1,
+    "reel": 1.0,
+    "annonce": 0.517,
+    "roi": 0.81
    }
   },
   "D1": {
@@ -109,6 +241,50 @@
     "roi": -0.179
    }
   },
+  "D1_pieges": {
+   "au_moins_une": {
+    "n": 47,
+    "reel": 0.638,
+    "annonce": 0.59,
+    "roi": 0.01
+   },
+   "série noire": {
+    "n": 26,
+    "reel": 0.538,
+    "annonce": 0.572,
+    "roi": -0.107
+   },
+   "aucune": {
+    "n": 164,
+    "reel": 0.64,
+    "annonce": 0.644,
+    "roi": -0.064
+   },
+   "exterieur": {
+    "n": 4,
+    "reel": 0.75,
+    "annonce": 0.542,
+    "roi": 0.272
+   },
+   "invaincu": {
+    "n": 15,
+    "reel": 0.867,
+    "annonce": 0.624,
+    "roi": 0.299
+   },
+   "derby": {
+    "n": 3,
+    "reel": 0.667,
+    "annonce": 0.65,
+    "roi": -0.017
+   },
+   "bête noire": {
+    "n": 5,
+    "reel": 0.8,
+    "annonce": 0.589,
+    "roi": 0.25
+   }
+  },
   "SP1": {
    "n": 610,
    "brier_elo": 0.5859,
@@ -134,6 +310,50 @@
     "reel": 0.71,
     "annonce": 0.637,
     "roi": 0.051
+   }
+  },
+  "SP1_pieges": {
+   "aucune": {
+    "n": 209,
+    "reel": 0.656,
+    "annonce": 0.645,
+    "roi": -0.053
+   },
+   "au_moins_une": {
+    "n": 68,
+    "reel": 0.676,
+    "annonce": 0.574,
+    "roi": 0.097
+   },
+   "série noire": {
+    "n": 31,
+    "reel": 0.677,
+    "annonce": 0.57,
+    "roi": 0.107
+   },
+   "invaincu": {
+    "n": 16,
+    "reel": 0.812,
+    "annonce": 0.621,
+    "roi": 0.243
+   },
+   "exterieur": {
+    "n": 13,
+    "reel": 0.692,
+    "annonce": 0.548,
+    "roi": 0.182
+   },
+   "derby": {
+    "n": 3,
+    "reel": 0.667,
+    "annonce": 0.538,
+    "roi": 0.167
+   },
+   "bête noire": {
+    "n": 6,
+    "reel": 0.333,
+    "annonce": 0.539,
+    "roi": -0.45
    }
   },
   "N1": {
@@ -163,6 +383,50 @@
     "roi": 0.01
    }
   },
+  "N1_pieges": {
+   "aucune": {
+    "n": 185,
+    "reel": 0.649,
+    "annonce": 0.649,
+    "roi": -0.062
+   },
+   "invaincu": {
+    "n": 14,
+    "reel": 0.429,
+    "annonce": 0.629,
+    "roi": -0.399
+   },
+   "au_moins_une": {
+    "n": 69,
+    "reel": 0.551,
+    "annonce": 0.601,
+    "roi": -0.154
+   },
+   "série noire": {
+    "n": 26,
+    "reel": 0.538,
+    "annonce": 0.608,
+    "roi": -0.182
+   },
+   "exterieur": {
+    "n": 19,
+    "reel": 0.632,
+    "annonce": 0.574,
+    "roi": 0.017
+   },
+   "derby": {
+    "n": 3,
+    "reel": 0.333,
+    "annonce": 0.554,
+    "roi": -0.437
+   },
+   "bête noire": {
+    "n": 11,
+    "reel": 0.545,
+    "annonce": 0.59,
+    "roi": -0.15
+   }
+  },
   "P1": {
    "n": 462,
    "brier_elo": 0.5689,
@@ -190,6 +454,44 @@
     "roi": 0.157
    }
   },
+  "P1_pieges": {
+   "aucune": {
+    "n": 188,
+    "reel": 0.734,
+    "annonce": 0.674,
+    "roi": 0.006
+   },
+   "invaincu": {
+    "n": 13,
+    "reel": 0.462,
+    "annonce": 0.641,
+    "roi": -0.326
+   },
+   "au_moins_une": {
+    "n": 44,
+    "reel": 0.523,
+    "annonce": 0.603,
+    "roi": -0.201
+   },
+   "série noire": {
+    "n": 18,
+    "reel": 0.556,
+    "annonce": 0.58,
+    "roi": -0.143
+   },
+   "exterieur": {
+    "n": 10,
+    "reel": 0.5,
+    "annonce": 0.594,
+    "roi": -0.213
+   },
+   "bête noire": {
+    "n": 4,
+    "reel": 0.5,
+    "annonce": 0.597,
+    "roi": -0.225
+   }
+  },
   "E1": {
    "n": 954,
    "brier_elo": 0.6337,
@@ -215,6 +517,44 @@
     "reel": 0.563,
     "annonce": 0.585,
     "roi": -0.104
+   }
+  },
+  "E1_pieges": {
+   "aucune": {
+    "n": 241,
+    "reel": 0.531,
+    "annonce": 0.585,
+    "roi": -0.153
+   },
+   "invaincu": {
+    "n": 18,
+    "reel": 0.833,
+    "annonce": 0.573,
+    "roi": 0.379
+   },
+   "au_moins_une": {
+    "n": 80,
+    "reel": 0.613,
+    "annonce": 0.585,
+    "roi": -0.022
+   },
+   "série noire": {
+    "n": 45,
+    "reel": 0.622,
+    "annonce": 0.58,
+    "roi": 0.002
+   },
+   "exterieur": {
+    "n": 12,
+    "reel": 0.25,
+    "annonce": 0.566,
+    "roi": -0.599
+   },
+   "bête noire": {
+    "n": 9,
+    "reel": 0.667,
+    "annonce": 0.643,
+    "roi": -0.051
    }
   }
  },
