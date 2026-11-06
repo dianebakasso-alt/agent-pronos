@@ -237,21 +237,36 @@ def _err(e):
     return txt
 
 
-def appel_ia(texte, cfg, cle_ia, max_uses=3, max_tokens=6000, timeout=240):
-    corps = {"model": cfg["modele_ia"], "max_tokens": max_tokens,
-             "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
-             "messages": [{"role": "user", "content": texte}]}
-    entetes = {"x-api-key": cle_ia, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+IA_DEBUG = []   # les dernières réponses brutes (pour comprendre un échec sans repayer)
+
+
+def _ia_json(corps, timeout=240):
+    """Appel à l'IA avec recherche web ; laisse finir les tours « en pause » (2 fois max) ; renvoie le JSON."""
+    entetes = {"x-api-key": CLE_IA_COURANTE[0], "anthropic-version": "2023-06-01", "content-type": "application/json"}
     data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(), headers=entetes, timeout=timeout)
-    # recherche web longue : l'API peut mettre le tour « en pause », on le laisse finir (1 fois)
-    if data.get("stop_reason") == "pause_turn":
-        corps["messages"] = corps["messages"] + [{"role": "assistant", "content": data.get("content", [])}]
+    tours = 0
+    while data.get("stop_reason") == "pause_turn" and tours < 2:
+        tours += 1
+        corps = dict(corps, messages=corps["messages"] + [{"role": "assistant", "content": data.get("content", [])}])
         data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(), headers=entetes, timeout=timeout)
     txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    IA_DEBUG.append({"arret": data.get("stop_reason"), "pauses": tours, "longueur": len(txt), "fin": txt[-600:],
+                     "usage": data.get("usage")})
     debut, fin = txt.find("{"), txt.rfind("}")
     if debut < 0 or fin < debut:
         raise ValueError(f"réponse sans JSON (arrêt : {data.get('stop_reason')}, {len(txt)} car.) {txt[:120]!r}")
     return json.loads(txt[debut: fin + 1])
+
+
+CLE_IA_COURANTE = [""]
+
+
+def appel_ia(texte, cfg, cle_ia, max_uses=3, max_tokens=6000, timeout=240):
+    CLE_IA_COURANTE[0] = cle_ia
+    corps = {"model": cfg["modele_ia"], "max_tokens": max_tokens,
+             "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
+             "messages": [{"role": "user", "content": texte}]}
+    return _ia_json(corps, timeout)
 
 
 CONSIGNE_JOUR = """Tu es un pronostiqueur football expert, exigeant et honnête. Voici les matchs du jour.
@@ -263,7 +278,7 @@ puis donne TON verdict : est-ce qu'il y a un bon pari 1-N-2 à jouer, oui ou non
 {lecons}
 
 Réponds UNIQUEMENT avec ce JSON, en français :
-{{"verdicts": [{{"n": numéro du match, "verdict": "jouer" | "prudence" | "eviter",
+{{"verdicts": [{{"n": numéro du match (un nombre), "verdict": "jouer" | "prudence" | "eviter",
   "pari": "1" | "N" | "2" | "aucun", "raison": "1 à 2 phrases concrètes, avec les faits trouvés"}}]}}
 "jouer" = tu le jouerais vraiment, l'actu et la forme vont dans le sens du pari.
 "prudence" = jouable mais avec un vrai doute. "eviter" = pas bon : piège, actu défavorable ou match trop ouvert (pari "aucun").
@@ -288,13 +303,21 @@ def _verdicts_paquet(matchs, cfg, cle_ia):
         deja = (m.get("avis") or {}).get("resume")
         lignes.append(f"{k}. {m['domicile']} - {m['exterieur']} ({m['championnat']}, {m['debut'][:16]} UTC). "
                       f"Cotes 1/N/2 : {cotes}. {st}" + (f" Déjà noté : {deja}" if deja else ""))
-    res = appel_ia(CONSIGNE_JOUR.format(matchs="\n".join(lignes), lecons=LECONS_TXT), cfg, cle_ia,
-                   max_uses=len(matchs) + 1, max_tokens=4000, timeout=300)
+    res = appel_ia(CONSIGNE_JOUR.format(matchs="\n".join(lignes) + f"\n\nIMPORTANT : donne exactement {len(matchs)} verdicts, "
+                        f"un pour chaque numéro de 1 à {len(matchs)}, même si tu n'as rien trouvé sur un match (dis-le dans la raison).",
+                        lecons=LECONS_TXT), cfg, cle_ia,
+                   max_uses=min(len(matchs) + 1, 5), max_tokens=5000, timeout=300)
+    if len(res.get("verdicts", [])) < len(matchs):
+        print(f"  ! IA verdicts : {len(res.get('verdicts', []))} reçus pour {len(matchs)} matchs")
     out = {}
     for v in res.get("verdicts", []):
+        m = None
         try:
-            m = matchs[int(v["n"]) - 1]
+            m = matchs[int(str(v.get("n")).strip(". ")) - 1]
         except Exception:
+            txt = str(v.get("n", "")) + " " + str(v.get("match", ""))
+            m = next((x for x in matchs if x["domicile"].lower() in txt.lower()), None)
+        if m is None:
             continue
         if v.get("verdict") in ("jouer", "prudence", "eviter"):
             out[m["id"]] = {"verdict": v["verdict"], "pari": v.get("pari") if v.get("pari") in ("1", "N", "2") else None,
@@ -329,13 +352,8 @@ def avis_expert(m, v, cfg, cle_ia, profond=False):
             stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]) + " " + _alertes_txt(m),
             memoire=m.get("_memoire", "") + ("\n" + LECONS_TXT if LECONS_TXT else "")) + (PROFOND if profond else "")}],
     }
-    data, _ = ia_post("https://api.anthropic.com/v1/messages",
-                        data=json.dumps(corps).encode(),
-                        headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
-                                 "content-type": "application/json"}, timeout=180)
-    texte = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
-    debut, fin = texte.find("{"), texte.rfind("}")
-    avis = json.loads(texte[debut:fin + 1])
+    CLE_IA_COURANTE[0] = cle_ia
+    avis = _ia_json(corps, 180)
     if avis.get("avis") not in ("confirme", "prudence", "eviter"):
         avis["avis"] = "prudence"
     return avis
@@ -815,6 +833,7 @@ def main():
                     ia["erreur"] = f"{getattr(e, 'code', '')} {detail}".strip()
             ia["etat"] = "active" if ia["ok"] else "erreur"
             (DATA / "memoire_actu.json").write_text(json.dumps(actu, ensure_ascii=False, indent=1), encoding="utf-8")
+            (DATA / "ia_debug.json").write_text(json.dumps(IA_DEBUG[-8:], ensure_ascii=False, indent=1), encoding="utf-8")
     elif cfg.get("analyse_ia") and cle_ia:
         ia["etat"] = "rien"
     # un même pari analysé une fois : on recopie l'avis partout où il apparaît
