@@ -25974,7 +25974,16 @@
     },
     "traits": [],
     "score": "1-1",
-    "ok": false
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Modena a ouvert le score à la 52e minute par Belotti, puis a reculé et laissé Mantova dominer la dernière demi-heure. Une erreur de Chichizola vers la 81e minute et un coup de tête de Spinaccè sur corner à la 84e ont fait basculer le match en faveur du pari perdu, Modena n'ayant pas su conserver son avantage.",
+     "previsible": "en partie",
+     "signal_rate": "Modena encaissait en moyenne environ un but par match cette saison, avec une défense perméable sur les balles arrêtées et les fins de match, ce qui était visible avant la rencontre.",
+     "tags": [
+      "defense_fragile"
+     ],
+     "lecon": "Une cote de victoire basée sur l'attaque d'une équipe doit être révisée si sa défense encaisse régulièrement, surtout sur coups de pied arrêtés et en fin de match."
+    }
    }
   ],
   "cote": 2.05,
@@ -30869,7 +30878,18 @@
      "buts_plus"
     ],
     "score": "1-0",
-    "ok": false
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Benfica a dominé la possession (environ 65 %) mais a très peu tiré : 0-0 à la mi-temps face à un Alverca regroupé en bloc bas, avec seulement 13 tirs au total selon les statistiques disponibles. Le seul but est venu d'un penalty de Pavlidis à la 51e minute, obtenu après l'entrée d'Echeverri, et le match est resté fermé ensuite.",
+     "previsible": "en partie",
+     "signal_rate": "Benfica jouait contre une équipe en milieu/bas de tableau qui défendait bas, et son attaque avait déjà eu du mal à créer en début de match ; une équipe qui domine sans tirer beaucoup ne fait pas forcément plus de 2 buts.",
+     "tags": [
+      "attaque_inefficace",
+      "penalty",
+      "favori_surcote"
+     ],
+     "lecon": "Une cote de plus de 2,5 buts à 79 % doit être revue quand le favori affronte un bloc bas et que le total de buts dépend d'un ou deux événements ponctuels comme un penalty."
+    }
    },
    {
     "id": "97ce048d06fc45fc59e114548540828f",
@@ -30961,7 +30981,18 @@
      "buts_plus"
     ],
     "score": "1-0",
-    "ok": false
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Benfica a dominé la possession (environ 65 %) mais a très peu tiré : 0-0 à la mi-temps face à un Alverca regroupé en bloc bas, avec seulement 13 tirs au total selon les statistiques disponibles. Le seul but est venu d'un penalty de Pavlidis à la 51e minute, obtenu après l'entrée d'Echeverri, et le match est resté fermé ensuite.",
+     "previsible": "en partie",
+     "signal_rate": "Benfica jouait contre une équipe en milieu/bas de tableau qui défendait bas, et son attaque avait déjà eu du mal à créer en début de match ; une équipe qui domine sans tirer beaucoup ne fait pas forcément plus de 2 buts.",
+     "tags": [
+      "attaque_inefficace",
+      "penalty",
+      "favori_surcote"
+     ],
+     "lecon": "Une cote de plus de 2,5 buts à 79 % doit être revue quand le favori affronte un bloc bas et que le total de buts dépend d'un ou deux événements ponctuels comme un penalty."
+    }
    },
    {
     "id": "97ce048d06fc45fc59e114548540828f",
