@@ -956,8 +956,8 @@
   "proba": 0.2568,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "1358657f64b8fdae74ac7263bf7b8725",
@@ -967,7 +967,10 @@
     "exterieur": "Metz",
     "pari": "Victoire Montpellier",
     "court": "1",
-    "cote": 1.9
+    "cote": 1.9,
+    "res": "2",
+    "score": "2-3",
+    "ok": false
    },
    {
     "id": "7ad550e94d58693e8d19f1da1ae1513f",
@@ -977,7 +980,10 @@
     "exterieur": "SK Beveren",
     "pari": "Victoire Standard Liege",
     "court": "1",
-    "cote": 1.72
+    "cote": 1.72,
+    "res": "1",
+    "score": "3-0",
+    "ok": true
    }
   ]
  },

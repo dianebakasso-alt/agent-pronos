@@ -1,9 +1,10 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
-    🎟️ Combinés : +55% de rendement sur 25 tickets.
+    🎟️ Combinés : +49% de rendement sur 26 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 12 championnat(s) aujourd'hui (428 crédits restants ce mois-ci)
-    12 championnats retenus
+    quota cotes : 0 championnat(s) aujourd'hui (416 crédits restants ce mois-ci)
+    0 championnats retenus
 3/4 Récupération des cotes…
+    98 matchs repris du cache (cotes d'un passage précédent)
     98 matchs analysés, 0 value bets
     Forme et stats des équipes…
     direct : 98 matchs reliés aux scores en direct
@@ -11,8 +12,8 @@
     stats : 195 équipes trouvées, 1 manquées
     force : 97 matchs notés · pièges : 50 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 0.97} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Bundesliga', 'Eredivisie', 'Liga', 'Liga Portugal']
-    autopsies gratuites : 8
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
+    autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
   ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.08 €)
 Site généré : site/index.html

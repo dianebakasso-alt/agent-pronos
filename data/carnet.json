@@ -43253,6 +43253,74 @@
   "gain": 0.0
  },
  {
+  "cle": "buts:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "f7b240389fa5ec055c58a48ab153dcdd",
+    "date": "2026-11-07T20:05:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8133,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876407"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "FSV Mainz 05",
+    "exterieur": "Bayern Munich",
+    "championnat": "Bundesliga",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7739,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884740"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "077e9bfa253514e27bdae1ce5956c78e",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Gimnasia Mendoza",
+    "exterieur": "Independiente Rivadavia",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.706,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841666"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 2.36,
+  "proba": 0.4444,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "mixte:2026-11-07",
   "jour": "2026-11-07",
   "cat": "mixte",
@@ -43297,309 +43365,26 @@
     ]
    },
    {
-    "id": "077e9bfa253514e27bdae1ce5956c78e",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Gimnasia Mendoza",
-    "exterieur": "Independiente Rivadavia",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.6724,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841666"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   }
-  ],
-  "cote": 2.3,
-  "proba": 0.4572,
-  "estime": true,
-  "conseille": null,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "cb1988f7950962d316571dd0ed98b540",
-    "date": "2026-11-07T19:00:00Z",
-    "domicile": "Saint Etienne",
-    "exterieur": "Stade Lavallois",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Saint Etienne",
-    "cote": 1.3,
-    "proba": 0.7137,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876693"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "c9e285d98525711130aa5801e9634657",
-    "date": "2026-11-07T20:30:00Z",
-    "domicile": "Boca Juniors",
-    "exterieur": "Defensa y Justicia",
-    "championnat": "Liga Argentina",
-    "pari": "Victoire Boca Juniors",
-    "cote": 1.32,
-    "proba": 0.6812,
-    "court": "1",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841669"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "f7b240389fa5ec055c58a48ab153dcdd",
-    "date": "2026-11-07T20:05:00Z",
-    "domicile": "Paris Saint Germain",
-    "exterieur": "Troyes",
-    "championnat": "Ligue 1",
+    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "FSV Mainz 05",
+    "exterieur": "Bayern Munich",
+    "championnat": "Bundesliga",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.8133,
+    "proba": 0.7739,
     "marche": "plus25",
     "espn": {
-     "ligue": "fra.1",
-     "id": "401876407"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "077e9bfa253514e27bdae1ce5956c78e",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Gimnasia Mendoza",
-    "exterieur": "Independiente Rivadavia",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.6724,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841666"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   },
-   {
-    "id": "4dbcec00debc1a175148bdb6824e14b3",
-    "date": "2026-11-07T20:30:00Z",
-    "domicile": "Argentinos Juniors",
-    "exterieur": "Atlético Huracán",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.6158,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841672"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   }
-  ],
-  "cote": 6.41,
-  "proba": 0.1637,
-  "estime": true,
-  "conseille": null,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-07:2",
-  "jour": "2026-11-07",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "e300554369b00b495db88afb743c95ab",
-    "date": "2026-11-07T16:00:00Z",
-    "domicile": "Galatasaray",
-    "exterieur": "Amed SK",
-    "championnat": "Süper Lig",
-    "pari": "Victoire Galatasaray",
-    "cote": 1.35,
-    "proba": 0.6657,
-    "court": "1",
-    "espn": {
-     "ligue": "tur.1",
-     "id": "401888371"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net"
-    ]
-   },
-   {
-    "id": "a30b201e4df636949371d73491c620b5",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Watford",
-    "exterieur": "Middlesbrough",
-    "championnat": "Championship",
-    "pari": "Victoire Middlesbrough",
-    "cote": 1.45,
-    "proba": 0.6204,
-    "court": "2",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880163"
-    },
-    "traits": [
-     "exterieur",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Westerlo",
-    "exterieur": "Charleroi",
-    "championnat": "Pro League",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6007,
-    "marche": "btts",
-    "espn": {
-     "ligue": "bel.1",
-     "id": "401878947"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "88fead70e852197758d9b67fdce0e93f",
-    "date": "2026-11-07T20:30:00Z",
-    "domicile": "Rosario Central",
-    "exterieur": "Estudiantes de Río Cuarto",
-    "championnat": "Liga Argentina",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.598,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841663"
+     "ligue": "ger.1",
+     "id": "401884740"
     },
     "traits": [
      "buts_plus"
     ]
    }
   ],
-  "cote": 7.08,
-  "proba": 0.1484,
-  "estime": true,
-  "conseille": null,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-07:3",
-  "jour": "2026-11-07",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Auxerre",
-    "exterieur": "Paris FC",
-    "championnat": "Ligue 1",
-    "pari": "Victoire Paris FC",
-    "cote": 1.7,
-    "proba": 0.5364,
-    "court": "2",
-    "espn": {
-     "ligue": "fra.1",
-     "id": "401876411"
-    },
-    "traits": [
-     "exterieur",
-     "piege"
-    ]
-   },
-   {
-    "id": "0d53a5dbd9d4f4716e923b97e92dfb0d",
-    "date": "2026-11-07T14:00:00Z",
-    "domicile": "Torino",
-    "exterieur": "Lecce",
-    "championnat": "Serie A",
-    "pari": "Victoire Torino",
-    "cote": 1.74,
-    "proba": 0.5282,
-    "court": "1",
-    "espn": {
-     "ligue": "ita.1",
-     "id": "401874811"
-    },
-    "traits": [
-     "force_pour"
-    ]
-   },
-   {
-    "id": "52b256088d29b4abb82e0c63ea9852fe",
-    "date": "2026-11-07T14:00:00Z",
-    "domicile": "Cagliari",
-    "exterieur": "Frosinone",
-    "championnat": "Serie A",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.5977,
-    "marche": "btts",
-    "espn": {
-     "ligue": "ita.1",
-     "id": "401874791"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "8113162855a5e10941b4a1e917e5afc0",
-    "date": "2026-11-07T01:00:00Z",
-    "domicile": "CA Tigre BA",
-    "exterieur": "Sarmiento de Junin",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.5917,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841673"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   }
-  ],
-  "cote": 10.48,
-  "proba": 0.1002,
+  "cote": 2.0,
+  "proba": 0.5263,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
