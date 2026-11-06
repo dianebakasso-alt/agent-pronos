@@ -42,6 +42,31 @@ for code in ("I1", "E0", "F1", "D1", "SP1", "N1", "P1", "E1"):
                                          "annonce": round(v[2] / v[0], 3) if v[0] else None,
                                          "roi": round(v[3] / v[0], 3) if v[0] else None} for k, v in g.items()}
 
+    # test des alertes « match piège » : le favori du marché gagne-t-il moins que prévu ?
+    import pieges
+    pg = {}
+    for idx, ((dt, h, a, hg, ag), c) in enumerate(zip(lignes, cotes)):
+        if idx < 150 or not c:
+            continue
+        inv = {k: 1 / c[k] for k in "1N2"}; s_ = sum(inv.values()); pm = {k: v / s_ for k, v in inv.items()}
+        fav = max(("1", "2"), key=pm.get)
+        if pm[fav] < 0.5:
+            continue
+        passe = lignes[:idx]
+        st = {"domicile": stats._forme(passe, h, "dom"), "exterieur": stats._forme(passe, a, "ext"),
+              "face": stats._face_a_face(passe, h, a)}
+        m = {"domicile": h, "exterieur": a, "stats": st, "issues": []}
+        al = pieges.analyser(m).get(fav, [])
+        res = "1" if hg > ag else "N" if hg == ag else "2"
+        cles = {r.split(" :")[0] if " :" in r else ("invaincu" if "invaincu" in r else "exterieur" if "extérieur" in r else r[:20]) for r in al} or {"aucune"}
+        if al:
+            cles.add("au_moins_une")
+        for k in cles:
+            g_ = pg.setdefault(k, [0, 0, 0.0, 0.0])
+            g_[0] += 1; g_[1] += res == fav; g_[2] += pm[fav]; g_[3] += c[fav] - 1 if res == fav else -1
+    out["elo"][code + "_pieges"] = {k: {"n": v[0], "reel": round(v[1] / v[0], 3), "annonce": round(v[2] / v[0], 3),
+                                        "roi": round(v[3] / v[0], 3)} for k, v in pg.items()}
+
 def court(x, n=600):
     s = json.dumps(x, ensure_ascii=False)
     return s[:n]
