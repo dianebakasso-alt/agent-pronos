@@ -282,7 +282,37 @@ def combines_experts(analyses, cfg):
         c["style"] = style
         c.update({k: v for k, v in STYLES[style].items()})
         resultat.append(c)
+
+    # 🚀 d'autres gros gains, chacun sur des matchs différents : plusieurs chances de toucher
+    if out["gros"]:
+        pris = {j["match"]["id"] for j in out["gros"]["jambes"]}
+        for num in range(2, GROS_MAX + 1):
+            reste = [m for m in analyses if m["id"] not in pris]
+            c, ok = None, True
+            for edge_min in (0, -1):
+                c = _meilleur_combine(reste, cfg, 4, 0.30, edge_min, 0.04, n_min=3,
+                                      critere=lambda c: (c["edge"] > 0, len(c["jambes"]), c["cote"] * (1 + c["edge"])))
+                if c:
+                    ok = edge_min == 0
+                    break
+            if not c:
+                break
+            c["conseille"] = ok
+            c["style"], c["num"] = "gros", num
+            c.update({k: v for k, v in STYLES["gros"].items()})
+            c["nom"] = f"Gros gain n°{num}"
+            c["desc"] = "Autres matchs que les autres tickets Gros gain : une chance de plus de toucher."
+            pris |= {j["match"]["id"] for j in c["jambes"]}
+            resultat.append(c)
     return resultat
+
+
+GROS_MAX = 3   # tickets Gros gain et Mixte gros gain par jour (matchs tous différents)
+
+
+def variante(c):
+    """Identifiant du ticket : « gros », puis « gros-2 », « gros-3 »…"""
+    return c["style"] + (f"-{c['num']}" if c.get("num", 1) > 1 else "")
 
 
 # ---------------------------------------------------------------- les buts (sans crédit en plus)
@@ -452,7 +482,8 @@ def combines_buts(analyses):
             tickets.append(_ticket_estime("mixte", jm))
 
     # 💥 mixte gros gain : 2 favoris solides (pas de petite cote, pas d'équipe fatiguée)
-    #    + 2 à 3 paris de buts nets sur d'autres matchs, jusqu'à une cote de 6 à 12
+    #    + 2 à 3 paris de buts nets sur d'autres matchs, jusqu'à une cote de 6 à 12.
+    #    Jusqu'à GROS_MAX tickets, chacun sur des matchs différents.
     solides = []
     for m in analyses:
         i = max(m["issues"], key=lambda x: x["proba"])
@@ -461,16 +492,26 @@ def combines_buts(analyses):
             solides.append({"match": m, "type": "1n2", "court": i["court"], "issue": i["issue"],
                             "proba": i["proba"], "cote": i["cote"], "bk": i["bookmaker"]})
     solides.sort(key=lambda f: -(f["proba"] + f.get("cote", 0) * 0.02))
-    fav2 = solides[:2]
-    if len(fav2) == 2:
-        pris = {f["match"]["id"] for f in fav2}
-        buts = [j for j in jambes_buts if j["match"]["id"] not in pris and j["proba"] <= 0.78]
+    pris = set()
+    for num in range(1, GROS_MAX + 1):
+        fav2 = [f for f in solides if f["match"]["id"] not in pris][:2]
+        if len(fav2) < 2:
+            break
+        deja = pris | {f["match"]["id"] for f in fav2}
+        buts = [j for j in jambes_buts if j["match"]["id"] not in deja and j["proba"] <= 0.78]
         jg = list(fav2)
         for j in buts:
             if _prod(1 / x["proba"] for x in jg) >= 6 or len(jg) >= 5:
                 break
             jg.append(j)
         cote = _prod(1 / x["proba"] for x in jg) * 1.05
-        if len(jg) >= 4 and cote >= 5 and _prod(x["proba"] for x in jg) >= 0.07:
-            tickets.append(_ticket_estime("mixte_gros", jg))
+        if not (len(jg) >= 4 and cote >= 5 and _prod(x["proba"] for x in jg) >= 0.07):
+            break
+        t = _ticket_estime("mixte_gros", jg)
+        if num > 1:
+            t["num"] = num
+            t["nom"] = f"Mixte gros gain n°{num}"
+            t["desc"] = "Autres matchs que les autres tickets Mixte gros gain : une chance de plus de toucher."
+        tickets.append(t)
+        pris |= {x["match"]["id"] for x in jg}
     return tickets

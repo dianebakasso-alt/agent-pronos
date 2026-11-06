@@ -76,7 +76,8 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
             else:
                 jb.append(_jambe(j["match"], court=j["court"], pari=j["issue"], cote=j.get("cote"), proba=j["proba"]))
         cote = c["cote_cible"] if c.get("estime") else c["cote"]
-        nouveaux.append(_prono(f"{c['style']}:{jour}", jour, c["style"], jb, cote, c["proba"],
+        num = f":{c['num']}" if c.get("num", 1) > 1 else ""
+        nouveaux.append(_prono(f"{c['style']}:{jour}{num}", jour, c["style"], jb, cote, c["proba"],
                                estime=bool(c.get("estime")), conseille=c.get("conseille")))
 
     if semaine:

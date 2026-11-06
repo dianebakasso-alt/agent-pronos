@@ -249,11 +249,11 @@ def carte_combine_estime(c, jour):
           <span class="j-cote">{pct(j["proba"])}</span></li>"""
     legs = [{"id": j["match"]["id"], **({"marche": j["marche"]} if j["type"] == "buts" else {"court": j["court"]}),
              "pari": j["issue"]} for j in c["jambes"]]
-    pari = {"type": "combine", "id": f"combo-{style}-{c['jambes'][0]['match']['id']}", "date": c["jambes"][0]["match"]["debut"],
+    pari = {"type": "combine", "id": f"combo-{style}{c.get('num', '')}-{c['jambes'][0]['match']['id']}", "date": c["jambes"][0]["match"]["debut"],
             "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]),
             "pari": f"Combiné {c['nom']} · {len(c['jambes'])} matchs", "cote": round(c["cote_cible"], 2), "bk": "ton bookmaker", "jambes": legs}
     return f"""
-    <article class="carte combo st-{style} estime" id="combo-{jour}-{style}" data-style="{style}" data-nom="{e(c['nom'])}" data-cote="{c['cote_cible']:.4f}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
+    <article class="carte combo st-{style} estime" id="combo-{jour}-{style}{c.get('num', '')}" data-style="{style}" data-nom="{e(c['nom'])}" data-cote="{c['cote_cible']:.4f}" data-pari="{e(json.dumps(pari, ensure_ascii=False))}">
       <div class="combo-t"><span class="ct"><i class="ct-e">{c["emoji"]}</i> <span class="ct-n">{e(c["nom"])}</span></span><span class="badge c-moyenne">À vérifier</span></div>
       <p class="combo-desc">{e(c["desc"])}</p>
       <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
@@ -298,7 +298,7 @@ def carte_combine(c, jour=""):
         note = (f'Pas de ticket rentable dans ce style aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
                 f'il fait perdre environ <b class="rouge">{euros(perte)} pour 10 € joués</b>. À toi de voir.')
     return f"""
-    <article class="carte combo st-{style}{'' if c['conseille'] else ' risque'}" id="combo-{jour}-{style}" data-style="{style}" data-nom="{e(c.get('nom', 'Combiné'))}" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + style + "-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + c.get("nom", "") + " · " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
+    <article class="carte combo st-{style}{'' if c['conseille'] else ' risque'}" id="combo-{jour}-{style}{c.get('num', '')}" data-style="{style}" data-nom="{e(c.get('nom', 'Combiné'))}" data-cote="{c['cote']:.4f}" data-pari="{e(json.dumps({"type": "combine", "id": "combo-" + style + "-" + c["jambes"][0]["match"]["id"], "date": c["jambes"][0]["match"]["debut"], "match": " + ".join(j["match"]["domicile"] + " – " + j["match"]["exterieur"] for j in c["jambes"]), "pari": "Combiné " + c.get("nom", "") + " · " + str(len(c["jambes"])) + " matchs", "cote": round(c["cote"], 2), "bk": c["bookmaker"], "jambes": [{"id": j["match"]["id"], "court": j["court"], "pari": j["issue"]} for j in c["jambes"]]}, ensure_ascii=False))}">
       {entete}
       <ul class="jambes">{jambes}</ul>
       <div class="pari">
