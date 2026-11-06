@@ -880,8 +880,8 @@
   "proba": 0.279,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "47523374e8d8cdd5b43677e358317587",
@@ -891,7 +891,10 @@
     "exterieur": "West Ham United",
     "pari": "Victoire West Ham United",
     "court": "2",
-    "cote": 1.88
+    "cote": 1.88,
+    "res": "N",
+    "score": "3-3",
+    "ok": false
    },
    {
     "id": "e35b42924a5fe785a52709c4d17c14c2",
@@ -901,7 +904,10 @@
     "exterieur": "Middlesbrough",
     "pari": "Victoire Middlesbrough",
     "court": "2",
-    "cote": 1.67
+    "cote": 1.67,
+    "res": "1",
+    "score": "2-0",
+    "ok": false
    }
   ]
  },
@@ -934,6 +940,38 @@
     "pari": "Victoire Atalanta BC",
     "court": "1",
     "cote": 1.07
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-06",
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.27,
+  "proba": 0.2568,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "1358657f64b8fdae74ac7263bf7b8725",
+    "sport_key": "soccer_france_ligue_two",
+    "date": "2026-11-06T19:00:00Z",
+    "domicile": "Montpellier",
+    "exterieur": "Metz",
+    "pari": "Victoire Montpellier",
+    "court": "1",
+    "cote": 1.9
+   },
+   {
+    "id": "7ad550e94d58693e8d19f1da1ae1513f",
+    "sport_key": "soccer_belgium_first_div",
+    "date": "2026-11-06T19:45:00Z",
+    "domicile": "Standard Liege",
+    "exterieur": "SK Beveren",
+    "pari": "Victoire Standard Liege",
+    "court": "1",
+    "cote": 1.72
    }
   ]
  }

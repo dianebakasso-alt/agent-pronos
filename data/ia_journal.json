@@ -1,16 +1,9 @@
 {
- "quand": "2026-11-05T12:45:28.555700+00:00",
- "etat": "erreur",
- "ok": 0,
+ "quand": "2026-11-06T01:50:26.267727+00:00",
+ "etat": "active",
+ "ok": 2,
  "erreurs": [
-  "400 HTTP Error 400: Bad Request {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgjocuSFPqYcFW5HYppM9\"}",
-  "400 HTTP Error 400: Bad Request {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Cgjocvk8BnFUDoFK5WdJQ\"}",
-  "400 HTTP Error 400: Bad Request {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgjocwhBb9efYcLB3Wcys\"}",
-  "400 HTTP Error 400: Bad Request {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgjocxVojDJM7hUKpCMc3\"}",
-  "400 HTTP Error 400: Bad Request {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgjocyMtaGso5QKDG6kCx\"}",
-  "400 HTTP Error 400: Bad Request",
-  "400 HTTP Error 400: Bad Request",
-  "400 HTTP Error 400: Bad Request",
-  "400 HTTP Error 400: Bad Request"
+  "plafond IA du jour atteint (0.08 €)",
+  "plafond IA du jour atteint (0.08 €)"
  ]
 }
