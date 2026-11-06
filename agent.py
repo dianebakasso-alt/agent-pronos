@@ -879,7 +879,9 @@ def main():
     # les combinés du jour sont refaits avec les avis de l'IA : aucun match qu'elle dit d'éviter
     if verdicts:
         jq = [a for a in jours[0]["analyses"] if not a.get("deja_commence")]
-        jours[0]["combos"] = moteur.diversifier(moteur.combines_experts(jq, cfg) + moteur.combines_buts(jq))
+        tv = moteur.ticket_verifie(jq, cfg)
+        jours[0]["combos"] = moteur.valider_par_ia(moteur.diversifier(([tv] if tv else []) + moteur.combines_experts(jq, cfg)
+                                                                      + moteur.combines_buts(jq)))
         print(f"    combinés refaits avec {len(verdicts)} avis de l'IA")
     for j in jours:
         jj = [a for a in j["analyses"] if not a.get("deja_commence")]

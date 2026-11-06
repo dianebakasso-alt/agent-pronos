@@ -21,6 +21,7 @@ CATEGORIES = {
     "buts": ("⚽", "Combiné Buts"),
     "mixte": ("🔀", "Combiné Mixte"),
     "mixte_gros": ("💥", "Mixte gros gain"),
+    "verifie": ("🔎", "Vérifié par l'IA"),
     "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
     "rebond": ("🔄", "Rebond"),

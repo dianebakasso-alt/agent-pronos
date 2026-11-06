@@ -263,7 +263,44 @@ STYLES = {
     "prudent": {"nom": "Prudent", "emoji": "🛡️", "desc": "2 matchs, des favoris : la meilleure chance de passer."},
     "equilibre": {"nom": "Équilibré", "emoji": "⚖️", "desc": "Le meilleur rapport valeur / chance du jour."},
     "gros": {"nom": "Gros gain", "emoji": "🚀", "desc": "3 à 4 matchs : grosse cote, plus risqué."},
+    "verifie": {"nom": "Vérifié par l'IA", "emoji": "🔎",
+                "desc": "Seulement des matchs où l'IA a lu toute l'actu (blessés, compos, forme, enjeu) et dit « je le joue »."},
 }
+
+
+def ticket_verifie(analyses, cfg, n_max=4):
+    """🔎 Le ticket conseillé par l'expert renseigné : uniquement les paris que l'IA a vérifiés et validés (« jouer »)."""
+    jambes = []
+    for m in analyses:
+        v = m.get("verdict_ia") or {}
+        if v.get("verdict") != "jouer" or v.get("pari") not in ("1", "N", "2"):
+            continue
+        i = next((x for x in m["issues"] if x["court"] == v["pari"]), None)
+        if i and i["proba"] >= 0.30:
+            jambes.append({"match": m, "issue": i["issue"], "court": i["court"], "cote": i["cote"],
+                           "proba": i["proba"], "edge": i["proba"] * i["cote"] - 1, "bk": i.get("bookmaker")})
+    if len(jambes) < 2:
+        return None
+    jambes = sorted(jambes, key=lambda j: -j["proba"])[:n_max]
+    # le bookmaker jouable qui propose tous ces matchs au meilleur prix
+    meilleur = None
+    for bk in cfg["bookmakers_jouables"]:
+        cotes = [(j["match"].get("cotes_bk", {}).get(bk) or {}).get(j["court"]) for j in jambes]
+        if all(cotes):
+            titre = jambes[0]["match"]["cotes_bk"][bk]["titre"]
+            if meilleur is None or _prod(cotes) > meilleur[1]:
+                meilleur = (titre, _prod(cotes), cotes)
+    if meilleur:
+        for j, c in zip(jambes, meilleur[2]):
+            j["cote"] = c
+        bk = meilleur[0]
+    else:
+        bk = "meilleure cote du marché"
+    cote, proba = _prod(j["cote"] for j in jambes), _prod(j["proba"] for j in jambes)
+    c = {"bookmaker": bk, "jambes": jambes, "cote": cote, "proba": proba, "edge": proba * cote - 1,
+         "conseille": True, "style": "verifie"}
+    c.update(STYLES["verifie"])
+    return c
 
 
 def combines_experts(analyses, cfg):
@@ -430,10 +467,21 @@ def _buts_ok(k, p_brut):
     return (k, round(int(p_brut * 20) / 20, 2)) not in BUTS_FAIBLES
 
 
+def valider_par_ia(combos):
+    """Un ticket dont chaque match a été vérifié et validé par l'IA (« jouer ») devient « conseillé »."""
+    for c in combos:
+        vs = [((j["match"].get("verdict_ia") or {}).get("verdict"), (j["match"].get("verdict_ia") or {}).get("pari"), j.get("court"))
+              for j in c["jambes"]]
+        if vs and all(v == "jouer" and (court is None or pari == court) for v, pari, court in vs):
+            c["conseille"] = True
+            c["valide_ia"] = True
+    return combos
+
+
 def diversifier(combos, max_par_jambe=2):
     """Un même pari ne doit pas faire tomber tous les tickets du jour : 2 tickets maximum par pari.
     Les tickets sont gardés par ordre d'intérêt (gros gains d'abord)."""
-    ordre = {"mixte_gros": 0, "gros": 1, "equilibre": 2, "prudent": 3, "mixte": 4, "buts": 5}
+    ordre = {"verifie": -1, "mixte_gros": 0, "gros": 1, "equilibre": 2, "prudent": 3, "mixte": 4, "buts": 5}
     vus, garde = {}, []
     for c in sorted(combos, key=lambda c: (ordre.get(c["style"], 9), c.get("num", 1))):
         cles = [(j["match"]["id"], j.get("marche") or j.get("court")) for j in c["jambes"]]
