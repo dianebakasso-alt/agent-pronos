@@ -39412,7 +39412,9 @@
      "N": 0.3152,
      "2": 0.3038
     },
-    "traits": []
+    "traits": [
+     "doute_ia"
+    ]
    }
   ],
   "cote": 2.32,
@@ -39453,6 +39455,7 @@
      "2": 0.36
     },
     "traits": [
+     "doute_ia",
      "force_pour"
     ]
    }
@@ -40102,7 +40105,9 @@
      "ligue": "fra.2",
      "id": "401876700"
     },
-    "traits": []
+    "traits": [
+     "doute_ia"
+    ]
    },
    {
     "id": "12e661a2aa5dc95aa7530fa0d9b1bf5c",
@@ -40190,6 +40195,7 @@
      "id": "401876698"
     },
     "traits": [
+     "doute_ia",
      "force_pour"
     ]
    },

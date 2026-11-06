@@ -5,6 +5,36 @@
    "verdict": "eviter",
    "pari": null,
    "raison": "Nancy est invaincu sur 5 matchs, mais un pronostic partagé indique l'absence de Kandil (1 but, 2 passes décisives), de Bouaoune et de Coulibaly, et le gardien remplaçant Kouini est blessé. Le 1 à 1.66 implique environ 60 % de probabilité, alors que l'Elo ne donne que 52 % à Nancy : la cote ne vaut p"
+  },
+  "57fc8cfc03a9f7081a2d90bbaf77e899": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Annecy perd son meilleur buteur Moïse Sahi Dion (blessé) et son entraîneur Laurent Guyot, suspendu pour ce match, mais Boulogne n'a gagné qu'un seul match à domicile cette saison. Le modèle Elo donne Annecy à 39 % contre une cote implicite d'environ 34 % à 2.95, donc il y a un léger intérêt, tempéré"
+  },
+  "47b7fc7d25003a9083df3789f996281e": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Dijon a battu Grenoble 3-1 lors de sa dernière sortie, tandis que Red Star a subi une lourde défaite 4-1 à Nancy il y a quelques jours. L'Elo donne Dijon à 42 % contre environ 40 % implicite à 2.52, un écart faible, et Dijon reste irrégulier à domicile (DDVVD)."
+  },
+  "12e661a2aa5dc95aa7530fa0d9b1bf5c": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai pas trouvé d'actu fiable sur les absents des deux équipes. Dunkerque marque seulement 0.8 but par match et Guingamp ne gagne quasiment jamais à l'extérieur (1 victoire sur 5), mais la cote place Guingamp favori alors que l'Elo donne Dunkerque à 45 %, signal contradictoire qui ne justifie pas"
+  },
+  "1358657f64b8fdae74ac7263bf7b8725": {
+   "verdict": "jouer",
+   "pari": "1",
+   "raison": "Montpellier, 2e de Ligue 2 avec une seule défaite et la meilleure défense du championnat, enchaîne 4 victoires et reste invaincu sur 5 matchs. Metz n'a toujours pas gagné à l'extérieur cette saison (3 nuls, 2 défaites) et est affaibli par les absences d'Abuashvili et de Mangondo ; l'Elo donne 62 % à"
+  },
+  "7ad550e94d58693e8d19f1da1ae1513f": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Standard n'a gagné qu'un match sur ses 4 dernières journées de championnat et est 9e, avec une défense qui garde rarement la cage inviolée. Mais la cote 1.72 (environ 58 % implicite) dépasse l'Elo de 52 %, donc il n'y a pas de valeur, même si Beveren (0 victoire à l'extérieur sur 5, 13e) est en mauv"
+  },
+  "af665449ac9e2c4e1f183376e85fc936": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai pas trouvé d'actu récente (blessés, suspensions, forme détaillée) sur ce match. Derby enchaîne les défaites (4 sur 5) et encaisse 2.8 buts par match, et l'Elo ne donne aucun avantage net, la cote de Derby (environ 44 % implicite) étant au-dessus de son Elo (37 %)."
   }
  }
 }

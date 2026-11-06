@@ -2,51 +2,25 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 504,
-  "fin": "```json\n{\"verdicts\": [{\"n\": 1, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Nancy est invaincu sur 5 matchs, mais un pronostic partagé indique l'absence de Kandil (1 but, 2 passes décisives), de Bouaoune et de Coulibaly, et le gardien remplaçant Kouini est blessé. Le 1 à 1.66 implique environ 60 % de probabilité, alors que l'Elo ne donne que 52 % à Nancy : la cote ne vaut pas le risque, et le nul (3.53) et le 2 (4.80) ne sont pas non plus de bons paris selon le modèle Elo (26 % et 23 %).\"}]}\n```",
+  "longueur": 2236,
+  "fin": "rnées de championnat et est 9e, avec une défense qui garde rarement la cage inviolée. Mais la cote 1.72 (environ 58 % implicite) dépasse l'Elo de 52 %, donc il n'y a pas de valeur, même si Beveren (0 victoire à l'extérieur sur 5, 13e) est en mauvaise forme.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai pas trouvé d'actu récente (blessés, suspensions, forme détaillée) sur ce match. Derby enchaîne les défaites (4 sur 5) et encaisse 2.8 buts par match, et l'Elo ne donne aucun avantage net, la cote de Derby (environ 44 % implicite) étant au-dessus de son Elo (37 %).\"}\n]}\n```",
   "usage": {
-   "input_tokens": 21977,
+   "input_tokens": 51252,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 1670,
+   "output_tokens": 5185,
    "output_tokens_details": {
-    "thinking_tokens": 1282
+    "thinking_tokens": 3719
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard",
    "server_tool_use": {
-    "web_search_requests": 2,
-    "web_fetch_requests": 0
-   }
-  }
- },
- {
-  "arret": "max_tokens",
-  "pauses": 0,
-  "longueur": 0,
-  "fin": "",
-  "usage": {
-   "input_tokens": 37438,
-   "cache_creation_input_tokens": 0,
-   "cache_read_input_tokens": 0,
-   "cache_creation": {
-    "ephemeral_5m_input_tokens": 0,
-    "ephemeral_1h_input_tokens": 0
-   },
-   "output_tokens": 3224,
-   "output_tokens_details": {
-    "thinking_tokens": 3041
-   },
-   "service_tier": "standard",
-   "inference_geo": "global",
-   "speed": "standard",
-   "server_tool_use": {
-    "web_search_requests": 3,
+    "web_search_requests": 5,
     "web_fetch_requests": 0
    }
   }

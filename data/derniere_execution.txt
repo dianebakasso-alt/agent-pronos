@@ -14,6 +14,4 @@
     calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 0.97} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Bundesliga', 'Eredivisie', 'Liga', 'Liga Portugal']
     autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA Santa Clara: réponse sans JSON (arrêt : max_tokens, 0 car.) '' réponse sans JSON (arrêt : max_tokens, 0 car.) ''
-  ! IA Montpellier: plafond IA du jour atteint (0.08 €) plafond IA du jour atteint (0.08 €)
 Site généré : site/index.html
