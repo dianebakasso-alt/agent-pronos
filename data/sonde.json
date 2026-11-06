@@ -1,0 +1,290 @@
+{
+ "quand": "2026-11-06T01:37:36.917991+00:00",
+ "elo": {
+  "I1": {
+   "n": 610,
+   "brier_elo": 0.6042,
+   "n_cotes": 610,
+   "brier_marche": 0.5768,
+   "brier_melange": 0.5804
+  },
+  "I1_favoris": {
+   "suspect": {
+    "n": 43,
+    "reel": 0.791,
+    "annonce": 0.606,
+    "roi": 0.267
+   },
+   "confirme": {
+    "n": 202,
+    "reel": 0.594,
+    "annonce": 0.616,
+    "roi": -0.089
+   },
+   "autre": {
+    "n": 65,
+    "reel": 0.692,
+    "annonce": 0.64,
+    "roi": 0.011
+   }
+  },
+  "E0": {
+   "n": 610,
+   "brier_elo": 0.6174,
+   "n_cotes": 610,
+   "brier_marche": 0.5995,
+   "brier_melange": 0.6005
+  },
+  "E0_favoris": {
+   "suspect": {
+    "n": 56,
+    "reel": 0.643,
+    "annonce": 0.633,
+    "roi": -0.048
+   },
+   "confirme": {
+    "n": 184,
+    "reel": 0.538,
+    "annonce": 0.616,
+    "roi": -0.178
+   },
+   "autre": {
+    "n": 85,
+    "reel": 0.612,
+    "annonce": 0.624,
+    "roi": -0.079
+   }
+  },
+  "F1": {
+   "n": 462,
+   "brier_elo": 0.5994,
+   "n_cotes": 462,
+   "brier_marche": 0.5769,
+   "brier_melange": 0.5786
+  },
+  "F1_favoris": {
+   "suspect": {
+    "n": 15,
+    "reel": 0.6,
+    "annonce": 0.613,
+    "roi": -0.087
+   },
+   "confirme": {
+    "n": 175,
+    "reel": 0.623,
+    "annonce": 0.62,
+    "roi": -0.057
+   },
+   "autre": {
+    "n": 49,
+    "reel": 0.694,
+    "annonce": 0.635,
+    "roi": 0.024
+   }
+  },
+  "D1": {
+   "n": 462,
+   "brier_elo": 0.6147,
+   "n_cotes": 462,
+   "brier_marche": 0.5893,
+   "brier_melange": 0.5921
+  },
+  "D1_favoris": {
+   "suspect": {
+    "n": 22,
+    "reel": 0.864,
+    "annonce": 0.69,
+    "roi": 0.203
+   },
+   "confirme": {
+    "n": 154,
+    "reel": 0.623,
+    "annonce": 0.621,
+    "roi": -0.053
+   },
+   "autre": {
+    "n": 35,
+    "reel": 0.571,
+    "annonce": 0.642,
+    "roi": -0.179
+   }
+  },
+  "SP1": {
+   "n": 610,
+   "brier_elo": 0.5859,
+   "n_cotes": 610,
+   "brier_marche": 0.5692,
+   "brier_melange": 0.5702
+  },
+  "SP1_favoris": {
+   "suspect": {
+    "n": 36,
+    "reel": 0.639,
+    "annonce": 0.666,
+    "roi": -0.104
+   },
+   "confirme": {
+    "n": 172,
+    "reel": 0.645,
+    "annonce": 0.616,
+    "roi": -0.024
+   },
+   "autre": {
+    "n": 69,
+    "reel": 0.71,
+    "annonce": 0.637,
+    "roi": 0.051
+   }
+  },
+  "N1": {
+   "n": 462,
+   "brier_elo": 0.6035,
+   "n_cotes": 462,
+   "brier_marche": 0.589,
+   "brier_melange": 0.5895
+  },
+  "N1_favoris": {
+   "suspect": {
+    "n": 48,
+    "reel": 0.521,
+    "annonce": 0.642,
+    "roi": -0.249
+   },
+   "confirme": {
+    "n": 139,
+    "reel": 0.612,
+    "annonce": 0.617,
+    "roi": -0.078
+   },
+   "autre": {
+    "n": 67,
+    "reel": 0.716,
+    "annonce": 0.668,
+    "roi": 0.01
+   }
+  },
+  "P1": {
+   "n": 462,
+   "brier_elo": 0.5689,
+   "n_cotes": 462,
+   "brier_marche": 0.5462,
+   "brier_melange": 0.5486
+  },
+  "P1_favoris": {
+   "suspect": {
+    "n": 29,
+    "reel": 0.724,
+    "annonce": 0.671,
+    "roi": 0.01
+   },
+   "confirme": {
+    "n": 155,
+    "reel": 0.639,
+    "annonce": 0.649,
+    "roi": -0.101
+   },
+   "autre": {
+    "n": 48,
+    "reel": 0.854,
+    "annonce": 0.691,
+    "roi": 0.157
+   }
+  },
+  "E1": {
+   "n": 954,
+   "brier_elo": 0.6337,
+   "n_cotes": 954,
+   "brier_marche": 0.6235,
+   "brier_melange": 0.6238
+  },
+  "E1_favoris": {
+   "suspect": {
+    "n": 35,
+    "reel": 0.629,
+    "annonce": 0.615,
+    "roi": -0.053
+   },
+   "confirme": {
+    "n": 183,
+    "reel": 0.53,
+    "annonce": 0.579,
+    "roi": -0.143
+   },
+   "autre": {
+    "n": 103,
+    "reel": 0.563,
+    "annonce": 0.585,
+    "roi": -0.104
+   }
+  }
+ },
+ "espn": {
+  "cles": [
+   "boxscore",
+   "format",
+   "gameInfo",
+   "lastFiveGames",
+   "leaders",
+   "broadcasts",
+   "pickcenter",
+   "odds",
+   "hasOdds",
+   "rosters",
+   "news",
+   "header",
+   "article",
+   "videos",
+   "keyEvents",
+   "commentary",
+   "wallclockAvailable",
+   "meta",
+   "standings"
+  ],
+  "rosters_n": 2,
+  "roster_cles": [
+   "homeAway",
+   "winner",
+   "team",
+   "roster",
+   "uniform",
+   "formation"
+  ],
+  "roster_equipe": "{\"id\": \"103\", \"abbreviation\": \"MIL\", \"displayName\": \"AC Milan\", \"color\": \"e4002b\", \"alternateColor\": \"ffffff\", \"logos\": [{\"href\": \"https://a.espncdn.com/i/teamlogos/soccer/500/103.png\", \"width\": 500, \"height\": 500, \"alt\": \"\", \"rel\": [\"full\", \"default\"], \"lastUpdated\": \"2024-01-04T17:49Z\"}, {\"href\": ",
+  "roster_len": 21,
+  "roster_ex": [
+   "{\"active\": true, \"starter\": true, \"jersey\": \"96\", \"athlete\": {\"id\": \"384305\", \"uid\": \"s:600~a:384305\", \"guid\": \"b20d53c0-454f-37c0-b345-c0c192dab537\", \"lastName\": \"Torriani\", \"fullName\": \"Lorenzo Torriani\", \"displayName\": \"Lorenzo Torriani\", \"shortName\": \"L. Torriani\", \"links\": [{\"language\": \"en-US\", \"rel\": [\"playercard\", \"desktop\", \"athlete\"], \"href\": \"https://www.espn.com/soccer/player/_/id/384305/lorenzo-torriani\", \"text\": \"Player Card\", \"shortText\": \"Player Card\", \"isExternal\": false, \"isPremium\": false}], \"jerseyImages\": [{\"href\": \"https://stitcher.espn.com/sports/soccer/leagues/uefa.europa/events/401915534/athletes/384305/jersey.png?darkMode=false\", \"rel\": [\"full\", \"default\"], \"width\":",
+   "{\"active\": true, \"starter\": true, \"jersey\": \"13\", \"athlete\": {\"id\": \"388239\", \"uid\": \"s:600~a:388239\", \"guid\": \"44a54862-3936-3a4d-a309-b06e17c3d330\", \"lastName\": \"Diawara\", \"fullName\": \"Sankhoun Diawara\", \"displayName\": \"Sankhoun Diawara\", \"shortName\": \"S. Diawara\", \"links\": [{\"language\": \"en-US\", \"rel\": [\"playercard\", \"desktop\", \"athlete\"], \"href\": \"https://www.espn.com/soccer/player/_/id/388239/sankhoun-diawara\", \"text\": \"Player Card\", \"shortText\": \"Player Card\", \"isExternal\": false, \"isPremium\": false}], \"jerseyImages\": [{\"href\": \"https://stitcher.espn.com/sports/soccer/leagues/uefa.europa/events/401915534/athletes/388239/jersey.png?darkMode=false\", \"rel\": [\"full\", \"default\"], \"width\": 1"
+  ],
+  "boxscore": "{\"teams\": [{\"team\": {\"id\": \"103\", \"uid\": \"s:600~t:103\", \"slug\": \"ita.ac_milan\", \"location\": \"AC Milan\", \"name\": \"AC Milan\", \"abbreviation\": \"MIL\", \"displayName\": \"AC Milan\", \"shortDisplayName\": \"Milan\", \"color\": \"e4002b\", \"alternateColor\": \"ffffff\", \"logo\": \"https://a.espncdn.com/i/teamlogos/soccer/500/103.png\", \"uniform\": {\"type\": \"home\", \"color\": \"000000\", \"alternateColor\": \"ff0000\"}}, \"statistics\": [{\"name\": \"foulsCommitted\", \"displayValue\": \"9\", \"label\": \"Fouls\"}, {\"name\": \"yellowCards\", \"displayValue\": \"2\", \"label\": \"Yellow Cards\"}, {\"name\": \"redCards\", \"displayValue\": \"0\", \"label\": \"Red Cards\"}, {\"name\": \"offsides\", \"displayValue\": \"1\", \"label\": \"Offsides\"}, {\"name\": \"wonCorners\", \"displayValue\": \"2\", \"label\": \"Corner Kicks\"}, {\"name\": \"saves\", \"displayValue\": \"6\", \"label\": \"Saves\"}, {\"name\": \"possessionPct\", \"displayValue\": \"70.1\", \"label\": \"Possession\"}, {\"name\": \"totalShots\", \"d",
+  "header": "{\"id\": \"401915534\", \"uid\": \"s:600~l:776~e:401915534\", \"season\": {\"year\": 2026, \"current\": true, \"type\": 14540, \"name\": \"2026-27 UEFA Europa League, League Phase\"}, \"timeValid\": true, \"competitions\": [{\"id\": \"401915534\", \"uid\": \"s:600~l:776~e:401915534~c:401915534\", \"date\": \"2026-11-05T17:45Z\", \"neutralSite\": false, \"conferenceCompetition\": false, \"boxscoreAvailable\": true, \"commentaryAvailable\": true, \"liveAvailable\": false, \"onWatchESPN\": false, \"recent\": false, \"wallclockAvailable\": true, \"boxscoreSource\": \"full\", \"playByPlaySource\": \"full\", \"competitors\": [{\"id\": \"103\", \"uid\": \"s:600~t:103\", \"order\": 0, \"homeAway\": \"home\", \"winner\": false, \"team\": {\"id\": \"103\", \"guid\": \"7ca4fb35-d78e-49f0-67fe-7fa95588e28d\", \"uid\": \"s:600~t:103\", \"location\": \"AC Milan\", \"name\": \"AC Milan\", \"abbreviation\": \"MIL\", \"displayName\": \"AC Milan\", \"shortDisplayName\": \"Milan\", \"color\": \"e4002b\", \"alternateColor",
+  "lastFiveGames": "[{\"displayOrder\": 1, \"team\": {\"id\": \"103\", \"uid\": \"s:600~t:103\", \"displayName\": \"AC Milan\", \"abbreviation\": \"MIL\", \"links\": [{\"href\": \"https://www.espn.com/soccer/club/_/id/103/ac-milan\", \"text\": \"Clubhouse\"}, {\"href\": \"https://www.espn.com/soccer/team/fixtures/_/id/103/ac-milan\", \"text\": \"Fixtures\"}], \"logo\": \"https://a.espncdn.com/i/teamlogos/soccer/500/103.png\", \"logos\": [{\"href\": \"https://a.espncdn.com/i/teamlogos/soccer/500/103.png\", \"width\": 500, \"height\": 500, \"alt\": \"\", \"rel\": [\"full\", \"default\"], \"lastUpdated\": \"2024-01-04T17:49Z\"}, {\"href\": \"https://a.espncdn.com/i/teamlogos/soccer/500-dark/103.png\", \"width\": 500, \"height\": 500, \"alt\": \"\", \"rel\": [\"full\", \"dark\"], \"lastUpdated\": \"2024-01-04T17:53Z\"}]}, \"events\": [{\"id\": \"401874978\", \"links\": [{\"href\": \"https://www.espn.com/soccer/match/_/gameId/401874978/atalanta-ac-milan\", \"text\": \"Summary\"}], \"atVs\": \"vs\", \"gameDate\": \"2026-1",
+  "standings": "{\"fullViewLink\": {\"text\": \"Full Table\", \"href\": \"https://www.espn.com/soccer/table/_/league/uefa.europa\"}, \"header\": \"UEFA Europa League Standings\", \"groups\": [{\"standings\": {\"entries\": [{\"team\": \"Benfica\", \"link\": \"https://www.espn.com/soccer/club/_/id/1929/benfica\", \"id\": \"1929\", \"uid\": \"s:600~t:1929\", \"stats\": [{\"name\": \"gamesPlayed\", \"displayName\": \"Games Played\", \"shortDisplayName\": \"GP\", \"description\": \"Number of Games Played\", \"abbreviation\": \"GP\", \"type\": \"gamesplayed\", \"value\": 4.0, \"displayValue\": \"4\"}, {\"name\": \"losses\", \"displayName\": \"Losses\", \"shortDisplayName\": \"L\", \"description\": \"Losses\", \"abbreviation\": \"L\", \"type\": \"losses\", \"value\": 0.0, \"displayValue\": \"0\"}, {\"name\": \"pointDifferential\", \"displayName\": \"Goal Difference\", \"shortDisplayName\": \"GD\", \"description\": \"Goal Difference\", \"abbreviation\": \"GD\", \"type\": \"pointdifferential\", \"value\": 10.0, \"displayValue\": \"+10\"}",
+  "keyEvents": "[{\"id\": \"54828871\", \"type\": {\"id\": \"80\", \"text\": \"Kickoff\", \"type\": \"kickoff\"}, \"text\": \"First Half begins.\", \"period\": {\"number\": 1}, \"clock\": {\"value\": 0.0, \"displayValue\": \"\"}, \"scoringPlay\": false, \"source\": {\"id\": \"38\", \"description\": \"SA.ENVOY\"}, \"wallclock\": \"2026-11-05T17:48:07Z\", \"shootout\": false}, {\"id\": \"54837874\", \"type\": {\"id\": \"94\", \"text\": \"Yellow Card\", \"type\": \"yellow-card\"}, \"text\": \"Alphadjo Cisse (AC Milan) is shown the yellow card for a bad foul.\", \"shortText\": \"Alphadjo Cissè Yellow Card\", \"period\": {\"number\": 1}, \"clock\": {\"value\": 1891.0, \"displayValue\": \"32'\"}, \"scoringPlay\": false, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"participants\": [{\"athlete\": {\"id\": \"359754\", \"displayName\": \"Alphadjo Cissè\"}}], \"source\": {\"id\": \"38\", \"description\": \"SA.ENVOY\"}, \"wallclock\": \"2026-11-05T18:19:38Z\", \"shootout\": false}, {\"id\": \"54841323\", \"type\": {\"id\": \"81\", \"tex",
+  "team_id": "103",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/teams/103/schedule": {
+   "n": 4,
+   "ex": "{\"id\": \"401915586\", \"date\": \"2026-09-16T19:00Z\", \"name\": \"Benfica at AC Milan\", \"shortName\": \"SLB @ MIL\", \"season\": {\"year\": 2026, \"displayName\": \"2026-27 UEFA Europa League\"}, \"seasonType\": {\"id\": \"1\", \"type\": 14540, \"name\": \"League Phase\", \"abbreviation\": \"League Phase\"}, \"timeValid\": true, \"competitions\": [{\"id\": \"401915586\", \"date\": \"2026-09-16T19:00Z\", \"attendance\": 68393, \"timeValid\": true, \"neutralSite\": false, \"boxscoreAvailable\": true, \"ticketsAvailable\": false, \"venue\": {\"fullName\": \"S",
+   "ligues": [
+    "UEFA Europa League"
+   ]
+  },
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams/103/schedule": {
+   "n": 18,
+   "ex": "{\"id\": \"401886529\", \"date\": \"2026-07-25T14:00Z\", \"name\": \"AC Milan at Celtic\", \"shortName\": \"MIL @ CEL\", \"season\": {\"year\": 2026, \"displayName\": \"2026 Club Friendly\"}, \"seasonType\": {\"id\": \"1\", \"type\": 13818, \"name\": \"2026 Club Friendly\", \"abbreviation\": \"2026 Club Friendly\"}, \"timeValid\": true, \"competitions\": [{\"id\": \"401886529\", \"date\": \"2026-07-25T14:00Z\", \"attendance\": 0, \"timeValid\": true, \"neutralSite\": false, \"boxscoreAvailable\": true, \"ticketsAvailable\": false, \"venue\": {\"fullName\": \"Ce",
+   "ligues": [
+    "Club Friendly",
+    "Serie A",
+    "UEFA Europa League"
+   ]
+  },
+  "https://site.web.api.espn.com/apis/site/v2/sports/soccer/all/teams/103/schedule?fixture=false": {
+   "n": 18,
+   "ex": "{\"id\": \"401886529\", \"date\": \"2026-07-25T14:00Z\", \"name\": \"AC Milan at Celtic\", \"shortName\": \"MIL @ CEL\", \"season\": {\"year\": 2026, \"displayName\": \"2026 Club Friendly\"}, \"seasonType\": {\"id\": \"1\", \"type\": 13818, \"name\": \"2026 Club Friendly\", \"abbreviation\": \"2026 Club Friendly\"}, \"timeValid\": true, \"competitions\": [{\"id\": \"401886529\", \"date\": \"2026-07-25T14:00Z\", \"attendance\": 0, \"timeValid\": true, \"neutralSite\": false, \"boxscoreAvailable\": true, \"ticketsAvailable\": false, \"venue\": {\"fullName\": \"Ce",
+   "ligues": [
+    "Club Friendly",
+    "Serie A",
+    "UEFA Europa League"
+   ]
+  }
+ }
+}
