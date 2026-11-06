@@ -396,6 +396,13 @@ LIBELLES_BUTS = {
 }
 
 
+CALIB_BUTS = {}   # {marché: facteur} appris du carnet : corrige les paris de buts trop optimistes
+
+
+def _cal(k, p):
+    return p * CALIB_BUTS.get(k, 1.0)
+
+
 def pronos_buts(analyses, n=4):
     """Les pronos de buts les plus nets du jour (proba élevée), avec la cote juste à chercher."""
     choix = []
@@ -405,6 +412,7 @@ def pronos_buts(analyses, n=4):
             continue
         options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]),
                    ("pas_btts", 1 - b["btts"]), ("plus15", b["plus15"]), ("moins35", 1 - b["plus35"])]
+        options = [(k, _cal(k, p)) for k, p in options]
         # on évite les paris « trop sûrs » à cote ridicule : entre 55 % et 80 %
         options = [(k, p) for k, p in options if 0.55 <= p <= 0.80]
         if not options:
@@ -429,6 +437,7 @@ def _jambe_buts(m):
     if not b:
         return None
     options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]), ("pas_btts", 1 - b["btts"])]
+    options = [(k, _cal(k, p)) for k, p in options]
     options = [(k, p) for k, p in options if 0.56 <= p <= 0.82]
     if not options:
         return None

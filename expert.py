@@ -254,6 +254,22 @@ def pauses(carnet):
     return out
 
 
+def calib_buts(carnet, prior=5.0):
+    """Paris de buts : réussite réelle / réussite annoncée, par marché (lissé vers 1).
+    Ex. « moins de 2,5 buts » annoncé à 66 % mais passé 45 % du temps → ses probabilités sont baissées."""
+    vus = {}
+    for p in carnet:
+        for j in p["jambes"]:
+            if j.get("marche") and j.get("ok") is not None and j.get("proba"):
+                vus[(j["id"], j["marche"])] = j
+    g = {}
+    for (_, k), j in vus.items():
+        s = g.setdefault(k, [0, 0.0])
+        s[0] += 1 if j["ok"] else 0
+        s[1] += j["proba"]
+    return {k: round(min(1.05, (ok + prior) / (sp + prior)), 3) for k, (ok, sp) in g.items()}
+
+
 def specialites(carnet, n_min=15):
     """Bonus/malus par championnat selon les pronos de match réellement réglés."""
     g = {}

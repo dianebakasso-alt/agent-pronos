@@ -573,6 +573,12 @@ def main():
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
+    if not demo:   # les paris de buts sont corrigés d'après leurs vrais résultats (gratuit)
+        try:
+            moteur.CALIB_BUTS = expert.calib_buts(expert.charger(DATA / "carnet.json"))
+            print(f"    calibrage buts : {moteur.CALIB_BUTS}")
+        except Exception as e:
+            print(f"  ! calibrage buts : {e}")
     for a in analyses:
         a["buts"] = moteur.analyser_buts(a)
         a["champ_nom"] = site_web.championnat(a.get("sport_key", ""), a.get("championnat", ""))[1]
