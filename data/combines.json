@@ -918,8 +918,8 @@
   "proba": 0.7927,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "dc1e2520503a3d74cb2b80eb20cb4432",
@@ -929,7 +929,10 @@
     "exterieur": "Inter Club d'Escaldes",
     "pari": "Victoire Red Star Belgrade",
     "court": "1",
-    "cote": 1.03
+    "cote": 1.03,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "dce9bc68a02a1588bbcf869175c77289",
@@ -939,7 +942,10 @@
     "exterieur": "FC Kairat",
     "pari": "Victoire Atalanta BC",
     "court": "1",
-    "cote": 1.07
+    "cote": 1.07,
+    "res": "N",
+    "score": "1-1",
+    "ok": false
    }
   ]
  },

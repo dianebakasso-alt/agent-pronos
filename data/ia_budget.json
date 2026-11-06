@@ -5,6 +5,6 @@
  "depense_jour": 0.1053,
  "plafond": 2.5,
  "plafond_jour": 0.0833,
- "appels_dernier_passage": 2,
- "bloques": 2
+ "appels_dernier_passage": 0,
+ "bloques": 4
 }
