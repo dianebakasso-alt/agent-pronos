@@ -1,11 +1,9 @@
 {
- "quand": "2026-11-06T08:15:52.657544+00:00",
- "etat": "erreur",
- "ok": 0,
+ "quand": "2026-11-06T08:20:25.921879+00:00",
+ "etat": "active",
+ "ok": 1,
  "erreurs": [
-  "plafond IA du jour atteint (0.08 €)",
-  "plafond IA du jour atteint (0.08 €)",
-  "plafond IA du jour atteint (0.08 €)",
+  "Expecting value: line 1 column 1 (char 0)",
   "plafond IA du jour atteint (0.08 €)"
  ]
 }
