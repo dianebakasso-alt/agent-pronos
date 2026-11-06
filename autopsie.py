@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 MIN_N = 25          # pronos réglés avant d'ajuster un type de pari
 ECART = 0.08        # 8 points de réussite en dessous (ou au-dessus) de l'attendu
-MAX_AUTOPSIES = 5   # par passage (économie : les plus grosses surprises d'abord)
+MAX_AUTOPSIES = 10  # par passage : les plus grosses surprises d'abord (modèle économique, plafond 4 €/mois)
 
 TRAITS = {
     "exterieur": "Favori à l'extérieur",
@@ -106,7 +106,7 @@ def a_autopsier(carnet, maintenant):
         for j in p["jambes"]:
             cle = (j["id"], j.get("court") or j.get("marche"))
             if j.get("ok") is False and "autopsie" not in j and j.get("score") \
-                    and _dt(j["date"]) > maintenant - timedelta(days=10) and cle not in vus:
+                    and _dt(j["date"]) > maintenant - timedelta(days=30) and cle not in vus:
                 vus.add(cle)
                 jambes.append(j)
     return sorted(jambes, key=lambda j: -(j.get("proba") or 0))[:MAX_AUTOPSIES]
