@@ -876,6 +876,11 @@ def main():
     for a in analyses:
         if a["id"] in avis_connus and not a.get("avis"):
             a["avis"] = avis_connus[a["id"]]
+    # les combinés du jour sont refaits avec les avis de l'IA : aucun match qu'elle dit d'éviter
+    if verdicts:
+        jq = [a for a in jours[0]["analyses"] if not a.get("deja_commence")]
+        jours[0]["combos"] = moteur.diversifier(moteur.combines_experts(jq, cfg) + moteur.combines_buts(jq))
+        print(f"    combinés refaits avec {len(verdicts)} avis de l'IA")
     for j in jours:
         jj = [a for a in j["analyses"] if not a.get("deja_commence")]
         j["foule"] = sorted(((a, f) for a in jj if (f := selection.contre_la_foule(a))), key=lambda x: -x[1]["edge"])[:3]

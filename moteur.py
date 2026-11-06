@@ -182,6 +182,11 @@ def _jouable(m, p, court=None):
     """Ce match / cette probabilité peut-il entrer dans un combiné ?"""
     if PIEGE_EXCLU and court and (m.get("pieges") or {}).get(court):
         return False
+    v = m.get("verdict_ia") or {}
+    if v.get("verdict") == "eviter":          # l'IA a lu l'actu du match : elle dit de ne pas y toucher
+        return False
+    if court and v.get("pari") in ("1", "N", "2") and v["pari"] != court:   # l'IA voit une autre issue
+        return False
     return m.get("champ_nom") not in CHAMPS_FAIBLES and round(int(p * 20) / 20, 2) not in ZONES_FAIBLES
 
 
