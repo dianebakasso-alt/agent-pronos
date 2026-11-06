@@ -57,8 +57,8 @@
   "analyse_ia_max_matchs": 0,
   "modele_ia": "claude-haiku-5-5",
   "analyse_profonde_max": 0,
-  "verdicts_max": 6,
-  "budget_ia_mois_euros": 2.5,
+  "verdicts_max": 12,
+  "budget_ia_mois_euros": 7.0,
   "prix_ia": {
     "entree_million": 1.0,
     "sortie_million": 5.0,
