@@ -344,7 +344,7 @@ def verdicts_du_jour(matchs, cfg, cle_ia):
 def avis_expert(m, v, cfg, cle_ia, profond=False):
     corps = {
         "model": cfg["modele_ia"],
-        "max_tokens": 3000,
+        "max_tokens": 6000,
         "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 7 if profond else 4}],
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
@@ -801,12 +801,22 @@ def main():
                     if a["id"] in avis_jour and not a.get("avis"):
                         a["avis"] = avis_jour[a["id"]]
                 # économie : l'IA ne juge que les matchs qui comptent (ticket du jour, contre la foule, meilleurs candidats)
-                prio = {s["id"] for s in (tk0 or {}).get("jambes", [])} | {a["id"] for a in jouables_auj if selection.contre_la_foule(a)}
-                notes = sorted(((c["note"], a["id"]) for a in jouables_auj if (c := selection.candidat(a))), reverse=True)
-                for _, i in notes:
+                # ordre : les matchs des combinés du jour (ceux que tu joues), le ticket du jour, contre la foule,
+                # les meilleurs candidats, puis les favoris les plus nets
+                ids_auj = {a["id"] for a in jouables_auj}
+                ordre = [j["match"]["id"] for c in (jours[0].get("combos") or []) if c.get("style") in ("mixte_gros", "gros", "equilibre")
+                         for j in c["jambes"]]
+                ordre += [s["id"] for s in (tk0 or {}).get("jambes", [])]
+                ordre += [a["id"] for a in jouables_auj if selection.contre_la_foule(a)]
+                cands = [(selection.candidat(a), a["id"]) for a in jouables_auj]
+                ordre += [i for n, i in sorted(((c["note"], i) for c, i in cands if c), reverse=True)]
+                ordre += [a["id"] for a in sorted(jouables_auj, key=lambda a: -max(i["proba"] for i in a["issues"]))]
+                prio = set()
+                for i in ordre:
                     if len(prio) >= cfg.get("verdicts_max", 8):
                         break
-                    prio.add(i)
+                    if i in ids_auj:
+                        prio.add(i)
                 choisis = [a for a in jouables_auj if a["id"] in prio][: cfg.get("verdicts_max", 8)]
                 verdicts = verdicts_du_jour(sorted(choisis, key=lambda a: a["debut"]), cfg, cle_ia) if choisis else {}
                 ia["ok"] += 1 if verdicts else 0
