@@ -682,6 +682,10 @@ def main():
         except Exception as e:
             print(f"  ! carnet réglement : {e}")
         lecons = autopsie.charger(DATA / "lecons.json")
+        try:   # autopsie gratuite de chaque pari perdu (faits du match ESPN : rouges, penalties, tirs…)
+            print(f"    autopsies gratuites : {autopsie.autopsies_gratuites(carnet, lecons, maintenant)}")
+        except Exception as e:
+            print(f"  ! autopsies gratuites : {e}")
     selection.AJUST = autopsie.ajustements(carnet)
     selection.SPECIALITE, spec_detail = expert.specialites(carnet)
     if not demo:

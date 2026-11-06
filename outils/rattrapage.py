@@ -24,6 +24,17 @@ for p in carnet:
             vus.add(cle_j)
             a_faire.append(j)
 a_faire.sort(key=lambda j: -(j.get("proba") or 0))      # la plus grosse surprise d'abord
+if os.environ.get("MODE", "gratuit") == "gratuit":
+    # autopsie gratuite : les faits du match publiés par ESPN, sans IA, sans coût
+    n = autopsie.autopsies_gratuites(carnet, lecons, maintenant, n=100000, jours=3650)
+    sauver = None
+    (agent.DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
+    (agent.DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
+    reste = sum(1 for j in a_faire if "autopsie" not in j)
+    (agent.DATA / "rattrapage.json").write_text(json.dumps({"quand": maintenant.isoformat(), "mode": "gratuit", "faites": n,
+        "restantes": reste, "cout_estime": 0}, ensure_ascii=False), encoding="utf-8")
+    print(f"{n} autopsies gratuites faites, {reste} restantes (sans données ESPN), coût 0 €")
+    sys.exit(0)
 print(f"{len(a_faire)} erreurs sans autopsie, budget {BUDGET_RATTRAPAGE} €")
 faites = 0
 echecs = 0
