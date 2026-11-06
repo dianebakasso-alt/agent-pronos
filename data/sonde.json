@@ -1,5 +1,5 @@
 {
- "quand": "2026-11-06T01:39:53.429063+00:00",
+ "quand": "2026-11-06T01:41:35.274317+00:00",
  "elo": {
   "I1": {
    "n": 610,
@@ -35,17 +35,17 @@
     "annonce": 0.631,
     "roi": -0.007
    },
-   "au_moins_une": {
-    "n": 68,
-    "reel": 0.574,
-    "annonce": 0.581,
-    "roi": -0.059
-   },
    "série noire": {
     "n": 33,
     "reel": 0.545,
     "annonce": 0.565,
     "roi": -0.083
+   },
+   "au_moins_une": {
+    "n": 68,
+    "reel": 0.574,
+    "annonce": 0.581,
+    "roi": -0.059
    },
    "invaincu": {
     "n": 13,
@@ -106,17 +106,17 @@
     "annonce": 0.63,
     "roi": -0.151
    },
-   "au_moins_une": {
-    "n": 97,
-    "reel": 0.577,
-    "annonce": 0.6,
-    "roi": -0.081
-   },
    "série noire": {
     "n": 45,
     "reel": 0.578,
     "annonce": 0.604,
     "roi": -0.071
+   },
+   "au_moins_une": {
+    "n": 97,
+    "reel": 0.577,
+    "annonce": 0.6,
+    "roi": -0.081
    },
    "exterieur": {
     "n": 16,
@@ -242,17 +242,17 @@
    }
   },
   "D1_pieges": {
-   "au_moins_une": {
-    "n": 47,
-    "reel": 0.638,
-    "annonce": 0.59,
-    "roi": 0.01
-   },
    "série noire": {
     "n": 26,
     "reel": 0.538,
     "annonce": 0.572,
     "roi": -0.107
+   },
+   "au_moins_une": {
+    "n": 47,
+    "reel": 0.638,
+    "annonce": 0.59,
+    "roi": 0.01
    },
    "aucune": {
     "n": 164,
@@ -319,17 +319,17 @@
     "annonce": 0.645,
     "roi": -0.053
    },
-   "au_moins_une": {
-    "n": 68,
-    "reel": 0.676,
-    "annonce": 0.574,
-    "roi": 0.097
-   },
    "série noire": {
     "n": 31,
     "reel": 0.677,
     "annonce": 0.57,
     "roi": 0.107
+   },
+   "au_moins_une": {
+    "n": 68,
+    "reel": 0.676,
+    "annonce": 0.574,
+    "roi": 0.097
    },
    "invaincu": {
     "n": 16,
@@ -390,17 +390,17 @@
     "annonce": 0.649,
     "roi": -0.062
    },
-   "invaincu": {
-    "n": 14,
-    "reel": 0.429,
-    "annonce": 0.629,
-    "roi": -0.399
-   },
    "au_moins_une": {
     "n": 69,
     "reel": 0.551,
     "annonce": 0.601,
     "roi": -0.154
+   },
+   "invaincu": {
+    "n": 14,
+    "reel": 0.429,
+    "annonce": 0.629,
+    "roi": -0.399
    },
    "série noire": {
     "n": 26,
@@ -461,17 +461,17 @@
     "annonce": 0.674,
     "roi": 0.006
    },
-   "invaincu": {
-    "n": 13,
-    "reel": 0.462,
-    "annonce": 0.641,
-    "roi": -0.326
-   },
    "au_moins_une": {
     "n": 44,
     "reel": 0.523,
     "annonce": 0.603,
     "roi": -0.201
+   },
+   "invaincu": {
+    "n": 13,
+    "reel": 0.462,
+    "annonce": 0.641,
+    "roi": -0.326
    },
    "série noire": {
     "n": 18,
@@ -526,11 +526,11 @@
     "annonce": 0.585,
     "roi": -0.153
    },
-   "invaincu": {
-    "n": 18,
-    "reel": 0.833,
-    "annonce": 0.573,
-    "roi": 0.379
+   "série noire": {
+    "n": 45,
+    "reel": 0.622,
+    "annonce": 0.58,
+    "roi": 0.002
    },
    "au_moins_une": {
     "n": 80,
@@ -538,11 +538,11 @@
     "annonce": 0.585,
     "roi": -0.022
    },
-   "série noire": {
-    "n": 45,
-    "reel": 0.622,
-    "annonce": 0.58,
-    "roi": 0.002
+   "invaincu": {
+    "n": 18,
+    "reel": 0.833,
+    "annonce": 0.573,
+    "roi": 0.379
    },
    "exterieur": {
     "n": 12,
@@ -571,9 +571,9 @@
    "hasOdds",
    "rosters",
    "news",
-   "header",
    "article",
    "videos",
+   "header",
    "keyEvents",
    "commentary",
    "wallclockAvailable",
@@ -624,6 +624,40 @@
     "Club Friendly",
     "Serie A",
     "UEFA Europa League"
+   ]
+  },
+  "l5_cles": [
+   "displayOrder",
+   "team",
+   "events"
+  ],
+  "l5_ev": "{\"id\": \"401874978\", \"links\": [{\"href\": \"https://www.espn.com/soccer/match/_/gameId/401874978/atalanta-ac-milan\", \"text\": \"Summary\"}], \"atVs\": \"vs\", \"gameDate\": \"2026-10-18T16:00Z\", \"score\": \"3-2\", \"homeTeamId\": \"103\", \"awayTeamId\": \"105\", \"homeTeamScore\": \"3\", \"awayTeamScore\": \"2\", \"homeAggregateScore\": \"0\", \"awayAggregateScore\": \"0\", \"homeShootoutScore\": \"0\", \"awayShootoutScore\": \"0\", \"gameResult\": \"W\", \"competitionName\": \"2026-27 Italian Serie A\", \"leagueName\": \"Italian Serie A\", \"leagueAbbreviation\": \"Serie A\", \"opponent\": {\"id\": \"105\", \"uid\": \"s:600~t:105\", \"displayName\": \"Atalanta\", \"abbreviation\": \"ATA\", \"links\": [{\"href\": \"https://www.espn.com/soccer/club/_/id/105/atalanta\", \"text\": \"Clubhouse\"}, {\"href\": \"https://www.espn.com/soccer/team/fixtures/_/id/105/atalanta\", \"text\": \"Fixtures\"}], \"logo\": \"https://a.espncdn.com/i/teamlogos/soccer/500/105.png\", \"logos\": [{\"href\": \"https://a",
+  "sched_ev_cles": [
+   "id",
+   "date",
+   "name",
+   "shortName",
+   "season",
+   "seasonType",
+   "timeValid",
+   "competitions",
+   "links",
+   "league"
+  ],
+  "sched_ev_league": "{\"id\": \"19834\", \"alternateId\": \"68\", \"name\": \"Club Friendly\", \"abbreviation\": \"Club Friendly\", \"shortName\": \"Club Friendly\", \"midsizeName\": \"CLUB.FRIENDLY\", \"slug\": \"club.friendly\", \"isTournament\": false}",
+  "sched_ev_comp": "{\"id\": \"401886529\", \"date\": \"2026-07-25T14:00Z\", \"attendance\": 0, \"timeValid\": true, \"neutralSite\": false, \"boxscoreAvailable\": true, \"ticketsAvailable\": false, \"venue\": {\"fullName\": \"Celtic Park\", \"address\": {\"city\": \"Glasgow\", \"country\": \"Scotland\"}}, \"competitors\": [{\"id\": \"256\", \"type\": \"team\", \"order\": 0, \"homeAway\": \"home\", \"winner\": false, \"team\": {\"id\": \"256\", \"location\": \"Celtic\", \"abbreviation\": \"CEL\", \"displayName\": \"Celtic\", \"shortDisplayName\": \"Celtic\", \"logos\": [{\"href\": \"https://a.espncdn.com/i/teamlogos/soccer/500/256.png\", \"width\": 500, \"height\": 500, \"alt\": \"\", \"rel\": [\"full\", \"default\"], \"lastUpdated\": \"2019-05-08T16:07Z\"}, {\"href\": \"https://a.espncdn.com/i/teamlogos/soccer/500-dark/256.png\", \"width\": 500, \"height\": 500, \"alt\": \"\", \"rel\": [\"full\", \"dark\"], \"lastUpdated\": \"2019-05-08T16:07Z\"}], \"links\": [{\"rel\": [\"clubhouse\", \"desktop\", \"team\"], \"href\": \"https://www.esp",
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event=401886529": {
+   "rosters": 2,
+   "starters": [
+    11,
+    11
+   ]
+  },
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401886529": {
+   "rosters": 2,
+   "starters": [
+    11,
+    11
    ]
   }
  }
