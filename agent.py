@@ -728,7 +728,7 @@ def main():
         m["_memoire"] = memoire.texte_memoire(actu, m["domicile"], m["exterieur"], maintenant)
     cle_ia = os.environ.get("ANTHROPIC_API_KEY")
     ia = {"etat": "eteinte", "ok": 0, "erreur": None, "souvenirs": sum(1 for m, _, _ in taches if m["_memoire"])}
-    if cfg.get("analyse_ia") and (taches or focus or autopsie.a_autopsier(carnet, maintenant)):
+    if cfg.get("analyse_ia") and (taches or focus or jouables_auj or autopsie.a_autopsier(carnet, maintenant)):
         if demo:
             import demo as d
             for m, v, cible in taches:
@@ -794,6 +794,16 @@ def main():
                 ia["ok"] += 1 if verdicts else 0
             except Exception as e:
                 print(f"  ! IA verdicts du jour : {_err(e)}")
+            # les verdicts déjà payés aujourd'hui sont gardés : un nouveau passage bloqué par le plafond ne les efface pas
+            try:
+                fv = DATA / "verdicts_jour.json"
+                anciens = json.loads(fv.read_text(encoding="utf-8")) if fv.exists() else {}
+                garde = anciens.get("v", {}) if anciens.get("jour") == auj else {}
+                garde.update(verdicts)
+                verdicts = garde
+                fv.write_text(json.dumps({"jour": auj, "v": verdicts}, ensure_ascii=False, indent=1), encoding="utf-8")
+            except Exception as e:
+                print(f"  ! verdicts gardés : {e}")
             for m, v, cible in taches:
                 try:
                     cible["avis"] = avis_expert(m, v, cfg, cle_ia)

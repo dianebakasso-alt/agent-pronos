@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 MIN_N = 25          # pronos réglés avant d'ajuster un type de pari
 ECART = 0.08        # 8 points de réussite en dessous (ou au-dessus) de l'attendu
-MAX_AUTOPSIES = 1   # par passage (budget du jour : les verdicts du jour passent d'abord) : les plus grosses surprises d'abord (économie)
+MAX_AUTOPSIES = 0   # autopsies IA coupées : l'autopsie gratuite ESPN les remplace, le budget IA va aux avis du jour
 
 TRAITS = {
     "exterieur": "Favori à l'extérieur",
