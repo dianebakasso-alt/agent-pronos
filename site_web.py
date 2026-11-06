@@ -473,6 +473,31 @@ def _courbe_svg(pts, w=340, h=90):
     </svg>"""
 
 
+def section_duel(d):
+    """🥊 La note de force maison contre les bookmakers : qui a le plus souvent raison ?"""
+    test = ("<p class=\"note\">Test sur le passé (2 saisons, 8 grands championnats, 4 000 matchs) : "
+            "<b>les bookmakers ont gagné</b>, ils prévoient mieux que la note de force dans les 8 championnats.</p>")
+    if not d or not d.get("n"):
+        return f"""<h3 class="sous">🥊 Duel : l'expert contre les bookmakers</h3>
+    <p class="note">Le duel commence aujourd'hui : à chaque match joué, on compte qui avait vu juste.</p>{test}"""
+    meilleur = "l'expert" if d["brier_force"] < d["brier_bk"] else "les bookmakers"
+    ex = "".join(f'<tr><td>{e(x["match"])}<small>{e(x["jour"][8:10])}/{e(x["jour"][5:7])} · {e(x["score"])}</small></td>'
+                 f'<td class="r">{"💪 Expert" if x["gagnant"] == "force_raison" else "🏦 Bookmakers" if x["gagnant"] == "bk_raison" else "🤝 Aucun (nul ou 3e issue)"}</td></tr>'
+                 for x in d["exemples"])
+    return f"""<h3 class="sous">🥊 Duel : l'expert contre les bookmakers</h3>
+    <p class="note">Sur les matchs où ils <b>ne sont pas d'accord sur le favori</b>, qui avait raison ?</p>
+    <div class="bilan">
+      <div><span>Désaccords</span><b>{d["desaccords"]}</b></div>
+      <div><span>💪 Expert</span><b>{d["force_raison"]}</b></div>
+      <div><span>🏦 Bookmakers</span><b>{d["bk_raison"]}</b></div>
+      <div><span>Personne</span><b>{d["aucun"]}</b></div>
+    </div>
+    <p class="note">Précision sur tous les matchs ({d["n"]}) : <b>{meilleur}</b> devant
+      (score d'erreur {d["brier_force"]:.3f} pour l'expert, {d["brier_bk"]:.3f} pour les bookmakers ; plus petit = meilleur).</p>
+    {test}
+    {'<table class="hist">' + ex + '</table>' if ex else ''}"""
+
+
 def section_expert(t):
     from expert import CATEGORIES, SEUIL_JUGER
     if not t:
@@ -1707,6 +1732,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 <div class="onglet" id="t-bilan" hidden>
 <h2>📊 Bilan de l'expert</h2>
 {section_expert(infos.get("expert"))}
+{section_duel((infos.get("expert") or {}).get("duel"))}
 {section_specialites(infos.get("specialites"), infos.get("specialite_ajust"))}
 <h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>
 {section_autopsie(infos.get("lecons"), infos.get("ajust"))}

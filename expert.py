@@ -58,9 +58,11 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
         if m.get("deja_commence") or not m.get("issues"):
             continue
         i = max(m["issues"], key=lambda x: x["proba"])
-        nouveaux.append(_prono(f"match:{m['id']}", jour, "match",
-                               [_jambe(m, court=i["court"], pari=i["issue"], cote=i["cote"], proba=i["proba"])],
-                               i["cote"], i["proba"]))
+        jb = _jambe(m, court=i["court"], pari=i["issue"], cote=i["cote"], proba=i["proba"])
+        if m.get("force"):   # pour le duel : la note de force maison contre les bookmakers
+            jb["force_p"] = m["force"]["p"]
+            jb["marche_p"] = {x["court"]: round(x["proba"], 4) for x in m["issues"]}
+        nouveaux.append(_prono(f"match:{m['id']}", jour, "match", [jb], i["cote"], i["proba"]))
     for m in values:
         v = m["value"]
         if m.get("deja_commence"):
@@ -192,6 +194,37 @@ def _seg(ps):
             "benefice": round(gains, 2), "mises": mises, "roi": gains / mises if mises else None}
 
 
+def duel(carnet):
+    """Note de force maison contre bookmakers, sur les matchs réellement joués."""
+    d = {"n": 0, "brier_force": 0.0, "brier_bk": 0.0, "desaccords": 0, "force_raison": 0, "bk_raison": 0, "aucun": 0, "exemples": []}
+    vus = set()
+    for p in carnet:
+        if p["cat"] != "match" or p["statut"] not in ("gagné", "perdu"):
+            continue
+        j = p["jambes"][0]
+        if not j.get("force_p") or not j.get("marche_p") or not j.get("score") or j["id"] in vus:
+            continue
+        vus.add(j["id"])
+        h, a = map(int, j["score"].split("-"))
+        res = "1" if h > a else "2" if a > h else "N"
+        fp, mp = j["force_p"], j["marche_p"]
+        d["n"] += 1
+        d["brier_force"] += sum((fp.get(k, 0) - (k == res)) ** 2 for k in "1N2")
+        d["brier_bk"] += sum((mp.get(k, 0) - (k == res)) ** 2 for k in "1N2")
+        ff, fb = max(fp, key=fp.get), max(mp, key=mp.get)
+        if ff != fb:
+            d["desaccords"] += 1
+            qui = "force_raison" if res == ff else "bk_raison" if res == fb else "aucun"
+            d[qui] += 1
+            d["exemples"].append({"match": f"{j['domicile']} – {j['exterieur']}", "score": j["score"], "jour": p["jour"],
+                                  "force": ff, "bk": fb, "gagnant": qui})
+    if d["n"]:
+        d["brier_force"] = round(d["brier_force"] / d["n"], 4)
+        d["brier_bk"] = round(d["brier_bk"] / d["n"], 4)
+    d["exemples"] = sorted(d["exemples"], key=lambda x: x["jour"])[-6:][::-1]
+    return d
+
+
 def tableau(carnet):
     regles = sorted([p for p in carnet if p["statut"] in ("gagné", "perdu")],
                     key=lambda p: max(j["date"] for j in p["jambes"]))
@@ -204,6 +237,7 @@ def tableau(carnet):
     return {
         "total": _seg(carnet), "sept_jours": _seg(sur7), "par_cat": par_cat, "courbe": courbe[-200:],
         "en_attente": sum(p["statut"] == "en attente" for p in carnet),
+        "duel": duel(carnet),
         "derniers": [p for p in reversed(regles)][:12],
     }
 
