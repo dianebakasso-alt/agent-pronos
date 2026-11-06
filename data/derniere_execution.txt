@@ -14,4 +14,5 @@
     calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 0.97} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Bundesliga', 'Eredivisie', 'Liga', 'Liga Portugal']
     autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
+  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.08 €)
 Site généré : site/index.html
