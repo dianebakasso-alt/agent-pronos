@@ -23,7 +23,7 @@ for code in ("I1", "E0", "F1", "D1", "SP1", "N1", "P1", "E1"):
                 cotes.append(None)
     out["elo"][code] = force.evaluer(lignes, cotes)
     # le favori du marché quand l'Elo le contredit : gagne-t-il moins que prévu ?
-    elo, nuls, g = {}, 0, {"suspect": [0, 0, 0.0], "confirme": [0, 0, 0.0], "autre": [0, 0, 0.0]}
+    elo, nuls, g = {}, 0, {"suspect": [0, 0, 0.0, 0.0], "confirme": [0, 0, 0.0, 0.0], "autre": [0, 0, 0.0, 0.0]}
     for idx, ((_, h, a, hg, ag), c) in enumerate(zip(lignes, cotes)):
         eh, ea = elo.get(h, 1500), elo.get(a, 1500)
         res = "1" if hg > ag else "N" if hg == ag else "2"
