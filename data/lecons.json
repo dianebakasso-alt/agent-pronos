@@ -101,5 +101,22 @@
    "defense_fragile"
   ],
   "lecon": "Une cote de victoire basée sur l'attaque d'une équipe doit être révisée si sa défense encaisse régulièrement, surtout sur coups de pied arrêtés et en fin de match."
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Bodo/Glimt - Vålerenga",
+  "pari": "Victoire Bodo/Glimt",
+  "cote": 1.13,
+  "proba": 0.8289,
+  "score": "0-1",
+  "pourquoi": "Bodø/Glimt a dominé le match (environ 69 % de possession et 26 tirs contre 13 selon ysscores), mais il n'a pas converti ses occasions : Vålerenga a gagné sur une action isolée, un centre de Grundetjern repris par Haren à la 65e minute, et Glimt a gâché plusieurs grosses occasions. Le club revenait aussi d'un match de Ligue des champions à Naples quatre jours plus tôt (défaite 4-3), sans carton rouge ni penalty signalé.",
+  "previsible": "en partie",
+  "signal_rate": "Glimt jouait trois jours après un déplacement européen à Naples (défaite 4-3) et sa cote de 1.13 ne laissait presque aucune marge à une baisse de réussite devant le but.",
+  "tags": [
+   "attaque_inefficace",
+   "malchance",
+   "favori_surcote"
+  ],
+  "lecon": "Une domination nette en possession et en tirs ne garantit pas la victoire : quand la cote est très basse, il faut vérifier l'efficacité offensive récente et la charge de matchs avant de miser."
  }
 ]
