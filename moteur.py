@@ -414,8 +414,30 @@ LIBELLES_BUTS = {
 CALIB_BUTS = {}   # {marché: facteur} appris du carnet : corrige les paris de buts trop optimistes
 
 
+BUTS_FAIBLES = set()   # {(marché, tranche)} : paris de buts qui ratent plus que prévu (appris du carnet)
+
+
 def _cal(k, p):
     return p * CALIB_BUTS.get(k, 1.0)
+
+
+def _buts_ok(k, p_brut):
+    return (k, round(int(p_brut * 20) / 20, 2)) not in BUTS_FAIBLES
+
+
+def diversifier(combos, max_par_jambe=2):
+    """Un même pari ne doit pas faire tomber tous les tickets du jour : 2 tickets maximum par pari.
+    Les tickets sont gardés par ordre d'intérêt (gros gains d'abord)."""
+    ordre = {"mixte_gros": 0, "gros": 1, "equilibre": 2, "prudent": 3, "mixte": 4, "buts": 5}
+    vus, garde = {}, []
+    for c in sorted(combos, key=lambda c: (ordre.get(c["style"], 9), c.get("num", 1))):
+        cles = [(j["match"]["id"], j.get("marche") or j.get("court")) for j in c["jambes"]]
+        if any(vus.get(k, 0) >= max_par_jambe for k in cles):
+            continue
+        for k in cles:
+            vus[k] = vus.get(k, 0) + 1
+        garde.append(c)
+    return [c for c in combos if c in garde]
 
 
 def pronos_buts(analyses, n=4):
@@ -427,7 +449,7 @@ def pronos_buts(analyses, n=4):
             continue
         options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]),
                    ("pas_btts", 1 - b["btts"]), ("plus15", b["plus15"]), ("moins35", 1 - b["plus35"])]
-        options = [(k, _cal(k, p)) for k, p in options]
+        options = [(k, _cal(k, p)) for k, p in options if _buts_ok(k, p)]
         # on évite les paris « trop sûrs » à cote ridicule : entre 55 % et 80 %
         options = [(k, p) for k, p in options if 0.55 <= p <= 0.80]
         if not options:
@@ -452,8 +474,8 @@ def _jambe_buts(m):
     if not b or m.get("champ_nom") in CHAMPS_FAIBLES:
         return None
     options = [("plus25", b["plus25"]), ("moins25", 1 - b["plus25"]), ("btts", b["btts"]), ("pas_btts", 1 - b["btts"])]
-    options = [(k, _cal(k, p)) for k, p in options]
-    options = [(k, p) for k, p in options if 0.56 <= p <= 0.82]
+    options = [(k, _cal(k, p)) for k, p in options if _buts_ok(k, p)]
+    options = [(k, p) for k, p in options if 0.56 <= p <= 0.85]
     if not options:
         return None
     k, p = max(options, key=lambda o: o[1])
@@ -522,7 +544,7 @@ def combines_buts(analyses):
         if len(fav2) < 2:
             break
         deja = pris | {f["match"]["id"] for f in fav2}
-        buts = [j for j in jambes_buts if j["match"]["id"] not in deja and j["proba"] <= 0.78]
+        buts = [j for j in jambes_buts if j["match"]["id"] not in deja and j["proba"] <= 0.85]
         jg = list(fav2)
         for j in buts:
             if _prod(1 / x["proba"] for x in jg) >= 6 or len(jg) >= 5:

@@ -303,6 +303,23 @@ def zones_faibles(carnet, n_min=25, marge=0.03):
     return {round(z, 2) for z, (n, ok, sp) in g.items() if n >= n_min and ok / n < sp / n - marge}
 
 
+def zones_faibles_buts(carnet, n_min=10, marge=0.05):
+    """Paris de buts par tranche de proba (5 %) qui passent nettement moins que prévu.
+    Leçon des tickets ratés de peu : « plus de 2,5 buts » annoncé 65-75 % ne passait que 46-62 % du temps."""
+    vus = {}
+    for p in carnet:
+        for j in p["jambes"]:
+            if j.get("marche") and j.get("ok") is not None and j.get("proba"):
+                vus[(j["id"], j["marche"])] = j
+    g = {}
+    for (_, k), j in vus.items():
+        s = g.setdefault((k, round(int(j["proba"] * 20) / 20, 2)), [0, 0, 0.0])
+        s[0] += 1
+        s[1] += 1 if j["ok"] else 0
+        s[2] += j["proba"]
+    return {z for z, (n, ok, sp) in g.items() if n >= n_min and ok / n < sp / n - marge}
+
+
 def calib_buts(carnet, prior=5.0):
     """Paris de buts : réussite réelle / réussite annoncée, par marché (lissé vers 1).
     Ex. « moins de 2,5 buts » annoncé à 66 % mais passé 45 % du temps → ses probabilités sont baissées."""

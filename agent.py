@@ -641,6 +641,8 @@ def main():
         try:
             _c = expert.charger(DATA / "carnet.json")
             moteur.CALIB_BUTS = expert.calib_buts(_c)
+            moteur.BUTS_FAIBLES = expert.zones_faibles_buts(_c)
+            print(f"    paris de buts évités : {sorted(moteur.BUTS_FAIBLES)}")
             moteur.ZONES_FAIBLES = expert.zones_faibles(_c)
             moteur.CHAMPS_FAIBLES = {k for k, v in expert.specialites(_c)[0].items() if v < 0}
             print(f"    calibrage buts : {moteur.CALIB_BUTS} · zones évitées : {sorted(moteur.ZONES_FAIBLES)}"
@@ -681,7 +683,7 @@ def main():
         jouables = [a for a in an_j if not a.get("deja_commence")]
         jours.append({"cle": cle, "quand": quand, "analyses": an_j,
                       "values": [a for a in values if jour_de(a) == cle],
-                      "combos": moteur.combines_experts(jouables, cfg) + moteur.combines_buts(jouables),
+                      "combos": moteur.diversifier(moteur.combines_experts(jouables, cfg) + moteur.combines_buts(jouables)),
                       "buts": moteur.pronos_buts(jouables)})
     if not demo:
         (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
