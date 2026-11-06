@@ -6,6 +6,9 @@ on:
       budget:
         description: "Budget maximum en euros"
         default: "2"
+      max:
+        description: "Nombre maximum d'autopsies"
+        default: "100000"
 
 permissions:
   contents: write
@@ -23,6 +26,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BUDGET: ${{ github.event.inputs.budget }}
+          MAX: ${{ github.event.inputs.max }}
         run: python outils/rattrapage.py | tee data/rattrapage_log.txt
       - name: Sauvegarder
         if: always()

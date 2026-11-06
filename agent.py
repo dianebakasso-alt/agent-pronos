@@ -241,11 +241,17 @@ def appel_ia(texte, cfg, cle_ia, max_uses=3, max_tokens=6000, timeout=240):
     corps = {"model": cfg["modele_ia"], "max_tokens": max_tokens,
              "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}],
              "messages": [{"role": "user", "content": texte}]}
-    data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(),
-                        headers={"x-api-key": cle_ia, "anthropic-version": "2023-06-01",
-                                 "content-type": "application/json"}, timeout=timeout)
+    entetes = {"x-api-key": cle_ia, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(), headers=entetes, timeout=timeout)
+    # recherche web longue : l'API peut mettre le tour « en pause », on le laisse finir (1 fois)
+    if data.get("stop_reason") == "pause_turn":
+        corps["messages"] = corps["messages"] + [{"role": "assistant", "content": data.get("content", [])}]
+        data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(), headers=entetes, timeout=timeout)
     txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
-    return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
+    debut, fin = txt.find("{"), txt.rfind("}")
+    if debut < 0 or fin < debut:
+        raise ValueError(f"réponse sans JSON (arrêt : {data.get('stop_reason')}, {len(txt)} car.) {txt[:120]!r}")
+    return json.loads(txt[debut: fin + 1])
 
 
 CONSIGNE_JOUR = """Tu es un pronostiqueur football expert, exigeant et honnête. Voici les matchs du jour.
@@ -725,12 +731,17 @@ def main():
             ia["etat"], ia["ok"] = "active", len(taches)
         elif cle_ia:
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
+            echecs = 0
             for j in autopsie.a_autopsier(carnet, maintenant):
                 try:
-                    autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia, max_uses=2, max_tokens=1200), maintenant)
+                    autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia, max_uses=2, max_tokens=3000), maintenant)
                     ia["ok"] += 1
+                    echecs = 0
                 except Exception as e:
                     print(f"  ! autopsie {j['domicile']}: {_err(e)}")
+                    echecs += 1
+                    if echecs >= 2 or isinstance(e, RuntimeError):   # disjoncteur : on ne paie pas des échecs en série
+                        break
             LECONS_TXT = autopsie.texte_lecons(lecons)
             for m in focus[: cfg.get("analyse_profonde_max", 6)]:
                 s = sel["matchs"][m["id"]]

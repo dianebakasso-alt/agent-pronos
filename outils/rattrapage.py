@@ -26,6 +26,8 @@ for p in carnet:
 a_faire.sort(key=lambda j: -(j.get("proba") or 0))      # la plus grosse surprise d'abord
 print(f"{len(a_faire)} erreurs sans autopsie, budget {BUDGET_RATTRAPAGE} €")
 faites = 0
+echecs = 0
+MAX = int(os.environ.get("MAX", "100000"))
 
 
 def sauver():
@@ -33,11 +35,12 @@ def sauver():
     (agent.DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-for j in a_faire:
+for j in a_faire[:MAX]:
     try:
-        res = agent.appel_ia(autopsie.consigne(j), cfg, cle, max_uses=2, max_tokens=1200)
+        res = agent.appel_ia(autopsie.consigne(j), cfg, cle, max_uses=2, max_tokens=3000)
         autopsie.noter_autopsie(carnet, lecons, j, res, maintenant)
         faites += 1
+        echecs = 0
         if faites % 10 == 0:
             sauver()
             print(f"  {faites} faites, {agent.BUDGET['run']:.2f} €", flush=True)
@@ -45,8 +48,10 @@ for j in a_faire:
         print("stop :", e)
         break
     except Exception as e:
-        print("  !", j["domicile"], e)
-        if "credit balance" in str(e):
+        print("  !", j["domicile"], e, flush=True)
+        echecs += 1
+        if "credit balance" in str(e) or echecs >= 3:   # disjoncteur : 3 échecs de suite = on arrête de payer
+            print("stop : 3 échecs de suite")
             break
 autopsie.MAX_AUTOPSIES = 5
 sauver()
