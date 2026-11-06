@@ -1,0 +1,46 @@
+"""Rattrapage des autopsies en une fois : les plus grosses surprises d'abord, budget strict."""
+import json, os, sys
+from datetime import datetime, timezone, timedelta
+sys.path.insert(0, os.getcwd())
+import agent, autopsie, expert
+
+BUDGET_RATTRAPAGE = float(os.environ.get("BUDGET", "2.0"))
+maintenant = datetime.now(timezone.utc)
+cfg = agent.charger_config()
+cle = os.environ.get("ANTHROPIC_API_KEY", "")
+carnet = expert.charger(agent.DATA / "carnet.json")
+lecons = autopsie.charger(agent.DATA / "lecons.json")
+
+# budget dédié : ne touche pas au plafond du mois
+agent.BUDGET.update(mois="rattrapage", depense=0.0, run=0.0, max=BUDGET_RATTRAPAGE, prix=cfg.get("prix_ia", {}),
+                    appels=0, bloque=0, max_jour=None)
+autopsie.MAX_AUTOPSIES = 1000
+a_faire = []
+vus = set()
+for p in carnet:
+    for j in p["jambes"]:
+        cle_j = (j["id"], j.get("court") or j.get("marche"))
+        if j.get("ok") is False and "autopsie" not in j and j.get("score") and cle_j not in vus:
+            vus.add(cle_j)
+            a_faire.append(j)
+a_faire.sort(key=lambda j: -(j.get("proba") or 0))      # la plus grosse surprise d'abord
+print(f"{len(a_faire)} erreurs sans autopsie, budget {BUDGET_RATTRAPAGE} €")
+faites = 0
+for j in a_faire:
+    try:
+        res = agent.appel_ia(autopsie.consigne(j), cfg, cle, max_uses=2, max_tokens=1200)
+        autopsie.noter_autopsie(carnet, lecons, j, res, maintenant)
+        faites += 1
+    except RuntimeError as e:          # plafond atteint
+        print("stop :", e)
+        break
+    except Exception as e:
+        print("  !", j["domicile"], e)
+        if "credit balance" in str(e):
+            break
+autopsie.MAX_AUTOPSIES = 5
+(agent.DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
+(agent.DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
+(agent.DATA / "rattrapage.json").write_text(json.dumps({"quand": maintenant.isoformat(), "faites": faites,
+    "restantes": len(a_faire) - faites, "cout_estime": round(agent.BUDGET["run"], 3)}, ensure_ascii=False), encoding="utf-8")
+print(f"{faites} autopsies faites, coût estimé {agent.BUDGET['run']:.2f} €")

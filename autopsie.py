@@ -126,7 +126,7 @@ def noter_autopsie(carnet, lecons, j, res, maintenant):
                 x["autopsie"] = res
     lecons.append({"date": maintenant.strftime("%Y-%m-%d"), "match": f"{j['domicile']} - {j['exterieur']}",
                    "pari": j["pari"], "cote": j.get("cote"), "proba": j.get("proba"), "score": j.get("score"), **res})
-    del lecons[:-60]
+    del lecons[:-200]
 
 
 def texte_lecons(lecons, n=6):
