@@ -980,5 +980,37 @@
     "cote": 1.72
    }
   ]
+ },
+ {
+  "jour": "2026-11-07",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.35,
+  "proba": 0.262,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "813cc4970b2dcab8457490a332fb5a6c",
+    "sport_key": "soccer_italy_serie_a",
+    "date": "2026-11-07T17:00:00Z",
+    "domicile": "Parma",
+    "exterieur": "Bologna",
+    "pari": "Victoire Bologna",
+    "court": "2",
+    "cote": 1.81
+   },
+   {
+    "id": "a3dad1ddaa98a6ff741be7f63250f2ee",
+    "sport_key": "soccer_turkey_super_league",
+    "date": "2026-11-07T10:30:00Z",
+    "domicile": "Eyüpspor",
+    "exterieur": "Kocaelispor",
+    "pari": "Victoire Kocaelispor",
+    "court": "2",
+    "cote": 1.85
+   }
+  ]
  }
 ]

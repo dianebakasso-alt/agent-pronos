@@ -5881,5 +5881,137 @@
    "malchance"
   ],
   "lecon": "Avant de parier sur un nul, vérifiez si l'équipe qui domine le jeu dispose d'une marge réelle pour revenir au score après un but précoce, car un but rapide de l'adversaire en forme transforme souvent un nul probable en défaite."
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Sevilla - Alavés",
+  "pari": "Victoire Sevilla",
+  "cote": 1.85,
+  "proba": 0.503,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 13-9, cadrés 3-2, possession 60-40 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Grenoble - Stade de Reims",
+  "pari": "Victoire Stade de Reims",
+  "cote": 1.83,
+  "proba": 0.494,
+  "score": "3-2",
+  "pourquoi": "Score 3-2 (tirs 10-16, cadrés 6-9, possession 28-72 %). Stade de Reims a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Montpellier - Metz",
+  "pari": "Victoire Montpellier",
+  "cote": 1.9,
+  "proba": 0.4809,
+  "score": "2-3",
+  "pourquoi": "Score 2-3 (tirs 23-6, cadrés 5-2, possession 64-36 %). Montpellier a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Willem II - FC Zwolle",
+  "pari": "Victoire FC Zwolle",
+  "cote": 2.18,
+  "proba": 0.4261,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 13-14, cadrés 5-2, possession 42-58 %). Willem II a été plus dangereux (5 tirs cadrés contre 2).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "USL Dunkerque - Guingamp",
+  "pari": "Victoire Guingamp",
+  "cote": 2.33,
+  "proba": 0.4005,
+  "score": "3-0",
+  "pourquoi": "Score 3-0 (tirs 18-14, cadrés 6-5, possession 49-51 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Gazişehir Gaziantep - Kasimpasa SK",
+  "pari": "Victoire Gazişehir Gaziantep",
+  "cote": 2.45,
+  "proba": 0.3712,
+  "score": "0-2",
+  "pourquoi": "Score 0-2 (tirs 16-11, cadrés 4-5, possession 62-38 %). Kasimpasa SK a marqué sur penalty.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Derby County - Bolton Wanderers",
+  "pari": "Victoire Bolton Wanderers",
+  "cote": 2.65,
+  "proba": 0.3562,
+  "score": "3-1",
+  "pourquoi": "Score 3-1 (tirs 9-17, cadrés 5-6, possession 30-70 %). Bolton Wanderers a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-06",
+  "match": "Venezia - Udinese",
+  "pari": "Victoire Udinese",
+  "cote": 2.98,
+  "proba": 0.3026,
+  "score": "2-1",
+  "pourquoi": "Score 2-1 (tirs 15-13, cadrés 4-5, possession 46-54 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
  }
 ]
