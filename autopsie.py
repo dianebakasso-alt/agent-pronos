@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 MIN_N = 25          # pronos réglés avant d'ajuster un type de pari
 ECART = 0.08        # 8 points de réussite en dessous (ou au-dessus) de l'attendu
-MAX_AUTOPSIES = 10  # par passage : les plus grosses surprises d'abord (modèle économique, plafond 4 €/mois)
+MAX_AUTOPSIES = 5   # par passage : les plus grosses surprises d'abord (économie)
 
 TRAITS = {
     "exterieur": "Favori à l'extérieur",

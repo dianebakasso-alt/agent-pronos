@@ -43,19 +43,26 @@ BUDGET = {"mois": "", "depense": 0.0, "run": 0.0, "max": 4.0, "prix": {}, "appel
 
 
 def charger_budget(cfg, maintenant):
-    mois = maintenant.strftime("%Y-%m")
+    import calendar
+    mois, jour = maintenant.strftime("%Y-%m"), maintenant.strftime("%Y-%m-%d")
     b = {}
     try:
         b = json.loads((DATA / "ia_budget.json").read_text(encoding="utf-8"))
     except Exception:
         pass
+    mx = float(cfg.get("budget_ia_mois_euros", 4))
     BUDGET.update(mois=mois, depense=b.get("depense", 0.0) if b.get("mois") == mois else 0.0, run=0.0,
-                  max=float(cfg.get("budget_ia_mois_euros", 4)), prix=cfg.get("prix_ia", {}), appels=0, bloque=0)
+                  max=mx, prix=cfg.get("prix_ia", {}), appels=0, bloque=0, jour=jour,
+                  depense_jour=b.get("depense_jour", 0.0) if b.get("jour") == jour else 0.0,
+                  # plafond du jour : le budget du mois réparti sur tous les jours (les relances du jour comptent)
+                  max_jour=round(mx / calendar.monthrange(maintenant.year, maintenant.month)[1], 4))
 
 
 def sauver_budget():
     (DATA / "ia_budget.json").write_text(json.dumps({"mois": BUDGET["mois"], "depense": round(BUDGET["depense"] + BUDGET["run"], 4),
-        "plafond": BUDGET["max"], "appels_dernier_passage": BUDGET["appels"], "bloques": BUDGET["bloque"]},
+        "jour": BUDGET.get("jour"), "depense_jour": round(BUDGET.get("depense_jour", 0) + BUDGET["run"], 4),
+        "plafond": BUDGET["max"], "plafond_jour": BUDGET.get("max_jour"),
+        "appels_dernier_passage": BUDGET["appels"], "bloques": BUDGET["bloque"]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -63,7 +70,10 @@ def ia_post(url, data=None, headers=None, timeout=60):
     """Appel à l'IA, refusé si le plafond du mois est atteint ; le coût estimé est compté."""
     if BUDGET["depense"] + BUDGET["run"] >= BUDGET["max"]:
         BUDGET["bloque"] += 1
-        raise RuntimeError(f"plafond IA du mois atteint ({BUDGET['max']:.0f} €)")
+        raise RuntimeError(f"plafond IA du mois atteint ({BUDGET['max']:.2f} €)")
+    if BUDGET.get("max_jour") and BUDGET.get("depense_jour", 0) + BUDGET["run"] >= BUDGET["max_jour"]:
+        BUDGET["bloque"] += 1
+        raise RuntimeError(f"plafond IA du jour atteint ({BUDGET['max_jour']:.2f} €)")
     d, h = http_json(url, data, headers, timeout)
     u, p = d.get("usage") or {}, BUDGET["prix"]
     cout = (u.get("input_tokens", 0) * p.get("entree_million", 1.0) + u.get("output_tokens", 0) * p.get("sortie_million", 5.0)) / 1e6 \
@@ -671,7 +681,7 @@ def main():
             print("4/4 Vérification des infos et avis d'experts par l'IA…")
             for j in autopsie.a_autopsier(carnet, maintenant):
                 try:
-                    autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia), maintenant)
+                    autopsie.noter_autopsie(carnet, lecons, j, appel_ia(autopsie.consigne(j), cfg, cle_ia, max_uses=2, max_tokens=1200), maintenant)
                     ia["ok"] += 1
                 except Exception as e:
                     print(f"  ! autopsie {j['domicile']}: {_err(e)}")
@@ -690,7 +700,7 @@ def main():
             # le ticket du jour : ses matchs sont aussi analysés en profondeur
             deja = {x["id"] for x in focus}
             tk0 = selection.ticket_du_jour(jouables_auj, cfg["bookmakers_jouables"])
-            for s in (tk0 or {}).get("jambes", [])[:3]:
+            for s in (tk0 or {}).get("jambes", [])[:2]:
                 if s["id"] in deja:
                     continue
                 m = next(a for a in analyses if a["id"] == s["id"])
