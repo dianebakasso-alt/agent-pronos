@@ -1353,6 +1353,8 @@ header.reduit h1 {{ font-size:30px; }}
 .cag-res {{ font:500 13px Inter,sans-serif; color:var(--muted); margin:6px 0 0; }}
 .cag-go {{ margin-left:6px; padding:3px 9px; border-radius:999px; border:1px solid var(--ok); background:none; color:var(--ok); font:600 12px Inter,sans-serif; }}
 .mise-c {{ font:600 13px Inter,sans-serif; margin:8px 0 4px; }}
+.compo-l {{ margin:6px 0; padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.04); font:500 12px Inter,sans-serif; }}
+.compo-l div {{ margin-top:4px; }}
 .alertes {{ list-style:none; margin:6px 0; padding:0; font:500 12px Inter,sans-serif; color:var(--muted); }}
 .alertes li {{ padding:3px 0; }}
 .alertes li.pg {{ color:#f5b942; }}
@@ -2188,6 +2190,77 @@ async function activerAlertes() {{
   }} else toast("Alertes refusées : tu peux les autoriser dans Réglages > Prono Malin.");
 }}
 try {{ if (localStorage.getItem("alertes") === "1") document.getElementById("btn-alertes").textContent = "🔔 Alertes activées"; }} catch (e) {{}}
+// ---- 📋 compos officielles (ESPN, lues par le téléphone dès leur sortie, ~1 h avant le match)
+const COMPOS = {{}}, ESSAI_COMPO = {{}};
+function idsSuivisCompos() {{
+  const ids = mesIds();
+  lireT().forEach(x => ids.add(x.id));
+  document.querySelectorAll("article.combo[data-pari]").forEach(c => {{
+    try {{ (JSON.parse(c.dataset.pari).jambes || []).forEach(j => ids.add(j.id)); }} catch (e) {{}}
+  }});
+  return ids;
+}}
+const nomsXI = r => (r.roster || []).filter(x => x.starter).map(x => x.athlete.displayName);
+async function lireCompos(el) {{
+  const mid = el.dataset.mid, [lig, id] = el.dataset.espn.split("|");
+  ESSAI_COMPO[mid] = Date.now();
+  try {{
+    const s = await (await fetch(`${{ESPN}}/${{lig}}/summary?event=${{id}}`, {{ cache: "no-store" }})).json();
+    const ro = (s.rosters || []).filter(r => nomsXI(r).length >= 11);
+    if (ro.length < 2) return;                  // pas encore publiées : on réessaie dans 5 min
+    const res = {{}};
+    for (const r of ro) {{
+      const xi = nomsXI(r), tous = new Set((r.roster || []).map(x => x.athlete.displayName)), tid = r.team && r.team.id;
+      const l5 = (s.lastFiveGames || []).find(g => g.team && g.team.id === tid);
+      const prev = ((l5 && l5.events) || []).filter(e => e.id !== id && new Date(e.gameDate) < new Date(el.dataset.ko))
+        .sort((a, b) => new Date(b.gameDate) - new Date(a.gameDate))[0];
+      let chg = null, banc = [], absents = [];
+      if (prev) {{
+        try {{
+          const p = await (await fetch(`${{ESPN}}/all/summary?event=${{prev.id}}`)).json();
+          const pr = (p.rosters || []).find(x => x.team && x.team.id === tid);
+          const pxi = pr ? nomsXI(pr) : [];
+          if (pxi.length >= 11) {{
+            const sortis = pxi.filter(n => !xi.includes(n));
+            chg = sortis.length; banc = sortis.filter(n => tous.has(n)); absents = sortis.filter(n => !tous.has(n));
+          }}
+        }} catch (e) {{}}
+      }}
+      res[r.homeAway] = {{ formation: r.formation, chg, banc, absents, contre: prev && prev.leagueAbbreviation }};
+    }}
+    COMPOS[mid] = res;
+    dessinerCompos(mid);
+    const alerte = ["home", "away"].map(k => res[k] && ((res[k].chg || 0) >= 5 || res[k].absents.length >= 2)
+      ? `${{k === "home" ? el.dataset.dom : el.dataset.ext}} : ${{res[k].chg}} changements` : "").filter(Boolean);
+    if (alerte.length && idsSuivisCompos().has(mid)) alerteBut("📋 Compos sorties — rotation", `${{el.dataset.dom}} – ${{el.dataset.ext}} · ${{alerte.join(" · ")}}`, true);
+  }} catch (e) {{}}
+}}
+function dessinerCompos(mid) {{
+  const res = COMPOS[mid]; if (!res) return;
+  document.querySelectorAll(`.affiche[data-mid="${{mid}}"]`).forEach(el => {{
+    let z = el.parentNode.querySelector(".compo-l");
+    if (!z) {{ z = document.createElement("div"); z.className = "compo-l"; el.insertAdjacentElement("afterend", z); }}
+    z.innerHTML = "<b>📋 Compos officielles</b>" + ["home", "away"].map(k => {{
+      const c = res[k]; if (!c) return "";
+      const nom = k === "home" ? el.dataset.dom : el.dataset.ext;
+      const rot = c.chg === null ? "" : c.chg >= 5 ? ` · <span class="rouge">⚠️ ${{c.chg}} changements : grosse rotation</span>` : ` · ${{c.chg}} changement${{c.chg > 1 ? "s" : ""}} vs le dernier match`;
+      return `<div>${{nom}} (${{c.formation || "?"}})${{rot}}` +
+        (c.absents.length ? `<br><small>Absents du groupe : ${{c.absents.join(", ")}}</small>` : "") +
+        (c.banc.length ? `<br><small>Sur le banc : ${{c.banc.join(", ")}}</small>` : "") + "</div>";
+    }}).join("");
+  }});
+}}
+function majCompos() {{
+  if (document.hidden) return;
+  const now = Date.now(), suivis = idsSuivisCompos();
+  Object.entries(affichesParMid()).forEach(([mid, els]) => {{
+    const el = els[0]; if (!el.dataset.espn || !suivis.has(mid)) return;
+    if (COMPOS[mid]) {{ dessinerCompos(mid); return; }}
+    const ko = new Date(el.dataset.ko).getTime();
+    if (now > ko - 80 * 60e3 && now < ko + 20 * 60e3 && now - (ESSAI_COMPO[mid] || 0) > 5 * 60e3) lireCompos(el);
+  }});
+}}
+setTimeout(majCompos, 1500); setInterval(majCompos, 60000);
 majDirect(); setInterval(majDirect, 45000);
 document.addEventListener("visibilitychange", () => {{ if (!document.hidden) majDirect(); }});
 
