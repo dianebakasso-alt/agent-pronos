@@ -77,6 +77,19 @@ def candidat(m):
         if fat.get(adv):
             note += 0.02
             traits.append("adversaire_fatigue")
+        # alertes « match piège » et note de force maison (gratuites)
+        if (m.get("pieges") or {}).get(i["court"]):
+            traits.append("piege")
+            note += AJUST.get("piege", {}).get("ajust", 0)
+        # note de force : testée sur 2 saisons, elle ne bat pas le marché -> simple information,
+        # notée en trait pour que l'expert mesure s'il faut en tenir compte (ajustement automatique)
+        fo = m.get("force") or {}
+        if fo.get("favori") == i["court"]:
+            if fo.get("suspect"):
+                traits.append("force_contre")
+            elif fo.get("confirme"):
+                traits.append("force_pour")
+        note += sum(AJUST.get(tr, {}).get("ajust", 0) for tr in traits if tr.startswith("force_"))
         if not best or note > best["note"]:
             best = {"court": i["court"], "issue": i["issue"], "proba": i["proba"], "cote": i["cote"],
                     "bk": i["bookmaker"], "edge": i["edge"], "forme": f, "note": round(note, 4),

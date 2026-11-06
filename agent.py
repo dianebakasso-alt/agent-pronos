@@ -18,6 +18,8 @@ import selection
 import autopsie
 import direct
 import moteur
+import force
+import pieges
 import stats
 import site_web
 
@@ -262,11 +264,21 @@ Réponds UNIQUEMENT avec ce JSON, en français :
 Sois sévère : les favoris à petite cote perdent souvent, ne dis « jouer » que si tu y crois vraiment."""
 
 
+def _alertes_txt(m):
+    """Note de force + alertes « match piège » à donner à l'IA (gratuit, calculé avant)."""
+    t = force.texte(m.get("force"), m["domicile"], m["exterieur"])
+    pg = m.get("pieges") or {}
+    for c, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
+        if pg.get(c):
+            t += f" Alertes pour {nom} : " + " ; ".join(pg[c]) + "."
+    return t.strip()
+
+
 def _verdicts_paquet(matchs, cfg, cle_ia):
     lignes = []
     for k, m in enumerate(matchs, 1):
         cotes = " / ".join(f'{i["court"]} {i["cote"]:.2f}' for i in m["issues"])
-        st = stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"])
+        st = stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]) + " " + _alertes_txt(m)
         deja = (m.get("avis") or {}).get("resume")
         lignes.append(f"{k}. {m['domicile']} - {m['exterieur']} ({m['championnat']}, {m['debut'][:16]} UTC). "
                       f"Cotes 1/N/2 : {cotes}. {st}" + (f" Déjà noté : {deja}" if deja else ""))
@@ -308,7 +320,7 @@ def avis_expert(m, v, cfg, cle_ia, profond=False):
         "messages": [{"role": "user", "content": CONSIGNE_IA.format(
             dom=m["domicile"], ext=m["exterieur"], champ=m["championnat"], debut=m["debut"],
             issue=v["issue"], cote=v["cote"], proba=v["proba"],
-            stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]),
+            stats=stats.resume_texte(m.get("stats"), m["domicile"], m["exterieur"]) + " " + _alertes_txt(m),
             memoire=m.get("_memoire", "") + ("\n" + LECONS_TXT if LECONS_TXT else "")) + (PROFOND if profond else "")}],
     }
     data, _ = ia_post("https://api.anthropic.com/v1/messages",
@@ -573,6 +585,30 @@ def main():
         (DATA / "stats_journal.json").write_text(json.dumps(st.journal, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"    stats : {st.journal['equipes_trouvees']} équipes trouvées, {len(st.journal['equipes_manquees'])} manquées")
 
+    # note de force maison (Elo, gratuit) puis alertes « match piège »
+    fo = force.Force()
+    nf = 0
+    for a in analyses:
+        try:
+            s_ = a.get("stats") or {}
+            if not demo and s_.get("noms"):
+                a["force"] = fo.pour_match(st.resultats(a.get("sport_key", "")), a.get("sport_key"),
+                                           s_["noms"][0], s_["noms"][1], a["issues"])
+                nf += bool(a.get("force"))
+        except Exception as e:
+            print(f"  ! force {a['domicile']}: {e}")
+    try:
+        cp = memoire.charger(DATA / "compos.json", {})
+        for a in analyses:
+            if a["id"] in (cp.get("matchs") or {}):
+                a["compos"] = cp["matchs"][a["id"]]
+    except Exception as e:
+        print(f"  ! compos : {e}")
+    npg = pieges.marquer(analyses)
+    # si le carnet prouve que les favoris « piège » ratent plus que prévu, on les écarte des combinés
+    moteur.PIEGE_EXCLU = autopsie.ajustements(expert.charger(DATA / "carnet.json")).get("piege", {}).get("ajust", 0) < 0 \
+        if not demo else False
+    print(f"    force : {nf} matchs notés · pièges : {npg} favoris en alerte")
     if not demo:   # les paris de buts sont corrigés d'après leurs vrais résultats (gratuit)
         try:
             _c = expert.charger(DATA / "carnet.json")

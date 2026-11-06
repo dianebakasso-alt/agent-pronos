@@ -22,6 +22,9 @@ TRAITS = {
     "favori_net": "Gros favori (plus de 65 %)",
     "buts_plus": "Paris « beaucoup de buts » (+2,5, les 2 marquent)",
     "buts_moins": "Paris « peu de buts » (−2,5, pas les 2)",
+    "piege": "Favori avec une alerte « match piège »",
+    "force_contre": "Favori contredit par la note de force",
+    "force_pour": "Favori confirmé par la note de force",
 }
 
 CONSIGNE = """Tu es un analyste football. Un pronostic a perdu, explique pourquoi.
@@ -57,6 +60,14 @@ def traits_jambe(j, m=None):
     if m is not None:
         if (m.get("avis") or {}).get("avis") == "prudence":
             t.append("doute_ia")
+        if (m.get("pieges") or {}).get(j.get("court")):
+            t.append("piege")
+        fo = m.get("force") or {}
+        if fo.get("favori") == j.get("court"):
+            if fo.get("suspect"):
+                t.append("force_contre")
+            elif fo.get("confirme"):
+                t.append("force_pour")
     if j.get("rebond"):
         t.append("rebond")
     return t

@@ -4,9 +4,11 @@ Il part des résultats gratuits de football-data (2 saisons par championnat) :
 chaque victoire contre une équipe forte fait gagner beaucoup de points, une défaite contre
 une équipe faible en fait perdre beaucoup. Avantage du terrain compris.
 
-À quoi ça sert : c'est un avis indépendant des bookmakers. Quand la note de force
-contredit nettement le marché sur un favori, ce favori est suspect : l'expert ne le met
-pas dans ses combinés.
+À quoi ça sert : un avis indépendant des bookmakers, montré sur chaque match et donné à l'IA.
+Testé sur 2 saisons de 8 championnats (sonde) : il est moins précis que les cotes du marché,
+et le mélanger aux cotes ne les améliore pas. Il n'écarte donc aucun match tout seul :
+l'expert note s'il confirme ou contredit le favori, et ajuste automatiquement si le carnet
+montre que ce signal compte vraiment.
 """
 K = 20            # vitesse d'apprentissage
 AVANTAGE = 60     # points d'Elo pour l'équipe qui joue à domicile

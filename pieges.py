@@ -1,8 +1,11 @@
 """Alerte « match piège » : les situations où les favoris tombent plus souvent.
 
 Tout est gratuit (forme football-data, fatigue ESPN, compos ESPN).
-Un favori avec une alerte n'entre plus dans les combinés. Chaque alerte est notée dans le
-carnet (trait « piege ») : l'expert vérifie ensuite si ces favoris ratent vraiment plus que prévu.
+Testé sur 2 saisons de 8 championnats (2 169 favoris) : ces alertes de forme sont déjà
+dans les cotes (les favoris concernés gagnent autant que prévu par le marché). Elles sont donc
+montrées sur le match et données à l'IA, sans écarter le favori. Chaque alerte est notée dans le
+carnet (trait « piege ») : si l'expert constate que ces favoris ratent plus que prévu, il les
+écarte des combinés tout seul.
 """
 from stats import _norm
 

@@ -174,8 +174,14 @@ ZONES_FAIBLES = set()   # tranches de proba qui ratent plus que prévu (apprises
 CHAMPS_FAIBLES = set()  # championnats où l'expert perd (apprises du carnet)
 
 
-def _jouable(m, p):
+PIEGE_EXCLU = False   # testé sur 2 saisons : les alertes de forme sont déjà dans les cotes -> pas d'exclusion
+                      # (passe à True tout seul si le carnet montre que les favoris « piège » ratent plus que prévu)
+
+
+def _jouable(m, p, court=None):
     """Ce match / cette probabilité peut-il entrer dans un combiné ?"""
+    if PIEGE_EXCLU and court and (m.get("pieges") or {}).get(court):
+        return False
     return m.get("champ_nom") not in CHAMPS_FAIBLES and round(int(p * 20) / 20, 2) not in ZONES_FAIBLES
 
 
@@ -196,7 +202,7 @@ def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
             options = []
             for i in m["issues"]:
                 c = cotes.get(i["court"])
-                if not c or c > cfg["cote_max"] or i["proba"] < p_min or not _jouable(m, i["proba"]):
+                if not c or c > cfg["cote_max"] or i["proba"] < p_min or not _jouable(m, i["proba"], i["court"]):
                     continue
                 edge = i["proba"] * c - 1
                 if edge > edge_min:
@@ -505,7 +511,7 @@ def combines_buts(analyses):
     solides = []
     for m in analyses:
         i = max(m["issues"], key=lambda x: x["proba"])
-        if i["court"] != "N" and 0.50 <= i["proba"] <= 0.78 and i["cote"] >= 1.30 and _jouable(m, i["proba"]) \
+        if i["court"] != "N" and 0.50 <= i["proba"] <= 0.78 and i["cote"] >= 1.30 and _jouable(m, i["proba"], i["court"]) \
                 and not (m.get("fatigue") or {}).get(i["court"]):
             solides.append({"match": m, "type": "1n2", "court": i["court"], "issue": i["issue"],
                             "proba": i["proba"], "cote": i["cote"], "bk": i["bookmaker"]})

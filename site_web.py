@@ -203,6 +203,30 @@ def carte_value(m):
     </article>"""
 
 
+def bloc_alertes(m):
+    """Note de force maison, alertes « match piège » et compos (tout est gratuit)."""
+    lignes = []
+    fo = m.get("force")
+    if fo:
+        p = fo["p"]
+        etat = "⚠️ contredit le marché" if fo.get("suspect") else "✅ confirme le marché" if fo.get("confirme") else ""
+        lignes.append(f'<li>💪 <b>Note de force</b> : {e(m["domicile"])} {fo["rang_dom"]}<sup>e</sup>, '
+                      f'{e(m["exterieur"])} {fo["rang_ext"]}<sup>e</sup> sur {fo["nb"]} → '
+                      f'{p["1"] * 100:.0f} / {p["N"] * 100:.0f} / {p["2"] * 100:.0f} % {etat}</li>')
+    for c, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
+        for r in (m.get("pieges") or {}).get(c, []):
+            lignes.append(f'<li class="pg">🪤 <b>Si tu joues {e(nom)}</b> : {e(r)}</li>')
+    cp = m.get("compos") or {}
+    for c, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
+        x = cp.get(c)
+        if x and x.get("titulaires"):
+            lignes.append(f'<li>📋 <b>Compo {e(nom)}</b> : {x["changements"]} changement(s) par rapport au dernier match'
+                          + (f' · absents : {e(", ".join(x["absents"][:4]))}' if x.get("absents") else "") + "</li>")
+    if not lignes:
+        return ""
+    return '<ul class="alertes">' + "".join(lignes) + "</ul>"
+
+
 def ligne_match(m):
     vcourt = m["value"]["court"] if m["value"] else None
     cases = ""
@@ -223,6 +247,7 @@ def ligne_match(m):
         {affiche(m)}
         {barre_probas(m, vcourt)}
         {bloc_stats(m, compact=True)}
+        {bloc_alertes(m)}
         {bloc_buts(m, compact=True)}
         <div class="cases">{cases}</div>
         {buts}
@@ -1324,6 +1349,13 @@ header.reduit h1 {{ font-size:30px; }}
 .chips button {{ flex:none; background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:99px;
   padding:6px 11px; font:600 13px Inter,sans-serif; cursor:pointer; }}
 .chips button.on {{ background:var(--grad); color:var(--accent-ink); border-color:transparent; }}
+.cagnotte {{ margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,.08); }}
+.cag-res {{ font:500 13px Inter,sans-serif; color:var(--muted); margin:6px 0 0; }}
+.cag-go {{ margin-left:6px; padding:3px 9px; border-radius:999px; border:1px solid var(--ok); background:none; color:var(--ok); font:600 12px Inter,sans-serif; }}
+.mise-c {{ font:600 13px Inter,sans-serif; margin:8px 0 4px; }}
+.alertes {{ list-style:none; margin:6px 0; padding:0; font:500 12px Inter,sans-serif; color:var(--muted); }}
+.alertes li {{ padding:3px 0; }}
+.alertes li.pg {{ color:#f5b942; }}
 .semaine {{ display:flex; gap:6px; overflow-x:auto; margin:4px -16px 12px; padding:2px 16px 4px; scrollbar-width:none; }}
 .semaine::-webkit-scrollbar {{ display:none; }}
 .semaine button {{ flex:none; width:64px; display:flex; flex-direction:column; align-items:center; gap:1px; padding:8px 0 7px;
@@ -1624,6 +1656,9 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 {mots}
 {section_semaine(infos.get("semaine"))}
 <section class="budget">
+  <div class="cagnotte"><label for="cagnotte">💰 Ma cagnotte <small>(l'argent réservé aux paris, pas plus)</small></label>
+    <div class="saisie"><input id="cagnotte" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex. 100"><span>€</span></div>
+    <p class="cag-res" id="cag-res">Indique ta cagnotte : l'expert te dira combien miser sur chaque ticket pour ne jamais tout perdre d'un coup.</p></div>
   <label for="somme">Ma mise du jour</label>
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
@@ -1811,6 +1846,46 @@ document.querySelectorAll(".mode button").forEach(b => b.classList.toggle("on", 
 document.querySelectorAll(".puces button").forEach(b => b.addEventListener("click", () => {{ champ.value = b.dataset.v; sauverMise(); repartir(); }}));
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
 
+// ---- gestion des mises : un % de la cagnotte par ticket, un plafond par jour, une pause si la semaine tourne mal
+const PART_TICKET = {{ prudent: 2, equilibre: 1.5, mixte: 1, buts: 1, mixte_gros: 1, gros: 0.5, jour: 1.5, semaine: 1 }};
+const champCag = document.getElementById("cagnotte");
+function perteSemaine() {{
+  const il7 = Date.now() - 7 * 864e5;
+  let perte = 0;
+  lireMP().filter(p => p.joueLe && Date.parse(p.joueLe) >= il7).forEach(p => {{
+    const s = statutMP(p);
+    if (s === "perdu") perte += p.mise;
+    if (s === "gagné") perte -= p.mise * (p.cote - 1);
+  }});
+  return perte;
+}}
+function conseilMises() {{
+  const cag = Math.max(0, parseFloat(String(champCag.value).replace(",", ".")) || 0);
+  const res = document.getElementById("cag-res");
+  document.querySelectorAll(".mise-c").forEach(x => x.remove());
+  if (!cag) {{ res.innerHTML = "Indique ta cagnotte : l'expert te dira combien miser sur chaque ticket pour ne jamais tout perdre d'un coup."; return; }}
+  const perte = perteSemaine(), pause = perte > cag * 0.25;
+  const arrondi = x => Math.max(0.5, Math.round(x * 2) / 2);
+  const jour = pause ? 0 : arrondi(cag * 0.05);
+  res.innerHTML = pause
+    ? `🛑 <b>Pause conseillée</b> : tu as perdu ${{fmt(perte)}} cette semaine, plus du quart de ta cagnotte. Ne rejoue pas pour te refaire : reviens dans quelques jours.`
+    : `Aujourd'hui, ne sors pas plus de <b>${{fmt(jour)}}</b> (5 % de ta cagnotte), tous tickets confondus.` +
+      (perte > 0 ? `<br><small>Cette semaine : −${{fmt(perte)}} sur tes paris notés.</small>` : perte < 0 ? `<br><small>Cette semaine : +${{fmt(-perte)}} sur tes paris notés 👏</small>` : "") +
+      ` <button class="cag-go" type="button">Utiliser ${{fmt(jour)}}</button>`;
+  const go = res.querySelector(".cag-go");
+  if (go) go.addEventListener("click", () => {{ champ.value = jour; sauverMise(); repartir(); }});
+  document.querySelectorAll("article.combo[data-style]").forEach(t => {{
+    const part = PART_TICKET[t.dataset.style] || 1;
+    const d = document.createElement("p");
+    d.className = "mise-c";
+    d.innerHTML = pause ? "💰 Mise conseillée : <b>0 €</b> (pause)" : `💰 Mise conseillée : <b>${{fmt(arrondi(cag * part / 100))}}</b> <small>(${{String(part).replace(".", ",")}} % de ta cagnotte)</small>`;
+    const calc = t.querySelector(".calc");
+    if (calc) calc.before(d); else t.appendChild(d);
+  }});
+}}
+champCag.addEventListener("input", () => {{ try {{ localStorage.setItem("cagnotte", champCag.value); }} catch (e) {{}} conseilMises(); }});
+try {{ champCag.value = localStorage.getItem("cagnotte") || ""; }} catch (e) {{}}
+
 // ---- mes vrais paris (gardés sur ce téléphone, réglés avec les résultats publiés par l'agent)
 const RESULTATS = {json.dumps(infos.get("resultats") or {}, ensure_ascii=False)};
 const lireMP = () => {{ try {{ return JSON.parse(localStorage.getItem("mes-paris") || "[]"); }} catch (e) {{ return []; }} }};
@@ -1921,7 +1996,7 @@ function afficherMP() {{
     <p class="note">${{att}} en attente · misé au total ${{fmt(engage)}}. Réglés tout seuls avec les scores ; ✓ ✗ pour corriger à la main.</p>
     <table class="hist">${{lignes}}</table>`;
 }}
-marquerJoues(); afficherMP();
+marquerJoues(); afficherMP(); conseilMises();
 
 // ---- onglets
 function ouvrirOnglet(t, haut = true) {{

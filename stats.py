@@ -165,6 +165,7 @@ class Stats:
             "domicile": _forme(lignes, dom, lieu="dom"),
             "exterieur": _forme(lignes, ext, lieu="ext"),
             "face": _face_a_face(lignes, dom, ext),
+            "noms": [dom, ext],
         }
 
 
