@@ -610,10 +610,14 @@ def main():
                 a["compos"] = cp["matchs"][a["id"]]
     except Exception as e:
         print(f"  ! compos : {e}")
-    npg = pieges.marquer(analyses)
-    # si le carnet prouve que les favoris « piège » ratent plus que prévu, on les écarte des combinés
-    moteur.PIEGE_EXCLU = autopsie.ajustements(expert.charger(DATA / "carnet.json")).get("piege", {}).get("ajust", 0) < 0 \
-        if not demo else False
+    npg = 0
+    try:
+        npg = pieges.marquer(analyses)
+        # si le carnet prouve que les favoris « piège » ratent plus que prévu, on les écarte des combinés
+        moteur.PIEGE_EXCLU = autopsie.ajustements(expert.charger(DATA / "carnet.json")).get("piege", {}).get("ajust", 0) < 0 \
+            if not demo else False
+    except Exception as e:
+        print(f"  ! pièges : {e}")
     print(f"    force : {nf} matchs notés · pièges : {npg} favoris en alerte")
     if not demo:   # les paris de buts sont corrigés d'après leurs vrais résultats (gratuit)
         try:
