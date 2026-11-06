@@ -235,15 +235,20 @@ def noter_ticket(carnet, cle, cat, jour, tk, analyses, maintenant):
     carnet.append(nouveau)
 
 
-MIN_PAUSE, ROI_PAUSE = 30, -0.15
+MIN_PAUSE, ROI_PAUSE = 15, 0.0
 
 
 def pauses(carnet):
-    """Les types de pronos qui perdent sur la durée : l'expert arrête de les conseiller."""
+    """Les types de pronos qui perdent : l'expert arrête de les conseiller.
+    Règle : à partir de 15 tickets réglés, tout type dont le rendement est négatif est mis en pause
+    (dès 3 tickets s'il n'en a gagné aucun). Ils restent notés en fictif : un type qui repasse
+    en positif est de nouveau conseillé tout seul."""
     out = {}
     for k in CATEGORIES:
         s = _seg([p for p in carnet if p["cat"] == k])
-        if s["roi"] is not None and ((s["n"] >= MIN_PAUSE and s["roi"] < ROI_PAUSE) or (s["n"] >= 6 and s["roi"] <= -0.6)):
+        if s["roi"] is None:
+            continue
+        if (s["n"] >= MIN_PAUSE and s["roi"] < ROI_PAUSE) or (s["n"] >= 3 and s["gagnes"] == 0):
             out[k] = s
     return out
 

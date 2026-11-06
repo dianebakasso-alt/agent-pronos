@@ -809,6 +809,8 @@ def main():
                 c["desc"] = f"⛔ En pause : ce type de ticket perd sur la durée ({s['roi'] * 100:+.0f} % sur {s['n']} tickets). " + c["desc"]
         if "jour" in en_pause:
             j["ticket"] = None
+    if "semaine" in en_pause:
+        ticket_semaine = None   # toujours noté en fictif dans le carnet, mais plus affiché
     res_carnet = {}
     for p in carnet:
         for j in p["jambes"]:
