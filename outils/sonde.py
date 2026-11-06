@@ -96,6 +96,25 @@ try:
                                 "ligues": sorted({(e.get("league") or {}).get("abbreviation", "?") if isinstance(e.get("league"), dict) else str(e.get("league")) for e in evs})[:10]}
         except Exception as e:
             out["espn"][url] = str(e)
+    lf = sm.get("lastFiveGames") or []
+    if lf:
+        out["espn"]["l5_cles"] = list(lf[0].keys())
+        evs = lf[0].get("events") or []
+        out["espn"]["l5_ev"] = court(evs[0] if evs else None, 900)
+    sc = direct._get(f"{direct.BASE}/all/teams/{tid}/schedule")
+    evs = sc.get("events") or []
+    out["espn"]["sched_ev_cles"] = list(evs[-1].keys()) if evs else None
+    out["espn"]["sched_ev_league"] = court(evs[-1].get("league") if evs else None, 400)
+    out["espn"]["sched_ev_comp"] = court(((evs[-1].get("competitions") or [{}])[0]) if evs else None, 900)
+    prev = next((e for e in reversed(evs) if e["id"] != "401915534"), None)
+    if prev:
+        for url in (f"{direct.BASE}/all/summary?event={prev['id']}", f"{direct.BASE}/ita.1/summary?event={prev['id']}"):
+            try:
+                x = direct._get(url)
+                ro = x.get("rosters") or []
+                out["espn"][url] = {"rosters": len(ro), "starters": [sum(1 for y in (r.get("roster") or []) if y.get("starter")) for r in ro]}
+            except Exception as e:
+                out["espn"][url] = str(e)
 except Exception as e:
     out["espn"]["erreur"] = str(e)
 
