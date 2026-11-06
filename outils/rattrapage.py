@@ -26,11 +26,21 @@ for p in carnet:
 a_faire.sort(key=lambda j: -(j.get("proba") or 0))      # la plus grosse surprise d'abord
 print(f"{len(a_faire)} erreurs sans autopsie, budget {BUDGET_RATTRAPAGE} €")
 faites = 0
+
+
+def sauver():
+    (agent.DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
+    (agent.DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 for j in a_faire:
     try:
         res = agent.appel_ia(autopsie.consigne(j), cfg, cle, max_uses=2, max_tokens=1200)
         autopsie.noter_autopsie(carnet, lecons, j, res, maintenant)
         faites += 1
+        if faites % 10 == 0:
+            sauver()
+            print(f"  {faites} faites, {agent.BUDGET['run']:.2f} €", flush=True)
     except RuntimeError as e:          # plafond atteint
         print("stop :", e)
         break
@@ -39,8 +49,7 @@ for j in a_faire:
         if "credit balance" in str(e):
             break
 autopsie.MAX_AUTOPSIES = 5
-(agent.DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
-(agent.DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
+sauver()
 (agent.DATA / "rattrapage.json").write_text(json.dumps({"quand": maintenant.isoformat(), "faites": faites,
     "restantes": len(a_faire) - faites, "cout_estime": round(agent.BUDGET["run"], 3)}, ensure_ascii=False), encoding="utf-8")
 print(f"{faites} autopsies faites, coût estimé {agent.BUDGET['run']:.2f} €")
