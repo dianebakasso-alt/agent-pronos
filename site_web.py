@@ -209,10 +209,18 @@ def bloc_alertes(m):
     fo = m.get("force")
     if fo:
         p = fo["p"]
-        etat = "⚠️ contredit le marché" if fo.get("suspect") else "✅ confirme le marché" if fo.get("confirme") else ""
-        lignes.append(f'<li>💪 <b>Note de force</b> : {e(m["domicile"])} {fo["rang_dom"]}<sup>e</sup>, '
-                      f'{e(m["exterieur"])} {fo["rang_ext"]}<sup>e</sup> sur {fo["nb"]} → '
-                      f'{p["1"] * 100:.0f} / {p["N"] * 100:.0f} / {p["2"] * 100:.0f} % {etat}</li>')
+        mk = {i["court"]: i["proba"] for i in m["issues"]}
+        d1, d2 = p["1"] - mk.get("1", 0), p["2"] - mk.get("2", 0)
+        if max(abs(d1), abs(d2)) < 0.05:
+            avis = "même avis que les bookmakers."
+        else:
+            qui = m["domicile"] if d1 > d2 else m["exterieur"]
+            avis = f"l'expert voit <b>{e(qui)}</b> plus fort que les bookmakers."
+        lignes.append(f'<li>💪 <b>Note de force</b> (classement maison sur les 2 dernières saisons) : '
+                      f'{e(m["domicile"])} {fo["rang_dom"]}<sup>e</sup>, {e(m["exterieur"])} {fo["rang_ext"]}<sup>e</sup> sur {fo["nb"]}.<br>'
+                      f'Selon lui : {e(m["domicile"])} {p["1"] * 100:.0f} % · nul {p["N"] * 100:.0f} % · {e(m["exterieur"])} {p["2"] * 100:.0f} % '
+                      f'(bookmakers : {mk.get("1", 0) * 100:.0f} / {mk.get("N", 0) * 100:.0f} / {mk.get("2", 0) * 100:.0f} %) → {avis}'
+                      f'<br><small>Simple info : les bookmakers restent plus fiables, ça ne change pas les tickets.</small></li>')
     for c, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
         for r in (m.get("pieges") or {}).get(c, []):
             lignes.append(f'<li class="pg">🪤 <b>Si tu joues {e(nom)}</b> : {e(r)}</li>')

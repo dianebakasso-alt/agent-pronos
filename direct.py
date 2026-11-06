@@ -163,10 +163,18 @@ def _meme_equipe(nom, noms):
 NOMS_COUPES = {"uefa.champions": "Ligue des champions", "uefa.europa": "Europa League", "uefa.europa.conf": "Conference League"}
 
 
+# les clubs de 2e division et en dessous ne jouent pas les coupes d'Europe
+# (évite « Red Star » de Ligue 2 confondu avec l'Étoile rouge de Belgrade)
+DIVISIONS_INF = {"soccer_france_ligue_two", "soccer_efl_champ", "soccer_england_league1", "soccer_england_league2",
+                 "soccer_germany_bundesliga2", "soccer_italy_serie_b", "soccer_spain_segunda_division"}
+
+
 def marquer_fatigue(analyses, europe, jours=3):
     """m['fatigue'] = {'1': 'texte', '2': 'texte'} si l'équipe joue en Europe 3 jours avant ou après."""
     n = 0
     for m in analyses:
+        if m.get("sport_key") in DIVISIONS_INF:
+            continue
         ko = datetime.fromisoformat(m["debut"].replace("Z", "+00:00"))
         mon_id = (m.get("espn") or {}).get("id")
         fat = {}
