@@ -40742,7 +40742,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 1.86,
@@ -40750,8 +40752,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.6
  },
  {
   "cle": "gros:2026-11-07:2",
@@ -41208,6 +41210,148 @@
   "proba": 0.5282,
   "estime": false,
   "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "52b256088d29b4abb82e0c63ea9852fe",
+    "date": "2026-11-07T14:00:00Z",
+    "domicile": "Cagliari",
+    "exterieur": "Frosinone",
+    "championnat": "Serie A",
+    "pari": "Victoire Frosinone",
+    "cote": 2.3,
+    "proba": 0.3968,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874791"
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "5c87852253fd11eea5d34ad723356607",
+    "date": "2026-11-07T12:30:00Z",
+    "domicile": "Leeds United",
+    "exterieur": "Tottenham Hotspur",
+    "championnat": "Premier League",
+    "pari": "Victoire Leeds United",
+    "cote": 2.63,
+    "proba": 0.3414,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878758"
+    },
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "c8d54d20e3fa9acb251716ff6820a0c6",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Talleres",
+    "exterieur": "Estudiantes",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Talleres",
+    "cote": 2.55,
+    "proba": 0.3513,
+    "court": "1",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841661"
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 15.42,
+  "proba": 0.0476,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-07:3",
+  "jour": "2026-11-07",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "a88341ac02c8103eedc594a2ceb3a400",
+    "date": "2026-11-07T12:30:00Z",
+    "domicile": "Wrexham AFC",
+    "exterieur": "Wolverhampton Wanderers",
+    "championnat": "Championship",
+    "pari": "Victoire Wolverhampton Wanderers",
+    "cote": 2.16,
+    "proba": 0.4421,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880161"
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "e8492593cecfc388af8a4852f06599c6",
+    "date": "2026-11-07T12:30:00Z",
+    "domicile": "Portsmouth",
+    "exterieur": "Stoke City",
+    "championnat": "Championship",
+    "pari": "Victoire Portsmouth",
+    "cote": 2.15,
+    "proba": 0.4372,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880166"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "afde306e7e186da45ff6778a7e952d51",
+    "date": "2026-11-07T19:45:00Z",
+    "domicile": "RAAL La Louvière",
+    "exterieur": "Cercle Brugge KSV",
+    "championnat": "Pro League",
+    "pari": "Victoire Cercle Brugge KSV",
+    "cote": 2.45,
+    "proba": 0.3633,
+    "court": "2",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878948"
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 11.38,
+  "proba": 0.0702,
+  "estime": false,
+  "conseille": false,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
@@ -43109,148 +43253,6 @@
   ],
   "cote": 3.84,
   "proba": 0.2231,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "gros:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "gros",
-  "jambes": [
-   {
-    "id": "52b256088d29b4abb82e0c63ea9852fe",
-    "date": "2026-11-07T14:00:00Z",
-    "domicile": "Cagliari",
-    "exterieur": "Frosinone",
-    "championnat": "Serie A",
-    "pari": "Victoire Frosinone",
-    "cote": 2.3,
-    "proba": 0.3968,
-    "court": "2",
-    "espn": {
-     "ligue": "ita.1",
-     "id": "401874791"
-    },
-    "traits": [
-     "exterieur",
-     "doute_ia",
-     "piege",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "5c87852253fd11eea5d34ad723356607",
-    "date": "2026-11-07T12:30:00Z",
-    "domicile": "Leeds United",
-    "exterieur": "Tottenham Hotspur",
-    "championnat": "Premier League",
-    "pari": "Victoire Leeds United",
-    "cote": 2.63,
-    "proba": 0.3414,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.1",
-     "id": "401878758"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   },
-   {
-    "id": "c8d54d20e3fa9acb251716ff6820a0c6",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Talleres",
-    "exterieur": "Estudiantes",
-    "championnat": "Liga Argentina",
-    "pari": "Victoire Talleres",
-    "cote": 2.55,
-    "proba": 0.3513,
-    "court": "1",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841661"
-    },
-    "traits": [
-     "piege"
-    ]
-   }
-  ],
-  "cote": 15.42,
-  "proba": 0.0476,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "gros:2026-11-07:3",
-  "jour": "2026-11-07",
-  "cat": "gros",
-  "jambes": [
-   {
-    "id": "a88341ac02c8103eedc594a2ceb3a400",
-    "date": "2026-11-07T12:30:00Z",
-    "domicile": "Wrexham AFC",
-    "exterieur": "Wolverhampton Wanderers",
-    "championnat": "Championship",
-    "pari": "Victoire Wolverhampton Wanderers",
-    "cote": 2.16,
-    "proba": 0.4421,
-    "court": "2",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880161"
-    },
-    "traits": [
-     "exterieur",
-     "force_contre"
-    ]
-   },
-   {
-    "id": "e8492593cecfc388af8a4852f06599c6",
-    "date": "2026-11-07T12:30:00Z",
-    "domicile": "Portsmouth",
-    "exterieur": "Stoke City",
-    "championnat": "Championship",
-    "pari": "Victoire Portsmouth",
-    "cote": 2.15,
-    "proba": 0.4372,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880166"
-    },
-    "traits": [
-     "force_pour"
-    ]
-   },
-   {
-    "id": "afde306e7e186da45ff6778a7e952d51",
-    "date": "2026-11-07T19:45:00Z",
-    "domicile": "RAAL La Louvière",
-    "exterieur": "Cercle Brugge KSV",
-    "championnat": "Pro League",
-    "pari": "Victoire Cercle Brugge KSV",
-    "cote": 2.45,
-    "proba": 0.3633,
-    "court": "2",
-    "espn": {
-     "ligue": "bel.1",
-     "id": "401878948"
-    },
-    "traits": [
-     "exterieur",
-     "piege",
-     "force_pour"
-    ]
-   }
-  ],
-  "cote": 11.38,
-  "proba": 0.0702,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
