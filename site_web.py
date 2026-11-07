@@ -681,13 +681,17 @@ def liste_avis(j):
             txt = v["raison"]
             icone = "🤖"
         else:
-            cls, badge = "att", "⏳ Avis de l'IA à venir"
+            auj = j.get("quand") == "aujourd'hui"
+            cls, badge = ("att", "⚪ Pas vérifié par l'IA") if auj else ("att", "⏳ Vérifié par l'IA le jour du match")
             if a["niveau"] == "ouvert":
                 pari = "Pas de pari conseillé"
             else:
                 pari = f"{a['issue']} · {a['cote']:.2f}"
             ia = (m.get("avis") or {})
-            txt = ia.get("resume") or "L'IA donnera son verdict au prochain passage du matin."
+            txt = ia.get("resume") or (
+                "Chaque matin, l'IA vérifie les 12 matchs les plus importants (ceux des combinés d'abord). Celui-ci n'en fait "
+                "pas partie aujourd'hui : avis basé sur les cotes, la forme et les absences connues." if auj else
+                "L'IA lira l'actu (blessés, compos, forme) le matin du match.")
             icone = "🤖" if ia.get("resume") else "💡"
         fat = m.get("fatigue") or {}
         if fat:
