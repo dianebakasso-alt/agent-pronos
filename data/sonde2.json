@@ -1,257 +1,111 @@
 {
- "types": [
-  "end-delay",
-  "end-regular-time",
-  "goal",
-  "halftime",
-  "kickoff",
-  "red-card",
-  "start-2nd-half",
-  "start-delay",
-  "substitution",
-  "yellow-card"
- ],
- "ex": [
-  "{\"type\": {\"id\": \"94\", \"text\": \"Yellow Card\", \"type\": \"yellow-card\"}, \"text\": \"Alphadjo Cisse (AC Milan) is shown the yellow card for a bad foul.\", \"clock\": {\"value\": 1891.0, \"displayValue\": \"32'\"}, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"scoringPlay\": false, \"participants\": [{\"athlete\": {\"id\": \"359754\", \"displayName\": \"Alphadjo Cissè\"}}]}",
-  "{\"type\": {\"id\": \"76\", \"text\": \"Substitution\", \"type\": \"substitution\"}, \"text\": \"Substitution, AC Milan. Christian Pulisic replaces Alphadjo Cisse.\", \"clock\": {\"value\": 2700.0, \"displayValue\": \"45'\"}, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"scoringPlay\": false, \"participants\": [{\"athlete\": {\"id\": \"225607\", \"displayName\": \"Christian Pulisic\"}}, {\"athlete\": {\"id\": \"359754\", \"displayName\": \"Alphadjo Cissè\"}}]}",
-  "{\"type\": {\"id\": \"76\", \"text\": \"Substitution\", \"type\": \"substitution\"}, \"text\": \"Substitution, AC Milan. Mario Gila replaces Sankhoun Diawara.\", \"clock\": {\"value\": 2700.0, \"displayValue\": \"45'\"}, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"scoringPlay\": false, \"participants\": [{\"athlete\": {\"id\": \"324097\", \"displayName\": \"Mario Gila\"}}, {\"athlete\": {\"id\": \"388239\", \"displayName\": \"Sankhoun Diawara\"}}]}",
-  "{\"type\": {\"id\": \"76\", \"text\": \"Substitution\", \"type\": \"substitution\"}, \"text\": \"Substitution, AC Milan. Diego Moreira replaces Yunus Musah.\", \"clock\": {\"value\": 2700.0, \"displayValue\": \"45'\"}, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"scoringPlay\": false, \"participants\": [{\"athlete\": {\"id\": \"340678\", \"displayName\": \"Diego Moreira\"}}, {\"athlete\": {\"id\": \"307527\", \"displayName\": \"Yunus Musah\"}}]}",
-  "{\"type\": {\"id\": \"82\", \"text\": \"Start 2nd Half\", \"type\": \"start-2nd-half\"}, \"text\": \"Second Half begins AC Milan 0, Ferencváros 0.\", \"clock\": {\"value\": 2700.0, \"displayValue\": \"45'\"}, \"team\": null, \"scoringPlay\": false, \"participants\": null}",
-  "{\"type\": {\"id\": \"94\", \"text\": \"Yellow Card\", \"type\": \"yellow-card\"}, \"text\": \"Koni De Winter (AC Milan) is shown the yellow card for a bad foul.\", \"clock\": {\"value\": 3009.0, \"displayValue\": \"51'\"}, \"team\": {\"id\": \"103\", \"displayName\": \"AC Milan\"}, \"scoringPlay\": false, \"participants\": [{\"athlete\": {\"id\": \"309570\", \"displayName\": \"Koni De Winter\"}}]}"
- ],
- "stats": [
+ "20261107": [
   [
+   "401880170",
+   "Norwich City at Bristol City",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "foulsCommitted",
-    "9"
-   ],
-   [
-    "yellowCards",
-    "2"
-   ],
-   [
-    "redCards",
-    "0"
-   ],
-   [
-    "offsides",
-    "1"
-   ],
-   [
-    "wonCorners",
-    "2"
-   ],
-   [
-    "saves",
-    "6"
-   ],
-   [
-    "possessionPct",
-    "70.1"
-   ],
-   [
-    "totalShots",
-    "15"
-   ],
-   [
-    "shotsOnTarget",
-    "2"
-   ],
-   [
-    "shotPct",
-    "0.1"
-   ],
-   [
-    "penaltyKickGoals",
-    "0"
-   ],
-   [
-    "penaltyKickShots",
-    "0"
-   ],
-   [
-    "accuratePasses",
-    "595"
-   ],
-   [
-    "totalPasses",
-    "675"
-   ],
-   [
-    "passPct",
-    "0.9"
-   ],
-   [
-    "accurateCrosses",
-    "8"
-   ],
-   [
-    "totalCrosses",
-    "27"
-   ],
-   [
-    "crossPct",
-    "0.3"
-   ],
-   [
-    "totalLongBalls",
-    "52"
-   ],
-   [
-    "accurateLongBalls",
-    "27"
-   ],
-   [
-    "longballPct",
-    "0.5"
-   ],
-   [
-    "blockedShots",
-    "5"
-   ],
-   [
-    "effectiveTackles",
-    "8"
-   ],
-   [
-    "totalTackles",
-    "12"
-   ],
-   [
-    "tacklePct",
-    "0.7"
-   ],
-   [
-    "interceptions",
-    "10"
-   ],
-   [
-    "effectiveClearance",
-    "24"
-   ],
-   [
-    "totalClearance",
-    "24"
+    0,
+    5
    ]
   ],
   [
+   "401880166",
+   "Stoke City at Portsmouth",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "foulsCommitted",
-    "13"
-   ],
+    1,
+    2
+   ]
+  ],
+  [
+   "401880161",
+   "Wolverhampton Wanderers at Wrexham",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "yellowCards",
-    "1"
-   ],
+    1,
+    1
+   ]
+  ],
+  [
+   "401880172",
+   "Swansea City at Birmingham City",
+   false,
+   "STATUS_SECOND_HALF",
+   null
+  ],
+  [
+   "401880171",
+   "West Ham United at Blackburn Rovers",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "redCards",
-    "1"
-   ],
+    2,
+    1
+   ]
+  ],
+  [
+   "401880169",
+   "Burnley at Cardiff City",
+   false,
+   "STATUS_SECOND_HALF",
+   null
+  ],
+  [
+   "401880168",
+   "Sheffield United at Charlton Athletic",
+   false,
+   "STATUS_SECOND_HALF",
+   null
+  ],
+  [
+   "401880165",
+   "Southampton at Preston North End",
+   false,
+   "STATUS_SECOND_HALF",
+   null
+  ],
+  [
+   "401880164",
+   "Lincoln City at Queens Park Rangers",
+   false,
+   "STATUS_SECOND_HALF",
+   null
+  ],
+  [
+   "401880163",
+   "Middlesbrough at Watford",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "offsides",
-    "1"
-   ],
+    0,
+    0
+   ]
+  ],
+  [
+   "401880162",
+   "Millwall at West Bromwich Albion",
+   true,
+   "STATUS_FULL_TIME",
    [
-    "wonCorners",
-    "4"
-   ],
-   [
-    "saves",
-    "2"
-   ],
-   [
-    "possessionPct",
-    "29.9"
-   ],
-   [
-    "totalShots",
-    "12"
-   ],
-   [
-    "shotsOnTarget",
-    "8"
-   ],
-   [
-    "shotPct",
-    "0.7"
-   ],
-   [
-    "penaltyKickGoals",
-    "0"
-   ],
-   [
-    "penaltyKickShots",
-    "0"
-   ],
-   [
-    "accuratePasses",
-    "206"
-   ],
-   [
-    "totalPasses",
-    "289"
-   ],
-   [
-    "passPct",
-    "0.7"
-   ],
-   [
-    "accurateCrosses",
-    "1"
-   ],
-   [
-    "totalCrosses",
-    "12"
-   ],
-   [
-    "crossPct",
-    "0.1"
-   ],
-   [
-    "totalLongBalls",
-    "44"
-   ],
-   [
-    "accurateLongBalls",
-    "13"
-   ],
-   [
-    "longballPct",
-    "0.3"
-   ],
-   [
-    "blockedShots",
-    "1"
-   ],
-   [
-    "effectiveTackles",
-    "11"
-   ],
-   [
-    "totalTackles",
-    "20"
-   ],
-   [
-    "tacklePct",
-    "0.6"
-   ],
-   [
-    "interceptions",
-    "13"
-   ],
-   [
-    "effectiveClearance",
-    "42"
-   ],
-   [
-    "totalClearance",
-    "42"
+    3,
+    0
    ]
   ]
  ],
- "teams": [
-  "103",
-  "622"
- ],
- "header_comp": "[{\"id\": \"103\", \"homeAway\": \"home\", \"score\": \"0\", \"winner\": false}, {\"id\": \"622\", \"homeAway\": \"away\", \"score\": \"2\", \"winner\": true}]"
+ "20261106": [
+  [
+   "401880167",
+   "Bolton Wanderers at Derby County",
+   true,
+   "STATUS_FULL_TIME",
+   [
+    3,
+    1
+   ]
+  ]
+ ]
 }
