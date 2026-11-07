@@ -4,16 +4,18 @@
     quota cotes : 0 championnat(s) aujourd'hui (416 crédits restants ce mois-ci)
     0 championnats retenus
 3/4 Récupération des cotes…
-    98 matchs repris du cache (cotes d'un passage précédent)
-    98 matchs analysés, 0 value bets
+    95 matchs repris du cache (cotes d'un passage précédent)
+    95 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 96 matchs reliés aux scores en direct
+    direct : 95 matchs reliés aux scores en direct
     fatigue : 28 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 195 équipes trouvées, 1 manquées
-    force : 97 matchs notés · pièges : 50 favoris en alerte
+    stats : 189 équipes trouvées, 1 manquées
+    force : 94 matchs notés · pièges : 49 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
     autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
+  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
+  ! IA verdicts (paquet 2) : plafond IA du jour atteint (0.23 €)
     combinés refaits avec 12 avis de l'IA
 Site généré : site/index.html
