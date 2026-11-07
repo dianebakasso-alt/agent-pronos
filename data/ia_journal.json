@@ -1,8 +1,9 @@
 {
- "quand": "2026-11-06T23:42:10.805719+00:00",
+ "quand": "2026-11-07T00:13:46.626962+00:00",
  "etat": "erreur",
  "ok": 0,
  "erreurs": [
-  "plafond IA du jour atteint (0.08 €)"
+  "Expecting ',' delimiter: line 2 column 353 (char 367)",
+  "réponse sans JSON (arrêt : max_tokens, 7 car.) '```json'"
  ]
 }

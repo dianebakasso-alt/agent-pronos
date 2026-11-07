@@ -7,7 +7,7 @@
     98 matchs repris du cache (cotes d'un passage précédent)
     98 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 98 matchs reliés aux scores en direct
+    direct : 96 matchs reliés aux scores en direct
     fatigue : 28 matchs avec une équipe qui joue en Europe à 3 jours
     stats : 195 équipes trouvées, 1 manquées
     force : 97 matchs notés · pièges : 50 favoris en alerte
@@ -15,5 +15,6 @@
     calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
     autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.08 €)
+  ! IA verdicts (paquet 1) : Expecting ',' delimiter: line 2 column 353 (char 367)
+  ! IA verdicts (paquet 2) : réponse sans JSON (arrêt : max_tokens, 7 car.) '```json'
 Site généré : site/index.html

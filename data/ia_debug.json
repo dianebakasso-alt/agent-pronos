@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "max_tokens",
+  "pauses": 0,
+  "longueur": 569,
+  "fin": "```json\n{\"verdicts\": [\n{\"n\": 1, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Eyüpspor (1 victoire en 10 matchs, 18e) est en crise et sans Giordano ni İlter, mais Kocaelispor perd aussi Petkovic, Zoukrou et Haidara. Le 2 à 1,86 est déjà cher pour une équipe dont le modèle Elo ne donne que 44 %, et l'écart avec la cote implicite (environ 48 %) ne suffit pas à le jouer.\"},\n{\"n\": 2, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Leeds n'a plus gagné depuis cinq matchs, marque 0,4 but par match, et Stach et Okafor sont incertains, alors que Tottenham enchaîne tr",
+  "usage": {
+   "input_tokens": 56205,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5545,
+   "output_tokens_details": {
+    "thinking_tokens": 4918
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "max_tokens",
+  "pauses": 0,
+  "longueur": 7,
+  "fin": "```json",
+  "usage": {
+   "input_tokens": 57634,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5606,
+   "output_tokens_details": {
+    "thinking_tokens": 5234
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]
