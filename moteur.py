@@ -191,7 +191,7 @@ def _jouable(m, p, court=None):
 
 
 def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
-                      tri=None, critere=None, n_min=2):
+                      tri=None, critere=None, n_min=2, p_max=1.0, nul=True):
     """Meilleur ticket chez un seul bookmaker.
     tri     : ordre de préférence des matchs (par défaut : valeur x chance)
     critere : ce qu'on maximise entre bookmakers (par défaut : l'avantage)"""
@@ -207,7 +207,8 @@ def _meilleur_combine(analyses, cfg, n_max, p_min, edge_min, chance_min=0.0,
             options = []
             for i in m["issues"]:
                 c = cotes.get(i["court"])
-                if not c or c > cfg["cote_max"] or i["proba"] < p_min or not _jouable(m, i["proba"], i["court"]):
+                if not c or c > cfg["cote_max"] or i["proba"] < p_min or i["proba"] > p_max \
+                        or (not nul and i["court"] == "N") or not _jouable(m, i["proba"], i["court"]):
                     continue
                 edge = i["proba"] * c - 1
                 if edge > edge_min:
@@ -262,7 +263,7 @@ def combine_du_jour(analyses, cfg):
 STYLES = {
     "prudent": {"nom": "Prudent", "emoji": "🛡️", "desc": "2 matchs, des favoris : la meilleure chance de passer."},
     "equilibre": {"nom": "Équilibré", "emoji": "⚖️", "desc": "Le meilleur rapport valeur / chance du jour."},
-    "gros": {"nom": "Gros gain", "emoji": "🚀", "desc": "3 à 4 matchs : grosse cote, plus risqué."},
+    "gros": {"nom": "Gros gain", "emoji": "🚀", "desc": "3 matchs bien choisis (équipes à 40-58 %, surtout à domicile) : cote 6 à 10, environ 1 chance sur 10."},
     "verifie": {"nom": "Vérifié par l'IA", "emoji": "🔎",
                 "desc": "Seulement des matchs où l'IA a lu toute l'actu (blessés, compos, forme, enjeu) et dit « je le joue »."},
 }
@@ -311,8 +312,10 @@ def combines_experts(analyses, cfg):
                                  tri=lambda o: -o["proba"], critere=lambda c: (c["proba"], c["edge"]))
 
     def gros(edge_min):
-        return _meilleur_combine(analyses, cfg, 4, 0.30, edge_min, 0.04, n_min=3,
-                                 critere=lambda c: (c["edge"] > 0, len(c["jambes"]), c["cote"] * (1 + c["edge"])))
+        # appris du carnet (800 paris) : les équipes données entre 40 et 58 % gagnent plus souvent que prévu
+        # (surtout à domicile), les outsiders sous 38 % et les nuls non. 3 matchs : ~10 % de chances, cote 7 à 10.
+        return _meilleur_combine(analyses, cfg, GROS_JAMBES, 0.40, edge_min, 0.07, n_min=3, p_max=0.58, nul=False,
+                                 tri=_tri_gros, critere=lambda c: (c["edge"] > 0, c["proba"] * c["cote"]))
 
     out = {}
     for style, fn in (("prudent", prudent), ("gros", gros)):
@@ -347,8 +350,8 @@ def combines_experts(analyses, cfg):
             reste = [m for m in analyses if m["id"] not in pris]
             c, ok = None, True
             for edge_min in (0, -1):
-                c = _meilleur_combine(reste, cfg, 4, 0.30, edge_min, 0.04, n_min=3,
-                                      critere=lambda c: (c["edge"] > 0, len(c["jambes"]), c["cote"] * (1 + c["edge"])))
+                c = _meilleur_combine(reste, cfg, GROS_JAMBES, 0.40, edge_min, 0.07, n_min=3, p_max=0.58, nul=False,
+                                      tri=_tri_gros, critere=lambda c: (c["edge"] > 0, c["proba"] * c["cote"]))
                 if c:
                     ok = edge_min == 0
                     break
@@ -364,6 +367,12 @@ def combines_experts(analyses, cfg):
     return resultat
 
 
+def _tri_gros(o):
+    """Matchs visés : environ 46 % de chances (cote ~2,1), domicile préféré, avantage bienvenu."""
+    return abs(o["proba"] - 0.46) - (0.03 if o["court"] == "1" else 0) - o["edge"] * 0.3
+
+
+GROS_JAMBES = 3   # matchs par Gros gain (4 matchs = 5 % de chances, 3 matchs = environ 10 %)
 GROS_MAX = 3   # tickets Gros gain et Mixte gros gain par jour (matchs tous différents)
 
 
