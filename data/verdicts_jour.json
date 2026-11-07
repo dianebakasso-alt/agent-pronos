@@ -1,4 +1,65 @@
 {
  "jour": "2026-11-07",
- "v": {}
+ "v": {
+  "a3dad1ddaa98a6ff741be7f63250f2ee": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Eyüpspor (18e, une seule victoire en 10 matchs) est en crise et privé de Giordano et İlter, mais Kocaelispor perd aussi Petkovic, Zoukrou et Haidara. À 1.86, la cote implique environ 48 % après marge contre 44 % pour le modèle : il n'y a pas de valeur."
+  },
+  "5c87852253fd11eea5d34ad723356607": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Leeds (12e) marque peu (0.4 but par match sur les 5 derniers) avec Stach et Okafor incertains et Calvert-Lewin à surveiller, tandis que Tottenham enchaîne 3 victoires malgré l'absence de Mudryk, Savio et Bergvall. L'écart modèle (53 %) contre marché (environ 34 %) est énorme, et l'Elo de Tottenham ("
+  },
+  "89fe6860f3058526dd227dc27efd902a": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Dickie et Adebayo reviennent côté Bristol, McLean et Mattsson côté Norwich, qui enchaîne 3 victoires alors que Bristol a perdu ses 3 derniers matchs à domicile. Mais après marge, les cotes (environ 38 % Norwich, 35 % Bristol) collent au modèle (37 % et 35 %) : aucun avantage net, match équilibré."
+  },
+  "605767f0e7114a23442d92831c12c767": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Samsunspor n'a gagné aucun de ses 5 derniers matchs à domicile et encaisse 3 buts par match, Konyaspor n'a pas gagné à l'extérieur récemment. Je n'ai trouvé aucune actu blessés ou suspensions fiable pour ce match, et l'avantage du modèle (environ 3 points) ne compense pas une forme domicile aussi ma"
+  },
+  "52b256088d29b4abb82e0c63ea9852fe": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Cagliari est en crise (4 défaites de suite) et doit faire sans Obert (suspendu), Nzola, Fadera, Mina et d'autres blessés. Frosinone marque beaucoup et perd peu, mais il gagne rarement à l'extérieur et perd son meilleur buteur Raimondo ; la cote 2.32 (environ 39 % après marge) reste en dessous des 46"
+  },
+  "463c2870517b0ad28afcbd8775287064": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Je n'ai trouvé aucune actu blessés ni forme spécifique pour ce match, ma recherche n'ayant pas abouti. Cardiff a gagné 3 fois à domicile sur ses 5 derniers matchs et Burnley ne gagne presque jamais loin (1 victoire en 5) ; la cote 2.00 (environ 45 % après marge) est inférieure aux 52 % du modèle, ma"
+  },
+  "d3d9ff50bb0abd6e9215bd4b9b507644": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Westerlo est privé de Laalaoui (suspendu) et Keita (suspendu après un carton rouge), et Charleroi n'a plus Marcq ni Nkuba. Le 2 à 2.10 implique environ 48 %, alors que l'Elo ne donne que 37 % à Charleroi : pas de valeur, et le 1 à 2.85 n'offre pas non plus d'avantage net."
+  },
+  "813cc4970b2dcab8457490a332fb5a6c": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Bologna est favori à 1.81 (environ 55 % implicite) pour une équipe en forme, et Parma marque 0.8 but par match avec trois défaites sur ses cinq derniers. Le 1 à 4.20 paraît surévalué par l'Elo, mais la faiblesse offensive de Parma et son absence défensive (Valenti) ne le justifient pas."
+  },
+  "077e9bfa253514e27bdae1ce5956c78e": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Derby mendocino très équilibré : l'historique est à égalité et les deux équipes marquent 0.6 but par match. L'Elo donne 36 % au Gimnasia contre environ 31 % implicite, un écart trop mince pour un pari, et le nul à 2.70 est sous-évalué par l'Elo (32 %)."
+  },
+  "b34ca990cb7daf96d0a96dc33f609250": {
+   "verdict": "jouer",
+   "pari": "1",
+   "raison": "Pau est invaincu sur cinq matchs avec 2.4 buts marqués par match et seulement 1.0 encaissé, alors que Nantes gagne rarement en déplacement (1 victoire sur 5). Nantes sera privé de deux défenseurs centraux (Sow, Hachem) en plus de Mirbach et Tati, et l'Elo donne 52 % à Pau contre environ 34 % implici"
+  },
+  "f110107bca066ac1a598c89661c88fa3": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Roma est à 1.26 (environ 79 % implicite), exactement l'estimation Elo : aucune valeur, et le gain serait minime. Roma a aussi perdu 3-2 à Manchester United après avoir mené 2-0 et reste privée de Pellegrini, Koné, Dybala, Svilar et Gollini ; Sassuolo, lui, reste sur une série noire, ce qui ne suffit"
+  },
+  "4dbcec00debc1a175148bdb6824e14b3": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Je n'ai trouvé aucune actualité fiable (blessés, compositions) pour ce match, faute de recherches disponibles. Sur les stats seules, Argentinos est invaincu sur cinq matchs, Huracán a perdu quatre de ses cinq derniers et n'a marqué que 0.4 but par match ; l'Elo (62 % contre environ 54 % implicite à "
+  }
+ }
 }

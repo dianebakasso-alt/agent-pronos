@@ -40784,6 +40784,7 @@
     },
     "traits": [
      "exterieur",
+     "doute_ia",
      "piege",
      "force_contre"
     ]
@@ -41086,6 +41087,7 @@
     },
     "traits": [
      "exterieur",
+     "doute_ia",
      "piege",
      "force_pour"
     ]
@@ -41520,6 +41522,7 @@
      "2": 0.2841
     },
     "traits": [
+     "doute_ia",
      "force_pour"
     ]
    }
@@ -42837,6 +42840,7 @@
      "2": 0.2201
     },
     "traits": [
+     "doute_ia",
      "force_pour"
     ]
    }
@@ -42997,89 +43001,6 @@
   "cat": "equilibre",
   "jambes": [
    {
-    "id": "813cc4970b2dcab8457490a332fb5a6c",
-    "date": "2026-11-07T17:00:00Z",
-    "domicile": "Parma",
-    "exterieur": "Bologna",
-    "championnat": "Serie A",
-    "pari": "Victoire Bologna",
-    "cote": 1.81,
-    "proba": 0.526,
-    "court": "2",
-    "espn": {
-     "ligue": "ita.1",
-     "id": "401874974"
-    },
-    "traits": [
-     "exterieur",
-     "force_contre"
-    ]
-   },
-   {
-    "id": "a3dad1ddaa98a6ff741be7f63250f2ee",
-    "date": "2026-11-07T10:30:00Z",
-    "domicile": "Eyüpspor",
-    "exterieur": "Kocaelispor",
-    "championnat": "Süper Lig",
-    "pari": "Victoire Kocaelispor",
-    "cote": 1.85,
-    "proba": 0.498,
-    "court": "2",
-    "espn": {
-     "ligue": "tur.1",
-     "id": "401888255"
-    },
-    "traits": [
-     "exterieur"
-    ]
-   }
-  ],
-  "cote": 3.35,
-  "proba": 0.262,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "gros:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "gros",
-  "jambes": [
-   {
-    "id": "077e9bfa253514e27bdae1ce5956c78e",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Gimnasia Mendoza",
-    "exterieur": "Independiente Rivadavia",
-    "championnat": "Liga Argentina",
-    "pari": "Match nul",
-    "cote": 2.7,
-    "proba": 0.3553,
-    "court": "N",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841666"
-    },
-    "traits": []
-   },
-   {
-    "id": "4dbcec00debc1a175148bdb6824e14b3",
-    "date": "2026-11-07T20:30:00Z",
-    "domicile": "Argentinos Juniors",
-    "exterieur": "Atlético Huracán",
-    "championnat": "Liga Argentina",
-    "pari": "Match nul",
-    "cote": 2.95,
-    "proba": 0.3126,
-    "court": "N",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841672"
-    },
-    "traits": []
-   },
-   {
     "id": "463c2870517b0ad28afcbd8775287064",
     "date": "2026-11-07T15:00:00Z",
     "domicile": "Cardiff City",
@@ -43094,12 +43015,31 @@
      "id": "401880169"
     },
     "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "3903e98a54db0f2cc23095407fe9dad8",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Fulham",
+    "exterieur": "Newcastle United",
+    "championnat": "Premier League",
+    "pari": "Victoire Fulham",
+    "cote": 1.92,
+    "proba": 0.4769,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879241"
+    },
+    "traits": [
      "force_pour"
     ]
    }
   ],
-  "cote": 15.93,
-  "proba": 0.052,
+  "cote": 3.84,
+  "proba": 0.2231,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -43107,29 +43047,10 @@
   "gain": 0.0
  },
  {
-  "cle": "gros:2026-11-07:2",
+  "cle": "gros:2026-11-07",
   "jour": "2026-11-07",
   "cat": "gros",
   "jambes": [
-   {
-    "id": "605767f0e7114a23442d92831c12c767",
-    "date": "2026-11-07T13:00:00Z",
-    "domicile": "Samsunspor",
-    "exterieur": "Torku Konyaspor",
-    "championnat": "Süper Lig",
-    "pari": "Victoire Torku Konyaspor",
-    "cote": 2.88,
-    "proba": 0.3159,
-    "court": "2",
-    "espn": {
-     "ligue": "tur.1",
-     "id": "401888250"
-    },
-    "traits": [
-     "exterieur",
-     "piege"
-    ]
-   },
    {
     "id": "52b256088d29b4abb82e0c63ea9852fe",
     "date": "2026-11-07T14:00:00Z",
@@ -43146,6 +43067,7 @@
     },
     "traits": [
      "exterieur",
+     "doute_ia",
      "piege",
      "force_pour"
     ]
@@ -43164,11 +43086,100 @@
      "ligue": "eng.1",
      "id": "401878758"
     },
-    "traits": []
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "c8d54d20e3fa9acb251716ff6820a0c6",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Talleres",
+    "exterieur": "Estudiantes",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Talleres",
+    "cote": 2.55,
+    "proba": 0.3513,
+    "court": "1",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841661"
+    },
+    "traits": [
+     "piege"
+    ]
    }
   ],
-  "cote": 17.42,
-  "proba": 0.0428,
+  "cote": 15.42,
+  "proba": 0.0476,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-07:2",
+  "jour": "2026-11-07",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "16733c7ba96ca1a9be07451819b16595",
+    "date": "2026-11-07T01:00:00Z",
+    "domicile": "Banfield",
+    "exterieur": "Atlético Tucuman",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Atlético Tucuman",
+    "cote": 2.8,
+    "proba": 0.3227,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "piege"
+    ]
+   },
+   {
+    "id": "cdeb381ea8fb554a959115fcd69bd19c",
+    "date": "2026-11-07T13:00:00Z",
+    "domicile": "Clermont",
+    "exterieur": "Rodez AF",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Rodez AF",
+    "cote": 2.17,
+    "proba": 0.4153,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876699"
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "afde306e7e186da45ff6778a7e952d51",
+    "date": "2026-11-07T19:45:00Z",
+    "domicile": "RAAL La Louvière",
+    "exterieur": "Cercle Brugge KSV",
+    "championnat": "Pro League",
+    "pari": "Victoire Cercle Brugge KSV",
+    "cote": 2.42,
+    "proba": 0.3633,
+    "court": "2",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878948"
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 14.7,
+  "proba": 0.0487,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -43181,53 +43192,75 @@
   "cat": "gros",
   "jambes": [
    {
-    "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Westerlo",
-    "exterieur": "Charleroi",
-    "championnat": "Pro League",
-    "pari": "Victoire Westerlo",
-    "cote": 2.75,
-    "proba": 0.3252,
-    "court": "1",
-    "espn": {
-     "ligue": "bel.1",
-     "id": "401878947"
-    },
-    "traits": []
-   },
-   {
-    "id": "89fe6860f3058526dd227dc27efd902a",
+    "id": "a88341ac02c8103eedc594a2ceb3a400",
     "date": "2026-11-07T12:30:00Z",
-    "domicile": "Bristol City",
-    "exterieur": "Norwich City",
+    "domicile": "Wrexham AFC",
+    "exterieur": "Wolverhampton Wanderers",
     "championnat": "Championship",
-    "pari": "Victoire Norwich City",
-    "cote": 2.32,
-    "proba": 0.3897,
+    "pari": "Victoire Wolverhampton Wanderers",
+    "cote": 2.16,
+    "proba": 0.4421,
     "court": "2",
     "espn": {
      "ligue": "eng.2",
-     "id": "401880170"
+     "id": "401880161"
     },
     "traits": [
      "exterieur",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "e8492593cecfc388af8a4852f06599c6",
+    "date": "2026-11-07T12:30:00Z",
+    "domicile": "Portsmouth",
+    "exterieur": "Stoke City",
+    "championnat": "Championship",
+    "pari": "Victoire Portsmouth",
+    "cote": 2.15,
+    "proba": 0.4372,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880166"
+    },
+    "traits": [
      "force_pour"
     ]
    },
    {
-    "id": "b34ca990cb7daf96d0a96dc33f609250",
-    "date": "2026-11-07T19:00:00Z",
-    "domicile": "Pau FC",
-    "exterieur": "Nantes",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Nantes",
-    "cote": 2.27,
-    "proba": 0.3987,
+    "id": "cdb5f9dd39e79db69659c76cd96d0bbe",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "RB Leipzig",
+    "exterieur": "Augsburg",
+    "championnat": "Bundesliga",
+    "pari": "Victoire RB Leipzig",
+    "cote": 1.42,
+    "proba": 0.6611,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884744"
+    },
+    "traits": [
+     "favori_net",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "4ca4c7a2a1c15e9121f9a7eaa7f42ddb",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "SC Paderborn",
+    "exterieur": "Eintracht Frankfurt",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Eintracht Frankfurt",
+    "cote": 2.07,
+    "proba": 0.4379,
     "court": "2",
     "espn": {
-     "ligue": "fra.2",
-     "id": "401876694"
+     "ligue": "ger.1",
+     "id": "401884737"
     },
     "traits": [
      "exterieur",
@@ -43236,8 +43269,8 @@
     ]
    }
   ],
-  "cote": 14.48,
-  "proba": 0.0505,
+  "cote": 13.65,
+  "proba": 0.056,
   "estime": false,
   "conseille": false,
   "mise": 10.0,

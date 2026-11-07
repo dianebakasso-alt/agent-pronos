@@ -1,20 +1,20 @@
 [
  {
-  "arret": "max_tokens",
+  "arret": "end_turn",
   "pauses": 0,
-  "longueur": 569,
-  "fin": "```json\n{\"verdicts\": [\n{\"n\": 1, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Eyüpspor (1 victoire en 10 matchs, 18e) est en crise et sans Giordano ni İlter, mais Kocaelispor perd aussi Petkovic, Zoukrou et Haidara. Le 2 à 1,86 est déjà cher pour une équipe dont le modèle Elo ne donne que 44 %, et l'écart avec la cote implicite (environ 48 %) ne suffit pas à le jouer.\"},\n{\"n\": 2, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Leeds n'a plus gagné depuis cinq matchs, marque 0,4 but par match, et Stach et Okafor sont incertains, alors que Tottenham enchaîne tr",
+  "longueur": 2253,
+  "fin": "s blessés. Frosinone marque beaucoup et perd peu, mais il gagne rarement à l'extérieur et perd son meilleur buteur Raimondo ; la cote 2.32 (environ 39 % après marge) reste en dessous des 46 % du modèle.\"}, {\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Je n'ai trouvé aucune actu blessés ni forme spécifique pour ce match, ma recherche n'ayant pas abouti. Cardiff a gagné 3 fois à domicile sur ses 5 derniers matchs et Burnley ne gagne presque jamais loin (1 victoire en 5) ; la cote 2.00 (environ 45 % après marge) est inférieure aux 52 % du modèle, mais cet avantage reste non vérifié.\"}]}",
   "usage": {
-   "input_tokens": 56205,
+   "input_tokens": 57658,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5545,
+   "output_tokens": 7789,
    "output_tokens_details": {
-    "thinking_tokens": 4918
+    "thinking_tokens": 6369
    },
    "service_tier": "standard",
    "inference_geo": "global",
@@ -26,21 +26,21 @@
   }
  },
  {
-  "arret": "max_tokens",
+  "arret": "end_turn",
   "pauses": 0,
-  "longueur": 7,
-  "fin": "```json",
+  "longueur": 2193,
+  "fin": "près avoir mené 2-0 et reste privée de Pellegrini, Koné, Dybala, Svilar et Gollini ; Sassuolo, lui, reste sur une série noire, ce qui ne suffit pas à rendre le pari intéressant.\"}, {\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Je n'ai trouvé aucune actualité fiable (blessés, compositions) pour ce match, faute de recherches disponibles. Sur les stats seules, Argentinos est invaincu sur cinq matchs, Huracán a perdu quatre de ses cinq derniers et n'a marqué que 0.4 but par match ; l'Elo (62 % contre environ 54 % implicite à 1.86) reste un avantage modeste à confirmer avant de jouer.\"}]}",
   "usage": {
-   "input_tokens": 57634,
+   "input_tokens": 54820,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5606,
+   "output_tokens": 4802,
    "output_tokens_details": {
-    "thinking_tokens": 5234
+    "thinking_tokens": 3385
    },
    "service_tier": "standard",
    "inference_geo": "global",
