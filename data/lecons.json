@@ -6013,5 +6013,140 @@
   ],
   "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
   "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Torino - Lecce",
+  "pari": "Victoire Torino",
+  "cote": 1.74,
+  "proba": 0.5282,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 10-6, cadrés 3-2, possession 64-36 %). Torino a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Wrexham AFC - Wolverhampton Wanderers",
+  "pari": "Victoire Wolverhampton Wanderers",
+  "cote": 2.16,
+  "proba": 0.4421,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 6-22, cadrés 3-5, possession 40-60 %). Wolverhampton Wanderers a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "SC Paderborn - Eintracht Frankfurt",
+  "pari": "Victoire Eintracht Frankfurt",
+  "cote": 2.08,
+  "proba": 0.4379,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 11-16, cadrés 3-3, possession 51-49 %). Eintracht Frankfurt a pris un carton rouge à la 75e; SC Paderborn a marqué sur penalty.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "carton_rouge",
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Portsmouth - Stoke City",
+  "pari": "Victoire Portsmouth",
+  "cote": 2.15,
+  "proba": 0.4372,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 8-4, cadrés 3-3, possession 55-45 %). Portsmouth a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Clermont - Rodez AF",
+  "pari": "Victoire Rodez AF",
+  "cote": 2.17,
+  "proba": 0.4153,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 12-9, cadrés 4-2, possession 64-36 %). Clermont a été plus dangereux (4 tirs cadrés contre 2).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Málaga - Real Racing Club de Santander",
+  "pari": "Victoire Málaga",
+  "cote": 2.3,
+  "proba": 0.3976,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 16-21, cadrés 8-7, possession 46-54 %). Málaga a pris un carton rouge à la 64e.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "carton_rouge",
+   "favori_surcote"
+  ],
+  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Cagliari - Frosinone",
+  "pari": "Victoire Frosinone",
+  "cote": 2.32,
+  "proba": 0.3968,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 14-29, cadrés 4-9, possession 36-64 %). Frosinone a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-07",
+  "match": "Leeds United - Tottenham Hotspur",
+  "pari": "Victoire Tottenham Hotspur",
+  "cote": 2.42,
+  "proba": 0.3724,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 16-7, cadrés 4-4, possession 39-61 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
  }
 ]

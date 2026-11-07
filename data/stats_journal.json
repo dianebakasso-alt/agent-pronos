@@ -1,21 +1,18 @@
 {
  "ligues_ok": [
-  "soccer_epl",
-  "soccer_efl_champ",
-  "soccer_belgium_first_div",
-  "soccer_spain_la_liga",
-  "soccer_netherlands_eredivisie",
-  "soccer_portugal_primeira_liga",
-  "soccer_turkey_super_league",
   "soccer_italy_serie_a",
+  "soccer_belgium_first_div",
+  "soccer_epl",
+  "soccer_spain_la_liga",
   "soccer_germany_bundesliga",
+  "soccer_netherlands_eredivisie",
   "soccer_france_ligue_one",
+  "soccer_portugal_primeira_liga",
   "soccer_argentina_primera_division",
-  "soccer_france_ligue_two"
+  "soccer_france_ligue_two",
+  "soccer_turkey_super_league"
  ],
  "ligues_ko": [],
- "equipes_trouvees": 163,
- "equipes_manquees": [
-  "soccer_turkey_super_league: Amed SK"
- ]
+ "equipes_trouvees": 132,
+ "equipes_manquees": []
 }

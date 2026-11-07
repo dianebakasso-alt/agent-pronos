@@ -1,0 +1,410 @@
+{
+ "a3dad1ddaa98a6ff741be7f63250f2ee": {
+  "jour": "2026-11-07",
+  "domicile": "Eyüpspor",
+  "exterieur": "Kocaelispor",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.2199,
+   "N": 0.2821,
+   "2": 0.498
+  },
+  "cotes": {
+   "1": 3.7,
+   "N": 3.2,
+   "2": 1.86
+  }
+ },
+ "5c87852253fd11eea5d34ad723356607": {
+  "jour": "2026-11-07",
+  "domicile": "Leeds United",
+  "exterieur": "Tottenham Hotspur",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.3414,
+   "N": 0.2862,
+   "2": 0.3724
+  },
+  "cotes": {
+   "1": 2.67,
+   "N": 3.25,
+   "2": 2.42
+  }
+ },
+ "89fe6860f3058526dd227dc27efd902a": {
+  "jour": "2026-11-07",
+  "domicile": "Bristol City",
+  "exterieur": "Norwich City",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3338,
+   "N": 0.2765,
+   "2": 0.3897
+  },
+  "cotes": {
+   "1": 2.63,
+   "N": 3.4,
+   "2": 2.4
+  }
+ },
+ "605767f0e7114a23442d92831c12c767": {
+  "jour": "2026-11-07",
+  "domicile": "Samsunspor",
+  "exterieur": "Torku Konyaspor",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3944,
+   "N": 0.2896,
+   "2": 0.3159
+  },
+  "cotes": {
+   "1": 2.2,
+   "N": 3.17,
+   "2": 2.88
+  }
+ },
+ "52b256088d29b4abb82e0c63ea9852fe": {
+  "jour": "2026-11-07",
+  "domicile": "Cagliari",
+  "exterieur": "Frosinone",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.349,
+   "N": 0.2542,
+   "2": 0.3968
+  },
+  "cotes": {
+   "1": 2.6,
+   "N": 3.5,
+   "2": 2.32
+  }
+ },
+ "463c2870517b0ad28afcbd8775287064": {
+  "jour": "2026-11-07",
+  "domicile": "Cardiff City",
+  "exterieur": "Burnley",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4678,
+   "N": 0.2481,
+   "2": 0.2841
+  },
+  "cotes": {
+   "1": 2.0,
+   "N": 3.65,
+   "2": 3.05
+  }
+ },
+ "d3d9ff50bb0abd6e9215bd4b9b507644": {
+  "jour": "2026-11-07",
+  "domicile": "Westerlo",
+  "exterieur": "Charleroi",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3252,
+   "N": 0.2513,
+   "2": 0.4235
+  },
+  "cotes": {
+   "1": 2.85,
+   "N": 3.45,
+   "2": 2.1
+  }
+ },
+ "813cc4970b2dcab8457490a332fb5a6c": {
+  "jour": "2026-11-07",
+  "domicile": "Parma",
+  "exterieur": "Bologna",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.2079,
+   "N": 0.266,
+   "2": 0.526
+  },
+  "cotes": {
+   "1": 4.2,
+   "N": 3.35,
+   "2": 1.81
+  }
+ },
+ "077e9bfa253514e27bdae1ce5956c78e": {
+  "jour": "2026-11-07",
+  "domicile": "Gimnasia Mendoza",
+  "exterieur": "Independiente Rivadavia",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.265,
+   "N": 0.3553,
+   "2": 0.3797
+  },
+  "cotes": {
+   "1": 3.22,
+   "N": 2.7,
+   "2": 2.27
+  }
+ },
+ "b34ca990cb7daf96d0a96dc33f609250": {
+  "jour": "2026-11-07",
+  "domicile": "Pau FC",
+  "exterieur": "Nantes",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.3151,
+   "N": 0.2862,
+   "2": 0.3987
+  },
+  "cotes": {
+   "1": 2.9,
+   "N": 3.15,
+   "2": 2.28
+  }
+ },
+ "f110107bca066ac1a598c89661c88fa3": {
+  "jour": "2026-11-07",
+  "domicile": "AS Roma",
+  "exterieur": "Sassuolo",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.7488,
+   "N": 0.1505,
+   "2": 0.1007
+  },
+  "cotes": {
+   "1": 1.26,
+   "N": 6.25,
+   "2": 8.75
+  }
+ },
+ "4dbcec00debc1a175148bdb6824e14b3": {
+  "jour": "2026-11-07",
+  "domicile": "Argentinos Juniors",
+  "exterieur": "Atlético Huracán",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4673,
+   "N": 0.3126,
+   "2": 0.2201
+  },
+  "cotes": {
+   "1": 1.86,
+   "N": 2.95,
+   "2": 4.1
+  }
+ },
+ "3903e98a54db0f2cc23095407fe9dad8": {
+  "jour": "2026-11-07",
+  "domicile": "Fulham",
+  "exterieur": "Newcastle United",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4769,
+   "N": 0.2609,
+   "2": 0.2621
+  },
+  "cotes": {
+   "1": 1.92,
+   "N": 3.53,
+   "2": 3.45
+  }
+ },
+ "82688a32b0049a0c66b2e56309b6b67b": {
+  "jour": "2026-11-07",
+  "domicile": "Birmingham City",
+  "exterieur": "Swansea City",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.5151,
+   "N": 0.2601,
+   "2": 0.2249
+  },
+  "cotes": {
+   "1": 1.78,
+   "N": 3.45,
+   "2": 3.83
+  }
+ },
+ "e1b2a10bfd51e1716202de92f585f502": {
+  "jour": "2026-11-07",
+  "domicile": "Charlton Athletic",
+  "exterieur": "Sheffield United",
+  "verdict": "jouer",
+  "pari": "2",
+  "marche": {
+   "1": 0.2752,
+   "N": 0.2762,
+   "2": 0.4486
+  },
+  "cotes": {
+   "1": 3.3,
+   "N": 3.25,
+   "2": 1.96
+  }
+ },
+ "b990dcb534c9019a2846d11c7d879030": {
+  "jour": "2026-11-07",
+  "domicile": "West Bromwich Albion",
+  "exterieur": "Millwall",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4667,
+   "N": 0.2632,
+   "2": 0.2702
+  },
+  "cotes": {
+   "1": 1.93,
+   "N": 3.35,
+   "2": 3.27
+  }
+ },
+ "e300554369b00b495db88afb743c95ab": {
+  "jour": "2026-11-07",
+  "domicile": "Galatasaray",
+  "exterieur": "Amed SK",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.6657,
+   "N": 0.1863,
+   "2": 0.148
+  },
+  "cotes": {
+   "1": 1.35,
+   "N": 5.0,
+   "2": 6.5
+  }
+ },
+ "c7ad58db2278db2259846b11c28ae1c2": {
+  "jour": "2026-11-07",
+  "domicile": "Goztepe",
+  "exterieur": "Basaksehir",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4665,
+   "N": 0.2542,
+   "2": 0.2793
+  },
+  "cotes": {
+   "1": 1.88,
+   "N": 3.55,
+   "2": 3.3
+  }
+ },
+ "04613aa3de9a46ad5d2e37776c78cbb7": {
+  "jour": "2026-11-07",
+  "domicile": "Leuven",
+  "exterieur": "KV Mechelen",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4192,
+   "N": 0.2672,
+   "2": 0.3136
+  },
+  "cotes": {
+   "1": 2.15,
+   "N": 3.3,
+   "2": 2.77
+  }
+ },
+ "716d6e3f3e91c47a6efaa2e93d570533": {
+  "jour": "2026-11-07",
+  "domicile": "VfB Stuttgart",
+  "exterieur": "Werder Bremen",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.574,
+   "N": 0.2086,
+   "2": 0.2174
+  },
+  "cotes": {
+   "1": 1.61,
+   "N": 4.4,
+   "2": 4.2
+  }
+ },
+ "cb1988f7950962d316571dd0ed98b540": {
+  "jour": "2026-11-07",
+  "domicile": "Saint Etienne",
+  "exterieur": "Stade Lavallois",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.7137,
+   "N": 0.1791,
+   "2": 0.1072
+  },
+  "cotes": {
+   "1": 1.3,
+   "N": 5.0,
+   "2": 7.75
+  }
+ },
+ "55129ba3a50af7761828c774c793385a": {
+  "jour": "2026-11-07",
+  "domicile": "Royal Antwerp",
+  "exterieur": "Lommel SK",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.5068,
+   "N": 0.2462,
+   "2": 0.247
+  },
+  "cotes": {
+   "1": 1.76,
+   "N": 3.65,
+   "2": 3.65
+  }
+ },
+ "f7b240389fa5ec055c58a48ab153dcdd": {
+  "jour": "2026-11-07",
+  "domicile": "Paris Saint Germain",
+  "exterieur": "Troyes",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.8567,
+   "N": 0.089,
+   "2": 0.0544
+  },
+  "cotes": {
+   "1": 1.1,
+   "N": 11.0,
+   "2": 18.0
+  }
+ },
+ "c9e285d98525711130aa5801e9634657": {
+  "jour": "2026-11-07",
+  "domicile": "Boca Juniors",
+  "exterieur": "Defensa y Justicia",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.6812,
+   "N": 0.2062,
+   "2": 0.1127
+  },
+  "cotes": {
+   "1": 1.32,
+   "N": 4.3,
+   "2": 8.0
+  }
+ }
+}

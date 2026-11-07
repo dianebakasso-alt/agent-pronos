@@ -40793,7 +40793,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 12-9, cadrés 4-2, possession 64-36 %). Clermont a été plus dangereux (4 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    },
    {
     "id": "afde306e7e186da45ff6778a7e952d51",
@@ -40821,8 +40833,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:5c87852253fd11eea5d34ad723356607",
@@ -40858,7 +40870,19 @@
      "doute_ia",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 16-7, cadrés 4-4, possession 39-61 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.42,
@@ -40866,8 +40890,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:89fe6860f3058526dd227dc27efd902a",
@@ -40901,7 +40925,9 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "0-5",
+    "ok": true
    }
   ],
   "cote": 2.4,
@@ -40909,8 +40935,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.0
  },
  {
   "cle": "match:e8492593cecfc388af8a4852f06599c6",
@@ -40943,7 +40969,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-2 (tirs 8-4, cadrés 3-3, possession 55-45 %). Portsmouth a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.15,
@@ -40951,8 +40990,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:a88341ac02c8103eedc594a2ceb3a400",
@@ -40986,7 +41025,20 @@
     "traits": [
      "exterieur",
      "force_contre"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 6-22, cadrés 3-5, possession 40-60 %). Wolverhampton Wanderers a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.16,
@@ -40994,8 +41046,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:de935794b7d93f3607ac9ad54d18f4c7",
@@ -41029,7 +41081,20 @@
     "traits": [
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-2 (tirs 16-21, cadrés 8-7, possession 46-54 %). Málaga a pris un carton rouge à la 64e.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.3,
@@ -41037,8 +41102,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:cdeb381ea8fb554a959115fcd69bd19c",
@@ -41073,7 +41138,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 12-9, cadrés 4-2, possession 64-36 %). Clermont a été plus dangereux (4 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.17,
@@ -41081,8 +41158,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:605767f0e7114a23442d92831c12c767",
@@ -41116,7 +41193,9 @@
     "traits": [
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.2,
@@ -41124,8 +41203,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.0
  },
  {
   "cle": "match:52b256088d29b4abb82e0c63ea9852fe",
@@ -41161,7 +41240,20 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 14-29, cadrés 4-9, possession 36-64 %). Frosinone a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.32,
@@ -41169,8 +41261,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:0d53a5dbd9d4f4716e923b97e92dfb0d",
@@ -41203,7 +41295,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-6, cadrés 3-2, possession 64-36 %). Torino a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.74,
@@ -41211,8 +41316,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-07",
@@ -41238,7 +41343,20 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 14-29, cadrés 4-9, possession 36-64 %). Frosinone a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "5c87852253fd11eea5d34ad723356607",
@@ -41256,7 +41374,9 @@
     },
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "c8d54d20e3fa9acb251716ff6820a0c6",
@@ -41282,8 +41402,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-07:3",
@@ -41307,7 +41427,20 @@
     "traits": [
      "exterieur",
      "force_contre"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 6-22, cadrés 3-5, possession 40-60 %). Wolverhampton Wanderers a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "e8492593cecfc388af8a4852f06599c6",
@@ -41325,7 +41458,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-2 (tirs 8-4, cadrés 3-3, possession 55-45 %). Portsmouth a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "afde306e7e186da45ff6778a7e952d51",
@@ -41353,8 +41499,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:cdb5f9dd39e79db69659c76cd96d0bbe",
@@ -41389,7 +41535,9 @@
      "favori_net",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "5-2",
+    "ok": true
    }
   ],
   "cote": 1.42,
@@ -41397,8 +41545,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.2
  },
  {
   "cle": "match:fe97f5adf397dd6b0a8a9e0a5272f307",
@@ -41434,7 +41582,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 1.27,
@@ -41442,8 +41592,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.7
  },
  {
   "cle": "match:3ef62ef56758041178c5280225fe5db7",
@@ -41478,7 +41628,9 @@
      "petite_cote",
      "favori_net",
      "piege"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.26,
@@ -41486,8 +41638,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.6
  },
  {
   "cle": "match:4ca4c7a2a1c15e9121f9a7eaa7f42ddb",
@@ -41522,7 +41674,21 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 11-16, cadrés 3-3, possession 51-49 %). Eintracht Frankfurt a pris un carton rouge à la 75e; SC Paderborn a marqué sur penalty.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.08,
@@ -41530,8 +41696,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-07",
@@ -41572,7 +41738,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "077e9bfa253514e27bdae1ce5956c78e",
@@ -41661,7 +41829,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 2.0,
@@ -42338,6 +42508,323 @@
   "cote": 1.88,
   "proba": 0.4665,
   "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "verifie:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "verifie",
+  "jambes": [
+   {
+    "id": "82688a32b0049a0c66b2e56309b6b67b",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Swansea City",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.72,
+    "proba": 0.5151,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880172"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "e1b2a10bfd51e1716202de92f585f502",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Charlton Athletic",
+    "exterieur": "Sheffield United",
+    "championnat": "Championship",
+    "pari": "Victoire Sheffield United",
+    "cote": 1.96,
+    "proba": 0.4486,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880168"
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "b34ca990cb7daf96d0a96dc33f609250",
+    "date": "2026-11-07T19:00:00Z",
+    "domicile": "Pau FC",
+    "exterieur": "Nantes",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Pau FC",
+    "cote": 2.88,
+    "proba": 0.3151,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876694"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 9.71,
+  "proba": 0.0728,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "f7b240389fa5ec055c58a48ab153dcdd",
+    "date": "2026-11-07T20:05:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Paris Saint Germain",
+    "cote": 1.1,
+    "proba": 0.8567,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876407"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "842fcc5b9feb8c63054a661ad1fc8926",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Arsenal",
+    "exterieur": "Hull City",
+    "championnat": "Premier League",
+    "pari": "Victoire Arsenal",
+    "cote": 1.11,
+    "proba": 0.8361,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878760"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7163,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "cb1988f7950962d316571dd0ed98b540",
+    "date": "2026-11-07T19:00:00Z",
+    "domicile": "Saint Etienne",
+    "exterieur": "Stade Lavallois",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Saint Etienne",
+    "cote": 1.3,
+    "proba": 0.7137,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876693"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "a30b201e4df636949371d73491c620b5",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Watford",
+    "exterieur": "Middlesbrough",
+    "championnat": "Championship",
+    "pari": "Victoire Middlesbrough",
+    "cote": 1.45,
+    "proba": 0.6204,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880163"
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "f7b240389fa5ec055c58a48ab153dcdd",
+    "date": "2026-11-07T20:05:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8133,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876407"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "077e9bfa253514e27bdae1ce5956c78e",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Gimnasia Mendoza",
+    "exterieur": "Independiente Rivadavia",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.706,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841666"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "716d6e3f3e91c47a6efaa2e93d570533",
+    "date": "2026-11-07T17:30:00Z",
+    "domicile": "VfB Stuttgart",
+    "exterieur": "Werder Bremen",
+    "championnat": "Bundesliga",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6817,
+    "marche": "btts",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884743"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 6.06,
+  "proba": 0.1733,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-07:2",
+  "jour": "2026-11-07",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Auxerre",
+    "exterieur": "Paris FC",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Paris FC",
+    "cote": 1.7,
+    "proba": 0.5364,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876411"
+    },
+    "traits": [
+     "exterieur",
+     "piege"
+    ]
+   },
+   {
+    "id": "82688a32b0049a0c66b2e56309b6b67b",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Swansea City",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.78,
+    "proba": 0.5151,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880172"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "4dbcec00debc1a175148bdb6824e14b3",
+    "date": "2026-11-07T20:30:00Z",
+    "domicile": "Argentinos Juniors",
+    "exterieur": "Atlético Huracán",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6465,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841672"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Westerlo",
+    "exterieur": "Charleroi",
+    "championnat": "Pro League",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6323,
+    "marche": "btts",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878947"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 9.3,
+  "proba": 0.113,
+  "estime": true,
   "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
@@ -43300,128 +43787,6 @@
   "gain": 0.0
  },
  {
-  "cle": "verifie:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "verifie",
-  "jambes": [
-   {
-    "id": "82688a32b0049a0c66b2e56309b6b67b",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Birmingham City",
-    "exterieur": "Swansea City",
-    "championnat": "Championship",
-    "pari": "Victoire Birmingham City",
-    "cote": 1.72,
-    "proba": 0.5151,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880172"
-    },
-    "traits": [
-     "force_pour"
-    ]
-   },
-   {
-    "id": "e1b2a10bfd51e1716202de92f585f502",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Charlton Athletic",
-    "exterieur": "Sheffield United",
-    "championnat": "Championship",
-    "pari": "Victoire Sheffield United",
-    "cote": 1.96,
-    "proba": 0.4486,
-    "court": "2",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880168"
-    },
-    "traits": [
-     "exterieur",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "b34ca990cb7daf96d0a96dc33f609250",
-    "date": "2026-11-07T19:00:00Z",
-    "domicile": "Pau FC",
-    "exterieur": "Nantes",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Pau FC",
-    "cote": 2.88,
-    "proba": 0.3151,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876694"
-    },
-    "traits": []
-   }
-  ],
-  "cote": 9.71,
-  "proba": 0.0728,
-  "estime": false,
-  "conseille": true,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "prudent:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "prudent",
-  "jambes": [
-   {
-    "id": "f7b240389fa5ec055c58a48ab153dcdd",
-    "date": "2026-11-07T20:05:00Z",
-    "domicile": "Paris Saint Germain",
-    "exterieur": "Troyes",
-    "championnat": "Ligue 1",
-    "pari": "Victoire Paris Saint Germain",
-    "cote": 1.1,
-    "proba": 0.8567,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.1",
-     "id": "401876407"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "doute_ia"
-    ]
-   },
-   {
-    "id": "842fcc5b9feb8c63054a661ad1fc8926",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Arsenal",
-    "exterieur": "Hull City",
-    "championnat": "Premier League",
-    "pari": "Victoire Arsenal",
-    "cote": 1.11,
-    "proba": 0.8361,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.1",
-     "id": "401878760"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "piege",
-     "force_contre"
-    ]
-   }
-  ],
-  "cote": 1.22,
-  "proba": 0.7163,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
   "cle": "equilibre:2026-11-07",
   "jour": "2026-11-07",
   "cat": "equilibre",
@@ -43446,226 +43811,30 @@
     ]
    },
    {
-    "id": "cb1988f7950962d316571dd0ed98b540",
-    "date": "2026-11-07T19:00:00Z",
-    "domicile": "Saint Etienne",
-    "exterieur": "Stade Lavallois",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Saint Etienne",
-    "cote": 1.3,
-    "proba": 0.7137,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876693"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "doute_ia",
-     "force_pour"
-    ]
-   }
-  ],
-  "cote": 2.21,
-  "proba": 0.3829,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-07",
-  "jour": "2026-11-07",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "cb1988f7950962d316571dd0ed98b540",
-    "date": "2026-11-07T19:00:00Z",
-    "domicile": "Saint Etienne",
-    "exterieur": "Stade Lavallois",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Saint Etienne",
-    "cote": 1.3,
-    "proba": 0.7137,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876693"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "doute_ia",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "a30b201e4df636949371d73491c620b5",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Watford",
-    "exterieur": "Middlesbrough",
-    "championnat": "Championship",
-    "pari": "Victoire Middlesbrough",
-    "cote": 1.45,
-    "proba": 0.6204,
-    "court": "2",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880163"
-    },
-    "traits": [
-     "exterieur",
-     "force_pour"
-    ]
-   },
-   {
     "id": "f7b240389fa5ec055c58a48ab153dcdd",
     "date": "2026-11-07T20:05:00Z",
     "domicile": "Paris Saint Germain",
     "exterieur": "Troyes",
     "championnat": "Ligue 1",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.8133,
-    "marche": "plus25",
+    "pari": "Victoire Paris Saint Germain",
+    "cote": 1.1,
+    "proba": 0.8567,
+    "court": "1",
     "espn": {
      "ligue": "fra.1",
      "id": "401876407"
     },
     "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "077e9bfa253514e27bdae1ce5956c78e",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Gimnasia Mendoza",
-    "exterieur": "Independiente Rivadavia",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.706,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841666"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   },
-   {
-    "id": "716d6e3f3e91c47a6efaa2e93d570533",
-    "date": "2026-11-07T17:30:00Z",
-    "domicile": "VfB Stuttgart",
-    "exterieur": "Werder Bremen",
-    "championnat": "Bundesliga",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6817,
-    "marche": "btts",
-    "espn": {
-     "ligue": "ger.1",
-     "id": "401884743"
-    },
-    "traits": [
-     "buts_plus"
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
     ]
    }
   ],
-  "cote": 6.06,
-  "proba": 0.1733,
-  "estime": true,
-  "conseille": null,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-07:2",
-  "jour": "2026-11-07",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
-    "date": "2026-11-07T18:00:00Z",
-    "domicile": "Auxerre",
-    "exterieur": "Paris FC",
-    "championnat": "Ligue 1",
-    "pari": "Victoire Paris FC",
-    "cote": 1.7,
-    "proba": 0.5364,
-    "court": "2",
-    "espn": {
-     "ligue": "fra.1",
-     "id": "401876411"
-    },
-    "traits": [
-     "exterieur",
-     "piege"
-    ]
-   },
-   {
-    "id": "82688a32b0049a0c66b2e56309b6b67b",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Birmingham City",
-    "exterieur": "Swansea City",
-    "championnat": "Championship",
-    "pari": "Victoire Birmingham City",
-    "cote": 1.78,
-    "proba": 0.5151,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.2",
-     "id": "401880172"
-    },
-    "traits": [
-     "force_pour"
-    ]
-   },
-   {
-    "id": "4dbcec00debc1a175148bdb6824e14b3",
-    "date": "2026-11-07T20:30:00Z",
-    "domicile": "Argentinos Juniors",
-    "exterieur": "Atlético Huracán",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.6465,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "arg.1",
-     "id": "401841672"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   },
-   {
-    "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Westerlo",
-    "exterieur": "Charleroi",
-    "championnat": "Pro League",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6323,
-    "marche": "btts",
-    "espn": {
-     "ligue": "bel.1",
-     "id": "401878947"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   }
-  ],
-  "cote": 9.3,
-  "proba": 0.113,
-  "estime": true,
-  "conseille": null,
+  "cote": 1.87,
+  "proba": 0.4596,
+  "estime": false,
+  "conseille": false,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
