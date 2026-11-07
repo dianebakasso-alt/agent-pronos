@@ -317,7 +317,9 @@ Sois sévère : les favoris à petite cote perdent souvent, ne dis « jouer » q
 
 def _alertes_txt(m):
     """Note de force + alertes « match piège » à donner à l'IA (gratuit, calculé avant)."""
-    t = force.texte(m.get("force"), m["domicile"], m["exterieur"])
+    # la note de force n'est PAS donnée à l'IA : testée sur 4 000 matchs, elle est moins fiable que les cotes,
+    # et l'IA avait tendance à s'appuyer dessus pour contredire le marché
+    t = ""
     pg = m.get("pieges") or {}
     for c, nom in (("1", m["domicile"]), ("2", m["exterieur"])):
         if pg.get(c):
