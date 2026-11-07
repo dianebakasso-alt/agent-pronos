@@ -8,9 +8,9 @@
     86 matchs analysés, 0 value bets
     Forme et stats des équipes…
     direct : 86 matchs reliés aux scores en direct
-    fatigue : 28 matchs avec une équipe qui joue en Europe à 3 jours
+    fatigue : 5 matchs avec une équipe qui joue en Europe à 3 jours
     stats : 171 équipes trouvées, 1 manquées
-    force : 85 matchs notés · pièges : 44 favoris en alerte
+    force : 85 matchs notés · pièges : 34 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
     autopsies gratuites : 0

@@ -1015,7 +1015,10 @@
     "exterieur": "Kocaelispor",
     "pari": "Victoire Kocaelispor",
     "court": "2",
-    "cote": 1.85
+    "cote": 1.85,
+    "res": "2",
+    "score": "0-2",
+    "ok": true
    }
   ]
  }

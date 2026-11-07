@@ -75,6 +75,25 @@
    "ajoute": "2026-11-06",
    "statut": "suivi",
    "analyses": []
+  },
+  "a529e5762f18d97981194ec3668dc3d3": {
+   "id": "a529e5762f18d97981194ec3668dc3d3",
+   "debut": "2026-11-08T16:15:00Z",
+   "domicile": "Le Mans FC",
+   "exterieur": "AS Monaco",
+   "championnat": "Ligue 1 - France",
+   "sport_key": "soccer_france_ligue_one",
+   "court": "2",
+   "issue": "Victoire AS Monaco",
+   "proba": 0.5721749874603163,
+   "proba_depart": 0.5721749874603163,
+   "cote": 1.68,
+   "bk": "PMU (FR)",
+   "note": 0.5641,
+   "forme": null,
+   "ajoute": "2026-11-07",
+   "statut": "suivi",
+   "analyses": []
   }
  }
 }
