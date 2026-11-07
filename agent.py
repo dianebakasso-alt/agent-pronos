@@ -243,6 +243,8 @@ IA_DEBUG = []   # les dernières réponses brutes (pour comprendre un échec san
 def _ia_json(corps, timeout=240):
     """Appel à l'IA avec recherche web ; laisse finir les tours « en pause » (2 fois max) ; renvoie le JSON."""
     entetes = {"x-api-key": CLE_IA_COURANTE[0], "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    # le modèle réfléchit avant de répondre (environ 5 000 jetons) : assez de place pour réfléchir ET répondre
+    corps = dict(corps, max_tokens=max(corps.get("max_tokens", 0), 16000))
     data, _ = ia_post("https://api.anthropic.com/v1/messages", data=json.dumps(corps).encode(), headers=entetes, timeout=timeout)
     tours = 0
     while data.get("stop_reason") == "pause_turn" and tours < 2:
@@ -255,7 +257,35 @@ def _ia_json(corps, timeout=240):
     debut, fin = txt.find("{"), txt.rfind("}")
     if debut < 0 or fin < debut:
         raise ValueError(f"réponse sans JSON (arrêt : {data.get('stop_reason')}, {len(txt)} car.) {txt[:120]!r}")
-    return json.loads(txt[debut: fin + 1])
+    try:
+        return json.loads(txt[debut: fin + 1])
+    except ValueError:
+        sauve = _sauver_verdicts(txt)
+        if sauve:
+            return sauve
+        raise
+
+
+def _sauver_verdicts(txt):
+    """Réponse coupée ou mal formée : on récupère un par un les verdicts complets."""
+    d = json.JSONDecoder()
+    k = txt.find("[", txt.find('"verdicts"'))
+    if k < 0:
+        return None
+    out = []
+    while True:
+        k = txt.find("{", k)
+        if k < 0:
+            break
+        try:
+            v, fin = d.raw_decode(txt, k)
+        except ValueError:
+            k += 1
+            continue
+        if isinstance(v, dict) and "verdict" in v:
+            out.append(v)
+        k = fin
+    return {"verdicts": out} if out else None
 
 
 CLE_IA_COURANTE = [""]
