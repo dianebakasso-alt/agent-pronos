@@ -817,7 +817,8 @@ def main():
             # le ticket du jour : ses matchs sont aussi analysés en profondeur
             deja = {x["id"] for x in focus}
             tk0 = selection.ticket_du_jour(jouables_auj, cfg["bookmakers_jouables"])
-            for s in (tk0 or {}).get("jambes", [])[:2]:
+            # analyse approfondie du ticket du jour : coupée (coûteuse, et le ticket du jour est en pause)
+            for s in ((tk0 or {}).get("jambes", [])[:2] if cfg.get("analyse_profonde_max", 0) > 0 else []):
                 if s["id"] in deja:
                     continue
                 m = next(a for a in analyses if a["id"] == s["id"])
@@ -845,11 +846,16 @@ def main():
                 cands = [(selection.candidat(a), a["id"]) for a in jouables_auj]
                 ordre += [i for n, i in sorted(((c["note"], i) for c, i in cands if c), reverse=True)]
                 ordre += [a["id"] for a in sorted(jouables_auj, key=lambda a: -max(i["proba"] for i in a["issues"]))]
+                try:   # matchs déjà vérifiés aujourd'hui : on ne repaie pas pour eux
+                    _fv = json.loads((DATA / "verdicts_jour.json").read_text(encoding="utf-8"))
+                    deja_v = set(_fv.get("v", {})) if _fv.get("jour") == auj else set()
+                except Exception:
+                    deja_v = set()
                 prio = set()
                 for i in ordre:
                     if len(prio) >= cfg.get("verdicts_max", 8):
                         break
-                    if i in ids_auj:
+                    if i in ids_auj and i not in deja_v:
                         prio.add(i)
                 choisis = [a for a in jouables_auj if a["id"] in prio][: cfg.get("verdicts_max", 8)]
                 verdicts = verdicts_du_jour(sorted(choisis, key=lambda a: a["debut"]), cfg, cle_ia) if choisis else {}
