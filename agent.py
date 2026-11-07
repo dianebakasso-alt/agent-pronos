@@ -870,6 +870,18 @@ def main():
                 garde.update(verdicts)
                 verdicts = garde
                 fv.write_text(json.dumps({"jour": auj, "v": verdicts}, ensure_ascii=False, indent=1), encoding="utf-8")
+                # historique : pour mesurer qui voit le plus juste, l'IA ou les bookmakers
+                fh = DATA / "verdicts_hist.json"
+                hist = json.loads(fh.read_text(encoding="utf-8")) if fh.exists() else {}
+                par_id = {x["id"]: x for x in analyses}
+                for mid, v in verdicts.items():
+                    m = par_id.get(mid)
+                    if m and mid not in hist:
+                        hist[mid] = {"jour": auj, "domicile": m["domicile"], "exterieur": m["exterieur"],
+                                     "verdict": v.get("verdict"), "pari": v.get("pari"),
+                                     "marche": {i["court"]: round(i["proba"], 4) for i in m["issues"]},
+                                     "cotes": {i["court"]: i["cote"] for i in m["issues"]}}
+                fh.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
             except Exception as e:
                 print(f"  ! verdicts gardés : {e}")
             for m, v, cible in taches:
@@ -971,6 +983,7 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
+        "duel_ia": expert.duel_ia(memoire.charger(DATA / "verdicts_hist.json", {}), res_carnet) if not demo else None,
         "lecons": lecons[-8:], "ajust": selection.AJUST, "specialites": spec_detail, "specialite_ajust": selection.SPECIALITE,
         "budget_ia": None if demo else {"depense": round(BUDGET["depense"] + BUDGET["run"], 2), "plafond": BUDGET["max"]},
         "semaine": {"ticket": ticket_semaine, "suivis": sorted(sel["matchs"].values(), key=lambda s: s["debut"])},

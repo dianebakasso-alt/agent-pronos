@@ -655,6 +655,58 @@ VERDICT_IA = {"jouer": ("ok", "✅ L'IA dit : c'est bon"), "prudence": ("warn", 
               "eviter": ("bad", "❌ L'IA dit : pas bon")}
 
 
+DUEL_IA = {}
+
+
+def bloc_duo(m, v):
+    """À gauche les bookmakers, à droite l'IA, puis l'arbitrage : qui croire sur ce match."""
+    fav = max(m["issues"], key=lambda i: i["proba"])
+    bk = f"{fav['issue']} · {fav['proba'] * 100:.0f} % <small>(cote {fav['cote']:.2f})</small>"
+    if v:
+        i = next((x for x in m["issues"] if x["court"] == v.get("pari")), None)
+        ia = {"jouer": "✅ Je joue ", "prudence": "⚠️ Prudence : ", "eviter": "❌ À éviter"}[v["verdict"]] + \
+             (e(i["issue"]) if i and v["verdict"] != "eviter" else "")
+        if v["verdict"] == "eviter":
+            arb = "L'IA a lu l'actu et voit un risque que la cote ne montre pas : <b>on ne joue pas</b>."
+        elif i and i["court"] == fav["court"]:
+            arb = ("Les deux sont <b>d'accord</b> : c'est le pari le plus solide." if v["verdict"] == "jouer"
+                   else "D'accord sur le favori, mais l'IA a un doute : <b>petite mise</b>.")
+        else:
+            j = (DUEL_IA or {}).get("desaccord") or {}
+            stat = f" (quand ils ne sont pas d'accord : IA {j.get('ia', 0)} – bookmakers {j.get('bk', 0)})" if j.get("n") else ""
+            arb = f"<b>Désaccord</b> : l'IA va contre les bookmakers{stat}. Le plus gros risque, mais la plus grosse cote."
+    else:
+        ia = "⚪ Pas vérifié"
+        arb = "Sans avis de l'IA, on suit les bookmakers."
+    return (f'<div class="duo"><div><small>🏦 Bookmakers</small><b>{bk}</b></div>'
+            f'<div><small>🤖 L\'expert IA</small><b>{ia}</b></div></div><p class="arb">⚖️ {arb}</p>')
+
+
+def section_duel_ia(d):
+    if not d:
+        return ""
+    j, p, ev, dz = d["jouer"], d["prudence"], d["eviter"], d["desaccord"]
+    if not (j["n"] or ev["n"] or dz["n"]):
+        return """<h3 class="sous">🤖 L'IA contre les bookmakers</h3>
+    <p class="note">Le score commence : à chaque match joué, on compare ce que l'IA avait dit et ce que disaient les cotes.</p>"""
+    pc = lambda x: "—" if x is None else f"{x * 100:.0f} %"
+    verdict = {"ia": "🤖 <b>L'IA voit plus juste que les bookmakers</b> : ses avis passent devant.",
+               "bk": "🏦 <b>Les bookmakers voient plus juste</b> : l'IA sert surtout à écarter les pièges.",
+               "egal": "⚖️ Pas encore assez de matchs (15) pour dire qui est le meilleur."}[d.get("meilleur", "egal")]
+    ex = "".join(f'<tr><td>{e(x["match"])}<small>{e(x["jour"][8:10])}/{e(x["jour"][5:7])} · {e(x["score"])}</small></td>'
+                 f'<td class="r">{"🤖 IA" if x["qui"] == "ia" else "🏦 Bookmakers" if x["qui"] == "bk" else "🤝 Aucun"}</td></tr>'
+                 for x in d.get("exemples", []))
+    return f"""<h3 class="sous">🤖 L'IA contre les bookmakers</h3>
+    <div class="bilan">
+      <div><span>« Je joue » passés</span><b>{pc(j["reel"])}</b><small>cotes : {pc(j["attendu"])} · {j["n"]} matchs</small></div>
+      <div><span>« Prudence » passés</span><b>{pc(p["reel"])}</b><small>cotes : {pc(p["attendu"])} · {p["n"]} matchs</small></div>
+      <div><span>Favori « à éviter » gagnant</span><b>{pc(ev["reel"])}</b><small>cotes : {pc(ev["attendu"])} · {ev["n"]} matchs</small></div>
+      <div><span>Désaccords</span><b>IA {dz["ia"]} – {dz["bk"]}</b><small>{dz["aucun"]} pour personne</small></div>
+    </div>
+    <p class="note">{verdict}</p>
+    {'<table class="hist">' + ex + '</table>' if ex else ''}"""
+
+
 def liste_avis(j):
     pr = j.get("pronos") or {}
     if not pr:
@@ -698,10 +750,11 @@ def liste_avis(j):
             txt = txt + " 😓 " + " ; ".join(fat.values()) + "."
         if a.get("rebond"):
             piege += ' <span class="av-r">🔄 rebond</span>'
+        duo = bloc_duo(m, v)
         lignes += f"""<li class="av-l av-{cls}"><div class="av-h"><span>{ecusson(m["domicile"], 22)}{ecusson(m["exterieur"], 22)}</span>
           <div><b>{e(m["domicile"])} – {e(m["exterieur"])}</b><small>{heure(m["debut"])} · {e(championnat(m.get("sport_key", ""), m["championnat"])[1])}</small></div></div>
           <div class="av-v">{badge}</div>
-          <div class="av-p1"><b>{e(pari)}</b>{piege}</div><small class="av-ia">{icone} {e(txt)}</small></li>"""
+          <div class="av-p1"><b>{e(pari)}</b>{piege}</div>{duo}<small class="av-ia">{icone} {e(txt)}</small></li>"""
     return f"""<h2>🗂️ L'avis de l'expert <small>le verdict de l'IA, match par match</small></h2><ul class="av">{lignes}</ul>"""
 
 
@@ -875,6 +928,8 @@ def statut_ia(ia):
 
 
 def generer(chemin, analyses, values, historique, b, infos, combos=None):
+    global DUEL_IA
+    DUEL_IA = infos.get("duel_ia") or {}
     if isinstance(combos, dict):
         combos = [combos]
     combos = [c for c in (combos or []) if c]
@@ -1395,6 +1450,11 @@ header.reduit h1 {{ font-size:30px; }}
 .mise-c {{ font:600 13px Inter,sans-serif; margin:8px 0 4px; }}
 .compo-l {{ margin:6px 0; padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.04); font:500 12px Inter,sans-serif; }}
 .compo-l div {{ margin-top:4px; }}
+.duo {{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0 4px; }}
+.duo div {{ padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.05); font:600 13px Inter,sans-serif; }}
+.duo small {{ display:block; color:var(--muted); font-weight:500; font-size:11px; margin-bottom:2px; }}
+.duo b small {{ display:inline; font-size:11px; }}
+.arb {{ font:500 12.5px Inter,sans-serif; margin:4px 0 6px; }}
 .alertes {{ list-style:none; margin:6px 0; padding:0; font:500 12px Inter,sans-serif; color:var(--muted); }}
 .alertes li {{ padding:3px 0; }}
 .alertes li.pg {{ color:#f5b942; }}
@@ -1741,6 +1801,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 <div class="onglet" id="t-bilan" hidden>
 <h2>📊 Bilan de l'expert</h2>
 {section_expert(infos.get("expert"))}
+{section_duel_ia(infos.get("duel_ia"))}
 {section_duel((infos.get("expert") or {}).get("duel"))}
 {section_specialites(infos.get("specialites"), infos.get("specialite_ajust"))}
 <h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>

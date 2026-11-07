@@ -195,6 +195,51 @@ def _seg(ps):
             "benefice": round(gains, 2), "mises": mises, "roi": gains / mises if mises else None}
 
 
+def duel_ia(hist, resultats):
+    """🤖 L'IA (qui lit l'actu) contre les bookmakers, sur les matchs joués.
+    - « jouer » : ses paris passent-ils plus souvent que ce que disent les cotes ?
+    - désaccords : quand elle ne choisit pas le favori des bookmakers, qui a raison ?
+    - « éviter » : le favori des bookmakers tombe-t-il plus souvent que prévu ?"""
+    d = {"jouer": [0, 0, 0.0, 0.0], "prudence": [0, 0, 0.0, 0.0], "eviter_fav": [0, 0, 0.0],
+         "desaccord": {"n": 0, "ia": 0, "bk": 0, "aucun": 0}, "exemples": []}
+    for mid, h in hist.items():
+        r = resultats.get(mid)
+        if not r:
+            continue
+        mk = h.get("marche") or {}
+        if not mk:
+            continue
+        fav = max(mk, key=mk.get)
+        res = r["res"]
+        if h.get("verdict") in ("jouer", "prudence") and h.get("pari") in mk:
+            s = d[h["verdict"]]
+            ok = res == h["pari"]
+            s[0] += 1; s[1] += ok; s[2] += mk[h["pari"]]
+            s[3] += ((h.get("cotes") or {}).get(h["pari"], 1 / mk[h["pari"]]) - 1) if ok else -1
+            if h["pari"] != fav:
+                dd = d["desaccord"]
+                dd["n"] += 1
+                qui = "ia" if res == h["pari"] else "bk" if res == fav else "aucun"
+                dd[qui] += 1
+                d["exemples"].append({"jour": h["jour"], "match": f"{h['domicile']} – {h['exterieur']}", "score": r["score"], "qui": qui})
+        elif h.get("verdict") == "eviter":
+            s = d["eviter_fav"]
+            s[0] += 1; s[1] += res == fav; s[2] += mk[fav]
+    out = {}
+    for k in ("jouer", "prudence"):
+        n, ok, att, gain = d[k]
+        out[k] = {"n": n, "reel": ok / n if n else None, "attendu": att / n if n else None, "roi": gain / n if n else None}
+    n, ok, att = d["eviter_fav"]
+    out["eviter"] = {"n": n, "reel": ok / n if n else None, "attendu": att / n if n else None}
+    out["desaccord"] = d["desaccord"]
+    out["exemples"] = sorted(d["exemples"], key=lambda x: x["jour"])[-6:][::-1]
+    # qui croire ? l'IA seulement si ses « jouer » battent les cotes sur au moins 15 matchs
+    j = out["jouer"]
+    out["meilleur"] = ("ia" if j["n"] >= 15 and j["reel"] > j["attendu"] + 0.03 else
+                       "bk" if j["n"] >= 15 and j["reel"] < j["attendu"] - 0.03 else "egal")
+    return out
+
+
 def duel(carnet):
     """Note de force maison contre bookmakers, sur les matchs réellement joués."""
     d = {"n": 0, "brier_force": 0.0, "brier_bk": 0.0, "desaccords": 0, "force_raison": 0, "bk_raison": 0, "aucun": 0, "exemples": []}
