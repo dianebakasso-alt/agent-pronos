@@ -41534,6 +41534,145 @@
   "gain": 0.0
  },
  {
+  "cle": "buts:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "f7b240389fa5ec055c58a48ab153dcdd",
+    "date": "2026-11-07T20:05:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8133,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876407"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "FSV Mainz 05",
+    "exterieur": "Bayern Munich",
+    "championnat": "Bundesliga",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7739,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884740"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "077e9bfa253514e27bdae1ce5956c78e",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Gimnasia Mendoza",
+    "exterieur": "Independiente Rivadavia",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.706,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841666"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 2.36,
+  "proba": 0.4444,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "842fcc5b9feb8c63054a661ad1fc8926",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Arsenal",
+    "exterieur": "Hull City",
+    "championnat": "Premier League",
+    "pari": "Victoire Arsenal",
+    "cote": 1.11,
+    "proba": 0.8361,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878760"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "f7b240389fa5ec055c58a48ab153dcdd",
+    "date": "2026-11-07T20:05:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Troyes",
+    "championnat": "Ligue 1",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8133,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876407"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
+    "date": "2026-11-07T14:30:00Z",
+    "domicile": "FSV Mainz 05",
+    "exterieur": "Bayern Munich",
+    "championnat": "Bundesliga",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7739,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884740"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.5263,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "match:842fcc5b9feb8c63054a661ad1fc8926",
   "jour": "2026-11-07",
   "cat": "match",
@@ -41903,7 +42042,9 @@
      "N": 0.2632,
      "2": 0.2702
     },
-    "traits": []
+    "traits": [
+     "doute_ia"
+    ]
    }
   ],
   "cote": 1.93,
@@ -42189,6 +42330,7 @@
      "2": 0.2793
     },
     "traits": [
+     "doute_ia",
      "force_pour"
     ]
    }
@@ -42404,6 +42546,7 @@
      "2": 0.2174
     },
     "traits": [
+     "doute_ia",
      "piege",
      "force_pour"
     ]
@@ -42564,9 +42707,9 @@
      "id": "401841661"
     },
     "force_p": {
-     "1": 0.652,
-     "N": 0.207,
-     "2": 0.141
+     "1": 0.361,
+     "N": 0.314,
+     "2": 0.325
     },
     "marche_p": {
      "1": 0.3513,
@@ -42576,7 +42719,7 @@
     "traits": [
      "exterieur",
      "piege",
-     "force_contre"
+     "force_pour"
     ]
    }
   ],
@@ -42706,6 +42849,7 @@
     "traits": [
      "petite_cote",
      "favori_net",
+     "doute_ia",
      "force_pour"
     ]
    }
@@ -42968,7 +43112,8 @@
     },
     "traits": [
      "petite_cote",
-     "favori_net"
+     "favori_net",
+     "doute_ia"
     ]
    }
   ],
@@ -43155,6 +43300,73 @@
   "gain": 0.0
  },
  {
+  "cle": "verifie:2026-11-07",
+  "jour": "2026-11-07",
+  "cat": "verifie",
+  "jambes": [
+   {
+    "id": "82688a32b0049a0c66b2e56309b6b67b",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Swansea City",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.72,
+    "proba": 0.5151,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880172"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "e1b2a10bfd51e1716202de92f585f502",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Charlton Athletic",
+    "exterieur": "Sheffield United",
+    "championnat": "Championship",
+    "pari": "Victoire Sheffield United",
+    "cote": 1.96,
+    "proba": 0.4486,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880168"
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "b34ca990cb7daf96d0a96dc33f609250",
+    "date": "2026-11-07T19:00:00Z",
+    "domicile": "Pau FC",
+    "exterieur": "Nantes",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Pau FC",
+    "cote": 2.88,
+    "proba": 0.3151,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876694"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 9.71,
+  "proba": 0.0728,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "prudent:2026-11-07",
   "jour": "2026-11-07",
   "cat": "prudent",
@@ -43175,7 +43387,8 @@
     },
     "traits": [
      "petite_cote",
-     "favori_net"
+     "favori_net",
+     "doute_ia"
     ]
    },
    {
@@ -43214,45 +43427,48 @@
   "cat": "equilibre",
   "jambes": [
    {
-    "id": "463c2870517b0ad28afcbd8775287064",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Cardiff City",
-    "exterieur": "Burnley",
-    "championnat": "Championship",
-    "pari": "Victoire Cardiff City",
-    "cote": 2.0,
-    "proba": 0.4678,
-    "court": "1",
+    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Auxerre",
+    "exterieur": "Paris FC",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Paris FC",
+    "cote": 1.7,
+    "proba": 0.5364,
+    "court": "2",
     "espn": {
-     "ligue": "eng.2",
-     "id": "401880169"
+     "ligue": "fra.1",
+     "id": "401876411"
     },
     "traits": [
-     "doute_ia",
-     "force_pour"
+     "exterieur",
+     "piege"
     ]
    },
    {
-    "id": "3903e98a54db0f2cc23095407fe9dad8",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Fulham",
-    "exterieur": "Newcastle United",
-    "championnat": "Premier League",
-    "pari": "Victoire Fulham",
-    "cote": 1.92,
-    "proba": 0.4769,
+    "id": "cb1988f7950962d316571dd0ed98b540",
+    "date": "2026-11-07T19:00:00Z",
+    "domicile": "Saint Etienne",
+    "exterieur": "Stade Lavallois",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Saint Etienne",
+    "cote": 1.3,
+    "proba": 0.7137,
     "court": "1",
     "espn": {
-     "ligue": "eng.1",
-     "id": "401879241"
+     "ligue": "fra.2",
+     "id": "401876693"
     },
     "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia",
      "force_pour"
     ]
    }
   ],
-  "cote": 3.84,
-  "proba": 0.2231,
+  "cote": 2.21,
+  "proba": 0.3829,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -43260,10 +43476,50 @@
   "gain": 0.0
  },
  {
-  "cle": "buts:2026-11-07",
+  "cle": "mixte_gros:2026-11-07",
   "jour": "2026-11-07",
-  "cat": "buts",
+  "cat": "mixte_gros",
   "jambes": [
+   {
+    "id": "cb1988f7950962d316571dd0ed98b540",
+    "date": "2026-11-07T19:00:00Z",
+    "domicile": "Saint Etienne",
+    "exterieur": "Stade Lavallois",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Saint Etienne",
+    "cote": 1.3,
+    "proba": 0.7137,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876693"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "a30b201e4df636949371d73491c620b5",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Watford",
+    "exterieur": "Middlesbrough",
+    "championnat": "Championship",
+    "pari": "Victoire Middlesbrough",
+    "cote": 1.45,
+    "proba": 0.6204,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880163"
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   },
    {
     "id": "f7b240389fa5ec055c58a48ab153dcdd",
     "date": "2026-11-07T20:05:00Z",
@@ -43277,24 +43533,6 @@
     "espn": {
      "ligue": "fra.1",
      "id": "401876407"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
-    "date": "2026-11-07T14:30:00Z",
-    "domicile": "FSV Mainz 05",
-    "exterieur": "Bayern Munich",
-    "championnat": "Bundesliga",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.7739,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "ger.1",
-     "id": "401884740"
     },
     "traits": [
      "buts_plus"
@@ -43317,10 +43555,28 @@
     "traits": [
      "buts_moins"
     ]
+   },
+   {
+    "id": "716d6e3f3e91c47a6efaa2e93d570533",
+    "date": "2026-11-07T17:30:00Z",
+    "domicile": "VfB Stuttgart",
+    "exterieur": "Werder Bremen",
+    "championnat": "Bundesliga",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6817,
+    "marche": "btts",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884743"
+    },
+    "traits": [
+     "buts_plus"
+    ]
    }
   ],
-  "cote": 2.36,
-  "proba": 0.4444,
+  "cote": 6.06,
+  "proba": 0.1733,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -43328,70 +43584,86 @@
   "gain": 0.0
  },
  {
-  "cle": "mixte:2026-11-07",
+  "cle": "mixte_gros:2026-11-07:2",
   "jour": "2026-11-07",
-  "cat": "mixte",
+  "cat": "mixte_gros",
   "jambes": [
    {
-    "id": "842fcc5b9feb8c63054a661ad1fc8926",
-    "date": "2026-11-07T15:00:00Z",
-    "domicile": "Arsenal",
-    "exterieur": "Hull City",
-    "championnat": "Premier League",
-    "pari": "Victoire Arsenal",
-    "cote": 1.11,
-    "proba": 0.8361,
-    "court": "1",
-    "espn": {
-     "ligue": "eng.1",
-     "id": "401878760"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net",
-     "piege",
-     "force_contre"
-    ]
-   },
-   {
-    "id": "f7b240389fa5ec055c58a48ab153dcdd",
-    "date": "2026-11-07T20:05:00Z",
-    "domicile": "Paris Saint Germain",
-    "exterieur": "Troyes",
+    "id": "8553a80cf1ae5cbe3e7a69b76ce8167f",
+    "date": "2026-11-07T18:00:00Z",
+    "domicile": "Auxerre",
+    "exterieur": "Paris FC",
     "championnat": "Ligue 1",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.8133,
-    "marche": "plus25",
+    "pari": "Victoire Paris FC",
+    "cote": 1.7,
+    "proba": 0.5364,
+    "court": "2",
     "espn": {
      "ligue": "fra.1",
-     "id": "401876407"
+     "id": "401876411"
     },
     "traits": [
-     "buts_plus"
+     "exterieur",
+     "piege"
     ]
    },
    {
-    "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
-    "date": "2026-11-07T14:30:00Z",
-    "domicile": "FSV Mainz 05",
-    "exterieur": "Bayern Munich",
-    "championnat": "Bundesliga",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.7739,
-    "marche": "plus25",
+    "id": "82688a32b0049a0c66b2e56309b6b67b",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Birmingham City",
+    "exterieur": "Swansea City",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 1.78,
+    "proba": 0.5151,
+    "court": "1",
     "espn": {
-     "ligue": "ger.1",
-     "id": "401884740"
+     "ligue": "eng.2",
+     "id": "401880172"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "4dbcec00debc1a175148bdb6824e14b3",
+    "date": "2026-11-07T20:30:00Z",
+    "domicile": "Argentinos Juniors",
+    "exterieur": "Atlético Huracán",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6465,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841672"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
+    "date": "2026-11-07T15:00:00Z",
+    "domicile": "Westerlo",
+    "exterieur": "Charleroi",
+    "championnat": "Pro League",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6323,
+    "marche": "btts",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878947"
     },
     "traits": [
      "buts_plus"
     ]
    }
   ],
-  "cote": 2.0,
-  "proba": 0.5263,
+  "cote": 9.3,
+  "proba": 0.113,
   "estime": true,
   "conseille": null,
   "mise": 10.0,

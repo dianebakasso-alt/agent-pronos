@@ -1,6 +1,5 @@
 {
  "ligues_ok": [
-  "soccer_germany_bundesliga",
   "soccer_epl",
   "soccer_efl_champ",
   "soccer_belgium_first_div",
@@ -9,12 +8,13 @@
   "soccer_portugal_primeira_liga",
   "soccer_turkey_super_league",
   "soccer_italy_serie_a",
+  "soccer_germany_bundesliga",
   "soccer_france_ligue_one",
   "soccer_argentina_primera_division",
   "soccer_france_ligue_two"
  ],
  "ligues_ko": [],
- "equipes_trouvees": 171,
+ "equipes_trouvees": 163,
  "equipes_manquees": [
   "soccer_turkey_super_league: Amed SK"
  ]

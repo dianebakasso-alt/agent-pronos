@@ -60,6 +60,66 @@
    "verdict": "prudence",
    "pari": "1",
    "raison": "Je n'ai trouvé aucune actualité fiable (blessés, compositions) pour ce match, faute de recherches disponibles. Sur les stats seules, Argentinos est invaincu sur cinq matchs, Huracán a perdu quatre de ses cinq derniers et n'a marqué que 0.4 but par match ; l'Elo (62 % contre environ 54 % implicite à "
+  },
+  "3903e98a54db0f2cc23095407fe9dad8": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Newcastle est amputé de Joelinton (blessé), Ramsey (suspendu), Livramento et Jaouen, avec Miley et Fernandez-Pardo incertains, mais Fulham n'a que Cairney absent et l'équipe de Newcastle a perdu 3 de ses 5 derniers matchs. Fulham gagne peu à domicile (VDDNV) : le 1 à 1.92 n'a pas d'avantage net, et "
+  },
+  "82688a32b0049a0c66b2e56309b6b67b": {
+   "verdict": "jouer",
+   "pari": "1",
+   "raison": "Birmingham est invaincu à domicile en championnat, 3e du classement, avec une attaque en forme (2.6 buts marqués par match sur sa série) et une défense solide (0.4 encaissé). Swansea a perdu 3 de ses 5 derniers matchs et doit se passer de Burgess, Welsh, Eustáquio et Pereira ; Priske reste incertain"
+  },
+  "e1b2a10bfd51e1716202de92f585f502": {
+   "verdict": "jouer",
+   "pari": "2",
+   "raison": "Charlton a perdu ses 4 derniers matchs, est 21e et encaisse 2.2 buts par match à domicile ; il se dit lui-même « fragile ». Sheffield United, invaincu sur 4 matchs, récupère Kalvin Phillips et marque 1.6 but par match, ce qui justifie le 2 à 1.96 malgré la cote modeste."
+  },
+  "b990dcb534c9019a2846d11c7d879030": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "West Brom est invaincu sur 5 matchs et Millwall ne gagne presque jamais à l'extérieur (1 victoire sur 5), avec Crama et Leonard absents. Doute réel : Campbell est forfait côté West Brom, Millwall n'a jamais perdu contre West Brom sur les 10 dernières confrontations (7 victoires, 3 nuls), et les Bagg"
+  },
+  "e300554369b00b495db88afb743c95ab": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Galatasaray est le grand favori, mais la cote de 1.35 ne laisse presque aucune valeur. Osimhen, son meilleur buteur, est forfait après une opération au genou, et Bardakci est suspendu, alors qu'Amed SK enchaîne 8 victoires consécutives en championnat."
+  },
+  "c7ad58db2278db2259846b11c28ae1c2": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Je n'ai pas trouvé d'actualité blessés ou suspendus pour ce match, donc je n'ai pas pu vérifier les compositions. Sur les stats seules, Goztepe est invaincu sur 5 matchs (NVVVV) et Basaksehir ne gagne presque jamais à l'extérieur (1 victoire sur 5), mais Goztepe reste modeste à domicile (VDDNV) ; pa"
+  },
+  "04613aa3de9a46ad5d2e37776c78cbb7": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Match sans avantage net : Leuven (invaincu sur 5, mais sans Verstraete suspendu ni Verlinden blessé) affronte Malines, qui compte environ sept absents (Ayodele, Hjelde, St Jago, Struyf, Vanrafelghem, Boersma, Salifou) mais enchaîne les succès selon une source. Les sources sur la forme se contredisen"
+  },
+  "716d6e3f3e91c47a6efaa2e93d570533": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Stuttgart (9 points, 11e, trois défaites sur ses cinq derniers) reçoit un Brême invaincu sur cinq matchs et en bonne santé offensive avec Füllkrug, alors que le 1,61 surestime le VfB. Le doute reste réel : Brême ne gagne qu'une fois sur cinq en déplacement, et Karazor est incertain côté stuttgartois"
+  },
+  "cb1988f7950962d316571dd0ed98b540": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Saint-Étienne, leader de Ligue 2 et invaincu à domicile, reçoit Laval, lanterne rouge privée de trois joueurs dont deux attaquants (Dago notamment) et qui n'a gagné aucun de ses cinq derniers déplacements. Mais l'ASSE sort d'une défaite 3-0 à Guingamp, et à 1,30 la cote ne laisse presque aucune marg"
+  },
+  "55129ba3a50af7761828c774c793385a": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Anvers (12e, quatre défaites sur cinq, 2,4 buts encaissés par match récemment) reçoit Lommel (8e, invaincu sur quatre matchs de championnat après un 2-0 contre Gand), donc le 1,76 surestime les Anversois. Les indicateurs (xG 1,39 contre 1,03) donnent un léger avantage local sans suffire à justifier "
+  },
+  "f7b240389fa5ec055c58a48ab153dcdd": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Le PSG (dix victoires consécutives) reçoit Troyes, qui a perdu trois de ses cinq derniers matchs et gagné une fois sur quatre hors de chez lui. Mais six absents (Hakimi au repos, Akliouche, Dembélé, Kvaratskhelia, Marquinhos, Mendes) et une rotation probable rendent le gain faible à 1,10, avec peu d"
+  },
+  "c9e285d98525711130aa5801e9634657": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai pas pu vérifier l'actu (blessés, rotation) de ce match, faute de recherche disponible pour lui. Boca (cinq victoires à domicile) est favori à 1,32, une cote trop basse pour un pari sans info vérifiée, et Defensa y Justicia reste un adversaire solide en déplacement."
   }
  }
 }

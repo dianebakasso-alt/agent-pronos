@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2237,
+  "fin": "1.35 ne laisse presque aucune valeur. Osimhen, son meilleur buteur, est forfait après une opération au genou, et Bardakci est suspendu, alors qu'Amed SK enchaîne 8 victoires consécutives en championnat.\"},\n  {\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Je n'ai pas trouvé d'actualité blessés ou suspendus pour ce match, donc je n'ai pas pu vérifier les compositions. Sur les stats seules, Goztepe est invaincu sur 5 matchs (NVVVV) et Basaksehir ne gagne presque jamais à l'extérieur (1 victoire sur 5), mais Goztepe reste modeste à domicile (VDDNV) ; pari jouable, sans certitude.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 50909,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4382,
+   "output_tokens_details": {
+    "thinking_tokens": 2969
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2268,
+  "fin": " ses cinq derniers matchs et gagné une fois sur quatre hors de chez lui. Mais six absents (Hakimi au repos, Akliouche, Dembélé, Kvaratskhelia, Marquinhos, Mendes) et une rotation probable rendent le gain faible à 1,10, avec peu de marge en cas de faux pas.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai pas pu vérifier l'actu (blessés, rotation) de ce match, faute de recherche disponible pour lui. Boca (cinq victoires à domicile) est favori à 1,32, une cote trop basse pour un pari sans info vérifiée, et Defensa y Justicia reste un adversaire solide en déplacement.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 54315,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5148,
+   "output_tokens_details": {
+    "thinking_tokens": 3699
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]
