@@ -3,6 +3,7 @@
   "mise_max_pourcent": 2,
   "fraction_kelly": 0.25,
   "edge_minimum_pourcent": 3,
+  "prudence_note_min": 7,
   "cote_max": 6.0,
   "bookmakers_minimum": 4,
   "heures_a_venir": 36,

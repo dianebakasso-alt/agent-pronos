@@ -601,6 +601,96 @@ def carte_ticket(tk, style, emoji, nom, desc, badge):
     </article>"""
 
 
+def _bilan_prudence(calib, pause):
+    """Le bilan réel de l'IA prudence : la note tient-elle ses promesses ?"""
+    t = (calib or {}).get("total") or {}
+    if not t.get("n"):
+        return '<p class="pr-bil">📒 Bilan : chaque pari au-dessus de la note limite est noté dans le carnet et réglé tout seul. Premiers résultats après les matchs.</p>'
+    roi = f"{t['roi'] * 100:+.1f} %".replace(".", ",") if t.get("roi") is not None else "—"
+    lignes = "".join(
+        f"<li><span>Note {e(x['tranche'])}</span><b>{x['gagnes']} gagnés sur {x['n']}</b>"
+        f"<small>attendu {str(x['attendus']).replace('.', ',')} · {'✅ tenu' if x['gagnes'] >= x['attendus'] - 0.5 else '⚠️ en dessous'}</small></li>"
+        for x in calib.get("tranches", []))
+    tot = f"{t['gagnes']} gagnés sur {t['n']} · rendement {roi}"
+    alerte = ""
+    if pause:
+        alerte = ('<p class="pr-al">⛔ Sur la durée, ces paris perdent de l\'argent : les cotes de double chance sont trop basses '
+                  'pour couvrir la marge du bookmaker. Joue seulement ceux marqués 💎.</p>')
+    elif t["n"] < 50:
+        alerte = '<p class="pr-bil">Trop tôt pour juger : attends au moins 50 paris réglés.</p>'
+    return f'<div class="pr-bilan"><div class="ex-t">📒 Bilan réel · {tot}</div><ul>{lignes}</ul>{alerte}</div>'
+
+
+def carte_prudence_combi(c, pause=None, bilan=None, titre="🧱 Le combiné prudent", gros=False):
+    """Le combiné prudent : 2 doubles chances chez un seul bookmaker."""
+    if not c:
+        return ""
+    jambes = "".join(f"""<li>{ecusson(j["domicile"], 26)}{ecusson(j["exterieur"], 26)}
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(j["domicile"])} – {e(j["exterieur"])} · {_quand(j["debut"])} · note {str(j["note"]).replace(".", ",")}/10</small></div>
+          <span class="j-cote">{j["cote_t"]:.2f}</span></li>""" for j in c["jambes"])
+    b = bilan or {}
+    bil = (f'<small class="pr-s">📒 Bilan réel : {b["gagnes"]} tickets gagnés sur {b["n"]}'
+           f' · rendement {b["roi"] * 100:+.1f} %</small>'.replace(".", ",") if b.get("n") and b.get("roi") is not None else "")
+    stop = ('<p class="pr-al">⛔ En pause : ce combiné perd sur la durée. Il reste suivi en fictif.</p>' if pause else "")
+    return f"""
+  <div class="pr-combi{' risque' if pause else ''}{' pr-gros' if gros else ''}">
+    <div class="ex-t">{titre} <small>· {len(c["jambes"])} doubles chances chez {e(c["bookmaker"])}</small></div>
+    <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
+      <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>
+    <ul class="jambes">{jambes}</ul>
+    <div class="pari"><div><div class="lbl">Cote estimée</div><div class="choix">{len(c["jambes"])} matchs · {e(c["bookmaker"])}</div></div>
+      <div class="cote"><div class="lbl">Cote</div><div class="num">{c["cote"]:.2f}</div></div></div>
+    <small class="pr-s">Joue-le en double chance seulement si ton bookmaker affiche au moins <b>{c["cote"] * 0.97:.2f}</b>.
+      Sur 10 tickets comme celui-ci, environ {round(c["proba"] * 10)} passent. {"💎 Bon prix." if c["edge"] >= 0 else ""}</small>
+    {'<small class="pr-r">🎲 Grosse cote = gros risque : mise petit, ce ticket perd le plus souvent.</small>' if gros else ''}
+    {bil}{stop}
+  </div>"""
+
+
+def section_prudence(lst, quand, note_min=7, calib=None, pause=None, combi=None, combi_pause=None, combi_bilan=None,
+                     gros=None, gros_pause=None, gros_bilan=None):
+    """IA prudence : « nul ou équipe », chaque match noté sur 10."""
+    if not lst:
+        return ""
+    bons = [r for r in lst if r["jouable"]]
+    lignes = ""
+    for r in lst:
+        cls = "ok" if r["note"] >= 8 else "warn" if r["jouable"] else "bad"
+        cote = (f'<span class="pr-c"><b>{r["cote"]:.2f}</b><small>{e(r["bookmaker"])}</small></span>' if r.get("cote")
+                else f'<span class="pr-c"><b>{r["cote_juste"]:.2f}</b><small>cote juste</small></span>')
+        conseil = ""
+        if r.get("edge") is not None and r["edge"] >= 0:
+            conseil += '<small class="pr-v">💎 La cote paie plus que le risque : bon prix</small>'
+        elif r.get("edge") is not None and r["edge"] < -0.04:
+            conseil += '<small class="pr-r">💸 Cote trop basse pour le risque : regarde si un autre bookmaker paie mieux</small>'
+        if r.get("part_equipe") and r.get("cote"):
+            conseil += (f'<small class="pr-s">Sans double chance chez ton bookmaker : {round(r["part_equipe"] * 100)} % de la mise '
+                       f'sur la victoire, {100 - round(r["part_equipe"] * 100)} % sur le nul.</small>')
+        raisons = "".join(f"<small class=\"pr-r\">• {e(x)}</small>" for x in r["raisons"])
+        lignes += f"""
+      <li class="pr-{cls}{'' if r['jouable'] else ' pr-off'}">
+        <span class="pr-n"><b>{str(r["note"]).replace(".", ",")}</b><small>/10</small></span>
+        <div class="pr-t"><b>{e(r["issue"])}</b>
+          <small>{e(r["domicile"])} – {e(r["exterieur"])} · {_quand(r["debut"])} · {pct(r["proba"])} de chances</small>
+          <div class="pr-bar"><span style="width:{round(r['note'] * 10)}%"></span><i style="left:{round(note_min * 10)}%"></i></div>
+          {'' if r['jouable'] else '<small class="pr-r">⛔ Trop risqué : ' + ('sous la note limite' if r['note'] < note_min else "l'IA dit d'éviter") + '</small>'}{raisons}{conseil}</div>
+        {cote}
+      </li>"""
+    nm = f"{note_min:g}".replace(".", ",")
+    tete = (f"{len(bons)} match{'s' if len(bons) > 1 else ''} au-dessus de la note limite ({nm}/10)"
+            if bons else f"Aucun match au-dessus de la note limite ({nm}/10) {e(quand)} : on passe.")
+    return f"""
+<h2>🛡️ IA prudence <small>match nul ou équipe · noté sur 10</small></h2>
+<section class="carte prudence">
+  <p class="note">La note = les chances que le pari passe (8/10 ≈ 80 %), corrigée par l'actu, les alertes piège et la fatigue.
+  <b>{tete}</b> Même à 8/10, le pari perd environ 1 fois sur 5.</p>
+  {carte_prudence_combi(combi, combi_pause, combi_bilan)}
+  {carte_prudence_combi(gros, gros_pause, gros_bilan, "🚀 Le gros combiné prudence", gros=True)}
+  <ul class="pr-l">{lignes}</ul>
+  {_bilan_prudence(calib, pause)}
+</section>"""
+
+
 NIV_CLS = {"forte": "ok", "bonne": "ok", "moyenne": "warn", "ouvert": "att"}
 
 
@@ -1010,6 +1100,9 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         tkj = carte_ticket(j["ticket"], "jour", "📌", "Ticket du jour", "Les 2 à 3 matchs les plus solides du jour, vérifiés en profondeur par l'IA.", "Le plus solide") if j.get("ticket") else ""
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
 {tkj}
+{section_prudence(j.get("prudence") or [], j["quand"], infos.get("prudence_note_min", 7), infos.get("prudence_calib"), infos.get("prudence_pause"),
+                 j.get("prudence_combi"), infos.get("prudence_combi_pause"), ((infos.get("expert") or {}).get("par_cat") or {}).get("prudence_combi"),
+                 j.get("prudence_gros"), infos.get("prudence_gros_pause"), ((infos.get("expert") or {}).get("par_cat") or {}).get("prudence_gros"))}
 {liste_avis(j)}
 <h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
@@ -1705,6 +1798,34 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .combo.st-verifie .jambes li {{ border-left-color:#22c55e; }}
 .combo.st-mixte_gros {{ --grad-ticket:linear-gradient(135deg,#f43f5e 0%,#f59e0b 45%,#22c55e 100%); }}
 .combo.st-mixte_gros .jambes li {{ border-left-color:#f43f5e; }}
+.prudence {{ padding:14px; }}
+.pr-l {{ list-style:none; display:flex; flex-direction:column; gap:10px; margin-top:10px; }}
+.pr-l li {{ display:grid; grid-template-columns:52px 1fr auto; gap:10px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
+.pr-n {{ display:flex; flex-direction:column; align-items:center; justify-content:center; height:52px; border-radius:12px; background:var(--surface2); }}
+.pr-n b {{ font:700 24px/1 "Barlow Condensed",sans-serif; }}
+.pr-n small {{ color:var(--muted); font-size:11px; }}
+.pr-ok .pr-n b {{ color:var(--ok); }} .pr-warn .pr-n b {{ color:var(--warn); }} .pr-bad .pr-n b {{ color:var(--bad); }}
+.pr-t {{ display:flex; flex-direction:column; gap:3px; min-width:0; }}
+.pr-t small {{ color:var(--muted); font-size:12px; }}
+.pr-bar {{ position:relative; height:6px; border-radius:99px; background:var(--surface2); margin:4px 0 2px; }}
+.pr-bar span {{ display:block; height:100%; border-radius:99px; background:var(--ok); }}
+.pr-warn .pr-bar span {{ background:var(--warn); }} .pr-bad .pr-bar span {{ background:var(--bad); }}
+.pr-bar i {{ position:absolute; top:-3px; width:2px; height:12px; background:var(--text); opacity:.6; }}
+.pr-c {{ display:flex; flex-direction:column; align-items:flex-end; }}
+.pr-c b {{ font:700 22px/1 "Barlow Condensed",sans-serif; }}
+.pr-c small {{ color:var(--muted); font-size:11px; }}
+.pr-off {{ opacity:.6; }}
+.pr-combi {{ margin-top:12px; padding:12px; border-radius:14px; background:var(--surface2); }}
+.pr-combi .jambes {{ margin-top:8px; }}
+.pr-gros {{ border:1px solid var(--warn); }}
+.pr-combi.risque {{ opacity:.7; }}
+.pr-v {{ color:var(--ok)!important; font-weight:600; }}
+.pr-bilan {{ margin-top:12px; padding-top:12px; border-top:1px solid var(--line); }}
+.pr-bilan ul {{ list-style:none; display:flex; flex-direction:column; gap:6px; margin-top:8px; }}
+.pr-bilan li {{ display:grid; grid-template-columns:1fr auto; column-gap:8px; }}
+.pr-bilan li small {{ grid-column:span 2; color:var(--muted); font-size:12px; }}
+.pr-bil, .pr-al {{ color:var(--muted); font-size:13px; margin-top:10px; }}
+.pr-al {{ color:var(--bad); }}
 </style>
 </head>
 <body>
