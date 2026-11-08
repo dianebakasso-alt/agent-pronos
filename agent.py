@@ -20,6 +20,7 @@ import direct
 import moteur
 import force
 import pieges
+import prudence
 import stats
 import site_web
 
@@ -941,6 +942,7 @@ def main():
         j["foule"] = sorted(((a, f) for a in jj if (f := selection.contre_la_foule(a))), key=lambda x: -x[1]["edge"])[:3]
         j["ticket"] = selection.ticket_du_jour(jj, cfg["bookmakers_jouables"], avis_connus)
         j["pronos"] = {a["id"]: selection.avis_match(a) for a in j["analyses"]}
+        j["prudence"] = prudence.du_jour(j["analyses"], cfg)   # IA prudence : nul ou équipe, noté sur 10
     if not demo:
         (DATA / "selection.json").write_text(json.dumps(sel, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -996,6 +998,7 @@ def main():
         "credits_restants": api.credits_restants if api else None,
         "credits_utilises": api.credits_utilises if api else None,
         "bankroll": cfg["bankroll_euros"],
+        "prudence_note_min": float(cfg.get("prudence_note_min", 7)),
         "ia": ia,
         "combines": combines,
         "bilan_combines": bilan_combines(combines),

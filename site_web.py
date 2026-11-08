@@ -601,6 +601,42 @@ def carte_ticket(tk, style, emoji, nom, desc, badge):
     </article>"""
 
 
+def section_prudence(lst, quand, note_min=7):
+    """IA prudence : « nul ou équipe », chaque match noté sur 10."""
+    if not lst:
+        return ""
+    bons = [r for r in lst if r["jouable"]]
+    lignes = ""
+    for r in lst:
+        cls = "ok" if r["note"] >= 8 else "warn" if r["jouable"] else "bad"
+        cote = (f'<span class="pr-c"><b>{r["cote"]:.2f}</b><small>{e(r["bookmaker"])}</small></span>' if r.get("cote")
+                else f'<span class="pr-c"><b>{r["cote_juste"]:.2f}</b><small>cote juste</small></span>')
+        conseil = ""
+        if r.get("part_equipe") and r.get("cote"):
+            conseil = (f'<small class="pr-s">Sans double chance chez ton bookmaker : {round(r["part_equipe"] * 100)} % de la mise '
+                       f'sur la victoire, {100 - round(r["part_equipe"] * 100)} % sur le nul.</small>')
+        raisons = "".join(f"<small class=\"pr-r\">• {e(x)}</small>" for x in r["raisons"])
+        lignes += f"""
+      <li class="pr-{cls}{'' if r['jouable'] else ' pr-off'}">
+        <span class="pr-n"><b>{str(r["note"]).replace(".", ",")}</b><small>/10</small></span>
+        <div class="pr-t"><b>{e(r["issue"])}</b>
+          <small>{e(r["domicile"])} – {e(r["exterieur"])} · {_quand(r["debut"])} · {pct(r["proba"])} de chances</small>
+          <div class="pr-bar"><span style="width:{round(r['note'] * 10)}%"></span><i style="left:{round(note_min * 10)}%"></i></div>
+          {'' if r['jouable'] else '<small class="pr-r">⛔ Trop risqué : ' + ('sous la note limite' if r['note'] < note_min else "l'IA dit d'éviter") + '</small>'}{raisons}{conseil}</div>
+        {cote}
+      </li>"""
+    nm = f"{note_min:g}".replace(".", ",")
+    tete = (f"{len(bons)} match{'s' if len(bons) > 1 else ''} au-dessus de la note limite ({nm}/10)"
+            if bons else f"Aucun match au-dessus de la note limite ({nm}/10) {e(quand)} : on passe.")
+    return f"""
+<h2>🛡️ IA prudence <small>match nul ou équipe · noté sur 10</small></h2>
+<section class="carte prudence">
+  <p class="note">La note = les chances que le pari passe (8/10 ≈ 80 %), corrigée par l'actu, les alertes piège et la fatigue.
+  <b>{tete}</b> Même à 8/10, le pari perd environ 1 fois sur 5.</p>
+  <ul class="pr-l">{lignes}</ul>
+</section>"""
+
+
 NIV_CLS = {"forte": "ok", "bonne": "ok", "moyenne": "warn", "ouvert": "att"}
 
 
@@ -1010,6 +1046,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         tkj = carte_ticket(j["ticket"], "jour", "📌", "Ticket du jour", "Les 2 à 3 matchs les plus solides du jour, vérifiés en profondeur par l'IA.", "Le plus solide") if j.get("ticket") else ""
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
 {tkj}
+{section_prudence(j.get("prudence") or [], j["quand"], infos.get("prudence_note_min", 7))}
 {liste_avis(j)}
 <h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
@@ -1705,6 +1742,23 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .combo.st-verifie .jambes li {{ border-left-color:#22c55e; }}
 .combo.st-mixte_gros {{ --grad-ticket:linear-gradient(135deg,#f43f5e 0%,#f59e0b 45%,#22c55e 100%); }}
 .combo.st-mixte_gros .jambes li {{ border-left-color:#f43f5e; }}
+.prudence {{ padding:14px; }}
+.pr-l {{ list-style:none; display:flex; flex-direction:column; gap:10px; margin-top:10px; }}
+.pr-l li {{ display:grid; grid-template-columns:52px 1fr auto; gap:10px; align-items:start; padding:10px 0; border-top:1px solid var(--line); }}
+.pr-n {{ display:flex; flex-direction:column; align-items:center; justify-content:center; height:52px; border-radius:12px; background:var(--surface2); }}
+.pr-n b {{ font:700 24px/1 "Barlow Condensed",sans-serif; }}
+.pr-n small {{ color:var(--muted); font-size:11px; }}
+.pr-ok .pr-n b {{ color:var(--ok); }} .pr-warn .pr-n b {{ color:var(--warn); }} .pr-bad .pr-n b {{ color:var(--bad); }}
+.pr-t {{ display:flex; flex-direction:column; gap:3px; min-width:0; }}
+.pr-t small {{ color:var(--muted); font-size:12px; }}
+.pr-bar {{ position:relative; height:6px; border-radius:99px; background:var(--surface2); margin:4px 0 2px; }}
+.pr-bar span {{ display:block; height:100%; border-radius:99px; background:var(--ok); }}
+.pr-warn .pr-bar span {{ background:var(--warn); }} .pr-bad .pr-bar span {{ background:var(--bad); }}
+.pr-bar i {{ position:absolute; top:-3px; width:2px; height:12px; background:var(--text); opacity:.6; }}
+.pr-c {{ display:flex; flex-direction:column; align-items:flex-end; }}
+.pr-c b {{ font:700 22px/1 "Barlow Condensed",sans-serif; }}
+.pr-c small {{ color:var(--muted); font-size:11px; }}
+.pr-off {{ opacity:.6; }}
 </style>
 </head>
 <body>
