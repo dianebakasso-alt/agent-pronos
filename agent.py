@@ -964,6 +964,7 @@ def main():
                                 {"jambes": [{"id": a["id"], "debut": a["debut"], "domicile": a["domicile"], "exterieur": a["exterieur"],
                                              "court": f["court"], "issue": f["issue"], "proba": f["proba"], "cote_t": f["cote"]}],
                                  "cote": f["cote"], "proba": f["proba"]}, analyses, maintenant)
+        expert.noter_prudence(carnet, auj, jours[0].get("prudence") or [], analyses, maintenant)
         autopsie.enrichir(carnet, analyses)
         (DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -999,6 +1000,8 @@ def main():
         "credits_utilises": api.credits_utilises if api else None,
         "bankroll": cfg["bankroll_euros"],
         "prudence_note_min": float(cfg.get("prudence_note_min", 7)),
+        "prudence_calib": expert.calib_prudence(carnet),
+        "prudence_pause": en_pause.get("prudence"),
         "ia": ia,
         "combines": combines,
         "bilan_combines": bilan_combines(combines),

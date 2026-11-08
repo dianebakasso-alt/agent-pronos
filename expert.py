@@ -26,6 +26,7 @@ CATEGORIES = {
     "semaine": ("🔭", "Ticket de la semaine"),
     "rebond": ("🔄", "Rebond"),
     "foule": ("🎯", "Contre la foule"),
+    "prudence": ("🛡️", "IA prudence (nul ou équipe)"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
 
@@ -136,7 +137,7 @@ def _score_espn(ev):
 def _gagne(j, d, x):
     if "court" in j:
         res = "1" if d > x else "2" if x > d else "N"
-        return res == j["court"]
+        return res in j["court"]   # « 1N » / « N2 » : double chance (IA prudence)
     t = d + x
     return {
         "plus15": t >= 2, "moins15": t <= 1, "plus25": t >= 3, "moins25": t <= 2,
@@ -314,6 +315,37 @@ def noter_ticket(carnet, cle, cat, jour, tk, analyses, maintenant):
             return
         carnet.remove(ancien)
     carnet.append(nouveau)
+
+
+def noter_prudence(carnet, jour, picks, analyses, maintenant):
+    """Chaque pari de l'IA prudence au-dessus de la note limite : noté puis réglé comme les autres."""
+    for r in picks:
+        if not r.get("jouable"):
+            continue
+        cote = r.get("cote") or r["cote_juste"]
+        cle = f"prudence:{r['id']}"
+        noter_ticket(carnet, cle, "prudence", jour,
+                     {"jambes": [{"id": r["id"], "debut": r["debut"], "domicile": r["domicile"], "exterieur": r["exterieur"],
+                                  "sport_key": r.get("sport_key"), "championnat": r.get("championnat", ""),
+                                  "court": r["court"], "issue": r["issue"], "proba": r["proba"], "cote_t": cote}],
+                      "cote": cote, "proba": r["proba"]}, analyses, maintenant)
+        p = next((p for p in carnet if p["cle"] == cle), None)
+        if p and p["statut"] == "en attente" and "note" not in p:
+            p["note"] = r["note"]
+
+
+TRANCHES_PRUDENCE = [(9.0, 10.1, "9 à 10"), (8.0, 9.0, "8 à 9"), (7.0, 8.0, "7 à 8"), (0.0, 7.0, "moins de 7")]
+
+
+def calib_prudence(carnet):
+    """La note tient-elle ses promesses ? Par tranche de note : gagnés réels contre gagnés attendus."""
+    regles = [p for p in carnet if p["cat"] == "prudence" and p["statut"] in ("gagné", "perdu") and "note" in p]
+    out = []
+    for bas, haut, nom in TRANCHES_PRUDENCE:
+        ps = [p for p in regles if bas <= p["note"] < haut]
+        if ps:
+            out.append({"tranche": nom, **_seg(ps)})
+    return {"tranches": out, "total": _seg([p for p in carnet if p["cat"] == "prudence"])}
 
 
 MIN_PAUSE, ROI_PAUSE = 15, 0.0

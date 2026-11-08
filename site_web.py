@@ -601,7 +601,27 @@ def carte_ticket(tk, style, emoji, nom, desc, badge):
     </article>"""
 
 
-def section_prudence(lst, quand, note_min=7):
+def _bilan_prudence(calib, pause):
+    """Le bilan réel de l'IA prudence : la note tient-elle ses promesses ?"""
+    t = (calib or {}).get("total") or {}
+    if not t.get("n"):
+        return '<p class="pr-bil">📒 Bilan : chaque pari au-dessus de la note limite est noté dans le carnet et réglé tout seul. Premiers résultats après les matchs.</p>'
+    roi = f"{t['roi'] * 100:+.1f} %".replace(".", ",") if t.get("roi") is not None else "—"
+    lignes = "".join(
+        f"<li><span>Note {e(x['tranche'])}</span><b>{x['gagnes']} gagnés sur {x['n']}</b>"
+        f"<small>attendu {str(x['attendus']).replace('.', ',')} · {'✅ tenu' if x['gagnes'] >= x['attendus'] - 0.5 else '⚠️ en dessous'}</small></li>"
+        for x in calib.get("tranches", []))
+    tot = f"{t['gagnes']} gagnés sur {t['n']} · rendement {roi}"
+    alerte = ""
+    if pause:
+        alerte = ('<p class="pr-al">⛔ Sur la durée, ces paris perdent de l\'argent : les cotes de double chance sont trop basses '
+                  'pour couvrir la marge du bookmaker. Joue seulement ceux marqués 💎.</p>')
+    elif t["n"] < 50:
+        alerte = '<p class="pr-bil">Trop tôt pour juger : attends au moins 50 paris réglés.</p>'
+    return f'<div class="pr-bilan"><div class="ex-t">📒 Bilan réel · {tot}</div><ul>{lignes}</ul>{alerte}</div>'
+
+
+def section_prudence(lst, quand, note_min=7, calib=None, pause=None):
     """IA prudence : « nul ou équipe », chaque match noté sur 10."""
     if not lst:
         return ""
@@ -612,8 +632,12 @@ def section_prudence(lst, quand, note_min=7):
         cote = (f'<span class="pr-c"><b>{r["cote"]:.2f}</b><small>{e(r["bookmaker"])}</small></span>' if r.get("cote")
                 else f'<span class="pr-c"><b>{r["cote_juste"]:.2f}</b><small>cote juste</small></span>')
         conseil = ""
+        if r.get("edge") is not None and r["edge"] >= 0:
+            conseil += '<small class="pr-v">💎 La cote paie plus que le risque : bon prix</small>'
+        elif r.get("edge") is not None and r["edge"] < -0.04:
+            conseil += '<small class="pr-r">💸 Cote trop basse pour le risque : regarde si un autre bookmaker paie mieux</small>'
         if r.get("part_equipe") and r.get("cote"):
-            conseil = (f'<small class="pr-s">Sans double chance chez ton bookmaker : {round(r["part_equipe"] * 100)} % de la mise '
+            conseil += (f'<small class="pr-s">Sans double chance chez ton bookmaker : {round(r["part_equipe"] * 100)} % de la mise '
                        f'sur la victoire, {100 - round(r["part_equipe"] * 100)} % sur le nul.</small>')
         raisons = "".join(f"<small class=\"pr-r\">• {e(x)}</small>" for x in r["raisons"])
         lignes += f"""
@@ -634,6 +658,7 @@ def section_prudence(lst, quand, note_min=7):
   <p class="note">La note = les chances que le pari passe (8/10 ≈ 80 %), corrigée par l'actu, les alertes piège et la fatigue.
   <b>{tete}</b> Même à 8/10, le pari perd environ 1 fois sur 5.</p>
   <ul class="pr-l">{lignes}</ul>
+  {_bilan_prudence(calib, pause)}
 </section>"""
 
 
@@ -1046,7 +1071,7 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         tkj = carte_ticket(j["ticket"], "jour", "📌", "Ticket du jour", "Les 2 à 3 matchs les plus solides du jour, vérifiés en profondeur par l'IA.", "Le plus solide") if j.get("ticket") else ""
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
 {tkj}
-{section_prudence(j.get("prudence") or [], j["quand"], infos.get("prudence_note_min", 7))}
+{section_prudence(j.get("prudence") or [], j["quand"], infos.get("prudence_note_min", 7), infos.get("prudence_calib"), infos.get("prudence_pause"))}
 {liste_avis(j)}
 <h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
@@ -1759,6 +1784,13 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .pr-c b {{ font:700 22px/1 "Barlow Condensed",sans-serif; }}
 .pr-c small {{ color:var(--muted); font-size:11px; }}
 .pr-off {{ opacity:.6; }}
+.pr-v {{ color:var(--ok)!important; font-weight:600; }}
+.pr-bilan {{ margin-top:12px; padding-top:12px; border-top:1px solid var(--line); }}
+.pr-bilan ul {{ list-style:none; display:flex; flex-direction:column; gap:6px; margin-top:8px; }}
+.pr-bilan li {{ display:grid; grid-template-columns:1fr auto; column-gap:8px; }}
+.pr-bilan li small {{ grid-column:span 2; color:var(--muted); font-size:12px; }}
+.pr-bil, .pr-al {{ color:var(--muted); font-size:13px; margin-top:10px; }}
+.pr-al {{ color:var(--bad); }}
 </style>
 </head>
 <body>

@@ -80,6 +80,7 @@ def analyser(m, note_min=NOTE_MIN):
         "cote": maison["cote"] if maison else None,
         "bookmaker": maison["bookmaker"] if maison else None,
         "part_equipe": maison["part_a"] if maison else None,
+        "edge": choix["proba"] * maison["cote"] - 1 if maison else None,   # > 0 : la cote paie plus que le risque
         "raisons": raisons,
     }
 
@@ -88,4 +89,5 @@ def du_jour(analyses, cfg):
     """Tous les matchs encore à jouer, du plus sûr au moins sûr."""
     note_min = float(cfg.get("prudence_note_min", NOTE_MIN))
     res = [r for r in (analyser(m, note_min) for m in analyses if not m.get("deja_commence")) if r]
-    return sorted(res, key=lambda r: (-r["note"], r["debut"]))
+    # à note égale, la meilleure cote (celle qui perd le moins de valeur) passe devant
+    return sorted(res, key=lambda r: (-r["note"], -(r["edge"] if r["edge"] is not None else -1), r["debut"]))
