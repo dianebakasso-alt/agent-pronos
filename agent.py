@@ -351,6 +351,9 @@ def _verdicts_paquet(matchs, cfg, cle_ia):
             m = next((x for x in matchs if x["domicile"].lower() in txt.lower()), None)
         if m is None:
             continue
+        r = str(v.get("raison", "")).lower()
+        if any(x in r for x in ("pas pu récupérer", "pas pu trouver", "aucune actualité", "n'ai trouvé aucune", "recherche a échoué")):
+            continue   # l'IA n'a rien trouvé : ce n'est pas un vrai « à éviter », le match reste « pas vérifié »
         if v.get("verdict") in ("jouer", "prudence", "eviter"):
             out[m["id"]] = {"verdict": v["verdict"], "pari": v.get("pari") if v.get("pari") in ("1", "N", "2") else None,
                             "raison": str(v.get("raison", ""))[:300]}
