@@ -1,6 +1,5 @@
 {
  "ligues_ok": [
-  "soccer_argentina_primera_division",
   "soccer_turkey_super_league",
   "soccer_netherlands_eredivisie",
   "soccer_italy_serie_a",
@@ -10,11 +9,12 @@
   "soccer_epl",
   "soccer_germany_bundesliga",
   "soccer_portugal_primeira_liga",
+  "soccer_argentina_primera_division",
   "soccer_brazil_campeonato"
  ],
  "ligues_ko": [
   "soccer_australia_aleague"
  ],
- "equipes_trouvees": 92,
+ "equipes_trouvees": 90,
  "equipes_manquees": []
 }

@@ -4,13 +4,13 @@
     quota cotes : 0 championnat(s) aujourd'hui (404 crédits restants ce mois-ci)
     0 championnats retenus
 3/4 Récupération des cotes…
-    48 matchs repris du cache (cotes d'un passage précédent)
-    48 matchs analysés, 1 value bets
+    46 matchs repris du cache (cotes d'un passage précédent)
+    46 matchs analysés, 1 value bets
     Forme et stats des équipes…
     direct : 46 matchs reliés aux scores en direct
     fatigue : 22 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 92 équipes trouvées, 0 manquées
-    force : 46 matchs notés · pièges : 30 favoris en alerte
+    stats : 90 équipes trouvées, 0 manquées
+    force : 45 matchs notés · pièges : 31 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.929, 'btts': 0.987, 'pas_btts': 1.011} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
     autopsies gratuites : 0

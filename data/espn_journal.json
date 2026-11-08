@@ -1,6 +1,5 @@
 {
  "ligues": {
-  "soccer_argentina_primera_division": 1,
   "soccer_australia_aleague": 1,
   "soccer_turkey_super_league": 4,
   "soccer_netherlands_eredivisie": 5,
@@ -11,13 +10,11 @@
   "soccer_epl": 5,
   "soccer_germany_bundesliga": 3,
   "soccer_portugal_primeira_liga": 6,
+  "soccer_argentina_primera_division": 1,
   "soccer_brazil_campeonato": 2
  },
  "relies": 46,
- "manques": [
-  "soccer_argentina_primera_division: Instituto de Córdoba - Newells Old Boys",
-  "soccer_australia_aleague: Macarthur FC - Brisbane Roar"
- ],
+ "manques": [],
  "europe": 45,
  "fatigue": 22
 }
