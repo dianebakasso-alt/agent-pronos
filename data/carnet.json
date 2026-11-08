@@ -41720,7 +41720,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 15-8, cadrés 7-3, possession 73-27 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
@@ -41758,7 +41771,19 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-12, cadrés 5-4, possession 59-41 %). plus de buts que prévu (9 tirs cadrés au total).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "defense_fragile"
+     ],
+     "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.36,
@@ -41766,8 +41791,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-07",
@@ -41793,7 +41818,9 @@
      "favori_net",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "f7b240389fa5ec055c58a48ab153dcdd",
@@ -41811,7 +41838,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 15-8, cadrés 7-3, possession 73-27 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "fe97f5adf397dd6b0a8a9e0a5272f307",
@@ -41839,8 +41879,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:842fcc5b9feb8c63054a661ad1fc8926",
@@ -41876,7 +41916,9 @@
      "favori_net",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.11,
@@ -41884,8 +41926,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.1
  },
  {
   "cle": "match:3903e98a54db0f2cc23095407fe9dad8",
@@ -41918,7 +41960,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 11-9, cadrés 5-5, possession 58-42 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.92,
@@ -41926,8 +41980,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:82688a32b0049a0c66b2e56309b6b67b",
@@ -41960,7 +42014,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.78,
@@ -41968,8 +42024,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.8
  },
  {
   "cle": "match:228a3fca36f1fc8943ab0b7c54f06860",
@@ -42003,7 +42059,20 @@
     "traits": [
      "exterieur",
      "force_contre"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-1 (tirs 5-20, cadrés 3-5, possession 35-65 %). West Ham United a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.57,
@@ -42011,8 +42080,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:463c2870517b0ad28afcbd8775287064",
@@ -42046,7 +42115,9 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "5-4",
+    "ok": true
    }
   ],
   "cote": 2.0,
@@ -42054,8 +42125,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.0
  },
  {
   "cle": "match:e1b2a10bfd51e1716202de92f585f502",
@@ -42089,7 +42160,19 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-1 (tirs 9-13, cadrés 2-7, possession 51-49 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.96,
@@ -42097,8 +42180,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:611adbd4bc3a3e1b8b03def9d8a29e54",
@@ -42129,7 +42212,9 @@
      "N": 0.2313,
      "2": 0.1917
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.61,
@@ -42137,8 +42222,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.1
  },
  {
   "cle": "match:a30b201e4df636949371d73491c620b5",
@@ -42172,7 +42257,20 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 8-18, cadrés 1-4, possession 26-74 %). Middlesbrough a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.45,
@@ -42180,8 +42278,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b990dcb534c9019a2846d11c7d879030",
@@ -42214,7 +42312,9 @@
     },
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.93,
@@ -42222,8 +42322,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.3
  },
  {
   "cle": "match:4330962b4e3ef6768d90008d6befb10d",
@@ -42257,7 +42357,20 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 15-23, cadrés 2-8, possession 22-78 %). Southampton a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.56,
@@ -42265,8 +42378,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:d3d9ff50bb0abd6e9215bd4b9b507644",
@@ -42299,7 +42412,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-5",
+    "ok": true
    }
   ],
   "cote": 2.1,
@@ -42307,8 +42422,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.0
  },
  {
   "cle": "match:262c2c99c38456b8a70cb9daa32f2f6d",
@@ -42341,7 +42456,20 @@
     },
     "traits": [
      "piege"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 11-5, cadrés 4-1, possession 64-36 %). Espanyol a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.23,
@@ -42349,8 +42477,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:33c5cad848eb423e163a9bf5631ccefe",
@@ -42383,7 +42511,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 10-14, cadrés 4-8, possession 47-53 %). SC Telstar a été plus dangereux (8 tirs cadrés contre 4).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.94,
@@ -42391,8 +42531,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:406c4abcb4384570eada7fffa729be9d",
@@ -42459,7 +42599,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-3",
+    "ok": true
    }
   ],
   "cote": 1.35,
@@ -42467,8 +42609,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.5
  },
  {
   "cle": "match:c7ad58db2278db2259846b11c28ae1c2",
@@ -42502,7 +42644,19 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-2 (tirs 19-15, cadrés 4-5, possession 51-49 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.88,
@@ -42510,8 +42664,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "verifie:2026-11-07",
@@ -42534,7 +42688,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "e1b2a10bfd51e1716202de92f585f502",
@@ -42553,7 +42709,19 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-1 (tirs 9-13, cadrés 2-7, possession 51-49 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "b34ca990cb7daf96d0a96dc33f609250",
@@ -42569,7 +42737,21 @@
      "ligue": "fra.2",
      "id": "401876694"
     },
-    "traits": []
+    "traits": [],
+    "score": "0-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-2 (tirs 11-9, cadrés 3-4, possession 63-37 %). Pau FC a pris un carton rouge à la 55e; Nantes a marqué sur penalty.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 9.71,
@@ -42577,8 +42759,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-07",
@@ -42603,7 +42785,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "842fcc5b9feb8c63054a661ad1fc8926",
@@ -42624,7 +42808,9 @@
      "favori_net",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.22,
@@ -42632,8 +42818,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.2
  },
  {
   "cle": "mixte_gros:2026-11-07",
@@ -42659,7 +42845,9 @@
      "favori_net",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "a30b201e4df636949371d73491c620b5",
@@ -42678,7 +42866,20 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 8-18, cadrés 1-4, possession 26-74 %). Middlesbrough a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "f7b240389fa5ec055c58a48ab153dcdd",
@@ -42696,7 +42897,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 15-8, cadrés 7-3, possession 73-27 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "077e9bfa253514e27bdae1ce5956c78e",
@@ -42714,7 +42928,19 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-12, cadrés 5-4, possession 59-41 %). plus de buts que prévu (9 tirs cadrés au total).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "defense_fragile"
+     ],
+     "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
+     "source": "espn"
+    }
    },
    {
     "id": "716d6e3f3e91c47a6efaa2e93d570533",
@@ -42732,7 +42958,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 13-24, cadrés 5-5, possession 42-58 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 6.06,
@@ -42740,8 +42979,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-07:2",
@@ -42765,7 +43004,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "82688a32b0049a0c66b2e56309b6b67b",
@@ -42783,7 +43024,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "4dbcec00debc1a175148bdb6824e14b3",
@@ -42801,7 +43044,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    },
    {
     "id": "d3d9ff50bb0abd6e9215bd4b9b507644",
@@ -42819,7 +43064,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-5",
+    "ok": true
    }
   ],
   "cote": 9.3,
@@ -42827,8 +43074,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 83.0
  },
  {
   "cle": "match:813cc4970b2dcab8457490a332fb5a6c",
@@ -42862,7 +43109,9 @@
     "traits": [
      "exterieur",
      "force_contre"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 1.81,
@@ -42870,8 +43119,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.1
  },
  {
   "cle": "match:04613aa3de9a46ad5d2e37776c78cbb7",
@@ -42904,7 +43153,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.15,
@@ -42912,8 +43163,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.5
  },
  {
   "cle": "match:59c5f635cfe11613c07e9a5520ced5c1",
@@ -42948,7 +43199,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-1 (tirs 11-12, cadrés 5-4, possession 22-78 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.65,
@@ -42956,8 +43219,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:71ca5141a1c532e390c6fa14e080d8bd",
@@ -42992,7 +43255,20 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 17-16, cadrés 5-4, possession 39-61 %). but décisif de CA Osasuna à la 90e.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "malchance"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.0,
@@ -43000,8 +43276,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:716d6e3f3e91c47a6efaa2e93d570533",
@@ -43036,7 +43312,9 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.61,
@@ -43044,8 +43322,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.1
  },
  {
   "cle": "match:da066424422bbd4438e5000312b822fd",
@@ -43078,7 +43356,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 2.4,
@@ -43086,8 +43366,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.0
  },
  {
   "cle": "match:8553a80cf1ae5cbe3e7a69b76ce8167f",
@@ -43121,7 +43401,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.7,
@@ -43129,8 +43411,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.0
  },
  {
   "cle": "match:d9d924bf6388e1288f06e04041b3fe33",
@@ -43163,7 +43445,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 15-11, cadrés 5-4, possession 56-44 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.69,
@@ -43171,8 +43465,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c8d54d20e3fa9acb251716ff6820a0c6",
@@ -43207,7 +43501,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-11, cadrés 6-2, possession 45-55 %). Talleres a été plus dangereux (6 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.52,
@@ -43215,8 +43521,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:077e9bfa253514e27bdae1ce5956c78e",
@@ -43249,7 +43555,20 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-12, cadrés 5-4, possession 59-41 %). Independiente Rivadavia a pris un carton rouge à la 17e.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.27,
@@ -43257,8 +43576,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b34ca990cb7daf96d0a96dc33f609250",
@@ -43293,7 +43612,9 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.28,
@@ -43301,8 +43622,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.8
  },
  {
   "cle": "match:cb1988f7950962d316571dd0ed98b540",
@@ -43338,7 +43659,9 @@
      "favori_net",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.3,
@@ -43346,8 +43669,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.0
  },
  {
   "cle": "match:f110107bca066ac1a598c89661c88fa3",
@@ -43382,7 +43705,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.26,
@@ -43390,8 +43715,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.6
  },
  {
   "cle": "match:afde306e7e186da45ff6778a7e952d51",
@@ -43426,7 +43751,9 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.45,
@@ -43434,8 +43761,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.5
  },
  {
   "cle": "match:55129ba3a50af7761828c774c793385a",
@@ -43469,7 +43796,20 @@
     "traits": [
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 25-13, cadrés 5-4, possession 55-45 %). Royal Antwerp a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.76,
@@ -43477,8 +43817,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:5b386dfdf6f76705116fbb4120ee8493",
@@ -43514,7 +43854,9 @@
      "petite_cote",
      "favori_net",
      "force_contre"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 1.23,
@@ -43522,8 +43864,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.3
  },
  {
   "cle": "match:5d4dbfdacb0b931ba7b8d771bfed5e0e",
@@ -43557,7 +43899,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.23,
@@ -43565,8 +43909,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.3
  },
  {
   "cle": "match:f7b240389fa5ec055c58a48ab153dcdd",
@@ -43601,7 +43945,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.1,
@@ -43609,8 +43955,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.0
  },
  {
   "cle": "match:ba0a2d492dfcc89ab465eddd7a9e98c2",
@@ -43644,7 +43990,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.11,
@@ -43652,8 +44000,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.1
  },
  {
   "cle": "match:4dbcec00debc1a175148bdb6824e14b3",
@@ -43687,7 +44035,20 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-2 (tirs 17-20, cadrés 3-9, possession 54-46 %). Argentinos Juniors a pris un carton rouge à la 25e; Atlético Huracán a été plus dangereux (9 tirs cadrés contre 3).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.86,
@@ -43695,8 +44056,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c9e285d98525711130aa5801e9634657",
@@ -43731,7 +44092,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.32,
@@ -43739,8 +44102,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.2
  },
  {
   "cle": "match:88fead70e852197758d9b67fdce0e93f",
@@ -43775,7 +44138,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.16,
@@ -43783,8 +44148,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.6
  },
  {
   "cle": "equilibre:2026-11-07",
@@ -43808,7 +44173,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "f7b240389fa5ec055c58a48ab153dcdd",
@@ -43828,13 +44195,2493 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.87,
   "proba": 0.4596,
   "estime": false,
   "conseille": false,
+  "mise": 10.0,
+  "statut": "gagné",
+  "gain": 8.7
+ },
+ {
+  "cle": "match:3faca22879b6a624f3bbd039fa7d9072",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3faca22879b6a624f3bbd039fa7d9072",
+    "date": "2026-11-08T01:00:00Z",
+    "domicile": "Instituto de Córdoba",
+    "exterieur": "Newells Old Boys",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Instituto de Córdoba",
+    "cote": 1.72,
+    "proba": 0.5236,
+    "court": "1",
+    "force_p": {
+     "1": 0.579,
+     "N": 0.234,
+     "2": 0.187
+    },
+    "marche_p": {
+     "1": 0.5236,
+     "N": 0.2948,
+     "2": 0.1816
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.72,
+  "proba": 0.5236,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:db10ab093c4c8244f2b4719e11266d0b",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "db10ab093c4c8244f2b4719e11266d0b",
+    "date": "2026-11-08T04:00:00Z",
+    "domicile": "Macarthur FC",
+    "exterieur": "Brisbane Roar",
+    "championnat": "A-League",
+    "pari": "Victoire Macarthur FC",
+    "cote": 2.32,
+    "proba": 0.3852,
+    "court": "1",
+    "traits": []
+   }
+  ],
+  "cote": 2.32,
+  "proba": 0.3852,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3a487f3682da7997526f7915b150cd28",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3a487f3682da7997526f7915b150cd28",
+    "date": "2026-11-08T06:00:00Z",
+    "domicile": "Adelaide United",
+    "exterieur": "Melbourne Victory",
+    "championnat": "A-League",
+    "pari": "Victoire Melbourne Victory",
+    "cote": 2.28,
+    "proba": 0.4192,
+    "court": "2",
+    "espn": {
+     "ligue": "aus.1",
+     "id": "401892139"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.28,
+  "proba": 0.4192,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cf2febfddf729564889172cf83e8fbab",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cf2febfddf729564889172cf83e8fbab",
+    "date": "2026-11-08T10:30:00Z",
+    "domicile": "Çaykur Rizespor",
+    "exterieur": "Erzurum BB",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Çaykur Rizespor",
+    "cote": 1.88,
+    "proba": 0.4971,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888253"
+    },
+    "force_p": {
+     "1": 0.424,
+     "N": 0.261,
+     "2": 0.315
+    },
+    "marche_p": {
+     "1": 0.4971,
+     "N": 0.2627,
+     "2": 0.2402
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.88,
+  "proba": 0.4971,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:019e9d824f3f2251e5b777623d34a9df",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "019e9d824f3f2251e5b777623d34a9df",
+    "date": "2026-11-08T11:15:00Z",
+    "domicile": "Heerenveen",
+    "exterieur": "Feyenoord",
+    "championnat": "Eredivisie",
+    "pari": "Victoire Feyenoord",
+    "cote": 1.61,
+    "proba": 0.5582,
+    "court": "2",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875551"
+    },
+    "force_p": {
+     "1": 0.309,
+     "N": 0.256,
+     "2": 0.435
+    },
+    "marche_p": {
+     "1": 0.2243,
+     "N": 0.2175,
+     "2": 0.5582
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.61,
+  "proba": 0.5582,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:23bf8ea47358ef82f65aa7398a2b3921",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "23bf8ea47358ef82f65aa7398a2b3921",
+    "date": "2026-11-08T11:30:00Z",
+    "domicile": "Napoli",
+    "exterieur": "Lazio",
+    "championnat": "Serie A",
+    "pari": "Victoire Napoli",
+    "cote": 2.22,
+    "proba": 0.4105,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874810"
+    },
+    "force_p": {
+     "1": 0.444,
+     "N": 0.232,
+     "2": 0.323
+    },
+    "marche_p": {
+     "1": 0.4105,
+     "N": 0.2635,
+     "2": 0.326
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.22,
+  "proba": 0.4105,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8a92794bd5f89b8b91b2d8fefdac7b85",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8a92794bd5f89b8b91b2d8fefdac7b85",
+    "date": "2026-11-08T12:30:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Anderlecht",
+    "championnat": "Pro League",
+    "pari": "Victoire Club Brugge",
+    "cote": 1.42,
+    "proba": 0.6372,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878946"
+    },
+    "force_p": {
+     "1": 0.762,
+     "N": 0.114,
+     "2": 0.125
+    },
+    "marche_p": {
+     "1": 0.6372,
+     "N": 0.2045,
+     "2": 0.1583
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.42,
+  "proba": 0.6372,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c35673eb1e889309d6985c091a43a3f5",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c35673eb1e889309d6985c091a43a3f5",
+    "date": "2026-11-08T13:00:00Z",
+    "domicile": "Elche CF",
+    "exterieur": "Real Betis",
+    "championnat": "Liga",
+    "pari": "Victoire Real Betis",
+    "cote": 1.94,
+    "proba": 0.4703,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882814"
+    },
+    "force_p": {
+     "1": 0.308,
+     "N": 0.231,
+     "2": 0.461
+    },
+    "marche_p": {
+     "1": 0.2748,
+     "N": 0.2549,
+     "2": 0.4703
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.94,
+  "proba": 0.4703,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:6692a3ca274d09ffbfabd943320d62f5",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "6692a3ca274d09ffbfabd943320d62f5",
+    "date": "2026-11-08T13:00:00Z",
+    "domicile": "Çorum FK",
+    "exterieur": "Fenerbahce",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Fenerbahce",
+    "cote": 1.64,
+    "proba": 0.5513,
+    "court": "2",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888372"
+    },
+    "force_p": {
+     "1": 0.301,
+     "N": 0.252,
+     "2": 0.447
+    },
+    "marche_p": {
+     "1": 0.2135,
+     "N": 0.2352,
+     "2": 0.5513
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.64,
+  "proba": 0.5513,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b71f32fbba046e08d4cc26e2a8e1d5a6",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b71f32fbba046e08d4cc26e2a8e1d5a6",
+    "date": "2026-11-08T13:30:00Z",
+    "domicile": "FC Twente Enschede",
+    "exterieur": "Ajax",
+    "championnat": "Eredivisie",
+    "pari": "Victoire FC Twente Enschede",
+    "cote": 2.17,
+    "proba": 0.4409,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875550"
+    },
+    "force_p": {
+     "1": 0.473,
+     "N": 0.242,
+     "2": 0.285
+    },
+    "marche_p": {
+     "1": 0.4409,
+     "N": 0.2426,
+     "2": 0.3165
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.17,
+  "proba": 0.4409,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:4288fbe018e6e6fb223e389bcf3e57dd",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "4288fbe018e6e6fb223e389bcf3e57dd",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Rennes",
+    "exterieur": "Lille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Rennes",
+    "cote": 2.1,
+    "proba": 0.4343,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876406"
+    },
+    "force_p": {
+     "1": 0.421,
+     "N": 0.244,
+     "2": 0.336
+    },
+    "marche_p": {
+     "1": 0.4343,
+     "N": 0.2685,
+     "2": 0.2972
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4343,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:79ed3df594d7b352ef027128b1ba5d0a",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "79ed3df594d7b352ef027128b1ba5d0a",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Ipswich Town",
+    "exterieur": "Bournemouth",
+    "championnat": "Premier League",
+    "pari": "Victoire Bournemouth",
+    "cote": 1.85,
+    "proba": 0.5053,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401878759"
+    },
+    "force_p": {
+     "1": 0.342,
+     "N": 0.288,
+     "2": 0.37
+    },
+    "marche_p": {
+     "1": 0.2366,
+     "N": 0.2581,
+     "2": 0.5053
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.85,
+  "proba": 0.5053,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8e3ca98e29be84dd4a882ed05f50fa79",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8e3ca98e29be84dd4a882ed05f50fa79",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Brentford",
+    "championnat": "Premier League",
+    "pari": "Victoire Brighton and Hove Albion",
+    "cote": 1.78,
+    "proba": 0.5142,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879244"
+    },
+    "force_p": {
+     "1": 0.538,
+     "N": 0.226,
+     "2": 0.235
+    },
+    "marche_p": {
+     "1": 0.5142,
+     "N": 0.2462,
+     "2": 0.2396
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.78,
+  "proba": 0.5142,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3a4608abdf257d2a0024b944757d9dc9",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3a4608abdf257d2a0024b944757d9dc9",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Sunderland",
+    "exterieur": "Chelsea",
+    "championnat": "Premier League",
+    "pari": "Victoire Chelsea",
+    "cote": 1.85,
+    "proba": 0.483,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879239"
+    },
+    "force_p": {
+     "1": 0.334,
+     "N": 0.284,
+     "2": 0.382
+    },
+    "marche_p": {
+     "1": 0.2546,
+     "N": 0.2625,
+     "2": 0.483
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.85,
+  "proba": 0.483,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0cfbab01e152f81e34f9014e02c7eb79",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0cfbab01e152f81e34f9014e02c7eb79",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Crystal Palace",
+    "exterieur": "Liverpool",
+    "championnat": "Premier League",
+    "pari": "Victoire Liverpool",
+    "cote": 1.49,
+    "proba": 0.6145,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879243"
+    },
+    "force_p": {
+     "1": 0.262,
+     "N": 0.242,
+     "2": 0.496
+    },
+    "marche_p": {
+     "1": 0.1688,
+     "N": 0.2167,
+     "2": 0.6145
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.49,
+  "proba": 0.6145,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:7a68b099b47ed7724062b661cd9af464",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "7a68b099b47ed7724062b661cd9af464",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Genoa",
+    "exterieur": "AC Milan",
+    "championnat": "Serie A",
+    "pari": "Victoire AC Milan",
+    "cote": 1.77,
+    "proba": 0.5227,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875018"
+    },
+    "force_p": {
+     "1": 0.282,
+     "N": 0.208,
+     "2": 0.51
+    },
+    "marche_p": {
+     "1": 0.2039,
+     "N": 0.2733,
+     "2": 0.5227
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.77,
+  "proba": 0.5227,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:5ea6b7050b00fcc1832f7938794dd755",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "5ea6b7050b00fcc1832f7938794dd755",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Monza",
+    "exterieur": "Atalanta BC",
+    "championnat": "Serie A",
+    "pari": "Victoire Atalanta BC",
+    "cote": 2.0,
+    "proba": 0.4648,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874800"
+    },
+    "force_p": {
+     "1": 0.388,
+     "N": 0.253,
+     "2": 0.359
+    },
+    "marche_p": {
+     "1": 0.2868,
+     "N": 0.2484,
+     "2": 0.4648
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.4648,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c70f9f21f48464daa93973147502e183",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c70f9f21f48464daa93973147502e183",
+    "date": "2026-11-08T14:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Bayer Leverkusen",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Bayer Leverkusen",
+    "cote": 1.78,
+    "proba": 0.515,
+    "court": "2",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884738"
+    },
+    "force_p": {
+     "1": 0.277,
+     "N": 0.207,
+     "2": 0.517
+    },
+    "marche_p": {
+     "1": 0.2481,
+     "N": 0.2369,
+     "2": 0.515
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.78,
+  "proba": 0.515,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:16029fbb3d6ae79243c5650896bef095",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "16029fbb3d6ae79243c5650896bef095",
+    "date": "2026-11-08T15:00:00Z",
+    "domicile": "Gent",
+    "exterieur": "KV Kortrijk",
+    "championnat": "Pro League",
+    "pari": "Victoire Gent",
+    "cote": 1.39,
+    "proba": 0.667,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878945"
+    },
+    "force_p": {
+     "1": 0.716,
+     "N": 0.13,
+     "2": 0.153
+    },
+    "marche_p": {
+     "1": 0.667,
+     "N": 0.2068,
+     "2": 0.1262
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.39,
+  "proba": 0.667,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:339a6465fa5153fd8f31e487cf557cf0",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "339a6465fa5153fd8f31e487cf557cf0",
+    "date": "2026-11-08T15:15:00Z",
+    "domicile": "Real Sociedad",
+    "exterieur": "Rayo Vallecano",
+    "championnat": "Liga",
+    "pari": "Victoire Real Sociedad",
+    "cote": 1.68,
+    "proba": 0.5473,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882810"
+    },
+    "force_p": {
+     "1": 0.487,
+     "N": 0.221,
+     "2": 0.292
+    },
+    "marche_p": {
+     "1": 0.5473,
+     "N": 0.2323,
+     "2": 0.2204
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.68,
+  "proba": 0.5473,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9d545e362d9e690aa8e41b4ccf4d4c78",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9d545e362d9e690aa8e41b4ccf4d4c78",
+    "date": "2026-11-08T15:30:00Z",
+    "domicile": "Nacional",
+    "exterieur": "Académico de Viseu",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Académico de Viseu",
+    "cote": 2.25,
+    "proba": 0.3817,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885398"
+    },
+    "force_p": {
+     "1": 0.27,
+     "N": 0.224,
+     "2": 0.506
+    },
+    "marche_p": {
+     "1": 0.3258,
+     "N": 0.2925,
+     "2": 0.3817
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.3817,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:88fe8a3db780908444b4b21229766ad5",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "88fe8a3db780908444b4b21229766ad5",
+    "date": "2026-11-08T15:30:00Z",
+    "domicile": "Estoril",
+    "exterieur": "CS Maritimo",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Estoril",
+    "cote": 1.88,
+    "proba": 0.4523,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885400"
+    },
+    "force_p": {
+     "1": 0.378,
+     "N": 0.272,
+     "2": 0.351
+    },
+    "marche_p": {
+     "1": 0.4523,
+     "N": 0.2751,
+     "2": 0.2726
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.88,
+  "proba": 0.4523,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3145127655251c9de0251675640e2101",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3145127655251c9de0251675640e2101",
+    "date": "2026-11-08T15:30:00Z",
+    "domicile": "Santa Clara",
+    "exterieur": "Gil Vicente",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Santa Clara",
+    "cote": 2.1,
+    "proba": 0.4194,
+    "court": "1",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885396"
+    },
+    "force_p": {
+     "1": 0.488,
+     "N": 0.231,
+     "2": 0.281
+    },
+    "marche_p": {
+     "1": 0.4194,
+     "N": 0.3144,
+     "2": 0.2661
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.1,
+  "proba": 0.4194,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a85eafd97e49ac329956fa1022be891d",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a85eafd97e49ac329956fa1022be891d",
+    "date": "2026-11-08T15:30:00Z",
+    "domicile": "Alanyaspor",
+    "exterieur": "Trabzonspor",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Trabzonspor",
+    "cote": 1.61,
+    "proba": 0.5885,
+    "court": "2",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888254"
+    },
+    "force_p": {
+     "1": 0.216,
+     "N": 0.203,
+     "2": 0.58
+    },
+    "marche_p": {
+     "1": 0.1792,
+     "N": 0.2322,
+     "2": 0.5885
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.61,
+  "proba": 0.5885,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c22d673775e6a4dc0810cc88b0ed75ec",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c22d673775e6a4dc0810cc88b0ed75ec",
+    "date": "2026-11-08T15:45:00Z",
+    "domicile": "AZ Alkmaar",
+    "exterieur": "Groningen",
+    "championnat": "Eredivisie",
+    "pari": "Victoire AZ Alkmaar",
+    "cote": 1.44,
+    "proba": 0.6298,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875548"
+    },
+    "force_p": {
+     "1": 0.527,
+     "N": 0.222,
+     "2": 0.251
+    },
+    "marche_p": {
+     "1": 0.6298,
+     "N": 0.1998,
+     "2": 0.1704
+    },
+    "traits": [
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.44,
+  "proba": 0.6298,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:547e4e8cf5577a50926272e0e1a7e677",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "547e4e8cf5577a50926272e0e1a7e677",
+    "date": "2026-11-08T15:45:00Z",
+    "domicile": "SC Cambuur",
+    "exterieur": "PSV Eindhoven",
+    "championnat": "Eredivisie",
+    "pari": "Victoire PSV Eindhoven",
+    "cote": 1.33,
+    "proba": 0.6933,
+    "court": "2",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875553"
+    },
+    "force_p": {
+     "1": 0.206,
+     "N": 0.196,
+     "2": 0.597
+    },
+    "marche_p": {
+     "1": 0.1453,
+     "N": 0.1614,
+     "2": 0.6933
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.33,
+  "proba": 0.6933,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a529e5762f18d97981194ec3668dc3d3",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a529e5762f18d97981194ec3668dc3d3",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Le Mans FC",
+    "exterieur": "AS Monaco",
+    "championnat": "Ligue 1",
+    "pari": "Victoire AS Monaco",
+    "cote": 1.63,
+    "proba": 0.5683,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876408"
+    },
+    "force_p": {
+     "1": 0.336,
+     "N": 0.244,
+     "2": 0.42
+    },
+    "marche_p": {
+     "1": 0.2064,
+     "N": 0.2253,
+     "2": 0.5683
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.63,
+  "proba": 0.5683,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:54fae64b1421d836e07a17cad0536c73",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "54fae64b1421d836e07a17cad0536c73",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Angers",
+    "exterieur": "Nice",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Nice",
+    "cote": 1.96,
+    "proba": 0.4703,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876412"
+    },
+    "force_p": {
+     "1": 0.371,
+     "N": 0.262,
+     "2": 0.367
+    },
+    "marche_p": {
+     "1": 0.2651,
+     "N": 0.2646,
+     "2": 0.4703
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.96,
+  "proba": 0.4703,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cc9731ee7796fe0d532f11ca2aa522c9",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cc9731ee7796fe0d532f11ca2aa522c9",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Brest",
+    "exterieur": "Lyon",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Lyon",
+    "cote": 2.4,
+    "proba": 0.3779,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876410"
+    },
+    "force_p": {
+     "1": 0.317,
+     "N": 0.233,
+     "2": 0.449
+    },
+    "marche_p": {
+     "1": 0.3446,
+     "N": 0.2775,
+     "2": 0.3779
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3779,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3e9954446f26494c04c4967db523d375",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3e9954446f26494c04c4967db523d375",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Le Havre",
+    "exterieur": "Lorient",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Lorient",
+    "cote": 2.38,
+    "proba": 0.4017,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876409"
+    },
+    "force_p": {
+     "1": 0.329,
+     "N": 0.24,
+     "2": 0.431
+    },
+    "marche_p": {
+     "1": 0.3093,
+     "N": 0.2889,
+     "2": 0.4017
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.38,
+  "proba": 0.4017,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b0a4b5448a7e02d9ad1eaa817599fff0",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b0a4b5448a7e02d9ad1eaa817599fff0",
+    "date": "2026-11-08T16:30:00Z",
+    "domicile": "Manchester United",
+    "exterieur": "Aston Villa",
+    "championnat": "Premier League",
+    "pari": "Victoire Manchester United",
+    "cote": 2.07,
+    "proba": 0.4435,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879240"
+    },
+    "force_p": {
+     "1": 0.485,
+     "N": 0.246,
+     "2": 0.269
+    },
+    "marche_p": {
+     "1": 0.4435,
+     "N": 0.2529,
+     "2": 0.3037
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.07,
+  "proba": 0.4435,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c1b9696d88719cb8832d794b986cdd68",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c1b9696d88719cb8832d794b986cdd68",
+    "date": "2026-11-08T16:30:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "Union Berlin",
+    "championnat": "Bundesliga",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.44,
+    "proba": 0.6494,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884741"
+    },
+    "force_p": {
+     "1": 0.634,
+     "N": 0.164,
+     "2": 0.202
+    },
+    "marche_p": {
+     "1": 0.6494,
+     "N": 0.2052,
+     "2": 0.1454
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.44,
+  "proba": 0.6494,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:657fd1ac35832f65fcc6feba93970e10",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "657fd1ac35832f65fcc6feba93970e10",
+    "date": "2026-11-08T17:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Como",
+    "championnat": "Serie A",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.82,
+    "proba": 0.5007,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874808"
+    },
+    "force_p": {
+     "1": 0.566,
+     "N": 0.188,
+     "2": 0.246
+    },
+    "marche_p": {
+     "1": 0.5007,
+     "N": 0.2343,
+     "2": 0.2651
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.82,
+  "proba": 0.5007,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0d2e199bfba0db42871696c10037bad3",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0d2e199bfba0db42871696c10037bad3",
+    "date": "2026-11-08T17:30:00Z",
+    "domicile": "Celta Vigo",
+    "exterieur": "Levante",
+    "championnat": "Liga",
+    "pari": "Victoire Celta Vigo",
+    "cote": 1.82,
+    "proba": 0.517,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882815"
+    },
+    "force_p": {
+     "1": 0.529,
+     "N": 0.206,
+     "2": 0.265
+    },
+    "marche_p": {
+     "1": 0.517,
+     "N": 0.2557,
+     "2": 0.2273
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.82,
+  "proba": 0.517,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:81ad04996f63fb60b494d243b13ac586",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "81ad04996f63fb60b494d243b13ac586",
+    "date": "2026-11-08T17:30:00Z",
+    "domicile": "Villarreal",
+    "exterieur": "Getafe",
+    "championnat": "Liga",
+    "pari": "Victoire Villarreal",
+    "cote": 1.38,
+    "proba": 0.6654,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882807"
+    },
+    "force_p": {
+     "1": 0.603,
+     "N": 0.179,
+     "2": 0.218
+    },
+    "marche_p": {
+     "1": 0.6654,
+     "N": 0.2078,
+     "2": 0.1269
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.38,
+  "proba": 0.6654,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3eb376e5f313e6d8e7ca8bb6556d0b29",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3eb376e5f313e6d8e7ca8bb6556d0b29",
+    "date": "2026-11-08T17:30:00Z",
+    "domicile": "Union Saint-Gilloise",
+    "exterieur": "Genk",
+    "championnat": "Pro League",
+    "pari": "Victoire Union Saint-Gilloise",
+    "cote": 1.52,
+    "proba": 0.5986,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878943"
+    },
+    "force_p": {
+     "1": 0.731,
+     "N": 0.125,
+     "2": 0.144
+    },
+    "marche_p": {
+     "1": 0.5986,
+     "N": 0.2228,
+     "2": 0.1786
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.52,
+  "proba": 0.5986,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c468a7bc1110c030b62f381e3a480145",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c468a7bc1110c030b62f381e3a480145",
+    "date": "2026-11-08T18:00:00Z",
+    "domicile": "Vitória SC",
+    "exterieur": "FC Porto",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire FC Porto",
+    "cote": 1.52,
+    "proba": 0.6151,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885394"
+    },
+    "force_p": {
+     "1": 0.127,
+     "N": 0.142,
+     "2": 0.731
+    },
+    "marche_p": {
+     "1": 0.1659,
+     "N": 0.219,
+     "2": 0.6151
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.52,
+  "proba": 0.6151,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1fa78d1150755a8ec1d24cc1e19eeb0a",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1fa78d1150755a8ec1d24cc1e19eeb0a",
+    "date": "2026-11-08T18:00:00Z",
+    "domicile": "Besiktas JK",
+    "exterieur": "Genclerbirligi SK",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Besiktas JK",
+    "cote": 1.17,
+    "proba": 0.8009,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888251"
+    },
+    "force_p": {
+     "1": 0.697,
+     "N": 0.16,
+     "2": 0.143
+    },
+    "marche_p": {
+     "1": 0.8009,
+     "N": 0.1266,
+     "2": 0.0725
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.17,
+  "proba": 0.8009,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:fceade9430abcb824182a6aa031880db",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "fceade9430abcb824182a6aa031880db",
+    "date": "2026-11-08T18:15:00Z",
+    "domicile": "Sint Truiden",
+    "exterieur": "SV Zulte-Waregem",
+    "championnat": "Pro League",
+    "pari": "Victoire Sint Truiden",
+    "cote": 1.7,
+    "proba": 0.5294,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878944"
+    },
+    "force_p": {
+     "1": 0.536,
+     "N": 0.196,
+     "2": 0.268
+    },
+    "marche_p": {
+     "1": 0.5294,
+     "N": 0.2374,
+     "2": 0.2331
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.7,
+  "proba": 0.5294,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8963081c3457212ee238b498bbc33a03",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8963081c3457212ee238b498bbc33a03",
+    "date": "2026-11-08T18:30:00Z",
+    "domicile": "TSG Hoffenheim",
+    "exterieur": "FC Schalke 04",
+    "championnat": "Bundesliga",
+    "pari": "Victoire TSG Hoffenheim",
+    "cote": 1.6,
+    "proba": 0.5937,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884742"
+    },
+    "force_p": {
+     "1": 0.564,
+     "N": 0.189,
+     "2": 0.247
+    },
+    "marche_p": {
+     "1": 0.5937,
+     "N": 0.2167,
+     "2": 0.1896
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.6,
+  "proba": 0.5937,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bf796f8b2085a46e0be2b6c6ece5c340",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bf796f8b2085a46e0be2b6c6ece5c340",
+    "date": "2026-11-08T19:00:00Z",
+    "domicile": "FC Utrecht",
+    "exterieur": "NEC Nijmegen",
+    "championnat": "Eredivisie",
+    "pari": "Victoire FC Utrecht",
+    "cote": 2.38,
+    "proba": 0.3866,
+    "court": "1",
+    "espn": {
+     "ligue": "ned.1",
+     "id": "401875549"
+    },
+    "force_p": {
+     "1": 0.424,
+     "N": 0.26,
+     "2": 0.316
+    },
+    "marche_p": {
+     "1": 0.3866,
+     "N": 0.2477,
+     "2": 0.3657
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.38,
+  "proba": 0.3866,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:4e917e19b59093a02a0e12bcf9a5ecc4",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "4e917e19b59093a02a0e12bcf9a5ecc4",
+    "date": "2026-11-08T19:45:00Z",
+    "domicile": "RC Lens",
+    "exterieur": "Marseille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire RC Lens",
+    "cote": 2.2,
+    "proba": 0.4134,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876404"
+    },
+    "force_p": {
+     "1": 0.531,
+     "N": 0.203,
+     "2": 0.266
+    },
+    "marche_p": {
+     "1": 0.4134,
+     "N": 0.2496,
+     "2": 0.337
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.2,
+  "proba": 0.4134,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:7f50eb7deaebfbcd45c3f4e7cd3724e4",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "7f50eb7deaebfbcd45c3f4e7cd3724e4",
+    "date": "2026-11-08T19:45:00Z",
+    "domicile": "Fiorentina",
+    "exterieur": "Juventus",
+    "championnat": "Serie A",
+    "pari": "Victoire Juventus",
+    "cote": 2.02,
+    "proba": 0.4482,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875003"
+    },
+    "force_p": {
+     "1": 0.305,
+     "N": 0.222,
+     "2": 0.473
+    },
+    "marche_p": {
+     "1": 0.2788,
+     "N": 0.273,
+     "2": 0.4482
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.02,
+  "proba": 0.4482,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:dd247b356d8fc53e4b4f9bfcfe09c924",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "dd247b356d8fc53e4b4f9bfcfe09c924",
+    "date": "2026-11-08T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Barcelona",
+    "championnat": "Liga",
+    "pari": "Victoire Barcelona",
+    "cote": 1.73,
+    "proba": 0.512,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882816"
+    },
+    "force_p": {
+     "1": 0.289,
+     "N": 0.22,
+     "2": 0.492
+    },
+    "marche_p": {
+     "1": 0.2648,
+     "N": 0.2232,
+     "2": 0.512
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.73,
+  "proba": 0.512,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c02a3d0a40d536e48bb60dffe0e3cd1e",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c02a3d0a40d536e48bb60dffe0e3cd1e",
+    "date": "2026-11-08T20:30:00Z",
+    "domicile": "CF Estrela",
+    "exterieur": "Benfica",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Benfica",
+    "cote": 1.16,
+    "proba": 0.7856,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885401"
+    },
+    "force_p": {
+     "1": 0.116,
+     "N": 0.135,
+     "2": 0.749
+    },
+    "marche_p": {
+     "1": 0.0805,
+     "N": 0.1339,
+     "2": 0.7856
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.16,
+  "proba": 0.7856,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3642cddab8c2e0da43a419cdd01d1db0",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3642cddab8c2e0da43a419cdd01d1db0",
+    "date": "2026-11-08T20:30:00Z",
+    "domicile": "Rio Ave FC",
+    "exterieur": "Braga",
+    "championnat": "Liga Portugal",
+    "pari": "Victoire Braga",
+    "cote": 1.45,
+    "proba": 0.6234,
+    "court": "2",
+    "espn": {
+     "ligue": "por.1",
+     "id": "401885397"
+    },
+    "force_p": {
+     "1": 0.246,
+     "N": 0.211,
+     "2": 0.543
+    },
+    "marche_p": {
+     "1": 0.1562,
+     "N": 0.2204,
+     "2": 0.6234
+    },
+    "traits": [
+     "exterieur",
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.45,
+  "proba": 0.6234,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a0bd5663efc354e1a58ea639f6f3d572",
+  "jour": "2026-11-08",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a0bd5663efc354e1a58ea639f6f3d572",
+    "date": "2026-11-08T22:30:00Z",
+    "domicile": "Central Córdoba",
+    "exterieur": "Lanus",
+    "championnat": "Liga Argentina",
+    "pari": "Victoire Lanus",
+    "cote": 1.58,
+    "proba": 0.5701,
+    "court": "2",
+    "espn": {
+     "ligue": "arg.1",
+     "id": "401841668"
+    },
+    "force_p": {
+     "1": 0.23,
+     "N": 0.259,
+     "2": 0.511
+    },
+    "marche_p": {
+     "1": 0.1681,
+     "N": 0.2619,
+     "2": 0.5701
+    },
+    "traits": [
+     "exterieur",
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.58,
+  "proba": 0.5701,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-08",
+  "jour": "2026-11-08",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "16029fbb3d6ae79243c5650896bef095",
+    "date": "2026-11-08T15:00:00Z",
+    "domicile": "Gent",
+    "exterieur": "KV Kortrijk",
+    "championnat": "Pro League",
+    "pari": "Victoire Gent",
+    "cote": 1.39,
+    "proba": 0.667,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878945"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "c1b9696d88719cb8832d794b986cdd68",
+    "date": "2026-11-08T16:30:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "Union Berlin",
+    "championnat": "Bundesliga",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.42,
+    "proba": 0.6494,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884741"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.97,
+  "proba": 0.4332,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-08",
+  "jour": "2026-11-08",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "c1b9696d88719cb8832d794b986cdd68",
+    "date": "2026-11-08T16:30:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "Union Berlin",
+    "championnat": "Bundesliga",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.44,
+    "proba": 0.6494,
+    "court": "1",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884741"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "c70f9f21f48464daa93973147502e183",
+    "date": "2026-11-08T14:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Bayer Leverkusen",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Bayer Leverkusen",
+    "cote": 1.78,
+    "proba": 0.515,
+    "court": "2",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884738"
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.56,
+  "proba": 0.3345,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-08",
+  "jour": "2026-11-08",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "4288fbe018e6e6fb223e389bcf3e57dd",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Rennes",
+    "exterieur": "Lille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Rennes",
+    "cote": 2.1,
+    "proba": 0.4343,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876406"
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "54fae64b1421d836e07a17cad0536c73",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Angers",
+    "exterieur": "Nice",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Nice",
+    "cote": 1.95,
+    "proba": 0.4703,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876412"
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "piege",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "657fd1ac35832f65fcc6feba93970e10",
+    "date": "2026-11-08T17:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Como",
+    "championnat": "Serie A",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.82,
+    "proba": 0.5007,
+    "court": "1",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874808"
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 7.45,
+  "proba": 0.1023,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-08:2",
+  "jour": "2026-11-08",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "8e3ca98e29be84dd4a882ed05f50fa79",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Brentford",
+    "championnat": "Premier League",
+    "pari": "Victoire Brighton and Hove Albion",
+    "cote": 1.77,
+    "proba": 0.5142,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879244"
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "4e917e19b59093a02a0e12bcf9a5ecc4",
+    "date": "2026-11-08T19:45:00Z",
+    "domicile": "RC Lens",
+    "exterieur": "Marseille",
+    "championnat": "Ligue 1",
+    "pari": "Victoire RC Lens",
+    "cote": 2.12,
+    "proba": 0.4134,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876404"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "3a487f3682da7997526f7915b150cd28",
+    "date": "2026-11-08T06:00:00Z",
+    "domicile": "Adelaide United",
+    "exterieur": "Melbourne Victory",
+    "championnat": "A-League",
+    "pari": "Victoire Melbourne Victory",
+    "cote": 2.28,
+    "proba": 0.4192,
+    "court": "2",
+    "espn": {
+     "ligue": "aus.1",
+     "id": "401892139"
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 8.56,
+  "proba": 0.0891,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-08:3",
+  "jour": "2026-11-08",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "3a4608abdf257d2a0024b944757d9dc9",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Sunderland",
+    "exterieur": "Chelsea",
+    "championnat": "Premier League",
+    "pari": "Victoire Chelsea",
+    "cote": 1.83,
+    "proba": 0.483,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.1",
+     "id": "401879239"
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "fceade9430abcb824182a6aa031880db",
+    "date": "2026-11-08T18:15:00Z",
+    "domicile": "Sint Truiden",
+    "exterieur": "SV Zulte-Waregem",
+    "championnat": "Pro League",
+    "pari": "Victoire Sint Truiden",
+    "cote": 1.7,
+    "proba": 0.5294,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878944"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "3e9954446f26494c04c4967db523d375",
+    "date": "2026-11-08T16:15:00Z",
+    "domicile": "Le Havre",
+    "exterieur": "Lorient",
+    "championnat": "Ligue 1",
+    "pari": "Victoire Lorient",
+    "cote": 2.38,
+    "proba": 0.4017,
+    "court": "2",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876409"
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 7.4,
+  "proba": 0.1027,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-08",
+  "jour": "2026-11-08",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "1fa78d1150755a8ec1d24cc1e19eeb0a",
+    "date": "2026-11-08T18:00:00Z",
+    "domicile": "Besiktas JK",
+    "exterieur": "Genclerbirligi SK",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Besiktas JK",
+    "cote": 1.17,
+    "proba": 0.8009,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888251"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "3faca22879b6a624f3bbd039fa7d9072",
+    "date": "2026-11-08T01:00:00Z",
+    "domicile": "Instituto de Córdoba",
+    "exterieur": "Newells Old Boys",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6525,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "657fd1ac35832f65fcc6feba93970e10",
+    "date": "2026-11-08T17:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Como",
+    "championnat": "Serie A",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6514,
+    "marche": "btts",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874808"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.08,
+  "proba": 0.3405,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-08",
+  "jour": "2026-11-08",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "8a92794bd5f89b8b91b2d8fefdac7b85",
+    "date": "2026-11-08T12:30:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Anderlecht",
+    "championnat": "Pro League",
+    "pari": "Victoire Club Brugge",
+    "cote": 1.42,
+    "proba": 0.6372,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878946"
+    },
+    "traits": [
+     "doute_ia",
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "fceade9430abcb824182a6aa031880db",
+    "date": "2026-11-08T18:15:00Z",
+    "domicile": "Sint Truiden",
+    "exterieur": "SV Zulte-Waregem",
+    "championnat": "Pro League",
+    "pari": "Victoire Sint Truiden",
+    "cote": 1.7,
+    "proba": 0.5294,
+    "court": "1",
+    "espn": {
+     "ligue": "bel.1",
+     "id": "401878944"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "1fa78d1150755a8ec1d24cc1e19eeb0a",
+    "date": "2026-11-08T18:00:00Z",
+    "domicile": "Besiktas JK",
+    "exterieur": "Genclerbirligi SK",
+    "championnat": "Süper Lig",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7087,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888251"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "3faca22879b6a624f3bbd039fa7d9072",
+    "date": "2026-11-08T01:00:00Z",
+    "domicile": "Instituto de Córdoba",
+    "exterieur": "Newells Old Boys",
+    "championnat": "Liga Argentina",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6525,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 6.73,
+  "proba": 0.156,
+  "estime": true,
+  "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0

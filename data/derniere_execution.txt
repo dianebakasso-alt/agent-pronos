@@ -1,21 +1,18 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
     🎟️ Combinés : +49% de rendement sur 26 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 0 championnat(s) aujourd'hui (416 crédits restants ce mois-ci)
-    0 championnats retenus
+    quota cotes : 12 championnat(s) aujourd'hui (416 crédits restants ce mois-ci)
+    12 championnats retenus
 3/4 Récupération des cotes…
-    66 matchs repris du cache (cotes d'un passage précédent)
-    66 matchs analysés, 0 value bets
+    48 matchs analysés, 1 value bets
     Forme et stats des équipes…
-    direct : 66 matchs reliés aux scores en direct
-    fatigue : 25 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 132 équipes trouvées, 0 manquées
-    force : 66 matchs notés · pièges : 39 favoris en alerte
+    direct : 46 matchs reliés aux scores en direct
+    fatigue : 22 matchs avec une équipe qui joue en Europe à 3 jours
+    stats : 92 équipes trouvées, 0 manquées
+    force : 46 matchs notés · pièges : 31 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.938, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
-    autopsies gratuites : 8
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.943, 'btts': 1.021, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Portugal']
+    autopsies gratuites : 19
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
-  ! IA verdicts (paquet 2) : plafond IA du jour atteint (0.23 €)
-    combinés refaits avec 24 avis de l'IA
+    combinés refaits avec 12 avis de l'IA
 Site généré : site/index.html

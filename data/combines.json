@@ -1021,5 +1021,37 @@
     "ok": true
    }
   ]
+ },
+ {
+  "jour": "2026-11-08",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.76,
+  "proba": 0.231,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "cf2febfddf729564889172cf83e8fbab",
+    "sport_key": "soccer_turkey_super_league",
+    "date": "2026-11-08T10:30:00Z",
+    "domicile": "Çaykur Rizespor",
+    "exterieur": "Erzurum BB",
+    "pari": "Victoire Çaykur Rizespor",
+    "court": "1",
+    "cote": 1.88
+   },
+   {
+    "id": "5ea6b7050b00fcc1832f7938794dd755",
+    "sport_key": "soccer_italy_serie_a",
+    "date": "2026-11-08T14:00:00Z",
+    "domicile": "Monza",
+    "exterieur": "Atalanta BC",
+    "pari": "Victoire Atalanta BC",
+    "court": "2",
+    "cote": 2.0
+   }
+  ]
  }
 ]

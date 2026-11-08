@@ -1,125 +1,65 @@
 {
- "jour": "2026-11-07",
+ "jour": "2026-11-08",
  "v": {
-  "a3dad1ddaa98a6ff741be7f63250f2ee": {
+  "cf2febfddf729564889172cf83e8fbab": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Eyüpspor (18e, une seule victoire en 10 matchs) est en crise et privé de Giordano et İlter, mais Kocaelispor perd aussi Petkovic, Zoukrou et Haidara. À 1.86, la cote implique environ 48 % après marge contre 44 % pour le modèle : il n'y a pas de valeur."
+   "raison": "Rizespor, 13e, reçoit sans avoir gagné à domicile dans ses 5 derniers matchs (NDDDD), et trois titulaires (Alikulov, Sagnan, Bozdoğan) sont absents. Erzurum n'a gagné qu'1 match sur 5 à l'extérieur, donc la cote 1.88 surestime Rizespor sans qu'un autre pari ne présente un avantage net."
   },
-  "5c87852253fd11eea5d34ad723356607": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Leeds (12e) marque peu (0.4 but par match sur les 5 derniers) avec Stach et Okafor incertains et Calvert-Lewin à surveiller, tandis que Tottenham enchaîne 3 victoires malgré l'absence de Mudryk, Savio et Bergvall. L'écart modèle (53 %) contre marché (environ 34 %) est énorme, et l'Elo de Tottenham ("
-  },
-  "89fe6860f3058526dd227dc27efd902a": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Dickie et Adebayo reviennent côté Bristol, McLean et Mattsson côté Norwich, qui enchaîne 3 victoires alors que Bristol a perdu ses 3 derniers matchs à domicile. Mais après marge, les cotes (environ 38 % Norwich, 35 % Bristol) collent au modèle (37 % et 35 %) : aucun avantage net, match équilibré."
-  },
-  "605767f0e7114a23442d92831c12c767": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Samsunspor n'a gagné aucun de ses 5 derniers matchs à domicile et encaisse 3 buts par match, Konyaspor n'a pas gagné à l'extérieur récemment. Je n'ai trouvé aucune actu blessés ou suspensions fiable pour ce match, et l'avantage du modèle (environ 3 points) ne compense pas une forme domicile aussi ma"
-  },
-  "52b256088d29b4abb82e0c63ea9852fe": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Cagliari est en crise (4 défaites de suite) et doit faire sans Obert (suspendu), Nzola, Fadera, Mina et d'autres blessés. Frosinone marque beaucoup et perd peu, mais il gagne rarement à l'extérieur et perd son meilleur buteur Raimondo ; la cote 2.32 (environ 39 % après marge) reste en dessous des 46"
-  },
-  "463c2870517b0ad28afcbd8775287064": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Je n'ai trouvé aucune actu blessés ni forme spécifique pour ce match, ma recherche n'ayant pas abouti. Cardiff a gagné 3 fois à domicile sur ses 5 derniers matchs et Burnley ne gagne presque jamais loin (1 victoire en 5) ; la cote 2.00 (environ 45 % après marge) est inférieure aux 52 % du modèle, ma"
-  },
-  "d3d9ff50bb0abd6e9215bd4b9b507644": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Westerlo est privé de Laalaoui (suspendu) et Keita (suspendu après un carton rouge), et Charleroi n'a plus Marcq ni Nkuba. Le 2 à 2.10 implique environ 48 %, alors que l'Elo ne donne que 37 % à Charleroi : pas de valeur, et le 1 à 2.85 n'offre pas non plus d'avantage net."
-  },
-  "813cc4970b2dcab8457490a332fb5a6c": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Bologna est favori à 1.81 (environ 55 % implicite) pour une équipe en forme, et Parma marque 0.8 but par match avec trois défaites sur ses cinq derniers. Le 1 à 4.20 paraît surévalué par l'Elo, mais la faiblesse offensive de Parma et son absence défensive (Valenti) ne le justifient pas."
-  },
-  "077e9bfa253514e27bdae1ce5956c78e": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Derby mendocino très équilibré : l'historique est à égalité et les deux équipes marquent 0.6 but par match. L'Elo donne 36 % au Gimnasia contre environ 31 % implicite, un écart trop mince pour un pari, et le nul à 2.70 est sous-évalué par l'Elo (32 %)."
-  },
-  "b34ca990cb7daf96d0a96dc33f609250": {
-   "verdict": "jouer",
-   "pari": "1",
-   "raison": "Pau est invaincu sur cinq matchs avec 2.4 buts marqués par match et seulement 1.0 encaissé, alors que Nantes gagne rarement en déplacement (1 victoire sur 5). Nantes sera privé de deux défenseurs centraux (Sow, Hachem) en plus de Mirbach et Tati, et l'Elo donne 52 % à Pau contre environ 34 % implici"
-  },
-  "f110107bca066ac1a598c89661c88fa3": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Roma est à 1.26 (environ 79 % implicite), exactement l'estimation Elo : aucune valeur, et le gain serait minime. Roma a aussi perdu 3-2 à Manchester United après avoir mené 2-0 et reste privée de Pellegrini, Koné, Dybala, Svilar et Gollini ; Sassuolo, lui, reste sur une série noire, ce qui ne suffit"
-  },
-  "4dbcec00debc1a175148bdb6824e14b3": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Je n'ai trouvé aucune actualité fiable (blessés, compositions) pour ce match, faute de recherches disponibles. Sur les stats seules, Argentinos est invaincu sur cinq matchs, Huracán a perdu quatre de ses cinq derniers et n'a marqué que 0.4 but par match ; l'Elo (62 % contre environ 54 % implicite à "
-  },
-  "3903e98a54db0f2cc23095407fe9dad8": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Newcastle est amputé de Joelinton (blessé), Ramsey (suspendu), Livramento et Jaouen, avec Miley et Fernandez-Pardo incertains, mais Fulham n'a que Cairney absent et l'équipe de Newcastle a perdu 3 de ses 5 derniers matchs. Fulham gagne peu à domicile (VDDNV) : le 1 à 1.92 n'a pas d'avantage net, et "
-  },
-  "82688a32b0049a0c66b2e56309b6b67b": {
-   "verdict": "jouer",
-   "pari": "1",
-   "raison": "Birmingham est invaincu à domicile en championnat, 3e du classement, avec une attaque en forme (2.6 buts marqués par match sur sa série) et une défense solide (0.4 encaissé). Swansea a perdu 3 de ses 5 derniers matchs et doit se passer de Burgess, Welsh, Eustáquio et Pereira ; Priske reste incertain"
-  },
-  "e1b2a10bfd51e1716202de92f585f502": {
+  "23bf8ea47358ef82f65aa7398a2b3921": {
    "verdict": "jouer",
    "pari": "2",
-   "raison": "Charlton a perdu ses 4 derniers matchs, est 21e et encaisse 2.2 buts par match à domicile ; il se dit lui-même « fragile ». Sheffield United, invaincu sur 4 matchs, récupère Kalvin Phillips et marque 1.6 but par match, ce qui justifie le 2 à 1.96 malgré la cote modeste."
+   "raison": "Napoli est 10e, a perdu à Porto en Ligue des champions et est privé de huit joueurs (dont le capitaine Di Lorenzo, Lobotka, Buongiorno, Spinazzola), avec des défenseurs latéraux blessés. Lazio enchaîne les victoires (VVVVV, 3,2 buts marqués par match) et la cote 2.85 laisse une marge, même si Zaccag"
   },
-  "b990dcb534c9019a2846d11c7d879030": {
+  "8a92794bd5f89b8b91b2d8fefdac7b85": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "West Brom est invaincu sur 5 matchs et Millwall ne gagne presque jamais à l'extérieur (1 victoire sur 5), avec Crama et Leonard absents. Doute réel : Campbell est forfait côté West Brom, Millwall n'a jamais perdu contre West Brom sur les 10 dernières confrontations (7 victoires, 3 nuls), et les Bagg"
+   "raison": "Bruges est invaincu à domicile (VVVVV) avec une défense solide (1,2 but encaissé par match), mais la cote 1.42 implique environ 70 % de réussite et n'offre aucune marge. Le derby, la fatigue d'Anderlecht (match européen récent) et la présence d'Aasgaard, de retour à l'entraînement, rendent le pari f"
   },
-  "e300554369b00b495db88afb743c95ab": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Galatasaray est le grand favori, mais la cote de 1.35 ne laisse presque aucune valeur. Osimhen, son meilleur buteur, est forfait après une opération au genou, et Bardakci est suspendu, alors qu'Amed SK enchaîne 8 victoires consécutives en championnat."
-  },
-  "c7ad58db2278db2259846b11c28ae1c2": {
+  "4288fbe018e6e6fb223e389bcf3e57dd": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Je n'ai pas trouvé d'actualité blessés ou suspendus pour ce match, donc je n'ai pas pu vérifier les compositions. Sur les stats seules, Goztepe est invaincu sur 5 matchs (NVVVV) et Basaksehir ne gagne presque jamais à l'extérieur (1 victoire sur 5), mais Goztepe reste modeste à domicile (VDDNV) ; pa"
+   "raison": "Rennes est invaincu à domicile en Ligue 1 cette saison (4 victoires, 1 nul) mais encaisse 2,8 buts par match et Lepaul est incertain. Lille, 2e du championnat, a des absences (Tiago Santos, Igamane) mais une défense solide, et les sources divergent sur sa forme à l'extérieur, donc le 1 à 2.10 reste "
   },
-  "04613aa3de9a46ad5d2e37776c78cbb7": {
+  "8e3ca98e29be84dd4a882ed05f50fa79": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Brighton, avec la meilleure défense du lot (0,4 but encaissé par match), reçoit Brentford, qui n'a toujours pas gagné à l'extérieur cette saison (4 nuls) et sans Henry, Dasilva, Furo et Carvalho. Mais Brighton est privé de Mitoma, Ferguson et Tzimas, et a joué en Europe jeudi, donc la cote 1.78 n'es"
+  },
+  "0cfbab01e152f81e34f9014e02c7eb79": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Match sans avantage net : Leuven (invaincu sur 5, mais sans Verstraete suspendu ni Verlinden blessé) affronte Malines, qui compte environ sept absents (Ayodele, Hjelde, St Jago, Struyf, Vanrafelghem, Boersma, Salifou) mais enchaîne les succès selon une source. Les sources sur la forme se contredisen"
+   "raison": "Je n'ai pas pu récupérer d'actualité fiable sur ce match (la recherche a échoué), donc je n'ai ni blessés, ni forme confirmée à vérifier. Liverpool à 1.49 est un favori à petite cote, Palace est en série noire et a joué en Europe, donc je ne joue pas ce match sans info."
   },
-  "716d6e3f3e91c47a6efaa2e93d570533": {
+  "5ea6b7050b00fcc1832f7938794dd755": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Monza est en crise (4 défaites en 5 matchs), mais Atalanta est aussi très touchée : Hien, Bellanova, Gaetano, Kristensen et Kossounou sont forfaits, selon Sports Mole et Mediapronos. Atalanta arrive fatiguée par l'Europe et gagne rarement à l'extérieur, donc le 2 à 2.00 ne montre pas d'avantage net."
+  },
+  "54fae64b1421d836e07a17cad0536c73": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Stuttgart (9 points, 11e, trois défaites sur ses cinq derniers) reçoit un Brême invaincu sur cinq matchs et en bonne santé offensive avec Füllkrug, alors que le 1,61 surestime le VfB. Le doute reste réel : Brême ne gagne qu'une fois sur cinq en déplacement, et Karazor est incertain côté stuttgartois"
+   "raison": "Nice affiche une forme solide (4 victoires en 5 matchs de L1 selon Dailysports) et Angers est privé d'El Ouazzani, de Diatta et doute avec Pona. Le doute vient de la défense de Nice (7 buts encaissés en 5 matchs selon TopMercato) et de ses faibles résultats à l'extérieur dans vos stats (1 victoire e"
   },
-  "cb1988f7950962d316571dd0ed98b540": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Saint-Étienne, leader de Ligue 2 et invaincu à domicile, reçoit Laval, lanterne rouge privée de trois joueurs dont deux attaquants (Dago notamment) et qui n'a gagné aucun de ses cinq derniers déplacements. Mais l'ASSE sort d'une défaite 3-0 à Guingamp, et à 1,30 la cote ne laisse presque aucune marg"
-  },
-  "55129ba3a50af7761828c774c793385a": {
+  "b0a4b5448a7e02d9ad1eaa817599fff0": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Anvers (12e, quatre défaites sur cinq, 2,4 buts encaissés par match récemment) reçoit Lommel (8e, invaincu sur quatre matchs de championnat après un 2-0 contre Gand), donc le 1,76 surestime les Anversois. Les indicateurs (xG 1,39 contre 1,03) donnent un léger avantage local sans suffire à justifier "
+   "raison": "Manchester United est privé de Baleba, Sesko, Ugarte, Shaw et de Lisandro Martínez suspendu, et sa défense encaisse souvent (au moins 2 buts dans 3 de ses 4 derniers matchs à domicile). Aston Villa reste sans défaite en championnat mais est privé d'Onana, Ruggeri et Cash suspendu, et les pronostics "
   },
-  "f7b240389fa5ec055c58a48ab153dcdd": {
+  "657fd1ac35832f65fcc6feba93970e10": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Le PSG (dix victoires consécutives) reçoit Troyes, qui a perdu trois de ses cinq derniers matchs et gagné une fois sur quatre hors de chez lui. Mais six absents (Hakimi au repos, Akliouche, Dembélé, Kvaratskhelia, Marquinhos, Mendes) et une rotation probable rendent le gain faible à 1,10, avec peu d"
+   "raison": "Inter est très solide à domicile (5 victoires en 5 matchs de Serie A) et Como, qui n'a jamais battu Inter depuis sa remontée, est privé de Kean, Addai, Diao et Chalobah, ce qui limite sa rotation. Inter joue toutefois l'Europe trois jours avant, Lautaro et Luis Henrique sont absents, et une cote de "
   },
-  "c9e285d98525711130aa5801e9634657": {
+  "1fa78d1150755a8ec1d24cc1e19eeb0a": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Je n'ai pas pu vérifier l'actu (blessés, rotation) de ce match, faute de recherche disponible pour lui. Boca (cinq victoires à domicile) est favori à 1,32, une cote trop basse pour un pari sans info vérifiée, et Defensa y Justicia reste un adversaire solide en déplacement."
+   "raison": "Beşiktaş est très fort à domicile mais n'a gagné qu'une fois sur ses 5 derniers matchs toutes compétitions confondues selon Eagle Media, et il joue l'Europe trois jours avant. La cote de 1.17 offre une marge quasi nulle pour un risque réel, donc le pari 1 n'a pas de valeur."
+  },
+  "7f50eb7deaebfbcd45c3f4e7cd3724e4": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai trouvé aucune actualité fiable (blessés, suspendus, forme récente) pour Fiorentina et Juventus, la recherche n'ayant pas abouti pour ce match. Juventus joue l'Europe trois jours avant, et sans information je ne vois pas d'avantage justifiant un pari sur les cotes proposées."
   }
  }
 }
