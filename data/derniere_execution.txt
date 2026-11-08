@@ -13,7 +13,7 @@
     force : 44 matchs notés · pièges : 30 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.929, 'btts': 0.987, 'pas_btts': 1.011} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    autopsies gratuites : 1
+    autopsies gratuites : 0
 4/4 Vérification des infos et avis d'experts par l'IA…
   ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
   ! IA verdicts (paquet 2) : plafond IA du jour atteint (0.23 €)
