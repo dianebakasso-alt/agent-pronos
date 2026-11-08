@@ -11,12 +11,14 @@ Principe :
        - l'IA confirme l'équipe choisie                   → +0,3
   3. Sous la note limite (`prudence_note_min`, 7 par défaut), le match est marqué « trop risqué ».
      Si l'IA dit d'éviter le match, il est aussi marqué « trop risqué », quelle que soit sa note.
+     Une cote sous `prudence_cote_min` (1,15 par défaut) est écartée : le gain ne couvre pas le risque.
   4. La cote : la plupart des bookmakers proposent la double chance. L'agent n'a que les cotes 1N2,
      il donne donc la cote juste et la cote « maison » obtenue en partageant la mise entre
      les deux issues chez le même bookmaker (même résultat qu'une double chance).
 """
 
 NOTE_MIN = 7.0
+COTE_MIN = 1.15   # en dessous, le gain ne vaut pas le risque (à 1,05 il faut gagner 20 fois pour couvrir 1 perte)
 
 
 def _cote_maison(cotes_bk, a, b):
@@ -43,7 +45,7 @@ def _cotes_dc(cotes_bk, a, b):
     return out
 
 
-def analyser(m, note_min=NOTE_MIN):
+def analyser(m, note_min=NOTE_MIN, cote_min=COTE_MIN):
     """Le pari prudent d'un match, ou None si les probabilités manquent."""
     p = {i["court"]: i["proba"] for i in m.get("issues", [])}
     if not all(k in p for k in ("1", "N", "2")):
@@ -79,13 +81,17 @@ def analyser(m, note_min=NOTE_MIN):
     note = max(0.0, min(10.0, round(note, 1)))
 
     maison = _cote_maison(cote_f, choix["equipe"], "N")
+    cote_ok = not maison or maison["cote"] >= cote_min
+    if not cote_ok:
+        raisons.insert(0, f"cote trop basse ({maison['cote']:.2f}) : même gagné, le pari ne rapporte presque rien")
     return {
         "id": m["id"], "debut": m["debut"], "domicile": m["domicile"], "exterieur": m["exterieur"],
         "sport_key": m.get("sport_key"), "championnat": m.get("championnat"),
         "court": choix["court"], "equipe": choix["equipe"],
         "issue": f"Nul ou {choix['nom']}",
         "proba": choix["proba"], "proba_autre": autre["proba"], "issue_autre": f"Nul ou {autre['nom']}",
-        "note": note, "jouable": note >= note_min and v.get("verdict") != "eviter",
+        "note": note, "jouable": note >= note_min and v.get("verdict") != "eviter" and cote_ok,
+        "cote_ok": cote_ok,
         "cote_juste": 1 / choix["proba"],
         "cote": maison["cote"] if maison else None,
         "bookmaker": maison["bookmaker"] if maison else None,
@@ -99,7 +105,8 @@ def analyser(m, note_min=NOTE_MIN):
 def du_jour(analyses, cfg):
     """Tous les matchs encore à jouer, du plus sûr au moins sûr."""
     note_min = float(cfg.get("prudence_note_min", NOTE_MIN))
-    res = [r for r in (analyser(m, note_min) for m in analyses if not m.get("deja_commence")) if r]
+    cote_min = float(cfg.get("prudence_cote_min", COTE_MIN))
+    res = [r for r in (analyser(m, note_min, cote_min) for m in analyses if not m.get("deja_commence")) if r]
     # à note égale, la meilleure cote (celle qui perd le moins de valeur) passe devant
     return sorted(res, key=lambda r: (-r["note"], -(r["edge"] if r["edge"] is not None else -1), r["debut"]))
 
@@ -143,12 +150,12 @@ def _prod(xs):
     return t
 
 
-GROS_COTE_MIN, GROS_COTE_MAX = 3.0, 8.0
+GROS_COTE_MIN, GROS_COTE_MAX = 2.5, 8.0
 
 
 def gros_combine(picks):
-    """Le gros combiné prudence : 3 à 6 doubles chances pour une cote d'au moins 3.
+    """Le gros combiné prudence : 3 à 8 doubles chances pour une cote d'au moins 2,5.
 
     Même règle que le combiné prudent (un seul bookmaker, le plus de chances possible),
     mais avec une grosse cote : il passera bien moins souvent (environ 1 fois sur 4 ou 5)."""
-    return combine(picks, n_max=6, cote_min=GROS_COTE_MIN, cote_max=GROS_COTE_MAX, vivier=10, proba_min=0.12, n_min=3)
+    return combine(picks, n_max=8, cote_min=GROS_COTE_MIN, cote_max=GROS_COTE_MAX, vivier=12, proba_min=0.10, n_min=3)
