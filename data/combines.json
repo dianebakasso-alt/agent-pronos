@@ -994,8 +994,8 @@
   "proba": 0.262,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 23.5,
   "jambes": [
    {
     "id": "813cc4970b2dcab8457490a332fb5a6c",
@@ -1005,7 +1005,10 @@
     "exterieur": "Bologna",
     "pari": "Victoire Bologna",
     "court": "2",
-    "cote": 1.81
+    "cote": 1.81,
+    "res": "2",
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "a3dad1ddaa98a6ff741be7f63250f2ee",

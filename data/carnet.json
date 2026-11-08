@@ -46399,21 +46399,21 @@
   "cat": "gros",
   "jambes": [
    {
-    "id": "8e3ca98e29be84dd4a882ed05f50fa79",
-    "date": "2026-11-08T14:00:00Z",
-    "domicile": "Brighton and Hove Albion",
-    "exterieur": "Brentford",
-    "championnat": "Premier League",
-    "pari": "Victoire Brighton and Hove Albion",
-    "cote": 1.77,
-    "proba": 0.5142,
-    "court": "1",
+    "id": "7f50eb7deaebfbcd45c3f4e7cd3724e4",
+    "date": "2026-11-08T19:45:00Z",
+    "domicile": "Fiorentina",
+    "exterieur": "Juventus",
+    "championnat": "Serie A",
+    "pari": "Victoire Juventus",
+    "cote": 2.0,
+    "proba": 0.4482,
+    "court": "2",
     "espn": {
-     "ligue": "eng.1",
-     "id": "401879244"
+     "ligue": "ita.1",
+     "id": "401875003"
     },
     "traits": [
-     "doute_ia",
+     "exterieur",
      "piege",
      "force_pour"
     ]
@@ -46455,8 +46455,8 @@
     ]
    }
   ],
-  "cote": 8.56,
-  "proba": 0.0891,
+  "cote": 9.67,
+  "proba": 0.0777,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -46468,25 +46468,6 @@
   "jour": "2026-11-08",
   "cat": "gros",
   "jambes": [
-   {
-    "id": "3a4608abdf257d2a0024b944757d9dc9",
-    "date": "2026-11-08T14:00:00Z",
-    "domicile": "Sunderland",
-    "exterieur": "Chelsea",
-    "championnat": "Premier League",
-    "pari": "Victoire Chelsea",
-    "cote": 1.83,
-    "proba": 0.483,
-    "court": "2",
-    "espn": {
-     "ligue": "eng.1",
-     "id": "401879239"
-    },
-    "traits": [
-     "exterieur",
-     "force_contre"
-    ]
-   },
    {
     "id": "fceade9430abcb824182a6aa031880db",
     "date": "2026-11-08T18:15:00Z",
@@ -46524,10 +46505,30 @@
      "exterieur",
      "force_pour"
     ]
+   },
+   {
+    "id": "c70f9f21f48464daa93973147502e183",
+    "date": "2026-11-08T14:30:00Z",
+    "domicile": "1. FC Köln",
+    "exterieur": "Bayer Leverkusen",
+    "championnat": "Bundesliga",
+    "pari": "Victoire Bayer Leverkusen",
+    "cote": 1.75,
+    "proba": 0.515,
+    "court": "2",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884738"
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
    }
   ],
-  "cote": 7.4,
-  "proba": 0.1027,
+  "cote": 7.08,
+  "proba": 0.1095,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -46561,20 +46562,6 @@
     ]
    },
    {
-    "id": "3faca22879b6a624f3bbd039fa7d9072",
-    "date": "2026-11-08T01:00:00Z",
-    "domicile": "Instituto de Córdoba",
-    "exterieur": "Newells Old Boys",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.6525,
-    "marche": "pas_btts",
-    "traits": [
-     "buts_moins"
-    ]
-   },
-   {
     "id": "657fd1ac35832f65fcc6feba93970e10",
     "date": "2026-11-08T17:00:00Z",
     "domicile": "Inter Milan",
@@ -46582,7 +46569,7 @@
     "championnat": "Serie A",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6514,
+    "proba": 0.6297,
     "marche": "btts",
     "espn": {
      "ligue": "ita.1",
@@ -46591,10 +46578,28 @@
     "traits": [
      "buts_plus"
     ]
+   },
+   {
+    "id": "4e917e19b59093a02a0e12bcf9a5ecc4",
+    "date": "2026-11-08T19:45:00Z",
+    "domicile": "RC Lens",
+    "exterieur": "Marseille",
+    "championnat": "Ligue 1",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6201,
+    "marche": "btts",
+    "espn": {
+     "ligue": "fra.1",
+     "id": "401876404"
+    },
+    "traits": [
+     "buts_plus"
+    ]
    }
   ],
-  "cote": 3.08,
-  "proba": 0.3405,
+  "cote": 3.36,
+  "proba": 0.3128,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -46653,7 +46658,7 @@
     "championnat": "Süper Lig",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7087,
+    "proba": 0.6982,
     "marche": "plus25",
     "espn": {
      "ligue": "tur.1",
@@ -46664,22 +46669,26 @@
     ]
    },
    {
-    "id": "3faca22879b6a624f3bbd039fa7d9072",
-    "date": "2026-11-08T01:00:00Z",
-    "domicile": "Instituto de Córdoba",
-    "exterieur": "Newells Old Boys",
-    "championnat": "Liga Argentina",
-    "pari": "Les 2 ne marquent pas",
+    "id": "657fd1ac35832f65fcc6feba93970e10",
+    "date": "2026-11-08T17:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Como",
+    "championnat": "Serie A",
+    "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6525,
-    "marche": "pas_btts",
+    "proba": 0.6297,
+    "marche": "btts",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401874808"
+    },
     "traits": [
-     "buts_moins"
+     "buts_plus"
     ]
    }
   ],
-  "cote": 6.73,
-  "proba": 0.156,
+  "cote": 7.08,
+  "proba": 0.1483,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
