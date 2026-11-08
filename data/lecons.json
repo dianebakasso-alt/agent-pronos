@@ -6464,5 +6464,22 @@
   ],
   "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
   "source": "espn"
+ },
+ {
+  "date": "2026-11-08",
+  "match": "Adelaide United - Melbourne Victory",
+  "pari": "Victoire Melbourne Victory",
+  "cote": 2.28,
+  "proba": 0.4192,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 19-7, cadrés 8-2, possession 58-42 %). Adelaide United a été plus dangereux (8 tirs cadrés contre 2); but décisif de Adelaide United à la 90e.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "malchance"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
  }
 ]
