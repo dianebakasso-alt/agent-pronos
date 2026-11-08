@@ -944,6 +944,7 @@ def main():
         j["pronos"] = {a["id"]: selection.avis_match(a) for a in j["analyses"]}
         j["prudence"] = prudence.du_jour(j["analyses"], cfg)   # IA prudence : nul ou équipe, noté sur 10
         j["prudence_combi"] = prudence.combine(j["prudence"])   # 2 doubles chances chez un seul bookmaker
+        j["prudence_gros"] = prudence.gros_combine(j["prudence"])   # grosse cote : 3 à 6 doubles chances
     if not demo:
         (DATA / "selection.json").write_text(json.dumps(sel, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -967,6 +968,7 @@ def main():
                                  "cote": f["cote"], "proba": f["proba"]}, analyses, maintenant)
         expert.noter_prudence(carnet, auj, jours[0].get("prudence") or [], analyses, maintenant)
         expert.noter_ticket(carnet, f"prudence_combi:{auj}", "prudence_combi", auj, jours[0].get("prudence_combi"), analyses, maintenant)
+        expert.noter_ticket(carnet, f"prudence_gros:{auj}", "prudence_gros", auj, jours[0].get("prudence_gros"), analyses, maintenant)
         autopsie.enrichir(carnet, analyses)
         (DATA / "lecons.json").write_text(json.dumps(lecons, ensure_ascii=False, indent=1), encoding="utf-8")
         (DATA / "carnet.json").write_text(json.dumps(carnet, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -1005,6 +1007,7 @@ def main():
         "prudence_calib": expert.calib_prudence(carnet),
         "prudence_pause": en_pause.get("prudence"),
         "prudence_combi_pause": en_pause.get("prudence_combi"),
+        "prudence_gros_pause": en_pause.get("prudence_gros"),
         "ia": ia,
         "combines": combines,
         "bilan_combines": bilan_combines(combines),

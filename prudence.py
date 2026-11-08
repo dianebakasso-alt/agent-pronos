@@ -107,7 +107,7 @@ def du_jour(analyses, cfg):
 COMBI_COTE_MIN, COMBI_COTE_MAX = 1.40, 2.20
 
 
-def combine(picks, n_max=3, cote_min=COMBI_COTE_MIN, cote_max=COMBI_COTE_MAX, vivier=6, proba_min=0.5):
+def combine(picks, n_max=3, cote_min=COMBI_COTE_MIN, cote_max=COMBI_COTE_MAX, vivier=6, proba_min=0.5, n_min=2):
     """Le combiné prudent : 2 (ou 3) doubles chances bien notées, chez un seul bookmaker.
 
     On essaie toutes les paires (puis les trios) parmi les meilleurs paris jouables et on garde
@@ -116,7 +116,7 @@ def combine(picks, n_max=3, cote_min=COMBI_COTE_MIN, cote_max=COMBI_COTE_MAX, vi
     from itertools import combinations
     bons = [r for r in picks if r.get("jouable") and r.get("cotes_dc")][:vivier]
     best = None
-    for n in range(2, n_max + 1):
+    for n in range(n_min, n_max + 1):
         for jb in combinations(bons, n):
             communs = set.intersection(*(set(r["cotes_dc"]) for r in jb))
             if not communs:
@@ -141,3 +141,14 @@ def _prod(xs):
     for x in xs:
         t *= x
     return t
+
+
+GROS_COTE_MIN, GROS_COTE_MAX = 3.0, 8.0
+
+
+def gros_combine(picks):
+    """Le gros combiné prudence : 3 à 6 doubles chances pour une cote d'au moins 3.
+
+    Même règle que le combiné prudent (un seul bookmaker, le plus de chances possible),
+    mais avec une grosse cote : il passera bien moins souvent (environ 1 fois sur 4 ou 5)."""
+    return combine(picks, n_max=6, cote_min=GROS_COTE_MIN, cote_max=GROS_COTE_MAX, vivier=10, proba_min=0.12, n_min=3)

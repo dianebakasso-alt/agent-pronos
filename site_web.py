@@ -621,7 +621,7 @@ def _bilan_prudence(calib, pause):
     return f'<div class="pr-bilan"><div class="ex-t">📒 Bilan réel · {tot}</div><ul>{lignes}</ul>{alerte}</div>'
 
 
-def carte_prudence_combi(c, pause=None, bilan=None):
+def carte_prudence_combi(c, pause=None, bilan=None, titre="🧱 Le combiné prudent", gros=False):
     """Le combiné prudent : 2 doubles chances chez un seul bookmaker."""
     if not c:
         return ""
@@ -633,8 +633,8 @@ def carte_prudence_combi(c, pause=None, bilan=None):
            f' · rendement {b["roi"] * 100:+.1f} %</small>'.replace(".", ",") if b.get("n") and b.get("roi") is not None else "")
     stop = ('<p class="pr-al">⛔ En pause : ce combiné perd sur la durée. Il reste suivi en fictif.</p>' if pause else "")
     return f"""
-  <div class="pr-combi{' risque' if pause else ''}">
-    <div class="ex-t">🧱 Le combiné prudent <small>· {len(c["jambes"])} doubles chances chez {e(c["bookmaker"])}</small></div>
+  <div class="pr-combi{' risque' if pause else ''}{' pr-gros' if gros else ''}">
+    <div class="ex-t">{titre} <small>· {len(c["jambes"])} doubles chances chez {e(c["bookmaker"])}</small></div>
     <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
       <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>
     <ul class="jambes">{jambes}</ul>
@@ -642,11 +642,13 @@ def carte_prudence_combi(c, pause=None, bilan=None):
       <div class="cote"><div class="lbl">Cote</div><div class="num">{c["cote"]:.2f}</div></div></div>
     <small class="pr-s">Joue-le en double chance seulement si ton bookmaker affiche au moins <b>{c["cote"] * 0.97:.2f}</b>.
       Sur 10 tickets comme celui-ci, environ {round(c["proba"] * 10)} passent. {"💎 Bon prix." if c["edge"] >= 0 else ""}</small>
+    {'<small class="pr-r">🎲 Grosse cote = gros risque : mise petit, ce ticket perd le plus souvent.</small>' if gros else ''}
     {bil}{stop}
   </div>"""
 
 
-def section_prudence(lst, quand, note_min=7, calib=None, pause=None, combi=None, combi_pause=None, combi_bilan=None):
+def section_prudence(lst, quand, note_min=7, calib=None, pause=None, combi=None, combi_pause=None, combi_bilan=None,
+                     gros=None, gros_pause=None, gros_bilan=None):
     """IA prudence : « nul ou équipe », chaque match noté sur 10."""
     if not lst:
         return ""
@@ -683,6 +685,7 @@ def section_prudence(lst, quand, note_min=7, calib=None, pause=None, combi=None,
   <p class="note">La note = les chances que le pari passe (8/10 ≈ 80 %), corrigée par l'actu, les alertes piège et la fatigue.
   <b>{tete}</b> Même à 8/10, le pari perd environ 1 fois sur 5.</p>
   {carte_prudence_combi(combi, combi_pause, combi_bilan)}
+  {carte_prudence_combi(gros, gros_pause, gros_bilan, "🚀 Le gros combiné prudence", gros=True)}
   <ul class="pr-l">{lignes}</ul>
   {_bilan_prudence(calib, pause)}
 </section>"""
@@ -1098,7 +1101,8 @@ def generer(chemin, analyses, values, historique, b, infos, combos=None):
         corps += f"""<div class="jour-corps" data-jour="{j["cle"]}"{'' if k == 0 else ' hidden'}>
 {tkj}
 {section_prudence(j.get("prudence") or [], j["quand"], infos.get("prudence_note_min", 7), infos.get("prudence_calib"), infos.get("prudence_pause"),
-                 j.get("prudence_combi"), infos.get("prudence_combi_pause"), ((infos.get("expert") or {}).get("par_cat") or {}).get("prudence_combi"))}
+                 j.get("prudence_combi"), infos.get("prudence_combi_pause"), ((infos.get("expert") or {}).get("par_cat") or {}).get("prudence_combi"),
+                 j.get("prudence_gros"), infos.get("prudence_gros_pause"), ((infos.get("expert") or {}).get("par_cat") or {}).get("prudence_gros"))}
 {liste_avis(j)}
 <h2>🎟️ Combinés d'experts <small>résultats, buts ou mixte · un seul bookmaker par ticket</small></h2>
 {combos_j}
@@ -1813,6 +1817,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 .pr-off {{ opacity:.6; }}
 .pr-combi {{ margin-top:12px; padding:12px; border-radius:14px; background:var(--surface2); }}
 .pr-combi .jambes {{ margin-top:8px; }}
+.pr-gros {{ border:1px solid var(--warn); }}
 .pr-combi.risque {{ opacity:.7; }}
 .pr-v {{ color:var(--ok)!important; font-weight:600; }}
 .pr-bilan {{ margin-top:12px; padding-top:12px; border-top:1px solid var(--line); }}
