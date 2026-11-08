@@ -673,7 +673,7 @@ def section_prudence(lst, quand, note_min=7, calib=None, pause=None, combi=None,
         <div class="pr-t"><b>{e(r["issue"])}</b>
           <small>{e(r["domicile"])} – {e(r["exterieur"])} · {_quand(r["debut"])} · {pct(r["proba"])} de chances</small>
           <div class="pr-bar"><span style="width:{round(r['note'] * 10)}%"></span><i style="left:{round(note_min * 10)}%"></i></div>
-          {'' if r['jouable'] else '<small class="pr-r">⛔ Trop risqué : ' + ('sous la note limite' if r['note'] < note_min else "l'IA dit d'éviter") + '</small>'}{raisons}{conseil}</div>
+          {'' if r['jouable'] else '<small class="pr-r">⛔ Trop risqué : ' + ('sous la note limite' if r['note'] < note_min else 'cote trop basse' if not r.get('cote_ok', True) else "l'IA dit d'éviter") + '</small>'}{raisons}{conseil}</div>
         {cote}
       </li>"""
     nm = f"{note_min:g}".replace(".", ",")
