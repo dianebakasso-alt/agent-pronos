@@ -33,6 +33,16 @@ def _cote_maison(cotes_bk, a, b):
     return best
 
 
+def _cotes_dc(cotes_bk, a, b):
+    """{bookmaker: cote double chance « maison »} pour chaque bookmaker jouable."""
+    out = {}
+    for v in (cotes_bk or {}).values():
+        ca, cb = v.get(a), v.get(b)
+        if ca and cb and ca > 1 and cb > 1:
+            out[v["titre"]] = 1 / (1 / ca + 1 / cb)
+    return out
+
+
 def analyser(m, note_min=NOTE_MIN):
     """Le pari prudent d'un match, ou None si les probabilités manquent."""
     p = {i["court"]: i["proba"] for i in m.get("issues", [])}
@@ -82,6 +92,7 @@ def analyser(m, note_min=NOTE_MIN):
         "part_equipe": maison["part_a"] if maison else None,
         "edge": choix["proba"] * maison["cote"] - 1 if maison else None,   # > 0 : la cote paie plus que le risque
         "raisons": raisons,
+        "cotes_dc": _cotes_dc(cote_f, choix["equipe"], "N"),
     }
 
 
@@ -91,3 +102,42 @@ def du_jour(analyses, cfg):
     res = [r for r in (analyser(m, note_min) for m in analyses if not m.get("deja_commence")) if r]
     # à note égale, la meilleure cote (celle qui perd le moins de valeur) passe devant
     return sorted(res, key=lambda r: (-r["note"], -(r["edge"] if r["edge"] is not None else -1), r["debut"]))
+
+
+COMBI_COTE_MIN, COMBI_COTE_MAX = 1.40, 2.20
+
+
+def combine(picks, n_max=3, cote_min=COMBI_COTE_MIN, cote_max=COMBI_COTE_MAX, vivier=6, proba_min=0.5):
+    """Le combiné prudent : 2 (ou 3) doubles chances bien notées, chez un seul bookmaker.
+
+    On essaie toutes les paires (puis les trios) parmi les meilleurs paris jouables et on garde
+    celui qui a le plus de chances de passer, avec une cote entre 1,40 et 2,20 et au moins 50 % de chances.
+    Les matchs sont supposés indépendants : chances du ticket = produit des chances."""
+    from itertools import combinations
+    bons = [r for r in picks if r.get("jouable") and r.get("cotes_dc")][:vivier]
+    best = None
+    for n in range(2, n_max + 1):
+        for jb in combinations(bons, n):
+            communs = set.intersection(*(set(r["cotes_dc"]) for r in jb))
+            if not communs:
+                continue
+            bk = max(communs, key=lambda b: _prod(r["cotes_dc"][b] for r in jb))
+            cote = _prod(r["cotes_dc"][bk] for r in jb)
+            proba = _prod(r["proba"] for r in jb)
+            if not (cote_min <= cote <= cote_max) or proba < proba_min:
+                continue
+            cle = (proba, cote)
+            if not best or cle > (best["proba"], best["cote"]):
+                best = {"jambes": [dict(r, cote_t=r["cotes_dc"][bk]) for r in jb], "bookmaker": bk,
+                        "cote": cote, "proba": proba, "note": round(min(10.0, proba * 10), 1),
+                        "edge": proba * cote - 1}
+        if best:   # un ticket à 2 matchs suffit : on n'ajoute un 3e match que si aucune paire ne convient
+            break
+    return best
+
+
+def _prod(xs):
+    t = 1.0
+    for x in xs:
+        t *= x
+    return t

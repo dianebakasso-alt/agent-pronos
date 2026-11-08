@@ -27,6 +27,7 @@ CATEGORIES = {
     "rebond": ("🔄", "Rebond"),
     "foule": ("🎯", "Contre la foule"),
     "prudence": ("🛡️", "IA prudence (nul ou équipe)"),
+    "prudence_combi": ("🧱", "Combiné IA prudence"),
 }
 SEUIL_JUGER = 50  # en dessous, c'est trop tôt pour conclure
 
