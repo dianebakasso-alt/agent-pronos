@@ -1,142 +1,5 @@
 [
  {
-  "date": "2026-10-14",
-  "match": "Viking FK - Bayern Munich",
-  "pari": "Victoire Bayern Munich",
-  "cote": 1.1,
-  "proba": 0.869,
-  "score": "3-3",
-  "pourquoi": "Le Bayern a encaissé très tôt sur corner (2e) puis sur une contre-attaque éclair (38e). Il a ensuite remonté à 3-2 grâce à Kane (penalty et tête) et Díaz, mais Olise a été expulsé (74e) pour un second jaune et Viking a égalisé à la 90e sur une perte de balle.",
-  "previsible": "en partie",
-  "signal_rate": "Le Bayern avait déjà concédé un but très tôt le samedi précédent à Augsbourg. Les rapports d'avant-match insistaient sur le danger des coups de pied arrêtés de Viking, et le Bayern défendait de façon passive. Le terrain synthétique et un déplacement en Norvège étaient aussi des facteurs de risque.",
-  "tags": [
-   "defense_fragile",
-   "carton_rouge",
-   "penalty",
-   "favori_surcote"
-  ],
-  "lecon": "Une cote très basse (1.1) ne laisse aucune marge face à un adversaire dangereux sur coups de pied arrêtés, surtout si le favori a déjà montré des failles défensives à ses derniers matchs, et un seul carton rouge peut faire perdre un match que l'on contrôle."
- },
- {
-  "date": "2026-10-14",
-  "match": "Inter Milan - Club Brugge",
-  "pari": "Victoire Inter Milan",
-  "cote": 1.22,
-  "proba": 0.7712,
-  "score": "3-4",
-  "pourquoi": "Bruges a ouvert le score sur un penalty provoqué par Çalhanoğlu (30'), puis a puni la ligne haute de l'Inter en contre. Tresoldi a signé un triplé, dont un but né d'un malentendu Akanji-Martínez, et Vermant a marqué en contre à 87'. Le match a été ouvert (xG 3,93 contre 4,26, 12 tirs cadrés contre 8) et l'Inter, avec ses 2 buts de Lautaro et celui de Bonny dans les arrêts de jeu, a trop concédé pour s'imposer.",
-  "previsible": "en partie",
-  "signal_rate": "L'Inter restait sur 3 défaites de suite en Ligue des champions avant ce match (la 4e est arrivée ici). Elle enchaînait les contre-performances en Europe, avec une défense fébrile et un pressing haut qui laissait des espaces. Une cote de 1.22 (77 %) surestimait donc un favori en méforme.",
-  "tags": [
-   "favori_surcote",
-   "defense_fragile",
-   "penalty"
-  ],
-  "lecon": "Une cote très basse sur un favori en série de défaites, avec une défense qui concède beaucoup d'occasions et joue haut, est souvent surévaluée, car un adversaire organisé qui joue en contre peut le battre même sans dominer."
- },
- {
-  "date": "2026-10-14",
-  "match": "Wolverhampton Wanderers - Bolton Wanderers",
-  "pari": "Victoire Wolverhampton Wanderers",
-  "cote": 1.36,
-  "proba": 0.6879,
-  "score": "1-3",
-  "pourquoi": "Wolves a dominé la possession (58 %) et le xG (2,21 contre 1,55 selon ESPN), mais a perdu 1-3 face à une équipe de Bolton plus tranchante. Bolton a ouvert le score après une main molle de Jose Sa (28'), Wolves a égalisé à la 50', puis a encaissé deux buts en fin de match : Dalby de près (72') et Sheehan d'une frappe lointaine sur coup de pied arrêté (82'). Sky Sports juge l'ouverture du score de Bolton méritée, car les visiteurs avaient déjà eu des occasions franches avant le but.",
-  "previsible": "en partie",
-  "signal_rate": "Une cote de 1.36 (69 %) laissait peu de marge à un match piégeux à domicile contre un adversaire pourtant plus faible au classement (Bolton : 10 pts, 3V-1N-5D). Wolves avait gagné tous ses matchs à domicile jusque-là, mais le marché a probablement surestimé la série. Le gardien de Wolves était fragile et le match s'est joué sur peu d'actions, ce qui augmente la variance.",
-  "tags": [
-   "malchance",
-   "attaque_inefficace",
-   "defense_fragile",
-   "favori_surcote"
-  ],
-  "lecon": "Un favori à cote basse (~1.35) perd régulièrement même s'il domine les statistiques, car une erreur individuelle et l'efficacité de l'adversaire suffisent à faire basculer un match, donc la valeur est rarement du côté du favori dans ces cas-là."
- },
- {
-  "date": "2026-10-14",
-  "match": "Burnley - Charlton Athletic",
-  "pari": "Victoire Burnley",
-  "cote": 1.59,
-  "proba": 0.587,
-  "score": "2-2",
-  "pourquoi": "Burnley menait 1-0 puis 2-1 (but de Ramazani à la 57e) mais a concédé l'égalisation de Mesik à la 96e minute, après un but de Ramsay dès le retour des vestiaires. Charlton a dominé les statistiques de qualité d'occasions (xG ≈ 2,1 contre ≈ 1,1 pour Burnley, 4 grosses occasions contre 1), donc le nul n'est pas un pur accident.",
-  "previsible": "en partie",
-  "signal_rate": "Burnley restait sur 360 jours sans victoire en championnat à domicile, était privé d'Amdouni (blessé) et venait d'enchaîner après un déplacement à Watford. Le marché (59 %) surestimait donc probablement un favori sans solidité à domicile, face à un Charlton compact et dangereux sur coups de pied arrêtés et longs ballons.",
-  "tags": [
-   "favori_surcote",
-   "defense_fragile",
-   "malchance",
-   "blessure"
-  ],
-  "lecon": "Un favori à cote basse qui n'a plus gagné à domicile depuis longtemps et qui perd un attaquant clé est souvent surcoté, et une avance d'un but reste fragile quand l'adversaire crée plus d'occasions."
- },
- {
-  "date": "2026-11-06",
-  "match": "Benfica - Alverca",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7893,
-  "score": "1-0",
-  "pourquoi": "Benfica a dominé la possession (environ 65 %) mais a très peu tiré : 0-0 à la mi-temps face à un Alverca regroupé en bloc bas, avec seulement 13 tirs au total selon les statistiques disponibles. Le seul but est venu d'un penalty de Pavlidis à la 51e minute, obtenu après l'entrée d'Echeverri, et le match est resté fermé ensuite.",
-  "previsible": "en partie",
-  "signal_rate": "Benfica jouait contre une équipe en milieu/bas de tableau qui défendait bas, et son attaque avait déjà eu du mal à créer en début de match ; une équipe qui domine sans tirer beaucoup ne fait pas forcément plus de 2 buts.",
-  "tags": [
-   "attaque_inefficace",
-   "penalty",
-   "favori_surcote"
-  ],
-  "lecon": "Une cote de plus de 2,5 buts à 79 % doit être revue quand le favori affronte un bloc bas et que le total de buts dépend d'un ou deux événements ponctuels comme un penalty."
- },
- {
-  "date": "2026-11-06",
-  "match": "Modena - Mantova",
-  "pari": "Victoire Modena",
-  "cote": 2.05,
-  "proba": 0.4584,
-  "score": "1-1",
-  "pourquoi": "Modena a ouvert le score à la 52e minute par Belotti, puis a reculé et laissé Mantova dominer la dernière demi-heure. Une erreur de Chichizola vers la 81e minute et un coup de tête de Spinaccè sur corner à la 84e ont fait basculer le match en faveur du pari perdu, Modena n'ayant pas su conserver son avantage.",
-  "previsible": "en partie",
-  "signal_rate": "Modena encaissait en moyenne environ un but par match cette saison, avec une défense perméable sur les balles arrêtées et les fins de match, ce qui était visible avant la rencontre.",
-  "tags": [
-   "defense_fragile"
-  ],
-  "lecon": "Une cote de victoire basée sur l'attaque d'une équipe doit être révisée si sa défense encaisse régulièrement, surtout sur coups de pied arrêtés et en fin de match."
- },
- {
-  "date": "2026-11-06",
-  "match": "Bodo/Glimt - Vålerenga",
-  "pari": "Victoire Bodo/Glimt",
-  "cote": 1.13,
-  "proba": 0.8289,
-  "score": "0-1",
-  "pourquoi": "Bodø/Glimt a dominé le match (environ 69 % de possession et 26 tirs contre 13 selon ysscores), mais il n'a pas converti ses occasions : Vålerenga a gagné sur une action isolée, un centre de Grundetjern repris par Haren à la 65e minute, et Glimt a gâché plusieurs grosses occasions. Le club revenait aussi d'un match de Ligue des champions à Naples quatre jours plus tôt (défaite 4-3), sans carton rouge ni penalty signalé.",
-  "previsible": "en partie",
-  "signal_rate": "Glimt jouait trois jours après un déplacement européen à Naples (défaite 4-3) et sa cote de 1.13 ne laissait presque aucune marge à une baisse de réussite devant le but.",
-  "tags": [
-   "attaque_inefficace",
-   "malchance",
-   "favori_surcote"
-  ],
-  "lecon": "Une domination nette en possession et en tirs ne garantit pas la victoire : quand la cote est très basse, il faut vérifier l'efficacité offensive récente et la charge de matchs avant de miser."
- },
- {
-  "date": "2026-11-06",
-  "match": "Feyenoord Rotterdam - Fortuna Sittard",
-  "pari": "Victoire Feyenoord Rotterdam",
-  "cote": 1.14,
-  "proba": 0.826,
-  "score": "1-1",
-  "pourquoi": "Score 1-1 (tirs 15-11, cadrés 6-3, possession 69-31 %). but décisif de Fortuna Sittard à la 86e.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote",
-   "malchance"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
   "date": "2026-11-06",
   "match": "Djurgården - Örgryte IS",
   "pari": "Victoire Djurgården",
@@ -6478,6 +6341,289 @@
   "tags": [
    "favori_surcote",
    "malchance"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Club Brugge - Anderlecht",
+  "pari": "Victoire Club Brugge",
+  "cote": 1.42,
+  "proba": 0.6372,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 24-7, cadrés 8-1, possession 67-33 %). Club Brugge a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Inter Milan - Como",
+  "pari": "Les 2 équipes marquent",
+  "cote": null,
+  "proba": 0.6297,
+  "score": "2-0",
+  "pourquoi": "Score 2-0 (tirs 14-5, cadrés 4-1, possession 43-57 %). match fermé : seulement 5 tirs cadrés au total.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace"
+  ],
+  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Central Córdoba - Lanus",
+  "pari": "Victoire Lanus",
+  "cote": 1.58,
+  "proba": 0.5701,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 9-23, cadrés 2-4, possession 40-60 %). Lanus a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Le Mans FC - AS Monaco",
+  "pari": "Victoire AS Monaco",
+  "cote": 1.63,
+  "proba": 0.5683,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 19-5, cadrés 5-3, possession 48-52 %). Le Mans FC a été plus dangereux (5 tirs cadrés contre 3); but décisif de Le Mans FC à la 90e.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "malchance"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Heerenveen - Feyenoord",
+  "pari": "Victoire Feyenoord",
+  "cote": 1.61,
+  "proba": 0.5582,
+  "score": "5-3",
+  "pourquoi": "Score 5-3 (tirs 18-9, cadrés 9-3, possession 50-50 %). Heerenveen a été plus dangereux (9 tirs cadrés contre 3).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Celta Vigo - Levante",
+  "pari": "Victoire Celta Vigo",
+  "cote": 1.82,
+  "proba": 0.517,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 23-6, cadrés 8-0, possession 59-41 %). Celta Vigo a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Sunderland - Chelsea",
+  "pari": "Victoire Chelsea",
+  "cote": 1.85,
+  "proba": 0.483,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 9-10, cadrés 2-4, possession 31-69 %). Sunderland a marqué sur penalty.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Fiorentina - Juventus",
+  "pari": "Victoire Juventus",
+  "cote": 2.02,
+  "proba": 0.4482,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 22-18, cadrés 6-6, possession 41-59 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Manchester United - Aston Villa",
+  "pari": "Victoire Manchester United",
+  "cote": 2.07,
+  "proba": 0.4435,
+  "score": "4-4",
+  "pourquoi": "Score 4-4 (tirs 26-12, cadrés 9-6, possession 56-44 %). Aston Villa a marqué sur penalty; Manchester United a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance",
+   "penalty"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "FC Twente Enschede - Ajax",
+  "pari": "Victoire FC Twente Enschede",
+  "cote": 2.17,
+  "proba": 0.4409,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 22-6, cadrés 5-2, possession 56-44 %). FC Twente Enschede a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Rennes - Lille",
+  "pari": "Victoire Rennes",
+  "cote": 2.1,
+  "proba": 0.4343,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 15-8, cadrés 2-3, possession 56-44 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Santa Clara - Gil Vicente",
+  "pari": "Victoire Santa Clara",
+  "cote": 2.1,
+  "proba": 0.4194,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 9-20, cadrés 0-4, possession 54-46 %). Santa Clara a pris un carton rouge à la 62e; Gil Vicente a été plus dangereux (4 tirs cadrés contre 0).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "carton_rouge",
+   "favori_surcote"
+  ],
+  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "RC Lens - Marseille",
+  "pari": "Victoire RC Lens",
+  "cote": 2.2,
+  "proba": 0.4134,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 13-16, cadrés 6-5, possession 41-59 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Napoli - Lazio",
+  "pari": "Victoire Napoli",
+  "cote": 2.22,
+  "proba": 0.4105,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 15-15, cadrés 6-6, possession 49-51 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "FC Utrecht - NEC Nijmegen",
+  "pari": "Victoire FC Utrecht",
+  "cote": 2.38,
+  "proba": 0.3866,
+  "score": "2-3",
+  "pourquoi": "Score 2-3 (tirs 16-16, cadrés 5-7, possession 50-50 %). NEC Nijmegen a été plus dangereux (7 tirs cadrés contre 5).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Nacional - Académico de Viseu",
+  "pari": "Victoire Académico de Viseu",
+  "cote": 2.25,
+  "proba": 0.3817,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 19-11, cadrés 6-6, possession 51-49 %). but décisif de Nacional à la 86e.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "malchance"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-09",
+  "match": "Brest - Lyon",
+  "pari": "Victoire Lyon",
+  "cote": 2.4,
+  "proba": 0.3779,
+  "score": "2-0",
+  "pourquoi": "Score 2-0 (tirs 13-10, cadrés 6-2, possession 31-69 %). Brest a marqué sur penalty; Brest a été plus dangereux (6 tirs cadrés contre 2).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
   ],
   "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
   "source": "espn"

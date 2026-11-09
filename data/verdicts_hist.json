@@ -610,5 +610,56 @@
    "N": 3.4,
    "2": 2.02
   }
+ },
+ "a878bfc5e7eae6808debf217c23c93f5": {
+  "jour": "2026-11-09",
+  "domicile": "Kristiansund BK",
+  "exterieur": "Vålerenga",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3363,
+   "N": 0.2333,
+   "2": 0.4304
+  },
+  "cotes": {
+   "1": 2.6,
+   "N": 3.75,
+   "2": 2.12
+  }
+ },
+ "7bfc2afc162934f011a8425159e340da": {
+  "jour": "2026-11-09",
+  "domicile": "Las Palmas",
+  "exterieur": "CD Eldense",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4724,
+   "N": 0.2668,
+   "2": 0.2608
+  },
+  "cotes": {
+   "1": 1.9,
+   "N": 3.32,
+   "2": 3.3
+  }
+ },
+ "f52b83a74c511828f6155889d751d191": {
+  "jour": "2026-11-09",
+  "domicile": "Sabadell FC",
+  "exterieur": "Real Sociedad B",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5479,
+   "N": 0.2601,
+   "2": 0.192
+  },
+  "cotes": {
+   "1": 1.65,
+   "N": 3.45,
+   "2": 4.5
+  }
  }
 }

@@ -1056,5 +1056,37 @@
     "cote": 2.0
    }
   ]
+ },
+ {
+  "jour": "2026-11-09",
+  "bookmaker": "Winamax (FR)",
+  "cote": 3.12,
+  "proba": 0.2589,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "7bfc2afc162934f011a8425159e340da",
+    "sport_key": "soccer_spain_segunda_division",
+    "date": "2026-11-09T19:30:00Z",
+    "domicile": "Las Palmas",
+    "exterieur": "CD Eldense",
+    "pari": "Victoire Las Palmas",
+    "court": "1",
+    "cote": 1.9
+   },
+   {
+    "id": "f52b83a74c511828f6155889d751d191",
+    "sport_key": "soccer_spain_segunda_division",
+    "date": "2026-11-09T19:30:00Z",
+    "domicile": "Sabadell FC",
+    "exterieur": "Real Sociedad B",
+    "pari": "Victoire Sabadell FC",
+    "court": "1",
+    "cote": 1.64
+   }
+  ]
  }
 ]

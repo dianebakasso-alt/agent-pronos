@@ -1,55 +1,20 @@
 {
- "jour": "2026-11-08",
+ "jour": "2026-11-09",
  "v": {
-  "cf2febfddf729564889172cf83e8fbab": {
+  "a878bfc5e7eae6808debf217c23c93f5": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Rizespor, 13e, reçoit sans avoir gagné à domicile dans ses 5 derniers matchs (NDDDD), et trois titulaires (Alikulov, Sagnan, Bozdoğan) sont absents. Erzurum n'a gagné qu'1 match sur 5 à l'extérieur, donc la cote 1.88 surestime Rizespor sans qu'un autre pari ne présente un avantage net."
+   "raison": "Le match a été reporté suite à une épidémie dans le groupe de Vålerenga, et le club jouera lundi sans effectif complet, quelques joueurs étant seulement en convalescence. Kristiansund joue sa survie (il ne devance que Start au classement) et sa motivation est maximale. Avec cette incertitude sur les"
   },
-  "23bf8ea47358ef82f65aa7398a2b3921": {
-   "verdict": "jouer",
-   "pari": "2",
-   "raison": "Napoli est 10e, a perdu à Porto en Ligue des champions et est privé de huit joueurs (dont le capitaine Di Lorenzo, Lobotka, Buongiorno, Spinazzola), avec des défenseurs latéraux blessés. Lazio enchaîne les victoires (VVVVV, 3,2 buts marqués par match) et la cote 2.85 laisse une marge, même si Zaccag"
-  },
-  "8a92794bd5f89b8b91b2d8fefdac7b85": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Bruges est invaincu à domicile (VVVVV) avec une défense solide (1,2 but encaissé par match), mais la cote 1.42 implique environ 70 % de réussite et n'offre aucune marge. Le derby, la fatigue d'Anderlecht (match européen récent) et la présence d'Aasgaard, de retour à l'entraînement, rendent le pari f"
-  },
-  "4288fbe018e6e6fb223e389bcf3e57dd": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Rennes est invaincu à domicile en Ligue 1 cette saison (4 victoires, 1 nul) mais encaisse 2,8 buts par match et Lepaul est incertain. Lille, 2e du championnat, a des absences (Tiago Santos, Igamane) mais une défense solide, et les sources divergent sur sa forme à l'extérieur, donc le 1 à 2.10 reste "
-  },
-  "8e3ca98e29be84dd4a882ed05f50fa79": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Brighton, avec la meilleure défense du lot (0,4 but encaissé par match), reçoit Brentford, qui n'a toujours pas gagné à l'extérieur cette saison (4 nuls) et sans Henry, Dasilva, Furo et Carvalho. Mais Brighton est privé de Mitoma, Ferguson et Tzimas, et a joué en Europe jeudi, donc la cote 1.78 n'es"
-  },
-  "5ea6b7050b00fcc1832f7938794dd755": {
+  "7bfc2afc162934f011a8425159e340da": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Monza est en crise (4 défaites en 5 matchs), mais Atalanta est aussi très touchée : Hien, Bellanova, Gaetano, Kristensen et Kossounou sont forfaits, selon Sports Mole et Mediapronos. Atalanta arrive fatiguée par l'Europe et gagne rarement à l'extérieur, donc le 2 à 2.00 ne montre pas d'avantage net."
+   "raison": "Je n'ai trouvé ni blessure ni suspension notable. Les sources sont contradictoires sur la forme : Goal parle de deux défaites de suite pour Las Palmas, tandis que les stats fournies donnent Eldense en forme. Avec une cote de 1.90 (52,6 % implicite) pour un match que le modèle statz estime à 48 % pou"
   },
-  "54fae64b1421d836e07a17cad0536c73": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Nice affiche une forme solide (4 victoires en 5 matchs de L1 selon Dailysports) et Angers est privé d'El Ouazzani, de Diatta et doute avec Pona. Le doute vient de la défense de Nice (7 buts encaissés en 5 matchs selon TopMercato) et de ses faibles résultats à l'extérieur dans vos stats (1 victoire e"
-  },
-  "b0a4b5448a7e02d9ad1eaa817599fff0": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Manchester United est privé de Baleba, Sesko, Ugarte, Shaw et de Lisandro Martínez suspendu, et sa défense encaisse souvent (au moins 2 buts dans 3 de ses 4 derniers matchs à domicile). Aston Villa reste sans défaite en championnat mais est privé d'Onana, Ruggeri et Cash suspendu, et les pronostics "
-  },
-  "657fd1ac35832f65fcc6feba93970e10": {
+  "f52b83a74c511828f6155889d751d191": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Inter est très solide à domicile (5 victoires en 5 matchs de Serie A) et Como, qui n'a jamais battu Inter depuis sa remontée, est privé de Kean, Addai, Diao et Chalobah, ce qui limite sa rotation. Inter joue toutefois l'Europe trois jours avant, Lautaro et Luis Henrique sont absents, et une cote de "
-  },
-  "1fa78d1150755a8ec1d24cc1e19eeb0a": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Beşiktaş est très fort à domicile mais n'a gagné qu'une fois sur ses 5 derniers matchs toutes compétitions confondues selon Eagle Media, et il joue l'Europe trois jours avant. La cote de 1.17 offre une marge quasi nulle pour un risque réel, donc le pari 1 n'a pas de valeur."
+   "raison": "Sabadell est à domicile solide (trois victoires sur ses cinq derniers matchs à domicile), mais il n'a pas gagné depuis trois semaines et Gioacchini est forfait pour une rupture des ligaments croisés, Bonaldo et González étant incertains. Real Sociedad B n'a gagné qu'une fois à l'extérieur sur cinq e"
   }
  }
 }

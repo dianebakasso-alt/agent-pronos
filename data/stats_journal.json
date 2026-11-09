@@ -1,18 +1,14 @@
 {
  "ligues_ok": [
-  "soccer_belgium_first_div",
-  "soccer_spain_la_liga",
-  "soccer_turkey_super_league",
-  "soccer_netherlands_eredivisie",
-  "soccer_france_ligue_one",
-  "soccer_epl",
-  "soccer_italy_serie_a",
-  "soccer_germany_bundesliga",
-  "soccer_portugal_primeira_liga",
-  "soccer_argentina_primera_division",
-  "soccer_brazil_campeonato"
+  "soccer_norway_eliteserien",
+  "soccer_spain_segunda_division",
+  "soccer_brazil_campeonato",
+  "soccer_mexico_ligamx"
  ],
- "ligues_ko": [],
- "equipes_trouvees": 84,
+ "ligues_ko": [
+  "soccer_uefa_champs_league_women",
+  "soccer_uefa_nations_league"
+ ],
+ "equipes_trouvees": 32,
  "equipes_manquees": []
 }
