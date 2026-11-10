@@ -1,40 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Djurgården - Örgryte IS",
-  "pari": "Victoire Djurgården",
-  "cote": 1.17,
-  "proba": 0.8135,
-  "score": "2-2",
-  "pourquoi": "Score 2-2 (tirs 15-10, cadrés 8-3, possession 55-45 %). Djurgården a dominé sans marquer assez; but décisif de Örgryte IS à la 90e.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Jablonec - Brighton & Hove Albion",
-  "pari": "Victoire Brighton & Hove Albion",
-  "cote": 1.19,
-  "proba": 0.8041,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 9-26, cadrés 4-4, possession 28-72 %). Brighton & Hove Albion a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "FC Twente Enschede - FC Thun",
   "pari": "Plus de 2,5 buts",
   "cote": null,
@@ -6624,6 +6590,39 @@
   "tags": [
    "favori_surcote",
    "penalty"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-10",
+  "match": "Sabadell FC - Real Sociedad B",
+  "pari": "Victoire Sabadell FC",
+  "cote": 1.65,
+  "proba": 0.5479,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 19-10, cadrés 3-1, possession 50-50 %). Sabadell FC a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-10",
+  "match": "Kristiansund BK - Vålerenga",
+  "pari": "Victoire Vålerenga",
+  "cote": 2.12,
+  "proba": 0.4304,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 18-13, cadrés 6-2, possession 31-69 %). Kristiansund BK a été plus dangereux (6 tirs cadrés contre 2).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
   ],
   "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
   "source": "espn"

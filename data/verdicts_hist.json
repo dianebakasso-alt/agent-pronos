@@ -661,5 +661,90 @@
    "N": 3.45,
    "2": 4.5
   }
+ },
+ "0080a654687b1e349e6ecb26324f396b": {
+  "jour": "2026-11-10",
+  "domicile": "BK Hacken",
+  "exterieur": "Chelsea",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.0745,
+   "N": 0.1275,
+   "2": 0.798
+  },
+  "cotes": {
+   "1": 11.5,
+   "N": 6.6,
+   "2": 1.14
+  }
+ },
+ "603765f32acd9adad5599d186ba379be": {
+  "jour": "2026-11-10",
+  "domicile": "Real Madrid",
+  "exterieur": "Paris FC",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.6265,
+   "N": 0.1678,
+   "2": 0.2056
+  },
+  "cotes": {
+   "1": 1.43,
+   "N": 5.1,
+   "2": 5.1
+  }
+ },
+ "3b7829885e4225fbf20a21fe5400e120": {
+  "jour": "2026-11-10",
+  "domicile": "AS Roma",
+  "exterieur": "Servette FC",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.761,
+   "N": 0.1446,
+   "2": 0.0945
+  },
+  "cotes": {
+   "1": 1.19,
+   "N": 6.1,
+   "2": 9.5
+  }
+ },
+ "17c12df50a8d8ef2df44722cf78317e8": {
+  "jour": "2026-11-10",
+  "domicile": "Paris Saint Germain",
+  "exterieur": "Bayern Munich",
+  "verdict": "jouer",
+  "pari": "2",
+  "marche": {
+   "1": 0.2386,
+   "N": 0.2327,
+   "2": 0.5287
+  },
+  "cotes": {
+   "1": 3.8,
+   "N": 3.9,
+   "2": 1.72
+  }
+ },
+ "1a8bd83d08fab7c8e9b40284c43a3f3e": {
+  "jour": "2026-11-10",
+  "domicile": "Inter Milan",
+  "exterieur": "Manchester City",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.1469,
+   "N": 0.1532,
+   "2": 0.6999
+  },
+  "cotes": {
+   "1": 6.4,
+   "N": 5.5,
+   "2": 1.33
+  }
  }
 }

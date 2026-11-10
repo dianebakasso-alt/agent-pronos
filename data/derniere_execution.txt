@@ -1,18 +1,18 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
-    🎟️ Combinés : +56% de rendement sur 27 tickets.
+    🎟️ Combinés : +64% de rendement sur 28 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 12 championnat(s) aujourd'hui (404 crédits restants ce mois-ci)
-    12 championnats retenus
+    quota cotes : 12 championnat(s) aujourd'hui (392 crédits restants ce mois-ci)
+    9 championnats retenus
 3/4 Récupération des cotes…
-    52 matchs analysés, 0 value bets
+    50 matchs analysés, 1 value bets
     Forme et stats des équipes…
-    direct : 16 matchs reliés aux scores en direct
+    direct : 14 matchs reliés aux scores en direct
     fatigue : 0 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 32 équipes trouvées, 0 manquées
-    force : 16 matchs notés · pièges : 4 favoris en alerte
+    stats : 28 équipes trouvées, 0 manquées
+    force : 14 matchs notés · pièges : 4 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.929, 'btts': 0.987, 'pas_btts': 1.011} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    autopsies gratuites : 17
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.936, 'btts': 0.967, 'pas_btts': 1.011} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
+    autopsies gratuites : 2
 4/4 Vérification des infos et avis d'experts par l'IA…
-    combinés refaits avec 3 avis de l'IA
+    combinés refaits avec 5 avis de l'IA
 Site généré : site/index.html

@@ -1032,8 +1032,8 @@
   "proba": 0.231,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 27.6,
   "jambes": [
    {
     "id": "cf2febfddf729564889172cf83e8fbab",
@@ -1043,7 +1043,10 @@
     "exterieur": "Erzurum BB",
     "pari": "Victoire Çaykur Rizespor",
     "court": "1",
-    "cote": 1.88
+    "cote": 1.88,
+    "res": "1",
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "5ea6b7050b00fcc1832f7938794dd755",
@@ -1053,7 +1056,10 @@
     "exterieur": "Atalanta BC",
     "pari": "Victoire Atalanta BC",
     "court": "2",
-    "cote": 2.0
+    "cote": 2.0,
+    "res": "2",
+    "score": "0-1",
+    "ok": true
    }
   ]
  },
@@ -1086,6 +1092,38 @@
     "pari": "Victoire Sabadell FC",
     "court": "1",
     "cote": 1.64
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-10",
+  "bookmaker": "Betclic (FR)",
+  "cote": 2.29,
+  "proba": 0.37,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "sport_key": "soccer_uefa_champs_league_women",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "pari": "Victoire Bayern Munich",
+    "court": "2",
+    "cote": 1.72
+   },
+   {
+    "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
+    "sport_key": "soccer_uefa_champs_league_women",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Manchester City",
+    "pari": "Victoire Manchester City",
+    "court": "2",
+    "cote": 1.33
    }
   ]
  }

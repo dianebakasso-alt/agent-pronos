@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "championnat": "UEFA Champions League Women",
+  "proba": 0.2056,
+  "edge": 0.0486,
+  "avis": null,
+  "joue": true,
+  "id": "603765f32acd9adad5599d186ba379be",
+  "sport_key": "soccer_uefa_champs_league_women",
+  "date": "2026-11-10T17:45:00Z",
+  "match": "Real Madrid - Paris FC",
+  "domicile": "Real Madrid",
+  "exterieur": "Paris FC",
+  "pari": "Victoire Paris FC",
+  "court": "2",
+  "cote": 5.1,
+  "mise": 0.5,
+  "bookmaker": "PMU (FR)",
+  "statut": "en attente",
+  "gain": 0
+ }
+]

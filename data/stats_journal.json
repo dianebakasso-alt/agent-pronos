@@ -1,6 +1,5 @@
 {
  "ligues_ok": [
-  "soccer_norway_eliteserien",
   "soccer_spain_segunda_division",
   "soccer_brazil_campeonato",
   "soccer_mexico_ligamx"
@@ -9,6 +8,6 @@
   "soccer_uefa_champs_league_women",
   "soccer_uefa_nations_league"
  ],
- "equipes_trouvees": 32,
+ "equipes_trouvees": 28,
  "equipes_manquees": []
 }

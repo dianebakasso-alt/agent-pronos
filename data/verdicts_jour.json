@@ -1,20 +1,30 @@
 {
- "jour": "2026-11-09",
+ "jour": "2026-11-10",
  "v": {
-  "a878bfc5e7eae6808debf217c23c93f5": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Le match a été reporté suite à une épidémie dans le groupe de Vålerenga, et le club jouera lundi sans effectif complet, quelques joueurs étant seulement en convalescence. Kristiansund joue sa survie (il ne devance que Start au classement) et sa motivation est maximale. Avec cette incertitude sur les"
+  "0080a654687b1e349e6ecb26324f396b": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Chelsea est nettement plus fort sur le papier : Hacken n'a plus gagné en six matchs de Ligue des champions et n'a marqué qu'un but en trois journées, tandis que Chelsea n'a encaissé dans aucun de ses quatre derniers matchs européens. Mais à 1,14 la marge de gain est quasi nulle, Chelsea a déjà fait "
   },
-  "7bfc2afc162934f011a8425159e340da": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Je n'ai trouvé ni blessure ni suspension notable. Les sources sont contradictoires sur la forme : Goal parle de deux défaites de suite pour Las Palmas, tandis que les stats fournies donnent Eldense en forme. Avec une cote de 1.90 (52,6 % implicite) pour un match que le modèle statz estime à 48 % pou"
-  },
-  "f52b83a74c511828f6155889d751d191": {
+  "603765f32acd9adad5599d186ba379be": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Sabadell est à domicile solide (trois victoires sur ses cinq derniers matchs à domicile), mais il n'a pas gagné depuis trois semaines et Gioacchini est forfait pour une rupture des ligaments croisés, Bonaldo et González étant incertains. Real Sociedad B n'a gagné qu'une fois à l'extérieur sur cinq e"
+   "raison": "Real Madrid a fait trois nuls en Ligue des champions et a laissé filer une avance de deux buts contre le Bayern, avec une défense jugée fragile. Paris FC est encore sans victoire en phase de ligue mais a marqué dans ses dix matchs toutes compétitions confondues, et Toletti est absent côté madrilène."
+  },
+  "3b7829885e4225fbf20a21fe5400e120": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Roma n'a encore marqué aucun but en Ligue des champions (un seul point en trois matchs), alors que Servette a encaissé 14 buts en trois matchs, la défense la plus perméable de la phase de ligue. Roma est dominante en Serie A, mais à 1,19 le gain potentiel est négligeable pour un piège offensif europ"
+  },
+  "17c12df50a8d8ef2df44722cf78317e8": {
+   "verdict": "jouer",
+   "pari": "2",
+   "raison": "Le Bayern est invaincu, a gagné 12 matchs sur 14 toutes compétitions et a remporté ses deux derniers déplacements au Parc, dont un 3-1 la saison passée. Le PSG n'a gagné que deux de ses 15 derniers matchs de Ligue des champions, même si certains pronostics annoncent un 2-2. À 1,72, la victoire visit"
+  },
+  "1a8bd83d08fab7c8e9b40284c43a3f3e": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Man City n'a pas gagné en Ligue des champions (trois nuls en trois matchs), et l'Inter est invaincue à domicile en championnat avec sept victoires sur sept. Les deux équipes semblent proches dans le jeu, donc le favori à 1,33 n'a pas l'avantage net que la cote suggère. Bugeja (5 buts en 5 matchs) et"
   }
  }
 }

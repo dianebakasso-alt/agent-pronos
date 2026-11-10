@@ -47565,7 +47565,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 18-13, cadrés 6-2, possession 31-69 %). Kristiansund BK a été plus dangereux (6 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.12,
@@ -47573,8 +47585,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:7bfc2afc162934f011a8425159e340da",
@@ -47607,7 +47619,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.9,
@@ -47615,8 +47629,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.0
  },
  {
   "cle": "match:f52b83a74c511828f6155889d751d191",
@@ -47650,7 +47664,20 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 19-10, cadrés 3-1, possession 50-50 %). Sabadell FC a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.65,
@@ -47658,12 +47685,372 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:0080a654687b1e349e6ecb26324f396b",
+  "jour": "2026-11-10",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0080a654687b1e349e6ecb26324f396b",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "BK Hacken",
+    "exterieur": "Chelsea",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Chelsea",
+    "cote": 1.14,
+    "proba": 0.798,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.14,
+  "proba": 0.798,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:603765f32acd9adad5599d186ba379be",
+  "jour": "2026-11-10",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "603765f32acd9adad5599d186ba379be",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "Paris FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.43,
+    "proba": 0.6265,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.43,
+  "proba": 0.6265,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3b7829885e4225fbf20a21fe5400e120",
+  "jour": "2026-11-10",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3b7829885e4225fbf20a21fe5400e120",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "AS Roma",
+    "exterieur": "Servette FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire AS Roma",
+    "cote": 1.19,
+    "proba": 0.761,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.19,
+  "proba": 0.761,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:17c12df50a8d8ef2df44722cf78317e8",
+  "jour": "2026-11-10",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Bayern Munich",
+    "cote": 1.72,
+    "proba": 0.5287,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.72,
+  "proba": 0.5287,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1a8bd83d08fab7c8e9b40284c43a3f3e",
+  "jour": "2026-11-10",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Manchester City",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Manchester City",
+    "cote": 1.33,
+    "proba": 0.6999,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.33,
+  "proba": 0.6999,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "value:603765f32acd9adad5599d186ba379be",
+  "jour": "2026-11-10",
+  "cat": "value",
+  "jambes": [
+   {
+    "id": "603765f32acd9adad5599d186ba379be",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "Paris FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Paris FC",
+    "cote": 5.1,
+    "proba": 0.2056,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 5.1,
+  "proba": 0.2056,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-10",
+  "jour": "2026-11-10",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Bayern Munich",
+    "cote": 1.72,
+    "proba": 0.5287,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "603765f32acd9adad5599d186ba379be",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "Paris FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.43,
+    "proba": 0.6265,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.46,
+  "proba": 0.3312,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-10",
+  "jour": "2026-11-10",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "0080a654687b1e349e6ecb26324f396b",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "BK Hacken",
+    "exterieur": "Chelsea",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Chelsea",
+    "cote": 1.14,
+    "proba": 0.798,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "603765f32acd9adad5599d186ba379be",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "Paris FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8026,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Manchester City",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7575,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.16,
+  "proba": 0.4851,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-10",
+  "jour": "2026-11-10",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "603765f32acd9adad5599d186ba379be",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "Real Madrid",
+    "exterieur": "Paris FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Real Madrid",
+    "cote": 1.43,
+    "proba": 0.6265,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Bayern Munich",
+    "cote": 1.72,
+    "proba": 0.5287,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "Manchester City",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7575,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "0080a654687b1e349e6ecb26324f396b",
+    "date": "2026-11-10T17:45:00Z",
+    "domicile": "BK Hacken",
+    "exterieur": "Chelsea",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7062,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "3b7829885e4225fbf20a21fe5400e120",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "AS Roma",
+    "exterieur": "Servette FC",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.5733,
+    "marche": "btts",
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 10.33,
+  "proba": 0.1016,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
  },
  {
   "cle": "semaine:2026-46",
-  "jour": "2026-11-09",
+  "jour": "2026-11-10",
   "cat": "semaine",
   "jambes": [
    {
@@ -47674,7 +48061,7 @@
     "championnat": "Brasileirão",
     "pari": "Victoire Vasco da Gama",
     "cote": 1.6,
-    "proba": 0.6001,
+    "proba": 0.6024,
     "court": "2",
     "espn": {
      "ligue": "bra.1",
@@ -47686,30 +48073,54 @@
     ]
    },
    {
-    "id": "60e79364c168ad0ad22c0cffc02be8a9",
-    "date": "2026-11-14T21:30:00Z",
-    "domicile": "Mirassol",
-    "exterieur": "Atletico Mineiro",
-    "championnat": "Brasileirão",
-    "pari": "Victoire Mirassol",
-    "cote": 2.06,
-    "proba": 0.48,
+    "id": "159554f486f93d1d8d4213c570117a0e",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Portugal",
+    "exterieur": "Denmark",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.4,
+    "proba": 0.6355,
     "court": "1",
-    "espn": {
-     "ligue": "bra.1",
-     "id": "401841311"
-    },
-    "traits": [
-     "piege"
-    ]
+    "traits": []
    }
   ],
-  "cote": 3.3,
-  "proba": 0.288,
+  "cote": 2.24,
+  "proba": 0.3828,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
+ },
+ {
+  "cle": "prudence:17c12df50a8d8ef2df44722cf78317e8",
+  "jour": "2026-11-10",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Nul ou Bayern Munich",
+    "cote": 1.18,
+    "proba": 0.7614,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7614,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.9
  }
 ]
