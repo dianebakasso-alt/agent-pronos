@@ -746,5 +746,22 @@
    "N": 5.5,
    "2": 1.33
   }
+ },
+ "1a399de4304b787f2816244d5255cb6a": {
+  "jour": "2026-11-11",
+  "domicile": "Benfica",
+  "exterieur": "Austria Wien",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.6104,
+   "N": 0.2203,
+   "2": 0.1693
+  },
+  "cotes": {
+   "1": 1.45,
+   "N": 4.0,
+   "2": 5.1
+  }
  }
 }

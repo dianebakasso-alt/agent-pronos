@@ -40671,7 +40671,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -40710,7 +40710,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48049,8 +48049,208 @@
   "gain": 0.0
  },
  {
-  "cle": "semaine:2026-46",
+  "cle": "prudence:17c12df50a8d8ef2df44722cf78317e8",
   "jour": "2026-11-10",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "17c12df50a8d8ef2df44722cf78317e8",
+    "date": "2026-11-10T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "Bayern Munich",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Nul ou Bayern Munich",
+    "cote": 1.18,
+    "proba": 0.7614,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7614,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.9
+ },
+ {
+  "cle": "match:56014ed7ac2ab4cb60ae573d58c4526f",
+  "jour": "2026-11-11",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "56014ed7ac2ab4cb60ae573d58c4526f",
+    "date": "2026-11-11T17:45:00Z",
+    "domicile": "Leuven",
+    "exterieur": "HB Køge",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire HB Køge",
+    "cote": 1.55,
+    "proba": 0.5768,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.55,
+  "proba": 0.5768,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1a399de4304b787f2816244d5255cb6a",
+  "jour": "2026-11-11",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1a399de4304b787f2816244d5255cb6a",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Austria Wien",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Benfica",
+    "cote": 1.45,
+    "proba": 0.6104,
+    "court": "1",
+    "traits": []
+   }
+  ],
+  "cote": 1.45,
+  "proba": 0.6104,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9293d78b9ee8f1ad0a05e826c311d759",
+  "jour": "2026-11-11",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9293d78b9ee8f1ad0a05e826c311d759",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Juventus",
+    "exterieur": "Lyon",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Lyon",
+    "cote": 1.08,
+    "proba": 0.833,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.08,
+  "proba": 0.833,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-11",
+  "jour": "2026-11-11",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "9293d78b9ee8f1ad0a05e826c311d759",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Juventus",
+    "exterieur": "Lyon",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7683,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "56014ed7ac2ab4cb60ae573d58c4526f",
+    "date": "2026-11-11T17:45:00Z",
+    "domicile": "Leuven",
+    "exterieur": "HB Køge",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.569,
+    "marche": "btts",
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.4371,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-11",
+  "jour": "2026-11-11",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "9293d78b9ee8f1ad0a05e826c311d759",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Juventus",
+    "exterieur": "Lyon",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Lyon",
+    "cote": 1.08,
+    "proba": 0.833,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "56014ed7ac2ab4cb60ae573d58c4526f",
+    "date": "2026-11-11T17:45:00Z",
+    "domicile": "Leuven",
+    "exterieur": "HB Køge",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.569,
+    "marche": "btts",
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.22,
+  "proba": 0.4739,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "semaine:2026-46",
+  "jour": "2026-11-11",
   "cat": "semaine",
   "jambes": [
    {
@@ -48080,47 +48280,17 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Portugal",
     "cote": 1.4,
-    "proba": 0.6355,
+    "proba": 0.6311,
     "court": "1",
     "traits": []
    }
   ],
   "cote": 2.24,
-  "proba": 0.3828,
+  "proba": 0.3801,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
- },
- {
-  "cle": "prudence:17c12df50a8d8ef2df44722cf78317e8",
-  "jour": "2026-11-10",
-  "cat": "prudence",
-  "jambes": [
-   {
-    "id": "17c12df50a8d8ef2df44722cf78317e8",
-    "date": "2026-11-10T20:00:00Z",
-    "domicile": "Paris Saint Germain",
-    "exterieur": "Bayern Munich",
-    "championnat": "UEFA Champions League Women",
-    "pari": "Nul ou Bayern Munich",
-    "cote": 1.18,
-    "proba": 0.7614,
-    "court": "N2",
-    "traits": [
-     "petite_cote",
-     "favori_net"
-    ]
-   }
-  ],
-  "cote": 1.18,
-  "proba": 0.7614,
-  "estime": false,
-  "conseille": true,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
-  "note": 7.9
  }
 ]

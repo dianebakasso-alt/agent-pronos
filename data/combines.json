@@ -1070,8 +1070,8 @@
   "proba": 0.2589,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "7bfc2afc162934f011a8425159e340da",
@@ -1081,7 +1081,10 @@
     "exterieur": "CD Eldense",
     "pari": "Victoire Las Palmas",
     "court": "1",
-    "cote": 1.9
+    "cote": 1.9,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "f52b83a74c511828f6155889d751d191",
@@ -1091,7 +1094,10 @@
     "exterieur": "Real Sociedad B",
     "pari": "Victoire Sabadell FC",
     "court": "1",
-    "cote": 1.64
+    "cote": 1.64,
+    "res": "N",
+    "score": "0-0",
+    "ok": false
    }
   ]
  },
@@ -1124,6 +1130,38 @@
     "pari": "Victoire Manchester City",
     "court": "2",
     "cote": 1.33
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-11",
+  "bookmaker": "Betclic (FR)",
+  "cote": 1.57,
+  "proba": 0.5085,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "1a399de4304b787f2816244d5255cb6a",
+    "sport_key": "soccer_uefa_champs_league_women",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Austria Wien",
+    "pari": "Victoire Benfica",
+    "court": "1",
+    "cote": 1.45
+   },
+   {
+    "id": "9293d78b9ee8f1ad0a05e826c311d759",
+    "sport_key": "soccer_uefa_champs_league_women",
+    "date": "2026-11-11T20:00:00Z",
+    "domicile": "Juventus",
+    "exterieur": "Lyon",
+    "pari": "Victoire Lyon",
+    "court": "2",
+    "cote": 1.08
    }
   ]
  }

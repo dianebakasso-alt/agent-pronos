@@ -2,25 +2,25 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 2273,
-  "fin": "tains pronostics annoncent un 2-2. À 1,72, la victoire visiteuse me paraît correctement cotée et sans piège évident.\"}, {\"n\": 5, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Man City n'a pas gagné en Ligue des champions (trois nuls en trois matchs), et l'Inter est invaincue à domicile en championnat avec sept victoires sur sept. Les deux équipes semblent proches dans le jeu, donc le favori à 1,33 n'a pas l'avantage net que la cote suggère. Bugeja (5 buts en 5 matchs) et Shaw (8 buts en ses 5 derniers matchs) rendent le match ouvert, et le nul à 5,50 reste trop incertain pour être joué.\"}]}",
+  "longueur": 1112,
+  "fin": "Charles, donc le créneau du 11 n'est plus valable. Sur le fond, Benfica (3 pts, 7 buts encaissés) n'a rien prouvé à domicile face à une Austria qui a Modesta Uka (7 buts en 7 matchs de C1) : une cote de 1,45 ne laisse aucune marge.\"},\n  {\"n\": 3, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Lyon est au sommet (7 pts, 14 buts marqués, aucun encaissé, 5 victoires de suite), mais une cote de 1,08 implique environ 93 % de réussite, donc aucune valeur même si le favori domine. Le 0-0 à Chelsea rappelle qu'un accroc reste possible, et je n'ai trouvé aucune info sur blessures ou rotation.\"}\n]}\n```",
   "usage": {
-   "input_tokens": 51031,
+   "input_tokens": 34363,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 7544,
+   "output_tokens": 4047,
    "output_tokens_details": {
-    "thinking_tokens": 6240
+    "thinking_tokens": 3328
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard",
    "server_tool_use": {
-    "web_search_requests": 5,
+    "web_search_requests": 3,
     "web_fetch_requests": 0
    }
   }
