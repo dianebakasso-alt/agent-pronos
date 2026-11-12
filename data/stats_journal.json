@@ -5,9 +5,9 @@
   "soccer_mexico_ligamx"
  ],
  "ligues_ko": [
-  "soccer_uefa_champs_league_women",
-  "soccer_uefa_nations_league"
+  "soccer_uefa_nations_league",
+  "soccer_uefa_champs_league_women"
  ],
- "equipes_trouvees": 28,
+ "equipes_trouvees": 32,
  "equipes_manquees": []
 }

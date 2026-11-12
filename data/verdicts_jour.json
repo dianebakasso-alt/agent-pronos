@@ -1,10 +1,55 @@
 {
- "jour": "2026-11-11",
+ "jour": "2026-11-12",
  "v": {
-  "1a399de4304b787f2816244d5255cb6a": {
+  "c25477408b57267248b491fa5eab2572": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Armenia a perdu son capitaine Eduard Spertsyan (blessé) et a marqué zéro but lors de ses deux derniers matchs de Ligue des nations, avec trois matchs sans victoire. Chypre n'a pas perdu depuis trois matchs de la compétition et a battu l'Arménie 2-0 à l'aller, mais ne compte qu'une victoire en 14 dép"
+  },
+  "d598d5e914a905ef70b01fd1b444aecb": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "La Turquie n'a aucun point, a marqué deux buts en quatre matchs et en a encaissé 11, avec Yıldız, Demirbağ, Müldür et Şimşir absents et Bardakcı suspendu. La Belgique est privée de Lukaku (hanche) et de Lavia (suspendu), mais Doku est revenu et les Belges ont gagné 3-0 à l'aller. Le 1.81 est juste, "
+  },
+  "c3716b6adacbddc5e04bba2baba450aa": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Le match a été reporté au 12 novembre à cause de la tempête Charles, donc le créneau du 11 n'est plus valable. Sur le fond, Benfica (3 pts, 7 buts encaissés) n'a rien prouvé à domicile face à une Austria qui a Modesta Uka (7 buts en 7 matchs de C1) : une cote de 1,45 ne laisse aucune marge."
+   "raison": "Barcelone a gagné ses trois matchs de phase de ligue avec 19 buts marqués, et Arsenal est en difficulté en championnat. Mais avec une cote de 1.18 pour une victoire catalane, il n'y a aucune valeur, et Barcelone reste privé d'Aleixandri, Nazareth et López."
+  },
+  "21f1d732a768ec97ab405050ec9be408": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "L'Albanie est en tête du groupe C1 avec neuf points, n'a perdu qu'à l'aller (2-1 contre la Finlande) et ses deux matchs à domicile ont été gagnés. La Finlande, qui a perdu 1-0 contre la Biélorussie, revient avec Skyttä et Antman, mais Kairinen est suspendu. Le 2.13 est cohérent sans offrir une gross"
+  },
+  "3caa30ea2ac5a1be30724132ba10d82b": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Saint-Marin n'a marqué qu'un seul but en quatre matchs et en a encaissé 16, et la Biélorussie n'a pas concédé lors de ses trois derniers matchs de groupe. La victoire biélorusse est très probable, mais à 1.10 la cote ne laisse presque aucune marge, et une victoire pour un résultat aussi peu rémunéra"
+  },
+  "8a1174de9079b530bd6612e3fde6e2fa": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai pas trouvé d'actualité fiable (blessés, suspensions, rotation) pour Angleterre - Croatie lors de ma recherche. À 1.21 pour l'Angleterre, la cote ne laisse aucune marge, et sans information, je ne joue pas ce match."
+  },
+  "87441c4ff41ea3d37812826345450408": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Espagne invaincue en 4 matchs de groupe, Tchéquie sans point, avec 10 buts encaissés et 2 marqués, donc le 2 est logique. Mais à 1.18 la marge est quasi nulle, et Yamal est signalé indisponible par une source alors qu'une autre ne le mentionne pas : pas de valeur à jouer."
+  },
+  "c096e9bfabbbb93326413433b7c63511": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Mbappé est forfait (ischio, confirmé par Zidane), Thuram et Kalulu sont absents, Tchouaméni est incertain et Saliba comme Dembélé sont indisponibles selon une source ; l'attaque française est fortement amputée. La France reste toutefois 1re du groupe avec 36 buts marqués en 2026, et l'Italie n'a plu"
+  },
+  "030f628eb3a7ad16c3bca6884c18c56e": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Monténégro 1er de son groupe, invaincu en 5 matchs de Ligue des nations, face à la Lettonie 4e avec 1 point, qui n'a marqué que 2 buts en 4 matchs et qui est déjà hors course. Le problème est la cote de 1.23 : le Monténégro a marqué plus de 2 buts une seule fois en 4 matchs et a fait 0-0 à domicile "
+  },
+  "a0dae77f45586cf3231af85edf936ce1": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Benfica est 12e de la phase de ligue avec une seule victoire lors de ses 5 derniers matchs et a perdu 0-3 contre Arsenal et Bayern ; à 1.43 (environ 70 % implicite), la cote dépasse largement les estimations de 43 à 50 % trouvées. Austria Wien (1 point, défaite 1-4 à la Juve) a des absences (Schöffe"
   }
  }
 }

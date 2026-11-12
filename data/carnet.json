@@ -42576,7 +42576,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -44245,7 +44245,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -44271,7 +44271,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48249,8 +48249,563 @@
   "gain": 0.0
  },
  {
+  "cle": "match:c25477408b57267248b491fa5eab2572",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c25477408b57267248b491fa5eab2572",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Armenia",
+    "exterieur": "Cyprus",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Cyprus",
+    "cote": 2.48,
+    "proba": 0.3665,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.48,
+  "proba": 0.3665,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d598d5e914a905ef70b01fd1b444aecb",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d598d5e914a905ef70b01fd1b444aecb",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Turkey",
+    "exterieur": "Belgium",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belgium",
+    "cote": 1.81,
+    "proba": 0.4895,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.81,
+  "proba": 0.4895,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c3716b6adacbddc5e04bba2baba450aa",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c3716b6adacbddc5e04bba2baba450aa",
+    "date": "2026-11-12T17:45:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Arsenal",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Barcelona",
+    "cote": 1.18,
+    "proba": 0.7667,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7667,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:21f1d732a768ec97ab405050ec9be408",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Albania",
+    "cote": 2.13,
+    "proba": 0.4358,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.13,
+  "proba": 0.4358,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3caa30ea2ac5a1be30724132ba10d82b",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3caa30ea2ac5a1be30724132ba10d82b",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "San Marino",
+    "exterieur": "Belarus",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belarus",
+    "cote": 1.1,
+    "proba": 0.8543,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.1,
+  "proba": 0.8543,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8a1174de9079b530bd6612e3fde6e2fa",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8a1174de9079b530bd6612e3fde6e2fa",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "England",
+    "exterieur": "Croatia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire England",
+    "cote": 1.21,
+    "proba": 0.7512,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.21,
+  "proba": 0.7512,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:87441c4ff41ea3d37812826345450408",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "87441c4ff41ea3d37812826345450408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Czech Republic",
+    "exterieur": "Spain",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Spain",
+    "cote": 1.18,
+    "proba": 0.7972,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7972,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c096e9bfabbbb93326413433b7c63511",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c096e9bfabbbb93326413433b7c63511",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Italy",
+    "exterieur": "France",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire France",
+    "cote": 1.92,
+    "proba": 0.47,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.92,
+  "proba": 0.47,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:030f628eb3a7ad16c3bca6884c18c56e",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "030f628eb3a7ad16c3bca6884c18c56e",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Montenegro",
+    "exterieur": "Latvia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Montenegro",
+    "cote": 1.23,
+    "proba": 0.7486,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.23,
+  "proba": 0.7486,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a0dae77f45586cf3231af85edf936ce1",
+  "jour": "2026-11-12",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a0dae77f45586cf3231af85edf936ce1",
+    "date": "2026-11-12T20:00:00Z",
+    "domicile": "Benfica",
+    "exterieur": "Austria Wien",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Victoire Benfica",
+    "cote": 1.43,
+    "proba": 0.6284,
+    "court": "1",
+    "traits": []
+   }
+  ],
+  "cote": 1.43,
+  "proba": 0.6284,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "3caa30ea2ac5a1be30724132ba10d82b",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "San Marino",
+    "exterieur": "Belarus",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belarus",
+    "cote": 1.1,
+    "proba": 0.8543,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "030f628eb3a7ad16c3bca6884c18c56e",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Montenegro",
+    "exterieur": "Latvia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Montenegro",
+    "cote": 1.23,
+    "proba": 0.7486,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.35,
+  "proba": 0.6396,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "3caa30ea2ac5a1be30724132ba10d82b",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "San Marino",
+    "exterieur": "Belarus",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belarus",
+    "cote": 1.1,
+    "proba": 0.8543,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "d598d5e914a905ef70b01fd1b444aecb",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Turkey",
+    "exterieur": "Belgium",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belgium",
+    "cote": 1.81,
+    "proba": 0.4895,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.99,
+  "proba": 0.4182,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Albania",
+    "cote": 2.13,
+    "proba": 0.4358,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "c096e9bfabbbb93326413433b7c63511",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Italy",
+    "exterieur": "France",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire France",
+    "cote": 1.87,
+    "proba": 0.47,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "d598d5e914a905ef70b01fd1b444aecb",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Turkey",
+    "exterieur": "Belgium",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belgium",
+    "cote": 1.81,
+    "proba": 0.4895,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 7.21,
+  "proba": 0.1003,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "c3716b6adacbddc5e04bba2baba450aa",
+    "date": "2026-11-12T17:45:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Arsenal",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7468,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6249,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "d598d5e914a905ef70b01fd1b444aecb",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Turkey",
+    "exterieur": "Belgium",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6057,
+    "marche": "btts",
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.71,
+  "proba": 0.2827,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "87441c4ff41ea3d37812826345450408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Czech Republic",
+    "exterieur": "Spain",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Spain",
+    "cote": 1.18,
+    "proba": 0.7972,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "c3716b6adacbddc5e04bba2baba450aa",
+    "date": "2026-11-12T17:45:00Z",
+    "domicile": "Barcelona",
+    "exterieur": "Arsenal",
+    "championnat": "UEFA Champions League Women",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7468,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6249,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 2.82,
+  "proba": 0.372,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
   "cle": "semaine:2026-46",
-  "jour": "2026-11-11",
+  "jour": "2026-11-12",
   "cat": "semaine",
   "jambes": [
    {
@@ -48260,16 +48815,15 @@
     "exterieur": "Vasco da Gama",
     "championnat": "Brasileirão",
     "pari": "Victoire Vasco da Gama",
-    "cote": 1.6,
-    "proba": 0.6024,
+    "cote": 1.42,
+    "proba": 0.6436,
     "court": "2",
     "espn": {
      "ligue": "bra.1",
      "id": "401841175"
     },
     "traits": [
-     "exterieur",
-     "force_pour"
+     "exterieur"
     ]
    },
    {
@@ -48279,14 +48833,153 @@
     "exterieur": "Denmark",
     "championnat": "Ligue des nations",
     "pari": "Victoire Portugal",
-    "cote": 1.4,
-    "proba": 0.6311,
+    "cote": 1.45,
+    "proba": 0.6395,
     "court": "1",
     "traits": []
    }
   ],
-  "cote": 2.24,
-  "proba": 0.3801,
+  "cote": 2.06,
+  "proba": 0.4116,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:21f1d732a768ec97ab405050ec9be408",
+  "jour": "2026-11-12",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Albania",
+    "cote": 1.22,
+    "proba": 0.7577,
+    "court": "1N",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7577,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.6
+ },
+ {
+  "cle": "prudence:d598d5e914a905ef70b01fd1b444aecb",
+  "jour": "2026-11-12",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "d598d5e914a905ef70b01fd1b444aecb",
+    "date": "2026-11-12T17:00:00Z",
+    "domicile": "Turkey",
+    "exterieur": "Belgium",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Belgium",
+    "cote": 1.25,
+    "proba": 0.7288,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.25,
+  "proba": 0.7288,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.3
+ },
+ {
+  "cle": "prudence:c096e9bfabbbb93326413433b7c63511",
+  "jour": "2026-11-12",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "c096e9bfabbbb93326413433b7c63511",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Italy",
+    "exterieur": "France",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou France",
+    "cote": 1.24,
+    "proba": 0.7341,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7341,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.3
+ },
+ {
+  "cle": "prudence_combi:2026-11-12",
+  "jour": "2026-11-12",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "21f1d732a768ec97ab405050ec9be408",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Albania",
+    "exterieur": "Finland",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Albania",
+    "cote": 1.22,
+    "proba": 0.7577,
+    "court": "1N",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "c096e9bfabbbb93326413433b7c63511",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Italy",
+    "exterieur": "France",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou France",
+    "cote": 1.24,
+    "proba": 0.7341,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.51,
+  "proba": 0.5562,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

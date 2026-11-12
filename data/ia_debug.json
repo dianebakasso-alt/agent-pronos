@@ -2,25 +2,51 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 1112,
-  "fin": "Charles, donc le créneau du 11 n'est plus valable. Sur le fond, Benfica (3 pts, 7 buts encaissés) n'a rien prouvé à domicile face à une Austria qui a Modesta Uka (7 buts en 7 matchs de C1) : une cote de 1,45 ne laisse aucune marge.\"},\n  {\"n\": 3, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Lyon est au sommet (7 pts, 14 buts marqués, aucun encaissé, 5 victoires de suite), mais une cote de 1,08 implique environ 93 % de réussite, donc aucune valeur même si le favori domine. Le 0-0 à Chelsea rappelle qu'un accroc reste possible, et je n'ai trouvé aucune info sur blessures ou rotation.\"}\n]}\n```",
+  "longueur": 2245,
+  "fin": "ul but en quatre matchs et en a encaissé 16, et la Biélorussie n'a pas concédé lors de ses trois derniers matchs de groupe. La victoire biélorusse est très probable, mais à 1.10 la cote ne laisse presque aucune marge, et une victoire pour un résultat aussi peu rémunérateur n'est pas un vrai pari de valeur.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai pas trouvé d'actualité fiable (blessés, suspensions, rotation) pour Angleterre - Croatie lors de ma recherche. À 1.21 pour l'Angleterre, la cote ne laisse aucune marge, et sans information, je ne joue pas ce match.\"}\n]}\n```",
   "usage": {
-   "input_tokens": 34363,
+   "input_tokens": 51708,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 4047,
+   "output_tokens": 3862,
    "output_tokens_details": {
-    "thinking_tokens": 3328
+    "thinking_tokens": 2452
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard",
    "server_tool_use": {
-    "web_search_requests": 3,
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 1799,
+  "fin": " a fait 0-0 à domicile contre l'Arménie, donc la victoire est probable mais le gain est presque nul.\"},\n  {\"n\": 4, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Benfica est 12e de la phase de ligue avec une seule victoire lors de ses 5 derniers matchs et a perdu 0-3 contre Arsenal et Bayern ; à 1.43 (environ 70 % implicite), la cote dépasse largement les estimations de 43 à 50 % trouvées. Austria Wien (1 point, défaite 1-4 à la Juve) a des absences (Schöffel, Uka incertaine) : le 2 à 5.90 paraît surévalué par certains modèles, mais le dossier ne le soutient pas assez pour le jouer.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 41477,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4369,
+   "output_tokens_details": {
+    "thinking_tokens": 3294
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 4,
     "web_fetch_requests": 0
    }
   }

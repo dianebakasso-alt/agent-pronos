@@ -1164,5 +1164,37 @@
     "cote": 1.08
    }
   ]
+ },
+ {
+  "jour": "2026-11-12",
+  "bookmaker": "PMU (FR)",
+  "cote": 2.27,
+  "proba": 0.3747,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "c096e9bfabbbb93326413433b7c63511",
+    "sport_key": "soccer_uefa_nations_league",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Italy",
+    "exterieur": "France",
+    "pari": "Victoire France",
+    "court": "2",
+    "cote": 1.92
+   },
+   {
+    "id": "87441c4ff41ea3d37812826345450408",
+    "sport_key": "soccer_uefa_nations_league",
+    "date": "2026-11-12T19:45:00Z",
+    "domicile": "Czech Republic",
+    "exterieur": "Spain",
+    "pari": "Victoire Spain",
+    "court": "2",
+    "cote": 1.18
+   }
+  ]
  }
 ]
