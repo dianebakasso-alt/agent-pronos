@@ -1,36 +1,5 @@
 [
  {
-  "jour": "2026-11-12",
-  "matchs": 10,
-  "value_bets": 0,
-  "combines": [
-   [
-    "prudent",
-    false,
-    1.26,
-    0.681
-   ],
-   [
-    "equilibre",
-    false,
-    2.27,
-    0.375
-   ],
-   [
-    "gros",
-    false,
-    7.21,
-    0.1
-   ],
-   [
-    "buts",
-    null,
-    3.71,
-    0.283
-   ]
-  ]
- },
- {
   "jour": "2026-11-13",
   "matchs": 11,
   "value_bets": 0,
@@ -38,32 +7,26 @@
    [
     "prudent",
     false,
-    1.43,
-    0.612
+    1.32,
+    0.655
    ],
    [
     "equilibre",
     false,
-    2.11,
-    0.408
-   ],
-   [
-    "gros",
-    false,
-    7.36,
-    0.094
+    1.44,
+    0.614
    ],
    [
     "mixte",
     null,
-    2.78,
-    0.377
+    2.55,
+    0.411
    ],
    [
     "mixte_gros",
     null,
-    8.24,
-    0.127
+    7.5,
+    0.14
    ]
   ]
  },
@@ -75,81 +38,88 @@
    [
     "prudent",
     false,
-    1.7,
-    0.508
+    1.68,
+    0.502
    ],
    [
     "equilibre",
     false,
-    3.43,
-    0.253
+    3.4,
+    0.256
    ],
    [
     "gros",
     false,
-    5.56,
-    0.128
+    5.67,
+    0.127
    ],
    [
     "mixte",
     null,
-    3.76,
-    0.279
+    3.74,
+    0.281
    ],
    [
     "mixte_gros",
     null,
-    7.44,
-    0.141
-   ],
-   [
-    "mixte_gros",
-    null,
-    9.85,
-    0.107
+    6.38,
+    0.165
    ]
   ]
  },
  {
   "jour": "2026-11-15",
-  "matchs": 7,
+  "matchs": 10,
   "value_bets": 0,
   "combines": [
    [
     "prudent",
     false,
-    2.12,
-    0.395
+    1.64,
+    0.527
+   ],
+   [
+    "equilibre",
+    false,
+    2.93,
+    0.291
    ],
    [
     "gros",
     false,
-    5.34,
-    0.122
+    6.47,
+    0.108
    ],
    [
-    "buts",
+    "mixte",
     null,
-    2.77,
-    0.378
+    3.82,
+    0.275
    ],
    [
     "mixte_gros",
     null,
-    8.12,
-    0.129
+    7.16,
+    0.147
    ]
   ]
  },
  {
   "jour": "2026-11-16",
-  "matchs": 1,
+  "matchs": 3,
   "value_bets": 0,
-  "combines": []
+  "combines": [
+   [
+    "equilibre",
+    false,
+    10.27,
+    0.232
+   ]
+  ]
  },
  {
   "jour": "2026-11-17",
-  "matchs": 0,
+  "matchs": 2,
   "value_bets": 0,
   "combines": []
  },
@@ -158,5 +128,18 @@
   "matchs": 1,
   "value_bets": 0,
   "combines": []
+ },
+ {
+  "jour": "2026-11-19",
+  "matchs": 7,
+  "value_bets": 0,
+  "combines": [
+   [
+    "prudent",
+    false,
+    1.99,
+    0.404
+   ]
+  ]
  }
 ]

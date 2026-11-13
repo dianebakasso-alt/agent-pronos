@@ -1196,5 +1196,37 @@
     "cote": 1.18
    }
   ]
+ },
+ {
+  "jour": "2026-11-13",
+  "bookmaker": "PMU (FR)",
+  "cote": 1.44,
+  "proba": 0.6139,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "d0ee3d2f44cf592797f6ecae8de62edd",
+    "sport_key": "soccer_uefa_nations_league",
+    "date": "2026-11-13T19:45:00Z",
+    "domicile": "Serbia",
+    "exterieur": "Germany",
+    "pari": "Victoire Germany",
+    "court": "2",
+    "cote": 1.23
+   },
+   {
+    "id": "9529ee7ca79126460eb063f53187f321",
+    "sport_key": "soccer_uefa_nations_league",
+    "date": "2026-11-13T19:45:00Z",
+    "domicile": "Liechtenstein",
+    "exterieur": "Azerbaijan",
+    "pari": "Victoire Azerbaijan",
+    "court": "2",
+    "cote": 1.17
+   }
+  ]
  }
 ]

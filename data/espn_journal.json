@@ -1,10 +1,10 @@
 {
  "ligues": {
-  "soccer_spain_segunda_division": 11,
+  "soccer_spain_segunda_division": 12,
   "soccer_brazil_campeonato": 11,
-  "soccer_mexico_ligamx": 1
+  "soccer_mexico_ligamx": 4
  },
- "relies": 16,
+ "relies": 22,
  "manques": [],
  "europe": 0,
  "fatigue": 0
