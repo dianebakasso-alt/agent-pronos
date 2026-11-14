@@ -303,7 +303,29 @@ def carte_combine_estime(c, jour):
     </article>"""
 
 
+def carte_systeme(c, jour=""):
+    jambes = "".join(f"""<li>{ecusson(j["match"]["domicile"], 26)}{ecusson(j["match"]["exterieur"], 26)}
+          <div class="j-txt"><b>{e(j["issue"])}</b><small>{e(j["match"]["domicile"])} – {e(j["match"]["exterieur"])} · {heure(j["match"]["debut"])}</small></div>
+          <span class="j-cote">{j["cote"]:.2f}</span></li>""" for j in c["jambes"])
+    r = ROI_STYLE.get("systeme")
+    roi = (f'<p class="roi-l {"vert" if r >= 0 else "rouge"}">📈 Sur le carnet : <b>{"+" if r >= 0 else "−"}{abs(r) * 100:.0f} %</b></p>'
+           if r is not None else "")
+    return f"""<article class="carte combo st-systeme" id="combo-{jour}-systeme" data-style="systeme">
+      <div class="combo-t"><span class="ct"><i class="ct-e">🎯</i> <span class="ct-n">Système 2 sur 3</span></span><span class="badge c-bonne">Moins risqué</span></div>
+      <p class="combo-desc">{e(c["desc"])}</p>
+      <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
+        <b>{pct(c["proba"])}</b><small>de chances qu'au moins 2 matchs sur 3 passent</small></div>{roi}
+      <ul class="jambes">{jambes}</ul>
+      <p class="src">Chez ton bookmaker : choisis <b>Système → 2/3</b> (3 doubles). Pour <b>3 €</b> (1 € par double) :
+        si 2 matchs passent, tu reçois environ <b class="vert">{euros(c["retour2"])}</b> ; si les 3 passent, <b class="vert">{euros(c["retour3"])}</b>.
+        Avec 2 matchs sur 3, tu récupères environ ta mise ; le vrai gain vient quand les 3 passent.
+        Le Gros gain n°1 paie plus si tout passe, mais le système ne te laisse pas à zéro quand un seul match rate.</p>
+    </article>"""
+
+
 def carte_combine(c, jour=""):
+    if c and c.get("style") == "systeme":
+        return carte_systeme(c, jour)
     if not c:
         return """<article class="carte combo vide-c"><div class="combo-t">🎟️ Pas de combiné aujourd'hui</div>
       <p class="src">Pas assez de matchs avec des cotes correctes chez un même bookmaker.</p></article>"""
@@ -1953,7 +1975,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
   <div class="saisie"><input id="somme" type="number" inputmode="decimal" min="0" step="0.5" placeholder="Ex. 6"><span>€</span></div>
   <div class="puces">{''.join(f'<button data-v="{x}">{x} €</button>' for x in (5, 10, 20, 50))}</div>
   <div class="mode"><button data-m="combine" class="on">🎟️ En combiné</button><button data-m="simples">Paris séparés</button></div>
-  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button><button data-s="buts">⚽ Buts</button><button data-s="mixte">🔀 Mixte</button><button data-s="mixte_gros">💥 Mixte gros</button><button data-s="verifie">🔎 Vérifié IA</button></div>
+  <div class="styles" id="styles"><button data-s="prudent">🛡️ Prudent</button><button data-s="equilibre">⚖️ Équilibré</button><button data-s="gros">🚀 Gros gain</button><button data-s="buts">⚽ Buts</button><button data-s="mixte">🔀 Mixte</button><button data-s="mixte_gros">💥 Mixte gros</button><button data-s="verifie">🔎 Vérifié IA</button><button data-s="systeme">🎯 Système</button></div>
   <p class="budget-res" id="budget-res">Tape la somme que tu sors aujourd'hui.</p>
 </section>
 
@@ -2142,7 +2164,7 @@ try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m 
 
 // ---- gestion des mises : un % de la cagnotte par ticket, un plafond par jour, une pause si la semaine tourne mal
 const FACT_ROI = {fact_roi};
-const PART_TICKET = {{ verifie: 2, prudent: 2, equilibre: 1.5, mixte: 1, buts: 1, mixte_gros: 1, gros: 0.5, jour: 1.5, semaine: 1 }};
+const PART_TICKET = {{ systeme: 1.5, verifie: 2, prudent: 2, equilibre: 1.5, mixte: 1, buts: 1, mixte_gros: 1, gros: 0.5, jour: 1.5, semaine: 1 }};
 const champCag = document.getElementById("cagnotte");
 function perteSemaine() {{
   const il7 = Date.now() - 7 * 864e5;

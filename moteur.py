@@ -500,6 +500,27 @@ def _buts_ok(k, p_brut):
     return (k, round(int(p_brut * 20) / 20, 2)) not in BUTS_FAIBLES
 
 
+def systeme_2_3(combos):
+    """🎯 Système 2 sur 3 : les 3 matchs du meilleur Gros gain, joués en 3 doubles.
+    On gagne dès que 2 matchs sur 3 passent (et le maximum si les 3 passent)."""
+    g = next((c for c in combos if c.get("style") == "gros" and len(c["jambes"]) == 3), None)
+    if not g:
+        return None
+    jb = g["jambes"]
+    p = [j["proba"] for j in jb]
+    p3 = p[0] * p[1] * p[2]
+    p2 = sum(p[i] * p[k] * (1 - p[l]) for i, k, l in ((0, 1, 2), (0, 2, 1), (1, 2, 0)))
+    doubles = [jb[i]["cote"] * jb[k]["cote"] for i, k in ((0, 1), (0, 2), (1, 2))]
+    # retour pour 1 € par double (3 € au total) : moyenne des cas « 2 passent », et « les 3 passent »
+    ret2 = sum(doubles[d] * p[i] * p[k] * (1 - p[l]) for d, (i, k, l) in enumerate(((0, 1, 2), (0, 2, 1), (1, 2, 0)))) / p2 if p2 else 0
+    c = {"style": "systeme", "nom": "Système 2 sur 3", "emoji": "🎯", "bookmaker": g["bookmaker"],
+         "desc": "Les 3 matchs du Gros gain n°1, en 3 doubles : tu gagnes dès que 2 matchs sur 3 passent.",
+         "jambes": jb, "proba": p2 + p3, "p3": p3, "doubles": doubles, "retour2": ret2, "retour3": sum(doubles),
+         "cote": (p2 * ret2 + p3 * sum(doubles)) / 3 / (p2 + p3) if (p2 + p3) else 0,
+         "edge": (p2 * ret2 + p3 * sum(doubles)) / 3 - 1, "conseille": False}
+    return c
+
+
 def valider_par_ia(combos):
     """Un ticket dont chaque match a été vérifié et validé par l'IA (« jouer ») devient « conseillé »."""
     for c in combos:

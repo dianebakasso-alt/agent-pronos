@@ -159,7 +159,21 @@ def choisir_championnats(api, cfg, maintenant):
     foot = [s["key"] for s in sports
             if s.get("group") == "Soccer" and s.get("active") and not s.get("has_outrights")]
     prio = cfg["championnats_prioritaires"]
-    foot.sort(key=lambda k: (prio.index(k) if k in prio else len(prio), k))
+    # compétitions sans forme ni historique (sélections, féminines, amicaux) : pas de crédits dessus
+    foot = [k for k in foot if not moteur._sans_donnees({"sport_key": k})]
+    # les crédits vont d'abord aux championnats où l'expert gagne vraiment (carnet), puis aux prioritaires
+    try:
+        _, det = expert.specialites(expert.charger(DATA / "carnet.json"))
+    except Exception:
+        det = {}
+
+    def interet(k):
+        s = det.get(site_web.championnat(k, "")[1]) or {}
+        if s.get("n", 0) >= 15 and s.get("roi") is not None:
+            return s["roi"]
+        return 0.0 if k in prio else -0.05
+    foot.sort(key=lambda k: (-interet(k), prio.index(k) if k in prio else len(prio), k))
+    print("    ordre des championnats : " + ", ".join(f"{site_web.championnat(k, '')[1]} {interet(k) * 100:+.0f} %" for k in foot[:8]))
 
     fin = fin_fenetre(maintenant)
     retenus = []
@@ -739,6 +753,10 @@ def main():
         (DATA / "semaine.json").write_text(json.dumps([{"jour": j["cle"], "matchs": len(j["analyses"]),
             "value_bets": len(j["values"]), "combines": [(c["style"], c["conseille"], round(c["cote"], 2), round(c["proba"], 3)) for c in j["combos"]]}
             for j in jours], ensure_ascii=False, indent=1), encoding="utf-8")
+    for j in jours:   # 🎯 système 2 sur 3 sur les matchs du meilleur Gros gain
+        sy = moteur.systeme_2_3(j["combos"])
+        if sy:
+            j["combos"].append(sy)
     an_auj = jours[0]["analyses"]
     combine = moteur.combine_du_jour(an_auj, cfg)        # le combiné suivi dans le bilan (aujourd'hui)
     combos = [c for j in jours for c in j["combos"]]
@@ -972,6 +990,9 @@ def main():
         tv = moteur.ticket_verifie(jq, cfg)
         jours[0]["combos"] = moteur.valider_par_ia(moteur.diversifier(([tv] if tv else []) + moteur.combines_experts(jq, cfg)
                                                                       + moteur.combines_buts(jq)))
+        sy = moteur.systeme_2_3(jours[0]["combos"])
+        if sy:
+            jours[0]["combos"].append(sy)
         print(f"    combinés refaits avec {len(verdicts)} avis de l'IA")
     for j in jours:
         jj = [a for a in j["analyses"] if not a.get("deja_commence")]

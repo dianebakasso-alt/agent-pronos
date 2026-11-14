@@ -21,6 +21,7 @@ CATEGORIES = {
     "buts": ("⚽", "Combiné Buts"),
     "mixte": ("🔀", "Combiné Mixte"),
     "mixte_gros": ("💥", "Mixte gros gain"),
+    "systeme": ("🎯", "Système 2 sur 3"),
     "verifie": ("🔎", "Vérifié par l'IA"),
     "jour": ("📌", "Ticket du jour"),
     "semaine": ("🔭", "Ticket de la semaine"),
@@ -232,6 +233,16 @@ def regler(carnet, maintenant):
         if p["statut"] != "en attente":
             continue
         jb = p["jambes"]
+        if p["cat"] == "systeme":   # 3 doubles : gagné dès que 2 matchs sur 3 passent
+            if all("ok" in j for j in jb):
+                mise_d = p["mise"] / 3
+                ret = sum(mise_d * (jb[i]["cote"] or 1) * (jb[k]["cote"] or 1)
+                          for i, k in ((0, 1), (0, 2), (1, 2)) if jb[i]["ok"] and jb[k]["ok"])
+                p["gain"] = round(ret - p["mise"], 2)
+                p["statut"] = "gagné" if ret > 0 else "perdu"
+            elif sum(j.get("ok") is False for j in jb) >= 2:
+                p["statut"], p["gain"] = "perdu", -p["mise"]
+            continue
         if any(j.get("ok") is False for j in jb):
             p["statut"], p["gain"] = "perdu", -p["mise"]
         elif all("ok" in j for j in jb):
