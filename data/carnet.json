@@ -47708,7 +47708,24 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916991"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 4-32, cadrés 3-6, possession 22-78 %). Chelsea a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.14,
@@ -47716,8 +47733,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:603765f32acd9adad5599d186ba379be",
@@ -47736,7 +47753,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916990"
+    },
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.43,
@@ -47744,8 +47767,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.3
  },
  {
   "cle": "match:3b7829885e4225fbf20a21fe5400e120",
@@ -47765,7 +47788,13 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916989"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -47773,8 +47802,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.9
  },
  {
   "cle": "match:17c12df50a8d8ef2df44722cf78317e8",
@@ -47793,7 +47822,13 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916987"
+    },
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 1.72,
@@ -47801,8 +47836,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.2
  },
  {
   "cle": "match:1a8bd83d08fab7c8e9b40284c43a3f3e",
@@ -47852,7 +47887,23 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916990"
+    },
+    "score": "3-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-0 (tirs 23-8, cadrés 9-2, possession 60-40 %). Real Madrid a été plus dangereux (9 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 5.1,
@@ -47860,8 +47911,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-11-10",
@@ -47880,7 +47931,13 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916987"
+    },
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "603765f32acd9adad5599d186ba379be",
@@ -47894,7 +47951,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916990"
+    },
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 2.46,
@@ -47902,8 +47965,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.6
  },
  {
   "cle": "mixte:2026-11-10",
@@ -47925,7 +47988,24 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916991"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 4-32, cadrés 3-6, possession 22-78 %). Chelsea a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "603765f32acd9adad5599d186ba379be",
@@ -47939,7 +48019,13 @@
     "marche": "plus25",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916990"
+    },
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
@@ -47961,8 +48047,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-10",
@@ -47981,7 +48067,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916990"
+    },
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "17c12df50a8d8ef2df44722cf78317e8",
@@ -47995,7 +48087,13 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916987"
+    },
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
@@ -48023,7 +48121,23 @@
     "marche": "plus25",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916991"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 4-32, cadrés 3-6, possession 22-78 %). match fermé : seulement 9 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    },
    {
     "id": "3b7829885e4225fbf20a21fe5400e120",
@@ -48037,7 +48151,13 @@
     "marche": "btts",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916989"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 10.33,
@@ -48045,8 +48165,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudence:17c12df50a8d8ef2df44722cf78317e8",
@@ -48066,7 +48186,13 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916987"
+    },
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 1.18,
@@ -48074,8 +48200,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.8,
   "note": 7.9
  },
  {
@@ -48095,7 +48221,24 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916985"
+    },
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 10-22, cadrés 5-11, possession 48-52 %). HB Køge a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.55,
@@ -48103,8 +48246,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:1a399de4304b787f2816244d5255cb6a",
@@ -48193,7 +48336,13 @@
     "marche": "btts",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916985"
+    },
+    "score": "1-1",
+    "ok": true
    }
   ],
   "cote": 2.4,
@@ -48237,7 +48386,13 @@
     "marche": "btts",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916985"
+    },
+    "score": "1-1",
+    "ok": true
    }
   ],
   "cote": 2.22,
@@ -48266,7 +48421,23 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861146"
+    },
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 26-10, cadrés 7-2, possession 69-31 %). Armenia a été plus dangereux (7 tirs cadrés contre 2).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.48,
@@ -48274,8 +48445,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:d598d5e914a905ef70b01fd1b444aecb",
@@ -48324,7 +48495,24 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916986"
+    },
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 24-7, cadrés 7-3, possession 69-31 %). Barcelona a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.18,
@@ -48332,8 +48520,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:21f1d732a768ec97ab405050ec9be408",
@@ -48352,7 +48540,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.13,
@@ -48360,8 +48554,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.3
  },
  {
   "cle": "match:3caa30ea2ac5a1be30724132ba10d82b",
@@ -48383,7 +48577,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861149"
+    },
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 1.1,
@@ -48391,8 +48591,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.0
  },
  {
   "cle": "match:8a1174de9079b530bd6612e3fde6e2fa",
@@ -48412,7 +48612,13 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861150"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.21,
@@ -48420,8 +48626,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.1
  },
  {
   "cle": "match:87441c4ff41ea3d37812826345450408",
@@ -48471,7 +48677,25 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861151"
+    },
+    "score": "3-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-1 (tirs 11-18, cadrés 5-5, possession 35-65 %). Italy a marqué sur penalty; France a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.92,
@@ -48479,8 +48703,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:030f628eb3a7ad16c3bca6884c18c56e",
@@ -48501,7 +48725,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861152"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.23,
@@ -48509,8 +48739,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.3
  },
  {
   "cle": "match:a0dae77f45586cf3231af85edf936ce1",
@@ -48558,7 +48788,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861149"
+    },
+    "score": "0-2",
+    "ok": true
    },
    {
     "id": "030f628eb3a7ad16c3bca6884c18c56e",
@@ -48574,7 +48810,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861152"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.35,
@@ -48582,8 +48824,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.5
  },
  {
   "cle": "equilibre:2026-11-12",
@@ -48605,7 +48847,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861149"
+    },
+    "score": "0-2",
+    "ok": true
    },
    {
     "id": "d598d5e914a905ef70b01fd1b444aecb",
@@ -48648,7 +48896,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "c096e9bfabbbb93326413433b7c63511",
@@ -48663,7 +48917,25 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861151"
+    },
+    "score": "3-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-1 (tirs 11-18, cadrés 5-5, possession 35-65 %). Italy a marqué sur penalty; France a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "d598d5e914a905ef70b01fd1b444aecb",
@@ -48686,8 +48958,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-12",
@@ -48706,7 +48978,24 @@
     "marche": "plus25",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916986"
+    },
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 24-7, cadrés 7-3, possession 69-31 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "21f1d732a768ec97ab405050ec9be408",
@@ -48720,7 +49009,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "d598d5e914a905ef70b01fd1b444aecb",
@@ -48742,8 +49037,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-12",
@@ -48778,7 +49073,24 @@
     "marche": "plus25",
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.wchampions",
+     "id": "401916986"
+    },
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 24-7, cadrés 7-3, possession 69-31 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "21f1d732a768ec97ab405050ec9be408",
@@ -48792,7 +49104,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.82,
@@ -48800,8 +49118,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudence:21f1d732a768ec97ab405050ec9be408",
@@ -48822,7 +49140,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.22,
@@ -48830,8 +49154,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.2,
   "note": 7.6
  },
  {
@@ -48884,7 +49208,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861151"
+    },
+    "score": "3-1",
+    "ok": false
    }
   ],
   "cote": 1.24,
@@ -48892,8 +49222,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.3
  },
  {
@@ -48915,7 +49245,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861147"
+    },
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "c096e9bfabbbb93326413433b7c63511",
@@ -48931,7 +49267,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861151"
+    },
+    "score": "3-1",
+    "ok": false
    }
   ],
   "cote": 1.51,
@@ -48939,8 +49281,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:cc1ca0aea8a9aa6ad2e1537834fe0d04",
@@ -48959,7 +49301,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861162"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.55,
@@ -48967,8 +49315,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.5
  },
  {
   "cle": "match:fed29050dc7e99c7dd6b3b4580f142b7",
@@ -49032,7 +49380,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861155"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.63,
@@ -49040,8 +49394,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.3
  },
  {
   "cle": "match:9529ee7ca79126460eb063f53187f321",
@@ -49062,7 +49416,13 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861153"
+    },
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.17,
@@ -49070,8 +49430,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.7
  },
  {
   "cle": "match:b53069411f63a0d3aed21fa84d225faf",
@@ -49090,7 +49450,13 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861157"
+    },
+    "score": "0-5",
+    "ok": true
    }
   ],
   "cote": 1.69,
@@ -49098,8 +49464,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.9
  },
  {
   "cle": "match:eef1c96c424e42b66f49b7ec3bef1a5c",
@@ -49116,7 +49482,23 @@
     "cote": 2.5,
     "proba": 0.3644,
     "court": "1",
-    "traits": []
+    "traits": [],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861154"
+    },
+    "score": "0-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-1 (tirs 8-10, cadrés 3-5, possession 54-46 %). Estonia a été plus dangereux (5 tirs cadrés contre 3).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.5,
@@ -49124,8 +49506,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:a2b1b42a452df659cc5d0d242d8f98be",
@@ -49146,7 +49528,24 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861160"
+    },
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 14-10, cadrés 5-4, possession 72-28 %). Faroe Islands a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.3,
@@ -49154,8 +49553,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:d0ee3d2f44cf592797f6ecae8de62edd",
@@ -49177,7 +49576,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861158"
+    },
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.23,
@@ -49185,8 +49590,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.3
  },
  {
   "cle": "match:0010d3b2b15a2b8cb04053b0b1407cc5",
@@ -49205,7 +49610,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861159"
+    },
+    "score": "7-0",
+    "ok": true
    }
   ],
   "cote": 1.5,
@@ -49213,8 +49624,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.0
  },
  {
   "cle": "match:199940cd0d3a9c7ad93be4063cb2df93",
@@ -49235,7 +49646,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861161"
+    },
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.14,
@@ -49243,8 +49660,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.4
  },
  {
   "cle": "match:af4d45ae5e37dc2a0e146d2a9e9a926d",
@@ -49263,7 +49680,24 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861156"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 8-13, cadrés 2-3, possession 29-71 %). Switzerland a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.64,
@@ -49271,8 +49705,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "verifie:2026-11-13",
@@ -49291,7 +49725,18 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 8-13, cadrés 2-3, possession 29-71 %). Switzerland a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "b53069411f63a0d3aed21fa84d225faf",
@@ -49367,7 +49812,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861161"
+    },
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "d0ee3d2f44cf592797f6ecae8de62edd",
@@ -49384,7 +49835,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861158"
+    },
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.39,
@@ -49392,8 +49849,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.9
  },
  {
   "cle": "equilibre:2026-11-13",
@@ -49415,7 +49872,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861158"
+    },
+    "score": "1-3",
+    "ok": true
    },
    {
     "id": "0010d3b2b15a2b8cb04053b0b1407cc5",
@@ -49429,7 +49892,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861159"
+    },
+    "score": "7-0",
+    "ok": true
    }
   ],
   "cote": 1.83,
@@ -49437,8 +49906,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.3
  },
  {
   "cle": "mixte:2026-11-13",
@@ -49459,7 +49928,13 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861161"
+    },
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "9529ee7ca79126460eb063f53187f321",
@@ -49473,7 +49948,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861153"
+    },
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "6eecb0b534f8cda6254b8a0884289e16",
@@ -49487,7 +49968,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861155"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.55,
@@ -49495,8 +49982,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.5
  },
  {
   "cle": "mixte_gros:2026-11-13",
@@ -49517,7 +50004,24 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861160"
+    },
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 14-10, cadrés 5-4, possession 72-28 %). Faroe Islands a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "0010d3b2b15a2b8cb04053b0b1407cc5",
@@ -49531,7 +50035,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861159"
+    },
+    "score": "7-0",
+    "ok": true
    },
    {
     "id": "9529ee7ca79126460eb063f53187f321",
@@ -49545,7 +50055,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861153"
+    },
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "6eecb0b534f8cda6254b8a0884289e16",
@@ -49559,7 +50075,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861155"
+    },
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "af4d45ae5e37dc2a0e146d2a9e9a926d",
@@ -49573,7 +50095,13 @@
     "marche": "pas_btts",
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861156"
+    },
+    "score": "0-0",
+    "ok": true
    }
   ],
   "cote": 7.5,
@@ -49581,8 +50109,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "jour:2026-11-13",
@@ -49601,7 +50129,13 @@
     "court": "2",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861157"
+    },
+    "score": "0-5",
+    "ok": true
    },
    {
     "id": "6eecb0b534f8cda6254b8a0884289e16",
@@ -49615,7 +50149,13 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861155"
+    },
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.74,
@@ -49623,8 +50163,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 17.4
  },
  {
   "cle": "match:908247d5d5cd714de37956edf865668b",
@@ -49867,6 +50407,10 @@
     "cote": 2.3,
     "proba": 0.3818,
     "court": "2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861164"
+    },
     "bk_p": {
      "sport888": {
       "1": 0.3174,
@@ -49937,6 +50481,10 @@
     "cote": 1.17,
     "proba": 0.7793,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861165"
+    },
     "bk_p": {
      "onexbet": {
       "1": 0.7748,
@@ -50188,6 +50736,10 @@
     "cote": 1.51,
     "proba": 0.598,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861170"
+    },
     "bk_p": {
      "marathonbet": {
       "1": 0.6106,
@@ -50251,6 +50803,10 @@
     "cote": 1.45,
     "proba": 0.6214,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861166"
+    },
     "bk_p": {
      "pmu_fr": {
       "2": 0.1627,
@@ -50321,6 +50877,10 @@
     "cote": 1.44,
     "proba": 0.6337,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861167"
+    },
     "bk_p": {
      "onexbet": {
       "2": 0.1564,
@@ -50391,6 +50951,10 @@
     "cote": 2.35,
     "proba": 0.3755,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861169"
+    },
     "bk_p": {
      "sport888": {
       "1": 0.3757,
@@ -50461,6 +51025,10 @@
     "cote": 1.74,
     "proba": 0.5147,
     "court": "2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861168"
+    },
     "bk_p": {
      "winamax_fr": {
       "2": 0.5165,
@@ -50673,9 +51241,9 @@
      }
     },
     "force_p": {
-     "1": 0.674,
-     "N": 0.172,
-     "2": 0.155
+     "1": 0.429,
+     "N": 0.262,
+     "2": 0.31
     },
     "marche_p": {
      "1": 0.4788,
@@ -50683,7 +51251,7 @@
      "2": 0.2539
     },
     "traits": [
-     "force_pour"
+     "piege"
     ]
    }
   ],
@@ -50710,6 +51278,10 @@
     "cote": 1.44,
     "proba": 0.6337,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861167"
+    },
     "traits": [
      "doute_ia"
     ]
@@ -50724,6 +51296,10 @@
     "cote": 1.45,
     "proba": 0.6214,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861166"
+    },
     "traits": [
      "doute_ia"
     ]
@@ -50752,6 +51328,10 @@
     "cote": 1.17,
     "proba": 0.7793,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861165"
+    },
     "traits": [
      "petite_cote",
      "favori_net"
@@ -50767,6 +51347,10 @@
     "cote": null,
     "proba": 0.5981,
     "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861167"
+    },
     "traits": [
      "buts_plus"
     ]
@@ -50813,6 +51397,10 @@
     "cote": 1.44,
     "proba": 0.6337,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861167"
+    },
     "traits": [
      "doute_ia"
     ]
@@ -50827,6 +51415,10 @@
     "cote": 1.45,
     "proba": 0.6214,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861166"
+    },
     "traits": [
      "doute_ia"
     ]
@@ -50859,6 +51451,10 @@
     "cote": null,
     "proba": 0.5781,
     "marche": "pas_btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861169"
+    },
     "traits": [
      "buts_moins"
     ]
@@ -50906,6 +51502,10 @@
     "cote": 1.38,
     "proba": 0.6337,
     "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861167"
+    },
     "traits": [
      "petite_cote",
      "doute_ia"
@@ -50935,6 +51535,10 @@
     "cote": 1.18,
     "proba": 0.7616,
     "court": "N2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861168"
+    },
     "traits": [
      "petite_cote",
      "favori_net",
@@ -50950,40 +51554,6 @@
   "statut": "en attente",
   "gain": 0.0,
   "note": 7.6
- },
- {
-  "cle": "prudence:60e79364c168ad0ad22c0cffc02be8a9",
-  "jour": "2026-11-14",
-  "cat": "prudence",
-  "jambes": [
-   {
-    "id": "60e79364c168ad0ad22c0cffc02be8a9",
-    "date": "2026-11-14T21:30:00Z",
-    "domicile": "Mirassol",
-    "exterieur": "Atletico Mineiro",
-    "championnat": "Brasileirão",
-    "pari": "Nul ou Mirassol",
-    "cote": 1.22,
-    "proba": 0.7461,
-    "court": "1N",
-    "espn": {
-     "ligue": "bra.1",
-     "id": "401841311"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net"
-    ]
-   }
-  ],
-  "cote": 1.22,
-  "proba": 0.7461,
-  "estime": false,
-  "conseille": true,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
-  "note": 7.5
  },
  {
   "cle": "prudence:6bc4aff371a2a5eaf38c73700a5c14d4",
@@ -51021,6 +51591,40 @@
   "note": 7.4
  },
  {
+  "cle": "prudence:60e79364c168ad0ad22c0cffc02be8a9",
+  "jour": "2026-11-14",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Nul ou Mirassol",
+    "cote": 1.22,
+    "proba": 0.7461,
+    "court": "1N",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7461,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.0
+ },
+ {
   "cle": "prudence_combi:2026-11-14",
   "jour": "2026-11-14",
   "cat": "prudence_combi",
@@ -51035,6 +51639,10 @@
     "cote": 1.16,
     "proba": 0.7616,
     "court": "N2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861168"
+    },
     "traits": [
      "petite_cote",
      "favori_net",

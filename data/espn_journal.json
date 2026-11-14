@@ -1,5 +1,6 @@
 {
  "ligues": {
+  "soccer_uefa_nations_league": 34,
   "soccer_spain_segunda_division": 15,
   "soccer_brazil_campeonato": 14,
   "soccer_mexico_ligamx": 8,
@@ -13,7 +14,7 @@
   "soccer_spain_la_liga": 5,
   "soccer_argentina_primera_division": 3
  },
- "relies": 34,
+ "relies": 49,
  "manques": [],
  "europe": 0,
  "fatigue": 0
