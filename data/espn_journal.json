@@ -1,10 +1,19 @@
 {
  "ligues": {
-  "soccer_spain_segunda_division": 12,
-  "soccer_brazil_campeonato": 11,
-  "soccer_mexico_ligamx": 4
+  "soccer_spain_segunda_division": 15,
+  "soccer_brazil_campeonato": 14,
+  "soccer_mexico_ligamx": 8,
+  "soccer_usa_mls": 5,
+  "soccer_australia_aleague": 5,
+  "soccer_denmark_superliga": 1,
+  "soccer_france_ligue_two": 8,
+  "soccer_germany_bundesliga": 7,
+  "soccer_france_ligue_one": 6,
+  "soccer_belgium_first_div": 5,
+  "soccer_spain_la_liga": 5,
+  "soccer_argentina_primera_division": 3
  },
- "relies": 22,
+ "relies": 36,
  "manques": [],
  "europe": 0,
  "fatigue": 0

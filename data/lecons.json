@@ -1,22 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "FC Twente Enschede - FC Thun",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7944,
-  "score": "1-0",
-  "pourquoi": "Score 1-0 (tirs 22-6, cadrés 5-0, possession 73-27 %). match fermé : seulement 5 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Feyenoord Rotterdam - Fortuna Sittard",
   "pari": "Plus de 2,5 buts",
   "cote": null,
@@ -6625,6 +6609,24 @@
    "favori_surcote"
   ],
   "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-14",
+  "match": "Leganés - Burgos CF",
+  "pari": "Victoire Burgos CF",
+  "cote": 2.82,
+  "proba": 0.304,
+  "score": "3-1",
+  "pourquoi": "Score 3-1 (tirs 7-21, cadrés 3-3, possession 40-60 %). Leganés a marqué sur penalty; Burgos CF a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance",
+   "penalty"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
   "source": "espn"
  }
 ]

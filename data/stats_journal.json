@@ -2,11 +2,21 @@
  "ligues_ok": [
   "soccer_spain_segunda_division",
   "soccer_brazil_campeonato",
-  "soccer_mexico_ligamx"
+  "soccer_mexico_ligamx",
+  "soccer_usa_mls",
+  "soccer_denmark_superliga",
+  "soccer_france_ligue_two",
+  "soccer_germany_bundesliga",
+  "soccer_france_ligue_one",
+  "soccer_belgium_first_div",
+  "soccer_spain_la_liga",
+  "soccer_argentina_primera_division"
  ],
  "ligues_ko": [
-  "soccer_uefa_nations_league"
+  "soccer_uefa_nations_league",
+  "soccer_australia_aleague",
+  "soccer_chile_campeonato"
  ],
- "equipes_trouvees": 44,
+ "equipes_trouvees": 70,
  "equipes_manquees": []
 }

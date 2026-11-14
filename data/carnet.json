@@ -49002,7 +49002,9 @@
     "traits": [
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 2.25,
@@ -49010,8 +49012,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.5
  },
  {
   "cle": "match:6eecb0b534f8cda6254b8a0884289e16",
@@ -49321,7 +49323,21 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-1 (tirs 7-21, cadrés 3-3, possession 40-60 %). Leganés a marqué sur penalty; Burgos CF a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 7.67,
@@ -49329,8 +49345,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-13",
@@ -49569,52 +49585,6 @@
   "gain": 0.0
  },
  {
-  "cle": "semaine:2026-46",
-  "jour": "2026-11-13",
-  "cat": "semaine",
-  "jambes": [
-   {
-    "id": "955a201ba2266b8b6b0519e0265eb354",
-    "date": "2026-11-17T19:45:00Z",
-    "domicile": "Wales",
-    "exterieur": "Portugal",
-    "championnat": "Ligue des nations",
-    "pari": "Victoire Wales",
-    "cote": 7.25,
-    "proba": 0.4599,
-    "court": "1",
-    "traits": []
-   },
-   {
-    "id": "8fafa425728aa8e7d2c23956ba4c2553",
-    "date": "2026-11-14T23:30:00Z",
-    "domicile": "Chapecoense",
-    "exterieur": "Vasco da Gama",
-    "championnat": "Brasileirão",
-    "pari": "Victoire Vasco da Gama",
-    "cote": 1.34,
-    "proba": 0.6815,
-    "court": "2",
-    "espn": {
-     "ligue": "bra.1",
-     "id": "401841175"
-    },
-    "traits": [
-     "exterieur",
-     "petite_cote",
-     "favori_net"
-    ]
-   }
-  ],
-  "cote": 9.71,
-  "proba": 0.3134,
-  "estime": false,
-  "conseille": true,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
   "cle": "jour:2026-11-13",
   "jour": "2026-11-13",
   "cat": "jour",
@@ -49650,6 +49620,954 @@
   ],
   "cote": 2.74,
   "proba": 0.3235,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:908247d5d5cd714de37956edf865668b",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "908247d5d5cd714de37956edf865668b",
+    "date": "2026-11-14T13:00:00Z",
+    "domicile": "Real Valladolid CF",
+    "exterieur": "CD Castellón",
+    "championnat": "Liga 2",
+    "pari": "Victoire CD Castellón",
+    "cote": 2.08,
+    "proba": 0.4197,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883114"
+    },
+    "force_p": {
+     "1": 0.233,
+     "N": 0.184,
+     "2": 0.583
+    },
+    "marche_p": {
+     "1": 0.3236,
+     "N": 0.2567,
+     "2": 0.4197
+    },
+    "traits": [
+     "exterieur",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.08,
+  "proba": 0.4197,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:244d7d2e6f3f8529af59270040b7ec7a",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "244d7d2e6f3f8529af59270040b7ec7a",
+    "date": "2026-11-14T14:00:00Z",
+    "domicile": "Kosovo",
+    "exterieur": "Israel",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Kosovo",
+    "cote": 1.75,
+    "proba": 0.5229,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.75,
+  "proba": 0.5229,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d5b0e0c0934f6a58410410bd573a5065",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d5b0e0c0934f6a58410410bd573a5065",
+    "date": "2026-11-14T15:15:00Z",
+    "domicile": "Real Sociedad B",
+    "exterieur": "Sporting Gijón",
+    "championnat": "Liga 2",
+    "pari": "Victoire Real Sociedad B",
+    "cote": 2.33,
+    "proba": 0.3727,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883134"
+    },
+    "force_p": {
+     "1": 0.337,
+     "N": 0.244,
+     "2": 0.42
+    },
+    "marche_p": {
+     "1": 0.3727,
+     "N": 0.3051,
+     "2": 0.3222
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 2.33,
+  "proba": 0.3727,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d548fa34308b91eb158670eb18e1deae",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d548fa34308b91eb158670eb18e1deae",
+    "date": "2026-11-14T17:00:00Z",
+    "domicile": "Georgia",
+    "exterieur": "Hungary",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Hungary",
+    "cote": 2.3,
+    "proba": 0.3792,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.3,
+  "proba": 0.3792,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8d67c473dbea0c85b30eefee4bca53d9",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8d67c473dbea0c85b30eefee4bca53d9",
+    "date": "2026-11-14T17:00:00Z",
+    "domicile": "Norway",
+    "exterieur": "Wales",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Norway",
+    "cote": 1.17,
+    "proba": 0.7895,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.17,
+  "proba": 0.7895,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:570ec7734e1f7d9e813ab0013291f5f5",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "570ec7734e1f7d9e813ab0013291f5f5",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Almería",
+    "exterieur": "Andorra CF",
+    "championnat": "Liga 2",
+    "pari": "Victoire Almería",
+    "cote": 1.54,
+    "proba": 0.5817,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883118"
+    },
+    "force_p": {
+     "1": 0.699,
+     "N": 0.141,
+     "2": 0.16
+    },
+    "marche_p": {
+     "1": 0.5817,
+     "N": 0.2231,
+     "2": 0.1952
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.5817,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:6bc4aff371a2a5eaf38c73700a5c14d4",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Mallorca",
+    "exterieur": "Córdoba",
+    "championnat": "Liga 2",
+    "pari": "Victoire Mallorca",
+    "cote": 1.8,
+    "proba": 0.4955,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883135"
+    },
+    "force_p": {
+     "1": 0.55,
+     "N": 0.196,
+     "2": 0.254
+    },
+    "marche_p": {
+     "1": 0.4955,
+     "N": 0.2472,
+     "2": 0.2573
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.8,
+  "proba": 0.4955,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c745f84500717bc671c4cd864624cca8",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c745f84500717bc671c4cd864624cca8",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Austria",
+    "exterieur": "Republic of Ireland",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Austria",
+    "cote": 1.51,
+    "proba": 0.5916,
+    "court": "1",
+    "traits": []
+   }
+  ],
+  "cote": 1.51,
+  "proba": 0.5916,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:2b646127cc6cb400abc663c5a458f1db",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "2b646127cc6cb400abc663c5a458f1db",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Sweden",
+    "exterieur": "Bosnia & Herzegovina",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Sweden",
+    "cote": 1.45,
+    "proba": 0.6224,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.45,
+  "proba": 0.6224,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:159554f486f93d1d8d4213c570117a0e",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "159554f486f93d1d8d4213c570117a0e",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Portugal",
+    "exterieur": "Denmark",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.44,
+    "proba": 0.636,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.44,
+  "proba": 0.636,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:432a7eb09df939bf1e15a3e183f8494f",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "432a7eb09df939bf1e15a3e183f8494f",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Northern Ireland",
+    "exterieur": "Ukraine",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Northern Ireland",
+    "cote": 2.35,
+    "proba": 0.3708,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.3708,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3ce5eabe80d52d3ed6056b6c141bbea8",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3ce5eabe80d52d3ed6056b6c141bbea8",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Romania",
+    "exterieur": "Poland",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Poland",
+    "cote": 1.74,
+    "proba": 0.5178,
+    "court": "2",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.74,
+  "proba": 0.5178,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:beaf0bb6252d3b1d42a720aa385e9414",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "beaf0bb6252d3b1d42a720aa385e9414",
+    "date": "2026-11-14T20:00:00Z",
+    "domicile": "Oviedo",
+    "exterieur": "Girona FC",
+    "championnat": "Liga 2",
+    "pari": "Victoire Oviedo",
+    "cote": 2.25,
+    "proba": 0.3903,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883115"
+    },
+    "force_p": {
+     "1": 0.456,
+     "N": 0.23,
+     "2": 0.313
+    },
+    "marche_p": {
+     "1": 0.3903,
+     "N": 0.289,
+     "2": 0.3206
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.3903,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:60e79364c168ad0ad22c0cffc02be8a9",
+  "jour": "2026-11-14",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Mirassol",
+    "cote": 1.93,
+    "proba": 0.483,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "force_p": {
+     "1": 0.674,
+     "N": 0.172,
+     "2": 0.155
+    },
+    "marche_p": {
+     "1": 0.483,
+     "N": 0.2674,
+     "2": 0.2495
+    },
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.93,
+  "proba": 0.483,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "159554f486f93d1d8d4213c570117a0e",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Portugal",
+    "exterieur": "Denmark",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.44,
+    "proba": 0.636,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "2b646127cc6cb400abc663c5a458f1db",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Sweden",
+    "exterieur": "Bosnia & Herzegovina",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Sweden",
+    "cote": 1.45,
+    "proba": 0.6224,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.09,
+  "proba": 0.3959,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Mirassol",
+    "cote": 1.93,
+    "proba": 0.483,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "244d7d2e6f3f8529af59270040b7ec7a",
+    "date": "2026-11-14T14:00:00Z",
+    "domicile": "Kosovo",
+    "exterieur": "Israel",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Kosovo",
+    "cote": 1.75,
+    "proba": 0.5229,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 3.38,
+  "proba": 0.2526,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Mirassol",
+    "cote": 1.93,
+    "proba": 0.483,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "force_pour"
+    ]
+   },
+   {
+    "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Mallorca",
+    "exterieur": "Córdoba",
+    "championnat": "Liga 2",
+    "pari": "Victoire Mallorca",
+    "cote": 1.67,
+    "proba": 0.4955,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883135"
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "244d7d2e6f3f8529af59270040b7ec7a",
+    "date": "2026-11-14T14:00:00Z",
+    "domicile": "Kosovo",
+    "exterieur": "Israel",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Kosovo",
+    "cote": 1.75,
+    "proba": 0.5229,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 5.64,
+  "proba": 0.1252,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "8d67c473dbea0c85b30eefee4bca53d9",
+    "date": "2026-11-14T17:00:00Z",
+    "domicile": "Norway",
+    "exterieur": "Wales",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Norway",
+    "cote": 1.17,
+    "proba": 0.7895,
+    "court": "1",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "159554f486f93d1d8d4213c570117a0e",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Portugal",
+    "exterieur": "Denmark",
+    "championnat": "Ligue des nations",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6082,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "432a7eb09df939bf1e15a3e183f8494f",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Northern Ireland",
+    "exterieur": "Ukraine",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5855,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 3.74,
+  "proba": 0.2811,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "159554f486f93d1d8d4213c570117a0e",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Portugal",
+    "exterieur": "Denmark",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.44,
+    "proba": 0.636,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "2b646127cc6cb400abc663c5a458f1db",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Sweden",
+    "exterieur": "Bosnia & Herzegovina",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Sweden",
+    "cote": 1.45,
+    "proba": 0.6224,
+    "court": "1",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "8d67c473dbea0c85b30eefee4bca53d9",
+    "date": "2026-11-14T17:00:00Z",
+    "domicile": "Norway",
+    "exterieur": "Wales",
+    "championnat": "Ligue des nations",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7101,
+    "marche": "plus25",
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "432a7eb09df939bf1e15a3e183f8494f",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Northern Ireland",
+    "exterieur": "Ukraine",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5855,
+    "marche": "pas_btts",
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 6.38,
+  "proba": 0.1646,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "semaine:2026-46",
+  "jour": "2026-11-14",
+  "cat": "semaine",
+  "jambes": [
+   {
+    "id": "955a201ba2266b8b6b0519e0265eb354",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Wales",
+    "exterieur": "Portugal",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Wales",
+    "cote": 7.25,
+    "proba": 0.4599,
+    "court": "1",
+    "traits": []
+   },
+   {
+    "id": "f0a77086c85d161afcfc2f275e9e29fa",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Greece",
+    "exterieur": "Serbia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Serbia",
+    "cote": 6.6,
+    "proba": 0.4734,
+    "court": "2",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 47.85,
+  "proba": 0.2177,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:3ce5eabe80d52d3ed6056b6c141bbea8",
+  "jour": "2026-11-14",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "3ce5eabe80d52d3ed6056b6c141bbea8",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Romania",
+    "exterieur": "Poland",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Poland",
+    "cote": 1.18,
+    "proba": 0.7623,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7623,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.6
+ },
+ {
+  "cle": "prudence:60e79364c168ad0ad22c0cffc02be8a9",
+  "jour": "2026-11-14",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Nul ou Mirassol",
+    "cote": 1.22,
+    "proba": 0.7505,
+    "court": "1N",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7505,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.5
+ },
+ {
+  "cle": "prudence:6bc4aff371a2a5eaf38c73700a5c14d4",
+  "jour": "2026-11-14",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Mallorca",
+    "exterieur": "Córdoba",
+    "championnat": "Liga 2",
+    "pari": "Nul ou Mallorca",
+    "cote": 1.21,
+    "proba": 0.7427,
+    "court": "1N",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883135"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.21,
+  "proba": 0.7427,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.4
+ },
+ {
+  "cle": "prudence_combi:2026-11-14",
+  "jour": "2026-11-14",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "3ce5eabe80d52d3ed6056b6c141bbea8",
+    "date": "2026-11-14T19:45:00Z",
+    "domicile": "Romania",
+    "exterieur": "Poland",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Poland",
+    "cote": 1.16,
+    "proba": 0.7623,
+    "court": "N2",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Nul ou Mirassol",
+    "cote": 1.22,
+    "proba": 0.7505,
+    "court": "1N",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.41,
+  "proba": 0.5721,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

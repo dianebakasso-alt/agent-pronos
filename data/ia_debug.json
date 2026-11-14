@@ -2,19 +2,19 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 2374,
-  "fin": " octobre. La Bulgarie n'a gagné qu'un de ses 10 derniers matchs à domicile et marque peu (environ 0,75 but par match en Ligue des nations), ce qui rend le 2 à 1.69 cohérent, avec un doute résiduel sur un nul 1-1 évoqué par certains pronostiqueurs.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai trouvé aucune actualité spécifique (blessés, suspendus, compositions) pour ce match. Le contexte est faible : le Luxembourg a perdu 0-3 contre l'Islande et 0-2 contre la Bulgarie, tandis que l'Estonie a fait plusieurs nuls, donc aucun pari fiable sans donnée supplémentaire.\"}\n]}\n```",
+  "longueur": 1952,
+  "fin": "prudence\", \"pari\": \"1\", \"raison\": \"Mallorca est invaincu depuis cinq matchs et reçoit Córdoba, qui n'a pris que 7 points sur 21 à l'extérieur. Mais Mallorca joue sans une dizaine de joueurs (Morlanes, Donald, Cerdà, Salas, Valjent, Luvumbo...) et marque peu : Adri Fuentes a inscrit 7 de ses 15 buts, d'où un doute réel.\"}, {\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Aucune actualité fiable n'a été trouvée pour Autriche - Irlande lors de ma recherche, donc je n'ai pas de base d'analyse. Avec une cote de 1.51 sur l'Autriche, sans information, le pari n'a pas de valeur démontrée.\"}]}",
   "usage": {
-   "input_tokens": 54819,
+   "input_tokens": 53927,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 6859,
+   "output_tokens": 4054,
    "output_tokens_details": {
-    "thinking_tokens": 5409
+    "thinking_tokens": 2760
    },
    "service_tier": "standard",
    "inference_geo": "global",
@@ -28,19 +28,19 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 1883,
-  "fin": "point, et le retour de McTominay renforce l'Écosse. Mais le 1.14 n'offre pratiquement aucune valeur, et l'Écosse a perdu ses deux derniers matchs à domicile, donc un seul accroc coûterait cher.\"},\n  {\"n\": 5, \"verdict\": \"jouer\", \"pari\": \"2\", \"raison\": \"La Suisse est invaincue avec quatre victoires et un seul but encaissé, et Jashari, Embolo et Athekame reviennent ; un nul lui suffit pour la première place. La Slovénie est privée de Sesko (tibia) et n'a battu la Suisse que deux fois en douze confrontations, donc le 1.64 (environ 61 %) me paraît juste en dessous de la probabilité réelle.\"}\n]}\n```",
+  "longueur": 2394,
+  "fin": " buts, avec des doutes sur Bailly et Alhassane et l'absence de Lemos. Aucun avantage net ne se dégage, donc pas de pari sérieux.\"},\n{\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Aucune actualité trouvée : ma recherche sur ce match a échoué (limite d'outils atteinte), donc blessés, suspensions et fatigue ne sont pas vérifiés. D'après tes stats, Atlético Mineiro a perdu 3 de ses 5 derniers matchs et n'a gagné aucun de ses 5 derniers déplacements, mais Mirassol n'est pas en forme éclatante (1.0 but marqué par match, 2 victoires à domicile seulement) : à vérifier avant de jouer.\"}\n]}\n```",
   "usage": {
-   "input_tokens": 53236,
+   "input_tokens": 50644,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5870,
+   "output_tokens": 5125,
    "output_tokens_details": {
-    "thinking_tokens": 4687
+    "thinking_tokens": 3640
    },
    "service_tier": "standard",
    "inference_geo": "global",

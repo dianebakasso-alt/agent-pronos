@@ -1228,5 +1228,37 @@
     "cote": 1.17
    }
   ]
+ },
+ {
+  "jour": "2026-11-14",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.38,
+  "proba": 0.2526,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "sport_key": "soccer_brazil_campeonato",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "pari": "Victoire Mirassol",
+    "court": "1",
+    "cote": 1.93
+   },
+   {
+    "id": "244d7d2e6f3f8529af59270040b7ec7a",
+    "sport_key": "soccer_uefa_nations_league",
+    "date": "2026-11-14T14:00:00Z",
+    "domicile": "Kosovo",
+    "exterieur": "Israel",
+    "pari": "Victoire Kosovo",
+    "court": "1",
+    "cote": 1.75
+   }
+  ]
  }
 ]

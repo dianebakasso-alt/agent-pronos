@@ -1103,5 +1103,175 @@
    "N": 3.4,
    "2": 1.64
   }
+ },
+ "908247d5d5cd714de37956edf865668b": {
+  "jour": "2026-11-14",
+  "domicile": "Real Valladolid CF",
+  "exterieur": "CD Castellón",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3236,
+   "N": 0.2567,
+   "2": 0.4197
+  },
+  "cotes": {
+   "1": 2.75,
+   "N": 3.35,
+   "2": 2.08
+  }
+ },
+ "244d7d2e6f3f8529af59270040b7ec7a": {
+  "jour": "2026-11-14",
+  "domicile": "Kosovo",
+  "exterieur": "Israel",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5229,
+   "N": 0.2573,
+   "2": 0.2197
+  },
+  "cotes": {
+   "1": 1.75,
+   "N": 3.5,
+   "2": 4.15
+  }
+ },
+ "8d67c473dbea0c85b30eefee4bca53d9": {
+  "jour": "2026-11-14",
+  "domicile": "Norway",
+  "exterieur": "Wales",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.7895,
+   "N": 0.1308,
+   "2": 0.0798
+  },
+  "cotes": {
+   "1": 1.17,
+   "N": 7.0,
+   "2": 10.5
+  }
+ },
+ "570ec7734e1f7d9e813ab0013291f5f5": {
+  "jour": "2026-11-14",
+  "domicile": "Almería",
+  "exterieur": "Andorra CF",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5817,
+   "N": 0.2231,
+   "2": 0.1952
+  },
+  "cotes": {
+   "1": 1.54,
+   "N": 3.9,
+   "2": 4.5
+  }
+ },
+ "6bc4aff371a2a5eaf38c73700a5c14d4": {
+  "jour": "2026-11-14",
+  "domicile": "Mallorca",
+  "exterieur": "Córdoba",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4955,
+   "N": 0.2472,
+   "2": 0.2573
+  },
+  "cotes": {
+   "1": 1.8,
+   "N": 3.65,
+   "2": 3.5
+  }
+ },
+ "2b646127cc6cb400abc663c5a458f1db": {
+  "jour": "2026-11-14",
+  "domicile": "Sweden",
+  "exterieur": "Bosnia & Herzegovina",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.6224,
+   "N": 0.2252,
+   "2": 0.1524
+  },
+  "cotes": {
+   "1": 1.45,
+   "N": 4.1,
+   "2": 5.75
+  }
+ },
+ "159554f486f93d1d8d4213c570117a0e": {
+  "jour": "2026-11-14",
+  "domicile": "Portugal",
+  "exterieur": "Denmark",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.636,
+   "N": 0.2011,
+   "2": 0.1629
+  },
+  "cotes": {
+   "1": 1.44,
+   "N": 4.4,
+   "2": 5.75
+  }
+ },
+ "432a7eb09df939bf1e15a3e183f8494f": {
+  "jour": "2026-11-14",
+  "domicile": "Northern Ireland",
+  "exterieur": "Ukraine",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.3708,
+   "N": 0.3183,
+   "2": 0.3108
+  },
+  "cotes": {
+   "1": 2.35,
+   "N": 2.93,
+   "2": 2.9
+  }
+ },
+ "3ce5eabe80d52d3ed6056b6c141bbea8": {
+  "jour": "2026-11-14",
+  "domicile": "Romania",
+  "exterieur": "Poland",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.2377,
+   "N": 0.2445,
+   "2": 0.5178
+  },
+  "cotes": {
+   "1": 3.85,
+   "N": 3.7,
+   "2": 1.74
+  }
+ },
+ "beaf0bb6252d3b1d42a720aa385e9414": {
+  "jour": "2026-11-14",
+  "domicile": "Oviedo",
+  "exterieur": "Girona FC",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3903,
+   "N": 0.289,
+   "2": 0.3206
+  },
+  "cotes": {
+   "1": 2.25,
+   "N": 3.1,
+   "2": 2.7
+  }
  }
 }
