@@ -51295,9 +51295,9 @@
      }
     },
     "force_p": {
-     "1": 0.429,
-     "N": 0.262,
-     "2": 0.31
+     "1": 0.674,
+     "N": 0.172,
+     "2": 0.155
     },
     "marche_p": {
      "1": 0.4788,
@@ -51305,7 +51305,7 @@
      "2": 0.2539
     },
     "traits": [
-     "piege"
+     "force_pour"
     ]
    }
   ],
@@ -51524,6 +51524,40 @@
   "note": 7.6
  },
  {
+  "cle": "prudence:60e79364c168ad0ad22c0cffc02be8a9",
+  "jour": "2026-11-14",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "60e79364c168ad0ad22c0cffc02be8a9",
+    "date": "2026-11-14T21:30:00Z",
+    "domicile": "Mirassol",
+    "exterieur": "Atletico Mineiro",
+    "championnat": "Brasileirão",
+    "pari": "Nul ou Mirassol",
+    "cote": 1.22,
+    "proba": 0.7461,
+    "court": "1N",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841311"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7461,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.5
+ },
+ {
   "cle": "prudence:6bc4aff371a2a5eaf38c73700a5c14d4",
   "jour": "2026-11-14",
   "cat": "prudence",
@@ -51557,40 +51591,6 @@
   "statut": "en attente",
   "gain": 0.0,
   "note": 7.4
- },
- {
-  "cle": "prudence:60e79364c168ad0ad22c0cffc02be8a9",
-  "jour": "2026-11-14",
-  "cat": "prudence",
-  "jambes": [
-   {
-    "id": "60e79364c168ad0ad22c0cffc02be8a9",
-    "date": "2026-11-14T21:30:00Z",
-    "domicile": "Mirassol",
-    "exterieur": "Atletico Mineiro",
-    "championnat": "Brasileirão",
-    "pari": "Nul ou Mirassol",
-    "cote": 1.22,
-    "proba": 0.7461,
-    "court": "1N",
-    "espn": {
-     "ligue": "bra.1",
-     "id": "401841311"
-    },
-    "traits": [
-     "petite_cote",
-     "favori_net"
-    ]
-   }
-  ],
-  "cote": 1.22,
-  "proba": 0.7461,
-  "estime": false,
-  "conseille": true,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
-  "note": 7.0
  },
  {
   "cle": "prudence_combi:2026-11-14",

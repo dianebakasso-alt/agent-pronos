@@ -1248,8 +1248,8 @@
   "proba": 0.2526,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "60e79364c168ad0ad22c0cffc02be8a9",
@@ -1269,7 +1269,10 @@
     "exterieur": "Israel",
     "pari": "Victoire Kosovo",
     "court": "1",
-    "cote": 1.75
+    "cote": 1.75,
+    "res": "N",
+    "score": "0-0",
+    "ok": false
    }
   ]
  }
