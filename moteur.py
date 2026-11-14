@@ -10,6 +10,8 @@ Principe :
 
 NUL = "Nul"
 
+import bookmakers
+
 
 def probas_sans_marge(cotes):
     """{issue: cote} -> {issue: probabilité}, marge du bookmaker retirée."""
@@ -97,7 +99,10 @@ def analyser_match(match, cfg):
     if len(par_bk) < cfg["bookmakers_minimum"]:
         return None
 
-    probas, source = probas_marche(par_bk, cfg.get("references") or cfg["bookmaker_reference"])
+    # consensus pondéré : tous les bookmakers, les plus justes (mesurés sur le carnet) comptent plus
+    probas, source, desaccord = bookmakers.consensus(par_bk)
+    if not probas:
+        probas, source = probas_marche(par_bk, cfg.get("references") or cfg["bookmaker_reference"])
     # les deux références sont-elles d'accord ? (un écart fort = prix incertain → moins de confiance)
     refs = [k for k in (cfg.get("references") or {}) if k in par_bk]
     ecart = 0.0
@@ -153,7 +158,11 @@ def analyser_match(match, cfg):
                 for cle, v in par_bk.items() if cle in jouables}
 
     favori = max(issues, key=lambda i: i["proba"]) if issues else None
+    code_bk = {dom: "1", NUL: "N", ext: "2"}
     return {
+        "desaccord_bk": round(desaccord, 3),
+        "probas_bk": bookmakers.probas_par_bk(par_bk, code_bk),
+        "prix_hors_norme": bookmakers.prix_hors_norme(par_bk, jouables, code_bk),
         "id": match["id"],
         "championnat": match.get("sport_title", match.get("sport_key")),
         "sport_key": match.get("sport_key"),
@@ -181,6 +190,8 @@ PIEGE_EXCLU = False   # testé sur 2 saisons : les alertes de forme sont déjà 
 def _jouable(m, p, court=None):
     """Ce match / cette probabilité peut-il entrer dans un combiné ?"""
     if PIEGE_EXCLU and court and (m.get("pieges") or {}).get(court):
+        return False
+    if (m.get("desaccord_bk") or 0) > bookmakers.DESACCORD_FORT:   # bookmakers en désaccord : match flou
         return False
     v = m.get("verdict_ia") or {}
     if v.get("verdict") == "eviter":          # l'IA a lu l'actu du match : elle dit de ne pas y toucher

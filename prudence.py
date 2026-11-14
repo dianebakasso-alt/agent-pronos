@@ -76,6 +76,10 @@ def analyser(m, note_min=NOTE_MIN, cote_min=COTE_MIN):
     if (m.get("fatigue") or {}).get(choix["equipe"]):
         note -= 0.3
         raisons.append(m["fatigue"][choix["equipe"]])
+    dz = m.get("desaccord_bk") or 0
+    if dz > 0.07:
+        note -= 0.5
+        raisons.append(f"les bookmakers ne sont pas d'accord (écart de {dz * 100:.0f} points) : match flou")
     if choix["proba"] - autre["proba"] < 0.04:
         raisons.append("les deux côtés se valent : match très ouvert")
     note = max(0.0, min(10.0, round(note, 1)))

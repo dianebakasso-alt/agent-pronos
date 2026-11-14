@@ -751,7 +751,15 @@ DUEL_IA = {}
 def bloc_duo(m, v):
     """À gauche les bookmakers, à droite l'IA, puis l'arbitrage : qui croire sur ce match."""
     fav = max(m["issues"], key=lambda i: i["proba"])
-    bk = f"{fav['issue']} · {fav['proba'] * 100:.0f} % <small>(cote {fav['cote']:.2f})</small>"
+    nb = len(m.get("probas_bk") or {}) or m.get("nb_bookmakers") or 0
+    dz = m.get("desaccord_bk") or 0
+    accord = (f'<small class="rouge">⚠️ {nb} bookmakers en désaccord ({dz * 100:.0f} pts d\'écart) : match flou</small>' if dz > 0.07
+              else f'<small>✅ {nb} bookmakers d\'accord</small>' if nb >= 2 else "")
+    bk = f"{fav['issue']} · {fav['proba'] * 100:.0f} % <small>(cote {fav['cote']:.2f})</small>{accord}"
+    hn = (m.get("prix_hors_norme") or {})
+    prix = "".join(f'<p class="arb">💰 Bon prix possible : <b>{e(x["bookmaker"])}</b> paie '
+                   f'{e(next((i["issue"] for i in m["issues"] if i["court"] == c), c))} à <b>{x["cote"]:.2f}</b> '
+                   f'(les autres : ~{x["mediane"]:.2f}).</p>' for c, x in hn.items())
     if v:
         i = next((x for x in m["issues"] if x["court"] == v.get("pari")), None)
         ia = {"jouer": "✅ Je joue ", "prudence": "⚠️ Prudence : ", "eviter": "❌ À éviter"}[v["verdict"]] + \
@@ -768,8 +776,30 @@ def bloc_duo(m, v):
     else:
         ia = "⚪ Pas vérifié"
         arb = "Sans avis de l'IA, on suit les bookmakers."
+    if dz > 0.07 and not (v and v.get("verdict") == "eviter"):
+        arb += " Les bookmakers eux-mêmes hésitent : <b>pas dans les combinés</b>."
     return (f'<div class="duo"><div><small>🏦 Bookmakers</small><b>{bk}</b></div>'
-            f'<div><small>🤖 L\'expert IA</small><b>{ia}</b></div></div><p class="arb">⚖️ {arb}</p>')
+            f'<div><small>🤖 L\'expert IA</small><b>{ia}</b></div></div><p class="arb">⚖️ {arb}</p>{prix}')
+
+
+NOMS_BK = {"pinnacle": "Pinnacle", "betfair_ex_eu": "Betfair Exchange", "betclic_fr": "Betclic", "winamax_fr": "Winamax",
+           "unibet_fr": "Unibet", "pmu_fr": "PMU", "netbet_fr": "NetBet", "onexbet": "1xBet", "marathonbet": "Marathonbet",
+           "sport888": "888sport"}
+
+
+def section_bookmakers(f):
+    """🏦 Quels bookmakers se trompent le moins ? (mesuré sur les matchs joués)"""
+    titre = '<h3 class="sous">🏦 Les bookmakers les plus justes</h3>'
+    if not f:
+        return titre + ('<p class="note">La mesure commence : pour chaque match joué, on compare la probabilité de chaque '
+                        'bookmaker au vrai résultat. Les plus justes compteront plus dans les calculs de l\'expert.</p>')
+    lignes = "".join(
+        f'<tr><td>{i + 1}. {e(NOMS_BK.get(k, k))}<small>{x["n"]} matchs · favori juste {x["favori_ok"] * 100:.0f} %</small></td>'
+        f'<td class="r">{x["brier"]:.3f}<small>poids ×{x.get("poids", 1):.1f}</small></td></tr>'
+        for i, (k, x) in enumerate(sorted(f.items(), key=lambda kv: kv[1]["brier"])))
+    return titre + ('<p class="note">Score d\'erreur sur les matchs joués (plus petit = plus juste). '
+                    'Le poids, c\'est combien il compte dans la probabilité de l\'expert : il grandit avec le nombre de matchs.</p>'
+                    f'<table class="hist">{lignes}</table>')
 
 
 def section_duel_ia(d):
@@ -1547,6 +1577,7 @@ header.reduit h1 {{ font-size:30px; }}
 .duo div {{ padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.05); font:600 13px Inter,sans-serif; }}
 .duo small {{ display:block; color:var(--muted); font-weight:500; font-size:11px; margin-bottom:2px; }}
 .duo b small {{ display:inline; font-size:11px; }}
+.duo b small.rouge, .duo b small:last-child {{ display:block; margin-top:3px; }}
 .arb {{ font:500 12.5px Inter,sans-serif; margin:4px 0 6px; }}
 .alertes {{ list-style:none; margin:6px 0; padding:0; font:500 12px Inter,sans-serif; color:var(--muted); }}
 .alertes li {{ padding:3px 0; }}
@@ -1923,6 +1954,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 <h2>📊 Bilan de l'expert</h2>
 {section_expert(infos.get("expert"))}
 {section_duel_ia(infos.get("duel_ia"))}
+{section_bookmakers(infos.get("bookmakers"))}
 {section_duel((infos.get("expert") or {}).get("duel"))}
 {section_specialites(infos.get("specialites"), infos.get("specialite_ajust"))}
 <h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>

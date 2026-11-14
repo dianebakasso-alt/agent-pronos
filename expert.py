@@ -63,6 +63,8 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
             continue
         i = max(m["issues"], key=lambda x: x["proba"])
         jb = _jambe(m, court=i["court"], pari=i["issue"], cote=i["cote"], proba=i["proba"])
+        if m.get("probas_bk"):   # mémoire par bookmaker : qui se trompe le moins ?
+            jb["bk_p"] = m["probas_bk"]
         if m.get("force"):   # pour le duel : la note de force maison contre les bookmakers
             jb["force_p"] = m["force"]["p"]
             jb["marche_p"] = {x["court"]: round(x["proba"], 4) for x in m["issues"]}

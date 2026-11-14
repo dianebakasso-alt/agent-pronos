@@ -18,6 +18,7 @@ import selection
 import autopsie
 import direct
 import moteur
+import bookmakers
 import force
 import pieges
 import prudence
@@ -606,6 +607,8 @@ def main():
         if not SECOURS["actif"]:
             (DATA / "cotes_cache.json").write_text(json.dumps({"maj": maintenant.isoformat(), "matchs": matchs}, ensure_ascii=False), encoding="utf-8")
 
+    if not demo:   # justesse mesurée de chaque bookmaker (passages précédents) : poids du consensus
+        bookmakers.charger(DATA / "bookmakers.json")
     analyses = [a for a in (moteur.analyser_match(m, cfg) for m in matchs) if a]
     _esp = {m["id"]: m["_espn"] for m in matchs if m.get("_espn")}
     for a in analyses:
@@ -741,6 +744,15 @@ def main():
             expert.regler(carnet, maintenant)
         except Exception as e:
             print(f"  ! carnet réglement : {e}")
+        try:   # mémoire par bookmaker : qui s'est le moins trompé sur les matchs joués ?
+            fb = bookmakers.mesurer(carnet)
+            (DATA / "bookmakers.json").write_text(json.dumps({"maj": maintenant.isoformat(), "bookmakers": fb},
+                                                             ensure_ascii=False, indent=1), encoding="utf-8")
+            if fb:
+                top = sorted(fb.items(), key=lambda x: x[1]["brier"])[:3]
+                print("    bookmakers les plus justes : " + ", ".join(f"{k} ({v['brier']:.3f}, {v['n']} matchs)" for k, v in top))
+        except Exception as e:
+            print(f"  ! mémoire bookmakers : {e}")
         lecons = autopsie.charger(DATA / "lecons.json")
         try:   # autopsie gratuite de chaque pari perdu (faits du match ESPN : rouges, penalties, tirs…)
             print(f"    autopsies gratuites : {autopsie.autopsies_gratuites(carnet, lecons, maintenant)}")
@@ -993,6 +1005,7 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
+        "bookmakers": {k: dict(x, poids=round(bookmakers.poids(k), 2)) for k, x in bookmakers.FIABILITE.items()} if not demo else {},
         "duel_ia": expert.duel_ia(memoire.charger(DATA / "verdicts_hist.json", {}), res_carnet) if not demo else None,
         "lecons": lecons[-8:], "ajust": selection.AJUST, "specialites": spec_detail, "specialite_ajust": selection.SPECIALITE,
         "budget_ia": None if demo else {"depense": round(BUDGET["depense"] + BUDGET["run"], 2), "plafond": BUDGET["max"]},
