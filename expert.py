@@ -154,6 +154,18 @@ def regler(carnet, maintenant):
                 if "ok" not in j and _dt(j["date"]) < maintenant - timedelta(hours=2, minutes=15)]
     besoins = {}
     for j in a_regler:
+        if not j.get("espn") and direct.SLUG_PAR_NOM.get(j.get("championnat")):
+            # pas de lien ESPN au moment du prono : on retrouve le match par les noms des équipes
+            slug, jour = direct.SLUG_PAR_NOM[j["championnat"]], _dt(j["date"]).strftime("%Y%m%d")
+            try:
+                for ev in direct._get(f"{direct.BASE}/{slug}/scoreboard?dates={jour}").get("events", []):
+                    eq = {c.get("homeAway"): (c.get("team") or {}).get("displayName", "")
+                          for c in (ev.get("competitions") or [{}])[0].get("competitors", [])}
+                    if direct._meme_equipe(j["domicile"], [eq.get("home")]) and direct._meme_equipe(j["exterieur"], [eq.get("away")]):
+                        j["espn"] = {"ligue": slug, "id": str(ev["id"])}
+                        break
+            except Exception as ex:
+                print(f"  ! carnet {slug} {jour}: {ex}")
         if j.get("espn"):
             jour = _dt(j["date"]).strftime("%Y%m%d")
             besoins.setdefault((j["espn"]["ligue"], jour), []).append(j)

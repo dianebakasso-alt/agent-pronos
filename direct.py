@@ -25,7 +25,12 @@ LIGUES_ESPN = {
     "soccer_mexico_ligamx": "mex.1", "soccer_austria_bundesliga": "aut.1", "soccer_denmark_superliga": "den.1",
     "soccer_norway_eliteserien": "nor.1", "soccer_sweden_allsvenskan": "swe.1", "soccer_switzerland_superleague": "sui.1",
     "soccer_saudi_arabia_pro_league": "ksa.1", "soccer_australia_aleague": "aus.1",
+    "soccer_uefa_nations_league": "uefa.nations", "soccer_uefa_champs_league_women": "uefa.wchampions",
+    "soccer_fifa_world_cup_qualifiers_europe": "fifa.worldq.uefa", "soccer_conmebol_copa_libertadores": "conmebol.libertadores",
 }
+# pour retrouver le score des paris déjà notés sans lien ESPN (par nom de compétition)
+SLUG_PAR_NOM = {"Ligue des nations": "uefa.nations", "UEFA Nations League": "uefa.nations",
+                "UEFA Champions League Women": "uefa.wchampions", "Ligue des champions féminine": "uefa.wchampions"}
 
 
 def _get(url):
