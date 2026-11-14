@@ -60,7 +60,8 @@ def analyser(m, note_min=NOTE_MIN, cote_min=COTE_MIN):
 
     note = choix["proba"] * 10
     raisons = []
-    v = m.get("verdict_ia") or {}
+    import moteur
+    v = (m.get("verdict_ia") or {}) if moteur.IA_FIABLE else {}
     if v.get("verdict") == "eviter":
         note -= 1.5
         raisons.append("l'IA a lu l'actu et dit d'éviter ce match")

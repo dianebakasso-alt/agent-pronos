@@ -120,6 +120,48 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
 
 
 # ---------------------------------------------------------------- règlement (ESPN, gratuit)
+def _clv(j, ev):
+    """Cote de clôture (ESPN, publiée juste avant le match) : l'expert a-t-il pris une meilleure cote ?
+    clv > 0 : la probabilité a monté après notre prono (le marché nous a donné raison)."""
+    if not j.get("court") or not j.get("proba") or "clv" in j:
+        return
+    try:
+        c = direct._cotes_ev(ev)
+    except Exception:
+        c = None
+    if not c:
+        return
+    h, d, a = c[0], c[1], c[2]
+    inv = {"1": 1 / h, "N": 1 / d, "2": 1 / a}
+    t = sum(inv.values())
+    p_close = inv[j["court"]] / t
+    j["clv"] = round(p_close - j["proba"], 4)
+
+
+def clv_stats(carnet):
+    """Bat-on la cote de clôture ? Moyenne et part des paris où la proba a monté après le prono."""
+    vus, xs = set(), []
+    for p in carnet:
+        for j in p["jambes"]:
+            k = (j["id"], j.get("court"))
+            if "clv" in j and k not in vus:
+                vus.add(k)
+                xs.append(j["clv"])
+    if not xs:
+        return {"n": 0}
+    return {"n": len(xs), "moyenne": round(sum(xs) / len(xs), 4), "positifs": round(sum(x > 0 for x in xs) / len(xs), 3)}
+
+
+def roi_par_style(carnet, n_min=15):
+    """{catégorie: rendement} pour les catégories avec assez de tickets réglés."""
+    out = {}
+    for k in CATEGORIES:
+        s = _seg([p for p in carnet if p["cat"] == k and p["statut"] in ("gagné", "perdu")])
+        if s["n"] >= n_min and s["roi"] is not None:
+            out[k] = round(s["roi"], 3)
+    return out
+
+
 def _score_espn(ev):
     comp = (ev.get("competitions") or [{}])[0]
     st = (comp.get("status") or ev.get("status") or {}).get("type", {})
@@ -185,6 +227,7 @@ def regler(carnet, maintenant):
             elif sc:
                 j["score"] = f"{sc[0]}-{sc[1]}"
                 j["ok"] = _gagne(j, *sc)
+                _clv(j, ev)
     for p in carnet:
         if p["statut"] != "en attente":
             continue
@@ -301,6 +344,8 @@ def tableau(carnet):
         "total": _seg(carnet), "sept_jours": _seg(sur7), "par_cat": par_cat, "courbe": courbe[-200:],
         "en_attente": sum(p["statut"] == "en attente" for p in carnet),
         "duel": duel(carnet),
+        "clv": clv_stats(carnet),
+        "roi_style": roi_par_style(carnet),
         "derniers": [p for p in reversed(regles)][:12],
     }
 

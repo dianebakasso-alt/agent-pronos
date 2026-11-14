@@ -317,6 +317,17 @@ Réponds UNIQUEMENT avec ce JSON, en français :
 Sois sévère : les favoris à petite cote perdent souvent, ne dis « jouer » que si tu y crois vraiment."""
 
 
+def _resultats_carnet(carnet):
+    res = {}
+    for p in carnet:
+        for j in p["jambes"]:
+            sc = j.get("score")
+            if sc and sc != "annulé" and "-" in sc:
+                h, a = map(int, sc.split("-"))
+                res[j["id"]] = {"res": "1" if h > a else "2" if a > h else "N", "score": sc}
+    return res
+
+
 def _alertes_txt(m):
     """Note de force + alertes « match piège » à donner à l'IA (gratuit, calculé avant)."""
     # la note de force n'est PAS donnée à l'IA : testée sur 4 000 matchs, elle est moins fiable que les cotes,
@@ -758,6 +769,17 @@ def main():
             print(f"    autopsies gratuites : {autopsie.autopsies_gratuites(carnet, lecons, maintenant)}")
         except Exception as e:
             print(f"  ! autopsies gratuites : {e}")
+    if not demo:
+        try:   # ordre des tickets par rendement réel, et confiance dans les « à éviter » de l'IA
+            moteur.ORDRE_ROI = expert.roi_par_style(carnet)
+            d_ia = expert.duel_ia(memoire.charger(DATA / "verdicts_hist.json", {}), _resultats_carnet(carnet))
+            ev = d_ia.get("eviter") or {}
+            moteur.IA_FIABLE = bool(ev.get("n", 0) >= 30 and ev["reel"] < ev["attendu"] - 0.03)
+            print(f"    tickets par rendement : {moteur.ORDRE_ROI} · « à éviter » de l'IA "
+                  f"{'appliqués' if moteur.IA_FIABLE else 'affichés seulement'} "
+                  f"({ev.get('n', 0)} favoris écartés, {(ev.get('reel') or 0) * 100:.0f} % gagnés pour {(ev.get('attendu') or 0) * 100:.0f} % prévus)")
+        except Exception as e:
+            print(f"  ! ordre / fiabilité IA : {e}")
     selection.AJUST = autopsie.ajustements(carnet)
     selection.SPECIALITE, spec_detail = expert.specialites(carnet)
     if not demo:
@@ -855,8 +877,10 @@ def main():
                 # ordre : les matchs des combinés du jour (ceux que tu joues), le ticket du jour, contre la foule,
                 # les meilleurs candidats, puis les favoris les plus nets
                 ids_auj = {a["id"] for a in jouables_auj}
-                ordre = [j["match"]["id"] for c in (jours[0].get("combos") or []) if c.get("style") in ("mixte_gros", "gros", "equilibre")
-                         for j in c["jambes"]]
+                # tous les matchs des combinés d'abord (les plus rentables en premier) : l'IA confirme ou signale un doute
+                ordre = [j["match"]["id"] for c in sorted(jours[0].get("combos") or [],
+                                                          key=lambda c: -moteur.ORDRE_ROI.get(c.get("style"), 0))
+                         if c.get("style") != "verifie" for j in c["jambes"]]
                 ordre += [s["id"] for s in (tk0 or {}).get("jambes", [])]
                 ordre += [a["id"] for a in jouables_auj if selection.contre_la_foule(a)]
                 cands = [(selection.candidat(a), a["id"]) for a in jouables_auj]
@@ -1005,6 +1029,7 @@ def main():
 
     infos = {
         "expert": expert.tableau(carnet),
+        "ia_fiable": moteur.IA_FIABLE,
         "bookmakers": {k: dict(x, poids=round(bookmakers.poids(k), 2)) for k, x in bookmakers.FIABILITE.items()} if not demo else {},
         "duel_ia": expert.duel_ia(memoire.charger(DATA / "verdicts_hist.json", {}), res_carnet) if not demo else None,
         "lecons": lecons[-8:], "ajust": selection.AJUST, "specialites": spec_detail, "specialite_ajust": selection.SPECIALITE,

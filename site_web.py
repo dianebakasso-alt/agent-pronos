@@ -324,11 +324,18 @@ def carte_combine(c, jour=""):
       <p class="combo-desc">{e(c.get("desc", ""))}</p>
       <div class="chance"><div class="chance-b"><span style="width:{max(3, round(c["proba"] * 100))}%"></span></div>
         <b>{pct(c["proba"])}</b><small>de chances que ça passe</small></div>"""
+    r = ROI_STYLE.get(style)
+    if r is not None:
+        entete += (f'<p class="roi-l {"vert" if r >= 0 else "rouge"}">📈 Ce type de ticket, sur le carnet : '
+                   f'<b>{"+" if r >= 0 else "−"}{abs(r) * 100:.0f} %</b> de rendement</p>')
     if c.get("valide_ia") or style == "verifie":
         note = (f'🔎 Chaque match a été <b>vérifié par l\'IA</b> (blessés, compos, forme, enjeu) et elle dit « je le joue ». '
                 f'Prends-le chez {e(c["bookmaker"])}.')
     elif c["conseille"]:
         note = f'Chaque match a un avantage chez {e(c["bookmaker"])} : le ticket garde un avantage de <b class="vert">{pct(c["edge"], True)}</b>.'
+    elif r is not None and r > 0:
+        note = (f'Pas d\'avantage de cote mesurable aujourd\'hui, mais ce type de ticket rapporte '
+                f'<b class="vert">+{r * 100:.0f} %</b> sur la durée dans le carnet. Mise petit, joue-le régulièrement.')
     else:
         perte = -c["edge"] * 10
         note = (f'Pas de ticket rentable dans ce style aujourd\'hui. Celui-ci est le moins coûteux, mais sur la durée '
@@ -746,6 +753,8 @@ VERDICT_IA = {"jouer": ("ok", "✅ L'IA dit : c'est bon"), "prudence": ("warn", 
 
 
 DUEL_IA = {}
+ROI_STYLE = {}     # {style: rendement réel du carnet}
+IA_FIABLE = False
 
 
 def bloc_duo(m, v):
@@ -764,7 +773,12 @@ def bloc_duo(m, v):
         i = next((x for x in m["issues"] if x["court"] == v.get("pari")), None)
         ia = {"jouer": "✅ Je joue ", "prudence": "⚠️ Prudence : ", "eviter": "❌ À éviter"}[v["verdict"]] + \
              (e(i["issue"]) if i and v["verdict"] != "eviter" else "")
-        if v["verdict"] == "eviter":
+        if v["verdict"] == "eviter" and not IA_FIABLE:
+            ev = (DUEL_IA or {}).get("eviter") or {}
+            stat = (f" (sur {ev['n']} favoris qu'elle a écartés, {ev['reel'] * 100:.0f} % ont gagné)" if ev.get("n") else "")
+            arb = ("L'IA voit un risque, mais ses « à éviter » ne sont pas encore fiables" + stat +
+                   " : <b>simple info</b>, le match reste jouable.")
+        elif v["verdict"] == "eviter":
             arb = "L'IA a lu l'actu et voit un risque que la cote ne montre pas : <b>on ne joue pas</b>."
         elif i and i["court"] == fav["court"]:
             arb = ("Les deux sont <b>d'accord</b> : c'est le pari le plus solide." if v["verdict"] == "jouer"
@@ -800,6 +814,22 @@ def section_bookmakers(f):
     return titre + ('<p class="note">Score d\'erreur sur les matchs joués (plus petit = plus juste). '
                     'Le poids, c\'est combien il compte dans la probabilité de l\'expert : il grandit avec le nombre de matchs.</p>'
                     f'<table class="hist">{lignes}</table>')
+
+
+def section_clv(c):
+    titre = '<h3 class="sous">⏱️ L\'expert bat-il la cote de clôture ?</h3>'
+    if not c or not c.get("n"):
+        return titre + ('<p class="note">On compare la chance donnée par l\'expert le matin à celle des cotes juste avant le match. '
+                        'Si elle monte après son prono, le marché lui donne raison : c\'est le meilleur signe d\'un vrai avantage. '
+                        'La mesure commence.</p>')
+    bon = c["moyenne"] > 0
+    return titre + f"""<div class="bilan">
+      <div><span>Paris mesurés</span><b>{c["n"]}</b></div>
+      <div><span>Écart moyen</span><b class="{"vert" if bon else "rouge"}">{"+" if bon else "−"}{abs(c["moyenne"]) * 100:.1f} pts</b></div>
+      <div><span>Cote battue</span><b>{c["positifs"] * 100:.0f} %</b><small>des paris</small></div></div>
+    <p class="note">{"✅ Le marché va dans le sens de l'expert après ses pronos : bon signe." if bon else
+                     "Le marché ne va pas encore dans le sens de l'expert : son avantage n'est pas prouvé."}
+      Cotes de clôture : ESPN (1 bookmaker), à prendre comme une indication.</p>"""
 
 
 def section_duel_ia(d):
@@ -1048,8 +1078,11 @@ def statut_ia(ia):
 
 
 def generer(chemin, analyses, values, historique, b, infos, combos=None):
-    global DUEL_IA
+    global DUEL_IA, ROI_STYLE, IA_FIABLE
     DUEL_IA = infos.get("duel_ia") or {}
+    ROI_STYLE = (infos.get("expert") or {}).get("roi_style") or {}
+    IA_FIABLE = bool(infos.get("ia_fiable"))
+    fact_roi = json.dumps({k: (1.5 if v > 0.2 else 0.5 if v < 0 else 1) for k, v in ROI_STYLE.items()})
     if isinstance(combos, dict):
         combos = [combos]
     combos = [c for c in (combos or []) if c]
@@ -1573,6 +1606,7 @@ header.reduit h1 {{ font-size:30px; }}
 .mise-c {{ font:600 13px Inter,sans-serif; margin:8px 0 4px; }}
 .compo-l {{ margin:6px 0; padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.04); font:500 12px Inter,sans-serif; }}
 .compo-l div {{ margin-top:4px; }}
+.roi-l {{ font:600 12.5px Inter,sans-serif; margin:4px 0 0; }}
 .duo {{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0 4px; }}
 .duo div {{ padding:8px 10px; border-radius:10px; background:rgba(255,255,255,.05); font:600 13px Inter,sans-serif; }}
 .duo small {{ display:block; color:var(--muted); font-weight:500; font-size:11px; margin-bottom:2px; }}
@@ -1955,6 +1989,7 @@ h2 {{ font-size:28px; text-transform:uppercase; letter-spacing:.02em; font-style
 {section_expert(infos.get("expert"))}
 {section_duel_ia(infos.get("duel_ia"))}
 {section_bookmakers(infos.get("bookmakers"))}
+{section_clv((infos.get("expert") or {}).get("clv"))}
 {section_duel((infos.get("expert") or {}).get("duel"))}
 {section_specialites(infos.get("specialites"), infos.get("specialite_ajust"))}
 <h3 class="sous">🔬 L'expert apprend de ses erreurs</h3>
@@ -2106,6 +2141,7 @@ document.querySelectorAll(".puces button").forEach(b => b.addEventListener("clic
 try {{ const m = JSON.parse(localStorage.getItem("mise-jour") || "null"); if (m && m.jour === "{d:%Y-%m-%d}") {{ champ.value = m.v; repartir(); }} }} catch (e) {{}}
 
 // ---- gestion des mises : un % de la cagnotte par ticket, un plafond par jour, une pause si la semaine tourne mal
+const FACT_ROI = {fact_roi};
 const PART_TICKET = {{ verifie: 2, prudent: 2, equilibre: 1.5, mixte: 1, buts: 1, mixte_gros: 1, gros: 0.5, jour: 1.5, semaine: 1 }};
 const champCag = document.getElementById("cagnotte");
 function perteSemaine() {{
@@ -2134,7 +2170,7 @@ function conseilMises() {{
   const go = res.querySelector(".cag-go");
   if (go) go.addEventListener("click", () => {{ champ.value = jour; sauverMise(); repartir(); }});
   document.querySelectorAll("article.combo[data-style]").forEach(t => {{
-    const part = PART_TICKET[t.dataset.style] || 1;
+    const part = Math.round((PART_TICKET[t.dataset.style] || 1) * (FACT_ROI[t.dataset.style] || 1) * 10) / 10;
     const d = document.createElement("p");
     d.className = "mise-c";
     d.innerHTML = pause ? "💰 Mise conseillée : <b>0 €</b> (pause)" : `💰 Mise conseillée : <b>${{fmt(arrondi(cag * part / 100))}}</b> <small>(${{String(part).replace(".", ",")}} % de ta cagnotte)</small>`;
@@ -2163,7 +2199,7 @@ function enregistrerJoue(btn) {{
   const mise = parseFloat(f.querySelector(".j-mise").value), cote = parseFloat(f.querySelector(".jj-cote").value);
   if (!(mise > 0) || !(cote > 1)) {{ alert("Indique ta mise et la cote que tu as eue."); return; }}
   const l = lireMP();
-  l.push({{ ...p, mise, cote, uid: Date.now() + "-" + Math.random().toString(36).slice(2, 6), joueLe: new Date().toISOString() }});
+  l.push({{ ...p, mise, cote, cote_expert: p.cote, uid: Date.now() + "-" + Math.random().toString(36).slice(2, 6), joueLe: new Date().toISOString() }});
   ecrireMP(l); f.hidden = true; marquerJoues(); afficherMP();
   toast("✅ Ajouté à « Mes paris »");
 }}
@@ -2204,6 +2240,11 @@ function marquerJoues() {{
     if (b && ids.has(JSON.parse(c.dataset.pari).id)) {{ b.classList.add("fait"); b.textContent = "✅ Joué — rejouer ?"; }}
   }});
 }}
+function changerCote(uid) {{
+  const l = lireMP(), p = l.find(x => x.uid === uid); if (!p) return;
+  const v = parseFloat(String(prompt("Cote que tu as vraiment eue chez ton bookmaker :", p.cote) || "").replace(",", "."));
+  if (v > 1) {{ if (!p.cote_expert) p.cote_expert = p.cote; p.cote = v; ecrireMP(l); afficherMP(); }}
+}}
 function regler(uid, v) {{ const l = lireMP(); const p = l.find(x => x.uid === uid); if (p) {{ p.manuel = v; ecrireMP(l); afficherMP(); }} }}
 function suppr(uid) {{ if (confirm("Supprimer ce pari de ta liste ?")) {{ ecrireMP(lireMP().filter(x => x.uid !== uid)); afficherMP(); marquerJoues(); }} }}
 function bilanToi() {{
@@ -2213,9 +2254,11 @@ function bilanToi() {{
   l.forEach(p => {{ const s = statutMP(p), m = +p.mise || 0;
     if (s === "gagné") {{ n++; g++; mises += m; ben += m * ((+p.cote || 1) - 1); }}
     else if (s === "perdu") {{ n++; mises += m; ben -= m; }} }});
+  const cmp = l.filter(p => p.cote_expert && p.cote);
+  const ecartCote = cmp.length ? cmp.reduce((s, p) => s + (p.cote / p.cote_expert - 1), 0) / cmp.length : null;
   const att = l.length - n, c = ben >= 0 ? "vert" : "rouge", f = x => (x >= 0 ? "+" : "−") + Math.abs(x).toFixed(2).replace(".", ",") + " €";
   z.innerHTML = `<div class="toi"><div class="ex-t">✍️ Toi, avec tes vrais paris</div>
-    <b class="g ${{c}}">${{n ? f(ben) : "—"}}</b> <span class="note">${{n}} réglé${{n > 1 ? "s" : ""}}, ${{g}} gagné${{g > 1 ? "s" : ""}}${{mises ? " · rendement " + (ben / mises * 100 >= 0 ? "+" : "") + (ben / mises * 100).toFixed(0) + " %" : ""}}${{att ? " · " + att + " en attente" : ""}}</span></div>`;
+    <b class="g ${{c}}">${{n ? f(ben) : "—"}}</b> <span class="note">${{n}} réglé${{n > 1 ? "s" : ""}}, ${{g}} gagné${{g > 1 ? "s" : ""}}${{mises ? " · rendement " + (ben / mises * 100 >= 0 ? "+" : "") + (ben / mises * 100).toFixed(0) + " %" : ""}}${{att ? " · " + att + " en attente" : ""}}</span>${{ecartCote !== null ? `<small class="note">Tes vraies cotes : ${{ecartCote >= 0 ? "+" : "−"}}${{Math.abs(ecartCote * 100).toFixed(1).replace(".", ",")}} % par rapport à celles de l'expert (${{cmp.length}} paris)${{ecartCote < -0.02 ? " : ton bookmaker paie moins, compare avant de jouer." : "."}}</small>` : ""}}</div>`;
 }}
 function afficherMP() {{
   setTimeout(bilanToi, 0);
@@ -2245,7 +2288,7 @@ function afficherMP() {{
     const esc = t => String(t).replace(/[&<>"]/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }})[c]);
     lignes += `<tr><td>${{esc(p.pari)}}<small>${{esc(p.match)}} · cote ${{p.cote.toFixed(2)}} · ${{esc(p.bk || "")}}</small>${{live}}</td>
       <td class="r">${{fmt(p.mise)}}<small class="st ${{cls}}">${{st}}${{st !== "en attente" ? " " + (gain >= 0 ? "+" : "") + fmt(gain) : ""}}</small>
-      <div class="mp-act"><button onclick="regler('${{p.uid}}','gagné')">✓</button><button onclick="regler('${{p.uid}}','perdu')">✗</button><button onclick="suppr('${{p.uid}}')">🗑</button></div></td></tr>`;
+      <div class="mp-act"><button onclick="regler('${{p.uid}}','gagné')">✓</button><button onclick="regler('${{p.uid}}','perdu')">✗</button><button onclick="changerCote('${{p.uid}}')" title="Corriger la cote">✏️</button><button onclick="suppr('${{p.uid}}')">🗑</button></div></td></tr>`;
   }});
   const pa = document.getElementById("nb-attente"); pa.textContent = att; pa.hidden = !att;
   const roi = mises ? (gains >= 0 ? "+" : "") + (gains / mises * 100).toFixed(1).replace(".", ",") + " %" : "—";

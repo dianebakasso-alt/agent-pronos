@@ -179,6 +179,16 @@ def analyser_match(match, cfg):
     }
 
 
+IA_FIABLE = False   # les « à éviter » de l'IA écartent des matchs seulement quand le carnet prouve qu'ils ont raison
+ORDRE_ROI = {}      # {style de ticket: rendement réel} : les tickets qui rapportent passent devant
+SANS_DONNEES = ("nations", "women", "qualifiers", "friendl", "world_cup")
+
+
+def _sans_donnees(m):
+    sk = (m.get("sport_key") or "").lower()
+    return any(x in sk for x in SANS_DONNEES)
+
+
 ZONES_FAIBLES = set()   # tranches de proba qui ratent plus que prévu (apprises du carnet)
 CHAMPS_FAIBLES = set()  # championnats où l'expert perd (apprises du carnet)
 
@@ -193,11 +203,14 @@ def _jouable(m, p, court=None):
         return False
     if (m.get("desaccord_bk") or 0) > bookmakers.DESACCORD_FORT:   # bookmakers en désaccord : match flou
         return False
+    if _sans_donnees(m):                      # compétitions sans forme ni historique : hors combinés
+        return False
     v = m.get("verdict_ia") or {}
-    if v.get("verdict") == "eviter":          # l'IA a lu l'actu du match : elle dit de ne pas y toucher
-        return False
-    if court and v.get("pari") in ("1", "N", "2") and v["pari"] != court:   # l'IA voit une autre issue
-        return False
+    if IA_FIABLE:   # seulement si l'IA a prouvé que ses « à éviter » tombent plus souvent que prévu
+        if v.get("verdict") == "eviter":
+            return False
+        if court and v.get("pari") in ("1", "N", "2") and v["pari"] != court:
+            return False
     return m.get("champ_nom") not in CHAMPS_FAIBLES and round(int(p * 20) / 20, 2) not in ZONES_FAIBLES
 
 
@@ -503,14 +516,16 @@ def diversifier(combos, max_par_jambe=2):
     Les tickets sont gardés par ordre d'intérêt (gros gains d'abord)."""
     ordre = {"verifie": -1, "mixte_gros": 0, "gros": 1, "equilibre": 2, "prudent": 3, "mixte": 4, "buts": 5}
     vus, garde = {}, []
-    for c in sorted(combos, key=lambda c: (ordre.get(c["style"], 9), c.get("num", 1))):
+    cle_tri = (lambda c: (-ORDRE_ROI.get(c["style"], 0), c.get("num", 1))) if ORDRE_ROI else \
+        (lambda c: (ordre.get(c["style"], 9), c.get("num", 1)))
+    for c in sorted(combos, key=cle_tri):
         cles = [(j["match"]["id"], j.get("marche") or j.get("court")) for j in c["jambes"]]
         if any(vus.get(k, 0) >= max_par_jambe for k in cles):
             continue
         for k in cles:
             vus[k] = vus.get(k, 0) + 1
         garde.append(c)
-    return [c for c in combos if c in garde]
+    return sorted(garde, key=cle_tri)
 
 
 def pronos_buts(analyses, n=4):
