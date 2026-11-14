@@ -1,22 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Jablonec - Brighton & Hove Albion",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7283,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 9-26, cadrés 4-4, possession 28-72 %). match fermé : seulement 8 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Besiktas - Istanbul Basaksehir",
   "pari": "Plus de 2,5 buts",
   "cote": null,
@@ -6627,6 +6611,24 @@
    "favori_surcote"
   ],
   "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-14",
+  "match": "Kosovo - Israel",
+  "pari": "Victoire Kosovo",
+  "cote": 1.75,
+  "proba": 0.5229,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 16-6, cadrés 3-3, possession 46-54 %). Kosovo a pris un carton rouge à la 66e; Kosovo a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "carton_rouge",
+   "malchance"
+  ],
+  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
   "source": "espn"
  }
 ]

@@ -16,7 +16,9 @@
   "cote": 5.1,
   "mise": 0.5,
   "bookmaker": "PMU (FR)",
-  "statut": "en attente",
-  "gain": 0
+  "statut": "perdu",
+  "gain": -0.5,
+  "res": "1",
+  "score": "3-0"
  }
 ]

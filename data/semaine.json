@@ -5,34 +5,22 @@
   "value_bets": 0,
   "combines": [
    [
-    "prudent",
-    false,
-    1.68,
-    0.494
-   ],
-   [
     "equilibre",
     false,
-    3.36,
-    0.246
-   ],
-   [
-    "gros",
-    false,
-    5.63,
-    0.122
+    3.28,
+    0.237
    ],
    [
     "mixte",
     null,
-    3.89,
-    0.27
+    3.54,
+    0.296
    ],
    [
-    "mixte_gros",
+    "buts",
     null,
-    7.96,
-    0.132
+    2.76,
+    0.38
    ]
   ]
  },
@@ -42,34 +30,28 @@
   "value_bets": 0,
   "combines": [
    [
-    "prudent",
-    false,
-    1.62,
-    0.512
-   ],
-   [
-    "equilibre",
-    false,
-    2.93,
-    0.283
+    "mixte_gros",
+    null,
+    7.79,
+    0.135
    ],
    [
     "gros",
     false,
-    6.47,
-    0.107
+    5.34,
+    0.124
+   ],
+   [
+    "equilibre",
+    false,
+    2.55,
+    0.317
    ],
    [
     "mixte",
     null,
-    4.13,
-    0.254
-   ],
-   [
-    "mixte_gros",
-    null,
-    7.49,
-    0.14
+    3.66,
+    0.287
    ]
   ]
  },
@@ -79,16 +61,16 @@
   "value_bets": 0,
   "combines": [
    [
-    "buts",
-    null,
-    2.39,
-    0.439
-   ],
-   [
     "mixte",
     null,
-    3.15,
-    0.333
+    2.93,
+    0.358
+   ],
+   [
+    "buts",
+    null,
+    3.6,
+    0.292
    ]
   ]
  },
@@ -98,16 +80,16 @@
   "value_bets": 0,
   "combines": [
    [
-    "buts",
-    null,
-    2.19,
-    0.48
-   ],
-   [
     "mixte",
     null,
-    3.05,
-    0.344
+    2.84,
+    0.369
+   ],
+   [
+    "buts",
+    null,
+    2.08,
+    0.504
    ]
   ]
  },
@@ -123,16 +105,28 @@
   "value_bets": 0,
   "combines": [
    [
+    "gros",
+    false,
+    8.63,
+    0.086
+   ],
+   [
     "prudent",
     false,
     1.99,
     0.388
    ],
    [
-    "gros",
-    false,
-    8.63,
-    0.086
+    "mixte",
+    null,
+    4.12,
+    0.255
+   ],
+   [
+    "buts",
+    null,
+    3.11,
+    0.337
    ]
   ]
  },
@@ -142,16 +136,10 @@
   "value_bets": 0,
   "combines": [
    [
-    "prudent",
-    false,
-    1.72,
-    0.465
-   ],
-   [
-    "equilibre",
-    false,
-    3.92,
-    0.212
+    "mixte_gros",
+    null,
+    6.66,
+    0.158
    ],
    [
     "gros",
@@ -172,16 +160,22 @@
     0.1
    ],
    [
-    "mixte",
-    null,
-    2.98,
-    0.352
+    "equilibre",
+    false,
+    3.92,
+    0.212
    ],
    [
-    "mixte_gros",
+    "prudent",
+    false,
+    1.72,
+    0.465
+   ],
+   [
+    "mixte",
     null,
-    7.01,
-    0.15
+    2.83,
+    0.37
    ]
   ]
  }

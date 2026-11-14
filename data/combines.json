@@ -1119,7 +1119,10 @@
     "exterieur": "Bayern Munich",
     "pari": "Victoire Bayern Munich",
     "court": "2",
-    "cote": 1.72
+    "cote": 1.72,
+    "res": "2",
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "1a8bd83d08fab7c8e9b40284c43a3f3e",
@@ -1172,8 +1175,8 @@
   "proba": 0.3747,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "c096e9bfabbbb93326413433b7c63511",
@@ -1183,7 +1186,10 @@
     "exterieur": "France",
     "pari": "Victoire France",
     "court": "2",
-    "cote": 1.92
+    "cote": 1.92,
+    "res": "1",
+    "score": "3-1",
+    "ok": false
    },
    {
     "id": "87441c4ff41ea3d37812826345450408",
@@ -1204,8 +1210,8 @@
   "proba": 0.6139,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 4.4,
   "jambes": [
    {
     "id": "d0ee3d2f44cf592797f6ecae8de62edd",
@@ -1215,7 +1221,10 @@
     "exterieur": "Germany",
     "pari": "Victoire Germany",
     "court": "2",
-    "cote": 1.23
+    "cote": 1.23,
+    "res": "2",
+    "score": "1-3",
+    "ok": true
    },
    {
     "id": "9529ee7ca79126460eb063f53187f321",
@@ -1225,7 +1234,10 @@
     "exterieur": "Azerbaijan",
     "pari": "Victoire Azerbaijan",
     "court": "2",
-    "cote": 1.17
+    "cote": 1.17,
+    "res": "2",
+    "score": "0-1",
+    "ok": true
    }
   ]
  },

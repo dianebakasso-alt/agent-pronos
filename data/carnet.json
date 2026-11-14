@@ -50228,7 +50228,25 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861163"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 16-6, cadrés 3-3, possession 46-54 %). Kosovo a pris un carton rouge à la 66e; Kosovo a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "carton_rouge",
+      "malchance"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.75,
@@ -50236,8 +50254,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:d5b0e0c0934f6a58410410bd573a5065",
@@ -50316,7 +50334,25 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861163"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 16-6, cadrés 3-3, possession 46-54 %). Kosovo a pris un carton rouge à la 66e; Kosovo a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "carton_rouge",
+      "malchance"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 3.38,
@@ -50324,8 +50360,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-14",
@@ -50381,7 +50417,25 @@
     "court": "1",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861163"
+    },
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 16-6, cadrés 3-3, possession 46-54 %). Kosovo a pris un carton rouge à la 66e; Kosovo a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "carton_rouge",
+      "malchance"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 5.64,
@@ -50389,8 +50443,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:d548fa34308b91eb158670eb18e1deae",
@@ -51264,56 +51318,6 @@
   "gain": 0.0
  },
  {
-  "cle": "prudent:2026-11-14",
-  "jour": "2026-11-14",
-  "cat": "prudent",
-  "jambes": [
-   {
-    "id": "159554f486f93d1d8d4213c570117a0e",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Portugal",
-    "exterieur": "Denmark",
-    "championnat": "Ligue des nations",
-    "pari": "Victoire Portugal",
-    "cote": 1.44,
-    "proba": 0.6337,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861167"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   },
-   {
-    "id": "2b646127cc6cb400abc663c5a458f1db",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Sweden",
-    "exterieur": "Bosnia & Herzegovina",
-    "championnat": "Ligue des nations",
-    "pari": "Victoire Sweden",
-    "cote": 1.45,
-    "proba": 0.6214,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861166"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   }
-  ],
-  "cote": 2.09,
-  "proba": 0.3938,
-  "estime": false,
-  "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
   "cle": "mixte:2026-11-14",
   "jour": "2026-11-14",
   "cat": "mixte",
@@ -51338,24 +51342,6 @@
     ]
    },
    {
-    "id": "159554f486f93d1d8d4213c570117a0e",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Portugal",
-    "exterieur": "Denmark",
-    "championnat": "Ligue des nations",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.5981,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861167"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
     "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
     "date": "2026-11-14T17:30:00Z",
     "domicile": "Mallorca",
@@ -51363,7 +51349,7 @@
     "championnat": "Liga 2",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5797,
+    "proba": 0.6222,
     "marche": "btts",
     "espn": {
      "ligue": "esp.2",
@@ -51372,10 +51358,28 @@
     "traits": [
      "buts_plus"
     ]
+   },
+   {
+    "id": "570ec7734e1f7d9e813ab0013291f5f5",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Almería",
+    "exterieur": "Andorra CF",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.611,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883118"
+    },
+    "traits": [
+     "buts_plus"
+    ]
    }
   ],
-  "cote": 3.89,
-  "proba": 0.2702,
+  "cote": 3.54,
+  "proba": 0.2963,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -51383,46 +51387,10 @@
   "gain": 0.0
  },
  {
-  "cle": "mixte_gros:2026-11-14",
+  "cle": "buts:2026-11-14",
   "jour": "2026-11-14",
-  "cat": "mixte_gros",
+  "cat": "buts",
   "jambes": [
-   {
-    "id": "159554f486f93d1d8d4213c570117a0e",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Portugal",
-    "exterieur": "Denmark",
-    "championnat": "Ligue des nations",
-    "pari": "Victoire Portugal",
-    "cote": 1.44,
-    "proba": 0.6337,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861167"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   },
-   {
-    "id": "2b646127cc6cb400abc663c5a458f1db",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Sweden",
-    "exterieur": "Bosnia & Herzegovina",
-    "championnat": "Ligue des nations",
-    "pari": "Victoire Sweden",
-    "cote": 1.45,
-    "proba": 0.6214,
-    "court": "1",
-    "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861166"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   },
    {
     "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
     "date": "2026-11-14T17:30:00Z",
@@ -51431,7 +51399,7 @@
     "championnat": "Liga 2",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5797,
+    "proba": 0.6222,
     "marche": "btts",
     "espn": {
      "ligue": "esp.2",
@@ -51442,26 +51410,26 @@
     ]
    },
    {
-    "id": "432a7eb09df939bf1e15a3e183f8494f",
-    "date": "2026-11-14T19:45:00Z",
-    "domicile": "Northern Ireland",
-    "exterieur": "Ukraine",
-    "championnat": "Ligue des nations",
-    "pari": "Les 2 ne marquent pas",
+    "id": "570ec7734e1f7d9e813ab0013291f5f5",
+    "date": "2026-11-14T17:30:00Z",
+    "domicile": "Almería",
+    "exterieur": "Andorra CF",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5781,
-    "marche": "pas_btts",
+    "proba": 0.611,
+    "marche": "btts",
     "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861169"
+     "ligue": "esp.2",
+     "id": "401883118"
     },
     "traits": [
-     "buts_moins"
+     "buts_plus"
     ]
    }
   ],
-  "cote": 7.96,
-  "proba": 0.132,
+  "cote": 2.76,
+  "proba": 0.3802,
   "estime": true,
   "conseille": null,
   "mise": 10.0,

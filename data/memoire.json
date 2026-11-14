@@ -1,17 +1,45 @@
 {
- "maj": "2026-11-14T16:10:47Z",
+ "maj": "2026-11-14T16:18:09Z",
  "total": {
-  "n": 0,
+  "n": 1,
   "gagnes": 0,
-  "roi": null,
-  "gagnes_attendus": 0
+  "roi": -1.0,
+  "gagnes_attendus": 0.2
  },
- "par_championnat": {},
- "par_issue": {},
- "par_cote": {},
- "par_avis": {},
+ "par_championnat": {
+  "UEFA Champions League Women": {
+   "n": 1,
+   "gagnes": 0,
+   "roi": -1.0,
+   "gagnes_attendus": 0.2
+  }
+ },
+ "par_issue": {
+  "Victoire extérieur": {
+   "n": 1,
+   "gagnes": 0,
+   "roi": -1.0,
+   "gagnes_attendus": 0.2
+  }
+ },
+ "par_cote": {
+  "cote 4 et +": {
+   "n": 1,
+   "gagnes": 0,
+   "roi": -1.0,
+   "gagnes_attendus": 0.2
+  }
+ },
+ "par_avis": {
+  "sans avis": {
+   "n": 1,
+   "gagnes": 0,
+   "roi": -1.0,
+   "gagnes_attendus": 0.2
+  }
+ },
  "ajustements": {},
  "lecons": [
-  "🎟️ Combinés : +58% de rendement sur 29 tickets."
+  "🎟️ Combinés : +53% de rendement sur 31 tickets."
  ]
 }
