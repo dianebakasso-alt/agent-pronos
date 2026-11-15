@@ -1,11 +1,10 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
     🎟️ Combinés : +48% de rendement sur 32 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 12 championnat(s) aujourd'hui (343 crédits restants ce mois-ci)
-    ordre des championnats : Serie A +32 %, Süper Lig +30 %, Liga 2 +23 %, Ligue 2 +16 %, Ligue 1 +14 %, Pro League +10 %, Ligue des champions +6 %, Championship +4 %
-    12 championnats retenus
+    quota cotes : 0 championnat(s) aujourd'hui (331 crédits restants ce mois-ci)
+    0 championnats retenus
 3/4 Récupération des cotes…
-    16 matchs repris du cache (cotes d'un passage précédent)
+    94 matchs repris du cache (cotes d'un passage précédent)
     88 matchs analysés, 0 value bets
     Forme et stats des équipes…
     direct : 87 matchs reliés aux scores en direct
@@ -13,10 +12,10 @@
     stats : 148 équipes trouvées, 2 manquées
     force : 73 matchs notés · pièges : 25 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.917, 'btts': 1.038, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.917, 'btts': 1.05, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
     bookmakers les plus justes : sport888 (0.570, 8 matchs), winamax_fr (0.581, 11 matchs), betclic_fr (0.582, 11 matchs)
-    autopsies gratuites : 6
+    autopsies gratuites : 0
     tickets par rendement : {'match': 0.016, 'prudent': 0.07, 'equilibre': 0.449, 'gros': 0.244, 'buts': -0.088, 'mixte': 0.052, 'mixte_gros': 0.976, 'jour': 0.034} · « à éviter » de l'IA affichés seulement (27 favoris écartés, 70 % gagnés pour 55 % prévus)
 4/4 Vérification des infos et avis d'experts par l'IA…
-    combinés refaits avec 7 avis de l'IA
+    combinés refaits avec 8 avis de l'IA
 Site généré : site/index.html

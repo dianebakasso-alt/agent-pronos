@@ -1392,5 +1392,22 @@
    "N": 6.5,
    "2": 9.5
   }
+ },
+ "cc7a8f5fed10407a56df29e87f73d7e3": {
+  "jour": "2026-11-15",
+  "domicile": "Croatia",
+  "exterieur": "Czech Republic",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.6269,
+   "N": 0.215,
+   "2": 0.1581
+  },
+  "cotes": {
+   "1": 1.45,
+   "N": 4.1,
+   "2": 5.5
+  }
  }
 }

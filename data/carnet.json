@@ -51809,7 +51809,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Tenerife",
     "cote": 1.7,
-    "proba": 0.531,
+    "proba": 0.5298,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -51868,9 +51868,9 @@
      "2": 0.197
     },
     "marche_p": {
-     "1": 0.531,
-     "N": 0.2558,
-     "2": 0.2132
+     "1": 0.5298,
+     "N": 0.2562,
+     "2": 0.214
     },
     "traits": [
      "doute_ia",
@@ -51879,7 +51879,7 @@
    }
   ],
   "cote": 1.7,
-  "proba": 0.531,
+  "proba": 0.5298,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -51899,7 +51899,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Granada CF",
     "cote": 1.9,
-    "proba": 0.4701,
+    "proba": 0.4693,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -51958,15 +51958,15 @@
      "2": 0.342
     },
     "marche_p": {
-     "1": 0.4701,
-     "N": 0.279,
-     "2": 0.2509
+     "1": 0.4693,
+     "N": 0.2783,
+     "2": 0.2524
     },
     "traits": []
    }
   ],
   "cote": 1.9,
-  "proba": 0.4701,
+  "proba": 0.4693,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52046,8 +52046,8 @@
     },
     "marche_p": {
      "1": 0.3977,
-     "N": 0.3173,
-     "2": 0.285
+     "N": 0.3162,
+     "2": 0.2861
     },
     "traits": [
      "piege",
@@ -52076,7 +52076,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire SD Eibar",
     "cote": 1.54,
-    "proba": 0.5829,
+    "proba": 0.5817,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -52135,9 +52135,9 @@
      "2": 0.13
     },
     "marche_p": {
-     "1": 0.5829,
-     "N": 0.2334,
-     "2": 0.1837
+     "1": 0.5817,
+     "N": 0.2335,
+     "2": 0.1847
     },
     "traits": [
      "doute_ia",
@@ -52146,7 +52146,7 @@
    }
   ],
   "cote": 1.54,
-  "proba": 0.5829,
+  "proba": 0.5817,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52166,7 +52166,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Belgium",
     "cote": 2.02,
-    "proba": 0.4501,
+    "proba": 0.449,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52218,7 +52218,7 @@
    }
   ],
   "cote": 2.02,
-  "proba": 0.4501,
+  "proba": 0.449,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52238,7 +52238,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Croatia",
     "cote": 1.45,
-    "proba": 0.628,
+    "proba": 0.6269,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52290,7 +52290,7 @@
    }
   ],
   "cote": 1.45,
-  "proba": 0.628,
+  "proba": 0.6269,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52310,7 +52310,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Spain",
     "cote": 1.63,
-    "proba": 0.5521,
+    "proba": 0.5516,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52362,7 +52362,7 @@
    }
   ],
   "cote": 1.63,
-  "proba": 0.5521,
+  "proba": 0.5516,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52382,7 +52382,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire France",
     "cote": 1.19,
-    "proba": 0.7674,
+    "proba": 0.7667,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52438,7 +52438,7 @@
    }
   ],
   "cote": 1.19,
-  "proba": 0.7674,
+  "proba": 0.7667,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52458,7 +52458,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Tenerife",
     "cote": 1.7,
-    "proba": 0.531,
+    "proba": 0.5298,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -52477,7 +52477,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Granada CF",
     "cote": 1.89,
-    "proba": 0.4701,
+    "proba": 0.4693,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -52487,7 +52487,7 @@
    }
   ],
   "cote": 3.21,
-  "proba": 0.2496,
+  "proba": 0.2486,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -52507,7 +52507,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire France",
     "cote": 1.19,
-    "proba": 0.7674,
+    "proba": 0.7667,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52527,7 +52527,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.624,
+    "proba": 0.6293,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -52545,7 +52545,7 @@
     "championnat": "Liga 2",
     "pari": "Les 2 ne marquent pas",
     "cote": null,
-    "proba": 0.6137,
+    "proba": 0.6108,
     "marche": "pas_btts",
     "espn": {
      "ligue": "esp.2",
@@ -52556,8 +52556,8 @@
     ]
    }
   ],
-  "cote": 3.57,
-  "proba": 0.2939,
+  "cote": 3.56,
+  "proba": 0.2947,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -52570,6 +52570,24 @@
   "cat": "buts",
   "jambes": [
    {
+    "id": "c31db8a4f0558632e2b6422676a32efc",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "France",
+    "exterieur": "Turkey",
+    "championnat": "Ligue des nations",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6885,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861177"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
     "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
     "date": "2026-11-15T19:45:00Z",
     "domicile": "Belgium",
@@ -52577,7 +52595,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.624,
+    "proba": 0.6293,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -52588,26 +52606,26 @@
     ]
    },
    {
-    "id": "c31db8a4f0558632e2b6422676a32efc",
-    "date": "2026-11-15T19:45:00Z",
-    "domicile": "France",
-    "exterieur": "Turkey",
-    "championnat": "Ligue des nations",
-    "pari": "Les 2 équipes marquent",
+    "id": "976d20d0bdfd5ebae5800d5ec4f8dedf",
+    "date": "2026-11-15T17:30:00Z",
+    "domicile": "CD Eldense",
+    "exterieur": "Sabadell FC",
+    "championnat": "Liga 2",
+    "pari": "Les 2 ne marquent pas",
     "cote": null,
-    "proba": 0.6177,
-    "marche": "btts",
+    "proba": 0.6108,
+    "marche": "pas_btts",
     "espn": {
-     "ligue": "uefa.nations",
-     "id": "401861177"
+     "ligue": "esp.2",
+     "id": "401883137"
     },
     "traits": [
-     "buts_plus"
+     "buts_moins"
     ]
    }
   ],
-  "cote": 2.72,
-  "proba": 0.3854,
+  "cote": 3.97,
+  "proba": 0.2647,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -52627,7 +52645,7 @@
     "championnat": "Liga 2",
     "pari": "Nul ou Granada CF",
     "cote": 1.19,
-    "proba": 0.7491,
+    "proba": 0.7476,
     "court": "1N",
     "espn": {
      "ligue": "esp.2",
@@ -52640,7 +52658,7 @@
    }
   ],
   "cote": 1.19,
-  "proba": 0.7491,
+  "proba": 0.7476,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -52661,7 +52679,7 @@
     "championnat": "Ligue des nations",
     "pari": "Nul ou Belgium",
     "cote": 1.27,
-    "proba": 0.7031,
+    "proba": 0.7026,
     "court": "1N",
     "espn": {
      "ligue": "uefa.nations",
@@ -52674,7 +52692,7 @@
    }
   ],
   "cote": 1.27,
-  "proba": 0.7031,
+  "proba": 0.7026,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -52695,7 +52713,7 @@
     "championnat": "Liga 2",
     "pari": "Nul ou Granada CF",
     "cote": 1.19,
-    "proba": 0.7491,
+    "proba": 0.7476,
     "court": "1N",
     "espn": {
      "ligue": "esp.2",
@@ -52714,7 +52732,7 @@
     "championnat": "Ligue des nations",
     "pari": "Nul ou Belgium",
     "cote": 1.27,
-    "proba": 0.7031,
+    "proba": 0.7026,
     "court": "1N",
     "espn": {
      "ligue": "uefa.nations",
@@ -52727,7 +52745,7 @@
    }
   ],
   "cote": 1.52,
-  "proba": 0.5267,
+  "proba": 0.5253,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
