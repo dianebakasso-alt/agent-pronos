@@ -1,105 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Besiktas - Istanbul Basaksehir",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7244,
-  "score": "2-0",
-  "pourquoi": "Score 2-0 (tirs 17-9, cadrés 6-4, possession 65-35 %). 10 tirs cadrés au total, mais peu de buts.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Paris Saint-Germain - Lyon",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7103,
-  "score": "2-0",
-  "pourquoi": "Score 2-0 (tirs 17-8, cadrés 10-5, possession 68-32 %). 15 tirs cadrés au total, mais peu de buts.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Al Nassr - Neom SC",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.7101,
-  "score": "1-0",
-  "pourquoi": "Score 1-0 (tirs 17-7, cadrés 2-1, possession 58-42 %). match fermé : seulement 3 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Bayern Munich - Borussia Dortmund",
-  "pari": "Victoire Bayern Munich",
-  "cote": 1.3,
-  "proba": 0.7089,
-  "score": "2-2",
-  "pourquoi": "Score 2-2 (tirs 23-12, cadrés 5-6, possession 56-44 %). but décisif de Borussia Dortmund à la 89e.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote",
-   "malchance"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Venezia - Internazionale",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.6986,
-  "score": "0-2",
-  "pourquoi": "Score 0-2 (tirs 12-16, cadrés 4-2, possession 35-65 %). match fermé : seulement 6 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Barcelona - Aston Villa",
-  "pari": "Les 2 équipes marquent",
-  "cote": null,
-  "proba": 0.6903,
-  "score": "3-0",
-  "pourquoi": "Score 3-0 (tirs 16-9, cadrés 8-1, possession 65-35 %). match fermé : seulement 9 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Al Ittihad - Al Diriyah",
   "pari": "Plus de 2,5 buts",
   "cote": null,
@@ -6629,6 +6530,104 @@
    "malchance"
   ],
   "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Portugal - Denmark",
+  "pari": "Victoire Portugal",
+  "cote": 1.44,
+  "proba": 0.6337,
+  "score": "1-4",
+  "pourquoi": "Score 1-4 (tirs 15-17, cadrés 8-6, possession 52-48 %). Denmark a marqué sur penalty.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Romania - Poland",
+  "pari": "Victoire Poland",
+  "cote": 1.74,
+  "proba": 0.5147,
+  "score": "2-1",
+  "pourquoi": "Score 2-1 (tirs 11-15, cadrés 4-3, possession 44-56 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Mallorca - Córdoba",
+  "pari": "Victoire Mallorca",
+  "cote": 1.8,
+  "proba": 0.4954,
+  "score": "3-3",
+  "pourquoi": "Score 3-3 (tirs 16-14, cadrés 7-4, possession 57-43 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Mirassol - Atletico Mineiro",
+  "pari": "Victoire Mirassol",
+  "cote": 1.93,
+  "proba": 0.4788,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 11-16, cadrés 2-1, possession 42-58 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Oviedo - Girona FC",
+  "pari": "Victoire Oviedo",
+  "cote": 2.25,
+  "proba": 0.3929,
+  "score": "1-2",
+  "pourquoi": "Score 1-2 (tirs 17-17, cadrés 5-5, possession 50-50 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-15",
+  "match": "Real Sociedad B - Sporting Gijón",
+  "pari": "Victoire Real Sociedad B",
+  "cote": 2.33,
+  "proba": 0.3727,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 18-13, cadrés 4-4, possession 54-46 %). Sporting Gijón a marqué sur penalty.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
   "source": "espn"
  }
 ]

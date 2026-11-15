@@ -1,4 +1,65 @@
 {
- "maj": "2026-11-14T16:26:21.326821+00:00",
- "bookmakers": {}
+ "maj": "2026-11-15T05:55:47.832296+00:00",
+ "bookmakers": {
+  "sport888": {
+   "n": 8,
+   "brier": 0.5699,
+   "favori_ok": 0.625,
+   "poids_mesure": 5.0
+  },
+  "betfair_ex_eu": {
+   "n": 11,
+   "brier": 0.5866,
+   "favori_ok": 0.545,
+   "poids_mesure": 3.287
+  },
+  "onexbet": {
+   "n": 11,
+   "brier": 0.5872,
+   "favori_ok": 0.545,
+   "poids_mesure": 2.85
+  },
+  "pmu_fr": {
+   "n": 11,
+   "brier": 0.5829,
+   "favori_ok": 0.545,
+   "poids_mesure": 5.0
+  },
+  "winamax_fr": {
+   "n": 11,
+   "brier": 0.5809,
+   "favori_ok": 0.545,
+   "poids_mesure": 5.0
+  },
+  "marathonbet": {
+   "n": 11,
+   "brier": 0.587,
+   "favori_ok": 0.545,
+   "poids_mesure": 2.961
+  },
+  "betclic_fr": {
+   "n": 11,
+   "brier": 0.5821,
+   "favori_ok": 0.545,
+   "poids_mesure": 5.0
+  },
+  "pinnacle": {
+   "n": 10,
+   "brier": 0.617,
+   "favori_ok": 0.5,
+   "poids_mesure": 0.2
+  },
+  "unibet_fr": {
+   "n": 4,
+   "brier": 0.6667,
+   "favori_ok": 0.25,
+   "poids_mesure": 0.2
+  },
+  "netbet_fr": {
+   "n": 3,
+   "brier": 0.6151,
+   "favori_ok": 0.333,
+   "poids_mesure": 0.2
+  }
+ }
 }

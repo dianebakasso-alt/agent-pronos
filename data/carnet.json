@@ -47866,7 +47866,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -50288,7 +50288,20 @@
     },
     "traits": [
      "piege"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 18-13, cadrés 4-4, possession 54-46 %). Sporting Gijón a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.33,
@@ -50296,8 +50309,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-11-14",
@@ -50320,7 +50333,17 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 11-16, cadrés 2-1, possession 42-58 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "244d7d2e6f3f8529af59270040b7ec7a",
@@ -50384,7 +50407,17 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 11-16, cadrés 2-1, possession 42-58 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
@@ -50403,7 +50436,17 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "autopsie": {
+     "pourquoi": "Score 3-3 (tirs 16-14, cadrés 7-4, possession 57-43 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "244d7d2e6f3f8529af59270040b7ec7a",
@@ -50509,7 +50552,9 @@
     },
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.3,
@@ -50517,8 +50562,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.0
  },
  {
   "cle": "match:8d67c473dbea0c85b30eefee4bca53d9",
@@ -50584,7 +50629,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 1.17,
@@ -50592,8 +50639,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.7
  },
  {
   "cle": "match:570ec7734e1f7d9e813ab0013291f5f5",
@@ -50674,7 +50721,9 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -50682,8 +50731,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "match:6bc4aff371a2a5eaf38c73700a5c14d4",
@@ -50764,7 +50813,19 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "3-3",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-3 (tirs 16-14, cadrés 7-4, possession 57-43 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.8,
@@ -50772,8 +50833,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c745f84500717bc671c4cd864624cca8",
@@ -50831,7 +50892,9 @@
       "N": 0.2298
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.51,
@@ -50839,8 +50902,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.1
  },
  {
   "cle": "match:2b646127cc6cb400abc663c5a458f1db",
@@ -50905,7 +50968,9 @@
     },
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "3-2",
+    "ok": true
    }
   ],
   "cote": 1.45,
@@ -50913,8 +50978,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.5
  },
  {
   "cle": "match:159554f486f93d1d8d4213c570117a0e",
@@ -50979,7 +51044,20 @@
     },
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "1-4",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-4 (tirs 15-17, cadrés 8-6, possession 52-48 %). Denmark a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.44,
@@ -50987,8 +51065,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:432a7eb09df939bf1e15a3e183f8494f",
@@ -51053,7 +51131,9 @@
     },
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.35,
@@ -51061,8 +51141,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.5
  },
  {
   "cle": "match:3ce5eabe80d52d3ed6056b6c141bbea8",
@@ -51128,7 +51208,19 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-1 (tirs 11-15, cadrés 4-3, possession 44-56 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.74,
@@ -51136,8 +51228,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:beaf0bb6252d3b1d42a720aa385e9414",
@@ -51217,7 +51309,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-2 (tirs 17-17, cadrés 5-5, possession 50-50 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.25,
@@ -51225,8 +51329,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:60e79364c168ad0ad22c0cffc02be8a9",
@@ -51306,7 +51410,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-0 (tirs 11-16, cadrés 2-1, possession 42-58 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.93,
@@ -51314,8 +51430,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-14",
@@ -51339,7 +51455,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "6bc4aff371a2a5eaf38c73700a5c14d4",
@@ -51357,7 +51475,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-3",
+    "ok": true
    },
    {
     "id": "570ec7734e1f7d9e813ab0013291f5f5",
@@ -51375,7 +51495,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 3.54,
@@ -51383,8 +51505,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 25.4
  },
  {
   "cle": "buts:2026-11-14",
@@ -51407,7 +51529,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-3",
+    "ok": true
    },
    {
     "id": "570ec7734e1f7d9e813ab0013291f5f5",
@@ -51425,7 +51549,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 2.76,
@@ -51433,8 +51559,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 17.6
  },
  {
   "cle": "semaine:2026-46",
@@ -51458,7 +51584,9 @@
     "traits": [
      "exterieur",
      "favori_net"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    },
    {
     "id": "159554f486f93d1d8d4213c570117a0e",
@@ -51477,7 +51605,20 @@
     "traits": [
      "petite_cote",
      "doute_ia"
-    ]
+    ],
+    "score": "1-4",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-4 (tirs 15-17, cadrés 8-6, possession 52-48 %). Denmark a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.93,
@@ -51485,8 +51626,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudence:3ce5eabe80d52d3ed6056b6c141bbea8",
@@ -51511,7 +51652,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    }
   ],
   "cote": 1.18,
@@ -51519,8 +51662,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.6
  },
  {
@@ -51545,7 +51688,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-0",
+    "ok": true
    }
   ],
   "cote": 1.22,
@@ -51553,8 +51698,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.2,
   "note": 7.5
  },
  {
@@ -51580,7 +51725,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-3",
+    "ok": true
    }
   ],
   "cote": 1.21,
@@ -51588,8 +51735,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.1,
   "note": 7.4
  },
  {
@@ -51615,7 +51762,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false
    },
    {
     "id": "60e79364c168ad0ad22c0cffc02be8a9",
@@ -51634,11 +51783,951 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-0",
+    "ok": true
    }
   ],
   "cote": 1.41,
   "proba": 0.5682,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:f241b0cec31506c2eb749ff9be97667c",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "f241b0cec31506c2eb749ff9be97667c",
+    "date": "2026-11-15T13:00:00Z",
+    "domicile": "Tenerife",
+    "exterieur": "AD Ceuta FC",
+    "championnat": "Liga 2",
+    "pari": "Victoire Tenerife",
+    "cote": 1.7,
+    "proba": 0.531,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883113"
+    },
+    "bk_p": {
+     "betclic_fr": {
+      "2": 0.2112,
+      "1": 0.5311,
+      "N": 0.2577
+     },
+     "pmu_fr": {
+      "2": 0.2284,
+      "1": 0.5039,
+      "N": 0.2677
+     },
+     "unibet_fr": {
+      "2": 0.2146,
+      "1": 0.523,
+      "N": 0.2623
+     },
+     "onexbet": {
+      "2": 0.2163,
+      "1": 0.5323,
+      "N": 0.2515
+     },
+     "winamax_fr": {
+      "2": 0.2238,
+      "1": 0.5195,
+      "N": 0.2567
+     },
+     "netbet_fr": {
+      "2": 0.216,
+      "1": 0.53,
+      "N": 0.2541
+     },
+     "marathonbet": {
+      "2": 0.2165,
+      "1": 0.5319,
+      "N": 0.2516
+     },
+     "pinnacle": {
+      "2": 0.2089,
+      "1": 0.5404,
+      "N": 0.2506
+     },
+     "betfair_ex_eu": {
+      "2": 0.2026,
+      "1": 0.5395,
+      "N": 0.2579
+     }
+    },
+    "force_p": {
+     "1": 0.639,
+     "N": 0.163,
+     "2": 0.197
+    },
+    "marche_p": {
+     "1": 0.531,
+     "N": 0.2558,
+     "2": 0.2132
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.7,
+  "proba": 0.531,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b8308c8150f5ad55e242d7671adaffbd",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b8308c8150f5ad55e242d7671adaffbd",
+    "date": "2026-11-15T15:15:00Z",
+    "domicile": "Granada CF",
+    "exterieur": "Las Palmas",
+    "championnat": "Liga 2",
+    "pari": "Victoire Granada CF",
+    "cote": 1.9,
+    "proba": 0.4701,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883116"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "1": 0.4526,
+      "2": 0.2715,
+      "N": 0.2759
+     },
+     "unibet_fr": {
+      "1": 0.4652,
+      "2": 0.2588,
+      "N": 0.276
+     },
+     "winamax_fr": {
+      "1": 0.4591,
+      "2": 0.2684,
+      "N": 0.2726
+     },
+     "betclic_fr": {
+      "1": 0.4685,
+      "2": 0.2577,
+      "N": 0.2738
+     },
+     "onexbet": {
+      "1": 0.4721,
+      "2": 0.2509,
+      "N": 0.277
+     },
+     "pinnacle": {
+      "1": 0.4748,
+      "2": 0.2386,
+      "N": 0.2866
+     },
+     "marathonbet": {
+      "1": 0.472,
+      "2": 0.2513,
+      "N": 0.2767
+     },
+     "netbet_fr": {
+      "1": 0.4671,
+      "2": 0.2542,
+      "N": 0.2788
+     },
+     "betfair_ex_eu": {
+      "1": 0.4801,
+      "2": 0.2412,
+      "N": 0.2786
+     }
+    },
+    "force_p": {
+     "1": 0.412,
+     "N": 0.247,
+     "2": 0.342
+    },
+    "marche_p": {
+     "1": 0.4701,
+     "N": 0.279,
+     "2": 0.2509
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.9,
+  "proba": 0.4701,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:976d20d0bdfd5ebae5800d5ec4f8dedf",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "976d20d0bdfd5ebae5800d5ec4f8dedf",
+    "date": "2026-11-15T17:30:00Z",
+    "domicile": "CD Eldense",
+    "exterieur": "Sabadell FC",
+    "championnat": "Liga 2",
+    "pari": "Victoire CD Eldense",
+    "cote": 2.25,
+    "proba": 0.3977,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883137"
+    },
+    "bk_p": {
+     "betclic_fr": {
+      "1": 0.4049,
+      "2": 0.2835,
+      "N": 0.3116
+     },
+     "pmu_fr": {
+      "1": 0.3954,
+      "2": 0.2996,
+      "N": 0.305
+     },
+     "winamax_fr": {
+      "1": 0.3878,
+      "2": 0.3061,
+      "N": 0.3061
+     },
+     "unibet_fr": {
+      "1": 0.4031,
+      "2": 0.285,
+      "N": 0.3119
+     },
+     "onexbet": {
+      "1": 0.4011,
+      "2": 0.2836,
+      "N": 0.3153
+     },
+     "betfair_ex_eu": {
+      "1": 0.3986,
+      "2": 0.2825,
+      "N": 0.3189
+     },
+     "marathonbet": {
+      "1": 0.401,
+      "2": 0.2836,
+      "N": 0.3154
+     },
+     "pinnacle": {
+      "1": 0.3947,
+      "2": 0.2751,
+      "N": 0.3303
+     },
+     "netbet_fr": {
+      "1": 0.398,
+      "2": 0.2879,
+      "N": 0.3141
+     }
+    },
+    "force_p": {
+     "1": 0.401,
+     "N": 0.251,
+     "2": 0.349
+    },
+    "marche_p": {
+     "1": 0.3977,
+     "N": 0.3173,
+     "2": 0.285
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.25,
+  "proba": 0.3977,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:12b34c0f22c4208647c5a5472269b735",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "12b34c0f22c4208647c5a5472269b735",
+    "date": "2026-11-15T17:30:00Z",
+    "domicile": "SD Eibar",
+    "exterieur": "Cádiz CF",
+    "championnat": "Liga 2",
+    "pari": "Victoire SD Eibar",
+    "cote": 1.54,
+    "proba": 0.5829,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883117"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "2": 0.194,
+      "1": 0.5654,
+      "N": 0.2405
+     },
+     "unibet_fr": {
+      "2": 0.1963,
+      "1": 0.5647,
+      "N": 0.239
+     },
+     "betclic_fr": {
+      "2": 0.1908,
+      "1": 0.5738,
+      "N": 0.2354
+     },
+     "winamax_fr": {
+      "2": 0.2025,
+      "1": 0.5654,
+      "N": 0.2322
+     },
+     "onexbet": {
+      "2": 0.1842,
+      "1": 0.5889,
+      "N": 0.2269
+     },
+     "pinnacle": {
+      "2": 0.1774,
+      "1": 0.5922,
+      "N": 0.2304
+     },
+     "marathonbet": {
+      "2": 0.1842,
+      "1": 0.5888,
+      "N": 0.2269
+     },
+     "netbet_fr": {
+      "2": 0.1793,
+      "1": 0.5816,
+      "N": 0.2391
+     },
+     "betfair_ex_eu": {
+      "2": 0.1702,
+      "1": 0.5947,
+      "N": 0.2351
+     }
+    },
+    "force_p": {
+     "1": 0.747,
+     "N": 0.124,
+     "2": 0.13
+    },
+    "marche_p": {
+     "1": 0.5829,
+     "N": 0.2334,
+     "2": 0.1837
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.54,
+  "proba": 0.5829,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9cb05a2b01f14b556d7c79f7d060f2b9",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Belgium",
+    "exterieur": "Italy",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Belgium",
+    "cote": 2.02,
+    "proba": 0.4501,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861176"
+    },
+    "bk_p": {
+     "betclic_fr": {
+      "1": 0.4427,
+      "2": 0.2981,
+      "N": 0.2592
+     },
+     "betfair_ex_eu": {
+      "1": 0.4557,
+      "2": 0.2983,
+      "N": 0.2461
+     },
+     "winamax_fr": {
+      "1": 0.4423,
+      "2": 0.305,
+      "N": 0.2527
+     },
+     "onexbet": {
+      "1": 0.4422,
+      "2": 0.3017,
+      "N": 0.2562
+     },
+     "sport888": {
+      "1": 0.4391,
+      "2": 0.2975,
+      "N": 0.2635
+     },
+     "marathonbet": {
+      "1": 0.442,
+      "2": 0.3016,
+      "N": 0.2564
+     },
+     "pinnacle": {
+      "1": 0.4598,
+      "2": 0.29,
+      "N": 0.2502
+     },
+     "pmu_fr": {
+      "1": 0.4517,
+      "2": 0.2955,
+      "N": 0.2527
+     }
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.02,
+  "proba": 0.4501,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cc7a8f5fed10407a56df29e87f73d7e3",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cc7a8f5fed10407a56df29e87f73d7e3",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Croatia",
+    "exterieur": "Czech Republic",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Croatia",
+    "cote": 1.45,
+    "proba": 0.628,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861178"
+    },
+    "bk_p": {
+     "betclic_fr": {
+      "1": 0.6167,
+      "2": 0.1626,
+      "N": 0.2208
+     },
+     "betfair_ex_eu": {
+      "1": 0.6405,
+      "2": 0.1432,
+      "N": 0.2163
+     },
+     "winamax_fr": {
+      "1": 0.6105,
+      "2": 0.1736,
+      "N": 0.2159
+     },
+     "onexbet": {
+      "1": 0.6343,
+      "2": 0.1524,
+      "N": 0.2133
+     },
+     "sport888": {
+      "1": 0.618,
+      "2": 0.1612,
+      "N": 0.2207
+     },
+     "marathonbet": {
+      "1": 0.6348,
+      "2": 0.1522,
+      "N": 0.213
+     },
+     "pinnacle": {
+      "1": 0.6315,
+      "2": 0.1584,
+      "N": 0.2101
+     },
+     "pmu_fr": {
+      "1": 0.6185,
+      "2": 0.1673,
+      "N": 0.2142
+     }
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.45,
+  "proba": 0.628,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bef3dd0d3dad6760e4e531bc9565fb8c",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bef3dd0d3dad6760e4e531bc9565fb8c",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Spain",
+    "exterieur": "England",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Spain",
+    "cote": 1.63,
+    "proba": 0.5521,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861175"
+    },
+    "bk_p": {
+     "onexbet": {
+      "2": 0.2082,
+      "1": 0.5608,
+      "N": 0.231
+     },
+     "betfair_ex_eu": {
+      "2": 0.2108,
+      "1": 0.5534,
+      "N": 0.2358
+     },
+     "betclic_fr": {
+      "2": 0.2183,
+      "1": 0.5492,
+      "N": 0.2325
+     },
+     "winamax_fr": {
+      "2": 0.2269,
+      "1": 0.5462,
+      "N": 0.2269
+     },
+     "marathonbet": {
+      "2": 0.2084,
+      "1": 0.5606,
+      "N": 0.231
+     },
+     "sport888": {
+      "2": 0.2134,
+      "1": 0.5435,
+      "N": 0.2431
+     },
+     "pmu_fr": {
+      "2": 0.2141,
+      "1": 0.5453,
+      "N": 0.2405
+     },
+     "pinnacle": {
+      "2": 0.2112,
+      "1": 0.5534,
+      "N": 0.2354
+     }
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.63,
+  "proba": 0.5521,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c31db8a4f0558632e2b6422676a32efc",
+  "jour": "2026-11-15",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c31db8a4f0558632e2b6422676a32efc",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "France",
+    "exterieur": "Turkey",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire France",
+    "cote": 1.19,
+    "proba": 0.7674,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861177"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "1": 0.754,
+      "2": 0.1103,
+      "N": 0.1357
+     },
+     "betclic_fr": {
+      "1": 0.7494,
+      "2": 0.1019,
+      "N": 0.1486
+     },
+     "betfair_ex_eu": {
+      "1": 0.7908,
+      "2": 0.0791,
+      "N": 0.1301
+     },
+     "onexbet": {
+      "1": 0.7676,
+      "2": 0.0896,
+      "N": 0.1429
+     },
+     "sport888": {
+      "1": 0.773,
+      "2": 0.0843,
+      "N": 0.1427
+     },
+     "marathonbet": {
+      "1": 0.7676,
+      "2": 0.0893,
+      "N": 0.1432
+     },
+     "pinnacle": {
+      "1": 0.762,
+      "2": 0.0938,
+      "N": 0.1441
+     },
+     "pmu_fr": {
+      "1": 0.762,
+      "2": 0.093,
+      "N": 0.1449
+     }
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.19,
+  "proba": 0.7674,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-15",
+  "jour": "2026-11-15",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "f241b0cec31506c2eb749ff9be97667c",
+    "date": "2026-11-15T13:00:00Z",
+    "domicile": "Tenerife",
+    "exterieur": "AD Ceuta FC",
+    "championnat": "Liga 2",
+    "pari": "Victoire Tenerife",
+    "cote": 1.7,
+    "proba": 0.531,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883113"
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "b8308c8150f5ad55e242d7671adaffbd",
+    "date": "2026-11-15T15:15:00Z",
+    "domicile": "Granada CF",
+    "exterieur": "Las Palmas",
+    "championnat": "Liga 2",
+    "pari": "Victoire Granada CF",
+    "cote": 1.89,
+    "proba": 0.4701,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883116"
+    },
+    "traits": []
+   }
+  ],
+  "cote": 3.21,
+  "proba": 0.2496,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-15",
+  "jour": "2026-11-15",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "c31db8a4f0558632e2b6422676a32efc",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "France",
+    "exterieur": "Turkey",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire France",
+    "cote": 1.19,
+    "proba": 0.7674,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861177"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Belgium",
+    "exterieur": "Italy",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.624,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861176"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "976d20d0bdfd5ebae5800d5ec4f8dedf",
+    "date": "2026-11-15T17:30:00Z",
+    "domicile": "CD Eldense",
+    "exterieur": "Sabadell FC",
+    "championnat": "Liga 2",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.6137,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883137"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 3.57,
+  "proba": 0.2939,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-15",
+  "jour": "2026-11-15",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Belgium",
+    "exterieur": "Italy",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.624,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861176"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "c31db8a4f0558632e2b6422676a32efc",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "France",
+    "exterieur": "Turkey",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6177,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861177"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.72,
+  "proba": 0.3854,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:b8308c8150f5ad55e242d7671adaffbd",
+  "jour": "2026-11-15",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "b8308c8150f5ad55e242d7671adaffbd",
+    "date": "2026-11-15T15:15:00Z",
+    "domicile": "Granada CF",
+    "exterieur": "Las Palmas",
+    "championnat": "Liga 2",
+    "pari": "Nul ou Granada CF",
+    "cote": 1.19,
+    "proba": 0.7491,
+    "court": "1N",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883116"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.19,
+  "proba": 0.7491,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.5
+ },
+ {
+  "cle": "prudence:9cb05a2b01f14b556d7c79f7d060f2b9",
+  "jour": "2026-11-15",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Belgium",
+    "exterieur": "Italy",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Belgium",
+    "cote": 1.27,
+    "proba": 0.7031,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861176"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.27,
+  "proba": 0.7031,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.0
+ },
+ {
+  "cle": "prudence_combi:2026-11-15",
+  "jour": "2026-11-15",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "b8308c8150f5ad55e242d7671adaffbd",
+    "date": "2026-11-15T15:15:00Z",
+    "domicile": "Granada CF",
+    "exterieur": "Las Palmas",
+    "championnat": "Liga 2",
+    "pari": "Nul ou Granada CF",
+    "cote": 1.19,
+    "proba": 0.7491,
+    "court": "1N",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883116"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
+    "date": "2026-11-15T19:45:00Z",
+    "domicile": "Belgium",
+    "exterieur": "Italy",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Belgium",
+    "cote": 1.27,
+    "proba": 0.7031,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861176"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.52,
+  "proba": 0.5267,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

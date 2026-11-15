@@ -1273,5 +1273,124 @@
    "N": 3.1,
    "2": 2.7
   }
+ },
+ "f241b0cec31506c2eb749ff9be97667c": {
+  "jour": "2026-11-15",
+  "domicile": "Tenerife",
+  "exterieur": "AD Ceuta FC",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.531,
+   "N": 0.2558,
+   "2": 0.2132
+  },
+  "cotes": {
+   "1": 1.7,
+   "N": 3.4,
+   "2": 4.15
+  }
+ },
+ "b8308c8150f5ad55e242d7671adaffbd": {
+  "jour": "2026-11-15",
+  "domicile": "Granada CF",
+  "exterieur": "Las Palmas",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.4701,
+   "N": 0.279,
+   "2": 0.2509
+  },
+  "cotes": {
+   "1": 1.9,
+   "N": 3.2,
+   "2": 3.4
+  }
+ },
+ "976d20d0bdfd5ebae5800d5ec4f8dedf": {
+  "jour": "2026-11-15",
+  "domicile": "CD Eldense",
+  "exterieur": "Sabadell FC",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3977,
+   "N": 0.3173,
+   "2": 0.285
+  },
+  "cotes": {
+   "1": 2.25,
+   "N": 2.85,
+   "2": 3.1
+  }
+ },
+ "12b34c0f22c4208647c5a5472269b735": {
+  "jour": "2026-11-15",
+  "domicile": "SD Eibar",
+  "exterieur": "Cádiz CF",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5829,
+   "N": 0.2334,
+   "2": 0.1837
+  },
+  "cotes": {
+   "1": 1.54,
+   "N": 3.75,
+   "2": 4.8
+  }
+ },
+ "9cb05a2b01f14b556d7c79f7d060f2b9": {
+  "jour": "2026-11-15",
+  "domicile": "Belgium",
+  "exterieur": "Italy",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4501,
+   "N": 0.253,
+   "2": 0.2969
+  },
+  "cotes": {
+   "1": 2.02,
+   "N": 3.5,
+   "2": 3.0
+  }
+ },
+ "bef3dd0d3dad6760e4e531bc9565fb8c": {
+  "jour": "2026-11-15",
+  "domicile": "Spain",
+  "exterieur": "England",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.5521,
+   "N": 0.2348,
+   "2": 0.2131
+  },
+  "cotes": {
+   "1": 1.63,
+   "N": 3.9,
+   "2": 4.1
+  }
+ },
+ "c31db8a4f0558632e2b6422676a32efc": {
+  "jour": "2026-11-15",
+  "domicile": "France",
+  "exterieur": "Turkey",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.7674,
+   "N": 0.141,
+   "2": 0.0916
+  },
+  "cotes": {
+   "1": 1.19,
+   "N": 6.5,
+   "2": 9.5
+  }
  }
 }

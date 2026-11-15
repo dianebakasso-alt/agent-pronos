@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2245,
+  "fin": "n\": \"La Belgique doit impérativement gagner, alors que l'Italie peut se contenter du nul, ce qui peut la rendre prudente. Lukaku est en doute (hanche), Courtois est absent, et Doku revient ; l'Italie est en meilleure dynamique (10 points sur 12), mais aucune cote 1/N/2 ne semble offrir un avantage net.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai trouvé aucune actualité fiable sur Croatie - Tchéquie (blessés, forme, rotation) : je n'ai donc pas pu vérifier le contexte. La cote 1.45 pour la Croatie est trop basse pour offrir de la valeur sans information solide.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 53897,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6171,
+   "output_tokens_details": {
+    "thinking_tokens": 4769
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 1031,
+  "fin": "à 1.63 n'offre pas de marge suffisante.\"}, {\"n\": 2, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"La France, avec Mbappé attendu de retour et une invincibilité de neuf matchs de groupe, devrait logiquement gagner, et la Turquie a perdu sept de ses huit derniers déplacements. Mais la cote de 1.19 ne laisse presque aucune marge pour un pari simple, et l'absence de Dembélé et d'Akliouche ainsi que le besoin turc de points pour éviter la relégation rendent un faux pas possible. Je n'ai pas trouvé de statistiques de tirs cadrés récents pour la Turquie, donc l'analyse offensive reste partielle.\"}]}",
+  "usage": {
+   "input_tokens": 24558,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2448,
+   "output_tokens_details": {
+    "thinking_tokens": 1864
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 2,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]

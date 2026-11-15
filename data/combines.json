@@ -1275,5 +1275,37 @@
     "ok": false
    }
   ]
+ },
+ {
+  "jour": "2026-11-15",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.21,
+  "proba": 0.2496,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "f241b0cec31506c2eb749ff9be97667c",
+    "sport_key": "soccer_spain_segunda_division",
+    "date": "2026-11-15T13:00:00Z",
+    "domicile": "Tenerife",
+    "exterieur": "AD Ceuta FC",
+    "pari": "Victoire Tenerife",
+    "court": "1",
+    "cote": 1.7
+   },
+   {
+    "id": "b8308c8150f5ad55e242d7671adaffbd",
+    "sport_key": "soccer_spain_segunda_division",
+    "date": "2026-11-15T15:15:00Z",
+    "domicile": "Granada CF",
+    "exterieur": "Las Palmas",
+    "pari": "Victoire Granada CF",
+    "court": "1",
+    "cote": 1.89
+   }
+  ]
  }
 ]
