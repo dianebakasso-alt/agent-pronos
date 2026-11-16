@@ -1,45 +1,20 @@
 {
- "jour": "2026-11-15",
+ "jour": "2026-11-16",
  "v": {
-  "f241b0cec31506c2eb749ff9be97667c": {
+  "c52bb6ace02b521be96df8fba8806037": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Tenerife est favori mais n'a plus gagné depuis cinq journées, avec un contexte émotionnel lourd après le décès de Jesús de Miguel. Ceuta est dernier, avec cinq défaites de suite et un nouvel entraîneur, mais la cote 1.70 laisse peu de marge pour un favori qui peine à convertir."
+   "raison": "Albacete (cote 1.55) manque de tranchant : Higinio, Munir, Javi Moreno, Gámez et Corpas (suspendu) sont absents, et San Bartolomé est incertain. Celta Fortuna est pourtant très diminué (Ribes, Joel López et Capdevila suspendus, Somuah, Khayat et Gavián blessés), n'a pris que 2 points sur les 12 dern"
   },
-  "b8308c8150f5ad55e242d7671adaffbd": {
-   "verdict": "jouer",
-   "pari": "1",
-   "raison": "Granada enchaîne cinq victoires avec une défense solide (0.6 but encaissé par match), alors que Las Palmas a concédé 21 buts en 13 matchs et voit plusieurs titulaires absents (Clemente, Sergio Ruiz, Viti, Sandro Ramírez, Marvin Park). Granada reste privé d'Arnaiz, Diallo et Casadesús, mais Alcaraz, "
-  },
-  "976d20d0bdfd5ebae5800d5ec4f8dedf": {
+  "55a62e5cc433daeb03502b34db05647e": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Les deux équipes sont dans la zone médiane-basse, avec une attaque faible (1.0 but pour Eldense, 0.8 pour Sabadell) et des absences dans les deux camps (Guille Macho et Juan Larios pour Eldense, Orriols et Gioacchini pour Sabadell). Sabadell a aussi enchaîné des nuls sans but, ce qui rend le match t"
+   "raison": "Le 1 allemand (1.77) est surcoté : les cotes impliquent environ 50 % de victoire allemande, alors que le modèle Opta ne lui donne que 43,5 %. Musiala et Gnabry sont absents côté Allemagne, et van Dijk, De Jong, Gravenberch et Brobbey manquent côté Pays-Bas. Les Pays-Bas, invaincus, se qualifient ave"
   },
-  "12b34c0f22c4208647c5a5472269b735": {
+  "f0a77086c85d161afcfc2f275e9e29fa": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Eibar joue à domicile contre un Cádiz sans victoire à l'extérieur cette saison et en série noire (quatre défaites sur cinq). Mais Gift, Elgezabal et Bernat sont blessés, Arbilla est en doute, et la cote 1.54 est déjà très basse pour deux attaques qui marquent peu (1.2 et 1.0 but par match)."
-  },
-  "9cb05a2b01f14b556d7c79f7d060f2b9": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "La Belgique doit impérativement gagner, alors que l'Italie peut se contenter du nul, ce qui peut la rendre prudente. Lukaku est en doute (hanche), Courtois est absent, et Doku revient ; l'Italie est en meilleure dynamique (10 points sur 12), mais aucune cote 1/N/2 ne semble offrir un avantage net."
-  },
-  "bef3dd0d3dad6760e4e531bc9565fb8c": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Spain est favori à domicile, mais Rodri (ischio-jambiers) manque, avec Dani Olmo et Eric García, alors que Yamal est revenu, et l'Espagne reste invaincue depuis 43 matchs. Côté anglais, Konsa et Spence sont de retour, et l'Angleterre a déjà battu l'Espagne 3-2 en septembre. Les deux équipes jouent l"
-  },
-  "c31db8a4f0558632e2b6422676a32efc": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "La France, avec Mbappé attendu de retour et une invincibilité de neuf matchs de groupe, devrait logiquement gagner, et la Turquie a perdu sept de ses huit derniers déplacements. Mais la cote de 1.19 ne laisse presque aucune marge pour un pari simple, et l'absence de Dembélé et d'Akliouche ainsi que "
-  },
-  "cc7a8f5fed10407a56df29e87f73d7e3": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "La cote 1.45 est plus courte que le marché (environ 1.55 à 1.57 chez les bookmakers) et que la probabilité estimée d'environ 63 % pour la victoire croate, donc aucune valeur. La Croatie, 3 points et une différence de buts d'environ -10, est privée de Šutalo, Pongračić, Jakić et Ivanović, Sučić est i"
+   "raison": "La Grèce reçoit la Serbie, la pire équipe du groupe (0 point, 11 buts encaissés), et joue sa qualification sans absent signalé. Deux Serbes sont suspendus (Dragojević et Živković) et la Serbie a perdu ses six derniers matchs à l'extérieur sous Paunović. Mais la Grèce a encaissé un 7-0 contre les Pay"
   }
  }
 }

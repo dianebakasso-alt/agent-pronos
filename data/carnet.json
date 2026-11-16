@@ -48272,7 +48272,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48302,7 +48302,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48350,7 +48350,7 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48400,7 +48400,7 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -51875,7 +51875,9 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 1.7,
@@ -51883,8 +51885,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.0
  },
  {
   "cle": "match:b8308c8150f5ad55e242d7671adaffbd",
@@ -51962,7 +51964,9 @@
      "N": 0.2783,
      "2": 0.2524
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.9,
@@ -51970,8 +51974,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.0
  },
  {
   "cle": "match:976d20d0bdfd5ebae5800d5ec4f8dedf",
@@ -52052,7 +52056,9 @@
     "traits": [
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 2.25,
@@ -52060,8 +52066,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.5
  },
  {
   "cle": "match:12b34c0f22c4208647c5a5472269b735",
@@ -52142,7 +52148,20 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 18-8, cadrés 9-5, possession 62-38 %). SD Eibar a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.54,
@@ -52150,8 +52169,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:9cb05a2b01f14b556d7c79f7d060f2b9",
@@ -52214,7 +52233,9 @@
       "N": 0.2527
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "4-1",
+    "ok": true
    }
   ],
   "cote": 2.02,
@@ -52222,8 +52243,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.2
  },
  {
   "cle": "match:cc7a8f5fed10407a56df29e87f73d7e3",
@@ -52286,7 +52307,9 @@
       "N": 0.2142
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.45,
@@ -52294,8 +52317,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.5
  },
  {
   "cle": "match:bef3dd0d3dad6760e4e531bc9565fb8c",
@@ -52358,7 +52381,21 @@
       "N": 0.2354
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-3 (tirs 23-9, cadrés 7-5, possession 64-36 %). England a marqué sur penalty; Spain a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.63,
@@ -52366,8 +52403,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c31db8a4f0558632e2b6422676a32efc",
@@ -52434,7 +52471,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -52442,8 +52481,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.9
  },
  {
   "cle": "equilibre:2026-11-15",
@@ -52467,7 +52506,9 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "b8308c8150f5ad55e242d7671adaffbd",
@@ -52483,7 +52524,9 @@
      "ligue": "esp.2",
      "id": "401883116"
     },
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 3.21,
@@ -52491,8 +52534,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 22.1
  },
  {
   "cle": "mixte:2026-11-15",
@@ -52517,7 +52560,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
@@ -52535,7 +52580,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-1",
+    "ok": true
    },
    {
     "id": "976d20d0bdfd5ebae5800d5ec4f8dedf",
@@ -52553,7 +52600,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 3.56,
@@ -52561,8 +52610,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 25.6
  },
  {
   "cle": "buts:2026-11-15",
@@ -52585,7 +52634,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
@@ -52603,7 +52654,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-1",
+    "ok": true
    },
    {
     "id": "976d20d0bdfd5ebae5800d5ec4f8dedf",
@@ -52621,7 +52674,9 @@
     },
     "traits": [
      "buts_moins"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true
    }
   ],
   "cote": 3.97,
@@ -52629,8 +52684,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 29.7
  },
  {
   "cle": "prudence:b8308c8150f5ad55e242d7671adaffbd",
@@ -52654,7 +52709,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -52662,8 +52719,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.9,
   "note": 7.5
  },
  {
@@ -52688,7 +52745,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-1",
+    "ok": true
    }
   ],
   "cote": 1.27,
@@ -52696,8 +52755,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.7,
   "note": 7.0
  },
  {
@@ -52722,7 +52781,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "9cb05a2b01f14b556d7c79f7d060f2b9",
@@ -52741,7 +52802,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "4-1",
+    "ok": true
    }
   ],
   "cote": 1.52,
@@ -52749,7 +52812,390 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
+  "statut": "gagné",
+  "gain": 5.2
+ },
+ {
+  "cle": "match:c52bb6ace02b521be96df8fba8806037",
+  "jour": "2026-11-16",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c52bb6ace02b521be96df8fba8806037",
+    "date": "2026-11-16T19:30:00Z",
+    "domicile": "Albacete",
+    "exterieur": "Celta Fortuna",
+    "championnat": "Liga 2",
+    "pari": "Victoire Albacete",
+    "cote": 1.55,
+    "proba": 0.5823,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883305"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "1": 0.5736,
+      "2": 0.2028,
+      "N": 0.2236
+     },
+     "onexbet": {
+      "1": 0.585,
+      "2": 0.1881,
+      "N": 0.2268
+     },
+     "pmu_fr": {
+      "1": 0.5529,
+      "2": 0.209,
+      "N": 0.2381
+     },
+     "unibet_fr": {
+      "1": 0.5623,
+      "2": 0.2016,
+      "N": 0.2361
+     },
+     "betclic_fr": {
+      "1": 0.5744,
+      "2": 0.1958,
+      "N": 0.2298
+     },
+     "marathonbet": {
+      "1": 0.5851,
+      "2": 0.188,
+      "N": 0.2269
+     },
+     "pinnacle": {
+      "1": 0.5964,
+      "2": 0.1854,
+      "N": 0.2182
+     },
+     "betfair_ex_eu": {
+      "1": 0.6,
+      "2": 0.18,
+      "N": 0.22
+     }
+    },
+    "force_p": {
+     "1": 0.466,
+     "N": 0.227,
+     "2": 0.307
+    },
+    "marche_p": {
+     "1": 0.5823,
+     "N": 0.2257,
+     "2": 0.192
+    },
+    "traits": [
+     "doute_ia",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.55,
+  "proba": 0.5823,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
+ },
+ {
+  "cle": "match:55a62e5cc433daeb03502b34db05647e",
+  "jour": "2026-11-16",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "55a62e5cc433daeb03502b34db05647e",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Germany",
+    "exterieur": "Netherlands",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Germany",
+    "cote": 1.77,
+    "proba": 0.5012,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861185"
+    },
+    "bk_p": {
+     "betfair_ex_eu": {
+      "1": 0.4903,
+      "2": 0.2438,
+      "N": 0.2659
+     },
+     "onexbet": {
+      "1": 0.5121,
+      "2": 0.2641,
+      "N": 0.2237
+     },
+     "betclic_fr": {
+      "1": 0.5052,
+      "2": 0.2484,
+      "N": 0.2464
+     },
+     "winamax_fr": {
+      "1": 0.4976,
+      "2": 0.2585,
+      "N": 0.2439
+     },
+     "sport888": {
+      "1": 0.4998,
+      "2": 0.2569,
+      "N": 0.2433
+     },
+     "marathonbet": {
+      "1": 0.5105,
+      "2": 0.2526,
+      "N": 0.237
+     }
+    },
+    "traits": []
+   }
+  ],
+  "cote": 1.77,
+  "proba": 0.5012,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:f0a77086c85d161afcfc2f275e9e29fa",
+  "jour": "2026-11-16",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "f0a77086c85d161afcfc2f275e9e29fa",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Greece",
+    "exterieur": "Serbia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Greece",
+    "cote": 1.35,
+    "proba": 0.5968,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861188"
+    },
+    "bk_p": {
+     "betfair_ex_eu": {
+      "1": 0.3821,
+      "2": 0.4734,
+      "N": 0.1446
+     },
+     "onexbet": {
+      "1": 0.6889,
+      "2": 0.1258,
+      "N": 0.1854
+     },
+     "betclic_fr": {
+      "1": 0.6617,
+      "2": 0.1353,
+      "N": 0.203
+     },
+     "winamax_fr": {
+      "1": 0.6516,
+      "2": 0.1469,
+      "N": 0.2015
+     },
+     "sport888": {
+      "1": 0.6647,
+      "2": 0.1329,
+      "N": 0.2023
+     },
+     "marathonbet": {
+      "1": 0.6747,
+      "2": 0.1277,
+      "N": 0.1975
+     }
+    },
+    "traits": [
+     "petite_cote",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.35,
+  "proba": 0.5968,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-16",
+  "jour": "2026-11-16",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "f0a77086c85d161afcfc2f275e9e29fa",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Greece",
+    "exterieur": "Serbia",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Greece",
+    "cote": 1.35,
+    "proba": 0.5968,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861188"
+    },
+    "traits": [
+     "petite_cote",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "55a62e5cc433daeb03502b34db05647e",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Germany",
+    "exterieur": "Netherlands",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.619,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861185"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "c52bb6ace02b521be96df8fba8806037",
+    "date": "2026-11-16T19:30:00Z",
+    "domicile": "Albacete",
+    "exterieur": "Celta Fortuna",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6025,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883305"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 4.72,
+  "proba": 0.2226,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-16",
+  "jour": "2026-11-16",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "f0a77086c85d161afcfc2f275e9e29fa",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Greece",
+    "exterieur": "Serbia",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.788,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861188"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "55a62e5cc433daeb03502b34db05647e",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Germany",
+    "exterieur": "Netherlands",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.619,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861185"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "c52bb6ace02b521be96df8fba8806037",
+    "date": "2026-11-16T19:30:00Z",
+    "domicile": "Albacete",
+    "exterieur": "Celta Fortuna",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6025,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883305"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.57,
+  "proba": 0.2939,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:55a62e5cc433daeb03502b34db05647e",
+  "jour": "2026-11-16",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "55a62e5cc433daeb03502b34db05647e",
+    "date": "2026-11-16T19:45:00Z",
+    "domicile": "Germany",
+    "exterieur": "Netherlands",
+    "championnat": "Ligue des nations",
+    "pari": "Nul ou Germany",
+    "cote": 1.19,
+    "proba": 0.7471,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861185"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.19,
+  "proba": 0.7471,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.5
  }
 ]

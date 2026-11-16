@@ -1409,5 +1409,56 @@
    "N": 4.1,
    "2": 5.5
   }
+ },
+ "c52bb6ace02b521be96df8fba8806037": {
+  "jour": "2026-11-16",
+  "domicile": "Albacete",
+  "exterieur": "Celta Fortuna",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5823,
+   "N": 0.2257,
+   "2": 0.192
+  },
+  "cotes": {
+   "1": 1.55,
+   "N": 3.9,
+   "2": 4.4
+  }
+ },
+ "55a62e5cc433daeb03502b34db05647e": {
+  "jour": "2026-11-16",
+  "domicile": "Germany",
+  "exterieur": "Netherlands",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.5012,
+   "N": 0.2459,
+   "2": 0.2529
+  },
+  "cotes": {
+   "1": 1.77,
+   "N": 3.63,
+   "2": 3.6
+  }
+ },
+ "f0a77086c85d161afcfc2f275e9e29fa": {
+  "jour": "2026-11-16",
+  "domicile": "Greece",
+  "exterieur": "Serbia",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5968,
+   "N": 0.185,
+   "2": 0.2182
+  },
+  "cotes": {
+   "1": 1.35,
+   "N": 4.4,
+   "2": 6.6
+  }
  }
 }
