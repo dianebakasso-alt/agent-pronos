@@ -1283,8 +1283,8 @@
   "proba": 0.2486,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 22.1,
   "jambes": [
    {
     "id": "f241b0cec31506c2eb749ff9be97667c",
@@ -1294,7 +1294,10 @@
     "exterieur": "AD Ceuta FC",
     "pari": "Victoire Tenerife",
     "court": "1",
-    "cote": 1.7
+    "cote": 1.7,
+    "res": "1",
+    "score": "2-0",
+    "ok": true
    },
    {
     "id": "b8308c8150f5ad55e242d7671adaffbd",
@@ -1304,7 +1307,10 @@
     "exterieur": "Las Palmas",
     "pari": "Victoire Granada CF",
     "court": "1",
-    "cote": 1.89
+    "cote": 1.89,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
    }
   ]
  }

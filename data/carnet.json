@@ -52828,7 +52828,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Albacete",
     "cote": 1.55,
-    "proba": 0.5823,
+    "proba": 0.5827,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -52878,13 +52878,13 @@
     },
     "force_p": {
      "1": 0.466,
-     "N": 0.227,
+     "N": 0.228,
      "2": 0.307
     },
     "marche_p": {
-     "1": 0.5823,
-     "N": 0.2257,
-     "2": 0.192
+     "1": 0.5827,
+     "N": 0.2256,
+     "2": 0.1917
     },
     "traits": [
      "doute_ia",
@@ -52893,7 +52893,7 @@
    }
   ],
   "cote": 1.55,
-  "proba": 0.5823,
+  "proba": 0.5827,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52913,7 +52913,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Germany",
     "cote": 1.77,
-    "proba": 0.5012,
+    "proba": 0.5007,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -52955,7 +52955,7 @@
    }
   ],
   "cote": 1.77,
-  "proba": 0.5012,
+  "proba": 0.5007,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -52975,7 +52975,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Greece",
     "cote": 1.35,
-    "proba": 0.5968,
+    "proba": 0.5907,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -53020,7 +53020,7 @@
    }
   ],
   "cote": 1.35,
-  "proba": 0.5968,
+  "proba": 0.5907,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -53040,7 +53040,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Greece",
     "cote": 1.35,
-    "proba": 0.5968,
+    "proba": 0.5907,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -53059,7 +53059,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.619,
+    "proba": 0.6156,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -53068,28 +53068,10 @@
     "traits": [
      "buts_plus"
     ]
-   },
-   {
-    "id": "c52bb6ace02b521be96df8fba8806037",
-    "date": "2026-11-16T19:30:00Z",
-    "domicile": "Albacete",
-    "exterieur": "Celta Fortuna",
-    "championnat": "Liga 2",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6025,
-    "marche": "btts",
-    "espn": {
-     "ligue": "esp.2",
-     "id": "401883305"
-    },
-    "traits": [
-     "buts_plus"
-    ]
    }
   ],
-  "cote": 4.72,
-  "proba": 0.2226,
+  "cote": 2.89,
+  "proba": 0.3636,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -53109,7 +53091,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.788,
+    "proba": 0.8012,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -53127,7 +53109,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.619,
+    "proba": 0.6156,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -53145,7 +53127,7 @@
     "championnat": "Liga 2",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6025,
+    "proba": 0.602,
     "marche": "btts",
     "espn": {
      "ligue": "esp.2",
@@ -53156,8 +53138,8 @@
     ]
    }
   ],
-  "cote": 3.57,
-  "proba": 0.2939,
+  "cote": 3.54,
+  "proba": 0.2969,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -53177,7 +53159,7 @@
     "championnat": "Ligue des nations",
     "pari": "Nul ou Germany",
     "cote": 1.19,
-    "proba": 0.7471,
+    "proba": 0.7475,
     "court": "1N",
     "espn": {
      "ligue": "uefa.nations",
@@ -53190,7 +53172,7 @@
    }
   ],
   "cote": 1.19,
-  "proba": 0.7471,
+  "proba": 0.7475,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
