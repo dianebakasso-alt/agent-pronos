@@ -1460,5 +1460,39 @@
    "N": 4.4,
    "2": 6.6
   }
+ },
+ "770e80269ec2ffddc826bc50330c475b": {
+  "jour": "2026-11-17",
+  "domicile": "Denmark",
+  "exterieur": "Norway",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.37,
+   "N": 0.2615,
+   "2": 0.3685
+  },
+  "cotes": {
+   "1": 2.4,
+   "N": 3.4,
+   "2": 2.45
+  }
+ },
+ "955a201ba2266b8b6b0519e0265eb354": {
+  "jour": "2026-11-17",
+  "domicile": "Wales",
+  "exterieur": "Portugal",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.2255,
+   "N": 0.1666,
+   "2": 0.6079
+  },
+  "cotes": {
+   "1": 7.25,
+   "N": 4.95,
+   "2": 1.28
+  }
  }
 }

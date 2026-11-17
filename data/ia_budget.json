@@ -1,10 +1,10 @@
 {
  "mois": "2026-11",
- "depense": 2.9746,
- "jour": "2026-11-16",
- "depense_jour": 0.0834,
+ "depense": 3.0315,
+ "jour": "2026-11-17",
+ "depense_jour": 0.0569,
  "plafond": 7.0,
  "plafond_jour": 0.2333,
- "appels_dernier_passage": 0,
+ "appels_dernier_passage": 1,
  "bloques": 0
 }

@@ -1,54 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Galatasaray - VfB Stuttgart",
-  "pari": "Les 2 équipes marquent",
-  "cote": null,
-  "proba": 0.6833,
-  "score": "2-0",
-  "pourquoi": "Score 2-0 (tirs 13-13, cadrés 4-5, possession 52-48 %). match fermé : seulement 9 tirs cadrés au total.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace"
-  ],
-  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "VfB Stuttgart - Borussia Mönchengladbach",
-  "pari": "Victoire VfB Stuttgart",
-  "cote": 1.36,
-  "proba": 0.6815,
-  "score": "2-3",
-  "pourquoi": "Score 2-3 (tirs 15-16, cadrés 5-6, possession 70-30 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Lecce - Genoa",
-  "pari": "Moins de 2,5 buts",
-  "cote": null,
-  "proba": 0.6811,
-  "score": "1-2",
-  "pourquoi": "Score 1-2 (tirs 18-13, cadrés 7-3, possession 53-47 %). plus de buts que prévu (10 tirs cadrés au total).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "defense_fragile"
-  ],
-  "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Southampton - Bolton Wanderers",
   "pari": "Victoire Southampton",
   "cote": 1.41,
@@ -6631,6 +6583,55 @@
    "penalty"
   ],
   "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-17",
+  "match": "Greece - Serbia",
+  "pari": "Les 2 équipes marquent",
+  "cote": null,
+  "proba": 0.8012,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 19-5, cadrés 6-1, possession 58-42 %). match fermé : seulement 7 tirs cadrés au total.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace"
+  ],
+  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-17",
+  "match": "Germany - Netherlands",
+  "pari": "Les 2 équipes marquent",
+  "cote": null,
+  "proba": 0.6156,
+  "score": "5-0",
+  "pourquoi": "Score 5-0 (tirs 18-9, cadrés 10-1, possession 56-44 %). 11 tirs cadrés au total, mais peu de buts.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-17",
+  "match": "Albacete - Celta Fortuna",
+  "pari": "Les 2 équipes marquent",
+  "cote": null,
+  "proba": 0.602,
+  "score": "1-0",
+  "pourquoi": "Score 1-0 (tirs 16-11, cadrés 6-3, possession 51-49 %). match fermé : seulement 9 tirs cadrés au total.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace"
+  ],
+  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
   "source": "espn"
  }
 ]

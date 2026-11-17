@@ -48474,7 +48474,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48656,7 +48656,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48765,7 +48765,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -48876,7 +48876,7 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -49185,7 +49185,7 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0,
   "note": 7.3
  },
@@ -52889,7 +52889,9 @@
     "traits": [
      "doute_ia",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.55,
@@ -52897,8 +52899,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.5
  },
  {
   "cle": "match:55a62e5cc433daeb03502b34db05647e",
@@ -52951,7 +52953,9 @@
       "N": 0.237
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "5-0",
+    "ok": true
    }
   ],
   "cote": 1.77,
@@ -52959,8 +52963,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 7.7
  },
  {
   "cle": "match:f0a77086c85d161afcfc2f275e9e29fa",
@@ -53016,7 +53020,9 @@
     "traits": [
      "petite_cote",
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.35,
@@ -53024,8 +53030,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.5
  },
  {
   "cle": "mixte:2026-11-16",
@@ -53049,7 +53055,9 @@
     "traits": [
      "petite_cote",
      "doute_ia"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "55a62e5cc433daeb03502b34db05647e",
@@ -53067,7 +53075,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 5-0 (tirs 18-9, cadrés 10-1, possession 56-44 %). 11 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.89,
@@ -53075,8 +53096,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-16",
@@ -53099,7 +53120,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 19-5, cadrés 6-1, possession 58-42 %). match fermé : seulement 7 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    },
    {
     "id": "55a62e5cc433daeb03502b34db05647e",
@@ -53117,7 +53150,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 5-0 (tirs 18-9, cadrés 10-1, possession 56-44 %). 11 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "c52bb6ace02b521be96df8fba8806037",
@@ -53135,7 +53181,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 16-11, cadrés 6-3, possession 51-49 %). match fermé : seulement 9 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 3.54,
@@ -53143,8 +53201,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudence:55a62e5cc433daeb03502b34db05647e",
@@ -53168,7 +53226,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-0",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -53176,8 +53236,228 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.9,
   "note": 7.5
+ },
+ {
+  "cle": "match:770e80269ec2ffddc826bc50330c475b",
+  "jour": "2026-11-17",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "770e80269ec2ffddc826bc50330c475b",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Denmark",
+    "exterieur": "Norway",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Denmark",
+    "cote": 2.4,
+    "proba": 0.37,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861194"
+    },
+    "bk_p": {
+     "betfair_ex_eu": {
+      "1": 0.3634,
+      "2": 0.3634,
+      "N": 0.2731
+     },
+     "betclic_fr": {
+      "1": 0.3724,
+      "2": 0.3648,
+      "N": 0.2629
+     },
+     "winamax_fr": {
+      "1": 0.3722,
+      "2": 0.3722,
+      "N": 0.2556
+     },
+     "sport888": {
+      "1": 0.3731,
+      "2": 0.3731,
+      "N": 0.2539
+     },
+     "marathonbet": {
+      "1": 0.3745,
+      "2": 0.3745,
+      "N": 0.251
+     }
+    },
+    "traits": []
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.37,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:955a201ba2266b8b6b0519e0265eb354",
+  "jour": "2026-11-17",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "955a201ba2266b8b6b0519e0265eb354",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Wales",
+    "exterieur": "Portugal",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.28,
+    "proba": 0.6079,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861189"
+    },
+    "bk_p": {
+     "betfair_ex_eu": {
+      "2": 0.4066,
+      "1": 0.4599,
+      "N": 0.1336
+     },
+     "betclic_fr": {
+      "2": 0.6968,
+      "1": 0.123,
+      "N": 0.1802
+     },
+     "winamax_fr": {
+      "2": 0.683,
+      "1": 0.1377,
+      "N": 0.1793
+     },
+     "sport888": {
+      "2": 0.6982,
+      "1": 0.1161,
+      "N": 0.1857
+     },
+     "marathonbet": {
+      "2": 0.7105,
+      "1": 0.1102,
+      "N": 0.1793
+     }
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.28,
+  "proba": 0.6079,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-17",
+  "jour": "2026-11-17",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "955a201ba2266b8b6b0519e0265eb354",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Wales",
+    "exterieur": "Portugal",
+    "championnat": "Ligue des nations",
+    "pari": "Victoire Portugal",
+    "cote": 1.28,
+    "proba": 0.6079,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861189"
+    },
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "770e80269ec2ffddc826bc50330c475b",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Denmark",
+    "exterieur": "Norway",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6228,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861194"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.77,
+  "proba": 0.3786,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-17",
+  "jour": "2026-11-17",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "955a201ba2266b8b6b0519e0265eb354",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Wales",
+    "exterieur": "Portugal",
+    "championnat": "Ligue des nations",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.8134,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861189"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "770e80269ec2ffddc826bc50330c475b",
+    "date": "2026-11-17T19:45:00Z",
+    "domicile": "Denmark",
+    "exterieur": "Norway",
+    "championnat": "Ligue des nations",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6228,
+    "marche": "btts",
+    "espn": {
+     "ligue": "uefa.nations",
+     "id": "401861194"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.07,
+  "proba": 0.5066,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
  }
 ]

@@ -1,1 +1,28 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 897,
+  "fin": " son attaque tourner (Haaland, Ødegaard) et crée selon tips.gg des occasions plus propres ; un match ouvert et équilibré, sans pari clair.\"},\n{\"n\": 2, \"verdict\": \"prudence\", \"pari\": \"2\", \"raison\": \"Le Pays de Galles est en crise : quatre défaites en cinq matchs, déjà relégué, sans Neco Williams (blessé), Ampadu (suspendu) et Wilson (forfait), avec Darlow incertain. Le Portugal est qualifié, privé de Bernardo Silva, Rúben Dias et Palhinha (suspendus), et a encaissé un 4-1 face au Danemark, donc une rotation est probable ; avec une cote de 1,28, le gain reste faible pour un risque réel.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 24367,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2513,
+   "output_tokens_details": {
+    "thinking_tokens": 1971
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 2,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]
