@@ -53253,7 +53253,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Denmark",
     "cote": 2.4,
-    "proba": 0.37,
+    "proba": 0.3711,
     "court": "1",
     "espn": {
      "ligue": "uefa.nations",
@@ -53290,7 +53290,7 @@
    }
   ],
   "cote": 2.4,
-  "proba": 0.37,
+  "proba": 0.3711,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -53310,7 +53310,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Portugal",
     "cote": 1.28,
-    "proba": 0.6079,
+    "proba": 0.6381,
     "court": "2",
     "espn": {
      "ligue": "uefa.nations",
@@ -53351,7 +53351,7 @@
    }
   ],
   "cote": 1.28,
-  "proba": 0.6079,
+  "proba": 0.6381,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -53371,7 +53371,7 @@
     "championnat": "Ligue des nations",
     "pari": "Victoire Portugal",
     "cote": 1.28,
-    "proba": 0.6079,
+    "proba": 0.6381,
     "court": "2",
     "espn": {
      "ligue": "uefa.nations",
@@ -53391,7 +53391,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6228,
+    "proba": 0.5857,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -53402,8 +53402,8 @@
     ]
    }
   ],
-  "cote": 2.77,
-  "proba": 0.3786,
+  "cote": 2.81,
+  "proba": 0.3738,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -53423,7 +53423,7 @@
     "championnat": "Ligue des nations",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.8134,
+    "proba": 0.7606,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.nations",
@@ -53441,7 +53441,7 @@
     "championnat": "Ligue des nations",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6228,
+    "proba": 0.5857,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.nations",
@@ -53452,8 +53452,8 @@
     ]
    }
   ],
-  "cote": 2.07,
-  "proba": 0.5066,
+  "cote": 2.36,
+  "proba": 0.4455,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
