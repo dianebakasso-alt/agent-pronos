@@ -17,10 +17,8 @@
   "soccer_austria_bundesliga": 6,
   "soccer_uefa_champs_league": 18
  },
- "relies": 124,
- "manques": [
-  "soccer_france_ligue_two: Nantes - Grenoble"
- ],
+ "relies": 125,
+ "manques": [],
  "europe": 18,
  "fatigue": 0
 }
