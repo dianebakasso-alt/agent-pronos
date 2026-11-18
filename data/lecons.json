@@ -1,22 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Southampton - Bolton Wanderers",
-  "pari": "Victoire Southampton",
-  "cote": 1.41,
-  "proba": 0.6802,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 14-14, cadrés 2-3, possession 63-37 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Villarreal - Elche CF",
   "pari": "Victoire Villarreal",
   "cote": 1.4,
@@ -6632,6 +6616,24 @@
    "attaque_inefficace"
   ],
   "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-18",
+  "match": "Denmark - Norway",
+  "pari": "Victoire Denmark",
+  "cote": 2.4,
+  "proba": 0.3711,
+  "score": "2-3",
+  "pourquoi": "Score 2-3 (tirs 7-22, cadrés 4-7, possession 48-52 %). Norway a marqué sur penalty; Norway a été plus dangereux (7 tirs cadrés contre 4); but décisif de Norway à la 90e.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "malchance",
+   "penalty"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
   "source": "espn"
  }
 ]

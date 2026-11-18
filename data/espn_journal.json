@@ -1,7 +1,6 @@
 {
  "ligues": {
-  "soccer_uefa_nations_league": 8,
-  "soccer_brazil_campeonato": 19,
+  "soccer_brazil_campeonato": 20,
   "soccer_usa_mls": 10,
   "soccer_australia_aleague": 5,
   "soccer_denmark_superliga": 6,
@@ -11,14 +10,17 @@
   "soccer_france_ligue_one": 9,
   "soccer_belgium_first_div": 9,
   "soccer_spain_la_liga": 10,
-  "soccer_argentina_primera_division": 7,
+  "soccer_argentina_primera_division": 8,
   "soccer_turkey_super_league": 9,
-  "soccer_efl_champ": 20,
+  "soccer_efl_champ": 24,
   "soccer_italy_serie_a": 10,
-  "soccer_austria_bundesliga": 6
+  "soccer_austria_bundesliga": 6,
+  "soccer_uefa_champs_league": 18
  },
- "relies": 108,
- "manques": [],
- "europe": 9,
+ "relies": 124,
+ "manques": [
+  "soccer_france_ligue_two: Nantes - Grenoble"
+ ],
+ "europe": 18,
  "fatigue": 0
 }

@@ -53286,7 +53286,21 @@
       "N": 0.251
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "2-3",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-3 (tirs 7-22, cadrés 4-7, possession 48-52 %). Norway a marqué sur penalty; Norway a été plus dangereux (7 tirs cadrés contre 4); but décisif de Norway à la 90e.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.4,
@@ -53294,8 +53308,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:955a201ba2266b8b6b0519e0265eb354",
@@ -53347,7 +53361,9 @@
      "exterieur",
      "petite_cote",
      "doute_ia"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    }
   ],
   "cote": 1.28,
@@ -53355,8 +53371,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.8
  },
  {
   "cle": "mixte:2026-11-17",
@@ -53381,7 +53397,9 @@
      "exterieur",
      "petite_cote",
      "doute_ia"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    },
    {
     "id": "770e80269ec2ffddc826bc50330c475b",
@@ -53399,7 +53417,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    }
   ],
   "cote": 2.81,
@@ -53407,8 +53427,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 18.1
  },
  {
   "cle": "buts:2026-11-17",
@@ -53431,7 +53451,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    },
    {
     "id": "770e80269ec2ffddc826bc50330c475b",
@@ -53449,7 +53471,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-3",
+    "ok": true
    }
   ],
   "cote": 2.36,
@@ -53457,7 +53481,133 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
+  "statut": "gagné",
+  "gain": 13.6
+ },
+ {
+  "cle": "match:34b8d9b2a641392b592e1dc5470e7622",
+  "jour": "2026-11-18",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "34b8d9b2a641392b592e1dc5470e7622",
+    "date": "2026-11-18T22:30:00Z",
+    "domicile": "Coritiba",
+    "exterieur": "Santos",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Santos",
+    "cote": 2.02,
+    "proba": 0.4489,
+    "court": "2",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841315"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "1": 0.2908,
+      "2": 0.4407,
+      "N": 0.2685
+     },
+     "unibet_fr": {
+      "1": 0.2801,
+      "2": 0.449,
+      "N": 0.2709
+     },
+     "onexbet": {
+      "1": 0.272,
+      "2": 0.456,
+      "N": 0.272
+     },
+     "sport888": {
+      "1": 0.2699,
+      "2": 0.4477,
+      "N": 0.2824
+     },
+     "marathonbet": {
+      "1": 0.272,
+      "2": 0.456,
+      "N": 0.272
+     },
+     "betclic_fr": {
+      "1": 0.2831,
+      "2": 0.4428,
+      "N": 0.2741
+     },
+     "pinnacle": {
+      "1": 0.2684,
+      "2": 0.4515,
+      "N": 0.2801
+     },
+     "pmu_fr": {
+      "1": 0.3005,
+      "2": 0.4388,
+      "N": 0.2607
+     },
+     "betfair_ex_eu": {
+      "1": 0.2723,
+      "2": 0.4517,
+      "N": 0.276
+     }
+    },
+    "force_p": {
+     "1": 0.3,
+     "N": 0.256,
+     "2": 0.444
+    },
+    "marche_p": {
+     "1": 0.277,
+     "N": 0.2741,
+     "2": 0.4489
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.02,
+  "proba": 0.4489,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
+ },
+ {
+  "cle": "prudence:34b8d9b2a641392b592e1dc5470e7622",
+  "jour": "2026-11-18",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "34b8d9b2a641392b592e1dc5470e7622",
+    "date": "2026-11-18T22:30:00Z",
+    "domicile": "Coritiba",
+    "exterieur": "Santos",
+    "championnat": "Brasileirão",
+    "pari": "Nul ou Santos",
+    "cote": 1.27,
+    "proba": 0.723,
+    "court": "N2",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841315"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.27,
+  "proba": 0.723,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.2
  }
 ]

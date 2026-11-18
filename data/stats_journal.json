@@ -16,11 +16,11 @@
   "soccer_austria_bundesliga"
  ],
  "ligues_ko": [
-  "soccer_uefa_nations_league",
   "soccer_australia_aleague",
-  "soccer_chile_campeonato"
+  "soccer_chile_campeonato",
+  "soccer_uefa_champs_league"
  ],
- "equipes_trouvees": 200,
+ "equipes_trouvees": 220,
  "equipes_manquees": [
   "soccer_turkey_super_league: Amed SK",
   "soccer_austria_bundesliga: Rapid Wien"

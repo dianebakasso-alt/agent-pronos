@@ -1,24 +1,3 @@
 {
- "matchs": {
-  "955a201ba2266b8b6b0519e0265eb354": {
-   "id": "955a201ba2266b8b6b0519e0265eb354",
-   "debut": "2026-11-17T19:45:00Z",
-   "domicile": "Wales",
-   "exterieur": "Portugal",
-   "championnat": "UEFA Nations League",
-   "sport_key": "soccer_uefa_nations_league",
-   "court": "1",
-   "issue": "Victoire Wales",
-   "proba": 0.23446262273067153,
-   "proba_depart": 0.459868608968866,
-   "cote": 7.25,
-   "bk": "Betclic (FR)",
-   "note": 3.9759,
-   "forme": null,
-   "ajoute": "2026-11-13",
-   "statut": "retiré",
-   "analyses": [],
-   "raison": "Ses chances ont chuté de 23 points depuis sa sélection."
-  }
- }
+ "matchs": {}
 }
