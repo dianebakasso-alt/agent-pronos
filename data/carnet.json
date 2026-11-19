@@ -53564,7 +53564,9 @@
      "exterieur",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.02,
@@ -53572,8 +53574,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.2
  },
  {
   "cle": "prudence:34b8d9b2a641392b592e1dc5470e7622",
@@ -53598,7 +53600,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.27,
@@ -53606,8 +53610,188 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.7,
   "note": 7.2
+ },
+ {
+  "cle": "match:fa3ad7ccd23c6fe47c3062a2b69d3ddd",
+  "jour": "2026-11-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "fa3ad7ccd23c6fe47c3062a2b69d3ddd",
+    "date": "2026-11-19T22:30:00Z",
+    "domicile": "Vitoria",
+    "exterieur": "Bragantino-SP",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Bragantino-SP",
+    "cote": 2.35,
+    "proba": 0.3698,
+    "court": "2",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841317"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "2": 0.3701,
+      "1": 0.3624,
+      "N": 0.2676
+     },
+     "marathonbet": {
+      "2": 0.3649,
+      "1": 0.3565,
+      "N": 0.2786
+     },
+     "onexbet": {
+      "2": 0.3647,
+      "1": 0.3565,
+      "N": 0.2788
+     },
+     "unibet_fr": {
+      "2": 0.3791,
+      "1": 0.3475,
+      "N": 0.2734
+     },
+     "sport888": {
+      "2": 0.3672,
+      "1": 0.3504,
+      "N": 0.2824
+     },
+     "betclic_fr": {
+      "2": 0.372,
+      "1": 0.3523,
+      "N": 0.2757
+     },
+     "pinnacle": {
+      "2": 0.3688,
+      "1": 0.3527,
+      "N": 0.2785
+     },
+     "betfair_ex_eu": {
+      "2": 0.3705,
+      "1": 0.3519,
+      "N": 0.2776
+     },
+     "pmu_fr": {
+      "2": 0.3811,
+      "1": 0.3415,
+      "N": 0.2775
+     }
+    },
+    "force_p": {
+     "1": 0.326,
+     "N": 0.271,
+     "2": 0.402
+    },
+    "marche_p": {
+     "1": 0.3534,
+     "N": 0.2768,
+     "2": 0.3698
+    },
+    "traits": [
+     "exterieur",
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.3698,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:2a054ad1a9985edb5db37136cf40a382",
+  "jour": "2026-11-19",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "2a054ad1a9985edb5db37136cf40a382",
+    "date": "2026-11-19T22:30:00Z",
+    "domicile": "Vasco da Gama",
+    "exterieur": "Internacional",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Vasco da Gama",
+    "cote": 1.6,
+    "proba": 0.5874,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841308"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.1875,
+      "1": 0.5768,
+      "N": 0.2357
+     },
+     "winamax_fr": {
+      "2": 0.1929,
+      "1": 0.5787,
+      "N": 0.2284
+     },
+     "sport888": {
+      "2": 0.1829,
+      "1": 0.5826,
+      "N": 0.2345
+     },
+     "onexbet": {
+      "2": 0.1774,
+      "1": 0.5924,
+      "N": 0.2302
+     },
+     "betclic_fr": {
+      "2": 0.187,
+      "1": 0.5773,
+      "N": 0.2357
+     },
+     "marathonbet": {
+      "2": 0.1773,
+      "1": 0.5929,
+      "N": 0.2298
+     },
+     "betfair_ex_eu": {
+      "2": 0.1663,
+      "1": 0.6056,
+      "N": 0.2281
+     },
+     "pmu_fr": {
+      "2": 0.2004,
+      "1": 0.5512,
+      "N": 0.2484
+     },
+     "pinnacle": {
+      "2": 0.1732,
+      "1": 0.6007,
+      "N": 0.2261
+     }
+    },
+    "force_p": {
+     "1": 0.49,
+     "N": 0.239,
+     "2": 0.271
+    },
+    "marche_p": {
+     "1": 0.5874,
+     "N": 0.2315,
+     "2": 0.181
+    },
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.6,
+  "proba": 0.5874,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
  }
 ]

@@ -1,6 +1,6 @@
 {
  "ligues": {
-  "soccer_brazil_campeonato": 20,
+  "soccer_brazil_campeonato": 15,
   "soccer_usa_mls": 10,
   "soccer_australia_aleague": 5,
   "soccer_denmark_superliga": 6,
@@ -17,8 +17,8 @@
   "soccer_austria_bundesliga": 6,
   "soccer_uefa_champs_league": 18
  },
- "relies": 125,
+ "relies": 140,
  "manques": [],
- "europe": 18,
- "fatigue": 0
+ "europe": 54,
+ "fatigue": 1
 }

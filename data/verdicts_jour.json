@@ -1,10 +1,15 @@
 {
- "jour": "2026-11-18",
+ "jour": "2026-11-19",
  "v": {
-  "34b8d9b2a641392b592e1dc5470e7622": {
+  "fa3ad7ccd23c6fe47c3062a2b69d3ddd": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Vitória, 15e, vient de congédier Jair Ventura et démarre avec un nouvel entraîneur, et il perd Luan Candido et Nacho Laquintana, prêtés par Bragantino, par clause contractuelle. Bragantino est privé de l'attaquant Lucas Barbosa, suspendu, mais cherche une troisième victoire consécutive et s'appuie s"
+  },
+  "2a054ad1a9985edb5db37136cf40a382": {
    "verdict": "prudence",
-   "pari": "2",
-   "raison": "Coritiba (13e, 42 pts) est en crise : entraîneur intérimaire, gardien titulaire Pedro Morisco absent (sélection), une seule victoire en neuf matchs et une défense qui subit beaucoup de tirs. Santos (9e, 47 pts) a retrouvé Neymar, Willian Arão et Escobar, mais il sort de trois matchs sans victoire et"
+   "pari": "1",
+   "raison": "Vasco contrôle la dynamique avec le retour de Sosa et Thiago Mendes, alors que l'Internacional, à un point de la zone de relégation, est privé de Thiago Maia et Maripán. L'Inter est aussi en méforme à l'extérieur : sept matchs consécutifs à l'extérieur avec des buts encaissés, et Vasco a remporté 17"
   }
  }
 }

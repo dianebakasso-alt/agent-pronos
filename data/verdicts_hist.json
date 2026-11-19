@@ -1511,5 +1511,39 @@
    "N": 3.4,
    "2": 2.02
   }
+ },
+ "fa3ad7ccd23c6fe47c3062a2b69d3ddd": {
+  "jour": "2026-11-19",
+  "domicile": "Vitoria",
+  "exterieur": "Bragantino-SP",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3534,
+   "N": 0.2768,
+   "2": 0.3698
+  },
+  "cotes": {
+   "1": 2.6,
+   "N": 3.25,
+   "2": 2.35
+  }
+ },
+ "2a054ad1a9985edb5db37136cf40a382": {
+  "jour": "2026-11-19",
+  "domicile": "Vasco da Gama",
+  "exterieur": "Internacional",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5874,
+   "N": 0.2315,
+   "2": 0.181
+  },
+  "cotes": {
+   "1": 1.6,
+   "N": 3.8,
+   "2": 4.6
+  }
  }
 }

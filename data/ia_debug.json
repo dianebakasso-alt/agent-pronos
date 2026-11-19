@@ -1,1 +1,28 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 1310,
+  "fin": " Mendes, alors que l'Internacional, à un point de la zone de relégation, est privé de Thiago Maia et Maripán. L'Inter est aussi en méforme à l'extérieur : sept matchs consécutifs à l'extérieur avec des buts encaissés, et Vasco a remporté 17 de ses 40 derniers duels à São Januário contre l'Inter. Le doute vient de la cote de 1.60 qui laisse peu de marge, de la défense vasca qui encaisse régulièrement, et de la fatigue possible après l'élimination en Coupe du Brasil aux tirs au but contre Palmeiras. Les sources divergent aussi sur la série de Vasco (deux ou trois victoires consécutives).\"}]}\n```",
+  "usage": {
+   "input_tokens": 27898,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3711,
+   "output_tokens_details": {
+    "thinking_tokens": 2795
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 2,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]
