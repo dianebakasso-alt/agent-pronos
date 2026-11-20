@@ -1545,5 +1545,175 @@
    "N": 3.8,
    "2": 4.6
   }
+ },
+ "68cfa1aec1d5f4115ca07e6237dfa6fd": {
+  "jour": "2026-11-20",
+  "domicile": "Western Sydney Wanderers",
+  "exterieur": "Adelaide United",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.5687,
+   "N": 0.219,
+   "2": 0.2122
+  },
+  "cotes": {
+   "1": 1.56,
+   "N": 4.0,
+   "2": 4.0
+  }
+ },
+ "02d5f40630d0280cd520175f22b7a25c": {
+  "jour": "2026-11-20",
+  "domicile": "AGF Aarhus",
+  "exterieur": "Lyngby",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.532,
+   "N": 0.2376,
+   "2": 0.2304
+  },
+  "cotes": {
+   "1": 1.64,
+   "N": 3.7,
+   "2": 3.9
+  }
+ },
+ "dade98555cab410e4b25cd4d29c1bee8": {
+  "jour": "2026-11-20",
+  "domicile": "Annecy FC",
+  "exterieur": "Clermont",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4528,
+   "N": 0.2831,
+   "2": 0.264
+  },
+  "cotes": {
+   "1": 2.02,
+   "N": 3.15,
+   "2": 3.4
+  }
+ },
+ "db03e2cc30f2c76d6db2065ddc81318c": {
+  "jour": "2026-11-20",
+  "domicile": "Metz",
+  "exterieur": "Boulogne",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4453,
+   "N": 0.282,
+   "2": 0.2726
+  },
+  "cotes": {
+   "1": 2.02,
+   "N": 3.15,
+   "2": 3.4
+  }
+ },
+ "230a224cafcb332f3a1951e80d09f886": {
+  "jour": "2026-11-20",
+  "domicile": "Nancy",
+  "exterieur": "Dijon",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.522,
+   "N": 0.2528,
+   "2": 0.2252
+  },
+  "cotes": {
+   "1": 1.74,
+   "N": 3.55,
+   "2": 4.1
+  }
+ },
+ "fc417d3eacbabd91fc524fcd7c92e723": {
+  "jour": "2026-11-20",
+  "domicile": "Red Star",
+  "exterieur": "Pau FC",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.4582,
+   "N": 0.2846,
+   "2": 0.2573
+  },
+  "cotes": {
+   "1": 1.95,
+   "N": 3.3,
+   "2": 3.45
+  }
+ },
+ "fabb494cc1ebe6de14b1d38f9a34b091": {
+  "jour": "2026-11-20",
+  "domicile": "Andorra CF",
+  "exterieur": "Leganés",
+  "verdict": "prudence",
+  "pari": "N",
+  "marche": {
+   "1": 0.5175,
+   "N": 0.2579,
+   "2": 0.2246
+  },
+  "cotes": {
+   "1": 1.79,
+   "N": 3.35,
+   "2": 3.95
+  }
+ },
+ "cae480fb1195f0032554a268cb80eb44": {
+  "jour": "2026-11-20",
+  "domicile": "Bayern Munich",
+  "exterieur": "1. FC Köln",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.886,
+   "N": 0.0722,
+   "2": 0.0418
+  },
+  "cotes": {
+   "1": 1.04,
+   "N": 12.5,
+   "2": 22.0
+  }
+ },
+ "5dcc9d2b0da87770a4f49e924275be39": {
+  "jour": "2026-11-20",
+  "domicile": "Troyes",
+  "exterieur": "Le Havre",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4423,
+   "N": 0.2728,
+   "2": 0.285
+  },
+  "cotes": {
+   "1": 2.05,
+   "N": 3.3,
+   "2": 3.3
+  }
+ },
+ "f33c91844ee2ddb59ea367b52e27380b": {
+  "jour": "2026-11-20",
+  "domicile": "Cercle Brugge KSV",
+  "exterieur": "Westerlo",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4423,
+   "N": 0.2526,
+   "2": 0.3051
+  },
+  "cotes": {
+   "1": 2.0,
+   "N": 3.45,
+   "2": 2.87
+  }
  }
 }

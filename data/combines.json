@@ -1313,5 +1313,37 @@
     "ok": true
    }
   ]
+ },
+ {
+  "jour": "2026-11-20",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.11,
+  "proba": 0.2701,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "fabb494cc1ebe6de14b1d38f9a34b091",
+    "sport_key": "soccer_spain_segunda_division",
+    "date": "2026-11-20T19:30:00Z",
+    "domicile": "Andorra CF",
+    "exterieur": "Leganés",
+    "pari": "Victoire Andorra CF",
+    "court": "1",
+    "cote": 1.79
+   },
+   {
+    "id": "230a224cafcb332f3a1951e80d09f886",
+    "sport_key": "soccer_france_ligue_two",
+    "date": "2026-11-20T19:00:00Z",
+    "domicile": "Nancy",
+    "exterieur": "Dijon",
+    "pari": "Victoire Nancy",
+    "court": "1",
+    "cote": 1.74
+   }
+  ]
  }
 ]

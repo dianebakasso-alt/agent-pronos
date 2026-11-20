@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Villarreal - Elche CF",
-  "pari": "Victoire Villarreal",
-  "cote": 1.4,
-  "proba": 0.68,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 20-7, cadrés 7-1, possession 58-42 %). Villarreal a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "F.C. København - Odense Boldklub",
   "pari": "Plus de 2,5 buts",
   "cote": null,
@@ -6634,6 +6617,23 @@
    "penalty"
   ],
   "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-20",
+  "match": "Vitoria - Bragantino-SP",
+  "pari": "Victoire Bragantino-SP",
+  "cote": 2.35,
+  "proba": 0.3698,
+  "score": "2-1",
+  "pourquoi": "Score 2-1 (tirs 12-20, cadrés 5-7, possession 32-68 %). Bragantino-SP a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
   "source": "espn"
  }
 ]

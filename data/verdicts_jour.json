@@ -1,15 +1,55 @@
 {
- "jour": "2026-11-19",
+ "jour": "2026-11-20",
  "v": {
-  "fa3ad7ccd23c6fe47c3062a2b69d3ddd": {
+  "68cfa1aec1d5f4115ca07e6237dfa6fd": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Vitória, 15e, vient de congédier Jair Ventura et démarre avec un nouvel entraîneur, et il perd Luan Candido et Nacho Laquintana, prêtés par Bragantino, par clause contractuelle. Bragantino est privé de l'attaquant Lucas Barbosa, suspendu, mais cherche une troisième victoire consécutive et s'appuie s"
+   "raison": "Cote 1.56 pour un favori à domicile sans avantage net : Western Sydney revient d'une victoire 5-2 contre Auckland, mais il y a une absence (Lual, blessé) et Fransen est out. Adelaide a déjà battu les Wanderers 4-2 à domicile en mars 2026, donc la cote est trop basse pour la valeur réelle."
   },
-  "2a054ad1a9985edb5db37136cf40a382": {
+  "02d5f40630d0280cd520175f22b7a25c": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Vasco contrôle la dynamique avec le retour de Sosa et Thiago Mendes, alors que l'Internacional, à un point de la zone de relégation, est privé de Thiago Maia et Maripán. L'Inter est aussi en méforme à l'extérieur : sept matchs consécutifs à l'extérieur avec des buts encaissés, et Vasco a remporté 17"
+   "raison": "AGF est favori à domicile (trois victoires de suite à Vejlby) face à un Lyngby qui n'a pris que 11 points en 14 journées, avec de gros soucis défensifs et l'absence de Garananga et Snorre. Doute réel : quatre joueurs d'AGF rentrent encore de sélection, Colyn revient chez Lyngby, et Lyngby n'a jamais"
+  },
+  "dade98555cab410e4b25cd4d29c1bee8": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Annecy est en panne offensive (1 but par match) et a perdu 3 de ses 5 derniers matchs, mais Clermont ne gagne presque jamais à l'extérieur (0 victoire sur 5) et reste sur une série de nuls. Deux équipes faibles dans des rôles inverses : aucun pari 1-N-2 ne présente de valeur nette, et le N à 3.15 n'"
+  },
+  "db03e2cc30f2c76d6db2065ddc81318c": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Metz (7e) reçoit Boulogne, meilleure défense de Ligue 2 mais pire attaque, et Metz n'a pas gardé sa cage inviolée depuis six matchs à domicile. Metz a aussi des absences (Duarte, Mangondo, Mendy), la sortie en Coupe de France pèse et le match ressemble à un duel équilibré où le favori n'a pas d'avan"
+  },
+  "230a224cafcb332f3a1951e80d09f886": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Nancy (2e) est invaincu sur ses 5 derniers matchs, avec 17 buts marqués pour 9 encaissés et trois victoires 1-0 à domicile. Dijon est en fragilité avec des absences (Vargas-Rios, Hamada) et 19 buts encaissés ; mais le 1.74 n'offre qu'une marge modeste, et Nancy gagne souvent sur le plus petit écart."
+  },
+  "fc417d3eacbabd91fc524fcd7c92e723": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Aucune actu fraîche trouvée pour ce match (les sanctions trouvées datent de plusieurs mois, rien sur les blessés actuels). Red Star est en série noire (4 défaites sur 5) alors que Pau est en forme (VVVVD) et a gagné ses deux derniers duels, ce qui rend le 1 à 1.95 surcoté ; le 2 à 3.45 est cohérent "
+  },
+  "fabb494cc1ebe6de14b1d38f9a34b091": {
+   "verdict": "prudence",
+   "pari": "N",
+   "raison": "Selon les previews du jour, aucun blessé majeur côté Andorra hormis Le Normand, et Owono et Alende suspendus ; Leganés n'a pas gagné à l'extérieur sur ses 5 derniers matchs. Le 1 à 1.79 est trop cher pour deux équipes en mauvaise passe, et un nul (cote 3.35) est le scénario le plus probable à mon av"
+  },
+  "cae480fb1195f0032554a268cb80eb44": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Bayern est très favori (cote 1.04, environ 96 % implicite) et prive de cinq joueurs (Davies, Neuer, Gnabry, Saibari, Díaz) ; Cologne n'a pas gagné à l'extérieur depuis 17 matchs de Bundesliga. Gagner est probable, mais la cote n'offre aucune valeur : pari sans intérêt."
+  },
+  "5dcc9d2b0da87770a4f49e924275be39": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Le Havre est sans victoire en 10 journées, en crise avec un nouvel entraîneur arrivé il y a une semaine, avec 6 absents dont Zagadou et Mpasi, et a encaissé dans 14 de ses 15 derniers déplacements en L1. Troyes est pourtant la pire attaque du championnat (7 buts) et l'on attend un match fermé, donc "
+  },
+  "f33c91844ee2ddb59ea367b52e27380b": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Cercle Brugge est invaincu sur 5 matchs, a gagné ses deux derniers matchs à domicile et sa victoire sous Caixinha ; Westerlo a encaissé 13 buts en trois matchs de championnat, mais aussi marqué beaucoup. Le 1 à 2.00 est logique sur le papier, mais l'équipe est vulnérable à domicile et le changement "
   }
  }
 }
