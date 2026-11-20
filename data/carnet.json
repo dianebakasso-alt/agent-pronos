@@ -53865,12 +53865,173 @@
       "N": 0.2172
      }
     },
-    "traits": []
+    "traits": [],
+    "score": "4-2",
+    "ok": true
    }
   ],
   "cote": 1.56,
   "proba": 0.5687,
   "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "gagné",
+  "gain": 5.6
+ },
+ {
+  "cle": "mixte_gros:2026-11-20",
+  "jour": "2026-11-20",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "02d5f40630d0280cd520175f22b7a25c",
+    "date": "2026-11-20T18:00:00Z",
+    "domicile": "AGF Aarhus",
+    "exterieur": "Lyngby",
+    "championnat": "Superliga",
+    "pari": "Victoire AGF Aarhus",
+    "cote": 1.64,
+    "proba": 0.532,
+    "court": "1",
+    "espn": {
+     "ligue": "den.1",
+     "id": "401874492"
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "230a224cafcb332f3a1951e80d09f886",
+    "date": "2026-11-20T19:00:00Z",
+    "domicile": "Nancy",
+    "exterieur": "Dijon",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nancy",
+    "cote": 1.74,
+    "proba": 0.522,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876687"
+    },
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "cae480fb1195f0032554a268cb80eb44",
+    "date": "2026-11-20T19:30:00Z",
+    "domicile": "Bayern Munich",
+    "exterieur": "1. FC Köln",
+    "championnat": "Bundesliga",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.785,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884736"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "68cfa1aec1d5f4115ca07e6237dfa6fd",
+    "date": "2026-11-20T08:40:00Z",
+    "domicile": "Western Sydney Wanderers",
+    "exterieur": "Adelaide United",
+    "championnat": "A-League",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6269,
+    "marche": "btts",
+    "espn": {
+     "ligue": "aus.1",
+     "id": "401892138"
+    },
+    "traits": [
+     "buts_plus"
+    ],
+    "score": "4-2",
+    "ok": true
+   }
+  ],
+  "cote": 7.68,
+  "proba": 0.1367,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-20",
+  "jour": "2026-11-20",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "dcee36f9b8a9989972b6d4ddde76c4c7",
+    "date": "2026-11-20T20:00:00Z",
+    "domicile": "Athletic Bilbao",
+    "exterieur": "Espanyol",
+    "championnat": "Liga",
+    "pari": "Victoire Athletic Bilbao",
+    "cote": 1.41,
+    "proba": 0.6403,
+    "court": "1",
+    "espn": {
+     "ligue": "esp.1",
+     "id": "401882805"
+    },
+    "traits": [
+     "force_contre"
+    ]
+   },
+   {
+    "id": "cae480fb1195f0032554a268cb80eb44",
+    "date": "2026-11-20T19:30:00Z",
+    "domicile": "Bayern Munich",
+    "exterieur": "1. FC Köln",
+    "championnat": "Bundesliga",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.785,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "ger.1",
+     "id": "401884736"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "68cfa1aec1d5f4115ca07e6237dfa6fd",
+    "date": "2026-11-20T08:40:00Z",
+    "domicile": "Western Sydney Wanderers",
+    "exterieur": "Adelaide United",
+    "championnat": "A-League",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.6269,
+    "marche": "btts",
+    "espn": {
+     "ligue": "aus.1",
+     "id": "401892138"
+    },
+    "traits": [
+     "buts_plus"
+    ],
+    "score": "4-2",
+    "ok": true
+   }
+  ],
+  "cote": 3.33,
+  "proba": 0.3151,
+  "estime": true,
   "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
@@ -53889,7 +54050,7 @@
     "championnat": "Superliga",
     "pari": "Victoire AGF Aarhus",
     "cote": 1.64,
-    "proba": 0.532,
+    "proba": 0.5319,
     "court": "1",
     "espn": {
      "ligue": "den.1",
@@ -53943,9 +54104,9 @@
      "2": 0.095
     },
     "marche_p": {
-     "1": 0.532,
+     "1": 0.5319,
      "N": 0.2376,
-     "2": 0.2304
+     "2": 0.2305
     },
     "traits": [
      "doute_ia",
@@ -53954,7 +54115,7 @@
    }
   ],
   "cote": 1.64,
-  "proba": 0.532,
+  "proba": 0.5319,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54040,7 +54201,7 @@
     "marche_p": {
      "1": 0.4528,
      "N": 0.2831,
-     "2": 0.264
+     "2": 0.2641
     },
     "traits": [
      "piege",
@@ -54135,7 +54296,7 @@
     "marche_p": {
      "1": 0.4453,
      "N": 0.282,
-     "2": 0.2726
+     "2": 0.2727
     },
     "traits": [
      "force_pour"
@@ -54163,7 +54324,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Nancy",
     "cote": 1.74,
-    "proba": 0.522,
+    "proba": 0.5219,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -54227,9 +54388,9 @@
      "2": 0.277
     },
     "marche_p": {
-     "1": 0.522,
+     "1": 0.5219,
      "N": 0.2528,
-     "2": 0.2252
+     "2": 0.2253
     },
     "traits": [
      "doute_ia"
@@ -54237,7 +54398,7 @@
    }
   ],
   "cote": 1.74,
-  "proba": 0.522,
+  "proba": 0.5219,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54352,7 +54513,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Red Star",
     "cote": 1.95,
-    "proba": 0.4582,
+    "proba": 0.4581,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -54416,7 +54577,7 @@
      "2": 0.242
     },
     "marche_p": {
-     "1": 0.4582,
+     "1": 0.4581,
      "N": 0.2846,
      "2": 0.2573
     },
@@ -54428,7 +54589,7 @@
    }
   ],
   "cote": 1.95,
-  "proba": 0.4582,
+  "proba": 0.4581,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54448,7 +54609,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Andorra CF",
     "cote": 1.79,
-    "proba": 0.5175,
+    "proba": 0.5174,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -54507,9 +54668,9 @@
      "2": 0.247
     },
     "marche_p": {
-     "1": 0.5175,
+     "1": 0.5174,
      "N": 0.2579,
-     "2": 0.2246
+     "2": 0.2247
     },
     "traits": [
      "doute_ia",
@@ -54519,7 +54680,7 @@
    }
   ],
   "cote": 1.79,
-  "proba": 0.5175,
+  "proba": 0.5174,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54539,7 +54700,7 @@
     "championnat": "Bundesliga",
     "pari": "Victoire Bayern Munich",
     "cote": 1.04,
-    "proba": 0.886,
+    "proba": 0.8859,
     "court": "1",
     "espn": {
      "ligue": "ger.1",
@@ -54603,8 +54764,8 @@
      "2": 0.035
     },
     "marche_p": {
-     "1": 0.886,
-     "N": 0.0722,
+     "1": 0.8859,
+     "N": 0.0723,
      "2": 0.0418
     },
     "traits": [
@@ -54615,7 +54776,7 @@
    }
   ],
   "cote": 1.04,
-  "proba": 0.886,
+  "proba": 0.8859,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54695,8 +54856,8 @@
     },
     "marche_p": {
      "1": 0.4423,
-     "N": 0.2728,
-     "2": 0.285
+     "N": 0.2727,
+     "2": 0.2851
     },
     "traits": [
      "doute_ia",
@@ -54726,7 +54887,7 @@
     "championnat": "Pro League",
     "pari": "Victoire Cercle Brugge KSV",
     "cote": 2.0,
-    "proba": 0.4423,
+    "proba": 0.4422,
     "court": "1",
     "espn": {
      "ligue": "bel.1",
@@ -54780,23 +54941,24 @@
      }
     },
     "force_p": {
-     "1": 0.803,
-     "N": 0.1,
-     "2": 0.097
+     "1": 0.415,
+     "N": 0.241,
+     "2": 0.344
     },
     "marche_p": {
-     "1": 0.4423,
+     "1": 0.4422,
      "N": 0.2526,
-     "2": 0.3051
+     "2": 0.3052
     },
     "traits": [
      "doute_ia",
+     "piege",
      "force_pour"
     ]
    }
   ],
   "cote": 2.0,
-  "proba": 0.4423,
+  "proba": 0.4422,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54816,7 +54978,7 @@
     "championnat": "Liga",
     "pari": "Victoire Athletic Bilbao",
     "cote": 1.41,
-    "proba": 0.6403,
+    "proba": 0.6402,
     "court": "1",
     "espn": {
      "ligue": "esp.1",
@@ -54865,9 +55027,9 @@
      "2": 0.262
     },
     "marche_p": {
-     "1": 0.6403,
+     "1": 0.6402,
      "N": 0.2164,
-     "2": 0.1433
+     "2": 0.1434
     },
     "traits": [
      "force_contre"
@@ -54875,7 +55037,7 @@
    }
   ],
   "cote": 1.41,
-  "proba": 0.6403,
+  "proba": 0.6402,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -54895,7 +55057,7 @@
     "championnat": "Primera División - Chile",
     "pari": "Victoire Cobresal",
     "cote": 2.15,
-    "proba": 0.395,
+    "proba": 0.3949,
     "court": "1",
     "bk_p": {
      "pinnacle": {
@@ -54933,95 +55095,8 @@
    }
   ],
   "cote": 2.15,
-  "proba": 0.395,
+  "proba": 0.3949,
   "estime": false,
-  "conseille": null,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte_gros:2026-11-20",
-  "jour": "2026-11-20",
-  "cat": "mixte_gros",
-  "jambes": [
-   {
-    "id": "02d5f40630d0280cd520175f22b7a25c",
-    "date": "2026-11-20T18:00:00Z",
-    "domicile": "AGF Aarhus",
-    "exterieur": "Lyngby",
-    "championnat": "Superliga",
-    "pari": "Victoire AGF Aarhus",
-    "cote": 1.64,
-    "proba": 0.532,
-    "court": "1",
-    "espn": {
-     "ligue": "den.1",
-     "id": "401874492"
-    },
-    "traits": [
-     "doute_ia",
-     "force_pour"
-    ]
-   },
-   {
-    "id": "230a224cafcb332f3a1951e80d09f886",
-    "date": "2026-11-20T19:00:00Z",
-    "domicile": "Nancy",
-    "exterieur": "Dijon",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Nancy",
-    "cote": 1.74,
-    "proba": 0.522,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876687"
-    },
-    "traits": [
-     "doute_ia"
-    ]
-   },
-   {
-    "id": "cae480fb1195f0032554a268cb80eb44",
-    "date": "2026-11-20T19:30:00Z",
-    "domicile": "Bayern Munich",
-    "exterieur": "1. FC Köln",
-    "championnat": "Bundesliga",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.785,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "ger.1",
-     "id": "401884736"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "68cfa1aec1d5f4115ca07e6237dfa6fd",
-    "date": "2026-11-20T08:40:00Z",
-    "domicile": "Western Sydney Wanderers",
-    "exterieur": "Adelaide United",
-    "championnat": "A-League",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6269,
-    "marche": "btts",
-    "espn": {
-     "ligue": "aus.1",
-     "id": "401892138"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   }
-  ],
-  "cote": 7.68,
-  "proba": 0.1367,
-  "estime": true,
   "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
@@ -55040,7 +55115,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Andorra CF",
     "cote": 1.79,
-    "proba": 0.5175,
+    "proba": 0.5174,
     "court": "1",
     "espn": {
      "ligue": "esp.2",
@@ -55060,7 +55135,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Nancy",
     "cote": 1.74,
-    "proba": 0.522,
+    "proba": 0.5219,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -55072,7 +55147,7 @@
    }
   ],
   "cote": 3.11,
-  "proba": 0.2701,
+  "proba": 0.27,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -55164,7 +55239,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Red Star",
     "cote": 1.95,
-    "proba": 0.4582,
+    "proba": 0.4581,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -55202,7 +55277,7 @@
     "championnat": "Pro League",
     "pari": "Victoire Cercle Brugge KSV",
     "cote": 1.98,
-    "proba": 0.4423,
+    "proba": 0.4422,
     "court": "1",
     "espn": {
      "ligue": "bel.1",
@@ -55210,6 +55285,7 @@
     },
     "traits": [
      "doute_ia",
+     "piege",
      "force_pour"
     ]
    }
@@ -55218,74 +55294,6 @@
   "proba": 0.0902,
   "estime": false,
   "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte:2026-11-20",
-  "jour": "2026-11-20",
-  "cat": "mixte",
-  "jambes": [
-   {
-    "id": "dcee36f9b8a9989972b6d4ddde76c4c7",
-    "date": "2026-11-20T20:00:00Z",
-    "domicile": "Athletic Bilbao",
-    "exterieur": "Espanyol",
-    "championnat": "Liga",
-    "pari": "Victoire Athletic Bilbao",
-    "cote": 1.41,
-    "proba": 0.6403,
-    "court": "1",
-    "espn": {
-     "ligue": "esp.1",
-     "id": "401882805"
-    },
-    "traits": [
-     "force_contre"
-    ]
-   },
-   {
-    "id": "cae480fb1195f0032554a268cb80eb44",
-    "date": "2026-11-20T19:30:00Z",
-    "domicile": "Bayern Munich",
-    "exterieur": "1. FC Köln",
-    "championnat": "Bundesliga",
-    "pari": "Plus de 2,5 buts",
-    "cote": null,
-    "proba": 0.785,
-    "marche": "plus25",
-    "espn": {
-     "ligue": "ger.1",
-     "id": "401884736"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   },
-   {
-    "id": "68cfa1aec1d5f4115ca07e6237dfa6fd",
-    "date": "2026-11-20T08:40:00Z",
-    "domicile": "Western Sydney Wanderers",
-    "exterieur": "Adelaide United",
-    "championnat": "A-League",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6269,
-    "marche": "btts",
-    "espn": {
-     "ligue": "aus.1",
-     "id": "401892138"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   }
-  ],
-  "cote": 3.33,
-  "proba": 0.3151,
-  "estime": true,
-  "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
@@ -55303,7 +55311,7 @@
     "championnat": "Bundesliga",
     "pari": "Victoire Bayern Munich",
     "cote": 1.04,
-    "proba": 0.886,
+    "proba": 0.8859,
     "court": "1",
     "espn": {
      "ligue": "ger.1",
@@ -55323,7 +55331,7 @@
     "championnat": "Superliga",
     "pari": "Victoire AGF Aarhus",
     "cote": 1.64,
-    "proba": 0.532,
+    "proba": 0.5319,
     "court": "1",
     "espn": {
      "ligue": "den.1",
@@ -55336,7 +55344,7 @@
    }
   ],
   "cote": 1.71,
-  "proba": 0.4714,
+  "proba": 0.4712,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -55428,7 +55436,7 @@
     "championnat": "Ligue 2",
     "pari": "Nul ou Nancy",
     "cote": 1.16,
-    "proba": 0.7748,
+    "proba": 0.7747,
     "court": "1N",
     "espn": {
      "ligue": "fra.2",
@@ -55442,7 +55450,7 @@
    }
   ],
   "cote": 1.16,
-  "proba": 0.7748,
+  "proba": 0.7747,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -55463,7 +55471,7 @@
     "championnat": "Ligue 2",
     "pari": "Nul ou Metz",
     "cote": 1.23,
-    "proba": 0.7274,
+    "proba": 0.7273,
     "court": "1N",
     "espn": {
      "ligue": "fra.2",
@@ -55476,7 +55484,7 @@
    }
   ],
   "cote": 1.23,
-  "proba": 0.7274,
+  "proba": 0.7273,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -55497,7 +55505,7 @@
     "championnat": "Ligue 2",
     "pari": "Nul ou Nancy",
     "cote": 1.16,
-    "proba": 0.7748,
+    "proba": 0.7747,
     "court": "1N",
     "espn": {
      "ligue": "fra.2",
@@ -55517,7 +55525,7 @@
     "championnat": "Ligue 2",
     "pari": "Nul ou Metz",
     "cote": 1.22,
-    "proba": 0.7274,
+    "proba": 0.7273,
     "court": "1N",
     "espn": {
      "ligue": "fra.2",
@@ -55530,7 +55538,7 @@
    }
   ],
   "cote": 1.42,
-  "proba": 0.5635,
+  "proba": 0.5634,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
