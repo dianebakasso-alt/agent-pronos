@@ -1345,5 +1345,37 @@
     "cote": 1.74
    }
   ]
+ },
+ {
+  "jour": "2026-11-21",
+  "bookmaker": "PMU (FR)",
+  "cote": 2.41,
+  "proba": 0.3649,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "1921e07cc28ad41d7f6b80e30e38f99d",
+    "sport_key": "soccer_austria_bundesliga",
+    "date": "2026-11-21T16:00:00Z",
+    "domicile": "WSG Tirol",
+    "exterieur": "Austria Lustenau",
+    "pari": "Victoire WSG Tirol",
+    "court": "1",
+    "cote": 1.72
+   },
+   {
+    "id": "9130b46991ab991f808daf307f004469",
+    "sport_key": "soccer_france_ligue_one",
+    "date": "2026-11-21T19:45:00Z",
+    "domicile": "AS Monaco",
+    "exterieur": "Auxerre",
+    "pari": "Victoire AS Monaco",
+    "court": "1",
+    "cote": 1.4
+   }
+  ]
  }
 ]

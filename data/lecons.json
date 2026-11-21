@@ -1,89 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "F.C. København - Odense Boldklub",
-  "pari": "Plus de 2,5 buts",
-  "cote": null,
-  "proba": 0.679,
-  "score": "1-1",
-  "pourquoi": "Score 1-1 (tirs 22-7, cadrés 10-2, possession 68-32 %). 12 tirs cadrés au total, mais peu de buts.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "V-Varen Nagasaki - Sanfrecce Hiroshima",
-  "pari": "Victoire Sanfrecce Hiroshima",
-  "cote": 1.39,
-  "proba": 0.678,
-  "score": "4-0",
-  "pourquoi": "Score 4-0 (tirs 12-18, cadrés 4-2, possession 26-74 %). Sanfrecce Hiroshima a pris un carton rouge à la 66e; V-Varen Nagasaki a été plus dangereux (4 tirs cadrés contre 2).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "carton_rouge",
-   "favori_surcote"
-  ],
-  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Getafe - Sevilla",
-  "pari": "Moins de 2,5 buts",
-  "cote": null,
-  "proba": 0.6767,
-  "score": "3-1",
-  "pourquoi": "Score 3-1 (tirs 11-12, cadrés 5-4, possession 47-53 %). plus de buts que prévu (9 tirs cadrés au total).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "defense_fragile"
-  ],
-  "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Villarreal - Espanyol",
-  "pari": "Victoire Villarreal",
-  "cote": 1.41,
-  "proba": 0.6744,
-  "score": "0-1",
-  "pourquoi": "Score 0-1 (tirs 14-5, cadrés 4-3, possession 63-37 %). Villarreal a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Gimnasia (Mendoza) - Platense",
-  "pari": "Moins de 2,5 buts",
-  "cote": null,
-  "proba": 0.6691,
-  "score": "1-2",
-  "pourquoi": "Score 1-2 (tirs 14-24, cadrés 2-10, possession 49-51 %). plus de buts que prévu (12 tirs cadrés au total).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "defense_fragile"
-  ],
-  "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "FC Nordsjælland - CSKA Sofia",
   "pari": "Victoire FC Nordsjælland",
   "cote": 1.44,
@@ -6634,6 +6551,89 @@
    "malchance"
   ],
   "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-21",
+  "match": "Bayern Munich - 1. FC Köln",
+  "pari": "Victoire Bayern Munich",
+  "cote": 1.04,
+  "proba": 0.8859,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 17-7, cadrés 1-4, possession 72-28 %). 1. FC Köln a été plus dangereux (4 tirs cadrés contre 1).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-21",
+  "match": "Bayern Munich - 1. FC Köln",
+  "pari": "Plus de 2,5 buts",
+  "cote": null,
+  "proba": 0.785,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 17-7, cadrés 1-4, possession 72-28 %). match fermé : seulement 5 tirs cadrés au total.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace"
+  ],
+  "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-21",
+  "match": "Athletic Bilbao - Espanyol",
+  "pari": "Victoire Athletic Bilbao",
+  "cote": 1.41,
+  "proba": 0.6403,
+  "score": "0-1",
+  "pourquoi": "Score 0-1 (tirs 17-6, cadrés 6-3, possession 58-42 %). Athletic Bilbao a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-21",
+  "match": "Andorra CF - Leganés",
+  "pari": "Victoire Andorra CF",
+  "cote": 1.79,
+  "proba": 0.5174,
+  "score": "1-3",
+  "pourquoi": "Score 1-3 (tirs 23-10, cadrés 8-7, possession 45-55 %). Andorra CF a pris un carton rouge à la 16e; Andorra CF a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "carton_rouge",
+   "malchance"
+  ],
+  "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-21",
+  "match": "Guingamp - Rodez AF",
+  "pari": "Victoire Guingamp",
+  "cote": 1.96,
+  "proba": 0.4599,
+  "score": "1-3",
+  "pourquoi": "Score 1-3 (tirs 20-18, cadrés 11-7, possession 65-35 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
   "source": "espn"
  }
 ]

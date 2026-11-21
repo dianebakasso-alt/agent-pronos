@@ -1715,5 +1715,175 @@
    "N": 3.45,
    "2": 2.87
   }
+ },
+ "4a00e90f7d8d7bf926baa4987a3198a6": {
+  "jour": "2026-11-21",
+  "domicile": "Central Coast Mariners",
+  "exterieur": "Perth Glory",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3294,
+   "N": 0.2483,
+   "2": 0.4224
+  },
+  "cotes": {
+   "1": 2.67,
+   "N": 3.5,
+   "2": 2.07
+  }
+ },
+ "bed1f20084169c36d30d63f283640f79": {
+  "jour": "2026-11-21",
+  "domicile": "Norwich City",
+  "exterieur": "Cardiff City",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.531,
+   "N": 0.224,
+   "2": 0.245
+  },
+  "cotes": {
+   "1": 1.7,
+   "N": 4.1,
+   "2": 3.68
+  }
+ },
+ "5d3dbb358ea091830f570b92cee04c38": {
+  "jour": "2026-11-21",
+  "domicile": "Southampton",
+  "exterieur": "Derby County",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.6925,
+   "N": 0.1836,
+   "2": 0.124
+  },
+  "cotes": {
+   "1": 1.32,
+   "N": 5.1,
+   "2": 7.0
+  }
+ },
+ "acdf116ff7e38fd5643038ad39e76964": {
+  "jour": "2026-11-21",
+  "domicile": "Galatasaray",
+  "exterieur": "Samsunspor",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.767,
+   "N": 0.1401,
+   "2": 0.0929
+  },
+  "cotes": {
+   "1": 1.19,
+   "N": 6.75,
+   "2": 10.5
+  }
+ },
+ "bf921a2780e2a25201da8a3bfece84c4": {
+  "jour": "2026-11-21",
+  "domicile": "Lazio",
+  "exterieur": "Lecce",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.6557,
+   "N": 0.2025,
+   "2": 0.1418
+  },
+  "cotes": {
+   "1": 1.42,
+   "N": 4.7,
+   "2": 6.75
+  }
+ },
+ "d0128b7d64e40ca3f1ae1b288b47117a": {
+  "jour": "2026-11-21",
+  "domicile": "Eintracht Frankfurt",
+  "exterieur": "TSG Hoffenheim",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.3932,
+   "N": 0.2346,
+   "2": 0.3722
+  },
+  "cotes": {
+   "1": 2.33,
+   "N": 3.83,
+   "2": 2.5
+  }
+ },
+ "17b291f71f74a662eb4bcad1957db62c": {
+  "jour": "2026-11-21",
+  "domicile": "Middlesbrough",
+  "exterieur": "Bristol City",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.6818,
+   "N": 0.1866,
+   "2": 0.1316
+  },
+  "cotes": {
+   "1": 1.33,
+   "N": 5.0,
+   "2": 6.75
+  }
+ },
+ "651c1847b5cdcc85e60a140edd2282c4": {
+  "jour": "2026-11-21",
+  "domicile": "Nice",
+  "exterieur": "Paris Saint Germain",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.1578,
+   "N": 0.1843,
+   "2": 0.6579
+  },
+  "cotes": {
+   "1": 6.25,
+   "N": 5.3,
+   "2": 1.4
+  }
+ },
+ "ba701174c6f1be511c4e1c9bb8e64da0": {
+  "jour": "2026-11-21",
+  "domicile": "CD Castellón",
+  "exterieur": "CD Eldense",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.6613,
+   "N": 0.1959,
+   "2": 0.1429
+  },
+  "cotes": {
+   "1": 1.35,
+   "N": 4.5,
+   "2": 6.25
+  }
+ },
+ "9130b46991ab991f808daf307f004469": {
+  "jour": "2026-11-21",
+  "domicile": "AS Monaco",
+  "exterieur": "Auxerre",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.674,
+   "N": 0.191,
+   "2": 0.135
+  },
+  "cotes": {
+   "1": 1.4,
+   "N": 5.1,
+   "2": 7.25
+  }
  }
 }

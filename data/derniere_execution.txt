@@ -1,22 +1,22 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
     🎟️ Combinés : +53% de rendement sur 33 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 0 championnat(s) aujourd'hui (271 crédits restants ce mois-ci)
-    0 championnats retenus
+    quota cotes : 12 championnat(s) aujourd'hui (271 crédits restants ce mois-ci)
+    ordre des championnats : Serie A +32 %, Süper Lig +30 %, Ligue 2 +16 %, Liga 2 +15 %, Ligue 1 +14 %, Brasileirão +11 %, Pro League +10 %, Ligue des champions +6 %
+    12 championnats retenus
 3/4 Récupération des cotes…
-    145 matchs repris du cache (cotes d'un passage précédent)
-    145 matchs analysés, 0 value bets
+    27 matchs repris du cache (cotes d'un passage précédent)
+    153 matchs analysés, 1 value bets
     Forme et stats des équipes…
-    direct : 144 matchs reliés aux scores en direct
-    fatigue : 1 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 206 équipes trouvées, 2 manquées
-    force : 102 matchs notés · pièges : 37 favoris en alerte
+    direct : 153 matchs reliés aux scores en direct
+    fatigue : 2 matchs avec une équipe qui joue en Europe à 3 jours
+    stats : 224 équipes trouvées, 2 manquées
+    force : 111 matchs notés · pièges : 39 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.928, 'btts': 1.001, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    bookmakers les plus justes : sport888 (0.462, 20 matchs), marathonbet (0.484, 28 matchs), winamax_fr (0.488, 28 matchs)
-    autopsies gratuites : 0
-    tickets par rendement : {'match': 0.021, 'prudent': 0.07, 'equilibre': 0.506, 'gros': 0.244, 'buts': 0.028, 'mixte': 0.147, 'mixte_gros': 0.976, 'jour': 0.034, 'prudence': -0.081} · « à éviter » de l'IA affichés seulement (35 favoris écartés, 69 % gagnés pour 54 % prévus)
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.928, 'btts': 1.022, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
+    bookmakers les plus justes : sport888 (0.507, 29 matchs), betclic_fr (0.532, 36 matchs), marathonbet (0.540, 39 matchs)
+    autopsies gratuites : 5
+    tickets par rendement : {'match': 0.023, 'prudent': 0.033, 'equilibre': 0.459, 'gros': 0.391, 'buts': 0.028, 'mixte': 0.114, 'mixte_gros': 0.89, 'jour': 0.034, 'prudence': -0.052} · « à éviter » de l'IA affichés seulement (38 favoris écartés, 68 % gagnés pour 54 % prévus)
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
     combinés refaits avec 10 avis de l'IA
 Site généré : site/index.html
