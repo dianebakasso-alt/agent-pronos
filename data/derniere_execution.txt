@@ -4,20 +4,16 @@
     quota cotes : 0 championnat(s) aujourd'hui (259 crédits restants ce mois-ci)
     0 championnats retenus
 3/4 Récupération des cotes…
-    146 matchs repris du cache (cotes d'un passage précédent)
-    143 matchs analysés, 0 value bets
+    107 matchs repris du cache (cotes d'un passage précédent)
+    104 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 143 matchs reliés aux scores en direct
+    direct : 104 matchs reliés aux scores en direct
     fatigue : 2 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 209 équipes trouvées, 1 manquées
-    force : 104 matchs notés · pièges : 36 favoris en alerte
+    stats : 132 équipes trouvées, 0 manquées
+    force : 66 matchs notés · pièges : 25 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
-    calibrage buts : {'moins25': 0.816, 'plus25': 0.916, 'btts': 1.022, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    bookmakers les plus justes : sport888 (0.528, 32 matchs), betclic_fr (0.532, 37 matchs), marathonbet (0.554, 42 matchs)
-    autopsies gratuites : 3
-    tickets par rendement : {'match': 0.022, 'prudent': 0.033, 'equilibre': 0.459, 'gros': 0.391, 'buts': 0.028, 'mixte': 0.114, 'mixte_gros': 0.812, 'jour': 0.034, 'prudence': -0.052} · « à éviter » de l'IA affichés seulement (39 favoris écartés, 67 % gagnés pour 54 % prévus)
-4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
-  ! IA verdicts (paquet 2) : plafond IA du jour atteint (0.23 €)
-    combinés refaits avec 10 avis de l'IA
+    calibrage buts : {'moins25': 0.816, 'plus25': 0.916, 'btts': 0.986, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
+    bookmakers les plus justes : sport888 (0.500, 64 matchs), onexbet (0.520, 72 matchs), betclic_fr (0.522, 67 matchs)
+    autopsies gratuites : 16
+    tickets par rendement : {'match': 0.018, 'prudent': -0.002, 'equilibre': 0.415, 'gros': 0.284, 'buts': 0.028, 'mixte': 0.083, 'mixte_gros': 0.672, 'jour': 0.034, 'prudence': -0.138} · « à éviter » de l'IA affichés seulement (39 favoris écartés, 67 % gagnés pour 54 % prévus)
 Site généré : site/index.html

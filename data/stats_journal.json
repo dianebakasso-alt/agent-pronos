@@ -1,16 +1,16 @@
 {
  "ligues_ok": [
-  "soccer_italy_serie_a",
-  "soccer_germany_bundesliga",
-  "soccer_belgium_first_div",
-  "soccer_efl_champ",
-  "soccer_spain_segunda_division",
+  "soccer_usa_mls",
+  "soccer_brazil_campeonato",
   "soccer_turkey_super_league",
+  "soccer_italy_serie_a",
+  "soccer_efl_champ",
+  "soccer_belgium_first_div",
+  "soccer_spain_segunda_division",
   "soccer_austria_bundesliga",
   "soccer_france_ligue_one",
-  "soccer_france_ligue_two",
-  "soccer_usa_mls",
-  "soccer_brazil_campeonato"
+  "soccer_germany_bundesliga",
+  "soccer_france_ligue_two"
  ],
  "ligues_ko": [
   "soccer_australia_aleague",
@@ -18,8 +18,6 @@
   "soccer_uefa_europa_conference_league",
   "soccer_saudi_arabia_pro_league"
  ],
- "equipes_trouvees": 209,
- "equipes_manquees": [
-  "soccer_austria_bundesliga: Rapid Wien"
- ]
+ "equipes_trouvees": 132,
+ "equipes_manquees": []
 }
