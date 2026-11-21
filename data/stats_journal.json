@@ -1,14 +1,14 @@
 {
  "ligues_ok": [
-  "soccer_turkey_super_league",
-  "soccer_efl_champ",
-  "soccer_france_ligue_two",
-  "soccer_spain_segunda_division",
   "soccer_italy_serie_a",
   "soccer_germany_bundesliga",
   "soccer_belgium_first_div",
+  "soccer_efl_champ",
+  "soccer_spain_segunda_division",
+  "soccer_turkey_super_league",
   "soccer_austria_bundesliga",
   "soccer_france_ligue_one",
+  "soccer_france_ligue_two",
   "soccer_usa_mls",
   "soccer_brazil_campeonato"
  ],
@@ -18,9 +18,8 @@
   "soccer_uefa_europa_conference_league",
   "soccer_saudi_arabia_pro_league"
  ],
- "equipes_trouvees": 224,
+ "equipes_trouvees": 209,
  "equipes_manquees": [
-  "soccer_turkey_super_league: Amed SK",
   "soccer_austria_bundesliga: Rapid Wien"
  ]
 }

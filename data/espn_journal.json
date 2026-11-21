@@ -1,22 +1,22 @@
 {
  "ligues": {
-  "soccer_australia_aleague": 5,
-  "soccer_turkey_super_league": 13,
-  "soccer_efl_champ": 35,
-  "soccer_france_ligue_two": 4,
-  "soccer_spain_segunda_division": 16,
   "soccer_italy_serie_a": 14,
   "soccer_germany_bundesliga": 14,
   "soccer_belgium_first_div": 13,
+  "soccer_efl_champ": 35,
+  "soccer_spain_segunda_division": 16,
+  "soccer_turkey_super_league": 13,
   "soccer_austria_bundesliga": 9,
   "soccer_france_ligue_one": 14,
+  "soccer_france_ligue_two": 4,
   "soccer_usa_mls": 16,
   "soccer_brazil_campeonato": 14,
+  "soccer_australia_aleague": 5,
   "soccer_uefa_champs_league": 18,
   "soccer_uefa_europa_conference_league": 18,
   "soccer_saudi_arabia_pro_league": 9
  },
- "relies": 153,
+ "relies": 143,
  "manques": [],
  "europe": 54,
  "fatigue": 2
