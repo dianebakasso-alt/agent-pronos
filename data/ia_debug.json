@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2177,
+  "fin": "\"aucun\", \"raison\": \"Sporting perd son meilleur joueur Otero (suspendu) et Las Palmas compte sept absents dont Opoku (suspendu) et six blessés. Les deux équipes sont proches au classement, Las Palmas a gagné trois de ses cinq derniers duels, et le match est trop équilibré pour une cote de 1.98 sur le 1.\"}, {\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai trouvé aucune actualité fiable sur cette rencontre, la recherche ayant échoué. Trabzonspor est en grande forme, mais la cote de 1.09 implique environ 92 % de probabilité sans marge, ce qui ne laisse aucune valeur à ce pari.\"}]}",
+  "usage": {
+   "input_tokens": 55429,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4524,
+   "output_tokens_details": {
+    "thinking_tokens": 3169
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2146,
+  "fin": "\"pari\": \"1\", \"raison\": \"Marseille est invaincu sur 5 matchs (5 victoires de suite) et a marqué 22 buts en 10 matchs de L1, alors que Le Mans, privé de Bourabaa, Sidibé et Rossignol, n'a gagné aucun match à l'extérieur et a encaissé dans ses 10 matchs. Points de vigilance : Højbjerg incertain et cote de 1.41 courte.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Rien trouvé sur l'actualité de Burgos-Albacete (blessés, suspendus, forme récente), la recherche n'ayant pas abouti. Sans info, et avec seulement des stats maigres (2 confrontations), je ne parie pas sur ce match.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 53539,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5410,
+   "output_tokens_details": {
+    "thinking_tokens": 4028
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]

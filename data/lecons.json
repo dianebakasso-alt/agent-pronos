@@ -1,137 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Dinamo Zagreb - NEC Nijmegen",
-  "pari": "Victoire Dinamo Zagreb",
-  "cote": 1.53,
-  "proba": 0.6261,
-  "score": "2-4",
-  "pourquoi": "Score 2-4 (tirs 16-15, cadrés 10-5, possession 59-41 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "FC Porto - PSV Eindhoven",
-  "pari": "Victoire FC Porto",
-  "cote": 1.54,
-  "proba": 0.6238,
-  "score": "0-1",
-  "pourquoi": "Score 0-1 (tirs 14-18, cadrés 4-3, possession 40-60 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Toulouse - Troyes",
-  "pari": "Victoire Toulouse",
-  "cote": 1.54,
-  "proba": 0.6209,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 7-8, cadrés 3-0, possession 63-37 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Union Berlin - Borussia Dortmund",
-  "pari": "Victoire Borussia Dortmund",
-  "cote": 1.54,
-  "proba": 0.6191,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 11-12, cadrés 0-2, possession 37-63 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Famalicão - Alverca",
-  "pari": "Moins de 2,5 buts",
-  "cote": null,
-  "proba": 0.6128,
-  "score": "1-4",
-  "pourquoi": "Score 1-4 (tirs 13-14, cadrés 2-5, possession 64-36 %). plus de buts que prévu (7 tirs cadrés au total).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "defense_fragile"
-  ],
-  "lecon": "Le « peu de buts » est risqué : un seul but rapide ouvre le match. À jouer seulement entre deux défenses vraiment solides.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Braga - Gil Vicente",
-  "pari": "Victoire Braga",
-  "cote": 1.54,
-  "proba": 0.609,
-  "score": "1-2",
-  "pourquoi": "Score 1-2 (tirs 18-10, cadrés 6-4, possession 60-40 %). Braga a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Silkeborg IF - FC Nordsjælland",
-  "pari": "Victoire FC Nordsjælland",
-  "cote": 1.56,
-  "proba": 0.6063,
-  "score": "1-1",
-  "pourquoi": "Score 1-1 (tirs 8-11, cadrés 5-4, possession 48-52 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "IK Sirius - AIK",
-  "pari": "Victoire IK Sirius",
-  "cote": 1.57,
-  "proba": 0.604,
-  "score": "1-2",
-  "pourquoi": "Score 1-2 (tirs 23-11, cadrés 4-4, possession 55-45 %). AIK a marqué sur penalty; IK Sirius a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance",
-   "penalty"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Wolverhampton Wanderers - Portsmouth",
   "pari": "Victoire Wolverhampton Wanderers",
   "cote": 1.61,
@@ -6629,6 +6498,137 @@
    "malchance"
   ],
   "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "AS Monaco - Auxerre",
+  "pari": "Victoire AS Monaco",
+  "cote": 1.4,
+  "proba": 0.6744,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 15-6, cadrés 4-2, possession 66-34 %). AS Monaco a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "Bahia - Coritiba",
+  "pari": "Victoire Bahia",
+  "cote": 1.42,
+  "proba": 0.6286,
+  "score": "0-1",
+  "pourquoi": "Score 0-1 (tirs 14-11, cadrés 4-5, possession 59-41 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "Palmeiras - Flamengo",
+  "pari": "Victoire Flamengo",
+  "cote": 1.94,
+  "proba": 0.4579,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 13-17, cadrés 6-7, possession 48-52 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "RC Lens - Toulouse",
+  "pari": "Victoire RC Lens",
+  "cote": 2.0,
+  "proba": 0.4552,
+  "score": "1-1",
+  "pourquoi": "Score 1-1 (tirs 22-9, cadrés 8-5, possession 60-40 %). RC Lens a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "Strasbourg - Brest",
+  "pari": "Victoire Strasbourg",
+  "cote": 2.18,
+  "proba": 0.4278,
+  "score": "0-1",
+  "pourquoi": "Score 0-1 (tirs 15-16, cadrés 5-2, possession 69-31 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "SV Zulte-Waregem - Royal Antwerp",
+  "pari": "Victoire SV Zulte-Waregem",
+  "cote": 2.1,
+  "proba": 0.4212,
+  "score": "2-2",
+  "pourquoi": "Score 2-2 (tirs 24-9, cadrés 10-3, possession 52-48 %). SV Zulte-Waregem a dominé sans marquer assez.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "Lille - Lyon",
+  "pari": "Victoire Lille",
+  "cote": 2.23,
+  "proba": 0.4189,
+  "score": "0-1",
+  "pourquoi": "Score 0-1 (tirs 14-9, cadrés 5-6, possession 48-52 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-22",
+  "match": "Tenerife - Mallorca",
+  "pari": "Victoire Mallorca",
+  "cote": 2.12,
+  "proba": 0.4137,
+  "score": "0-0",
+  "pourquoi": "Score 0-0 (tirs 10-10, cadrés 2-2, possession 46-54 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
   "source": "espn"
  }
 ]
