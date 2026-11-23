@@ -2072,5 +2072,90 @@
    "N": 3.15,
    "2": 3.45
   }
+ },
+ "c1958a1dcd4f8228f4d09148fd6ea216": {
+  "jour": "2026-11-23",
+  "domicile": "Basaksehir",
+  "exterieur": "Çorum FK",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.4924,
+   "N": 0.2481,
+   "2": 0.2595
+  },
+  "cotes": {
+   "1": 1.84,
+   "N": 3.65,
+   "2": 3.42
+  }
+ },
+ "f024fef3ca959505d2bc7e75154dbedf": {
+  "jour": "2026-11-23",
+  "domicile": "AD Ceuta FC",
+  "exterieur": "Almería",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.2653,
+   "N": 0.2451,
+   "2": 0.4896
+  },
+  "cotes": {
+   "1": 3.5,
+   "N": 3.6,
+   "2": 1.85
+  }
+ },
+ "99776445d5a5f4ed008f9a6d6a1495b7": {
+  "jour": "2026-11-23",
+  "domicile": "Monza",
+  "exterieur": "Fiorentina",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.2641,
+   "N": 0.2486,
+   "2": 0.4872
+  },
+  "cotes": {
+   "1": 3.45,
+   "N": 3.65,
+   "2": 1.85
+  }
+ },
+ "db2eae8f2ae5bbcd5a5f39470b9e209a": {
+  "jour": "2026-11-23",
+  "domicile": "Nantes",
+  "exterieur": "Grenoble",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.6458,
+   "N": 0.2243,
+   "2": 0.1299
+  },
+  "cotes": {
+   "1": 1.43,
+   "N": 4.5,
+   "2": 7.5
+  }
+ },
+ "87ff23cf75b8a3552d4331f64c818f9c": {
+  "jour": "2026-11-23",
+  "domicile": "Sochaux",
+  "exterieur": "USL Dunkerque",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.4006,
+   "N": 0.2858,
+   "2": 0.3136
+  },
+  "cotes": {
+   "1": 2.22,
+   "N": 3.25,
+   "2": 2.87
+  }
  }
 }

@@ -62373,7 +62373,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.32,
@@ -62381,8 +62383,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.2
  },
  {
   "cle": "match:9176cbaec3565e688e603baec257e246",
@@ -62469,7 +62471,20 @@
      "doute_ia",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 12-12, cadrés 4-3, possession 56-44 %). Blackburn Rovers a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.82,
@@ -62477,8 +62492,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:fcd7f5c66b60aa95faa584015a438332",
@@ -62564,7 +62579,19 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 15-17, cadrés 6-5, possession 49-51 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.87,
@@ -62572,8 +62599,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-22",
@@ -62598,7 +62625,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "6cad97568ca4c6b7caeaaa79a6a3054c",
@@ -62620,7 +62649,9 @@
      "favori_net",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    },
    {
     "id": "2f3dfa781742b66f1412e15c132ff871",
@@ -62638,7 +62669,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 24-7, cadrés 9-1, possession 72-28 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "4c2262eccc903b9b1792325d09451c0a",
@@ -62656,7 +62700,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "5b642036524e93f480f445a8dd0f0e42",
@@ -62674,7 +62720,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 0-0, cadrés 0-0, possession 0-0 %). match fermé : seulement 0 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 8.42,
@@ -62682,8 +62740,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-11-22",
@@ -62708,7 +62766,20 @@
      "doute_ia",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 12-12, cadrés 4-3, possession 56-44 %). Blackburn Rovers a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "98fae24771271c96d5dd364e535405d2",
@@ -62727,7 +62798,20 @@
     "traits": [
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "2-3",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-3 (tirs 11-18, cadrés 5-9, possession 55-45 %). Le Mans FC a été plus dangereux (9 tirs cadrés contre 5); but décisif de Le Mans FC à la 90e.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "malchance"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.54,
@@ -62735,8 +62819,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-22:2",
@@ -62761,7 +62845,19 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 13-13, cadrés 6-8, possession 45-55 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "a968e1c9f7f2e05bace52a2dd77ea90a",
@@ -62779,7 +62875,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "9176cbaec3565e688e603baec257e246",
@@ -62799,7 +62897,20 @@
      "doute_ia",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 12-12, cadrés 4-3, possession 56-44 %). Blackburn Rovers a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 6.49,
@@ -62807,8 +62918,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-22",
@@ -62833,7 +62944,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    },
    {
     "id": "be2fcabc408be29ca01ce92ab266f8b7",
@@ -62853,7 +62966,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.66,
@@ -62861,8 +62976,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 6.6
  },
  {
   "cle": "prudence:fcd7f5c66b60aa95faa584015a438332",
@@ -62886,7 +63001,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.19,
@@ -62894,8 +63011,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.4
  },
  {
@@ -62921,7 +63038,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    }
   ],
   "cote": 1.21,
@@ -62929,8 +63048,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.1,
   "note": 7.1
  },
  {
@@ -62955,7 +63074,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "a71098c545fa2df8b0c32df17d8a7458",
@@ -62974,7 +63095,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-0",
+    "ok": true
    },
    {
     "id": "3de909cc36eaaa664e934686e6b26105",
@@ -62993,7 +63116,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "ee7af5aaba39b23210e98e1cb8faadf1",
@@ -63012,7 +63137,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false
    },
    {
     "id": "9176cbaec3565e688e603baec257e246",
@@ -63032,7 +63159,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    }
   ],
   "cote": 2.52,
@@ -63040,8 +63169,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:a968e1c9f7f2e05bace52a2dd77ea90a",
@@ -63126,7 +63255,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.82,
@@ -63134,8 +63265,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.2
  },
  {
   "cle": "match:1ed6ce5484f2a65ed50be17f8e06f425",
@@ -63221,7 +63352,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "2-4",
+    "ok": true
    }
   ],
   "cote": 1.54,
@@ -63229,8 +63362,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.4
  },
  {
   "cle": "match:a71098c545fa2df8b0c32df17d8a7458",
@@ -63308,7 +63441,9 @@
      "N": 0.251,
      "2": 0.2633
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.84,
@@ -63316,8 +63451,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.4
  },
  {
   "cle": "match:69c8fd5d654b0e1ea5ed5bb1cfee7a86",
@@ -63383,7 +63518,19 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 0-0, cadrés 0-0, possession 0-0 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.88,
@@ -63391,8 +63538,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:855caac815973841b663eaf77d07bae4",
@@ -63458,7 +63605,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 2.15,
@@ -63466,8 +63615,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.5
  },
  {
   "cle": "match:5bc13c44b33981f3185400163388267e",
@@ -63547,7 +63696,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 18-11, cadrés 4-3, possession 52-48 %). Bologna a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.65,
@@ -63555,8 +63717,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:76d4698a8417f32cb059f14a469939f3",
@@ -63637,7 +63799,9 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 2.55,
@@ -63645,8 +63809,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 15.5
  },
  {
   "cle": "match:9e5d4a91e379ddffa179b02bf9e09530",
@@ -63733,7 +63897,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.28,
@@ -63741,8 +63907,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.8
  },
  {
   "cle": "match:4c2262eccc903b9b1792325d09451c0a",
@@ -63829,7 +63995,19 @@
      "exterieur",
      "doute_ia",
      "piege"
-    ]
+    ],
+    "score": "3-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-1 (tirs 22-7, cadrés 9-4, possession 50-50 %). Augsburg a été plus dangereux (9 tirs cadrés contre 4).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.32,
@@ -63837,8 +64015,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:6cad97568ca4c6b7caeaaa79a6a3054c",
@@ -63927,7 +64105,9 @@
      "favori_net",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.31,
@@ -63935,8 +64115,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.1
  },
  {
   "cle": "match:ee7af5aaba39b23210e98e1cb8faadf1",
@@ -64016,7 +64196,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-2 (tirs 12-13, cadrés 4-6, possession 52-48 %). Las Palmas a été plus dangereux (6 tirs cadrés contre 4).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.98,
@@ -64024,8 +64216,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:2f3dfa781742b66f1412e15c132ff871",
@@ -64112,7 +64304,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.09,
@@ -64120,8 +64314,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 0.9
  },
  {
   "cle": "match:5b642036524e93f480f445a8dd0f0e42",
@@ -64188,7 +64382,19 @@
      "exterieur",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 0-0, cadrés 0-0, possession 0-0 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.58,
@@ -64196,8 +64402,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:8e6ee05b6ac28dc2357f72b9f5a0643e",
@@ -64283,7 +64489,19 @@
     "traits": [
      "exterieur",
      "piege"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 12-13, cadrés 3-3, possession 50-50 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.3,
@@ -64291,8 +64509,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:9a214142c9b31ad8233dccad53f75d6d",
@@ -64375,7 +64593,9 @@
      "N": 0.219,
      "2": 0.1909
     },
-    "traits": []
+    "traits": [],
+    "score": "4-0",
+    "ok": true
    }
   ],
   "cote": 1.56,
@@ -64383,8 +64603,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.6
  },
  {
   "cle": "match:5faf836ce6c0fd72af5d1fe258c63bc6",
@@ -64465,7 +64685,9 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.52,
@@ -64473,8 +64695,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.2
  },
  {
   "cle": "match:0a8990d4206c802cdba25a03b50e5d95",
@@ -64561,7 +64783,9 @@
      "petite_cote",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.39,
@@ -64569,8 +64793,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.9
  },
  {
   "cle": "match:d1a26f1644faa09a236a5037423f976a",
@@ -64647,7 +64871,19 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 13-13, cadrés 6-8, possession 45-55 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.96,
@@ -64655,8 +64891,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b05eb76c85a149aae6c592e1cacc348c",
@@ -64734,7 +64970,9 @@
      "N": 0.2591,
      "2": 0.2401
     },
-    "traits": []
+    "traits": [],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.8,
@@ -64742,8 +64980,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 8.0
  },
  {
   "cle": "match:7aa1bde245aaf2cce32c37a7f177ed0f",
@@ -64830,7 +65068,9 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    }
   ],
   "cote": 1.96,
@@ -64838,8 +65078,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.6
  },
  {
   "cle": "match:dddc911eddfe6a3943d037b9494921be",
@@ -64915,7 +65155,9 @@
     "traits": [
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "4-2",
+    "ok": true
    }
   ],
   "cote": 1.48,
@@ -64923,8 +65165,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.8
  },
  {
   "cle": "match:e22f82b10fe71d230248b88fef87e58f",
@@ -65006,7 +65248,21 @@
      "exterieur",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "4-4",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 4-4 (tirs 15-16, cadrés 10-6, possession 41-59 %). Atalanta BC a marqué sur penalty; Atalanta BC a été plus dangereux (10 tirs cadrés contre 6); but décisif de Atalanta BC à la 90e.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.5,
@@ -65014,8 +65270,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:98fae24771271c96d5dd364e535405d2",
@@ -65101,7 +65357,20 @@
     "traits": [
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "2-3",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-3 (tirs 11-18, cadrés 5-9, possession 55-45 %). Le Mans FC a été plus dangereux (9 tirs cadrés contre 5); but décisif de Le Mans FC à la 90e.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "malchance"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.41,
@@ -65109,8 +65378,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:3de909cc36eaaa664e934686e6b26105",
@@ -65190,7 +65459,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.9,
@@ -65198,8 +65469,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.0
  },
  {
   "cle": "match:e6adbcba99b6b66ca3d16db6fb5d805d",
@@ -65279,7 +65550,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-1 (tirs 23-5, cadrés 6-2, possession 69-31 %). Nashville SC a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.43,
@@ -65287,8 +65571,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:fe93738d5c6aca8b60e7f18e1d685e98",
@@ -65368,7 +65652,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.57,
@@ -65376,8 +65662,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.7
  },
  {
   "cle": "match:08f1d5a366e711c1e29845352bb8137d",
@@ -65457,7 +65743,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 2.4,
@@ -65465,8 +65753,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 14.0
  },
  {
   "cle": "mixte_gros:2026-11-22:2",
@@ -65491,7 +65779,9 @@
      "petite_cote",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "e6adbcba99b6b66ca3d16db6fb5d805d",
@@ -65509,7 +65799,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-1 (tirs 23-5, cadrés 6-2, possession 69-31 %). Nashville SC a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "5b642036524e93f480f445a8dd0f0e42",
@@ -65527,7 +65830,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 0-0, cadrés 0-0, possession 0-0 %). match fermé : seulement 0 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    },
    {
     "id": "e22f82b10fe71d230248b88fef87e58f",
@@ -65545,7 +65860,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "4-4",
+    "ok": true
    }
   ],
   "cote": 7.31,
@@ -65553,8 +65870,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-22",
@@ -65577,7 +65894,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "ee7af5aaba39b23210e98e1cb8faadf1",
@@ -65595,7 +65914,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-2 (tirs 12-13, cadrés 4-6, possession 52-48 %). Las Palmas a été plus dangereux (6 tirs cadrés contre 4).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    },
    {
     "id": "a71098c545fa2df8b0c32df17d8a7458",
@@ -65611,7 +65942,9 @@
      "ligue": "esp.2",
      "id": "401882300"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 6.92,
@@ -65619,8 +65952,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "gros:2026-11-22:3",
@@ -65645,7 +65978,9 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-2",
+    "ok": true
    },
    {
     "id": "69c8fd5d654b0e1ea5ed5bb1cfee7a86",
@@ -65664,7 +65999,19 @@
     "traits": [
      "exterieur",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 0-0, cadrés 0-0, possession 0-0 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    },
    {
     "id": "5bc13c44b33981f3185400163388267e",
@@ -65682,7 +66029,20 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 18-11, cadrés 4-3, possession 52-48 %). Bologna a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 6.04,
@@ -65690,8 +66050,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-22",
@@ -65716,7 +66076,9 @@
      "petite_cote",
      "favori_net",
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "4c2262eccc903b9b1792325d09451c0a",
@@ -65734,7 +66096,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "5faf836ce6c0fd72af5d1fe258c63bc6",
@@ -65752,7 +66116,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 3.36,
@@ -65760,8 +66126,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 23.6
  },
  {
   "cle": "systeme:2026-11-22",
@@ -65784,7 +66150,9 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    },
    {
     "id": "ee7af5aaba39b23210e98e1cb8faadf1",
@@ -65802,7 +66170,19 @@
     },
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-2 (tirs 12-13, cadrés 4-6, possession 52-48 %). Las Palmas a été plus dangereux (6 tirs cadrés contre 4).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    },
    {
     "id": "a71098c545fa2df8b0c32df17d8a7458",
@@ -65818,7 +66198,9 @@
      "ligue": "esp.2",
      "id": "401882300"
     },
-    "traits": []
+    "traits": [],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.75,
@@ -65826,8 +66208,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.65
  },
  {
   "cle": "prudence:a968e1c9f7f2e05bace52a2dd77ea90a",
@@ -65851,7 +66233,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -65859,8 +66243,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.9,
   "note": 7.6
  },
  {
@@ -65885,7 +66269,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.17,
@@ -65893,8 +66279,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.7,
   "note": 7.6
  },
  {
@@ -65919,7 +66305,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.2,
@@ -65927,8 +66315,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.0,
   "note": 7.4
  },
  {
@@ -65953,7 +66341,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.19,
@@ -65961,8 +66351,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.9,
   "note": 7.4
  },
  {
@@ -65987,7 +66377,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-2",
+    "ok": false
    }
   ],
   "cote": 1.23,
@@ -65995,8 +66387,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.3
  },
  {
@@ -66021,7 +66413,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.2,
@@ -66029,8 +66423,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.2
  },
  {
@@ -66055,7 +66449,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "3de909cc36eaaa664e934686e6b26105",
@@ -66074,11 +66470,1014 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.41,
   "proba": 0.5694,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "gagné",
+  "gain": 4.1
+ },
+ {
+  "cle": "match:c1958a1dcd4f8228f4d09148fd6ea216",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c1958a1dcd4f8228f4d09148fd6ea216",
+    "date": "2026-11-23T17:00:00Z",
+    "domicile": "Basaksehir",
+    "exterieur": "Çorum FK",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Basaksehir",
+    "cote": 1.84,
+    "proba": 0.4924,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888370"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.4898,
+      "2": 0.2628,
+      "N": 0.2474
+     },
+     "unibet_fr": {
+      "1": 0.4881,
+      "2": 0.2619,
+      "N": 0.25
+     },
+     "winamax_fr": {
+      "1": 0.487,
+      "2": 0.2675,
+      "N": 0.2455
+     },
+     "onexbet": {
+      "1": 0.5002,
+      "2": 0.2547,
+      "N": 0.2451
+     },
+     "betclic_fr": {
+      "1": 0.4887,
+      "2": 0.2615,
+      "N": 0.2498
+     },
+     "marathonbet": {
+      "1": 0.5002,
+      "2": 0.2549,
+      "N": 0.2449
+     },
+     "netbet_fr": {
+      "1": 0.4938,
+      "2": 0.2585,
+      "N": 0.2476
+     },
+     "pmu_fr": {
+      "1": 0.4897,
+      "2": 0.2607,
+      "N": 0.2497
+     },
+     "betfair_ex_eu": {
+      "1": 0.4928,
+      "2": 0.2552,
+      "N": 0.252
+     },
+     "sport888": {
+      "1": 0.4896,
+      "2": 0.2588,
+      "N": 0.2516
+     }
+    },
+    "force_p": {
+     "1": 0.568,
+     "N": 0.203,
+     "2": 0.229
+    },
+    "marche_p": {
+     "1": 0.4924,
+     "N": 0.2481,
+     "2": 0.2595
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.84,
+  "proba": 0.4924,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:f024fef3ca959505d2bc7e75154dbedf",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Victoire Almería",
+    "cote": 1.85,
+    "proba": 0.4896,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.2683,
+      "2": 0.4841,
+      "N": 0.2476
+     },
+     "betclic_fr": {
+      "1": 0.297,
+      "2": 0.4543,
+      "N": 0.2487
+     },
+     "winamax_fr": {
+      "1": 0.2682,
+      "2": 0.4897,
+      "N": 0.2421
+     },
+     "onexbet": {
+      "1": 0.2658,
+      "2": 0.492,
+      "N": 0.2423
+     },
+     "marathonbet": {
+      "1": 0.2657,
+      "2": 0.4921,
+      "N": 0.2422
+     },
+     "unibet_fr": {
+      "1": 0.2583,
+      "2": 0.495,
+      "N": 0.2467
+     },
+     "netbet_fr": {
+      "1": 0.2601,
+      "2": 0.4979,
+      "N": 0.242
+     },
+     "pmu_fr": {
+      "1": 0.2446,
+      "2": 0.5036,
+      "N": 0.2518
+     },
+     "betfair_ex_eu": {
+      "1": 0.2597,
+      "2": 0.4935,
+      "N": 0.2468
+     }
+    },
+    "force_p": {
+     "1": 0.183,
+     "N": 0.156,
+     "2": 0.661
+    },
+    "marche_p": {
+     "1": 0.2653,
+     "N": 0.2451,
+     "2": 0.4896
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.85,
+  "proba": 0.4896,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:99776445d5a5f4ed008f9a6d6a1495b7",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Monza",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Victoire Fiorentina",
+    "cote": 1.85,
+    "proba": 0.4872,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875009"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "2": 0.4842,
+      "1": 0.2562,
+      "N": 0.2596
+     },
+     "unibet_fr": {
+      "2": 0.4893,
+      "1": 0.259,
+      "N": 0.2516
+     },
+     "winamax_fr": {
+      "2": 0.4837,
+      "1": 0.2657,
+      "N": 0.2507
+     },
+     "onexbet": {
+      "2": 0.4921,
+      "1": 0.266,
+      "N": 0.2418
+     },
+     "marathonbet": {
+      "2": 0.4917,
+      "1": 0.2661,
+      "N": 0.2422
+     },
+     "netbet_fr": {
+      "2": 0.4895,
+      "1": 0.2625,
+      "N": 0.2481
+     },
+     "sport888": {
+      "2": 0.4828,
+      "1": 0.2712,
+      "N": 0.2459
+     },
+     "pmu_fr": {
+      "2": 0.4842,
+      "1": 0.2635,
+      "N": 0.2523
+     },
+     "betfair_ex_eu": {
+      "2": 0.4928,
+      "1": 0.2552,
+      "N": 0.252
+     }
+    },
+    "force_p": {
+     "1": 0.442,
+     "N": 0.234,
+     "2": 0.324
+    },
+    "marche_p": {
+     "1": 0.2641,
+     "N": 0.2486,
+     "2": 0.4872
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.85,
+  "proba": 0.4872,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:db2eae8f2ae5bbcd5a5f39470b9e209a",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nantes",
+    "cote": 1.43,
+    "proba": 0.6458,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "2": 0.145,
+      "1": 0.6349,
+      "N": 0.2202
+     },
+     "pmu_fr": {
+      "2": 0.1481,
+      "1": 0.6212,
+      "N": 0.2307
+     },
+     "marathonbet": {
+      "2": 0.1224,
+      "1": 0.6506,
+      "N": 0.2269
+     },
+     "netbet_fr": {
+      "2": 0.1229,
+      "1": 0.6457,
+      "N": 0.2314
+     },
+     "unibet_fr": {
+      "2": 0.1185,
+      "1": 0.6839,
+      "N": 0.1976
+     },
+     "betclic_fr": {
+      "2": 0.1326,
+      "1": 0.6437,
+      "N": 0.2237
+     },
+     "onexbet": {
+      "2": 0.123,
+      "1": 0.6491,
+      "N": 0.228
+     },
+     "sport888": {
+      "2": 0.129,
+      "1": 0.6452,
+      "N": 0.2258
+     },
+     "betfair_ex_eu": {
+      "2": 0.1221,
+      "1": 0.6558,
+      "N": 0.2221
+     }
+    },
+    "force_p": {
+     "1": 0.507,
+     "N": 0.255,
+     "2": 0.238
+    },
+    "marche_p": {
+     "1": 0.6458,
+     "N": 0.2243,
+     "2": 0.1299
+    },
+    "traits": [
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 1.43,
+  "proba": 0.6458,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:87ff23cf75b8a3552d4331f64c818f9c",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "87ff23cf75b8a3552d4331f64c818f9c",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Sochaux",
+    "exterieur": "USL Dunkerque",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Sochaux",
+    "cote": 2.22,
+    "proba": 0.4006,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876683"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.3968,
+      "2": 0.3087,
+      "N": 0.2945
+     },
+     "winamax_fr": {
+      "1": 0.4003,
+      "2": 0.3202,
+      "N": 0.2795
+     },
+     "unibet_fr": {
+      "1": 0.4063,
+      "2": 0.312,
+      "N": 0.2818
+     },
+     "marathonbet": {
+      "1": 0.4025,
+      "2": 0.3141,
+      "N": 0.2834
+     },
+     "betclic_fr": {
+      "1": 0.4057,
+      "2": 0.311,
+      "N": 0.2833
+     },
+     "onexbet": {
+      "1": 0.4008,
+      "2": 0.3144,
+      "N": 0.2847
+     },
+     "netbet_fr": {
+      "1": 0.4008,
+      "2": 0.3122,
+      "N": 0.287
+     },
+     "pmu_fr": {
+      "1": 0.4173,
+      "2": 0.3104,
+      "N": 0.2722
+     },
+     "sport888": {
+      "1": 0.3945,
+      "2": 0.3129,
+      "N": 0.2927
+     },
+     "betfair_ex_eu": {
+      "1": 0.3953,
+      "2": 0.3163,
+      "N": 0.2884
+     }
+    },
+    "force_p": {
+     "1": 0.399,
+     "N": 0.295,
+     "2": 0.306
+    },
+    "marche_p": {
+     "1": 0.4006,
+     "N": 0.2858,
+     "2": 0.3136
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.22,
+  "proba": 0.4006,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c1339bf6458b24fdfaa62305a6947a8c",
+  "jour": "2026-11-23",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c1339bf6458b24fdfaa62305a6947a8c",
+    "date": "2026-11-23T22:30:00Z",
+    "domicile": "Internacional",
+    "exterieur": "Vitoria",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Internacional",
+    "cote": 1.56,
+    "proba": 0.5738,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841323"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "1": 0.5687,
+      "2": 0.1848,
+      "N": 0.2464
+     },
+     "betclic_fr": {
+      "1": 0.5662,
+      "2": 0.1934,
+      "N": 0.2404
+     },
+     "unibet_fr": {
+      "1": 0.5673,
+      "2": 0.1926,
+      "N": 0.2401
+     },
+     "onexbet": {
+      "1": 0.5817,
+      "2": 0.1825,
+      "N": 0.2358
+     },
+     "pinnacle": {
+      "1": 0.5771,
+      "2": 0.1824,
+      "N": 0.2405
+     },
+     "winamax_fr": {
+      "1": 0.5654,
+      "2": 0.2025,
+      "N": 0.2322
+     },
+     "marathonbet": {
+      "1": 0.5815,
+      "2": 0.1824,
+      "N": 0.2361
+     },
+     "sport888": {
+      "1": 0.571,
+      "2": 0.1839,
+      "N": 0.2451
+     },
+     "betfair_ex_eu": {
+      "1": 0.5777,
+      "2": 0.1797,
+      "N": 0.2426
+     }
+    },
+    "force_p": {
+     "1": 0.514,
+     "N": 0.23,
+     "2": 0.256
+    },
+    "marche_p": {
+     "1": 0.5738,
+     "N": 0.2397,
+     "2": 0.1865
+    },
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.56,
+  "proba": 0.5738,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Monza",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Victoire Fiorentina",
+    "cote": 1.85,
+    "proba": 0.4872,
+    "court": "2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875009"
+    },
+    "traits": [
+     "exterieur",
+     "force_contre"
+    ]
+   },
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nantes",
+    "cote": 1.43,
+    "proba": 0.6458,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "traits": [
+     "force_contre"
+    ]
+   }
+  ],
+  "cote": 2.65,
+  "proba": 0.3147,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "c1958a1dcd4f8228f4d09148fd6ea216",
+    "date": "2026-11-23T17:00:00Z",
+    "domicile": "Basaksehir",
+    "exterieur": "Çorum FK",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Basaksehir",
+    "cote": 1.83,
+    "proba": 0.4924,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888370"
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Victoire Almería",
+    "cote": 1.85,
+    "proba": 0.4896,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "87ff23cf75b8a3552d4331f64c818f9c",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Sochaux",
+    "exterieur": "USL Dunkerque",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Sochaux",
+    "cote": 2.2,
+    "proba": 0.4006,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876683"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 7.45,
+  "proba": 0.0966,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nantes",
+    "cote": 1.43,
+    "proba": 0.6458,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "traits": [
+     "force_contre"
+    ]
+   },
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.5682,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.86,
+  "proba": 0.3669,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.581,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.5682,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 3.18,
+  "proba": 0.3301,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "systeme:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "systeme",
+  "jambes": [
+   {
+    "id": "c1958a1dcd4f8228f4d09148fd6ea216",
+    "date": "2026-11-23T17:00:00Z",
+    "domicile": "Basaksehir",
+    "exterieur": "Çorum FK",
+    "championnat": "Süper Lig",
+    "pari": "Victoire Basaksehir",
+    "cote": 1.83,
+    "proba": 0.4924,
+    "court": "1",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888370"
+    },
+    "traits": [
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Victoire Almería",
+    "cote": 1.85,
+    "proba": 0.4896,
+    "court": "2",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "force_pour"
+    ]
+   },
+   {
+    "id": "87ff23cf75b8a3552d4331f64c818f9c",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Sochaux",
+    "exterieur": "USL Dunkerque",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Sochaux",
+    "cote": 2.2,
+    "proba": 0.4006,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876683"
+    },
+    "traits": [
+     "piege",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.82,
+  "proba": 0.4413,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:c1958a1dcd4f8228f4d09148fd6ea216",
+  "jour": "2026-11-23",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "c1958a1dcd4f8228f4d09148fd6ea216",
+    "date": "2026-11-23T17:00:00Z",
+    "domicile": "Basaksehir",
+    "exterieur": "Çorum FK",
+    "championnat": "Süper Lig",
+    "pari": "Nul ou Basaksehir",
+    "cote": 1.22,
+    "proba": 0.7405,
+    "court": "1N",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888370"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7405,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.4
+ },
+ {
+  "cle": "prudence:99776445d5a5f4ed008f9a6d6a1495b7",
+  "jour": "2026-11-23",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Monza",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Nul ou Fiorentina",
+    "cote": 1.23,
+    "proba": 0.7359,
+    "court": "N2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875009"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.23,
+  "proba": 0.7359,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.4
+ },
+ {
+  "cle": "prudence:f024fef3ca959505d2bc7e75154dbedf",
+  "jour": "2026-11-23",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Nul ou Almería",
+    "cote": 1.2,
+    "proba": 0.7347,
+    "court": "N2",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.2,
+  "proba": 0.7347,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.3
+ },
+ {
+  "cle": "prudence_combi:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "c1958a1dcd4f8228f4d09148fd6ea216",
+    "date": "2026-11-23T17:00:00Z",
+    "domicile": "Basaksehir",
+    "exterieur": "Çorum FK",
+    "championnat": "Süper Lig",
+    "pari": "Nul ou Basaksehir",
+    "cote": 1.22,
+    "proba": 0.7405,
+    "court": "1N",
+    "espn": {
+     "ligue": "tur.1",
+     "id": "401888370"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Monza",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Nul ou Fiorentina",
+    "cote": 1.21,
+    "proba": 0.7359,
+    "court": "N2",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875009"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.48,
+  "proba": 0.5449,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

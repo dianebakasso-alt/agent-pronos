@@ -1,1 +1,28 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2310,
+  "fin": "e) est offensivement dangereux. Aucun des trois résultats n'offre un avantage net : la cote 2.22 pour Sochaux ne se justifie pas au vu de la spirale négative.\"},\n  {\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Je n'ai pas pu trouver d'actualité (blessés, suspensions, compositions) pour ce match, la recherche ayant été limitée. Sur les chiffres, Internacional à domicile (cote 1.56) face à un Vitória qui n'a gagné aucun de ses 5 derniers déplacements est logique, mais Internacional a perdu 3 de ses 5 derniers matchs et Vitória a gagné 3 des 5 dernières confrontations directes.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 59863,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5677,
+   "output_tokens_details": {
+    "thinking_tokens": 4266
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]
