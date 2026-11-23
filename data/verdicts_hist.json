@@ -2157,5 +2157,22 @@
    "N": 3.25,
    "2": 2.87
   }
+ },
+ "c1339bf6458b24fdfaa62305a6947a8c": {
+  "jour": "2026-11-23",
+  "domicile": "Internacional",
+  "exterieur": "Vitoria",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.5742,
+   "N": 0.2403,
+   "2": 0.1855
+  },
+  "cotes": {
+   "1": 1.56,
+   "N": 3.75,
+   "2": 4.8
+  }
  }
 }

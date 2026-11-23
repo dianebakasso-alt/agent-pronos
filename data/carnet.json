@@ -66496,7 +66496,7 @@
     "championnat": "Süper Lig",
     "pari": "Victoire Basaksehir",
     "cote": 1.84,
-    "proba": 0.4924,
+    "proba": 0.4928,
     "court": "1",
     "espn": {
      "ligue": "tur.1",
@@ -66560,9 +66560,9 @@
      "2": 0.229
     },
     "marche_p": {
-     "1": 0.4924,
-     "N": 0.2481,
-     "2": 0.2595
+     "1": 0.4928,
+     "N": 0.2483,
+     "2": 0.259
     },
     "traits": [
      "doute_ia",
@@ -66571,7 +66571,7 @@
    }
   ],
   "cote": 1.84,
-  "proba": 0.4924,
+  "proba": 0.4928,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -66591,7 +66591,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Almería",
     "cote": 1.85,
-    "proba": 0.4896,
+    "proba": 0.4904,
     "court": "2",
     "espn": {
      "ligue": "esp.2",
@@ -66650,9 +66650,9 @@
      "2": 0.661
     },
     "marche_p": {
-     "1": 0.2653,
-     "N": 0.2451,
-     "2": 0.4896
+     "1": 0.2644,
+     "N": 0.2452,
+     "2": 0.4904
     },
     "traits": [
      "exterieur",
@@ -66662,7 +66662,7 @@
    }
   ],
   "cote": 1.85,
-  "proba": 0.4896,
+  "proba": 0.4904,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -66682,7 +66682,7 @@
     "championnat": "Serie A",
     "pari": "Victoire Fiorentina",
     "cote": 1.85,
-    "proba": 0.4872,
+    "proba": 0.4873,
     "court": "2",
     "espn": {
      "ligue": "ita.1",
@@ -66741,9 +66741,9 @@
      "2": 0.324
     },
     "marche_p": {
-     "1": 0.2641,
-     "N": 0.2486,
-     "2": 0.4872
+     "1": 0.2644,
+     "N": 0.2482,
+     "2": 0.4873
     },
     "traits": [
      "exterieur",
@@ -66752,7 +66752,7 @@
    }
   ],
   "cote": 1.85,
-  "proba": 0.4872,
+  "proba": 0.4873,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -66772,7 +66772,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Nantes",
     "cote": 1.43,
-    "proba": 0.6458,
+    "proba": 0.6459,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -66831,9 +66831,9 @@
      "2": 0.238
     },
     "marche_p": {
-     "1": 0.6458,
-     "N": 0.2243,
-     "2": 0.1299
+     "1": 0.6459,
+     "N": 0.225,
+     "2": 0.1291
     },
     "traits": [
      "force_contre"
@@ -66841,7 +66841,7 @@
    }
   ],
   "cote": 1.43,
-  "proba": 0.6458,
+  "proba": 0.6459,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -66861,7 +66861,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Sochaux",
     "cote": 2.22,
-    "proba": 0.4006,
+    "proba": 0.401,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -66925,9 +66925,9 @@
      "2": 0.306
     },
     "marche_p": {
-     "1": 0.4006,
-     "N": 0.2858,
-     "2": 0.3136
+     "1": 0.401,
+     "N": 0.2859,
+     "2": 0.3132
     },
     "traits": [
      "piege",
@@ -66936,7 +66936,7 @@
    }
   ],
   "cote": 2.22,
-  "proba": 0.4006,
+  "proba": 0.401,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -66956,7 +66956,7 @@
     "championnat": "Brasileirão",
     "pari": "Victoire Internacional",
     "cote": 1.56,
-    "proba": 0.5738,
+    "proba": 0.5742,
     "court": "1",
     "espn": {
      "ligue": "bra.1",
@@ -67015,9 +67015,9 @@
      "2": 0.256
     },
     "marche_p": {
-     "1": 0.5738,
-     "N": 0.2397,
-     "2": 0.1865
+     "1": 0.5742,
+     "N": 0.2403,
+     "2": 0.1855
     },
     "traits": [
      "piege"
@@ -67025,8 +67025,94 @@
    }
   ],
   "cote": 1.56,
-  "proba": 0.5738,
+  "proba": 0.5742,
   "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-23",
+  "jour": "2026-11-23",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Victoire Nantes",
+    "cote": 1.43,
+    "proba": 0.6459,
+    "court": "1",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "traits": [
+     "force_contre"
+    ]
+   },
+   {
+    "id": "c1339bf6458b24fdfaa62305a6947a8c",
+    "date": "2026-11-23T22:30:00Z",
+    "domicile": "Internacional",
+    "exterieur": "Vitoria",
+    "championnat": "Brasileirão",
+    "pari": "Victoire Internacional",
+    "cote": 1.56,
+    "proba": 0.5742,
+    "court": "1",
+    "espn": {
+     "ligue": "bra.1",
+     "id": "401841323"
+    },
+    "traits": [
+     "piege"
+    ]
+   },
+   {
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.5862,
+    "marche": "btts",
+    "espn": {
+     "ligue": "esp.2",
+     "id": "401883110"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Monza",
+    "exterieur": "Fiorentina",
+    "championnat": "Serie A",
+    "pari": "Les 2 équipes marquent",
+    "cote": null,
+    "proba": 0.5769,
+    "marche": "btts",
+    "espn": {
+     "ligue": "ita.1",
+     "id": "401875009"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 8.37,
+  "proba": 0.1254,
+  "estime": true,
   "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
@@ -67045,7 +67131,7 @@
     "championnat": "Serie A",
     "pari": "Victoire Fiorentina",
     "cote": 1.85,
-    "proba": 0.4872,
+    "proba": 0.4873,
     "court": "2",
     "espn": {
      "ligue": "ita.1",
@@ -67064,7 +67150,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Nantes",
     "cote": 1.43,
-    "proba": 0.6458,
+    "proba": 0.6459,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -67076,7 +67162,7 @@
    }
   ],
   "cote": 2.65,
-  "proba": 0.3147,
+  "proba": 0.3148,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -67096,7 +67182,7 @@
     "championnat": "Süper Lig",
     "pari": "Victoire Basaksehir",
     "cote": 1.83,
-    "proba": 0.4924,
+    "proba": 0.4928,
     "court": "1",
     "espn": {
      "ligue": "tur.1",
@@ -67115,7 +67201,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Almería",
     "cote": 1.85,
-    "proba": 0.4896,
+    "proba": 0.4904,
     "court": "2",
     "espn": {
      "ligue": "esp.2",
@@ -67135,7 +67221,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Sochaux",
     "cote": 2.2,
-    "proba": 0.4006,
+    "proba": 0.401,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -67148,59 +67234,9 @@
    }
   ],
   "cote": 7.45,
-  "proba": 0.0966,
+  "proba": 0.0969,
   "estime": false,
   "conseille": false,
-  "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
- },
- {
-  "cle": "mixte:2026-11-23",
-  "jour": "2026-11-23",
-  "cat": "mixte",
-  "jambes": [
-   {
-    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
-    "date": "2026-11-23T19:45:00Z",
-    "domicile": "Nantes",
-    "exterieur": "Grenoble",
-    "championnat": "Ligue 2",
-    "pari": "Victoire Nantes",
-    "cote": 1.43,
-    "proba": 0.6458,
-    "court": "1",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876686"
-    },
-    "traits": [
-     "force_contre"
-    ]
-   },
-   {
-    "id": "f024fef3ca959505d2bc7e75154dbedf",
-    "date": "2026-11-23T19:30:00Z",
-    "domicile": "AD Ceuta FC",
-    "exterieur": "Almería",
-    "championnat": "Liga 2",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.5682,
-    "marche": "btts",
-    "espn": {
-     "ligue": "esp.2",
-     "id": "401883110"
-    },
-    "traits": [
-     "buts_plus"
-    ]
-   }
-  ],
-  "cote": 2.86,
-  "proba": 0.3669,
-  "estime": true,
-  "conseille": null,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0
@@ -67211,24 +67247,6 @@
   "cat": "buts",
   "jambes": [
    {
-    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
-    "date": "2026-11-23T19:45:00Z",
-    "domicile": "Nantes",
-    "exterieur": "Grenoble",
-    "championnat": "Ligue 2",
-    "pari": "Les 2 ne marquent pas",
-    "cote": null,
-    "proba": 0.581,
-    "marche": "pas_btts",
-    "espn": {
-     "ligue": "fra.2",
-     "id": "401876686"
-    },
-    "traits": [
-     "buts_moins"
-    ]
-   },
-   {
     "id": "f024fef3ca959505d2bc7e75154dbedf",
     "date": "2026-11-23T19:30:00Z",
     "domicile": "AD Ceuta FC",
@@ -67236,7 +67254,7 @@
     "championnat": "Liga 2",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5682,
+    "proba": 0.5862,
     "marche": "btts",
     "espn": {
      "ligue": "esp.2",
@@ -67245,10 +67263,28 @@
     "traits": [
      "buts_plus"
     ]
+   },
+   {
+    "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
+    "date": "2026-11-23T19:45:00Z",
+    "domicile": "Nantes",
+    "exterieur": "Grenoble",
+    "championnat": "Ligue 2",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5854,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "fra.2",
+     "id": "401876686"
+    },
+    "traits": [
+     "buts_moins"
+    ]
    }
   ],
-  "cote": 3.18,
-  "proba": 0.3301,
+  "cote": 3.06,
+  "proba": 0.3432,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -67268,7 +67304,7 @@
     "championnat": "Süper Lig",
     "pari": "Victoire Basaksehir",
     "cote": 1.83,
-    "proba": 0.4924,
+    "proba": 0.4928,
     "court": "1",
     "espn": {
      "ligue": "tur.1",
@@ -67287,7 +67323,7 @@
     "championnat": "Liga 2",
     "pari": "Victoire Almería",
     "cote": 1.85,
-    "proba": 0.4896,
+    "proba": 0.4904,
     "court": "2",
     "espn": {
      "ligue": "esp.2",
@@ -67307,7 +67343,7 @@
     "championnat": "Ligue 2",
     "pari": "Victoire Sochaux",
     "cote": 2.2,
-    "proba": 0.4006,
+    "proba": 0.401,
     "court": "1",
     "espn": {
      "ligue": "fra.2",
@@ -67320,7 +67356,7 @@
    }
   ],
   "cote": 1.82,
-  "proba": 0.4413,
+  "proba": 0.4421,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -67340,7 +67376,7 @@
     "championnat": "Süper Lig",
     "pari": "Nul ou Basaksehir",
     "cote": 1.22,
-    "proba": 0.7405,
+    "proba": 0.741,
     "court": "1N",
     "espn": {
      "ligue": "tur.1",
@@ -67354,7 +67390,7 @@
    }
   ],
   "cote": 1.22,
-  "proba": 0.7405,
+  "proba": 0.741,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -67375,7 +67411,7 @@
     "championnat": "Serie A",
     "pari": "Nul ou Fiorentina",
     "cote": 1.23,
-    "proba": 0.7359,
+    "proba": 0.7356,
     "court": "N2",
     "espn": {
      "ligue": "ita.1",
@@ -67388,7 +67424,7 @@
    }
   ],
   "cote": 1.23,
-  "proba": 0.7359,
+  "proba": 0.7356,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -67409,7 +67445,7 @@
     "championnat": "Liga 2",
     "pari": "Nul ou Almería",
     "cote": 1.2,
-    "proba": 0.7347,
+    "proba": 0.7356,
     "court": "N2",
     "espn": {
      "ligue": "esp.2",
@@ -67423,13 +67459,13 @@
    }
   ],
   "cote": 1.2,
-  "proba": 0.7347,
+  "proba": 0.7356,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
   "statut": "en attente",
   "gain": 0.0,
-  "note": 7.3
+  "note": 7.4
  },
  {
   "cle": "prudence_combi:2026-11-23",
@@ -67444,7 +67480,7 @@
     "championnat": "Süper Lig",
     "pari": "Nul ou Basaksehir",
     "cote": 1.22,
-    "proba": 0.7405,
+    "proba": 0.741,
     "court": "1N",
     "espn": {
      "ligue": "tur.1",
@@ -67457,27 +67493,28 @@
     ]
    },
    {
-    "id": "99776445d5a5f4ed008f9a6d6a1495b7",
-    "date": "2026-11-23T19:45:00Z",
-    "domicile": "Monza",
-    "exterieur": "Fiorentina",
-    "championnat": "Serie A",
-    "pari": "Nul ou Fiorentina",
-    "cote": 1.21,
-    "proba": 0.7359,
+    "id": "f024fef3ca959505d2bc7e75154dbedf",
+    "date": "2026-11-23T19:30:00Z",
+    "domicile": "AD Ceuta FC",
+    "exterieur": "Almería",
+    "championnat": "Liga 2",
+    "pari": "Nul ou Almería",
+    "cote": 1.19,
+    "proba": 0.7356,
     "court": "N2",
     "espn": {
-     "ligue": "ita.1",
-     "id": "401875009"
+     "ligue": "esp.2",
+     "id": "401883110"
     },
     "traits": [
      "petite_cote",
-     "favori_net"
+     "favori_net",
+     "doute_ia"
     ]
    }
   ],
-  "cote": 1.48,
-  "proba": 0.5449,
+  "cote": 1.46,
+  "proba": 0.5451,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

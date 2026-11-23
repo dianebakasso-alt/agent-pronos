@@ -1394,8 +1394,8 @@
   "proba": 0.3295,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "9176cbaec3565e688e603baec257e246",
@@ -1405,7 +1405,10 @@
     "exterieur": "Blackburn Rovers",
     "pari": "Victoire Burnley",
     "court": "1",
-    "cote": 1.8
+    "cote": 1.8,
+    "res": "N",
+    "score": "2-2",
+    "ok": false
    },
    {
     "id": "98fae24771271c96d5dd364e535405d2",
@@ -1415,7 +1418,10 @@
     "exterieur": "Le Mans FC",
     "pari": "Victoire Marseille",
     "court": "1",
-    "cote": 1.41
+    "cote": 1.41,
+    "res": "2",
+    "score": "2-3",
+    "ok": false
    }
   ]
  },
@@ -1423,7 +1429,7 @@
   "jour": "2026-11-23",
   "bookmaker": "PMU (FR)",
   "cote": 2.65,
-  "proba": 0.3147,
+  "proba": 0.3148,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",
