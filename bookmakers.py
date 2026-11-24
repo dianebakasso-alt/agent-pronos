@@ -16,8 +16,8 @@ import math
 
 # poids de départ (avant d'avoir assez de matchs pour juger)
 POIDS_DEPART = {"pinnacle": 3.0, "betfair_ex_eu": 2.0}
-N_CONFIANCE = 100       # matchs à partir desquels la mesure pèse autant que le poids de départ
-ECHELLE = 0.004         # un Brier plus petit de 0,004 que la moyenne = poids multiplié par e (≈ 2,7)
+N_CONFIANCE = 400       # matchs à partir desquels la mesure pèse autant que le poids de départ (lent : le hasard pèse lourd)
+ECHELLE = 0.01          # 0,01 de Brier de mieux que les autres, sur les mêmes matchs = poids × e (≈ 2,7), borné entre 0,5 et 2
 DESACCORD_FORT = 0.07   # écart de probabilité entre bookmakers (sur une même issue) jugé « flou »
 PRIX_HORS_NORME = 1.05  # un bookmaker jouable qui paie 5 % de plus que la médiane des autres
 
@@ -88,7 +88,9 @@ def prix_hors_norme(par_bk, jouables, code):
 
 
 def mesurer(carnet):
-    """Justesse de chaque bookmaker sur les matchs joués (score de Brier, plus petit = meilleur)."""
+    """Justesse de chaque bookmaker, comparée MATCH PAR MATCH aux autres bookmakers du même match
+    (sinon un bookmaker mesuré sur des matchs plus faciles paraîtrait meilleur). Score de Brier :
+    plus petit = meilleur ; « relatif » < 0 = plus juste que la moyenne des bookmakers sur les mêmes matchs."""
     g = {}
     vus = set()
     for p in carnet:
@@ -103,22 +105,22 @@ def mesurer(carnet):
         except ValueError:
             continue
         res = "1" if h > a else "2" if a > h else "N"
-        for bk, pr in j["bk_p"].items():
-            b = sum((pr.get(k, 0) - (k == res)) ** 2 for k in ("1", "N", "2"))
-            s = g.setdefault(bk, [0, 0.0, 0])
+        b = {bk: sum((pr.get(k, 0) - (k == res)) ** 2 for k in ("1", "N", "2")) for bk, pr in j["bk_p"].items()}
+        if len(b) < 3:
+            continue
+        moy = sum(b.values()) / len(b)
+        for bk, x in b.items():
+            s = g.setdefault(bk, [0, 0.0, 0.0, 0])
             s[0] += 1
-            s[1] += b
-            s[2] += max(pr, key=pr.get) == res
-    if not g:
-        return {}
-    briers = {bk: s[1] / s[0] for bk, s in g.items()}
-    # moyenne pondérée par le nombre de matchs : la référence commune
-    moy = sum(briers[bk] * g[bk][0] for bk in g) / sum(s[0] for s in g.values())
+            s[1] += x
+            s[2] += x - moy
+            s[3] += max(j["bk_p"][bk], key=j["bk_p"][bk].get) == res
     out = {}
-    for bk, s in g.items():
-        pm = math.exp((moy - briers[bk]) / ECHELLE)
-        out[bk] = {"n": s[0], "brier": round(briers[bk], 4), "favori_ok": round(s[2] / s[0], 3),
-                   "poids_mesure": round(min(5.0, max(0.2, pm)), 3)}
+    for bk, (n, tot, rel, fav) in g.items():
+        relatif = rel / n
+        pm = math.exp(-relatif / ECHELLE)
+        out[bk] = {"n": n, "brier": round(tot / n, 4), "relatif": round(relatif, 5), "favori_ok": round(fav / n, 3),
+                   "poids_mesure": round(min(2.0, max(0.5, pm)), 3)}
     return out
 
 

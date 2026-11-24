@@ -831,15 +831,15 @@ def section_bookmakers(f):
                         'bookmaker au vrai résultat. Les plus justes compteront plus dans les calculs de l\'expert.</p>')
     lignes = "".join(
         f'<tr><td>{i + 1}. {e(NOMS_BK.get(k, k))}<small>{x["n"]} matchs · favori juste {x["favori_ok"] * 100:.0f} %</small></td>'
-        f'<td class="r">{x["brier"]:.3f}<small>poids ×{x.get("poids", 1):.1f}</small></td></tr>'
-        for i, (k, x) in enumerate(sorted(f.items(), key=lambda kv: kv[1]["brier"])))
-    return titre + ('<p class="note">Score d\'erreur sur les matchs joués (plus petit = plus juste). '
+        f'<td class="r">{x.get("relatif", 0) * 1000:+.1f}<small>poids ×{x.get("poids", 1):.1f}</small></td></tr>'
+        for i, (k, x) in enumerate(sorted(f.items(), key=lambda kv: kv[1].get("relatif", kv[1]["brier"]))))
+    return titre + ('<p class="note">Écart d\'erreur par rapport aux autres bookmakers, sur les mêmes matchs (négatif = plus juste que les autres). '
                     'Le poids, c\'est combien il compte dans la probabilité de l\'expert : il grandit avec le nombre de matchs.</p>'
                     f'<table class="hist">{lignes}</table>')
 
 
 def section_clv(c):
-    titre = '<h3 class="sous">⏱️ L\'expert bat-il la cote de clôture ?</h3>'
+    titre = '<h3 class="sous">⏱️ Le marché donne-t-il raison à l\'expert ?</h3>'
     if not c or not c.get("n"):
         return titre + ('<p class="note">On compare la chance donnée par l\'expert le matin à celle des cotes juste avant le match. '
                         'Si elle monte après son prono, le marché lui donne raison : c\'est le meilleur signe d\'un vrai avantage. '
@@ -851,7 +851,7 @@ def section_clv(c):
       <div><span>Cote battue</span><b>{c["positifs"] * 100:.0f} %</b><small>des paris</small></div></div>
     <p class="note">{"✅ Le marché va dans le sens de l'expert après ses pronos : bon signe." if bon else
                      "Le marché ne va pas encore dans le sens de l'expert : son avantage n'est pas prouvé."}
-      Cotes de clôture : ESPN (1 bookmaker), à prendre comme une indication.</p>"""
+      Comparaison des cotes ESPN le matin et à la dernière lecture avant le match : une indication.</p>"""
 
 
 def section_duel_ia(d):

@@ -773,6 +773,10 @@ def main():
             expert.regler(carnet, maintenant)
         except Exception as e:
             print(f"  ! carnet réglement : {e}")
+        try:   # cotes ESPN des matchs à venir : matin puis dernière lecture avant le match (cote de clôture)
+            print(f"    cotes de clôture suivies : {expert.suivre_cotes(carnet, maintenant)} paris")
+        except Exception as e:
+            print(f"  ! suivi des cotes : {e}")
         try:   # mémoire par bookmaker : qui s'est le moins trompé sur les matchs joués ?
             fb = bookmakers.mesurer(carnet)
             (DATA / "bookmakers.json").write_text(json.dumps({"maj": maintenant.isoformat(), "bookmakers": fb},
@@ -1010,6 +1014,10 @@ def main():
         expert.noter(carnet, auj, jours[0]["analyses"], jours[0]["values"], jours[0]["combos"], maintenant,
                      semaine=ticket_semaine, analyses_semaine=analyses)
         expert.noter_ticket(carnet, f"jour:{auj}", "jour", auj, jours[0].get("ticket"), analyses, maintenant)
+        try:   # 1re lecture des cotes ESPN pour les pronos qu'on vient de noter
+            expert.suivre_cotes(carnet, maintenant)
+        except Exception as e:
+            print(f"  ! suivi des cotes : {e}")
         # les « rebonds » du jour : suivis à part pour savoir si la méthode rapporte
         for a in jours[0]["analyses"]:
             c = selection.candidat(a)

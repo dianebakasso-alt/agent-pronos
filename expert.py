@@ -109,6 +109,14 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
             fige = ancien["statut"] != "en attente" or any(_dt(j["date"]) <= maintenant for j in ancien["jambes"])
             if fige:
                 continue
+            # on garde les cotes ESPN déjà lues (matin) pour les mêmes paris
+            garde = {(j["id"], j.get("court")): j for j in ancien["jambes"]}
+            for j in n["jambes"]:
+                a = garde.get((j["id"], j.get("court")))
+                if a:
+                    for k in ("p_espn_matin", "p_espn_matin_quand", "p_espn_tard", "p_espn_tard_quand"):
+                        if k in a:
+                            j[k] = a[k]
             carnet.remove(ancien)
         carnet.append(n)
         par_cle[n["cle"]] = n
@@ -122,21 +130,47 @@ def noter(carnet, jour, analyses, values, combos, maintenant, semaine=None, anal
 
 # ---------------------------------------------------------------- règlement (ESPN, gratuit)
 def _clv(j, ev):
-    """Cote de clôture (ESPN, publiée juste avant le match) : l'expert a-t-il pris une meilleure cote ?
-    clv > 0 : la probabilité a monté après notre prono (le marché nous a donné raison)."""
-    if not j.get("court") or not j.get("proba") or "clv" in j:
+    """L'expert a-t-il pris le pari avant que le marché bouge dans son sens ?
+    On compare la chance donnée par les cotes ESPN le matin (au moment du prono) et à la dernière
+    lecture avant le match (passage de l'après-midi). clv > 0 : la cote a baissé après le prono = bon signe."""
+    if "clv" in j or not j.get("court") or j["court"] not in ("1", "N", "2"):
         return
-    try:
-        c = direct._cotes_ev(ev)
-    except Exception:
-        c = None
-    if not c:
-        return
-    h, d, a = c[0], c[1], c[2]
-    inv = {"1": 1 / h, "N": 1 / d, "2": 1 / a}
-    t = sum(inv.values())
-    p_close = inv[j["court"]] / t
-    j["clv"] = round(p_close - j["proba"], 4)
+    if j.get("p_espn_matin") and j.get("p_espn_tard") and j.get("p_espn_tard_quand", "") > j.get("p_espn_matin_quand", ""):
+        j["clv"] = round(j["p_espn_tard"] - j["p_espn_matin"], 4)
+
+
+def suivre_cotes(carnet, maintenant):
+    """Lit (gratuitement) les cotes ESPN des matchs pas encore commencés : la 1re lecture est « le matin »,
+    la dernière avant le coup d'envoi est « la clôture » (pour savoir si le marché donne raison à l'expert)."""
+    import direct
+    groupes = {}
+    for p in carnet:
+        if p["statut"] != "en attente":
+            continue
+        for j in p["jambes"]:
+            esp = j.get("espn") or {}
+            if esp.get("id") and j.get("court") in ("1", "N", "2") and _dt(j["date"]) > maintenant:
+                groupes.setdefault((esp["ligue"], _dt(j["date"]).strftime("%Y%m%d")), []).append(j)
+    lus = 0
+    for (lig, jour), js in list(groupes.items())[:30]:
+        try:
+            evs = {str(ev["id"]): ev for ev in direct._get(f"{direct.BASE}/{lig}/scoreboard?dates={jour}").get("events", [])}
+        except Exception:
+            continue
+        for j in js:
+            ev = evs.get(str(j["espn"]["id"]))
+            c = direct._cotes_ev(ev) if ev else None
+            if not c:
+                continue
+            inv = {"1": 1 / c[0], "N": 1 / c[1], "2": 1 / c[2]}
+            pr = round(inv[j["court"]] / sum(inv.values()), 4)
+            quand = maintenant.isoformat()
+            if "p_espn_matin" not in j:
+                j["p_espn_matin"], j["p_espn_matin_quand"] = pr, quand
+            else:
+                j["p_espn_tard"], j["p_espn_tard_quand"] = pr, quand
+            lus += 1
+    return lus
 
 
 def clv_stats(carnet):
