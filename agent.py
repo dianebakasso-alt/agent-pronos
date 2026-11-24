@@ -782,8 +782,8 @@ def main():
             (DATA / "bookmakers.json").write_text(json.dumps({"maj": maintenant.isoformat(), "bookmakers": fb},
                                                              ensure_ascii=False, indent=1), encoding="utf-8")
             if fb:
-                top = sorted(fb.items(), key=lambda x: x[1]["brier"])[:3]
-                print("    bookmakers les plus justes : " + ", ".join(f"{k} ({v['brier']:.3f}, {v['n']} matchs)" for k, v in top))
+                top = sorted(fb.items(), key=lambda x: x[1]["relatif"])[:3]
+                print("    bookmakers les plus justes (mêmes matchs) : " + ", ".join(f"{k} ({v['relatif'] * 1000:+.1f}, {v['n']} matchs)" for k, v in top))
         except Exception as e:
             print(f"  ! mémoire bookmakers : {e}")
         lecons = autopsie.charger(DATA / "lecons.json")
