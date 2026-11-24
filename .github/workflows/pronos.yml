@@ -52,3 +52,14 @@ jobs:
           path: site
       - id: deploiement
         uses: actions/deploy-pages@v4
+        continue-on-error: true   # GitHub Pages refuse parfois (« try again later ») : on retente
+      - if: steps.deploiement.outcome == 'failure'
+        run: sleep 90
+      - if: steps.deploiement.outcome == 'failure'
+        id: deploiement2
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deploiement.outcome == 'failure' && steps.deploiement2.outcome == 'failure'
+        run: sleep 240
+      - if: steps.deploiement.outcome == 'failure' && steps.deploiement2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
