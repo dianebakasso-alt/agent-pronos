@@ -67667,7 +67667,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Aston Villa",
     "cote": 2.27,
-    "proba": 0.4236,
+    "proba": 0.4253,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -67725,13 +67725,17 @@
       "N": 0.2633
      }
     },
+    "p_espn_matin": 0.4448,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4448,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur"
     ]
    }
   ],
   "cote": 2.27,
-  "proba": 0.4236,
+  "proba": 0.4253,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -67751,7 +67755,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Bodø/Glimt",
     "cote": 1.43,
-    "proba": 0.6378,
+    "proba": 0.6394,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -67809,11 +67813,15 @@
       "N": 0.1905
      }
     },
+    "p_espn_matin": 0.6974,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.6974,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": []
    }
   ],
   "cote": 1.43,
-  "proba": 0.6378,
+  "proba": 0.6394,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -67898,9 +67906,13 @@
     },
     "marche_p": {
      "1": 0.3928,
-     "N": 0.2874,
-     "2": 0.3198
+     "N": 0.2873,
+     "2": 0.3199
     },
+    "p_espn_matin": 0.3822,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.3822,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "piege"
     ]
@@ -67927,7 +67939,7 @@
     "championnat": "Championship",
     "pari": "Victoire Cardiff City",
     "cote": 1.47,
-    "proba": 0.6182,
+    "proba": 0.6184,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -67991,10 +68003,14 @@
      "2": 0.195
     },
     "marche_p": {
-     "1": 0.6182,
-     "N": 0.2032,
+     "1": 0.6184,
+     "N": 0.203,
      "2": 0.1786
     },
+    "p_espn_matin": 0.6425,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.6425,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "doute_ia",
      "force_pour"
@@ -68002,7 +68018,7 @@
    }
   ],
   "cote": 1.47,
-  "proba": 0.6182,
+  "proba": 0.6184,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68022,7 +68038,7 @@
     "championnat": "Championship",
     "pari": "Victoire Lincoln City",
     "cote": 2.5,
-    "proba": 0.358,
+    "proba": 0.3587,
     "court": "2",
     "espn": {
      "ligue": "eng.2",
@@ -68086,10 +68102,14 @@
      "2": 0.33
     },
     "marche_p": {
-     "1": 0.3533,
-     "N": 0.2887,
-     "2": 0.358
+     "1": 0.3523,
+     "N": 0.289,
+     "2": 0.3587
     },
+    "p_espn_matin": 0.3842,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.3842,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "piege",
@@ -68098,7 +68118,7 @@
    }
   ],
   "cote": 2.5,
-  "proba": 0.358,
+  "proba": 0.3587,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68118,7 +68138,7 @@
     "championnat": "Championship",
     "pari": "Victoire Middlesbrough",
     "cote": 1.41,
-    "proba": 0.645,
+    "proba": 0.6461,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -68182,17 +68202,21 @@
      "2": 0.218
     },
     "marche_p": {
-     "1": 0.645,
-     "N": 0.2017,
-     "2": 0.1533
+     "1": 0.6461,
+     "N": 0.2009,
+     "2": 0.1529
     },
+    "p_espn_matin": 0.6707,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.6707,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "doute_ia"
     ]
    }
   ],
   "cote": 1.41,
-  "proba": 0.645,
+  "proba": 0.6461,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68212,7 +68236,7 @@
     "championnat": "Championship",
     "pari": "Victoire Norwich City",
     "cote": 1.9,
-    "proba": 0.4714,
+    "proba": 0.4726,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -68276,17 +68300,21 @@
      "2": 0.242
     },
     "marche_p": {
-     "1": 0.4714,
-     "N": 0.2581,
-     "2": 0.2705
+     "1": 0.4726,
+     "N": 0.2577,
+     "2": 0.2697
     },
+    "p_espn_matin": 0.4787,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4787,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
     ]
    }
   ],
   "cote": 1.9,
-  "proba": 0.4714,
+  "proba": 0.4726,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68306,7 +68334,7 @@
     "championnat": "Championship",
     "pari": "Victoire West Ham United",
     "cote": 1.76,
-    "proba": 0.5119,
+    "proba": 0.5139,
     "court": "2",
     "espn": {
      "ligue": "eng.2",
@@ -68370,10 +68398,14 @@
      "2": 0.319
     },
     "marche_p": {
-     "1": 0.2365,
-     "N": 0.2516,
-     "2": 0.5119
+     "1": 0.2352,
+     "N": 0.2509,
+     "2": 0.5139
     },
+    "p_espn_matin": 0.5183,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.5183,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "piege",
@@ -68382,7 +68414,7 @@
    }
   ],
   "cote": 1.76,
-  "proba": 0.5119,
+  "proba": 0.5139,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68402,7 +68434,7 @@
     "championnat": "Championship",
     "pari": "Victoire Sheffield United",
     "cote": 2.35,
-    "proba": 0.3726,
+    "proba": 0.3735,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -68466,15 +68498,19 @@
      "2": 0.488
     },
     "marche_p": {
-     "1": 0.3726,
-     "N": 0.2654,
-     "2": 0.362
+     "1": 0.3735,
+     "N": 0.2655,
+     "2": 0.361
     },
+    "p_espn_matin": 0.3699,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.3699,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": []
    }
   ],
   "cote": 2.35,
-  "proba": 0.3726,
+  "proba": 0.3735,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68494,7 +68530,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Como",
     "cote": 1.2,
-    "proba": 0.7563,
+    "proba": 0.7591,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -68552,6 +68588,10 @@
       "N": 0.1612
      }
     },
+    "p_espn_matin": 0.7562,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7562,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -68559,7 +68599,7 @@
    }
   ],
   "cote": 1.2,
-  "proba": 0.7563,
+  "proba": 0.7591,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68579,7 +68619,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Arsenal",
     "cote": 1.35,
-    "proba": 0.6636,
+    "proba": 0.6665,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -68637,6 +68677,10 @@
       "N": 0.214
      }
     },
+    "p_espn_matin": 0.659,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.659,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -68644,7 +68688,7 @@
    }
   ],
   "cote": 1.35,
-  "proba": 0.6636,
+  "proba": 0.6665,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68664,7 +68708,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Porto",
     "cote": 2.18,
-    "proba": 0.4304,
+    "proba": 0.4315,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -68722,6 +68766,10 @@
       "N": 0.2635
      }
     },
+    "p_espn_matin": 0.4447,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4447,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -68729,7 +68777,7 @@
    }
   ],
   "cote": 2.18,
-  "proba": 0.4304,
+  "proba": 0.4315,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68749,7 +68797,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Manchester City",
     "cote": 1.25,
-    "proba": 0.7352,
+    "proba": 0.7376,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -68807,6 +68855,10 @@
       "N": 0.168
      }
     },
+    "p_espn_matin": 0.747,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.747,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -68814,7 +68866,7 @@
    }
   ],
   "cote": 1.25,
-  "proba": 0.7352,
+  "proba": 0.7376,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68834,7 +68886,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Madrid",
     "cote": 1.11,
-    "proba": 0.8288,
+    "proba": 0.8304,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -68892,6 +68944,10 @@
       "N": 0.1043
      }
     },
+    "p_espn_matin": 0.8412,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.8412,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -68899,7 +68955,7 @@
    }
   ],
   "cote": 1.11,
-  "proba": 0.8288,
+  "proba": 0.8304,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -68919,7 +68975,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire RB Leipzig",
     "cote": 1.33,
-    "proba": 0.6935,
+    "proba": 0.6954,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -68977,6 +69033,10 @@
       "N": 0.1836
      }
     },
+    "p_espn_matin": 0.7134,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7134,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net",
@@ -68985,7 +69045,7 @@
    }
   ],
   "cote": 1.33,
-  "proba": 0.6935,
+  "proba": 0.6954,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -69005,7 +69065,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Betis",
     "cote": 1.2,
-    "proba": 0.7632,
+    "proba": 0.7646,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -69063,6 +69123,10 @@
       "N": 0.1562
      }
     },
+    "p_espn_matin": 0.7421,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7421,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "petite_cote",
@@ -69071,7 +69135,7 @@
    }
   ],
   "cote": 1.2,
-  "proba": 0.7632,
+  "proba": 0.7646,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -69091,7 +69155,7 @@
     "championnat": "Championship",
     "pari": "Victoire Wolverhampton Wanderers",
     "cote": 1.28,
-    "proba": 0.7147,
+    "proba": 0.7156,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -69155,10 +69219,14 @@
      "2": 0.18
     },
     "marche_p": {
-     "1": 0.7147,
-     "N": 0.177,
-     "2": 0.1083
+     "1": 0.7156,
+     "N": 0.1762,
+     "2": 0.1082
     },
+    "p_espn_matin": 0.7264,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7264,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -69166,7 +69234,7 @@
    }
   ],
   "cote": 1.28,
-  "proba": 0.7147,
+  "proba": 0.7156,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -69186,7 +69254,7 @@
     "championnat": "Brasileirão",
     "pari": "Victoire Palmeiras",
     "cote": 1.93,
-    "proba": 0.4577,
+    "proba": 0.4593,
     "court": "2",
     "espn": {
      "ligue": "bra.1",
@@ -69245,10 +69313,14 @@
      "2": 0.85
     },
     "marche_p": {
-     "1": 0.2714,
-     "N": 0.2708,
-     "2": 0.4577
+     "1": 0.2704,
+     "N": 0.2703,
+     "2": 0.4593
     },
+    "p_espn_matin": 0.4297,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4297,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia",
@@ -69258,7 +69330,7 @@
    }
   ],
   "cote": 1.93,
-  "proba": 0.4577,
+  "proba": 0.4593,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -69278,12 +69350,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire RB Leipzig",
     "cote": 1.33,
-    "proba": 0.6935,
+    "proba": 0.6954,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915299"
     },
+    "p_espn_matin": 0.7134,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7134,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net",
@@ -69298,12 +69374,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Arsenal",
     "cote": 1.35,
-    "proba": 0.6636,
+    "proba": 0.6665,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915295"
     },
+    "p_espn_matin": 0.659,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.659,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -69317,7 +69397,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7873,
+    "proba": 0.7882,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -69335,7 +69415,7 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6488,
+    "proba": 0.6492,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
@@ -69353,7 +69433,7 @@
     "championnat": "Championship",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6023,
+    "proba": 0.6029,
     "marche": "btts",
     "espn": {
      "ligue": "eng.2",
@@ -69364,8 +69444,8 @@
     ]
    }
   ],
-  "cote": 7.42,
-  "proba": 0.1416,
+  "cote": 7.34,
+  "proba": 0.143,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -69385,12 +69465,16 @@
     "championnat": "Championship",
     "pari": "Victoire Middlesbrough",
     "cote": 1.41,
-    "proba": 0.645,
+    "proba": 0.6461,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
      "id": "401880145"
     },
+    "p_espn_matin": 0.6707,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.6707,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "doute_ia"
     ]
@@ -69403,12 +69487,16 @@
     "championnat": "Championship",
     "pari": "Victoire West Ham United",
     "cote": 1.76,
-    "proba": 0.5119,
+    "proba": 0.5139,
     "court": "2",
     "espn": {
      "ligue": "eng.2",
      "id": "401880143"
     },
+    "p_espn_matin": 0.5183,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.5183,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "piege",
@@ -69423,7 +69511,7 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5923,
+    "proba": 0.5965,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
@@ -69441,7 +69529,7 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.5812,
+    "proba": 0.5867,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
@@ -69452,8 +69540,8 @@
     ]
    }
   ],
-  "cote": 9.24,
-  "proba": 0.1137,
+  "cote": 9.04,
+  "proba": 0.1162,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -69473,12 +69561,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire RB Leipzig",
     "cote": 1.33,
-    "proba": 0.6935,
+    "proba": 0.6954,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915299"
     },
+    "p_espn_matin": 0.7134,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7134,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net",
@@ -69493,17 +69585,21 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Bodø/Glimt",
     "cote": 1.43,
-    "proba": 0.6378,
+    "proba": 0.6394,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915380"
     },
+    "p_espn_matin": 0.6974,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.6974,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": []
    }
   ],
   "cote": 1.9,
-  "proba": 0.4423,
+  "proba": 0.4446,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -69523,12 +69619,16 @@
     "championnat": "Championship",
     "pari": "Victoire Norwich City",
     "cote": 1.88,
-    "proba": 0.4714,
+    "proba": 0.4726,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
      "id": "401880144"
     },
+    "p_espn_matin": 0.4787,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4787,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
     ]
@@ -69541,12 +69641,16 @@
     "championnat": "Brasileirão",
     "pari": "Victoire Palmeiras",
     "cote": 1.93,
-    "proba": 0.4577,
+    "proba": 0.4593,
     "court": "2",
     "espn": {
      "ligue": "bra.1",
      "id": "401841335"
     },
+    "p_espn_matin": 0.4297,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4297,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia",
@@ -69562,12 +69666,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Porto",
     "cote": 2.18,
-    "proba": 0.4304,
+    "proba": 0.4315,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915294"
     },
+    "p_espn_matin": 0.4447,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4447,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -69575,7 +69683,7 @@
    }
   ],
   "cote": 7.91,
-  "proba": 0.0929,
+  "proba": 0.0937,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -69595,15 +69703,37 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Madrid",
     "cote": 1.11,
-    "proba": 0.8288,
+    "proba": 0.8304,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915298"
     },
+    "p_espn_matin": 0.8412,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.8412,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
+    ]
+   },
+   {
+    "id": "aea973c122c91837c15e066c757c747f",
+    "date": "2026-11-24T20:00:00Z",
+    "domicile": "RB Leipzig",
+    "exterieur": "RC Lens",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6823,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915299"
+    },
+    "traits": [
+     "buts_plus"
     ]
    },
    {
@@ -69614,7 +69744,7 @@
     "championnat": "Ligue des champions",
     "pari": "Les 2 équipes marquent",
     "cote": null,
-    "proba": 0.6488,
+    "proba": 0.6492,
     "marche": "btts",
     "espn": {
      "ligue": "uefa.champions",
@@ -69623,28 +69753,10 @@
     "traits": [
      "buts_plus"
     ]
-   },
-   {
-    "id": "aea973c122c91837c15e066c757c747f",
-    "date": "2026-11-24T20:00:00Z",
-    "domicile": "RB Leipzig",
-    "exterieur": "RC Lens",
-    "championnat": "Ligue des champions",
-    "pari": "Les 2 équipes marquent",
-    "cote": null,
-    "proba": 0.6268,
-    "marche": "btts",
-    "espn": {
-     "ligue": "uefa.champions",
-     "id": "401915299"
-    },
-    "traits": [
-     "buts_plus"
-    ]
    }
   ],
-  "cote": 3.12,
-  "proba": 0.337,
+  "cote": 2.85,
+  "proba": 0.3678,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -69664,12 +69776,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Madrid",
     "cote": 1.11,
-    "proba": 0.8288,
+    "proba": 0.8304,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915298"
     },
+    "p_espn_matin": 0.8412,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.8412,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -69683,12 +69799,16 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Real Betis",
     "cote": 1.2,
-    "proba": 0.7632,
+    "proba": 0.7646,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915297"
     },
+    "p_espn_matin": 0.7421,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.7421,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "petite_cote",
@@ -69697,7 +69817,7 @@
    }
   ],
   "cote": 1.33,
-  "proba": 0.6325,
+  "proba": 0.635,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -69717,12 +69837,16 @@
     "championnat": "Championship",
     "pari": "Victoire Norwich City",
     "cote": 1.88,
-    "proba": 0.4714,
+    "proba": 0.4726,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
      "id": "401880144"
     },
+    "p_espn_matin": 0.4787,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4787,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
     ]
@@ -69735,12 +69859,16 @@
     "championnat": "Brasileirão",
     "pari": "Victoire Palmeiras",
     "cote": 1.93,
-    "proba": 0.4577,
+    "proba": 0.4593,
     "court": "2",
     "espn": {
      "ligue": "bra.1",
      "id": "401841335"
     },
+    "p_espn_matin": 0.4297,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4297,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia",
@@ -69756,20 +69884,24 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Porto",
     "cote": 2.18,
-    "proba": 0.4304,
+    "proba": 0.4315,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
      "id": "401915294"
     },
+    "p_espn_matin": 0.4447,
+    "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
+    "p_espn_tard": 0.4447,
+    "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
     ]
    }
   ],
-  "cote": 1.89,
-  "proba": 0.4299,
+  "cote": 1.9,
+  "proba": 0.4318,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -69789,7 +69921,7 @@
     "championnat": "Championship",
     "pari": "Nul ou Norwich City",
     "cote": 1.24,
-    "proba": 0.7295,
+    "proba": 0.7303,
     "court": "1N",
     "espn": {
      "ligue": "eng.2",
@@ -69802,7 +69934,7 @@
    }
   ],
   "cote": 1.24,
-  "proba": 0.7295,
+  "proba": 0.7303,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -69823,7 +69955,7 @@
     "championnat": "Championship",
     "pari": "Nul ou West Ham United",
     "cote": 1.19,
-    "proba": 0.7635,
+    "proba": 0.7648,
     "court": "N2",
     "espn": {
      "ligue": "eng.2",
@@ -69836,7 +69968,7 @@
    }
   ],
   "cote": 1.19,
-  "proba": 0.7635,
+  "proba": 0.7648,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -69857,7 +69989,7 @@
     "championnat": "Championship",
     "pari": "Nul ou Norwich City",
     "cote": 1.24,
-    "proba": 0.7295,
+    "proba": 0.7303,
     "court": "1N",
     "espn": {
      "ligue": "eng.2",
@@ -69876,7 +70008,7 @@
     "championnat": "Championship",
     "pari": "Nul ou West Ham United",
     "cote": 1.19,
-    "proba": 0.7635,
+    "proba": 0.7648,
     "court": "N2",
     "espn": {
      "ligue": "eng.2",
@@ -69889,7 +70021,7 @@
    }
   ],
   "cote": 1.47,
-  "proba": 0.557,
+  "proba": 0.5585,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
