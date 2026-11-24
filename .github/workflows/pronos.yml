@@ -47,7 +47,7 @@ jobs:
           git push || echo "Historique non sauvegardé cette fois (un autre lancement l'a fait)"
 
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
       - id: deploiement
