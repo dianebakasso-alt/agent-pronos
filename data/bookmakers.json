@@ -1,65 +1,65 @@
 {
- "maj": "2026-11-23T15:24:06.270140+00:00",
+ "maj": "2026-11-24T05:56:10.431925+00:00",
  "bookmakers": {
   "sport888": {
-   "n": 97,
-   "brier": 0.5246,
-   "favori_ok": 0.619,
+   "n": 102,
+   "brier": 0.53,
+   "favori_ok": 0.608,
    "poids_mesure": 5.0
   },
   "betfair_ex_eu": {
-   "n": 118,
-   "brier": 0.5554,
-   "favori_ok": 0.551,
-   "poids_mesure": 0.2
-  },
-  "onexbet": {
-   "n": 114,
-   "brier": 0.5455,
-   "favori_ok": 0.596,
-   "poids_mesure": 1.641
-  },
-  "pmu_fr": {
-   "n": 106,
-   "brier": 0.5454,
-   "favori_ok": 0.585,
-   "poids_mesure": 1.684
-  },
-  "winamax_fr": {
-   "n": 119,
-   "brier": 0.547,
-   "favori_ok": 0.588,
-   "poids_mesure": 1.118
-  },
-  "marathonbet": {
-   "n": 113,
-   "brier": 0.542,
-   "favori_ok": 0.593,
-   "poids_mesure": 3.925
-  },
-  "betclic_fr": {
-   "n": 103,
-   "brier": 0.5503,
-   "favori_ok": 0.573,
-   "poids_mesure": 0.494
-  },
-  "pinnacle": {
-   "n": 114,
-   "brier": 0.5541,
-   "favori_ok": 0.561,
-   "poids_mesure": 0.2
-  },
-  "unibet_fr": {
-   "n": 104,
-   "brier": 0.5601,
+   "n": 124,
+   "brier": 0.5574,
    "favori_ok": 0.548,
    "poids_mesure": 0.2
   },
+  "onexbet": {
+   "n": 120,
+   "brier": 0.5479,
+   "favori_ok": 0.592,
+   "poids_mesure": 1.593
+  },
+  "pmu_fr": {
+   "n": 112,
+   "brier": 0.5482,
+   "favori_ok": 0.58,
+   "poids_mesure": 1.473
+  },
+  "winamax_fr": {
+   "n": 125,
+   "brier": 0.549,
+   "favori_ok": 0.584,
+   "poids_mesure": 1.205
+  },
+  "marathonbet": {
+   "n": 119,
+   "brier": 0.5446,
+   "favori_ok": 0.588,
+   "poids_mesure": 3.635
+  },
+  "betclic_fr": {
+   "n": 108,
+   "brier": 0.5506,
+   "favori_ok": 0.574,
+   "poids_mesure": 0.819
+  },
+  "pinnacle": {
+   "n": 119,
+   "brier": 0.5596,
+   "favori_ok": 0.555,
+   "poids_mesure": 0.2
+  },
+  "unibet_fr": {
+   "n": 110,
+   "brier": 0.5616,
+   "favori_ok": 0.545,
+   "poids_mesure": 0.2
+  },
   "netbet_fr": {
-   "n": 84,
-   "brier": 0.5478,
-   "favori_ok": 0.583,
-   "poids_mesure": 0.924
+   "n": 89,
+   "brier": 0.5453,
+   "favori_ok": 0.584,
+   "poids_mesure": 3.07
   }
  }
 }

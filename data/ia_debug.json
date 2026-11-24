@@ -2,25 +2,51 @@
  {
   "arret": "end_turn",
   "pauses": 0,
-  "longueur": 584,
-  "fin": "```json\n{\"verdicts\": [{\"n\": 1, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Le 1 à 1,56 n'a pas de valeur : Internacional (17e, zone de relégation, 3 défaites sur ses 5 derniers matchs) perd son meneur de jeu Alan Patrick, suspendu, et Thiago Maia reste incertain après une blessure à la cuisse. Vitória, qui vient de battre Bragantino et n'a pas de situation désespérée, peut jouer le contre, et le 2 à 4,80 reste risqué car l'équipe a gagné très peu à l'extérieur cette saison ; le nul à 3,75 est exposé à un but précoce de l'adversaire, sans marge de manœuvre décisive.\"}]}\n```",
+  "longueur": 1966,
+  "fin": "ison\": \"Norwich est invaincu sur cinq matchs (VVVVV), marque 3.4 buts par match et a gagné 2-1 à Cardiff après avoir été mené. QPR n'a gagné qu'une fois sur cinq à l'extérieur et son capitaine Jimmy Dunne est très probablement absent, ce qui affaiblit sa défense.\"},\n  {\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai trouvé aucune actualité fiable (blessés, suspensions, compositions) pour Portsmouth - West Ham, faute de temps de recherche. Avec les seules stats disponibles, West Ham est favori à 1.76 mais en méforme (DDNDN, trois défaites sur cinq), donc je m'abstiens.\"}\n]}\n```",
   "usage": {
-   "input_tokens": 28220,
+   "input_tokens": 51086,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 1314,
+   "output_tokens": 4348,
    "output_tokens_details": {
-    "thinking_tokens": 906
+    "thinking_tokens": 3080
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard",
    "server_tool_use": {
-    "web_search_requests": 2,
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 1951,
+  "fin": "a pris 9 buts à Como, reste sur 3 matchs de championnat sans victoire et ne pourra pas compter sur ses supporters (interdiction de déplacement). La cote de 1.33 est courte, donc le gain est faible pour un pari qui semble probable.\"},\n{\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"2\", \"raison\": \"Ma recherche d'actualité a échoué pour ce match, donc je m'appuie uniquement sur tes stats : Chapecoense a perdu 4 de ses 5 derniers matchs et n'a jamais battu Palmeiras sur les 5 dernières confrontations. Mais Palmeiras n'a gagné qu'1 fois sur 5 à l'extérieur, et la cote de 1.93 laisse peu de marge.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 53408,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5590,
+   "output_tokens_details": {
+    "thinking_tokens": 4291
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
     "web_fetch_requests": 0
    }
   }

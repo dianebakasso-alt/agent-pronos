@@ -1456,5 +1456,37 @@
     "cote": 1.43
    }
   ]
+ },
+ {
+  "jour": "2026-11-24",
+  "bookmaker": "Betclic (FR)",
+  "cote": 1.9,
+  "proba": 0.4423,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "aea973c122c91837c15e066c757c747f",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-11-24T20:00:00Z",
+    "domicile": "RB Leipzig",
+    "exterieur": "RC Lens",
+    "pari": "Victoire RB Leipzig",
+    "court": "1",
+    "cote": 1.33
+   },
+   {
+    "id": "50b80f3ebd38bf63663b11ae0afc575b",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-11-24T17:45:00Z",
+    "domicile": "Bodø/Glimt",
+    "exterieur": "LASK",
+    "pari": "Victoire Bodø/Glimt",
+    "court": "1",
+    "cote": 1.43
+   }
+  ]
  }
 ]

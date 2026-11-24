@@ -1,73 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Bodø/Glimt - Lille",
-  "pari": "Victoire Bodø/Glimt",
-  "cote": 1.63,
-  "proba": 0.5712,
-  "score": "0-0",
-  "pourquoi": "Score 0-0 (tirs 4-9, cadrés 4-2, possession 51-49 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "1. FC Heidenheim 1846 - Energie Cottbus",
-  "pari": "Victoire 1. FC Heidenheim 1846",
-  "cote": 1.67,
-  "proba": 0.5678,
-  "score": "1-1",
-  "pourquoi": "Score 1-1 (tirs 34-7, cadrés 8-3, possession 57-43 %). 1. FC Heidenheim 1846 a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "West Ham United - Southampton",
-  "pari": "Victoire West Ham United",
-  "cote": 1.69,
-  "proba": 0.5654,
-  "score": "2-3",
-  "pourquoi": "Score 2-3 (tirs 28-15, cadrés 10-7, possession 56-44 %). West Ham United a dominé sans marquer assez.",
-  "previsible": "non",
-  "signal_rate": "",
-  "tags": [
-   "attaque_inefficace",
-   "malchance"
-  ],
-  "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
-  "match": "Standard Liege - KV Kortrijk",
-  "pari": "Victoire Standard Liege",
-  "cote": 1.67,
-  "proba": 0.5645,
-  "score": "1-1",
-  "pourquoi": "Score 1-1 (tirs 18-14, cadrés 6-6, possession 60-40 %). KV Kortrijk a marqué sur penalty.",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote",
-   "penalty"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Wrexham AFC - Middlesbrough",
   "pari": "Victoire Middlesbrough",
   "cote": 1.67,
@@ -6616,6 +6549,72 @@
   "proba": 0.3968,
   "score": "1-1",
   "pourquoi": "Score 1-1 (tirs 12-13, cadrés 3-3, possession 50-50 %).",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-24",
+  "match": "Monza - Fiorentina",
+  "pari": "Les 2 équipes marquent",
+  "cote": null,
+  "proba": 0.5769,
+  "score": "3-0",
+  "pourquoi": "Score 3-0 (tirs 13-17, cadrés 5-8, possession 45-55 %). 13 tirs cadrés au total, mais peu de buts.",
+  "previsible": "non",
+  "signal_rate": "",
+  "tags": [
+   "attaque_inefficace",
+   "malchance"
+  ],
+  "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-24",
+  "match": "Internacional - Vitoria",
+  "pari": "Victoire Internacional",
+  "cote": 1.56,
+  "proba": 0.5742,
+  "score": "2-5",
+  "pourquoi": "Score 2-5 (tirs 23-12, cadrés 4-8, possession 70-30 %). Vitoria a été plus dangereux (8 tirs cadrés contre 4).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-24",
+  "match": "Monza - Fiorentina",
+  "pari": "Victoire Fiorentina",
+  "cote": 1.85,
+  "proba": 0.4873,
+  "score": "3-0",
+  "pourquoi": "Score 3-0 (tirs 13-17, cadrés 5-8, possession 45-55 %). Monza a marqué sur penalty.",
+  "previsible": "en partie",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote",
+   "penalty"
+  ],
+  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-24",
+  "match": "Sochaux - USL Dunkerque",
+  "pari": "Victoire Sochaux",
+  "cote": 2.22,
+  "proba": 0.401,
+  "score": "2-3",
+  "pourquoi": "Score 2-3 (tirs 13-14, cadrés 5-6, possession 42-58 %).",
   "previsible": "en partie",
   "signal_rate": "",
   "tags": [

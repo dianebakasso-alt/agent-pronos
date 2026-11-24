@@ -1,21 +1,21 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
     🎟️ Combinés : +41% de rendement sur 36 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 0 championnat(s) aujourd'hui (235 crédits restants ce mois-ci)
-    0 championnats retenus
+    quota cotes : 12 championnat(s) aujourd'hui (235 crédits restants ce mois-ci)
+    ordre des championnats : Serie A +30 %, Süper Lig +29 %, Brasileirão +11 %, Pro League +8 %, Ligue des champions +6 %, Bundesliga +5 %, Saudi Pro League +4 %, Liga 2 +2 %
+    12 championnats retenus
 3/4 Récupération des cotes…
-    135 matchs repris du cache (cotes d'un passage précédent)
-    131 matchs analysés, 3 value bets
+    135 matchs analysés, 1 value bets
     Forme et stats des équipes…
-    direct : 131 matchs reliés aux scores en direct
+    direct : 135 matchs reliés aux scores en direct
     fatigue : 16 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 187 équipes trouvées, 1 manquées
-    force : 93 matchs notés · pièges : 42 favoris en alerte
+    stats : 195 équipes trouvées, 1 manquées
+    force : 97 matchs notés · pièges : 44 favoris en alerte
     paris de buts évités : [('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.908, 'btts': 0.973, 'pas_btts': 1.05} · zones évitées : [] · championnats évités : ['Allsvenskan', 'Bundesliga AUT', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    bookmakers les plus justes : sport888 (0.525, 97 matchs), marathonbet (0.542, 113 matchs), pmu_fr (0.545, 106 matchs)
-    autopsies gratuites : 0
-    tickets par rendement : {'match': 0.012, 'prudent': 0.02, 'equilibre': 0.373, 'gros': 0.193, 'buts': 0.028, 'mixte': 0.145, 'mixte_gros': 0.553, 'jour': 0.034, 'prudence': -0.164} · « à éviter » de l'IA affichés seulement (44 favoris écartés, 66 % gagnés pour 54 % prévus)
+    bookmakers les plus justes : sport888 (0.530, 102 matchs), marathonbet (0.545, 119 matchs), netbet_fr (0.545, 89 matchs)
+    autopsies gratuites : 4
+    tickets par rendement : {'match': 0.011, 'prudent': 0.02, 'equilibre': 0.334, 'gros': 0.165, 'buts': 0.091, 'mixte': 0.145, 'mixte_gros': 0.499, 'jour': 0.034, 'prudence': -0.166} · « à éviter » de l'IA affichés seulement (48 favoris écartés, 62 % gagnés pour 54 % prévus)
 4/4 Vérification des infos et avis d'experts par l'IA…
-    combinés refaits avec 6 avis de l'IA
+    combinés refaits avec 11 avis de l'IA
 Site généré : site/index.html

@@ -1,35 +1,60 @@
 {
- "jour": "2026-11-23",
+ "jour": "2026-11-24",
  "v": {
-  "c1958a1dcd4f8228f4d09148fd6ea216": {
+  "e422af92d1fc06c0a330838c1c2f2e08": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Villa est le favori (2.27) mais arrive avec cinq matchs sans victoire, et Emery dit lui-même que son équipe n'est pas favorite. Galatasaray est privé d'Osimhen et de Leão et ne compte aucun but encaissé à moins de deux, ce qui rend le match trop équilibré pour un pari 1-N-2 fiable."
+  },
+  "50b80f3ebd38bf63663b11ae0afc575b": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Bodø/Glimt à 1.43 est une cote trop basse : les modèles lui donnent environ 60 %, alors que la cote implique près de 70 %. LASK arrive avec dix buts en quatre matchs de Ligue des champions et une attaque en forme, donc le « 1 » n'a pas de marge de valeur."
+  },
+  "ae887a08eef3ff58053488dbddde28a3": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Basaksehir reçoit Çorum, 10e de Süper Lig, avec Yusuf Sarı absent côté local. Çorum est privé de Berat Özdemir et Fredy après une défaite 5-0 contre Fenerbahçe, mais l'équipe a gagné 3 de ses 5 derniers déplacements et la cote 1.84 laisse peu de marge pour un favori au net avantage."
+   "raison": "Cardiff est invaincu à domicile (VVVNV) et Preston, dernier de Championship, n'a gagné aucun de ses cinq derniers déplacements. Mais la cote 1.47 laisse peu de marge, Cardiff encaisse 2.4 buts par match, et Preston doit gérer trois doutes physiques après West Ham."
   },
-  "f024fef3ca959505d2bc7e75154dbedf": {
+  "e239a6d57b2cf15091f673c2448fbf4f": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Middlesbrough est leader, a battu Bristol City 2-0 et n'encaisse que 0.6 but par match. Swansea est sans entraîneur permanent après le départ de Vitor Matos, mais la cote 1.41 est très courte pour un favori qui peut encore se faire surprendre."
+  },
+  "cbb9284b5d072d869a395ba3ffb8bbff": {
+   "verdict": "jouer",
+   "pari": "1",
+   "raison": "Norwich est invaincu sur cinq matchs (VVVVV), marque 3.4 buts par match et a gagné 2-1 à Cardiff après avoir été mené. QPR n'a gagné qu'une fois sur cinq à l'extérieur et son capitaine Jimmy Dunne est très probablement absent, ce qui affaiblit sa défense."
+  },
+  "aee4e3c225603397ab52de3d066b566b": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Arsenal est privé de Raya (gardien), Saka et Zubimendi, mais Dortmund reste sur 8 matchs sans défaite et Arsenal devrait gagner. La cote de 1.35 est trop courte pour compenser ce doute : le pari n'a pas de valeur."
+  },
+  "9a2ebad454db4ab3d53b89e96c79847a": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Ceuta est dernier, enchaîne les défaites (5 de suite selon une source, 4 sur 5 selon une autre) et a encaissé 32 buts en 14 matchs. Almería est invaincu sur 5 matchs et a marqué dans chacun de ses 11 derniers matchs selon une source, mais la cote 1.85 est courte et les deux équipes se sont déjà batt"
+   "raison": "Feyenoord traverse une mauvaise passe (4 matchs sans victoire en Eredivisie, 9 défaites en 12 matchs européens), et Porto arrive en forme après son 4-1 contre Naples. Mais Porto a perdu ses 3 derniers déplacements en Ligue des champions et le match s'annonce ouvert, donc le doute reste réel."
   },
-  "99776445d5a5f4ed008f9a6d6a1495b7": {
+  "b9f00a4d399ec661e733857c9d5fb2dc": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Monza (18e) a perdu 4 de ses 5 derniers matchs, son entraîneur Juric est suspendu et Kouadio Maye et Folorunsho sont blessés. Fiorentina (15e) a aussi un faible bilan à l'extérieur (1 victoire sur 5) : le match est trop équilibré pour qu'un favori à 1.85 ait un vrai avantage, et les pronostics vont "
+   "raison": "City récupère Nunes et n'a que Semenyo absent, tandis que Napoli joue sans 11 joueurs dont 4 de ses 6 défenseurs centraux. Malgré cela, la cote de 1.25 (environ 80 % implicite) ne laisse aucune marge, et City a encaissé dans 9 matchs de suite."
   },
-  "db2eae8f2ae5bbcd5a5f39470b9e209a": {
+  "3fb5e4a792cf34a0459efcb79a11a785": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Nantes est favori à 1.43, mais les données donnent environ 65% de victoire au lieu des 70% implicites de la cote, donc pas de valeur. Nantes n'a gagné aucun de ses 3 derniers matchs à domicile cette saison, Doucouré est suspendu et Corredor est incertain, alors que Grenoble a perdu 4 de ses 5 dernie"
+   "raison": "Madrid est sans Rodrygo et Asencio, Mendy est inéligible, et Mourinho pourrait reposer Bellingham et Güler. La cote de 1.11 offre un gain dérisoire pour un risque de rotation, donc aucune valeur."
   },
-  "87ff23cf75b8a3552d4331f64c818f9c": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Sochaux reste sur 4 défaites de suite, marque en moyenne 0,8 but par match et se trouve 17e, tandis que Dunkerque (11e) est offensivement dangereux. Aucun des trois résultats n'offre un avantage net : la cote 2.22 pour Sochaux ne se justifie pas au vu de la spirale négative."
+  "aea973c122c91837c15e066c757c747f": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Leipzig doit absolument gagner : Lukeba, Guiu et Ouedraogo sont absents, mais Lens a pris 9 buts à Como, reste sur 3 matchs de championnat sans victoire et ne pourra pas compter sur ses supporters (interdiction de déplacement). La cote de 1.33 est courte, donc le gain est faible pour un pari qui sem"
   },
-  "c1339bf6458b24fdfaa62305a6947a8c": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Le 1 à 1,56 n'a pas de valeur : Internacional (17e, zone de relégation, 3 défaites sur ses 5 derniers matchs) perd son meneur de jeu Alan Patrick, suspendu, et Thiago Maia reste incertain après une blessure à la cuisse. Vitória, qui vient de battre Bragantino et n'a pas de situation désespérée, peut"
+  "0c21d6b1fcc860152966888ac7ac9d9a": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Ma recherche d'actualité a échoué pour ce match, donc je m'appuie uniquement sur tes stats : Chapecoense a perdu 4 de ses 5 derniers matchs et n'a jamais battu Palmeiras sur les 5 dernières confrontations. Mais Palmeiras n'a gagné qu'1 fois sur 5 à l'extérieur, et la cote de 1.93 laisse peu de marge"
   }
  }
 }
