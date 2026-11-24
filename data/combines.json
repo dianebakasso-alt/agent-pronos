@@ -1432,8 +1432,8 @@
   "proba": 0.3148,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "99776445d5a5f4ed008f9a6d6a1495b7",
@@ -1443,7 +1443,10 @@
     "exterieur": "Fiorentina",
     "pari": "Victoire Fiorentina",
     "court": "2",
-    "cote": 1.85
+    "cote": 1.85,
+    "res": "1",
+    "score": "3-0",
+    "ok": false
    },
    {
     "id": "db2eae8f2ae5bbcd5a5f39470b9e209a",
@@ -1453,7 +1456,10 @@
     "exterieur": "Grenoble",
     "pari": "Victoire Nantes",
     "court": "1",
-    "cote": 1.43
+    "cote": 1.43,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
    }
   ]
  },
