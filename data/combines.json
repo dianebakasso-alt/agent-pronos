@@ -1470,8 +1470,8 @@
   "proba": 0.4446,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 9.0,
   "jambes": [
    {
     "id": "aea973c122c91837c15e066c757c747f",
@@ -1481,7 +1481,10 @@
     "exterieur": "RC Lens",
     "pari": "Victoire RB Leipzig",
     "court": "1",
-    "cote": 1.33
+    "cote": 1.33,
+    "res": "1",
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "50b80f3ebd38bf63663b11ae0afc575b",
@@ -1491,7 +1494,10 @@
     "exterieur": "LASK",
     "pari": "Victoire Bodø/Glimt",
     "court": "1",
-    "cote": 1.43
+    "cote": 1.43,
+    "res": "1",
+    "score": "1-0",
+    "ok": true
    }
   ]
  },
@@ -1499,7 +1505,7 @@
   "jour": "2026-11-25",
   "bookmaker": "PMU (FR)",
   "cote": 2.06,
-  "proba": 0.4186,
+  "proba": 0.4185,
   "conseille": false,
   "mise": 10,
   "statut": "en attente",

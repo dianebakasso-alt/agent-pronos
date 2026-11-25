@@ -70399,6 +70399,8 @@
     },
     "p_espn_matin": 0.8904,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.8947,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "petite_cote",
@@ -70427,7 +70429,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Villarreal",
     "cote": 2.05,
-    "proba": 0.4495,
+    "proba": 0.4494,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -70487,6 +70489,8 @@
     },
     "p_espn_matin": 0.4535,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4248,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -70494,7 +70498,7 @@
    }
   ],
   "cote": 2.05,
-  "proba": 0.4495,
+  "proba": 0.4494,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -70584,6 +70588,8 @@
     },
     "p_espn_matin": 0.3889,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.3962,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia",
@@ -70612,7 +70618,7 @@
     "championnat": "Championship",
     "pari": "Victoire Watford",
     "cote": 2.37,
-    "proba": 0.3762,
+    "proba": 0.3761,
     "court": "1",
     "espn": {
      "ligue": "eng.2",
@@ -70676,19 +70682,21 @@
      "2": 0.404
     },
     "marche_p": {
-     "1": 0.3762,
+     "1": 0.3761,
      "N": 0.2777,
      "2": 0.3462
     },
     "p_espn_matin": 0.375,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.3882,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "piege"
     ]
    }
   ],
   "cote": 2.37,
-  "proba": 0.3762,
+  "proba": 0.3761,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -70778,6 +70786,8 @@
     },
     "p_espn_matin": 0.4753,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4771,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -70865,6 +70875,8 @@
     },
     "p_espn_matin": 0.6618,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.6294,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -70952,6 +70964,8 @@
     },
     "p_espn_matin": 0.8611,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.855,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -70979,7 +70993,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Bayern Munich",
     "cote": 1.55,
-    "proba": 0.5926,
+    "proba": 0.5925,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -71039,6 +71053,8 @@
     },
     "p_espn_matin": 0.5923,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.5999,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71046,7 +71062,7 @@
    }
   ],
   "cote": 1.55,
-  "proba": 0.5926,
+  "proba": 0.5925,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -71126,6 +71142,8 @@
     },
     "p_espn_matin": 0.5859,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.5859,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur"
     ]
@@ -71212,6 +71230,8 @@
     },
     "p_espn_matin": 0.4067,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.3681,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71239,7 +71259,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Inter Milan",
     "cote": 1.35,
-    "proba": 0.6754,
+    "proba": 0.6753,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -71299,6 +71319,8 @@
     },
     "p_espn_matin": 0.6694,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.6777,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "petite_cote",
      "favori_net",
@@ -71307,7 +71329,7 @@
    }
   ],
   "cote": 1.35,
-  "proba": 0.6754,
+  "proba": 0.6753,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -71327,7 +71349,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Sporting Lisbon",
     "cote": 2.37,
-    "proba": 0.379,
+    "proba": 0.3789,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -71387,11 +71409,13 @@
     },
     "p_espn_matin": 0.3758,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.3614,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": []
    }
   ],
   "cote": 2.37,
-  "proba": 0.379,
+  "proba": 0.3789,
   "estime": false,
   "conseille": null,
   "mise": 10.0,
@@ -71481,6 +71505,8 @@
     },
     "p_espn_matin": 0.4138,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4527,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
     ]
@@ -71515,6 +71541,8 @@
     },
     "p_espn_matin": 0.4753,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4771,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71536,6 +71564,8 @@
     },
     "p_espn_matin": 0.8904,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.8947,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "petite_cote",
@@ -71544,7 +71574,7 @@
    }
   ],
   "cote": 2.06,
-  "proba": 0.4186,
+  "proba": 0.4185,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -71564,7 +71594,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Villarreal",
     "cote": 2.05,
-    "proba": 0.4495,
+    "proba": 0.4494,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -71572,6 +71602,8 @@
     },
     "p_espn_matin": 0.4535,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4248,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71593,6 +71625,8 @@
     },
     "p_espn_matin": 0.4753,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4771,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71614,6 +71648,8 @@
     },
     "p_espn_matin": 0.4138,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4527,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
     ]
@@ -71640,7 +71676,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Inter Milan",
     "cote": 1.35,
-    "proba": 0.6754,
+    "proba": 0.6753,
     "court": "1",
     "espn": {
      "ligue": "uefa.champions",
@@ -71648,6 +71684,8 @@
     },
     "p_espn_matin": 0.6694,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.6777,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "petite_cote",
      "favori_net",
@@ -71662,7 +71700,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7798,
+    "proba": 0.7884,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -71680,7 +71718,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7246,
+    "proba": 0.7326,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -71691,8 +71729,8 @@
     ]
    }
   ],
-  "cote": 2.75,
-  "proba": 0.3816,
+  "cote": 2.69,
+  "proba": 0.39,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -71712,7 +71750,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7798,
+    "proba": 0.7884,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -71730,7 +71768,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.7246,
+    "proba": 0.7326,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -71748,7 +71786,7 @@
     "championnat": "Ligue des champions",
     "pari": "Plus de 2,5 buts",
     "cote": null,
-    "proba": 0.6932,
+    "proba": 0.6997,
     "marche": "plus25",
     "espn": {
      "ligue": "uefa.champions",
@@ -71759,8 +71797,8 @@
     ]
    }
   ],
-  "cote": 2.68,
-  "proba": 0.3917,
+  "cote": 2.6,
+  "proba": 0.4041,
   "estime": true,
   "conseille": null,
   "mise": 10.0,
@@ -71788,6 +71826,8 @@
     },
     "p_espn_matin": 0.8904,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.8947,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "petite_cote",
@@ -71810,6 +71850,8 @@
     },
     "p_espn_matin": 0.8611,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.855,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "petite_cote",
      "favori_net"
@@ -71817,7 +71859,7 @@
    }
   ],
   "cote": 1.13,
-  "proba": 0.7568,
+  "proba": 0.7567,
   "estime": false,
   "conseille": false,
   "mise": 10.0,
@@ -71837,7 +71879,7 @@
     "championnat": "Ligue des champions",
     "pari": "Victoire Villarreal",
     "cote": 2.05,
-    "proba": 0.4495,
+    "proba": 0.4494,
     "court": "2",
     "espn": {
      "ligue": "uefa.champions",
@@ -71845,6 +71887,8 @@
     },
     "p_espn_matin": 0.4535,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4248,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71866,6 +71910,8 @@
     },
     "p_espn_matin": 0.4753,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4771,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur",
      "doute_ia"
@@ -71887,6 +71933,8 @@
     },
     "p_espn_matin": 0.4138,
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "p_espn_tard": 0.4527,
+    "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
     ]
@@ -71913,7 +71961,7 @@
     "championnat": "Ligue des champions",
     "pari": "Nul ou Liverpool",
     "cote": 1.16,
-    "proba": 0.7876,
+    "proba": 0.7875,
     "court": "N2",
     "espn": {
      "ligue": "uefa.champions",
@@ -71926,7 +71974,7 @@
    }
   ],
   "cote": 1.16,
-  "proba": 0.7876,
+  "proba": 0.7875,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
@@ -72051,7 +72099,7 @@
     "championnat": "Ligue des champions",
     "pari": "Nul ou Liverpool",
     "cote": 1.15,
-    "proba": 0.7876,
+    "proba": 0.7875,
     "court": "N2",
     "espn": {
      "ligue": "uefa.champions",
