@@ -1494,5 +1494,37 @@
     "cote": 1.43
    }
   ]
+ },
+ {
+  "jour": "2026-11-25",
+  "bookmaker": "PMU (FR)",
+  "cote": 2.06,
+  "proba": 0.4186,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "pari": "Victoire West Bromwich Albion",
+    "court": "2",
+    "cote": 1.94
+   },
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "sport_key": "soccer_uefa_champs_league",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "pari": "Victoire Barcelona",
+    "court": "2",
+    "cote": 1.06
+   }
+  ]
  }
 ]

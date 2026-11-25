@@ -1,60 +1,60 @@
 {
- "jour": "2026-11-24",
+ "jour": "2026-11-25",
  "v": {
-  "e422af92d1fc06c0a330838c1c2f2e08": {
+  "e6fa007f93e0cef004be920f96ee95ba": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Villa est le favori (2.27) mais arrive avec cinq matchs sans victoire, et Emery dit lui-même que son équipe n'est pas favorite. Galatasaray est privé d'Osimhen et de Leão et ne compte aucun but encaissé à moins de deux, ce qui rend le match trop équilibré pour un pari 1-N-2 fiable."
+   "raison": "Barcelone est logiquement favori, mais à 1.06 le gain est quasi nul pour un risque réel : Yamal, Rodri, Christensen, Bardghji et Espart sont absents et Flick annonce des rotations. Sabah n'a jamais fini un match européen sur un 0-0 en 26 rencontres, et Barcelone a encaissé à l'extérieur dans ses 12 "
   },
-  "50b80f3ebd38bf63663b11ae0afc575b": {
+  "a7c87fac9e9cbcfc02ad0e0b29ca89e2": {
+   "verdict": "prudence",
+   "pari": "1",
+   "raison": "Slavia est sans Chaloupek, Ouanda, Ogbu, Piták, Moses, Chorý et Kolář, et n'a pas gagné en Europe depuis 19 matchs ; Villarreal a perdu 7 déplacements européens d'affilée et a encaissé dans ses 15 derniers matchs de C1. Le pronostic de nul (1-1) de certains médias et l'absence de Moreno, Foyth et Ak"
+  },
+  "61d1126751ba67227ac2819624e98342": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Burnley n'a pas gagné à domicile en championnat depuis plus de 400 jours (23 matchs sans victoire, 12 nuls et 11 défaites) et l'équipe a été remaniée avec une quinzaine d'absents annoncés. Birmingham est au complet (Solis rétabli) et sa forme extérieure est bonne (VVDVD), mais la Championship reste "
+  },
+  "9dfe9df3ad88c453e3572872bf500488": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Bolton a perdu 3 de ses 5 derniers matchs et neuf joueurs sont absents, dont Erhahon et Larrazabal incertain, tandis que West Brom reste invaincu sur 7 matchs de championnat et a gagné à Wrexham et West Ham. Le doute vient de la fragilité de West Brom sur place (nul à Swansea, Price incertain, Johns"
+  },
+  "14007bc0605bce3bd164b132254ba24c": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Bodø/Glimt à 1.43 est une cote trop basse : les modèles lui donnent environ 60 %, alors que la cote implique près de 70 %. LASK arrive avec dix buts en quatre matchs de Ligue des champions et une attaque en forme, donc le « 1 » n'a pas de marge de valeur."
+   "raison": "PSG est favori net mais la cote de 1.36 suppose environ 73 % de chances, alors qu'un modèle cité par la presse ne lui donne que 60 %, donc aucune marge de valeur. Doué et Kvaratskhelia sont absents, et Roma, qui a marqué dans ses 9 derniers matchs et compte sur Dybala et Malen, peut s'appuyer sur un"
   },
-  "ae887a08eef3ff58053488dbddde28a3": {
+  "b1af6789fe6db7aab18a2945ce56f035": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Je n'ai pas trouvé d'actualité fiable sur Atlético Madrid et Viking FK (blessés, rotation, forme), donc je ne peux pas valider un pari. Avec une cote de 1.07 sur l'Atlético, le gain est négligeable et une seule surprise efface plusieurs mises : pas de pari."
+  },
+  "0ee2cfddf20153779cd2cc3e1f1f879f": {
    "verdict": "prudence",
-   "pari": "1",
-   "raison": "Cardiff est invaincu à domicile (VVVNV) et Preston, dernier de Championship, n'a gagné aucun de ses cinq derniers déplacements. Mais la cote 1.47 laisse peu de marge, Cardiff encaisse 2.4 buts par match, et Preston doit gérer trois doutes physiques après West Ham."
+   "pari": "2",
+   "raison": "Bayern est privé de Kane, Neuer, Davies, Gnabry et Saibari, et Olise est incertain, mais Lille n'a pris qu'un point en 4 matchs de Ligue des champions et n'a pas marqué en championnat lors de sa dernière défaite 1-0 contre Lyon. Le 1,55 laisse peu de marge, donc je ne le jouerais qu'avec prudence."
   },
-  "e239a6d57b2cf15091f673c2448fbf4f": {
+  "99459b90f3e732106e09585bf94b36b4": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Liverpool a encaissé 10 buts en 4 matchs de Ligue des champions et joue sans Ekitike, Leoni et Bradley, avec Gakpo et Gravenberch incertains. Bruges enchaîne trois victoires européennes et Tresoldi a déjà 5 buts, donc le match est trop ouvert pour un pari 1-N-2 sûr."
+  },
+  "49c66d76bc4085e63a181179cc47ef4d": {
    "verdict": "prudence",
-   "pari": "1",
-   "raison": "Middlesbrough est leader, a battu Bristol City 2-0 et n'encaisse que 0.6 but par match. Swansea est sans entraîneur permanent après le départ de Vitor Matos, mais la cote 1.41 est très courte pour un favori qui peut encore se faire surprendre."
+   "pari": "2",
+   "raison": "Fenerbahce a marqué 12 buts en ses 5 derniers matchs contre 3 pour Shakhtar, qui n'a pas marqué lors de ses deux dernières sorties européennes et reste sur une série de trois matchs sans victoire. Les pronostics divergent (nul ou victoire turque) et Fenerbahce encaisse presque 3 buts par match en Eu"
   },
-  "cbb9284b5d072d869a395ba3ffb8bbff": {
+  "e7e64568f6af00d395a3fdfc27de8ae3": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Le 1 à 1,35 est une cote trop basse pour un pari sûr, et Inter est fatigué (match européen à 3 jours) avec Calhanoglu forfait et Zielinski absent. La défense est fragile (4-4 à Atalanta après avoir mené 4-2, 17 buts encaissés en 12 matchs de Serie A) et Inter n'a pas connu le nul dans ses 16 dernier"
+  },
+  "01a61442fe04f8751b62eb251f234079": {
    "verdict": "jouer",
    "pari": "1",
-   "raison": "Norwich est invaincu sur cinq matchs (VVVVV), marque 3.4 buts par match et a gagné 2-1 à Cardiff après avoir été mené. QPR n'a gagné qu'une fois sur cinq à l'extérieur et son capitaine Jimmy Dunne est très probablement absent, ce qui affaiblit sa défense."
-  },
-  "aee4e3c225603397ab52de3d066b566b": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Arsenal est privé de Raya (gardien), Saka et Zubimendi, mais Dortmund reste sur 8 matchs sans défaite et Arsenal devrait gagner. La cote de 1.35 est trop courte pour compenser ce doute : le pari n'a pas de valeur."
-  },
-  "9a2ebad454db4ab3d53b89e96c79847a": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Feyenoord traverse une mauvaise passe (4 matchs sans victoire en Eredivisie, 9 défaites en 12 matchs européens), et Porto arrive en forme après son 4-1 contre Naples. Mais Porto a perdu ses 3 derniers déplacements en Ligue des champions et le match s'annonce ouvert, donc le doute reste réel."
-  },
-  "b9f00a4d399ec661e733857c9d5fb2dc": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "City récupère Nunes et n'a que Semenyo absent, tandis que Napoli joue sans 11 joueurs dont 4 de ses 6 défenseurs centraux. Malgré cela, la cote de 1.25 (environ 80 % implicite) ne laisse aucune marge, et City a encaissé dans 9 matchs de suite."
-  },
-  "3fb5e4a792cf34a0459efcb79a11a785": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Madrid est sans Rodrygo et Asencio, Mendy est inéligible, et Mourinho pourrait reposer Bellingham et Güler. La cote de 1.11 offre un gain dérisoire pour un risque de rotation, donc aucune valeur."
-  },
-  "aea973c122c91837c15e066c757c747f": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Leipzig doit absolument gagner : Lukeba, Guiu et Ouedraogo sont absents, mais Lens a pris 9 buts à Como, reste sur 3 matchs de championnat sans victoire et ne pourra pas compter sur ses supporters (interdiction de déplacement). La cote de 1.33 est courte, donc le gain est faible pour un pari qui sem"
-  },
-  "0c21d6b1fcc860152966888ac7ac9d9a": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Ma recherche d'actualité a échoué pour ce match, donc je m'appuie uniquement sur tes stats : Chapecoense a perdu 4 de ses 5 derniers matchs et n'a jamais battu Palmeiras sur les 5 dernières confrontations. Mais Palmeiras n'a gagné qu'1 fois sur 5 à l'extérieur, et la cote de 1.93 laisse peu de marge"
+   "raison": "Sporting n'a perdu que deux fois toute la saison, enchaîne cinq victoires et n'a encaissé qu'un but sur cette série, et a marqué dans ses 22 derniers matchs de phase de ligue en C1. Man United a encaissé 34 buts en 18 matchs, vient de perdre 4-0 à Liverpool et joue sans Cunha (suspendu), Rashford et"
   }
  }
 }

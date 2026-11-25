@@ -55205,7 +55205,7 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
+  "statut": "annulé",
   "gain": 0.0
  },
  {
@@ -67731,7 +67731,19 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-4, cadrés 2-0, possession 45-55 %). Galatasaray a été plus dangereux (2 tirs cadrés contre 0).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.27,
@@ -67739,8 +67751,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:50b80f3ebd38bf63663b11ae0afc575b",
@@ -67817,7 +67829,9 @@
     "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
     "p_espn_tard": 0.6974,
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.43,
@@ -67825,8 +67839,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.3
  },
  {
   "cle": "match:92c74d2f4a4275568feff8072ed15e73",
@@ -67915,7 +67929,19 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "piege"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 11-10, cadrés 4-2, possession 56-44 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.23,
@@ -67923,8 +67949,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:ae887a08eef3ff58053488dbddde28a3",
@@ -68014,7 +68040,19 @@
     "traits": [
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-4",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-4 (tirs 15-15, cadrés 5-6, possession 73-27 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.47,
@@ -68022,8 +68060,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:6d21b6408d1f1c42def270b7f1ae5b21",
@@ -68114,7 +68152,19 @@
      "exterieur",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "4-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 4-0 (tirs 33-3, cadrés 13-0, possession 66-34 %). Charlton Athletic a été plus dangereux (13 tirs cadrés contre 0).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.5,
@@ -68122,8 +68172,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:e239a6d57b2cf15091f673c2448fbf4f",
@@ -68212,7 +68262,9 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.41,
@@ -68220,8 +68272,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 4.1
  },
  {
   "cle": "match:cbb9284b5d072d869a395ba3ffb8bbff",
@@ -68310,7 +68362,20 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 12-7, cadrés 2-2, possession 60-40 %). Norwich City a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.9,
@@ -68318,8 +68383,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:c2ca2ce56eb3bccf1a5de2d0ccc2207f",
@@ -68410,7 +68475,20 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-19, cadrés 1-6, possession 37-63 %). West Ham United a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.76,
@@ -68418,8 +68496,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:031162fd89aa3c1fd39e523b3c82d35a",
@@ -68506,7 +68584,20 @@
     "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
     "p_espn_tard": 0.3699,
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
-    "traits": []
+    "traits": [],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 20-11, cadrés 7-3, possession 52-48 %). Sheffield United a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.35,
@@ -68514,8 +68605,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:ba719e378ac366262013bdb51a06aa6f",
@@ -68595,7 +68686,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.2,
@@ -68603,8 +68696,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.0
  },
  {
   "cle": "match:aee4e3c225603397ab52de3d066b566b",
@@ -68684,7 +68777,20 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 30-13, cadrés 4-4, possession 63-37 %). Arsenal a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.35,
@@ -68692,8 +68798,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:9a2ebad454db4ab3d53b89e96c79847a",
@@ -68773,7 +68879,9 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 2.18,
@@ -68781,8 +68889,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.8
  },
  {
   "cle": "match:b9f00a4d399ec661e733857c9d5fb2dc",
@@ -68862,7 +68970,20 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 18-9, cadrés 7-3, possession 63-37 %). Manchester City a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.25,
@@ -68870,8 +68991,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:3fb5e4a792cf34a0459efcb79a11a785",
@@ -68951,7 +69072,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    }
   ],
   "cote": 1.11,
@@ -68959,8 +69082,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.1
  },
  {
   "cle": "match:aea973c122c91837c15e066c757c747f",
@@ -69041,7 +69164,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    }
   ],
   "cote": 1.33,
@@ -69049,8 +69174,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.3
  },
  {
   "cle": "match:8e93849b4c1ccbf1c207836d5c470150",
@@ -69131,7 +69256,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 1.2,
@@ -69139,8 +69266,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.0
  },
  {
   "cle": "match:018856cb75135463eb1972d978339023",
@@ -69230,7 +69357,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "3-0",
+    "ok": true
    }
   ],
   "cote": 1.28,
@@ -69238,8 +69367,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 2.8
  },
  {
   "cle": "match:0c21d6b1fcc860152966888ac7ac9d9a",
@@ -69326,7 +69455,19 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "3-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-0 (tirs 10-26, cadrés 8-6, possession 44-56 %). Chapecoense a été plus dangereux (8 tirs cadrés contre 6).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.93,
@@ -69334,8 +69475,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-24",
@@ -69364,7 +69505,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "aee4e3c225603397ab52de3d066b566b",
@@ -69387,7 +69530,20 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 30-13, cadrés 4-4, possession 63-37 %). Arsenal a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "3fb5e4a792cf34a0459efcb79a11a785",
@@ -69405,7 +69561,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "50b80f3ebd38bf63663b11ae0afc575b",
@@ -69423,7 +69581,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-5, cadrés 2-0, possession 66-34 %). match fermé : seulement 2 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    },
    {
     "id": "ae887a08eef3ff58053488dbddde28a3",
@@ -69441,7 +69611,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "0-4",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 0-4 (tirs 15-15, cadrés 5-6, possession 73-27 %). 11 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 7.34,
@@ -69449,8 +69632,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte_gros:2026-11-24:2",
@@ -69477,7 +69660,9 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    },
    {
     "id": "c2ca2ce56eb3bccf1a5de2d0ccc2207f",
@@ -69501,7 +69686,20 @@
      "exterieur",
      "piege",
      "force_contre"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-19, cadrés 1-6, possession 37-63 %). West Ham United a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "e422af92d1fc06c0a330838c1c2f2e08",
@@ -69519,7 +69717,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-4, cadrés 2-0, possession 45-55 %). match fermé : seulement 2 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    },
    {
     "id": "b9f00a4d399ec661e733857c9d5fb2dc",
@@ -69537,7 +69747,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-2",
+    "ok": true
    }
   ],
   "cote": 9.04,
@@ -69545,8 +69757,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "equilibre:2026-11-24",
@@ -69575,7 +69787,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "50b80f3ebd38bf63663b11ae0afc575b",
@@ -69595,7 +69809,9 @@
     "p_espn_matin_quand": "2026-11-24T16:01:08.024641+00:00",
     "p_espn_tard": 0.6974,
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
-    "traits": []
+    "traits": [],
+    "score": "1-0",
+    "ok": true
    }
   ],
   "cote": 1.9,
@@ -69603,8 +69819,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.0
  },
  {
   "cle": "gros:2026-11-24",
@@ -69631,7 +69847,20 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 12-7, cadrés 2-2, possession 60-40 %). Norwich City a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "0c21d6b1fcc860152966888ac7ac9d9a",
@@ -69656,7 +69885,19 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "3-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-0 (tirs 10-26, cadrés 8-6, possession 44-56 %). Chapecoense a été plus dangereux (8 tirs cadrés contre 6).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    },
    {
     "id": "9a2ebad454db4ab3d53b89e96c79847a",
@@ -69679,7 +69920,9 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 7.91,
@@ -69687,8 +69930,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "mixte:2026-11-24",
@@ -69716,7 +69959,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "aea973c122c91837c15e066c757c747f",
@@ -69734,7 +69979,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "3-1",
+    "ok": true
    },
    {
     "id": "50b80f3ebd38bf63663b11ae0afc575b",
@@ -69752,7 +69999,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-0 (tirs 9-5, cadrés 2-0, possession 66-34 %). match fermé : seulement 2 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.85,
@@ -69760,8 +70019,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-24",
@@ -69789,7 +70048,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "5-1",
+    "ok": true
    },
    {
     "id": "8e93849b4c1ccbf1c207836d5c470150",
@@ -69813,7 +70074,9 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true
    }
   ],
   "cote": 1.33,
@@ -69821,8 +70084,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.3
  },
  {
   "cle": "systeme:2026-11-24",
@@ -69849,7 +70112,20 @@
     "p_espn_tard_quand": "2026-11-24T16:01:08.024641+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "1-1",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 1-1 (tirs 12-7, cadrés 2-2, possession 60-40 %). Norwich City a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    },
    {
     "id": "0c21d6b1fcc860152966888ac7ac9d9a",
@@ -69874,7 +70150,19 @@
      "doute_ia",
      "piege",
      "force_pour"
-    ]
+    ],
+    "score": "3-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 3-0 (tirs 10-26, cadrés 8-6, possession 44-56 %). Chapecoense a été plus dangereux (8 tirs cadrés contre 6).",
+     "previsible": "oui",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+     "source": "espn"
+    }
    },
    {
     "id": "9a2ebad454db4ab3d53b89e96c79847a",
@@ -69897,7 +70185,9 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.9,
@@ -69905,8 +70195,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudence:cbb9284b5d072d869a395ba3ffb8bbff",
@@ -69930,7 +70220,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-1",
+    "ok": true
    }
   ],
   "cote": 1.24,
@@ -69938,8 +70230,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.4,
   "note": 7.3
  },
  {
@@ -69964,7 +70256,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.19,
@@ -69972,8 +70266,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "perdu",
+  "gain": -10.0,
   "note": 7.1
  },
  {
@@ -69998,7 +70292,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-1",
+    "ok": true
    },
    {
     "id": "c2ca2ce56eb3bccf1a5de2d0ccc2207f",
@@ -70017,11 +70313,1778 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-0",
+    "ok": false
    }
   ],
   "cote": 1.47,
   "proba": 0.5585,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "perdu",
+  "gain": -10.0
+ },
+ {
+  "cle": "match:e6fa007f93e0cef004be920f96ee95ba",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.06,
+    "proba": 0.8812,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915378"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.8535,
+      "1": 0.0586,
+      "N": 0.0879
+     },
+     "onexbet": {
+      "2": 0.9015,
+      "1": 0.0351,
+      "N": 0.0634
+     },
+     "pinnacle": {
+      "2": 0.8959,
+      "1": 0.036,
+      "N": 0.068
+     },
+     "netbet_fr": {
+      "2": 0.8699,
+      "1": 0.0448,
+      "N": 0.0853
+     },
+     "winamax_fr": {
+      "2": 0.858,
+      "1": 0.0601,
+      "N": 0.0819
+     },
+     "marathonbet": {
+      "2": 0.895,
+      "1": 0.0372,
+      "N": 0.0678
+     },
+     "pmu_fr": {
+      "2": 0.8585,
+      "1": 0.0506,
+      "N": 0.091
+     },
+     "betclic_fr": {
+      "2": 0.8655,
+      "1": 0.0548,
+      "N": 0.0798
+     },
+     "sport888": {
+      "2": 0.8815,
+      "1": 0.0406,
+      "N": 0.0779
+     },
+     "betfair_ex_eu": {
+      "2": 0.898,
+      "1": 0.0332,
+      "N": 0.0687
+     }
+    },
+    "p_espn_matin": 0.8904,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.06,
+  "proba": 0.8812,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Slavia Praha",
+    "exterieur": "Villarreal",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Villarreal",
+    "cote": 2.05,
+    "proba": 0.4495,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915293"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "1": 0.3057,
+      "2": 0.4547,
+      "N": 0.2396
+     },
+     "marathonbet": {
+      "1": 0.3032,
+      "2": 0.4498,
+      "N": 0.2469
+     },
+     "pinnacle": {
+      "1": 0.2975,
+      "2": 0.4575,
+      "N": 0.2449
+     },
+     "betclic_fr": {
+      "1": 0.311,
+      "2": 0.4475,
+      "N": 0.2414
+     },
+     "winamax_fr": {
+      "1": 0.3267,
+      "2": 0.4411,
+      "N": 0.2322
+     },
+     "pmu_fr": {
+      "1": 0.3036,
+      "2": 0.4368,
+      "N": 0.2596
+     },
+     "netbet_fr": {
+      "1": 0.3046,
+      "2": 0.4493,
+      "N": 0.2462
+     },
+     "onexbet": {
+      "1": 0.303,
+      "2": 0.4496,
+      "N": 0.2474
+     },
+     "betfair_ex_eu": {
+      "1": 0.3008,
+      "2": 0.4511,
+      "N": 0.2481
+     },
+     "sport888": {
+      "1": 0.3033,
+      "2": 0.4439,
+      "N": 0.2528
+     }
+    },
+    "p_espn_matin": 0.4535,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.4495,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:61d1126751ba67227ac2819624e98342",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "61d1126751ba67227ac2819624e98342",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Burnley",
+    "exterieur": "Birmingham City",
+    "championnat": "Championship",
+    "pari": "Victoire Birmingham City",
+    "cote": 2.35,
+    "proba": 0.383,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880139"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "2": 0.3771,
+      "1": 0.3544,
+      "N": 0.2685
+     },
+     "unibet_fr": {
+      "2": 0.3945,
+      "1": 0.3382,
+      "N": 0.2673
+     },
+     "betclic_fr": {
+      "2": 0.3889,
+      "1": 0.3441,
+      "N": 0.267
+     },
+     "onexbet": {
+      "2": 0.378,
+      "1": 0.3549,
+      "N": 0.2672
+     },
+     "winamax_fr": {
+      "2": 0.3873,
+      "1": 0.3486,
+      "N": 0.2641
+     },
+     "betfair_ex_eu": {
+      "2": 0.3819,
+      "1": 0.3424,
+      "N": 0.2758
+     },
+     "marathonbet": {
+      "2": 0.378,
+      "1": 0.3549,
+      "N": 0.2672
+     },
+     "sport888": {
+      "2": 0.3735,
+      "1": 0.3492,
+      "N": 0.2773
+     },
+     "netbet_fr": {
+      "2": 0.3784,
+      "1": 0.3453,
+      "N": 0.2763
+     },
+     "pinnacle": {
+      "2": 0.3872,
+      "1": 0.3419,
+      "N": 0.2708
+     }
+    },
+    "force_p": {
+     "1": 0.286,
+     "N": 0.241,
+     "2": 0.473
+    },
+    "marche_p": {
+     "1": 0.3465,
+     "N": 0.2705,
+     "2": 0.383
+    },
+    "p_espn_matin": 0.3889,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia",
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.35,
+  "proba": 0.383,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0eb7f35d744c1cebeb53be32f50e1e2d",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0eb7f35d744c1cebeb53be32f50e1e2d",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Watford",
+    "exterieur": "Blackburn Rovers",
+    "championnat": "Championship",
+    "pari": "Victoire Watford",
+    "cote": 2.37,
+    "proba": 0.3762,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880137"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "2": 0.3411,
+      "1": 0.3774,
+      "N": 0.2815
+     },
+     "unibet_fr": {
+      "2": 0.3429,
+      "1": 0.3828,
+      "N": 0.2743
+     },
+     "betclic_fr": {
+      "2": 0.3472,
+      "1": 0.3765,
+      "N": 0.2763
+     },
+     "onexbet": {
+      "2": 0.3548,
+      "1": 0.3718,
+      "N": 0.2734
+     },
+     "winamax_fr": {
+      "2": 0.3533,
+      "1": 0.3763,
+      "N": 0.2705
+     },
+     "betfair_ex_eu": {
+      "2": 0.3395,
+      "1": 0.3813,
+      "N": 0.2792
+     },
+     "marathonbet": {
+      "2": 0.3548,
+      "1": 0.3718,
+      "N": 0.2734
+     },
+     "sport888": {
+      "2": 0.3436,
+      "1": 0.371,
+      "N": 0.2854
+     },
+     "netbet_fr": {
+      "2": 0.3449,
+      "1": 0.3747,
+      "N": 0.2804
+     },
+     "pinnacle": {
+      "2": 0.345,
+      "1": 0.3759,
+      "N": 0.2792
+     }
+    },
+    "force_p": {
+     "1": 0.329,
+     "N": 0.266,
+     "2": 0.404
+    },
+    "marche_p": {
+     "1": 0.3762,
+     "N": 0.2777,
+     "2": 0.3462
+    },
+    "p_espn_matin": 0.375,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "piege"
+    ]
+   }
+  ],
+  "cote": 2.37,
+  "proba": 0.3762,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9dfe9df3ad88c453e3572872bf500488",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Victoire West Bromwich Albion",
+    "cote": 1.94,
+    "proba": 0.475,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "1": 0.2763,
+      "2": 0.4558,
+      "N": 0.2679
+     },
+     "unibet_fr": {
+      "1": 0.2624,
+      "2": 0.4751,
+      "N": 0.2624
+     },
+     "betclic_fr": {
+      "1": 0.2626,
+      "2": 0.4749,
+      "N": 0.2626
+     },
+     "onexbet": {
+      "1": 0.2718,
+      "2": 0.4699,
+      "N": 0.2583
+     },
+     "winamax_fr": {
+      "1": 0.2718,
+      "2": 0.472,
+      "N": 0.2562
+     },
+     "netbet_fr": {
+      "1": 0.2593,
+      "2": 0.4774,
+      "N": 0.2633
+     },
+     "pinnacle": {
+      "1": 0.2583,
+      "2": 0.4841,
+      "N": 0.2576
+     },
+     "marathonbet": {
+      "1": 0.2705,
+      "2": 0.4724,
+      "N": 0.2571
+     },
+     "sport888": {
+      "1": 0.2615,
+      "2": 0.4693,
+      "N": 0.2692
+     },
+     "betfair_ex_eu": {
+      "1": 0.261,
+      "2": 0.4814,
+      "N": 0.2576
+     }
+    },
+    "force_p": {
+     "1": 0.338,
+     "N": 0.272,
+     "2": 0.39
+    },
+    "marche_p": {
+     "1": 0.2645,
+     "N": 0.2606,
+     "2": 0.475
+    },
+    "p_espn_matin": 0.4753,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.94,
+  "proba": 0.475,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:14007bc0605bce3bd164b132254ba24c",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "14007bc0605bce3bd164b132254ba24c",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Paris Saint Germain",
+    "exterieur": "AS Roma",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Paris Saint Germain",
+    "cote": 1.36,
+    "proba": 0.6652,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915374"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "2": 0.156,
+      "1": 0.6645,
+      "N": 0.1794
+     },
+     "pinnacle": {
+      "2": 0.1448,
+      "1": 0.665,
+      "N": 0.1902
+     },
+     "betclic_fr": {
+      "2": 0.1413,
+      "1": 0.6751,
+      "N": 0.1836
+     },
+     "onexbet": {
+      "2": 0.1552,
+      "1": 0.6603,
+      "N": 0.1846
+     },
+     "pmu_fr": {
+      "2": 0.1499,
+      "1": 0.6664,
+      "N": 0.1836
+     },
+     "unibet_fr": {
+      "2": 0.1439,
+      "1": 0.6817,
+      "N": 0.1744
+     },
+     "marathonbet": {
+      "2": 0.1552,
+      "1": 0.66,
+      "N": 0.1848
+     },
+     "netbet_fr": {
+      "2": 0.1454,
+      "1": 0.6628,
+      "N": 0.1918
+     },
+     "betfair_ex_eu": {
+      "2": 0.1466,
+      "1": 0.6689,
+      "N": 0.1846
+     },
+     "sport888": {
+      "2": 0.1573,
+      "1": 0.6461,
+      "N": 0.1966
+     }
+    },
+    "p_espn_matin": 0.6618,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.36,
+  "proba": 0.6652,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b1af6789fe6db7aab18a2945ce56f035",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b1af6789fe6db7aab18a2945ce56f035",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Atlético Madrid",
+    "cote": 1.07,
+    "proba": 0.8588,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915291"
+    },
+    "bk_p": {
+     "onexbet": {
+      "1": 0.8711,
+      "2": 0.0447,
+      "N": 0.0841
+     },
+     "winamax_fr": {
+      "1": 0.8559,
+      "2": 0.0534,
+      "N": 0.0907
+     },
+     "pinnacle": {
+      "1": 0.8677,
+      "2": 0.0424,
+      "N": 0.0898
+     },
+     "unibet_fr": {
+      "1": 0.8332,
+      "2": 0.0491,
+      "N": 0.1178
+     },
+     "pmu_fr": {
+      "1": 0.8521,
+      "2": 0.0475,
+      "N": 0.1004
+     },
+     "marathonbet": {
+      "1": 0.8571,
+      "2": 0.0492,
+      "N": 0.0937
+     },
+     "betclic_fr": {
+      "1": 0.8553,
+      "2": 0.0508,
+      "N": 0.0939
+     },
+     "netbet_fr": {
+      "1": 0.8522,
+      "2": 0.0502,
+      "N": 0.0977
+     },
+     "sport888": {
+      "1": 0.8459,
+      "2": 0.0552,
+      "N": 0.0988
+     },
+     "betfair_ex_eu": {
+      "1": 0.8737,
+      "2": 0.0366,
+      "N": 0.0898
+     }
+    },
+    "p_espn_matin": 0.8611,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.07,
+  "proba": 0.8588,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:0ee2cfddf20153779cd2cc3e1f1f879f",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "0ee2cfddf20153779cd2cc3e1f1f879f",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Lille",
+    "exterieur": "Bayern Munich",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Bayern Munich",
+    "cote": 1.55,
+    "proba": 0.5926,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915377"
+    },
+    "bk_p": {
+     "marathonbet": {
+      "2": 0.5915,
+      "1": 0.1748,
+      "N": 0.2337
+     },
+     "pinnacle": {
+      "2": 0.5959,
+      "1": 0.1736,
+      "N": 0.2304
+     },
+     "netbet_fr": {
+      "2": 0.5878,
+      "1": 0.1874,
+      "N": 0.2248
+     },
+     "winamax_fr": {
+      "2": 0.591,
+      "1": 0.1927,
+      "N": 0.2162
+     },
+     "unibet_fr": {
+      "2": 0.605,
+      "1": 0.1803,
+      "N": 0.2146
+     },
+     "pmu_fr": {
+      "2": 0.5781,
+      "1": 0.1829,
+      "N": 0.239
+     },
+     "onexbet": {
+      "2": 0.5906,
+      "1": 0.1752,
+      "N": 0.2343
+     },
+     "betclic_fr": {
+      "2": 0.5925,
+      "1": 0.1913,
+      "N": 0.2161
+     },
+     "betfair_ex_eu": {
+      "2": 0.6058,
+      "1": 0.1646,
+      "N": 0.2296
+     },
+     "sport888": {
+      "2": 0.5744,
+      "1": 0.1838,
+      "N": 0.2418
+     }
+    },
+    "p_espn_matin": 0.5923,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.55,
+  "proba": 0.5926,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:99459b90f3e732106e09585bf94b36b4",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "99459b90f3e732106e09585bf94b36b4",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Liverpool",
+    "cote": 1.56,
+    "proba": 0.5828,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915292"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.2109,
+      "2": 0.5891,
+      "N": 0.2
+     },
+     "marathonbet": {
+      "1": 0.2084,
+      "2": 0.5809,
+      "N": 0.2107
+     },
+     "onexbet": {
+      "1": 0.2089,
+      "2": 0.58,
+      "N": 0.2111
+     },
+     "unibet_fr": {
+      "1": 0.216,
+      "2": 0.5827,
+      "N": 0.2013
+     },
+     "pmu_fr": {
+      "1": 0.21,
+      "2": 0.5722,
+      "N": 0.2177
+     },
+     "winamax_fr": {
+      "1": 0.2273,
+      "2": 0.5757,
+      "N": 0.197
+     },
+     "netbet_fr": {
+      "1": 0.2098,
+      "2": 0.5897,
+      "N": 0.2005
+     },
+     "betclic_fr": {
+      "1": 0.2062,
+      "2": 0.5921,
+      "N": 0.2017
+     },
+     "betfair_ex_eu": {
+      "1": 0.2117,
+      "2": 0.5853,
+      "N": 0.203
+     },
+     "sport888": {
+      "1": 0.2184,
+      "2": 0.5697,
+      "N": 0.2118
+     }
+    },
+    "p_espn_matin": 0.5859,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.56,
+  "proba": 0.5828,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:49c66d76bc4085e63a181179cc47ef4d",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "49c66d76bc4085e63a181179cc47ef4d",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Shakhtar Donetsk",
+    "exterieur": "Fenerbahce",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Fenerbahce",
+    "cote": 2.27,
+    "proba": 0.4042,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915375"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "2": 0.4037,
+      "1": 0.323,
+      "N": 0.2733
+     },
+     "unibet_fr": {
+      "2": 0.402,
+      "1": 0.3216,
+      "N": 0.2764
+     },
+     "onexbet": {
+      "2": 0.4084,
+      "1": 0.3175,
+      "N": 0.2741
+     },
+     "winamax_fr": {
+      "2": 0.4021,
+      "1": 0.3338,
+      "N": 0.2641
+     },
+     "marathonbet": {
+      "2": 0.4082,
+      "1": 0.3177,
+      "N": 0.2741
+     },
+     "pinnacle": {
+      "2": 0.4062,
+      "1": 0.3226,
+      "N": 0.2712
+     },
+     "betclic_fr": {
+      "2": 0.4044,
+      "1": 0.3199,
+      "N": 0.2757
+     },
+     "netbet_fr": {
+      "2": 0.407,
+      "1": 0.3175,
+      "N": 0.2755
+     },
+     "betfair_ex_eu": {
+      "2": 0.4012,
+      "1": 0.3262,
+      "N": 0.2726
+     },
+     "sport888": {
+      "2": 0.3971,
+      "1": 0.3262,
+      "N": 0.2768
+     }
+    },
+    "p_espn_matin": 0.4067,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.27,
+  "proba": 0.4042,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:e7e64568f6af00d395a3fdfc27de8ae3",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "e7e64568f6af00d395a3fdfc27de8ae3",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.35,
+    "proba": 0.6754,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915376"
+    },
+    "bk_p": {
+     "winamax_fr": {
+      "1": 0.6582,
+      "2": 0.1709,
+      "N": 0.1709
+     },
+     "pmu_fr": {
+      "1": 0.6705,
+      "2": 0.1498,
+      "N": 0.1797
+     },
+     "pinnacle": {
+      "1": 0.6801,
+      "2": 0.1516,
+      "N": 0.1683
+     },
+     "netbet_fr": {
+      "1": 0.679,
+      "2": 0.1519,
+      "N": 0.1691
+     },
+     "marathonbet": {
+      "1": 0.6827,
+      "2": 0.1458,
+      "N": 0.1716
+     },
+     "unibet_fr": {
+      "1": 0.6694,
+      "2": 0.1607,
+      "N": 0.1699
+     },
+     "onexbet": {
+      "1": 0.683,
+      "2": 0.1457,
+      "N": 0.1713
+     },
+     "betclic_fr": {
+      "1": 0.6803,
+      "2": 0.1557,
+      "N": 0.164
+     },
+     "betfair_ex_eu": {
+      "1": 0.6819,
+      "2": 0.1464,
+      "N": 0.1717
+     },
+     "sport888": {
+      "1": 0.6564,
+      "2": 0.1598,
+      "N": 0.1838
+     }
+    },
+    "p_espn_matin": 0.6694,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege"
+    ]
+   }
+  ],
+  "cote": 1.35,
+  "proba": 0.6754,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:01a61442fe04f8751b62eb251f234079",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "01a61442fe04f8751b62eb251f234079",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Sporting Lisbon",
+    "exterieur": "Manchester United",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Sporting Lisbon",
+    "cote": 2.37,
+    "proba": 0.379,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915373"
+    },
+    "bk_p": {
+     "onexbet": {
+      "2": 0.3717,
+      "1": 0.3717,
+      "N": 0.2565
+     },
+     "winamax_fr": {
+      "2": 0.3707,
+      "1": 0.3786,
+      "N": 0.2506
+     },
+     "pinnacle": {
+      "2": 0.3679,
+      "1": 0.3779,
+      "N": 0.2542
+     },
+     "unibet_fr": {
+      "2": 0.3616,
+      "1": 0.3852,
+      "N": 0.2531
+     },
+     "pmu_fr": {
+      "2": 0.3527,
+      "1": 0.3827,
+      "N": 0.2645
+     },
+     "marathonbet": {
+      "2": 0.3718,
+      "1": 0.3718,
+      "N": 0.2565
+     },
+     "netbet_fr": {
+      "2": 0.3598,
+      "1": 0.3795,
+      "N": 0.2607
+     },
+     "betclic_fr": {
+      "2": 0.3523,
+      "1": 0.3897,
+      "N": 0.258
+     },
+     "betfair_ex_eu": {
+      "2": 0.3663,
+      "1": 0.3833,
+      "N": 0.2504
+     },
+     "sport888": {
+      "2": 0.3684,
+      "1": 0.3684,
+      "N": 0.2632
+     }
+    },
+    "p_espn_matin": 0.3758,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 2.37,
+  "proba": 0.379,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:77dfddf6dea97d5ecb5e2463b29fe67e",
+  "jour": "2026-11-25",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Stoke City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Stoke City",
+    "cote": 2.14,
+    "proba": 0.4189,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880138"
+    },
+    "bk_p": {
+     "pmu_fr": {
+      "2": 0.3081,
+      "1": 0.4146,
+      "N": 0.2773
+     },
+     "betclic_fr": {
+      "2": 0.2961,
+      "1": 0.4218,
+      "N": 0.2821
+     },
+     "unibet_fr": {
+      "2": 0.2948,
+      "1": 0.4254,
+      "N": 0.2798
+     },
+     "onexbet": {
+      "2": 0.2986,
+      "1": 0.4249,
+      "N": 0.2765
+     },
+     "winamax_fr": {
+      "2": 0.3035,
+      "1": 0.4219,
+      "N": 0.2746
+     },
+     "netbet_fr": {
+      "2": 0.2966,
+      "1": 0.4166,
+      "N": 0.2868
+     },
+     "pinnacle": {
+      "2": 0.2954,
+      "1": 0.4146,
+      "N": 0.2901
+     },
+     "marathonbet": {
+      "2": 0.2981,
+      "1": 0.4267,
+      "N": 0.2752
+     },
+     "sport888": {
+      "2": 0.2961,
+      "1": 0.4079,
+      "N": 0.2961
+     },
+     "betfair_ex_eu": {
+      "2": 0.2919,
+      "1": 0.4205,
+      "N": 0.2876
+     }
+    },
+    "force_p": {
+     "1": 0.446,
+     "N": 0.251,
+     "2": 0.303
+    },
+    "marche_p": {
+     "1": 0.4189,
+     "N": 0.2838,
+     "2": 0.2973
+    },
+    "p_espn_matin": 0.4138,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 2.14,
+  "proba": 0.4189,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Victoire West Bromwich Albion",
+    "cote": 1.94,
+    "proba": 0.475,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "p_espn_matin": 0.4753,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.06,
+    "proba": 0.8812,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915378"
+    },
+    "p_espn_matin": 0.8904,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 2.06,
+  "proba": 0.4186,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Slavia Praha",
+    "exterieur": "Villarreal",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Villarreal",
+    "cote": 2.05,
+    "proba": 0.4495,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915293"
+    },
+    "p_espn_matin": 0.4535,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Victoire West Bromwich Albion",
+    "cote": 1.94,
+    "proba": 0.475,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "p_espn_matin": 0.4753,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Stoke City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Stoke City",
+    "cote": 2.14,
+    "proba": 0.4189,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880138"
+    },
+    "p_espn_matin": 0.4138,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 8.51,
+  "proba": 0.0894,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "e7e64568f6af00d395a3fdfc27de8ae3",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Inter Milan",
+    "cote": 1.35,
+    "proba": 0.6754,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915376"
+    },
+    "p_espn_matin": 0.6694,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "piege"
+    ]
+   },
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7798,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915378"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "b1af6789fe6db7aab18a2945ce56f035",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7246,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915291"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.75,
+  "proba": 0.3816,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "buts:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "buts",
+  "jambes": [
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7798,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915378"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "b1af6789fe6db7aab18a2945ce56f035",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7246,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915291"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "e7e64568f6af00d395a3fdfc27de8ae3",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Inter Milan",
+    "exterieur": "VfB Stuttgart",
+    "championnat": "Ligue des champions",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6932,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915376"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 2.68,
+  "proba": 0.3917,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "e6fa007f93e0cef004be920f96ee95ba",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Sabah FK",
+    "exterieur": "Barcelona",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Barcelona",
+    "cote": 1.06,
+    "proba": 0.8812,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915378"
+    },
+    "p_espn_matin": 0.8904,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "b1af6789fe6db7aab18a2945ce56f035",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Atlético Madrid",
+    "exterieur": "Viking FK",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Atlético Madrid",
+    "cote": 1.07,
+    "proba": 0.8588,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915291"
+    },
+    "p_espn_matin": 0.8611,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.13,
+  "proba": 0.7568,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "systeme:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "systeme",
+  "jambes": [
+   {
+    "id": "a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Slavia Praha",
+    "exterieur": "Villarreal",
+    "championnat": "Ligue des champions",
+    "pari": "Victoire Villarreal",
+    "cote": 2.05,
+    "proba": 0.4495,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915293"
+    },
+    "p_espn_matin": 0.4535,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Victoire West Bromwich Albion",
+    "cote": 1.94,
+    "proba": 0.475,
+    "court": "2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "p_espn_matin": 0.4753,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Stoke City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Victoire Stoke City",
+    "cote": 2.14,
+    "proba": 0.4189,
+    "court": "1",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880138"
+    },
+    "p_espn_matin": 0.4138,
+    "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
+    "traits": [
+     "force_pour"
+    ]
+   }
+  ],
+  "cote": 1.98,
+  "proba": 0.4219,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:99459b90f3e732106e09585bf94b36b4",
+  "jour": "2026-11-25",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "99459b90f3e732106e09585bf94b36b4",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Nul ou Liverpool",
+    "cote": 1.16,
+    "proba": 0.7876,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915292"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.16,
+  "proba": 0.7876,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.9
+ },
+ {
+  "cle": "prudence:9dfe9df3ad88c453e3572872bf500488",
+  "jour": "2026-11-25",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Nul ou West Bromwich Albion",
+    "cote": 1.23,
+    "proba": 0.7355,
+    "court": "N2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.23,
+  "proba": 0.7355,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.4
+ },
+ {
+  "cle": "prudence:a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+  "jour": "2026-11-25",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "a7c87fac9e9cbcfc02ad0e0b29ca89e2",
+    "date": "2026-11-25T17:45:00Z",
+    "domicile": "Slavia Praha",
+    "exterieur": "Villarreal",
+    "championnat": "Ligue des champions",
+    "pari": "Nul ou Villarreal",
+    "cote": 1.33,
+    "proba": 0.6954,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915293"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.33,
+  "proba": 0.6954,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.0
+ },
+ {
+  "cle": "prudence:77dfddf6dea97d5ecb5e2463b29fe67e",
+  "jour": "2026-11-25",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Stoke City",
+    "exterieur": "Millwall",
+    "championnat": "Championship",
+    "pari": "Nul ou Stoke City",
+    "cote": 1.28,
+    "proba": 0.7027,
+    "court": "1N",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880138"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.28,
+  "proba": 0.7027,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.0
+ },
+ {
+  "cle": "prudence_combi:2026-11-25",
+  "jour": "2026-11-25",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "99459b90f3e732106e09585bf94b36b4",
+    "date": "2026-11-25T20:00:00Z",
+    "domicile": "Club Brugge",
+    "exterieur": "Liverpool",
+    "championnat": "Ligue des champions",
+    "pari": "Nul ou Liverpool",
+    "cote": 1.15,
+    "proba": 0.7876,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.champions",
+     "id": "401915292"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "9dfe9df3ad88c453e3572872bf500488",
+    "date": "2026-11-25T19:45:00Z",
+    "domicile": "Bolton Wanderers",
+    "exterieur": "West Bromwich Albion",
+    "championnat": "Championship",
+    "pari": "Nul ou West Bromwich Albion",
+    "cote": 1.23,
+    "proba": 0.7355,
+    "court": "N2",
+    "espn": {
+     "ligue": "eng.2",
+     "id": "401880140"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.41,
+  "proba": 0.5793,
   "estime": false,
   "conseille": true,
   "mise": 10.0,
