@@ -70405,7 +70405,10 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true,
+    "clv": 0.0043
    }
   ],
   "cote": 1.06,
@@ -70413,8 +70416,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 0.6
  },
  {
   "cle": "match:a7c87fac9e9cbcfc02ad0e0b29ca89e2",
@@ -70494,7 +70497,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true,
+    "clv": -0.0287
    }
   ],
   "cote": 2.05,
@@ -70502,8 +70508,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.5
  },
  {
   "cle": "match:61d1126751ba67227ac2819624e98342",
@@ -70594,7 +70600,10 @@
      "exterieur",
      "doute_ia",
      "force_pour"
-    ]
+    ],
+    "score": "0-2",
+    "ok": true,
+    "clv": 0.0073
    }
   ],
   "cote": 2.35,
@@ -70602,8 +70611,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 13.5
  },
  {
   "cle": "match:0eb7f35d744c1cebeb53be32f50e1e2d",
@@ -70692,7 +70701,22 @@
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "piege"
-    ]
+    ],
+    "score": "0-1",
+    "ok": false,
+    "clv": 0.0132,
+    "autopsie": {
+     "pourquoi": "Score 0-1 (tirs 12-17, cadrés 3-5, possession 48-52 %). Watford a pris un carton rouge à la 62e; Blackburn Rovers a marqué sur penalty; Blackburn Rovers a été plus dangereux (5 tirs cadrés contre 3).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "carton_rouge",
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Un carton rouge change tout : rien à corriger dans l'analyse d'avant-match.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.37,
@@ -70700,8 +70724,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:9dfe9df3ad88c453e3572872bf500488",
@@ -70791,7 +70815,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true,
+    "clv": 0.0018
    }
   ],
   "cote": 1.94,
@@ -70799,8 +70826,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 9.4
  },
  {
   "cle": "match:14007bc0605bce3bd164b132254ba24c",
@@ -70880,7 +70907,21 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-2",
+    "ok": false,
+    "clv": -0.0324,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 15-13, cadrés 4-4, possession 66-34 %). AS Roma a marqué sur penalty.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote",
+      "penalty"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.36,
@@ -70888,8 +70929,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:b1af6789fe6db7aab18a2945ce56f035",
@@ -70969,7 +71010,10 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true,
+    "clv": -0.0061
    }
   ],
   "cote": 1.07,
@@ -70977,8 +71021,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 0.7
  },
  {
   "cle": "match:0ee2cfddf20153779cd2cc3e1f1f879f",
@@ -71058,7 +71102,20 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "2-1",
+    "ok": false,
+    "clv": 0.0076,
+    "autopsie": {
+     "pourquoi": "Score 2-1 (tirs 15-12, cadrés 3-7, possession 35-65 %).",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "favori_surcote"
+     ],
+     "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 1.55,
@@ -71066,8 +71123,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:99459b90f3e732106e09585bf94b36b4",
@@ -71146,7 +71203,10 @@
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "exterieur"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true,
+    "clv": 0.0
    }
   ],
   "cote": 1.56,
@@ -71154,8 +71214,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 5.6
  },
  {
   "cle": "match:49c66d76bc4085e63a181179cc47ef4d",
@@ -71235,7 +71295,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true,
+    "clv": -0.0386
    }
   ],
   "cote": 2.27,
@@ -71243,8 +71306,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 12.7
  },
  {
   "cle": "match:e7e64568f6af00d395a3fdfc27de8ae3",
@@ -71325,7 +71388,10 @@
      "petite_cote",
      "favori_net",
      "piege"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true,
+    "clv": 0.0083
    }
   ],
   "cote": 1.35,
@@ -71333,8 +71399,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 3.5
  },
  {
   "cle": "match:01a61442fe04f8751b62eb251f234079",
@@ -71411,7 +71477,22 @@
     "p_espn_matin_quand": "2026-11-25T05:56:11.100175+00:00",
     "p_espn_tard": 0.3614,
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
-    "traits": []
+    "traits": [],
+    "score": "2-2",
+    "ok": false,
+    "clv": -0.0144,
+    "autopsie": {
+     "pourquoi": "Score 2-2 (tirs 11-7, cadrés 4-2, possession 51-49 %). Manchester United a marqué sur penalty; Sporting Lisbon a dominé sans marquer assez.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance",
+      "penalty"
+     ],
+     "lecon": "Un favori qui domine aux tirs finit par gagner sur la durée : ce genre de défaite n'est pas une raison de l'éviter.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.37,
@@ -71419,8 +71500,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "match:77dfddf6dea97d5ecb5e2463b29fe67e",
@@ -71509,7 +71590,10 @@
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true,
+    "clv": 0.0389
    }
   ],
   "cote": 2.14,
@@ -71517,8 +71601,8 @@
   "estime": false,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 11.4
  },
  {
   "cle": "equilibre:2026-11-25",
@@ -71546,7 +71630,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true,
+    "clv": 0.0018
    },
    {
     "id": "e6fa007f93e0cef004be920f96ee95ba",
@@ -71570,7 +71657,10 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true,
+    "clv": 0.0043
    }
   ],
   "cote": 2.06,
@@ -71578,8 +71668,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 10.6
  },
  {
   "cle": "gros:2026-11-25",
@@ -71607,7 +71697,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true,
+    "clv": -0.0287
    },
    {
     "id": "9dfe9df3ad88c453e3572872bf500488",
@@ -71630,7 +71723,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true,
+    "clv": 0.0018
    },
    {
     "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
@@ -71652,7 +71748,10 @@
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true,
+    "clv": 0.0389
    }
   ],
   "cote": 8.51,
@@ -71660,8 +71759,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 75.1
  },
  {
   "cle": "mixte:2026-11-25",
@@ -71690,7 +71789,10 @@
      "petite_cote",
      "favori_net",
      "piege"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true,
+    "clv": 0.0083
    },
    {
     "id": "e6fa007f93e0cef004be920f96ee95ba",
@@ -71708,7 +71810,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true
    },
    {
     "id": "b1af6789fe6db7aab18a2945ce56f035",
@@ -71726,7 +71830,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-0 (tirs 20-9, cadrés 9-1, possession 48-52 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.69,
@@ -71734,8 +71851,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "buts:2026-11-25",
@@ -71758,7 +71875,9 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true
    },
    {
     "id": "b1af6789fe6db7aab18a2945ce56f035",
@@ -71776,7 +71895,20 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-0 (tirs 20-9, cadrés 9-1, possession 48-52 %). 10 tirs cadrés au total, mais peu de buts.",
+     "previsible": "non",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace",
+      "malchance"
+     ],
+     "lecon": "Beaucoup d'occasions sans buts : variance normale, le pari « buts » restait bon.",
+     "source": "espn"
+    }
    },
    {
     "id": "e7e64568f6af00d395a3fdfc27de8ae3",
@@ -71794,7 +71926,19 @@
     },
     "traits": [
      "buts_plus"
-    ]
+    ],
+    "score": "2-0",
+    "ok": false,
+    "autopsie": {
+     "pourquoi": "Score 2-0 (tirs 20-13, cadrés 5-2, possession 51-49 %). match fermé : seulement 7 tirs cadrés au total.",
+     "previsible": "en partie",
+     "signal_rate": "",
+     "tags": [
+      "attaque_inefficace"
+     ],
+     "lecon": "Les matchs à enjeu ou entre équipes prudentes ont moins de buts que leurs moyennes : méfie-toi du « plus de 2,5 » quand l'une des deux joue la sécurité.",
+     "source": "espn"
+    }
    }
   ],
   "cote": 2.6,
@@ -71802,8 +71946,8 @@
   "estime": true,
   "conseille": null,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "perdu",
+  "gain": -10.0
  },
  {
   "cle": "prudent:2026-11-25",
@@ -71832,7 +71976,10 @@
      "exterieur",
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "1-4",
+    "ok": true,
+    "clv": 0.0043
    },
    {
     "id": "b1af6789fe6db7aab18a2945ce56f035",
@@ -71855,7 +72002,10 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-0",
+    "ok": true,
+    "clv": -0.0061
    }
   ],
   "cote": 1.13,
@@ -71863,8 +72013,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 1.3
  },
  {
   "cle": "systeme:2026-11-25",
@@ -71892,7 +72042,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true,
+    "clv": -0.0287
    },
    {
     "id": "9dfe9df3ad88c453e3572872bf500488",
@@ -71915,7 +72068,10 @@
     "traits": [
      "exterieur",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true,
+    "clv": 0.0018
    },
    {
     "id": "77dfddf6dea97d5ecb5e2463b29fe67e",
@@ -71937,7 +72093,10 @@
     "p_espn_tard_quand": "2026-11-25T14:58:43.037095+00:00",
     "traits": [
      "force_pour"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true,
+    "clv": 0.0389
    }
   ],
   "cote": 1.98,
@@ -71945,8 +72104,8 @@
   "estime": false,
   "conseille": false,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0
+  "statut": "gagné",
+  "gain": 31.72
  },
  {
   "cle": "prudence:99459b90f3e732106e09585bf94b36b4",
@@ -71970,7 +72129,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    }
   ],
   "cote": 1.16,
@@ -71978,8 +72139,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 1.6,
   "note": 7.9
  },
  {
@@ -72005,7 +72166,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.23,
@@ -72013,8 +72176,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.3,
   "note": 7.4
  },
  {
@@ -72040,7 +72203,9 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "0-1",
+    "ok": true
    }
   ],
   "cote": 1.33,
@@ -72048,8 +72213,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 3.3,
   "note": 7.0
  },
  {
@@ -72074,7 +72239,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "2-1",
+    "ok": true
    }
   ],
   "cote": 1.28,
@@ -72082,8 +72249,8 @@
   "estime": false,
   "conseille": true,
   "mise": 10.0,
-  "statut": "en attente",
-  "gain": 0.0,
+  "statut": "gagné",
+  "gain": 2.8,
   "note": 7.0
  },
  {
@@ -72108,7 +72275,9 @@
     "traits": [
      "petite_cote",
      "favori_net"
-    ]
+    ],
+    "score": "0-3",
+    "ok": true
    },
    {
     "id": "9dfe9df3ad88c453e3572872bf500488",
@@ -72128,11 +72297,2730 @@
      "petite_cote",
      "favori_net",
      "doute_ia"
-    ]
+    ],
+    "score": "1-3",
+    "ok": true
    }
   ],
   "cote": 1.41,
   "proba": 0.5793,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "gagné",
+  "gain": 4.1
+ },
+ {
+  "cle": "match:69b4603433d0eed91383cbee4456157b",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "69b4603433d0eed91383cbee4456157b",
+    "date": "2026-11-26T14:25:00Z",
+    "domicile": "Al-Fateh",
+    "exterieur": "Al-Riyadh",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al-Fateh",
+    "cote": 2.12,
+    "proba": 0.4216,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900874"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.422,
+      "2": 0.3244,
+      "N": 0.2536
+     },
+     "sport888": {
+      "1": 0.4133,
+      "2": 0.3174,
+      "N": 0.2693
+     },
+     "betfair_ex_eu": {
+      "1": 0.4182,
+      "2": 0.3208,
+      "N": 0.261
+     },
+     "pmu_fr": {
+      "1": 0.4244,
+      "2": 0.3118,
+      "N": 0.2638
+     },
+     "unibet_fr": {
+      "1": 0.4259,
+      "2": 0.3118,
+      "N": 0.2623
+     },
+     "onexbet": {
+      "1": 0.4214,
+      "2": 0.315,
+      "N": 0.2635
+     },
+     "winamax_fr": {
+      "1": 0.424,
+      "2": 0.318,
+      "N": 0.2581
+     },
+     "betclic_fr": {
+      "1": 0.4254,
+      "2": 0.3132,
+      "N": 0.2614
+     }
+    },
+    "p_espn_matin": 0.4203,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 2.12,
+  "proba": 0.4216,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1b5eb3275c0bdc0eb75a4446f869a309",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1b5eb3275c0bdc0eb75a4446f869a309",
+    "date": "2026-11-26T15:05:00Z",
+    "domicile": "Abha Club",
+    "exterieur": "Al-Shabab",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al-Shabab",
+    "cote": 1.76,
+    "proba": 0.5114,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900443"
+    },
+    "bk_p": {
+     "sport888": {
+      "1": 0.2448,
+      "2": 0.5035,
+      "N": 0.2517
+     },
+     "pmu_fr": {
+      "1": 0.2487,
+      "2": 0.4989,
+      "N": 0.2524
+     },
+     "unibet_fr": {
+      "1": 0.2466,
+      "2": 0.5068,
+      "N": 0.2466
+     },
+     "betfair_ex_eu": {
+      "1": 0.2321,
+      "2": 0.5212,
+      "N": 0.2467
+     },
+     "pinnacle": {
+      "1": 0.2457,
+      "2": 0.5153,
+      "N": 0.2389
+     },
+     "onexbet": {
+      "1": 0.2436,
+      "2": 0.514,
+      "N": 0.2424
+     },
+     "winamax_fr": {
+      "1": 0.255,
+      "2": 0.5071,
+      "N": 0.238
+     },
+     "betclic_fr": {
+      "1": 0.2452,
+      "2": 0.5128,
+      "N": 0.242
+     }
+    },
+    "p_espn_matin": 0.5138,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.76,
+  "proba": 0.5114,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:b11e430b1d8052d0c718bcee69145f7a",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "b11e430b1d8052d0c718bcee69145f7a",
+    "date": "2026-11-26T15:30:00Z",
+    "domicile": "FC Kairat",
+    "exterieur": "Mjällby AIF",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Kairat",
+    "cote": 2.12,
+    "proba": 0.4389,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915816"
+    },
+    "bk_p": {
+     "onexbet": {
+      "1": 0.4362,
+      "2": 0.2852,
+      "N": 0.2786
+     },
+     "unibet_fr": {
+      "1": 0.4469,
+      "2": 0.2765,
+      "N": 0.2765
+     },
+     "betclic_fr": {
+      "1": 0.4263,
+      "2": 0.3063,
+      "N": 0.2674
+     },
+     "marathonbet": {
+      "1": 0.4365,
+      "2": 0.2852,
+      "N": 0.2783
+     },
+     "betfair_ex_eu": {
+      "1": 0.446,
+      "2": 0.2789,
+      "N": 0.275
+     },
+     "netbet_fr": {
+      "1": 0.4379,
+      "2": 0.29,
+      "N": 0.2721
+     },
+     "sport888": {
+      "1": 0.4362,
+      "2": 0.2819,
+      "N": 0.2819
+     },
+     "pinnacle": {
+      "1": 0.4398,
+      "2": 0.285,
+      "N": 0.2752
+     }
+    },
+    "p_espn_matin": 0.4432,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.12,
+  "proba": 0.4389,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:d5a117bed84a37bc36e3f68a7396ec4e",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Diriyah Club",
+    "cote": 1.84,
+    "proba": 0.4952,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "1": 0.2465,
+      "2": 0.5089,
+      "N": 0.2446
+     },
+     "sport888": {
+      "1": 0.2606,
+      "2": 0.4789,
+      "N": 0.2606
+     },
+     "betfair_ex_eu": {
+      "1": 0.2337,
+      "2": 0.5113,
+      "N": 0.255
+     },
+     "pmu_fr": {
+      "1": 0.2559,
+      "2": 0.4843,
+      "N": 0.2598
+     },
+     "unibet_fr": {
+      "1": 0.2624,
+      "2": 0.4833,
+      "N": 0.2543
+     },
+     "betclic_fr": {
+      "1": 0.2598,
+      "2": 0.4899,
+      "N": 0.2504
+     },
+     "onexbet": {
+      "1": 0.2517,
+      "2": 0.4967,
+      "N": 0.2517
+     },
+     "winamax_fr": {
+      "1": 0.273,
+      "2": 0.4777,
+      "N": 0.2493
+     }
+    },
+    "p_espn_matin": 0.4955,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.84,
+  "proba": 0.4952,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:e1bfce2837ee873eec90dbefe31844ac",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "e1bfce2837ee873eec90dbefe31844ac",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "SK Brann",
+    "exterieur": "AGF Aarhus",
+    "championnat": "Conference League",
+    "pari": "Victoire SK Brann",
+    "cote": 2.08,
+    "proba": 0.4355,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915808"
+    },
+    "bk_p": {
+     "onexbet": {
+      "2": 0.308,
+      "1": 0.4402,
+      "N": 0.2517
+     },
+     "unibet_fr": {
+      "2": 0.3121,
+      "1": 0.4338,
+      "N": 0.2541
+     },
+     "betclic_fr": {
+      "2": 0.3158,
+      "1": 0.4327,
+      "N": 0.2514
+     },
+     "marathonbet": {
+      "2": 0.3079,
+      "1": 0.4407,
+      "N": 0.2513
+     },
+     "betfair_ex_eu": {
+      "2": 0.3131,
+      "1": 0.4403,
+      "N": 0.2466
+     },
+     "netbet_fr": {
+      "2": 0.3143,
+      "1": 0.4324,
+      "N": 0.2533
+     },
+     "sport888": {
+      "2": 0.3138,
+      "1": 0.4334,
+      "N": 0.2528
+     },
+     "pinnacle": {
+      "2": 0.3198,
+      "1": 0.4322,
+      "N": 0.2479
+     }
+    },
+    "p_espn_matin": 0.4423,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 2.08,
+  "proba": 0.4355,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:c587e5656d1f38f068cba1b168462ba4",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "c587e5656d1f38f068cba1b168462ba4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Hearts",
+    "exterieur": "AS Monaco",
+    "championnat": "Conference League",
+    "pari": "Victoire AS Monaco",
+    "cote": 1.48,
+    "proba": 0.611,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915811"
+    },
+    "bk_p": {
+     "pinnacle": {
+      "2": 0.6115,
+      "1": 0.1707,
+      "N": 0.2178
+     },
+     "unibet_fr": {
+      "2": 0.6029,
+      "1": 0.1809,
+      "N": 0.2162
+     },
+     "onexbet": {
+      "2": 0.618,
+      "1": 0.1715,
+      "N": 0.2105
+     },
+     "betclic_fr": {
+      "2": 0.6088,
+      "1": 0.1767,
+      "N": 0.2145
+     },
+     "marathonbet": {
+      "2": 0.6176,
+      "1": 0.1716,
+      "N": 0.2108
+     },
+     "betfair_ex_eu": {
+      "2": 0.6242,
+      "1": 0.1601,
+      "N": 0.2157
+     },
+     "netbet_fr": {
+      "2": 0.6029,
+      "1": 0.1809,
+      "N": 0.2162
+     },
+     "sport888": {
+      "2": 0.5922,
+      "1": 0.1812,
+      "N": 0.2265
+     }
+    },
+    "p_espn_matin": 0.6163,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.48,
+  "proba": 0.611,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:8a0dc963ce319d55751d4d07c5152600",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "8a0dc963ce319d55751d4d07c5152600",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Ajax",
+    "exterieur": "FC Thun",
+    "championnat": "Conference League",
+    "pari": "Victoire Ajax",
+    "cote": 1.13,
+    "proba": 0.8141,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915815"
+    },
+    "bk_p": {
+     "netbet_fr": {
+      "1": 0.8017,
+      "2": 0.0767,
+      "N": 0.1216
+     },
+     "unibet_fr": {
+      "1": 0.8065,
+      "2": 0.0784,
+      "N": 0.1151
+     },
+     "onexbet": {
+      "1": 0.8319,
+      "2": 0.0585,
+      "N": 0.1097
+     },
+     "marathonbet": {
+      "1": 0.8117,
+      "2": 0.0655,
+      "N": 0.1228
+     },
+     "betclic_fr": {
+      "1": 0.7945,
+      "2": 0.0816,
+      "N": 0.1238
+     },
+     "betfair_ex_eu": {
+      "1": 0.8276,
+      "2": 0.0621,
+      "N": 0.1103
+     },
+     "sport888": {
+      "1": 0.813,
+      "2": 0.0623,
+      "N": 0.1247
+     },
+     "pinnacle": {
+      "1": 0.8152,
+      "2": 0.0741,
+      "N": 0.1107
+     }
+    },
+    "p_espn_matin": 0.8141,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.13,
+  "proba": 0.8141,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:bbab118a8c6ca33b6b0e7b5ed36fecd8",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "bbab118a8c6ca33b6b0e7b5ed36fecd8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Universitatea Craiova",
+    "championnat": "Conference League",
+    "pari": "Victoire Brighton and Hove Albion",
+    "cote": 1.1,
+    "proba": 0.8498,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915814"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "1": 0.8141,
+      "2": 0.0592,
+      "N": 0.1268
+     },
+     "onexbet": {
+      "1": 0.8666,
+      "2": 0.0418,
+      "N": 0.0916
+     },
+     "marathonbet": {
+      "1": 0.8459,
+      "2": 0.0471,
+      "N": 0.107
+     },
+     "betclic_fr": {
+      "1": 0.822,
+      "2": 0.0574,
+      "N": 0.1206
+     },
+     "sport888": {
+      "1": 0.8462,
+      "2": 0.0494,
+      "N": 0.1044
+     },
+     "betfair_ex_eu": {
+      "1": 0.8725,
+      "2": 0.0379,
+      "N": 0.0896
+     },
+     "pinnacle": {
+      "1": 0.8588,
+      "2": 0.0477,
+      "N": 0.0935
+     },
+     "netbet_fr": {
+      "1": 0.8435,
+      "2": 0.0492,
+      "N": 0.1073
+     }
+    },
+    "p_espn_matin": 0.855,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.1,
+  "proba": 0.8498,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cbe7d454dbea3c32de84901cced19bd4",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cbe7d454dbea3c32de84901cced19bd4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FC Iberia 1999",
+    "exterieur": "Getafe",
+    "championnat": "Conference League",
+    "pari": "Victoire Getafe",
+    "cote": 1.39,
+    "proba": 0.6535,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915813"
+    },
+    "bk_p": {
+     "onexbet": {
+      "1": 0.1289,
+      "2": 0.6551,
+      "N": 0.2159
+     },
+     "unibet_fr": {
+      "1": 0.1363,
+      "2": 0.6421,
+      "N": 0.2215
+     },
+     "betclic_fr": {
+      "1": 0.1333,
+      "2": 0.6473,
+      "N": 0.2194
+     },
+     "marathonbet": {
+      "1": 0.1291,
+      "2": 0.6547,
+      "N": 0.2162
+     },
+     "betfair_ex_eu": {
+      "1": 0.1207,
+      "2": 0.6732,
+      "N": 0.2062
+     },
+     "netbet_fr": {
+      "1": 0.1357,
+      "2": 0.6438,
+      "N": 0.2205
+     },
+     "sport888": {
+      "1": 0.1401,
+      "2": 0.6323,
+      "N": 0.2276
+     },
+     "pinnacle": {
+      "1": 0.1296,
+      "2": 0.659,
+      "N": 0.2114
+     }
+    },
+    "p_espn_matin": 0.6591,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.39,
+  "proba": 0.6535,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:4f5b1a808bafc37b7c0041e947c2e536",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "4f5b1a808bafc37b7c0041e947c2e536",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Jablonec",
+    "exterieur": "FC Lugano",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Lugano",
+    "cote": 2.05,
+    "proba": 0.443,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915812"
+    },
+    "bk_p": {
+     "onexbet": {
+      "2": 0.4425,
+      "1": 0.2932,
+      "N": 0.2643
+     },
+     "unibet_fr": {
+      "2": 0.446,
+      "1": 0.2943,
+      "N": 0.2597
+     },
+     "betclic_fr": {
+      "2": 0.4395,
+      "1": 0.2954,
+      "N": 0.265
+     },
+     "marathonbet": {
+      "2": 0.4431,
+      "1": 0.2926,
+      "N": 0.2643
+     },
+     "betfair_ex_eu": {
+      "2": 0.447,
+      "1": 0.2919,
+      "N": 0.2611
+     },
+     "netbet_fr": {
+      "2": 0.4418,
+      "1": 0.2945,
+      "N": 0.2637
+     },
+     "sport888": {
+      "2": 0.4357,
+      "1": 0.2952,
+      "N": 0.2691
+     },
+     "pinnacle": {
+      "2": 0.4442,
+      "1": 0.2943,
+      "N": 0.2614
+     }
+    },
+    "p_espn_matin": 0.4423,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.05,
+  "proba": 0.443,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:48a49061ae356d2a8b3b3976ec21508d",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "48a49061ae356d2a8b3b3976ec21508d",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Pafos FC",
+    "exterieur": "FC Midtjylland",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Midtjylland",
+    "cote": 2.12,
+    "proba": 0.4191,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915809"
+    },
+    "bk_p": {
+     "onexbet": {
+      "2": 0.4227,
+      "1": 0.3119,
+      "N": 0.2655
+     },
+     "unibet_fr": {
+      "2": 0.4338,
+      "1": 0.3121,
+      "N": 0.2541
+     },
+     "betclic_fr": {
+      "2": 0.4289,
+      "1": 0.3138,
+      "N": 0.2573
+     },
+     "marathonbet": {
+      "2": 0.4225,
+      "1": 0.3119,
+      "N": 0.2656
+     },
+     "betfair_ex_eu": {
+      "2": 0.4177,
+      "1": 0.3207,
+      "N": 0.2616
+     },
+     "netbet_fr": {
+      "2": 0.416,
+      "1": 0.3207,
+      "N": 0.2633
+     },
+     "sport888": {
+      "2": 0.4123,
+      "1": 0.3128,
+      "N": 0.2749
+     },
+     "pinnacle": {
+      "2": 0.4117,
+      "1": 0.3219,
+      "N": 0.2664
+     }
+    },
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.12,
+  "proba": 0.4191,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:679c499344805de09a59a2a2535cd0c8",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "679c499344805de09a59a2a2535cd0c8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Kauno Žalgiris",
+    "exterieur": "Riga FC",
+    "championnat": "Conference League",
+    "pari": "Victoire Riga FC",
+    "cote": 2.02,
+    "proba": 0.4486,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915739"
+    },
+    "bk_p": {
+     "onexbet": {
+      "1": 0.2646,
+      "2": 0.4513,
+      "N": 0.2841
+     },
+     "unibet_fr": {
+      "1": 0.2753,
+      "2": 0.4405,
+      "N": 0.2842
+     },
+     "betclic_fr": {
+      "1": 0.2721,
+      "2": 0.4473,
+      "N": 0.2806
+     },
+     "marathonbet": {
+      "1": 0.2644,
+      "2": 0.4518,
+      "N": 0.2838
+     },
+     "betfair_ex_eu": {
+      "1": 0.2701,
+      "2": 0.4522,
+      "N": 0.2777
+     },
+     "netbet_fr": {
+      "1": 0.2686,
+      "2": 0.45,
+      "N": 0.2814
+     },
+     "sport888": {
+      "1": 0.2691,
+      "2": 0.4357,
+      "N": 0.2952
+     },
+     "pinnacle": {
+      "1": 0.2598,
+      "2": 0.4523,
+      "N": 0.2879
+     }
+    },
+    "p_espn_matin": 0.4451,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 2.02,
+  "proba": 0.4486,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:cb6689f811b7ce08379eef028e2254a4",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "cb6689f811b7ce08379eef028e2254a4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "KF Egnatia",
+    "exterieur": "Lincoln Red Imps FC",
+    "championnat": "Conference League",
+    "pari": "Victoire KF Egnatia",
+    "cote": 1.5,
+    "proba": 0.5963,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915810"
+    },
+    "bk_p": {
+     "onexbet": {
+      "1": 0.596,
+      "2": 0.1825,
+      "N": 0.2215
+     },
+     "unibet_fr": {
+      "1": 0.5942,
+      "2": 0.1845,
+      "N": 0.2213
+     },
+     "betclic_fr": {
+      "1": 0.6008,
+      "2": 0.1821,
+      "N": 0.2172
+     },
+     "marathonbet": {
+      "1": 0.5962,
+      "2": 0.1824,
+      "N": 0.2214
+     },
+     "betfair_ex_eu": {
+      "1": 0.6049,
+      "2": 0.1761,
+      "N": 0.2191
+     },
+     "netbet_fr": {
+      "1": 0.6029,
+      "2": 0.1809,
+      "N": 0.2162
+     },
+     "sport888": {
+      "1": 0.5815,
+      "2": 0.1902,
+      "N": 0.2283
+     },
+     "pinnacle": {
+      "1": 0.5932,
+      "2": 0.1969,
+      "N": 0.2099
+     }
+    },
+    "p_espn_matin": 0.5959,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 1.5,
+  "proba": 0.5963,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1f0d932ff8b08ed2c3b775e60d92bb4e",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1f0d932ff8b08ed2c3b775e60d92bb4e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "FK Borac Banja Luka",
+    "exterieur": "Atalanta BC",
+    "championnat": "Conference League",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.34,
+    "proba": 0.6669,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915806"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.6662,
+      "1": 0.1453,
+      "N": 0.1885
+     },
+     "onexbet": {
+      "2": 0.6709,
+      "1": 0.1382,
+      "N": 0.1909
+     },
+     "marathonbet": {
+      "2": 0.6693,
+      "1": 0.1389,
+      "N": 0.1918
+     },
+     "betclic_fr": {
+      "2": 0.6602,
+      "1": 0.1475,
+      "N": 0.1923
+     },
+     "betfair_ex_eu": {
+      "2": 0.6814,
+      "1": 0.1344,
+      "N": 0.1842
+     },
+     "sport888": {
+      "2": 0.6503,
+      "1": 0.1517,
+      "N": 0.1979
+     },
+     "pinnacle": {
+      "2": 0.6667,
+      "1": 0.1445,
+      "N": 0.1888
+     },
+     "netbet_fr": {
+      "2": 0.6618,
+      "1": 0.1454,
+      "N": 0.1928
+     }
+    },
+    "p_espn_matin": 0.6632,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.34,
+  "proba": 0.6669,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:4f10f55b47b83f7f4f2a8cd745a9e67f",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "4f10f55b47b83f7f4f2a8cd745a9e67f",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Inter Club d'Escaldes",
+    "exterieur": "FC Copenhagen",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Copenhagen",
+    "cote": 1.18,
+    "proba": 0.7614,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915738"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.764,
+      "1": 0.0806,
+      "N": 0.1555
+     },
+     "onexbet": {
+      "2": 0.7768,
+      "1": 0.0688,
+      "N": 0.1544
+     },
+     "marathonbet": {
+      "2": 0.7624,
+      "1": 0.073,
+      "N": 0.1646
+     },
+     "betclic_fr": {
+      "2": 0.7504,
+      "1": 0.0886,
+      "N": 0.161
+     },
+     "sport888": {
+      "2": 0.7556,
+      "1": 0.0768,
+      "N": 0.1676
+     },
+     "betfair_ex_eu": {
+      "2": 0.7793,
+      "1": 0.0707,
+      "N": 0.15
+     },
+     "pinnacle": {
+      "2": 0.7513,
+      "1": 0.0858,
+      "N": 0.1629
+     },
+     "netbet_fr": {
+      "2": 0.7558,
+      "1": 0.0804,
+      "N": 0.1638
+     }
+    },
+    "p_espn_matin": 0.7556,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.18,
+  "proba": 0.7614,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:92db66d09fdcf10ff8561cb7ec09732e",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "92db66d09fdcf10ff8561cb7ec09732e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "FC Nordsjaelland",
+    "exterieur": "Panathinaikos FC",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Nordsjaelland",
+    "cote": 2.4,
+    "proba": 0.3682,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915807"
+    },
+    "bk_p": {
+     "marathonbet": {
+      "1": 0.3591,
+      "2": 0.369,
+      "N": 0.2719
+     },
+     "betclic_fr": {
+      "1": 0.3712,
+      "2": 0.3651,
+      "N": 0.2637
+     },
+     "onexbet": {
+      "1": 0.3589,
+      "2": 0.3684,
+      "N": 0.2727
+     },
+     "unibet_fr": {
+      "1": 0.3667,
+      "2": 0.3667,
+      "N": 0.2667
+     },
+     "betfair_ex_eu": {
+      "1": 0.3745,
+      "2": 0.3582,
+      "N": 0.2672
+     },
+     "sport888": {
+      "1": 0.3626,
+      "2": 0.3626,
+      "N": 0.2747
+     },
+     "pinnacle": {
+      "1": 0.3736,
+      "2": 0.3582,
+      "N": 0.2682
+     },
+     "netbet_fr": {
+      "1": 0.3678,
+      "2": 0.3647,
+      "N": 0.2675
+     }
+    },
+    "p_espn_matin": 0.3673,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 2.4,
+  "proba": 0.3682,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:dd5f6def5ea1aa9e0a0f45e3605ac64e",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "dd5f6def5ea1aa9e0a0f45e3605ac64e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "FC Twente Enschede",
+    "championnat": "Conference League",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.86,
+    "proba": 0.4795,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915801"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.2853,
+      "1": 0.4756,
+      "N": 0.2391
+     },
+     "marathonbet": {
+      "2": 0.2778,
+      "1": 0.4773,
+      "N": 0.2449
+     },
+     "onexbet": {
+      "2": 0.2779,
+      "1": 0.4774,
+      "N": 0.2447
+     },
+     "betclic_fr": {
+      "2": 0.2853,
+      "1": 0.4756,
+      "N": 0.2391
+     },
+     "betfair_ex_eu": {
+      "2": 0.2662,
+      "1": 0.4876,
+      "N": 0.2462
+     },
+     "sport888": {
+      "2": 0.2771,
+      "1": 0.4689,
+      "N": 0.254
+     },
+     "pinnacle": {
+      "2": 0.274,
+      "1": 0.4844,
+      "N": 0.2416
+     },
+     "netbet_fr": {
+      "2": 0.2804,
+      "1": 0.4775,
+      "N": 0.242
+     }
+    },
+    "p_espn_matin": 0.4774,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 1.86,
+  "proba": 0.4795,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:3c6175802b9110c0abdb30f491965093",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "3c6175802b9110c0abdb30f491965093",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Gent",
+    "exterieur": "Red Star Belgrade",
+    "championnat": "Conference League",
+    "pari": "Victoire Gent",
+    "cote": 2.03,
+    "proba": 0.4394,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915804"
+    },
+    "bk_p": {
+     "betclic_fr": {
+      "1": 0.4353,
+      "2": 0.2945,
+      "N": 0.2702
+     },
+     "marathonbet": {
+      "1": 0.4448,
+      "2": 0.2817,
+      "N": 0.2734
+     },
+     "onexbet": {
+      "1": 0.4443,
+      "2": 0.2819,
+      "N": 0.2739
+     },
+     "unibet_fr": {
+      "1": 0.44,
+      "2": 0.2933,
+      "N": 0.2667
+     },
+     "betfair_ex_eu": {
+      "1": 0.4406,
+      "2": 0.2877,
+      "N": 0.2717
+     },
+     "sport888": {
+      "1": 0.4343,
+      "2": 0.285,
+      "N": 0.2806
+     },
+     "pinnacle": {
+      "1": 0.4385,
+      "2": 0.291,
+      "N": 0.2705
+     },
+     "netbet_fr": {
+      "1": 0.4379,
+      "2": 0.29,
+      "N": 0.2721
+     }
+    },
+    "p_espn_matin": 0.443,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 2.03,
+  "proba": 0.4394,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:9f2cd85ad777bea9550b987dc409b280",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "9f2cd85ad777bea9550b987dc409b280",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Hajduk Split",
+    "exterieur": "Sint Truiden",
+    "championnat": "Conference League",
+    "pari": "Victoire Hajduk Split",
+    "cote": 2.0,
+    "proba": 0.4442,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915805"
+    },
+    "bk_p": {
+     "marathonbet": {
+      "1": 0.4346,
+      "2": 0.2981,
+      "N": 0.2673
+     },
+     "betclic_fr": {
+      "1": 0.4431,
+      "2": 0.2924,
+      "N": 0.2645
+     },
+     "onexbet": {
+      "1": 0.4344,
+      "2": 0.2977,
+      "N": 0.2679
+     },
+     "unibet_fr": {
+      "1": 0.446,
+      "2": 0.2943,
+      "N": 0.2597
+     },
+     "betfair_ex_eu": {
+      "1": 0.4564,
+      "2": 0.2884,
+      "N": 0.2551
+     },
+     "sport888": {
+      "1": 0.4357,
+      "2": 0.2952,
+      "N": 0.2691
+     },
+     "pinnacle": {
+      "1": 0.448,
+      "2": 0.2914,
+      "N": 0.2605
+     },
+     "netbet_fr": {
+      "1": 0.4435,
+      "2": 0.2957,
+      "N": 0.2609
+     }
+    },
+    "p_espn_matin": 0.4443,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 2.0,
+  "proba": 0.4442,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:1abbe02767589722b5de92e94e96429d",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "1abbe02767589722b5de92e94e96429d",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Braga",
+    "exterieur": "KuPS Kuopio",
+    "championnat": "Conference League",
+    "pari": "Victoire SC Braga",
+    "cote": 1.09,
+    "proba": 0.8384,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915802"
+    },
+    "bk_p": {
+     "unibet_fr": {
+      "2": 0.0589,
+      "1": 0.8111,
+      "N": 0.13
+     },
+     "onexbet": {
+      "2": 0.0356,
+      "1": 0.8667,
+      "N": 0.0977
+     },
+     "marathonbet": {
+      "2": 0.0404,
+      "1": 0.8449,
+      "N": 0.1147
+     },
+     "betclic_fr": {
+      "2": 0.0589,
+      "1": 0.8103,
+      "N": 0.1308
+     },
+     "sport888": {
+      "2": 0.0444,
+      "1": 0.8392,
+      "N": 0.1164
+     },
+     "pinnacle": {
+      "2": 0.0528,
+      "1": 0.8377,
+      "N": 0.1095
+     },
+     "betfair_ex_eu": {
+      "2": 0.0411,
+      "1": 0.8582,
+      "N": 0.1007
+     },
+     "netbet_fr": {
+      "2": 0.052,
+      "1": 0.8261,
+      "N": 0.1219
+     }
+    },
+    "p_espn_matin": 0.84,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.09,
+  "proba": 0.8384,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "match:491426b0dae5aecf2b92525815131cb2",
+  "jour": "2026-11-26",
+  "cat": "match",
+  "jambes": [
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "championnat": "Conference League",
+    "pari": "Victoire Trabzonspor",
+    "cote": 1.7,
+    "proba": 0.5357,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915803"
+    },
+    "bk_p": {
+     "marathonbet": {
+      "1": 0.2216,
+      "2": 0.541,
+      "N": 0.2374
+     },
+     "betclic_fr": {
+      "1": 0.2387,
+      "2": 0.5194,
+      "N": 0.2419
+     },
+     "onexbet": {
+      "1": 0.2212,
+      "2": 0.5418,
+      "N": 0.237
+     },
+     "unibet_fr": {
+      "1": 0.2323,
+      "2": 0.5224,
+      "N": 0.2452
+     },
+     "betfair_ex_eu": {
+      "1": 0.2233,
+      "2": 0.537,
+      "N": 0.2397
+     },
+     "sport888": {
+      "1": 0.229,
+      "2": 0.5234,
+      "N": 0.2476
+     },
+     "pinnacle": {
+      "1": 0.2154,
+      "2": 0.5466,
+      "N": 0.238
+     },
+     "netbet_fr": {
+      "1": 0.2212,
+      "2": 0.5363,
+      "N": 0.2424
+     }
+    },
+    "p_espn_matin": 0.5366,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 1.7,
+  "proba": 0.5357,
+  "estime": false,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "1f0d932ff8b08ed2c3b775e60d92bb4e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "FK Borac Banja Luka",
+    "exterieur": "Atalanta BC",
+    "championnat": "Conference League",
+    "pari": "Victoire Atalanta BC",
+    "cote": 1.34,
+    "proba": 0.6669,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915806"
+    },
+    "p_espn_matin": 0.6632,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "cbe7d454dbea3c32de84901cced19bd4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FC Iberia 1999",
+    "exterieur": "Getafe",
+    "championnat": "Conference League",
+    "pari": "Victoire Getafe",
+    "cote": 1.39,
+    "proba": 0.6535,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915813"
+    },
+    "p_espn_matin": 0.6591,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "8a0dc963ce319d55751d4d07c5152600",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Ajax",
+    "exterieur": "FC Thun",
+    "championnat": "Conference League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7296,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915815"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "bbab118a8c6ca33b6b0e7b5ed36fecd8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Universitatea Craiova",
+    "championnat": "Conference League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.6988,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915814"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "1abbe02767589722b5de92e94e96429d",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Braga",
+    "exterieur": "KuPS Kuopio",
+    "championnat": "Conference League",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5759,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915802"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 8.21,
+  "proba": 0.128,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte_gros:2026-11-26:2",
+  "jour": "2026-11-26",
+  "cat": "mixte_gros",
+  "jambes": [
+   {
+    "id": "c587e5656d1f38f068cba1b168462ba4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Hearts",
+    "exterieur": "AS Monaco",
+    "championnat": "Conference League",
+    "pari": "Victoire AS Monaco",
+    "cote": 1.48,
+    "proba": 0.611,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915811"
+    },
+    "p_espn_matin": 0.6163,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "championnat": "Conference League",
+    "pari": "Victoire Trabzonspor",
+    "cote": 1.7,
+    "proba": 0.5357,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915803"
+    },
+    "p_espn_matin": 0.5366,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "4f10f55b47b83f7f4f2a8cd745a9e67f",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Inter Club d'Escaldes",
+    "exterieur": "FC Copenhagen",
+    "championnat": "Conference League",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5663,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915738"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   },
+   {
+    "id": "cb6689f811b7ce08379eef028e2254a4",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "KF Egnatia",
+    "exterieur": "Lincoln Red Imps FC",
+    "championnat": "Conference League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.5648,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915810"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   }
+  ],
+  "cote": 10.03,
+  "proba": 0.1047,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "equilibre:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "equilibre",
+  "jambes": [
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Diriyah Club",
+    "cote": 1.84,
+    "proba": 0.4952,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "p_espn_matin": 0.4955,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "championnat": "Conference League",
+    "pari": "Victoire Trabzonspor",
+    "cote": 1.7,
+    "proba": 0.5357,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915803"
+    },
+    "p_espn_matin": 0.5366,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 3.13,
+  "proba": 0.2653,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "b11e430b1d8052d0c718bcee69145f7a",
+    "date": "2026-11-26T15:30:00Z",
+    "domicile": "FC Kairat",
+    "exterieur": "Mjällby AIF",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Kairat",
+    "cote": 2.12,
+    "proba": 0.4389,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915816"
+    },
+    "p_espn_matin": 0.4432,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "9f2cd85ad777bea9550b987dc409b280",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Hajduk Split",
+    "exterieur": "Sint Truiden",
+    "championnat": "Conference League",
+    "pari": "Victoire Hajduk Split",
+    "cote": 2.0,
+    "proba": 0.4442,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915805"
+    },
+    "p_espn_matin": 0.4443,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "dd5f6def5ea1aa9e0a0f45e3605ac64e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "FC Twente Enschede",
+    "championnat": "Conference League",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.86,
+    "proba": 0.4795,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915801"
+    },
+    "p_espn_matin": 0.4774,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 7.89,
+  "proba": 0.0935,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-26:2",
+  "jour": "2026-11-26",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "e1bfce2837ee873eec90dbefe31844ac",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "SK Brann",
+    "exterieur": "AGF Aarhus",
+    "championnat": "Conference League",
+    "pari": "Victoire SK Brann",
+    "cote": 2.08,
+    "proba": 0.4355,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915808"
+    },
+    "p_espn_matin": 0.4423,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   },
+   {
+    "id": "3c6175802b9110c0abdb30f491965093",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Gent",
+    "exterieur": "Red Star Belgrade",
+    "championnat": "Conference League",
+    "pari": "Victoire Gent",
+    "cote": 2.03,
+    "proba": 0.4394,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915804"
+    },
+    "p_espn_matin": 0.443,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   },
+   {
+    "id": "679c499344805de09a59a2a2535cd0c8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Kauno Žalgiris",
+    "exterieur": "Riga FC",
+    "championnat": "Conference League",
+    "pari": "Victoire Riga FC",
+    "cote": 2.02,
+    "proba": 0.4486,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915739"
+    },
+    "p_espn_matin": 0.4451,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 8.53,
+  "proba": 0.0859,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "gros:2026-11-26:3",
+  "jour": "2026-11-26",
+  "cat": "gros",
+  "jambes": [
+   {
+    "id": "69b4603433d0eed91383cbee4456157b",
+    "date": "2026-11-26T14:25:00Z",
+    "domicile": "Al-Fateh",
+    "exterieur": "Al-Riyadh",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Al-Fateh",
+    "cote": 2.12,
+    "proba": 0.4216,
+    "court": "1",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900874"
+    },
+    "p_espn_matin": 0.4203,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   },
+   {
+    "id": "4f5b1a808bafc37b7c0041e947c2e536",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Jablonec",
+    "exterieur": "FC Lugano",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Lugano",
+    "cote": 2.05,
+    "proba": 0.443,
+    "court": "2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915812"
+    },
+    "p_espn_matin": 0.4423,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   },
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Victoire Diriyah Club",
+    "cote": 1.84,
+    "proba": 0.4952,
+    "court": "2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "p_espn_matin": 0.4955,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "exterieur"
+    ]
+   }
+  ],
+  "cote": 8.0,
+  "proba": 0.0925,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "mixte:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "mixte",
+  "jambes": [
+   {
+    "id": "bbab118a8c6ca33b6b0e7b5ed36fecd8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Universitatea Craiova",
+    "championnat": "Conference League",
+    "pari": "Victoire Brighton and Hove Albion",
+    "cote": 1.1,
+    "proba": 0.8498,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915814"
+    },
+    "p_espn_matin": 0.855,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "8a0dc963ce319d55751d4d07c5152600",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Ajax",
+    "exterieur": "FC Thun",
+    "championnat": "Conference League",
+    "pari": "Plus de 2,5 buts",
+    "cote": null,
+    "proba": 0.7296,
+    "marche": "plus25",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915815"
+    },
+    "traits": [
+     "buts_plus"
+    ]
+   },
+   {
+    "id": "1abbe02767589722b5de92e94e96429d",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Braga",
+    "exterieur": "KuPS Kuopio",
+    "championnat": "Conference League",
+    "pari": "Les 2 ne marquent pas",
+    "cote": null,
+    "proba": 0.5759,
+    "marche": "pas_btts",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915802"
+    },
+    "traits": [
+     "buts_moins"
+    ]
+   }
+  ],
+  "cote": 2.94,
+  "proba": 0.3571,
+  "estime": true,
+  "conseille": null,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudent:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "prudent",
+  "jambes": [
+   {
+    "id": "bbab118a8c6ca33b6b0e7b5ed36fecd8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "Brighton and Hove Albion",
+    "exterieur": "Universitatea Craiova",
+    "championnat": "Conference League",
+    "pari": "Victoire Brighton and Hove Albion",
+    "cote": 1.1,
+    "proba": 0.8498,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915814"
+    },
+    "p_espn_matin": 0.855,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "1abbe02767589722b5de92e94e96429d",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Braga",
+    "exterieur": "KuPS Kuopio",
+    "championnat": "Conference League",
+    "pari": "Victoire SC Braga",
+    "cote": 1.09,
+    "proba": 0.8384,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915802"
+    },
+    "p_espn_matin": 0.84,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.2,
+  "proba": 0.7124,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "systeme:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "systeme",
+  "jambes": [
+   {
+    "id": "b11e430b1d8052d0c718bcee69145f7a",
+    "date": "2026-11-26T15:30:00Z",
+    "domicile": "FC Kairat",
+    "exterieur": "Mjällby AIF",
+    "championnat": "Conference League",
+    "pari": "Victoire FC Kairat",
+    "cote": 2.12,
+    "proba": 0.4389,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915816"
+    },
+    "p_espn_matin": 0.4432,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "9f2cd85ad777bea9550b987dc409b280",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Hajduk Split",
+    "exterieur": "Sint Truiden",
+    "championnat": "Conference League",
+    "pari": "Victoire Hajduk Split",
+    "cote": 2.0,
+    "proba": 0.4442,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915805"
+    },
+    "p_espn_matin": 0.4443,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": [
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "dd5f6def5ea1aa9e0a0f45e3605ac64e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "FC Twente Enschede",
+    "championnat": "Conference League",
+    "pari": "Victoire SC Freiburg",
+    "cote": 1.86,
+    "proba": 0.4795,
+    "court": "1",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915801"
+    },
+    "p_espn_matin": 0.4774,
+    "p_espn_matin_quand": "2026-11-26T05:56:12.406754+00:00",
+    "traits": []
+   }
+  ],
+  "cote": 1.89,
+  "proba": 0.4315,
+  "estime": false,
+  "conseille": false,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence:491426b0dae5aecf2b92525815131cb2",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "championnat": "Conference League",
+    "pari": "Nul ou Trabzonspor",
+    "cote": 1.16,
+    "proba": 0.7763,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915803"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.16,
+  "proba": 0.7763,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.8
+ },
+ {
+  "cle": "prudence:1b5eb3275c0bdc0eb75a4446f869a309",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "1b5eb3275c0bdc0eb75a4446f869a309",
+    "date": "2026-11-26T15:05:00Z",
+    "domicile": "Abha Club",
+    "exterieur": "Al-Shabab",
+    "championnat": "Saudi Pro League",
+    "pari": "Nul ou Al-Shabab",
+    "cote": 1.2,
+    "proba": 0.7555,
+    "court": "N2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900443"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.2,
+  "proba": 0.7555,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.6
+ },
+ {
+  "cle": "prudence:d5a117bed84a37bc36e3f68a7396ec4e",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Nul ou Diriyah Club",
+    "cote": 1.22,
+    "proba": 0.7472,
+    "court": "N2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.22,
+  "proba": 0.7472,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.5
+ },
+ {
+  "cle": "prudence:679c499344805de09a59a2a2535cd0c8",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "679c499344805de09a59a2a2535cd0c8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Kauno Žalgiris",
+    "exterieur": "Riga FC",
+    "championnat": "Conference League",
+    "pari": "Nul ou Riga FC",
+    "cote": 1.24,
+    "proba": 0.7331,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915739"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7331,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.3
+ },
+ {
+  "cle": "prudence:dd5f6def5ea1aa9e0a0f45e3605ac64e",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "dd5f6def5ea1aa9e0a0f45e3605ac64e",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "SC Freiburg",
+    "exterieur": "FC Twente Enschede",
+    "championnat": "Conference League",
+    "pari": "Nul ou SC Freiburg",
+    "cote": 1.24,
+    "proba": 0.7233,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915801"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.24,
+  "proba": 0.7233,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.2
+ },
+ {
+  "cle": "prudence:b11e430b1d8052d0c718bcee69145f7a",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "b11e430b1d8052d0c718bcee69145f7a",
+    "date": "2026-11-26T15:30:00Z",
+    "domicile": "FC Kairat",
+    "exterieur": "Mjällby AIF",
+    "championnat": "Conference League",
+    "pari": "Nul ou FC Kairat",
+    "cote": 1.3,
+    "proba": 0.7145,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915816"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.3,
+  "proba": 0.7145,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.1
+ },
+ {
+  "cle": "prudence:4f5b1a808bafc37b7c0041e947c2e536",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "4f5b1a808bafc37b7c0041e947c2e536",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Jablonec",
+    "exterieur": "FC Lugano",
+    "championnat": "Conference League",
+    "pari": "Nul ou FC Lugano",
+    "cote": 1.28,
+    "proba": 0.7061,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915812"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.28,
+  "proba": 0.7061,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.1
+ },
+ {
+  "cle": "prudence:3c6175802b9110c0abdb30f491965093",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "3c6175802b9110c0abdb30f491965093",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Gent",
+    "exterieur": "Red Star Belgrade",
+    "championnat": "Conference League",
+    "pari": "Nul ou Gent",
+    "cote": 1.25,
+    "proba": 0.7115,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915804"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.25,
+  "proba": 0.7115,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.1
+ },
+ {
+  "cle": "prudence:9f2cd85ad777bea9550b987dc409b280",
+  "jour": "2026-11-26",
+  "cat": "prudence",
+  "jambes": [
+   {
+    "id": "9f2cd85ad777bea9550b987dc409b280",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "Hajduk Split",
+    "exterieur": "Sint Truiden",
+    "championnat": "Conference League",
+    "pari": "Nul ou Hajduk Split",
+    "cote": 1.26,
+    "proba": 0.7066,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915805"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   }
+  ],
+  "cote": 1.26,
+  "proba": 0.7066,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0,
+  "note": 7.1
+ },
+ {
+  "cle": "prudence_combi:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "prudence_combi",
+  "jambes": [
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "championnat": "Conference League",
+    "pari": "Nul ou Trabzonspor",
+    "cote": 1.16,
+    "proba": 0.7763,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915803"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Nul ou Diriyah Club",
+    "cote": 1.22,
+    "proba": 0.7472,
+    "court": "N2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 1.41,
+  "proba": 0.5801,
+  "estime": false,
+  "conseille": true,
+  "mise": 10.0,
+  "statut": "en attente",
+  "gain": 0.0
+ },
+ {
+  "cle": "prudence_gros:2026-11-26",
+  "jour": "2026-11-26",
+  "cat": "prudence_gros",
+  "jambes": [
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "championnat": "Saudi Pro League",
+    "pari": "Nul ou Diriyah Club",
+    "cote": 1.22,
+    "proba": 0.7472,
+    "court": "N2",
+    "espn": {
+     "ligue": "ksa.1",
+     "id": "401900871"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "679c499344805de09a59a2a2535cd0c8",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Kauno Žalgiris",
+    "exterieur": "Riga FC",
+    "championnat": "Conference League",
+    "pari": "Nul ou Riga FC",
+    "cote": 1.24,
+    "proba": 0.7331,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915739"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   },
+   {
+    "id": "b11e430b1d8052d0c718bcee69145f7a",
+    "date": "2026-11-26T15:30:00Z",
+    "domicile": "FC Kairat",
+    "exterieur": "Mjällby AIF",
+    "championnat": "Conference League",
+    "pari": "Nul ou FC Kairat",
+    "cote": 1.3,
+    "proba": 0.7145,
+    "court": "1N",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915816"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net",
+     "doute_ia"
+    ]
+   },
+   {
+    "id": "4f5b1a808bafc37b7c0041e947c2e536",
+    "date": "2026-11-26T17:45:00Z",
+    "domicile": "FK Jablonec",
+    "exterieur": "FC Lugano",
+    "championnat": "Conference League",
+    "pari": "Nul ou FC Lugano",
+    "cote": 1.28,
+    "proba": 0.7061,
+    "court": "N2",
+    "espn": {
+     "ligue": "uefa.europa.conf",
+     "id": "401915812"
+    },
+    "traits": [
+     "petite_cote",
+     "favori_net"
+    ]
+   }
+  ],
+  "cote": 2.52,
+  "proba": 0.2764,
   "estime": false,
   "conseille": true,
   "mise": 10.0,

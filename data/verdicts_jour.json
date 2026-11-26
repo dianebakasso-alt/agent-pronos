@@ -1,60 +1,55 @@
 {
- "jour": "2026-11-25",
+ "jour": "2026-11-26",
  "v": {
-  "e6fa007f93e0cef004be920f96ee95ba": {
+  "b11e430b1d8052d0c718bcee69145f7a": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Kairat n'a encore ni gagné ni fait match nul à domicile dans cette phase de poules, et Mjällby reste invaincu avec une meilleure place au classement (9e contre 27e). La cote de 3,20 pour l'extérieur est correcte mais le match reste ouvert, avec 3 nuls en 6 matchs à l'extérieur pour Mjällby."
+  },
+  "d5a117bed84a37bc36e3f68a7396ec4e": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Barcelone est logiquement favori, mais à 1.06 le gain est quasi nul pour un risque réel : Yamal, Rodri, Christensen, Bardghji et Espart sont absents et Flick annonce des rotations. Sabah n'a jamais fini un match européen sur un 0-0 en 26 rencontres, et Barcelone a encaissé à l'extérieur dans ses 12 "
+   "raison": "Les sources se contredisent sur le calendrier (Al-Faisaly donné contre Al Khaleej le 26 novembre sur une page, contre Diriyah sur une autre) et sur la forme de Diriyah, ce qui rend l'actu impossible à fiabiliser. Diriyah à 1,84 à l'extérieur, classé 8e contre 15e, n'offre pas de marge suffisante pou"
   },
-  "a7c87fac9e9cbcfc02ad0e0b29ca89e2": {
+  "c587e5656d1f38f068cba1b168462ba4": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Hearts est très diminué, avec neuf joueurs absents selon la presse, et n'a encore gagné aucun match de C3 en 90 minutes ; Monaco est invaincu en C3 avec trois victoires. Mais Monaco n'a pas gagné en Ligue 1 lors de ses six derniers matchs, et la cote de 1,48 offre très peu de marge pour un favori qu"
+  },
+  "8a0dc963ce319d55751d4d07c5152600": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Slavia est sans Chaloupek, Ouanda, Ogbu, Piták, Moses, Chorý et Kolář, et n'a pas gagné en Europe depuis 19 matchs ; Villarreal a perdu 7 déplacements européens d'affilée et a encaissé dans ses 15 derniers matchs de C1. Le pronostic de nul (1-1) de certains médias et l'absence de Moreno, Foyth et Ak"
+   "raison": "Ajax a gagné 3-0 contre ADO et Thun est 20e en C3 avec trois points, mais la cote de 1,13 implique environ 88 % de probabilité et ne laisse aucune marge en cas de faux pas. Bissouma est inéligible et Míchel a relevé beaucoup de buts encaissés chez Thun, ce qui ne justifie pas une cote aussi basse."
   },
-  "61d1126751ba67227ac2819624e98342": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Burnley n'a pas gagné à domicile en championnat depuis plus de 400 jours (23 matchs sans victoire, 12 nuls et 11 défaites) et l'équipe a été remaniée avec une quinzaine d'absents annoncés. Birmingham est au complet (Solis rétabli) et sa forme extérieure est bonne (VVDVD), mais la Championship reste "
-  },
-  "9dfe9df3ad88c453e3572872bf500488": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Bolton a perdu 3 de ses 5 derniers matchs et neuf joueurs sont absents, dont Erhahon et Larrazabal incertain, tandis que West Brom reste invaincu sur 7 matchs de championnat et a gagné à Wrexham et West Ham. Le doute vient de la fragilité de West Brom sur place (nul à Swansea, Price incertain, Johns"
-  },
-  "14007bc0605bce3bd164b132254ba24c": {
+  "bbab118a8c6ca33b6b0e7b5ed36fecd8": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "PSG est favori net mais la cote de 1.36 suppose environ 73 % de chances, alors qu'un modèle cité par la presse ne lui donne que 60 %, donc aucune marge de valeur. Doué et Kvaratskhelia sont absents, et Roma, qui a marqué dans ses 9 derniers matchs et compte sur Dybala et Malen, peut s'appuyer sur un"
+   "raison": "Brighton est privé de Mitoma, Ferguson, Yalcouyé, Tzimas et Yohanna, et Gomez est mis au repos, alors que l'équipe n'a pas marqué dans 3 de ses 7 derniers matchs. Craiova est invaincu depuis 15 matchs toutes compétitions confondues, donc la cote de 1,10 pour Brighton ne compense pas le risque de piè"
   },
-  "b1af6789fe6db7aab18a2945ce56f035": {
+  "cb6689f811b7ce08379eef028e2254a4": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Je n'ai pas trouvé d'actualité fiable sur Atlético Madrid et Viking FK (blessés, rotation, forme), donc je ne peux pas valider un pari. Avec une cote de 1.07 sur l'Atlético, le gain est négligeable et une seule surprise efface plusieurs mises : pas de pari."
+   "raison": "Lincoln arrive en forme (cinq victoires de suite, 1-0 contre Hajduk) et Egnatia n'a gagné aucun des trois derniers matchs européens où il avait marqué en premier. À 1,50 pour le 1, il n'y a aucune marge, et les pronostics divergent (1-0 ou 1-1)."
   },
-  "0ee2cfddf20153779cd2cc3e1f1f879f": {
+  "1f0d932ff8b08ed2c3b775e60d92bb4e": {
+   "verdict": "prudence",
+   "pari": "N",
+   "raison": "Atalanta n'a gagné qu'un match sur ses huit derniers toutes compétitions confondues, et son gardien Carnesecchi est blessé au genou. Le 2 à 1,34 est trop court pour un vrai avantage face à un Borac invaincu à domicile en Europe, donc seul le nul à 4,70 est jouable, avec doute."
+  },
+  "4f10f55b47b83f7f4f2a8cd745a9e67f": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Bayern est privé de Kane, Neuer, Davies, Gnabry et Saibari, et Olise est incertain, mais Lille n'a pris qu'un point en 4 matchs de Ligue des champions et n'a pas marqué en championnat lors de sa dernière défaite 1-0 contre Lyon. Le 1,55 laisse peu de marge, donc je ne le jouerais qu'avec prudence."
+   "raison": "Copenhague a gagné ses trois matchs de Conference League, tandis qu'Escaldes a perdu les trois et encaissé sept buts, avec Berlanga suspendu. Le 2 est logique, mais à 1,18 le gain potentiel est dérisoire pour le risque, d'où une prudence maximale."
   },
-  "99459b90f3e732106e09585bf94b36b4": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Liverpool a encaissé 10 buts en 4 matchs de Ligue des champions et joue sans Ekitike, Leoni et Bradley, avec Gakpo et Gravenberch incertains. Bruges enchaîne trois victoires européennes et Tresoldi a déjà 5 buts, donc le match est trop ouvert pour un pari 1-N-2 sûr."
-  },
-  "49c66d76bc4085e63a181179cc47ef4d": {
+  "9f2cd85ad777bea9550b987dc409b280": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Fenerbahce a marqué 12 buts en ses 5 derniers matchs contre 3 pour Shakhtar, qui n'a pas marqué lors de ses deux dernières sorties européennes et reste sur une série de trois matchs sans victoire. Les pronostics divergent (nul ou victoire turque) et Fenerbahce encaisse presque 3 buts par match en Eu"
+   "raison": "Hajduk enchaîne sept victoires à domicile, mais le match se joue à huis clos, ce qui supprime son avantage du public. Sint-Truiden est invaincu et devance Hajduk au classement (7 points contre 6), avec des performances jugées plus convaincantes en Europe ; le 2 à 3,03 a du sens mais reste incertain."
   },
-  "e7e64568f6af00d395a3fdfc27de8ae3": {
+  "1abbe02767589722b5de92e94e96429d": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Le 1 à 1,35 est une cote trop basse pour un pari sûr, et Inter est fatigué (match européen à 3 jours) avec Calhanoglu forfait et Zielinski absent. La défense est fragile (4-4 à Atalanta après avoir mené 4-2, 17 buts encaissés en 12 matchs de Serie A) et Inter n'a pas connu le nul dans ses 16 dernier"
-  },
-  "01a61442fe04f8751b62eb251f234079": {
-   "verdict": "jouer",
-   "pari": "1",
-   "raison": "Sporting n'a perdu que deux fois toute la saison, enchaîne cinq victoires et n'a encaissé qu'un but sur cette série, et a marqué dans ses 22 derniers matchs de phase de ligue en C1. Man United a encaissé 34 buts en 18 matchs, vient de perdre 4-0 à Liverpool et joue sans Cunha (suspendu), Rashford et"
+   "raison": "Braga, 17e, est logiquement favori face à KuPS, invaincu depuis sept matchs toutes compétitions, mais à 1,09 la cote ne laisse aucune valeur. Une victoire probable ne justifie pas un pari à ce prix."
   }
  }
 }

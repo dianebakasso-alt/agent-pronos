@@ -1532,5 +1532,37 @@
     "cote": 1.06
    }
   ]
+ },
+ {
+  "jour": "2026-11-26",
+  "bookmaker": "Betclic (FR)",
+  "cote": 3.13,
+  "proba": 0.2653,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "d5a117bed84a37bc36e3f68a7396ec4e",
+    "sport_key": "soccer_saudi_arabia_pro_league",
+    "date": "2026-11-26T17:30:00Z",
+    "domicile": "Al-Faisaly KSA FC",
+    "exterieur": "Diriyah Club",
+    "pari": "Victoire Diriyah Club",
+    "court": "2",
+    "cote": 1.84
+   },
+   {
+    "id": "491426b0dae5aecf2b92525815131cb2",
+    "sport_key": "soccer_uefa_europa_conference_league",
+    "date": "2026-11-26T20:00:00Z",
+    "domicile": "PFC CSKA Sofia",
+    "exterieur": "Trabzonspor",
+    "pari": "Victoire Trabzonspor",
+    "court": "2",
+    "cote": 1.7
+   }
+  ]
  }
 ]
