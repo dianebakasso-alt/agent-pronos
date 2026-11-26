@@ -1508,8 +1508,8 @@
   "proba": 0.4185,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "gagné",
+  "gain": 10.6,
   "jambes": [
    {
     "id": "9dfe9df3ad88c453e3572872bf500488",
@@ -1519,7 +1519,10 @@
     "exterieur": "West Bromwich Albion",
     "pari": "Victoire West Bromwich Albion",
     "court": "2",
-    "cote": 1.94
+    "cote": 1.94,
+    "res": "2",
+    "score": "1-3",
+    "ok": true
    },
    {
     "id": "e6fa007f93e0cef004be920f96ee95ba",
@@ -1529,7 +1532,10 @@
     "exterieur": "Barcelona",
     "pari": "Victoire Barcelona",
     "court": "2",
-    "cote": 1.06
+    "cote": 1.06,
+    "res": "2",
+    "score": "1-4",
+    "ok": true
    }
   ]
  },
