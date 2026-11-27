@@ -2718,5 +2718,175 @@
    "N": 7.25,
    "2": 17.0
   }
+ },
+ "acbf7c0545986cd60dd4e4cb0152bd41": {
+  "jour": "2026-11-27",
+  "domicile": "Macarthur FC",
+  "exterieur": "Melbourne City",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.2873,
+   "N": 0.2608,
+   "2": 0.4518
+  },
+  "cotes": {
+   "1": 3.05,
+   "N": 3.45,
+   "2": 2.07
+  }
+ },
+ "0e9d20640e5fb6d772ef9c7d8bd7b233": {
+  "jour": "2026-11-27",
+  "domicile": "Al-Kholood",
+  "exterieur": "Al-Khaleej",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.45,
+   "N": 0.2596,
+   "2": 0.2904
+  },
+  "cotes": {
+   "1": 1.96,
+   "N": 3.5,
+   "2": 3.13
+  }
+ },
+ "f776e28e9659a71f10168cc9e792965b": {
+  "jour": "2026-11-27",
+  "domicile": "Al-Qadsiah",
+  "exterieur": "Al-Fayha",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.7785,
+   "N": 0.1311,
+   "2": 0.0904
+  },
+  "cotes": {
+   "1": 1.14,
+   "N": 6.75,
+   "2": 12.0
+  }
+ },
+ "ffcd87d9e41dbce42bd91952669b2e47": {
+  "jour": "2026-11-27",
+  "domicile": "Alanyaspor",
+  "exterieur": "Torku Konyaspor",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.3437,
+   "N": 0.3052,
+   "2": 0.3511
+  },
+  "cotes": {
+   "1": 2.6,
+   "N": 3.05,
+   "2": 2.65
+  }
+ },
+ "b50ce64bf9ca7a1a03eb6b9d534e93ce": {
+  "jour": "2026-11-27",
+  "domicile": "Çaykur Rizespor",
+  "exterieur": "Kasimpasa SK",
+  "verdict": "prudence",
+  "pari": "2",
+  "marche": {
+   "1": 0.4912,
+   "N": 0.2518,
+   "2": 0.257
+  },
+  "cotes": {
+   "1": 1.88,
+   "N": 3.55,
+   "2": 3.5
+  }
+ },
+ "698f4a7967ead89e10205a68ceb4bda4": {
+  "jour": "2026-11-27",
+  "domicile": "Werder Bremen",
+  "exterieur": "Borussia Monchengladbach",
+  "verdict": "jouer",
+  "pari": "1",
+  "marche": {
+   "1": 0.5529,
+   "N": 0.2238,
+   "2": 0.2233
+  },
+  "cotes": {
+   "1": 1.65,
+   "N": 4.0,
+   "2": 4.0
+  }
+ },
+ "a5546f507831eba65f9b5da518f228e8": {
+  "jour": "2026-11-27",
+  "domicile": "Leganés",
+  "exterieur": "Sabadell FC",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.3985,
+   "N": 0.3047,
+   "2": 0.2968
+  },
+  "cotes": {
+   "1": 2.15,
+   "N": 2.95,
+   "2": 2.93
+  }
+ },
+ "e9a663f13e7503c0ac20a54804338b60": {
+  "jour": "2026-11-27",
+  "domicile": "Venezia",
+  "exterieur": "Bologna",
+  "verdict": "jouer",
+  "pari": "2",
+  "marche": {
+   "1": 0.3119,
+   "N": 0.2925,
+   "2": 0.3956
+  },
+  "cotes": {
+   "1": 2.9,
+   "N": 3.2,
+   "2": 2.32
+  }
+ },
+ "dcff8b9a58479664e15d7e175fbeb6ba": {
+  "jour": "2026-11-27",
+  "domicile": "Leuven",
+  "exterieur": "KV Kortrijk",
+  "verdict": "prudence",
+  "pari": "1",
+  "marche": {
+   "1": 0.5006,
+   "N": 0.25,
+   "2": 0.2494
+  },
+  "cotes": {
+   "1": 1.81,
+   "N": 3.45,
+   "2": 3.5
+  }
+ },
+ "02ff879cf54f6d1fec2664efee0431db": {
+  "jour": "2026-11-27",
+  "domicile": "Brest",
+  "exterieur": "Paris FC",
+  "verdict": "eviter",
+  "pari": null,
+  "marche": {
+   "1": 0.293,
+   "N": 0.2743,
+   "2": 0.4327
+  },
+  "cotes": {
+   "1": 3.1,
+   "N": 3.5,
+   "2": 2.1
+  }
  }
 }

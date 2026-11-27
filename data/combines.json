@@ -1570,5 +1570,37 @@
     "cote": 1.7
    }
   ]
+ },
+ {
+  "jour": "2026-11-27",
+  "bookmaker": "PMU (FR)",
+  "cote": 3.75,
+  "proba": 0.2262,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "acbf7c0545986cd60dd4e4cb0152bd41",
+    "sport_key": "soccer_australia_aleague",
+    "date": "2026-11-27T08:40:00Z",
+    "domicile": "Macarthur FC",
+    "exterieur": "Melbourne City",
+    "pari": "Victoire Melbourne City",
+    "court": "2",
+    "cote": 2.07
+   },
+   {
+    "id": "dcff8b9a58479664e15d7e175fbeb6ba",
+    "sport_key": "soccer_belgium_first_div",
+    "date": "2026-11-27T19:45:00Z",
+    "domicile": "Leuven",
+    "exterieur": "KV Kortrijk",
+    "pari": "Victoire Leuven",
+    "court": "1",
+    "cote": 1.81
+   }
+  ]
  }
 ]

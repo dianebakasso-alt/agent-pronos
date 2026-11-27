@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2120,
+  "fin": "asımpaşa affiche une forme nettement supérieure (VVNVV, invaincu sur 5 matchs, 5e du classement) face à un Rizespor qui n'a gagné que 2 fois sur ses 5 derniers. Le 2 à 3.50 est le pari le plus crédible de la série, mais jouer à l'extérieur contre un Rizespor à domicile reste un risque, et Çörekçi est absent côté Kasımpaşa.\"},\n{\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai pas pu trouver d'actualité fiable (blessés, suspendus, forme) pour Al-Ittihad - Neom, la recherche ayant échoué pour ce match. Sans information, je ne parie pas sur une cote de 1.76 pour le favori.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 54971,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5084,
+   "output_tokens_details": {
+    "thinking_tokens": 3695
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2125,
+  "fin": "r de Ligue 1, a été signalé avec un match européen à 3 jours, un facteur de fatigue que je n'ai pas pu vérifier. Brest, avec trois clean sheets et un bon volume offensif, peut contester le favori : le 2 à 2.10 est trop incertain et le 1 à 3.10 reste un pari risqué.\"}, {\"n\": 6, \"verdict\": \"eviter\", \"pari\": \"aucun\", \"raison\": \"Je n'ai trouvé aucune actualité fiable (blessés, suspendus, rotation) pour Southampton - Middlesbrough, la recherche ayant échoué. Les statistiques de forme ne dégagent pas d'avantage net face à des cotes proches (2.75 / 3.60 / 2.17), donc pas de pari sans information.\"}]}",
+  "usage": {
+   "input_tokens": 50814,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4855,
+   "output_tokens_details": {
+    "thinking_tokens": 3497
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]

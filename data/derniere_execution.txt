@@ -1,24 +1,30 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
     🎟️ Combinés : +40% de rendement sur 39 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 0 championnat(s) aujourd'hui (199 crédits restants ce mois-ci)
-    0 championnats retenus
+    quota cotes : 12 championnat(s) aujourd'hui (199 crédits restants ce mois-ci)
+    ordre des championnats : Süper Lig +31 %, Serie A +28 %, Ligue 2 +17 %, Pro League +8 %, Bundesliga +5 %, Liga 2 +5 %, Ligue des champions +4 %, Saudi Pro League +4 %
+    12 championnats retenus
 3/4 Récupération des cotes…
-    116 matchs repris du cache (cotes d'un passage précédent)
-    114 matchs analysés, 1 value bets
+  ! cotes soccer_germany_bundesliga: HTTP Error 429: Too Many Requests
+  ! cotes soccer_spain_segunda_division: HTTP Error 429: Too Many Requests
+  ! cotes soccer_saudi_arabia_pro_league: HTTP Error 429: Too Many Requests
+  ! cotes soccer_brazil_campeonato: HTTP Error 429: Too Many Requests
+  ! cotes soccer_france_ligue_one: HTTP Error 429: Too Many Requests
+  ! cotes soccer_usa_mls: HTTP Error 429: Too Many Requests
+  ! cotes soccer_australia_aleague: HTTP Error 429: Too Many Requests
+    53 matchs repris du cache (cotes d'un passage précédent)
+    93 matchs analysés, 0 value bets
     Forme et stats des équipes…
-    direct : 114 matchs reliés aux scores en direct
+    direct : 93 matchs reliés aux scores en direct
     fatigue : 15 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 171 équipes trouvées, 1 manquées
-    force : 85 matchs notés · pièges : 41 favoris en alerte
+    stats : 169 équipes trouvées, 1 manquées
+    force : 84 matchs notés · pièges : 41 favoris en alerte
     paris de buts évités : [('btts', 0.6), ('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.902, 'btts': 0.916, 'pas_btts': 1.05} · zones évitées : [0.55] · championnats évités : ['Allsvenskan', 'Bundesliga AUT', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    cotes de clôture suivies : 39 paris
-    bookmakers les plus justes (mêmes matchs) : marathonbet (-2.1, 150 matchs), pinnacle (-1.6, 150 matchs), onexbet (-1.5, 151 matchs)
-    autopsies gratuites : 0
-    tickets par rendement : {'match': 0.007, 'prudent': 0.032, 'equilibre': 0.369, 'gros': 0.302, 'buts': 0.058, 'mixte': 0.086, 'mixte_gros': 0.403, 'jour': 0.034, 'prudence': -0.141} · « à éviter » de l'IA affichés seulement (58 favoris écartés, 62 % gagnés pour 57 % prévus)
+    cotes de clôture suivies : 0 paris
+    bookmakers les plus justes (mêmes matchs) : marathonbet (-1.8, 168 matchs), pinnacle (-1.5, 171 matchs), onexbet (-1.2, 172 matchs)
+    autopsies gratuites : 8
+    tickets par rendement : {'match': 0.008, 'prudent': 0.037, 'equilibre': 0.333, 'gros': 0.221, 'buts': 0.058, 'mixte': 0.134, 'mixte_gros': 0.359, 'jour': 0.034, 'prudence': -0.147} · « à éviter » de l'IA affichés seulement (62 favoris écartés, 63 % gagnés pour 58 % prévus)
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
-  ! IA verdicts (paquet 2) : plafond IA du jour atteint (0.23 €)
     combinés refaits avec 10 avis de l'IA
 Site généré : site/index.html

@@ -1,55 +1,55 @@
 {
- "jour": "2026-11-26",
+ "jour": "2026-11-27",
  "v": {
-  "b11e430b1d8052d0c718bcee69145f7a": {
+  "acbf7c0545986cd60dd4e4cb0152bd41": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Kairat n'a encore ni gagné ni fait match nul à domicile dans cette phase de poules, et Mjällby reste invaincu avec une meilleure place au classement (9e contre 27e). La cote de 3,20 pour l'extérieur est correcte mais le match reste ouvert, avec 3 nuls en 6 matchs à l'extérieur pour Mjällby."
+   "raison": "Melbourne City récupère Caputo et Lopane après blessure, mais Mabil est suspendu, et l'équipe reste sur deux victoires 2-1. À 2.07 chez un Macarthur privé de Paull, Oliveira et Hilton, l'avantage est réel mais pas assez net pour une valeur claire ; certaines sources d'actu sont anciennes ou contradi"
   },
-  "d5a117bed84a37bc36e3f68a7396ec4e": {
+  "0e9d20640e5fb6d772ef9c7d8bd7b233": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Al-Kholood enchaîne 5 défaites et a encaissé dans tous ses matchs à domicile cette saison, tandis qu'Al-Khaleej a gagné 3 de ses 5 derniers matchs, avec Kourbelis et Al-Khabrani absents. Le 2 à 3.13 n'a de sens que si la crise de Kholood se confirme ; Forebet donne 37% au nul, WinDrawWin 49% à Khale"
+  },
+  "f776e28e9659a71f10168cc9e792965b": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Les sources se contredisent sur le calendrier (Al-Faisaly donné contre Al Khaleej le 26 novembre sur une page, contre Diriyah sur une autre) et sur la forme de Diriyah, ce qui rend l'actu impossible à fiabiliser. Diriyah à 1,84 à l'extérieur, classé 8e contre 15e, n'offre pas de marge suffisante pou"
+   "raison": "Al-Qadsiah est 2e avec 9 victoires en 12 matchs et domine largement, mais la cote de 1.14 ne laisse aucune valeur : une seule défaite annule plusieurs gains. Le doute sur Nández (blessé) n'est pas décisif, mais le rapport gains/risque est mauvais."
   },
-  "c587e5656d1f38f068cba1b168462ba4": {
+  "ffcd87d9e41dbce42bd91952669b2e47": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Fidan Aliti (défenseur central) est suspendu côté Alanyaspor et Demirbağ est absent côté Konyaspor, qui n'a pas marqué lors de ses 4 derniers déplacements. Les deux équipes sont en crise avec des attaques peu productives (0.4 et 0.8 but par match), donc ni le 1, ni le nul, ni le 2 n'offrent une vale"
+  },
+  "b50ce64bf9ca7a1a03eb6b9d534e93ce": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Hearts est très diminué, avec neuf joueurs absents selon la presse, et n'a encore gagné aucun match de C3 en 90 minutes ; Monaco est invaincu en C3 avec trois victoires. Mais Monaco n'a pas gagné en Ligue 1 lors de ses six derniers matchs, et la cote de 1,48 offre très peu de marge pour un favori qu"
+   "raison": "Kasımpaşa affiche une forme nettement supérieure (VVNVV, invaincu sur 5 matchs, 5e du classement) face à un Rizespor qui n'a gagné que 2 fois sur ses 5 derniers. Le 2 à 3.50 est le pari le plus crédible de la série, mais jouer à l'extérieur contre un Rizespor à domicile reste un risque, et Çörekçi e"
   },
-  "8a0dc963ce319d55751d4d07c5152600": {
+  "698f4a7967ead89e10205a68ceb4bda4": {
+   "verdict": "jouer",
+   "pari": "1",
+   "raison": "Gladbach est touché par plusieurs absences (Kleindienst, Ullrich, Leopold, Hashioka et Bolin en doute) et ne gagne presque jamais à l'extérieur. Brême manque encore Musah, Topp et Stage, mais Fullkrug marque régulièrement et l'écart de forme est net, même si la cote de 1.65 reste courte."
+  },
+  "a5546f507831eba65f9b5da518f228e8": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Ajax a gagné 3-0 contre ADO et Thun est 20e en C3 avec trois points, mais la cote de 1,13 implique environ 88 % de probabilité et ne laisse aucune marge en cas de faux pas. Bissouma est inéligible et Míchel a relevé beaucoup de buts encaissés chez Thun, ce qui ne justifie pas une cote aussi basse."
+   "raison": "Sabadell est privé de Bonaldo, Quadri, Urri, Nuamah, Xavi Moreno et Gioacchini, et n'a pas gagné depuis six journées, avec seulement 13 buts en 15 journées. Leganés, qui enchaîne deux victoires, encaisse pourtant 2 buts par match et sa cote de 2.15 ne laisse qu'une marge modeste, donc le nul reste u"
   },
-  "bbab118a8c6ca33b6b0e7b5ed36fecd8": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Brighton est privé de Mitoma, Ferguson, Yalcouyé, Tzimas et Yohanna, et Gomez est mis au repos, alors que l'équipe n'a pas marqué dans 3 de ses 7 derniers matchs. Craiova est invaincu depuis 15 matchs toutes compétitions confondues, donc la cote de 1,10 pour Brighton ne compense pas le risque de piè"
-  },
-  "cb6689f811b7ce08379eef028e2254a4": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Lincoln arrive en forme (cinq victoires de suite, 1-0 contre Hajduk) et Egnatia n'a gagné aucun des trois derniers matchs européens où il avait marqué en premier. À 1,50 pour le 1, il n'y a aucune marge, et les pronostics divergent (1-0 ou 1-1)."
-  },
-  "1f0d932ff8b08ed2c3b775e60d92bb4e": {
-   "verdict": "prudence",
-   "pari": "N",
-   "raison": "Atalanta n'a gagné qu'un match sur ses huit derniers toutes compétitions confondues, et son gardien Carnesecchi est blessé au genou. Le 2 à 1,34 est trop court pour un vrai avantage face à un Borac invaincu à domicile en Europe, donc seul le nul à 4,70 est jouable, avec doute."
-  },
-  "4f10f55b47b83f7f4f2a8cd745a9e67f": {
-   "verdict": "prudence",
+  "e9a663f13e7503c0ac20a54804338b60": {
+   "verdict": "jouer",
    "pari": "2",
-   "raison": "Copenhague a gagné ses trois matchs de Conference League, tandis qu'Escaldes a perdu les trois et encaissé sept buts, avec Berlanga suspendu. Le 2 est logique, mais à 1,18 le gain potentiel est dérisoire pour le risque, d'où une prudence maximale."
+   "raison": "Venezia, dernier de Serie A, est privé de six joueurs et n'a inscrit que 8 buts en 12 journées, après une défaite 4-0 à Juventus. Bologna est invaincu sur cinq matchs avec quatre victoires consécutives à l'extérieur, et la cote de 2.32 paraît sous-évaluer ce contraste."
   },
-  "9f2cd85ad777bea9550b987dc409b280": {
+  "dcff8b9a58479664e15d7e175fbeb6ba": {
    "verdict": "prudence",
-   "pari": "2",
-   "raison": "Hajduk enchaîne sept victoires à domicile, mais le match se joue à huis clos, ce qui supprime son avantage du public. Sint-Truiden est invaincu et devance Hajduk au classement (7 points contre 6), avec des performances jugées plus convaincantes en Europe ; le 2 à 3,03 a du sens mais reste incertain."
+   "pari": "1",
+   "raison": "Kortrijk a perdu quatre de ses cinq derniers matchs en ne marquant que deux buts sur cette série, et Lambert est suspendu. Leuven est invaincu sur quatre matchs à domicile, mais les sources divergent sur ses absences offensives (Teklab, Traoré, Verlinden), ce qui fragilise un 1.81 déjà court."
   },
-  "1abbe02767589722b5de92e94e96429d": {
+  "02ff879cf54f6d1fec2664efee0431db": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Braga, 17e, est logiquement favori face à KuPS, invaincu depuis sept matchs toutes compétitions, mais à 1,09 la cote ne laisse aucune valeur. Une victoire probable ne justifie pas un pari à ce prix."
+   "raison": "Paris FC, en forme (VDVVV) avec Sinayoko meilleur buteur de Ligue 1, a été signalé avec un match européen à 3 jours, un facteur de fatigue que je n'ai pas pu vérifier. Brest, avec trois clean sheets et un bon volume offensif, peut contester le favori : le 2 à 2.10 est trop incertain et le 1 à 3.10 r"
   }
  }
 }
