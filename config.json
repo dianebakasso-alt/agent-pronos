@@ -33,6 +33,8 @@
     "betfair_ex_eu": 0.4
   },
   "combine_max_matchs": 3,
+  "retour_attendu_min": 0.85,
+  "tickets_conseilles_max": 3,
   "combine_proba_min": 0.4,
   "combine_chance_min": 0.15,
   "credits_max_par_jour": 12,

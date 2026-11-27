@@ -1045,6 +1045,8 @@ def main():
             if s:
                 c["conseille"] = False if c.get("conseille") is not None else None
                 c["desc"] = f"⛔ En pause : ce type de ticket perd sur la durée ({s['roi'] * 100:+.0f} % sur {s['n']} tickets). " + c["desc"]
+        expert.trier_conseils(j["combos"], cfg.get("retour_attendu_min", expert.RETOUR_MIN),
+                              cfg.get("tickets_conseilles_max", expert.MAX_CONSEILLES))
         if "jour" in en_pause:
             j["ticket"] = None
     if "semaine" in en_pause:

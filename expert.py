@@ -472,6 +472,33 @@ def pauses(carnet):
     return out
 
 
+RETOUR_MIN, MAX_CONSEILLES = 0.85, 3
+
+
+def retour_attendu(c):
+    """Chance × cote : ce qu'un ticket rend en moyenne pour 1 € misé (1 = on récupère sa mise)."""
+    return (c.get("proba") or 0) * (c.get("cote") or 0) if c.get("proba") and c.get("cote") else None
+
+
+def trier_conseils(combos, retour_min=RETOUR_MIN, max_conseilles=MAX_CONSEILLES):
+    """Moins de tickets, de meilleure qualité.
+    1. Un ticket qui rend moins de 0,85 € par euro misé (d'après les propres chances de l'expert)
+       n'est plus conseillé : sur le carnet, ces tickets ont perdu 23 % (gagnés ≈ attendus, ce n'est pas la malchance).
+    2. Au plus 3 tickets conseillés par jour : ceux au meilleur retour attendu. Les autres restent affichés
+       et notés en fictif, mais marqués « non conseillé »."""
+    for c in combos:
+        r = retour_attendu(c)
+        if r is not None and r < retour_min and c.get("conseille") is not False:
+            c["conseille"] = False
+            r_txt = f"{r:.2f}".replace(".", ",")
+            c["desc"] = f"📉 Rapport trop faible : rend environ {r_txt} € pour 1 € misé en moyenne. " + c.get("desc", "")
+    ok = sorted((c for c in combos if c.get("conseille")), key=lambda c: -(retour_attendu(c) or 0))
+    for c in ok[max_conseilles:]:
+        c["conseille"] = False
+        c["desc"] = f"✂️ Pas dans les {max_conseilles} meilleurs tickets du jour. " + c.get("desc", "")
+    return combos
+
+
 def zones_faibles(carnet, n_min=25, marge=0.03):
     """Tranches de probabilité (par 5 %) où les favoris gagnent nettement moins que prévu.
     Ex. les favoris « 55-60 % » passent 51 % du temps : l'expert les évite dans ses combinés."""
