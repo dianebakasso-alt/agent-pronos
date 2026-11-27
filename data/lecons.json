@@ -1,22 +1,6 @@
 [
  {
   "date": "2026-11-06",
-  "match": "Genoa - Juventus",
-  "pari": "Victoire Juventus",
-  "cote": 1.74,
-  "proba": 0.5311,
-  "score": "2-0",
-  "pourquoi": "Score 2-0 (tirs 14-17, cadrés 2-4, possession 37-63 %).",
-  "previsible": "en partie",
-  "signal_rate": "",
-  "tags": [
-   "favori_surcote"
-  ],
-  "lecon": "Match équilibré dans le jeu : le favori n'avait pas l'avantage net que la cote laissait croire.",
-  "source": "espn"
- },
- {
-  "date": "2026-11-06",
   "match": "Sheffield United - Derby County",
   "pari": "Victoire Sheffield United",
   "cote": 1.8,
@@ -6611,6 +6595,22 @@
   "proba": 0.4355,
   "score": "1-4",
   "pourquoi": "Score 1-4 (tirs 12-14, cadrés 3-6, possession 56-44 %). AGF Aarhus a été plus dangereux (6 tirs cadrés contre 3).",
+  "previsible": "oui",
+  "signal_rate": "",
+  "tags": [
+   "favori_surcote"
+  ],
+  "lecon": "Quand l'outsider se crée plus d'occasions cadrées que le favori, la cote du favori était trop basse : regarde la forme offensive réelle de l'adversaire.",
+  "source": "espn"
+ },
+ {
+  "date": "2026-11-27",
+  "match": "Macarthur FC - Melbourne City",
+  "pari": "Victoire Melbourne City",
+  "cote": 2.07,
+  "proba": 0.4518,
+  "score": "2-0",
+  "pourquoi": "Score 2-0 (tirs 10-12, cadrés 5-1, possession 50-50 %). Macarthur FC a été plus dangereux (5 tirs cadrés contre 1).",
   "previsible": "oui",
   "signal_rate": "",
   "tags": [

@@ -1,8 +1,7 @@
 {
  "ligues": {
-  "soccer_australia_aleague": 2,
-  "soccer_saudi_arabia_pro_league": 13,
   "soccer_turkey_super_league": 10,
+  "soccer_saudi_arabia_pro_league": 13,
   "soccer_germany_bundesliga": 10,
   "soccer_spain_segunda_division": 11,
   "soccer_italy_serie_a": 11,
@@ -10,7 +9,8 @@
   "soccer_france_ligue_one": 10,
   "soccer_efl_champ": 13,
   "soccer_brazil_campeonato": 18,
-  "soccer_usa_mls": 16
+  "soccer_usa_mls": 16,
+  "soccer_australia_aleague": 2
  },
  "relies": 93,
  "manques": [],

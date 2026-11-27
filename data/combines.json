@@ -1546,8 +1546,8 @@
   "proba": 0.2653,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "d5a117bed84a37bc36e3f68a7396ec4e",
@@ -1557,7 +1557,10 @@
     "exterieur": "Diriyah Club",
     "pari": "Victoire Diriyah Club",
     "court": "2",
-    "cote": 1.84
+    "cote": 1.84,
+    "res": "N",
+    "score": "2-2",
+    "ok": false
    },
    {
     "id": "491426b0dae5aecf2b92525815131cb2",
@@ -1567,7 +1570,10 @@
     "exterieur": "Trabzonspor",
     "pari": "Victoire Trabzonspor",
     "court": "2",
-    "cote": 1.7
+    "cote": 1.7,
+    "res": "2",
+    "score": "1-2",
+    "ok": true
    }
   ]
  },
