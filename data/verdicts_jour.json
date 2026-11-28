@@ -1,55 +1,60 @@
 {
- "jour": "2026-11-27",
+ "jour": "2026-11-28",
  "v": {
-  "acbf7c0545986cd60dd4e4cb0152bd41": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Melbourne City récupère Caputo et Lopane après blessure, mais Mabil est suspendu, et l'équipe reste sur deux victoires 2-1. À 2.07 chez un Macarthur privé de Paull, Oliveira et Hilton, l'avantage est réel mais pas assez net pour une valeur claire ; certaines sources d'actu sont anciennes ou contradi"
-  },
-  "0e9d20640e5fb6d772ef9c7d8bd7b233": {
-   "verdict": "prudence",
-   "pari": "2",
-   "raison": "Al-Kholood enchaîne 5 défaites et a encaissé dans tous ses matchs à domicile cette saison, tandis qu'Al-Khaleej a gagné 3 de ses 5 derniers matchs, avec Kourbelis et Al-Khabrani absents. Le 2 à 3.13 n'a de sens que si la crise de Kholood se confirme ; Forebet donne 37% au nul, WinDrawWin 49% à Khale"
-  },
-  "f776e28e9659a71f10168cc9e792965b": {
+  "71089358d9e74866afc755affb443480": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Al-Qadsiah est 2e avec 9 victoires en 12 matchs et domine largement, mais la cote de 1.14 ne laisse aucune valeur : une seule défaite annule plusieurs gains. Le doute sur Nández (blessé) n'est pas décisif, mais le rapport gains/risque est mauvais."
+   "raison": "Al-Nassr est nettement supérieur et privé de Coman (claquage) et Simakan (repos médical), mais la cote de 1.21 sur l'extérieur ne laisse presque aucune valeur pour un match à l'extérieur à Buraidah. Le risque de piège ne vaut pas le gain."
   },
-  "ffcd87d9e41dbce42bd91952669b2e47": {
-   "verdict": "eviter",
-   "pari": null,
-   "raison": "Fidan Aliti (défenseur central) est suspendu côté Alanyaspor et Demirbağ est absent côté Konyaspor, qui n'a pas marqué lors de ses 4 derniers déplacements. Les deux équipes sont en crise avec des attaques peu productives (0.4 et 0.8 but par match), donc ni le 1, ni le nul, ni le 2 n'offrent une vale"
-  },
-  "b50ce64bf9ca7a1a03eb6b9d534e93ce": {
+  "d2bc2d3b4a81177cb6b86f4add6ff81f": {
    "verdict": "prudence",
    "pari": "2",
-   "raison": "Kasımpaşa affiche une forme nettement supérieure (VVNVV, invaincu sur 5 matchs, 5e du classement) face à un Rizespor qui n'a gagné que 2 fois sur ses 5 derniers. Le 2 à 3.50 est le pari le plus crédible de la série, mais jouer à l'extérieur contre un Rizespor à domicile reste un risque, et Çörekçi e"
+   "raison": "Lincoln (21e) a perdu ses 5 derniers matchs, a limogé ses coachs et sera sans McGrandles, Darikwa et Melia, tandis que Wolves reste invaincu et sans Jiménez ni Konan (blessés longue durée). Le 2 à 1.55 est logique, mais un effet « nouveau coach » chez Lincoln et une cote peu généreuse imposent la pr"
   },
-  "698f4a7967ead89e10205a68ceb4bda4": {
-   "verdict": "jouer",
-   "pari": "1",
-   "raison": "Gladbach est touché par plusieurs absences (Kleindienst, Ullrich, Leopold, Hashioka et Bolin en doute) et ne gagne presque jamais à l'extérieur. Brême manque encore Musah, Topp et Stage, mais Fullkrug marque régulièrement et l'écart de forme est net, même si la cote de 1.65 reste courte."
-  },
-  "a5546f507831eba65f9b5da518f228e8": {
+  "af3432ca724da03d38f0ff4e62045e4c": {
    "verdict": "prudence",
    "pari": "1",
-   "raison": "Sabadell est privé de Bonaldo, Quadri, Urri, Nuamah, Xavi Moreno et Gioacchini, et n'a pas gagné depuis six journées, avec seulement 13 buts en 15 journées. Leganés, qui enchaîne deux victoires, encaisse pourtant 2 buts par match et sa cote de 2.15 ne laisse qu'une marge modeste, donc le nul reste u"
+   "raison": "Frosinone a gagné presque tout à domicile et Parma ne compte qu'une victoire en 7 journées, avec le pire xG du championnat selon les sources. Mais le 1 à 1.43 offre peu de marge, et Frosinone vient de perdre deux matchs de suite (1-0 à Cagliari, 5-1 à Milan), même si le retour de Raimondo renforce l"
   },
-  "e9a663f13e7503c0ac20a54804338b60": {
+  "3b025a029f51fbeb9580a178d0612f50": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "Bayern est très affaibli (Kane absent, Olise incertain, Davies, Neuer, Gnabry et Saibari listés absents) et joue quatre matchs en neuf jours après sa défaite à Lille. Le 2 à 1.30 paie trop peu pour ce risque, et Hambourg a gagné ses trois derniers matchs à domicile malgré une défense fragile."
+  },
+  "365e1a00908ab1cd5a51a53ede2b86b2": {
+   "verdict": "prudence",
+   "pari": "N",
+   "raison": "Mainz a perdu ses 5 derniers matchs, encaissé 14 buts et n'a plus gagné à domicile cette saison, tandis qu'Union, avec le moins de tirs de la ligue, gagne rarement à l'extérieur. Plusieurs pronostics convergent vers un 1-1, mais le nul à 4.70 reste un pari risqué faute de domination nette d'une équi"
+  },
+  "c836236766f7859e3c1d61caa581abe1": {
    "verdict": "jouer",
    "pari": "2",
-   "raison": "Venezia, dernier de Serie A, est privé de six joueurs et n'a inscrit que 8 buts en 12 journées, après une défaite 4-0 à Juventus. Bologna est invaincu sur cinq matchs avec quatre victoires consécutives à l'extérieur, et la cote de 2.32 paraît sous-évaluer ce contraste."
+   "raison": "West Ham (13e, six matchs sans victoire) est privé de Areola, Walker-Peters, Soucek et Lamadrid, alors que Stoke (2e) reste sur cinq victoires consécutives, dont cinq succès à l'extérieur, et n'a perdu aucun match depuis sept journées. La cote de 1.64 pour West Ham est trop basse au vu de cette form"
   },
-  "dcff8b9a58479664e15d7e175fbeb6ba": {
-   "verdict": "prudence",
-   "pari": "1",
-   "raison": "Kortrijk a perdu quatre de ses cinq derniers matchs en ne marquant que deux buts sur cette série, et Lambert est suspendu. Leuven est invaincu sur quatre matchs à domicile, mais les sources divergent sur ses absences offensives (Teklab, Traoré, Verlinden), ce qui fragilise un 1.81 déjà court."
-  },
-  "02ff879cf54f6d1fec2664efee0431db": {
+  "1080d83d3530326bed72d678923eda41": {
    "verdict": "eviter",
    "pari": null,
-   "raison": "Paris FC, en forme (VDVVV) avec Sinayoko meilleur buteur de Ligue 1, a été signalé avec un match européen à 3 jours, un facteur de fatigue que je n'ai pas pu vérifier. Brest, avec trois clean sheets et un bon volume offensif, peut contester le favori : le 2 à 2.10 est trop incertain et le 1 à 3.10 r"
+   "raison": "Al-Ahli est favori à 1.33 alors que son défenseur Roger Ibanez est blessé et qu'Al-Ahli a lâché deux buts d'avance (défaite 3-2 contre Al-Shamal) avec une fatigue invoquée par le coach. Une cote aussi basse n'offre aucune valeur face à Al-Taawoun (17e, 5 points), et une victoire attendue ne vaut pas"
+  },
+  "5d838190a8f5932d7fcfbcc26bacdd9c": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Stuttgart arrive après une défaite 2-0 contre l'Inter en Ligue des champions, avec cinq défaites sur ses dix premiers matchs de championnat. Frankfurt, remis sur pied (trois victoires lors des cinq derniers matchs), retrouve Uzun, mais son bilan à l'extérieur reste faible (une seule victoire sur cin"
+  },
+  "80c3b1eccde4b39e3e000a65c0b4422b": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Eibar n'a plus gagné en championnat depuis le 3 octobre et son bilan à domicile est mauvais (forme NDNND). Burgos (5e, 27 points) est en meilleure forme (victoire 3-1 à Leganés, 1-0 contre Albacete) et ne compte que David González absent. Le doute reste fort car Burgos joue à l'extérieur, un terrain"
+  },
+  "12002f6f804a122db48271ff05be03c0": {
+   "verdict": "eviter",
+   "pari": null,
+   "raison": "PSG est favori à 1.16, mais il est privé de Nuno Mendes, Kvaratskhelia, Doué, Hakimi, Chevalier et Zabarnyi (suspendu), et Luis Enrique prévoit une rotation avant la demi-finale de Ligue des champions. Lorient, qui n'a perdu qu'une fois sur ses cinq derniers matchs, a déjà tenu PSG en nul à deux rep"
+  },
+  "43752672d246f58267557ef751013fc3": {
+   "verdict": "prudence",
+   "pari": "2",
+   "raison": "Je n'ai pas pu vérifier l'actualité (blessés, rotation) de ce match, mes recherches ayant été épuisées avant lui. Sur les seules statistiques, Philadelphia a perdu trois de ses cinq derniers matchs et Revolution a gagné trois des cinq derniers face-à-face, tandis que la cote de 5.10 pour l'extérieur"
   }
  }
 }

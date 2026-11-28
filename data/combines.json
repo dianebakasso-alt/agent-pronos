@@ -1584,8 +1584,8 @@
   "proba": 0.2262,
   "conseille": false,
   "mise": 10,
-  "statut": "en attente",
-  "gain": 0,
+  "statut": "perdu",
+  "gain": -10,
   "jambes": [
    {
     "id": "acbf7c0545986cd60dd4e4cb0152bd41",
@@ -1595,7 +1595,10 @@
     "exterieur": "Melbourne City",
     "pari": "Victoire Melbourne City",
     "court": "2",
-    "cote": 2.07
+    "cote": 2.07,
+    "res": "1",
+    "score": "2-0",
+    "ok": false
    },
    {
     "id": "dcff8b9a58479664e15d7e175fbeb6ba",
@@ -1606,6 +1609,38 @@
     "pari": "Victoire Leuven",
     "court": "1",
     "cote": 1.81
+   }
+  ]
+ },
+ {
+  "jour": "2026-11-28",
+  "bookmaker": "PMU (FR)",
+  "cote": 2.54,
+  "proba": 0.3505,
+  "conseille": false,
+  "mise": 10,
+  "statut": "en attente",
+  "gain": 0,
+  "jambes": [
+   {
+    "id": "c836236766f7859e3c1d61caa581abe1",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-28T15:00:00Z",
+    "domicile": "West Ham United",
+    "exterieur": "Stoke City",
+    "pari": "Victoire West Ham United",
+    "court": "1",
+    "cote": 1.64
+   },
+   {
+    "id": "d2bc2d3b4a81177cb6b86f4add6ff81f",
+    "sport_key": "soccer_efl_champ",
+    "date": "2026-11-28T12:30:00Z",
+    "domicile": "Lincoln City",
+    "exterieur": "Wolverhampton Wanderers",
+    "pari": "Victoire Wolverhampton Wanderers",
+    "court": "2",
+    "cote": 1.55
    }
   ]
  }

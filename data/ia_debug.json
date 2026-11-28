@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2160,
+  "fin": "aison, tandis qu'Union, avec le moins de tirs de la ligue, gagne rarement à l'extérieur. Plusieurs pronostics convergent vers un 1-1, mais le nul à 4.70 reste un pari risqué faute de domination nette d'une équipe.\"},\n{\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"1\", \"raison\": \"Je n'ai trouvé aucune actualité fiable (blessés, suspendus, compositions) pour Birmingham - Bolton, la recherche n'ayant pas pu être effectuée sur ce match. Les stats penchent pour Birmingham (VVVDV, 0,6 but encaissé par match, NVVVV à domicile), mais la cote de 1.44 est basse et sans actu vérifiée, je reste prudent.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 54151,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4299,
+   "output_tokens_details": {
+    "thinking_tokens": 2945
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ },
+ {
+  "arret": "end_turn",
+  "pauses": 0,
+  "longueur": 2442,
+  "fin": "avant la demi-finale de Ligue des champions. Lorient, qui n'a perdu qu'une fois sur ses cinq derniers matchs, a déjà tenu PSG en nul à deux reprises : la cote n'offre aucune valeur.\"},\n{\"n\": 6, \"verdict\": \"prudence\", \"pari\": \"2\", \"raison\": \"Je n'ai pas pu vérifier l'actualité (blessés, rotation) de ce match, mes recherches ayant été épuisées avant lui. Sur les seules statistiques, Philadelphia a perdu trois de ses cinq derniers matchs et Revolution a gagné trois des cinq derniers face-à-face, tandis que la cote de 5.10 pour l'extérieur semble intéressante ; à confirmer avant de jouer.\"}\n]}\n```",
+  "usage": {
+   "input_tokens": 51958,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4654,
+   "output_tokens_details": {
+    "thinking_tokens": 3159
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard",
+   "server_tool_use": {
+    "web_search_requests": 5,
+    "web_fetch_requests": 0
+   }
+  }
+ }
+]

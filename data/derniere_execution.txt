@@ -1,24 +1,23 @@
 1/4 Règlement des paris passés (scores ESPN du carnet, sans crédit)…
-    🎟️ Combinés : +36% de rendement sur 40 tickets.
+    🎟️ Combinés : +33% de rendement sur 41 tickets.
 2/4 Recherche des championnats avec des matchs…
-    quota cotes : 7 championnat(s) aujourd'hui (194 crédits restants ce mois-ci)
+    quota cotes : 12 championnat(s) aujourd'hui (187 crédits restants ce mois-ci)
     ordre des championnats : Süper Lig +31 %, Serie A +28 %, Ligue 2 +17 %, Pro League +8 %, Saudi Pro League +7 %, Bundesliga +5 %, Liga 2 +5 %, Ligue des champions +4 %
-    7 championnats retenus
+    12 championnats retenus
 3/4 Récupération des cotes…
-    32 matchs repris du cache (cotes d'un passage précédent)
-    93 matchs analysés, 1 value bets
+    1 matchs repris du cache (cotes d'un passage précédent)
+    95 matchs analysés, 1 value bets
     Forme et stats des équipes…
-    direct : 93 matchs reliés aux scores en direct
-    fatigue : 15 matchs avec une équipe qui joue en Europe à 3 jours
-    stats : 169 équipes trouvées, 1 manquées
-    force : 84 matchs notés · pièges : 40 favoris en alerte
+    direct : 95 matchs reliés aux scores en direct
+    fatigue : 14 matchs avec une équipe qui joue en Europe à 3 jours
+    stats : 167 équipes trouvées, 1 manquées
+    force : 83 matchs notés · pièges : 41 favoris en alerte
     paris de buts évités : [('btts', 0.6), ('plus25', 0.65), ('plus25', 0.7)]
     calibrage buts : {'moins25': 0.816, 'plus25': 0.913, 'btts': 0.916, 'pas_btts': 1.05} · zones évitées : [] · championnats évités : ['Allsvenskan', 'Bundesliga AUT', 'Eredivisie', 'Liga', 'Liga Argentina', 'Liga Portugal', 'Premier League']
-    cotes de clôture suivies : 15 paris
-    bookmakers les plus justes (mêmes matchs) : marathonbet (-1.7, 169 matchs), pinnacle (-1.4, 172 matchs), onexbet (-1.2, 172 matchs)
-    autopsies gratuites : 1
-    tickets par rendement : {'match': 0.007, 'prudent': 0.037, 'equilibre': 0.298, 'gros': 0.196, 'buts': 0.058, 'mixte': 0.134, 'mixte_gros': 0.359, 'jour': 0.034, 'prudence': -0.162} · « à éviter » de l'IA affichés seulement (62 favoris écartés, 63 % gagnés pour 58 % prévus)
+    cotes de clôture suivies : 0 paris
+    bookmakers les plus justes (mêmes matchs) : marathonbet (-1.5, 177 matchs), onexbet (-1.3, 183 matchs), pinnacle (-1.2, 183 matchs)
+    autopsies gratuites : 8
+    tickets par rendement : {'match': 0.003, 'prudent': 0.037, 'equilibre': 0.298, 'gros': 0.172, 'buts': 0.027, 'mixte': 0.205, 'mixte_gros': 0.359, 'jour': 0.034, 'prudence': -0.13} · « à éviter » de l'IA affichés seulement (65 favoris écartés, 63 % gagnés pour 57 % prévus)
 4/4 Vérification des infos et avis d'experts par l'IA…
-  ! IA verdicts (paquet 1) : plafond IA du jour atteint (0.23 €)
-    combinés refaits avec 10 avis de l'IA
+    combinés refaits avec 11 avis de l'IA
 Site généré : site/index.html
